@@ -13,7 +13,6 @@ exclude:
 - ".gitignore"
 - ".travis.yml"
 - todo.txt
-- resources
 - Gemfile
 - Gemfile.lock
 - Makefile
