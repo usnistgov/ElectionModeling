@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1499867178057_795388_25700" Name="Identify Voting Precincts" cbm:numberedProperty="P1.1">
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1499867178057_795388_25700" Name="Identify Voting Precincts" cbm:numberedProperty="PR1.1">
     <PackageHeader>
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-12T09:50:00</Created>
-        <ModificationDate>17-06-20T17:05:27</ModificationDate>
+        <ModificationDate>17-06-21T14:10:53</ModificationDate>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>394</Version>
+        <Version>408</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -37,7 +37,7 @@
                 <Created>17-06-12T09:50:00</Created>
             </ProcessHeader>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1499867471902_924205_25844" Name="" cbm:numberedProperty="P1.1.1">
+                <Activity Id="_18_5_1_11940316_1499867471902_924205_25844" Name="" cbm:numberedProperty="PR1.1.1">
                     <Event>
                         <StartEvent Trigger="None" Implementation="Unspecified"/>
                     </Event>
@@ -47,7 +47,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499867582024_115905_25912" IsForCompensation="false" Name="Activate district with contests" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="P1.1.2">
+                <Activity Id="_18_5_1_11940316_1499867582024_115905_25912" IsForCompensation="false" Name="Activate district with contests" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR1.1.2">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -60,7 +60,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499867586286_185161_25929" IsForCompensation="false" Name="Active districts needed for reporting/rotation" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="P1.1.3">
+                <Activity Id="_18_5_1_11940316_1499867586286_185161_25929" IsForCompensation="false" Name="Active districts needed for reporting/rotation" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR1.1.3">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -73,7 +73,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499867614211_94171_25959" IsForCompensation="false" Name="Determine boundaries of unique ballot styles" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="P1.1.4">
+                <Activity Id="_18_5_1_11940316_1499867614211_94171_25959" IsForCompensation="false" Name="Determine boundaries of unique ballot styles" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR1.1.4">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -86,7 +86,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499867630694_817909_25988" IsForCompensation="false" Name="Identify precincts within ballot styles" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="P1.1.5">
+                <Activity Id="_18_5_1_11940316_1499867630694_817909_25988" IsForCompensation="false" Name="Identify precincts within ballot styles" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR1.1.5">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -99,7 +99,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499867674831_15259_26028" Name="Are precinct boundaries fixed?" cbm:numberedProperty="P1.1.6">
+                <Activity Id="_18_5_1_11940316_1499867674831_15259_26028" Name="Are precinct boundaries fixed?" cbm:numberedProperty="PR1.1.6">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -117,7 +117,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499867680954_289707_26045" IsForCompensation="false" Name="Split precincts at ballot style boundaries" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="P1.1.7">
+                <Activity Id="_18_5_1_11940316_1499867680954_289707_26045" IsForCompensation="false" Name="Split precincts at ballot style boundaries" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR1.1.7">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -130,7 +130,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499867697296_999401_26078" IsForCompensation="false" Name="Merge precincts as allowed by business rules" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="P1.1.8">
+                <Activity Id="_18_5_1_11940316_1499867697296_999401_26078" IsForCompensation="false" Name="Merge precincts as allowed by business rules" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR1.1.8">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -143,7 +143,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499867731152_772433_26150" IsForCompensation="false" Name="Link eligible voters to voting precincts" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="P1.1.9">
+                <Activity Id="_18_5_1_11940316_1499867731152_772433_26150" IsForCompensation="false" Name="Link eligible voters to voting precincts" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR1.1.9">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -156,7 +156,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499868296736_611764_22784" Name="Voting Precincts Identified" cbm:numberedProperty="P1.1.10">
+                <Activity Id="_18_5_1_11940316_1499868296736_611764_22784" Name="Voting Precincts Identified" cbm:numberedProperty="PR1.1.10">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>

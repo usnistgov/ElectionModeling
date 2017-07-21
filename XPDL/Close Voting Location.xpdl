@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500466984573_851025_23749" Name="Close Voting Location" cbm:numberedProperty="P3">
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500466984573_851025_23749" Name="Close Voting Location" cbm:numberedProperty="E1.3">
     <PackageHeader>
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T09:09:00</Created>
-        <ModificationDate>17-06-20T17:05:27</ModificationDate>
+        <ModificationDate>17-06-21T14:10:53</ModificationDate>
         <Documentation>&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -37,7 +37,7 @@ Need to better understand this.&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>394</Version>
+        <Version>408</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -74,7 +74,7 @@ Need to better understand this.&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_1_11940316_1500556862927_970734_33488" Source="_18_5_1_11940316_1500556823981_933998_33461" Target="_18_5_1_11940316_1500556884609_795504_33496" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1500586493070_777777_38614"/>
+            <Object Id="_18_5_1_11940316_1500660996589_197424_28779"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1293.0" YCoordinate="357.0"/>
@@ -83,7 +83,7 @@ Need to better understand this.&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1500556909001_225222_33503" Source="_18_5_1_11940316_1500556424995_843263_33280" Target="_18_5_1_11940316_1500556909112_539588_33504" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1500586493072_289077_38615"/>
+            <Object Id="_18_5_1_11940316_1500660996590_200806_28780"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="350.0" YCoordinate="356.0"/>
@@ -117,7 +117,7 @@ Need to better understand this.&amp;#160;
                 <Created>17-06-20T09:09:00</Created>
             </ProcessHeader>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1500556280735_962343_33140" Name="Closing Time" cbm:numberedProperty="P3.1">
+                <Activity Id="_18_5_1_11940316_1500556280735_962343_33140" Name="Closing Time" cbm:numberedProperty="E1.3.1">
                     <Event>
                         <StartEvent Trigger="Timer" Implementation="Unspecified" Interrupting="true"/>
                     </Event>
@@ -127,7 +127,7 @@ Need to better understand this.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500556303952_177799_33177" IsForCompensation="false" Name="Announce closing of voting location" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="P3.2">
+                <Activity Id="_18_5_1_11940316_1500556303952_177799_33177" IsForCompensation="false" Name="Announce closing of voting location" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="E1.3.2">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -140,7 +140,7 @@ Need to better understand this.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500556377800_165195_33244" IsForCompensation="false" Name="Reconcile and account for all voters and ballots cast" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="P3.4">
+                <Activity Id="_18_5_1_11940316_1500556377800_165195_33244" IsForCompensation="false" Name="Reconcile and account for all voters and ballots cast" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="E1.3.4">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -153,7 +153,7 @@ Need to better understand this.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500556424995_843263_33280" IsForCompensation="false" Name="Process final voters" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="P3.3">
+                <Activity Id="_18_5_1_11940316_1500556424995_843263_33280" IsForCompensation="false" Name="Process final voters" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="E1.3.3">
                     <Implementation>
                         <SubFlow Id="_18_5_1_11940316_1500466974661_508354_23709" Name="Vote and Submit Ballot" Execution="SYNCHR" View="EXPANDED" PackageRef="_18_5_1_11940316_1500466974661_508354_23709">
                             <EndPoint EndPointType="WSDL">
@@ -170,7 +170,7 @@ Need to better understand this.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500556710991_504147_33319" Name="Ballots counted at voting location?" cbm:numberedProperty="P3.5">
+                <Activity Id="_18_5_1_11940316_1500556710991_504147_33319" Name="Ballots counted at voting location?" cbm:numberedProperty="E1.3.5">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -188,7 +188,7 @@ Need to better understand this.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500556713432_371528_33337" IsForCompensation="false" Name="Tally" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="P3.6">
+                <Activity Id="_18_5_1_11940316_1500556713432_371528_33337" IsForCompensation="false" Name="Tally" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="E1.3.6">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -201,7 +201,7 @@ Need to better understand this.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500556726944_853427_33366" IsForCompensation="false" Name="Prepare cast vote records, results reports, remote vote ballots and account data and reports for transport" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="P3.7">
+                <Activity Id="_18_5_1_11940316_1500556726944_853427_33366" IsForCompensation="false" Name="Prepare cast vote records, results reports, remote vote ballots and account data and reports for transport" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="E1.3.7">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -214,7 +214,7 @@ Need to better understand this.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500556786619_344029_33431" IsForCompensation="false" Name="Break down and pack up voting equipment and materials" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="P3.8">
+                <Activity Id="_18_5_1_11940316_1500556786619_344029_33431" IsForCompensation="false" Name="Break down and pack up voting equipment and materials" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="E1.3.8">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -227,7 +227,7 @@ Need to better understand this.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500556823981_933998_33461" IsForCompensation="false" Name="Delivery ballots/vote summaries to election office" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="P3.9">
+                <Activity Id="_18_5_1_11940316_1500556823981_933998_33461" IsForCompensation="false" Name="Delivery ballots/vote summaries to election office" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="E1.3.9">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -240,12 +240,12 @@ Need to better understand this.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500556844418_804064_33483" Name="Voting Location Closed" cbm:numberedProperty="P3.10">
+                <Activity Id="_18_5_1_11940316_1500556844418_804064_33483" Name="Voting Location Closed" cbm:numberedProperty="E1.3.10">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFFFFF">
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
                             <Coordinates XCoordinate="1414.0" YCoordinate="385.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>

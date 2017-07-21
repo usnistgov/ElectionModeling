@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1499869349020_730283_23152" Name="Lay Out Ballots" cbm:numberedProperty="K3.1">
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1499869349020_730283_23152" Name="Lay Out Ballots" cbm:numberedProperty="PR4.1">
     <PackageHeader>
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-12T10:23:00</Created>
-        <ModificationDate>17-06-20T17:05:27</ModificationDate>
+        <ModificationDate>17-06-21T14:10:53</ModificationDate>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>394</Version>
+        <Version>408</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -37,7 +37,7 @@
                 <Created>17-06-12T10:23:00</Created>
             </ProcessHeader>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1499869420911_201575_23244" Name="" cbm:numberedProperty="K3.1.1">
+                <Activity Id="_18_5_1_11940316_1499869420911_201575_23244" Name="" cbm:numberedProperty="PR4.1.1">
                     <Event>
                         <StartEvent Trigger="None" Implementation="Unspecified"/>
                     </Event>
@@ -47,7 +47,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499869453889_470094_23280" IsForCompensation="false" Name="Select contests by ballot style" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="K3.1.2">
+                <Activity Id="_18_5_1_11940316_1499869453889_470094_23280" IsForCompensation="false" Name="Select contests by ballot style" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR4.1.2">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -60,7 +60,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499869462345_245577_23313" IsForCompensation="false" Name="Order contests" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="K3.1.3">
+                <Activity Id="_18_5_1_11940316_1499869462345_245577_23313" IsForCompensation="false" Name="Order contests" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR4.1.3">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -73,7 +73,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499869472310_950744_23342" IsForCompensation="false" Name="Order candidates" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="K3.1.4">
+                <Activity Id="_18_5_1_11940316_1499869472310_950744_23342" IsForCompensation="false" Name="Order candidates" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR4.1.4">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -86,7 +86,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499869509325_902437_23373" Name="Candidate rotation required?" cbm:numberedProperty="K3.1.5">
+                <Activity Id="_18_5_1_11940316_1499869509325_902437_23373" Name="Candidate rotation required?" cbm:numberedProperty="PR4.1.5">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -104,7 +104,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499869512523_91430_23389" IsForCompensation="false" Name="Apply formatting" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="K3.1.6">
+                <Activity Id="_18_5_1_11940316_1499869512523_91430_23389" IsForCompensation="false" Name="Apply formatting" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR4.1.6">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -117,7 +117,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499869560821_444219_23419" IsForCompensation="false" Name="Rotate candidates" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="K3.1.7">
+                <Activity Id="_18_5_1_11940316_1499869560821_444219_23419" IsForCompensation="false" Name="Rotate candidates" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR4.1.7">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -130,7 +130,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499869599859_477663_23453" Name="Ballots Laid Out" cbm:numberedProperty="K3.1.8">
+                <Activity Id="_18_5_1_11940316_1499869599859_477663_23453" Name="Ballots Laid Out" cbm:numberedProperty="PR4.1.8">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>

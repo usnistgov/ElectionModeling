@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1498140978087_930388_20553" Name="Register Voter" cbm:numberedProperty="K2.11">
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1498140978087_930388_20553" Name="Register Voter" cbm:numberedProperty="PR3.11">
     <PackageHeader>
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-05-22T10:16:00</Created>
-        <ModificationDate>17-06-20T17:05:27</ModificationDate>
+        <ModificationDate>17-06-21T14:10:53</ModificationDate>
         <Documentation>&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -23,7 +23,7 @@ We won't tell you what these means&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>394</Version>
+        <Version>408</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -109,7 +109,7 @@ We won't tell you what these means&amp;#160;
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1499108981965_462617_23540" Source="_18_5_1_11940316_1498143294565_209099_20911" Target="_18_5_1_11940316_1499110541809_526149_23547" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1500586488361_698483_38613"/>
+            <Object Id="_18_5_1_11940316_1500660992094_694384_28778"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="303.0" YCoordinate="553.0"/>
@@ -140,7 +140,7 @@ We won't tell you what these means&amp;#160;
                 <Created>17-05-22T10:16:00</Created>
             </ProcessHeader>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1498140984144_153882_20588" IsForCompensation="false" Name="Check for Completeness" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="K2.11.2">
+                <Activity Id="_18_5_1_11940316_1498140984144_153882_20588" IsForCompensation="false" Name="Check for Completeness" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.11.2">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -154,7 +154,7 @@ We won't tell you what these means&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1498141060496_67409_20631" Name="Receive Voter Registration" cbm:numberedProperty="K2.11.1">
+                <Activity Id="_18_5_1_11940316_1498141060496_67409_20631" Name="Receive Voter Registration" cbm:numberedProperty="PR3.11.1">
                     <Event>
                         <StartEvent Trigger="Message" Implementation="Unspecified" Interrupting="true">
                             <TriggerResultMessage CatchThrow="CATCH"/>
@@ -166,7 +166,7 @@ We won't tell you what these means&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1498141294964_837126_20844" Name="Registration Complete?" cbm:numberedProperty="K2.11.3">
+                <Activity Id="_18_5_1_11940316_1498141294964_837126_20844" Name="Registration Complete?" cbm:numberedProperty="PR3.11.3">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -184,7 +184,7 @@ We won't tell you what these means&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1498141330144_310223_20863" IsForCompensation="false" Name="Clarify with Applicant" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="K2.11.4">
+                <Activity Id="_18_5_1_11940316_1498141330144_310223_20863" IsForCompensation="false" Name="Clarify with Applicant" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.11.4">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -198,7 +198,7 @@ We won't tell you what these means&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1498143294565_209099_20911" IsForCompensation="false" Name="Verify Applicant's Personal and Residence Information" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="K2.11.5">
+                <Activity Id="_18_5_1_11940316_1498143294565_209099_20911" IsForCompensation="false" Name="Verify Applicant's Personal and Residence Information" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.11.5">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -212,7 +212,7 @@ We won't tell you what these means&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1498143349484_427240_20937" Name="Clarification Required?" cbm:numberedProperty="K2.11.8">
+                <Activity Id="_18_5_1_11940316_1498143349484_427240_20937" Name="Clarification Required?" cbm:numberedProperty="PR3.11.8">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -230,7 +230,7 @@ We won't tell you what these means&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1498143420313_907178_20973" Name="Resolvable?" cbm:numberedProperty="K2.11.7">
+                <Activity Id="_18_5_1_11940316_1498143420313_907178_20973" Name="Resolvable?" cbm:numberedProperty="PR3.11.7">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -248,7 +248,7 @@ We won't tell you what these means&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1498143466603_509363_21001" IsForCompensation="false" Name="Notify Applicant of Ineligibility" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="K2.11.11">
+                <Activity Id="_18_5_1_11940316_1498143466603_509363_21001" IsForCompensation="false" Name="Notify Applicant of Ineligibility" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.11.11">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -262,7 +262,7 @@ We won't tell you what these means&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1498143631579_442956_21054" IsForCompensation="false" Name="Create/update Record" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="K2.11.10">
+                <Activity Id="_18_5_1_11940316_1498143631579_442956_21054" IsForCompensation="false" Name="Create/update Record" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.11.10">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -276,7 +276,7 @@ We won't tell you what these means&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1498143691902_487354_21081" Name="No Action" cbm:numberedProperty="K2.11.12">
+                <Activity Id="_18_5_1_11940316_1498143691902_487354_21081" Name="No Action" cbm:numberedProperty="PR3.11.12">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -286,7 +286,7 @@ We won't tell you what these means&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1498143959630_299850_21333" Name="Registered" cbm:numberedProperty="K2.11.13">
+                <Activity Id="_18_5_1_11940316_1498143959630_299850_21333" Name="Registered" cbm:numberedProperty="PR3.11.13">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -296,7 +296,7 @@ We won't tell you what these means&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1498150769790_16521_21415" Name="Eligible to Register?" cbm:numberedProperty="K2.11.9">
+                <Activity Id="_18_5_1_11940316_1498150769790_16521_21415" Name="Eligible to Register?" cbm:numberedProperty="PR3.11.9">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -314,7 +314,7 @@ We won't tell you what these means&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499107780499_893863_23465" Name="Takes too Long" cbm:numberedProperty="K2.11.6">
+                <Activity Id="_18_5_1_11940316_1499107780499_893863_23465" Name="Takes too Long" cbm:numberedProperty="PR3.11.6">
                     <Event>
                         <IntermediateEvent Trigger="Timer" Implementation="WebService" Target="_18_5_1_11940316_1498141330144_310223_20863" Interrupting="true"/>
                     </Event>
@@ -324,7 +324,7 @@ We won't tell you what these means&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499878510730_714391_27670" IsForCompensation="false" Name="Notify other agencies as required" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="K2.11.14">
+                <Activity Id="_18_5_1_11940316_1499878510730_714391_27670" IsForCompensation="false" Name="Notify other agencies as required" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.11.14">
                     <Implementation>
                         <No/>
                     </Implementation>

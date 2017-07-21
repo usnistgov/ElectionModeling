@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1498741087082_826902_21075" Name="Precinct Voters" cbm:numberedProperty="K2.12">
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1498741087082_826902_21075" Name="Precinct Voters" cbm:numberedProperty="PR3.12">
     <PackageHeader>
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-05-29T09:12:00</Created>
-        <ModificationDate>17-06-20T17:05:27</ModificationDate>
+        <ModificationDate>17-06-21T14:10:53</ModificationDate>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>394</Version>
+        <Version>408</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -26,7 +26,7 @@
         <Page Name="Precinct Voters" Id="_18_5_1_11940316_1498741936331_435444_21134" Height="669.0" Width="1109.0"/>
     </Pages>
     <DataStores>
-        <DataStore Id="_18_5_1_11940316_1500472861307_215878_29138" Name="Voter Registration Database" IsUnlimited="false" cbm:numberedProperty="K2.12.D 1"/>
+        <DataStore Id="_18_5_1_11940316_1500472861307_215878_29138" Name="Voter Registration Database" IsUnlimited="false" cbm:numberedProperty="PR3.12.D 1"/>
     </DataStores>
     <Pools>
         <Pool Id="_18_5_1_11940316_1499865386913_174285_25054" Name="Election Authority" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1499865386913_174285_25054_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
@@ -75,7 +75,7 @@
                 <Created>17-05-29T09:12:00</Created>
             </ProcessHeader>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1499865467571_33971_25074" Name="" cbm:numberedProperty="K2.12.1">
+                <Activity Id="_18_5_1_11940316_1499865467571_33971_25074" Name="" cbm:numberedProperty="PR3.12.1">
                     <Event>
                         <StartEvent Trigger="None" Implementation="Unspecified"/>
                     </Event>
@@ -85,7 +85,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499865474315_50896_25114" IsForCompensation="false" Name="Match voter address to address database" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="K2.12.2">
+                <Activity Id="_18_5_1_11940316_1499865474315_50896_25114" IsForCompensation="false" Name="Match voter address to address database" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.12.2">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -98,7 +98,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499865787928_777075_25158" Name="Address recognized in VRDB?" cbm:numberedProperty="K2.12.3">
+                <Activity Id="_18_5_1_11940316_1499865787928_777075_25158" Name="Address recognized in VRDB?" cbm:numberedProperty="PR3.12.3">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -116,7 +116,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499865815229_588324_25215" Name="Address valid for registration" cbm:numberedProperty="K2.12.4">
+                <Activity Id="_18_5_1_11940316_1499865815229_588324_25215" Name="Address valid for registration" cbm:numberedProperty="PR3.12.4">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -134,7 +134,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499866329624_342017_25288" IsForCompensation="false" Name="Get precinct from precinct-address index" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="K2.12.5">
+                <Activity Id="_18_5_1_11940316_1499866329624_342017_25288" IsForCompensation="false" Name="Get precinct from precinct-address index" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.12.5">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -147,7 +147,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499866372013_276116_25403" IsForCompensation="false" Name="Link voter to precinct" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="K2.12.6">
+                <Activity Id="_18_5_1_11940316_1499866372013_276116_25403" IsForCompensation="false" Name="Link voter to precinct" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.12.6">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -160,7 +160,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499866412972_514784_25429" Name="Voter Precincted" cbm:numberedProperty="K2.12.7">
+                <Activity Id="_18_5_1_11940316_1499866412972_514784_25429" Name="Voter Precincted" cbm:numberedProperty="PR3.12.7">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -170,7 +170,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499866465190_105482_25455" IsForCompensation="false" Name="Research Address" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="K2.12.8">
+                <Activity Id="_18_5_1_11940316_1499866465190_105482_25455" IsForCompensation="false" Name="Research Address" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.12.8">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -183,7 +183,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499866476685_57010_25483" Name="Can new address be created?" cbm:numberedProperty="K2.12.9">
+                <Activity Id="_18_5_1_11940316_1499866476685_57010_25483" Name="Can new address be created?" cbm:numberedProperty="PR3.12.9">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -201,7 +201,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499866602470_799954_25540" IsForCompensation="false" Name="Flag voter record as not precincted" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="K2.12.10">
+                <Activity Id="_18_5_1_11940316_1499866602470_799954_25540" IsForCompensation="false" Name="Flag voter record as not precincted" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.12.10">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -214,7 +214,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499866660185_157760_25605" IsForCompensation="false" Name="Contact Voter for Address Clarification or Correction" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="K2.12.11">
+                <Activity Id="_18_5_1_11940316_1499866660185_157760_25605" IsForCompensation="false" Name="Contact Voter for Address Clarification or Correction" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.12.11">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -227,7 +227,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499866690535_350949_25631" Name="Voter not Precincted" cbm:numberedProperty="K2.12.12">
+                <Activity Id="_18_5_1_11940316_1499866690535_350949_25631" Name="Voter not Precincted" cbm:numberedProperty="PR3.12.12">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -237,7 +237,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500475124700_731219_29297" Name="Correctable?" cbm:numberedProperty="K2.12.13">
+                <Activity Id="_18_5_1_11940316_1500475124700_731219_29297" Name="Correctable?" cbm:numberedProperty="PR3.12.13">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -255,7 +255,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500475239486_228022_29335" Name="Takes too Long" cbm:numberedProperty="K2.12.14">
+                <Activity Id="_18_5_1_11940316_1500475239486_228022_29335" Name="Takes too Long" cbm:numberedProperty="PR3.12.14">
                     <Event>
                         <IntermediateEvent Trigger="Timer" Implementation="WebService" Target="_18_5_1_11940316_1499866660185_157760_25605" Interrupting="true"/>
                     </Event>
