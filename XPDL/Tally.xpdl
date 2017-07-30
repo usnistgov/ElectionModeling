@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T15:17:00</Created>
-        <ModificationDate>17-06-25T20:23:52</ModificationDate>
+        <ModificationDate>17-06-30T16:57:11</ModificationDate>
         <Documentation>&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -53,13 +53,13 @@ Convert to Ad Hoc Subprocess?&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>420</Version>
+        <Version>437</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
     <ConformanceClass GraphConformance="NON_BLOCKED" BPMNModelPortabilityConformance="SIMPLE"/>
     <Participants>
-        <Participant Id="_18_5_1_11940316_1498999818037_96552_21933" Name="Election Authority" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
+        <Participant Id="_18_5_1_11940316_1498999818037_96552_21933" Name="Election Jurisdiction" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
             <ParticipantType Type="RESOURCE"/>
         </Participant>
     </Participants>
@@ -77,7 +77,7 @@ Convert to Ad Hoc Subprocess?&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_1_11940316_1500579362435_384663_36666" Source="_18_5_1_11940316_1500588643281_710287_38710" Target="_18_5_1_11940316_1500579485655_197723_36707" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1501084518764_959533_25699"/>
+            <Object Id="_18_5_1_11940316_1501448445421_344158_26047"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="71.0" YCoordinate="185.0"/>
@@ -86,7 +86,7 @@ Convert to Ad Hoc Subprocess?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1500579508186_874147_36738" Source="_18_5_1_11940316_1500579521192_167327_36746" Target="_18_5_1_11940316_1500579508302_206644_36739" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1501084518765_969599_25700"/>
+            <Object Id="_18_5_1_11940316_1501448445422_500348_26048"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="337.0" YCoordinate="174.0"/>
@@ -95,7 +95,7 @@ Convert to Ad Hoc Subprocess?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1500580089051_879726_37164" Source="_18_5_1_11940316_1500579954596_794135_37045" Target="_18_5_1_11940316_1500580089146_409757_37165" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1501084518770_721237_25701"/>
+            <Object Id="_18_5_1_11940316_1501448445425_510093_26049"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="594.0" YCoordinate="335.0"/>

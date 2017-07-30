@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-05T10:24:00</Created>
-        <ModificationDate>17-06-25T20:23:52</ModificationDate>
+        <ModificationDate>17-06-30T16:57:11</ModificationDate>
         <Documentation>&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -23,13 +23,13 @@ Verbiage here is a bit strange.
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>420</Version>
+        <Version>437</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
     <ConformanceClass GraphConformance="NON_BLOCKED" BPMNModelPortabilityConformance="SIMPLE"/>
     <Participants>
-        <Participant Id="_18_5_1_11940316_1498999818037_96552_21933" Name="Election Authority" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
+        <Participant Id="_18_5_1_11940316_1498999818037_96552_21933" Name="Election Jurisdiction" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
             <ParticipantType Type="RESOURCE"/>
         </Participant>
         <Participant Id="_18_5_1_11940316_1498828669742_83683_23366" Name="Voter" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
@@ -71,7 +71,7 @@ Verbiage here is a bit strange.
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1500040675997_282036_23510" Source="_18_5_1_11940316_1500040662646_889824_23498" Target="_18_5_1_11940316_1499265733075_418747_22432" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1501084514652_581386_25698"/>
+            <Object Id="_18_5_1_11940316_1501448442373_572131_26046"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499264668505_931485_22943" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="921.0" YCoordinate="568.0"/>

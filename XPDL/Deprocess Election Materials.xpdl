@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1501086388950_299334_28125" Name="Deprocess Election Materials" cbm:numberedProperty="P2">
+    <PackageHeader>
+        <XPDLVersion>2.2</XPDLVersion>
+        <Vendor>No Magic, Inc.</Vendor>
+        <Created>17-06-27T00:26:00</Created>
+        <ModificationDate>17-06-30T16:57:11</ModificationDate>
+        <Documentation>&lt;html&gt;
+  &lt;head&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+      Merge with Voted, but uncounted? These calls may be partially counted 
+      depending on polling equipment used&amp;#160;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+What is included in the unofficial count may vary&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+may include provisionals and &amp;#160;uncounted absentees
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+These may remain sealed unless a recount or audit requires their counting&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+Could be another entity transporting materials&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</Documentation>
+        <LayoutInfo PixelsPerMillimeter="2.8346457"/>
+    </PackageHeader>
+    <RedefinableHeader>
+        <Author>jdziu_000</Author>
+        <Version>437</Version>
+        <Codepage>Cp1252</Codepage>
+        <Countrykey>US</Countrykey>
+    </RedefinableHeader>
+    <ConformanceClass GraphConformance="NON_BLOCKED" BPMNModelPortabilityConformance="SIMPLE"/>
+    <Participants>
+        <Participant Id="_18_5_1_11940316_1501089068915_624055_29001" Name="Electoral System" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
+            <ParticipantType Type="RESOURCE"/>
+        </Participant>
+        <Participant Id="_18_5_1_11940316_1501096470365_163806_30704" Name="Authorized Personnel" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
+            <ParticipantType Type="RESOURCE"/>
+        </Participant>
+    </Participants>
+    <Pages>
+        <Page Name="Deprocess Election Materials" Id="_18_5_1_11940316_1501086412358_104833_28167" Height="837.0" Width="1964.0"/>
+    </Pages>
+    <Pools>
+        <Pool Id="_18_5_1_11940316_1501087220925_632926_28704" Name="" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1501087220925_632926_28704_proc" Participant="_18_5_1_11940316_1501089068915_624055_29001" BoundaryVisible="true" MainPool="false" MultiInstance="false">
+            <Lanes>
+                <Lane Id="_18_5_1_11940316_1501087220900_556057_28697" Name="" ParentPool="_18_5_1_11940316_1501087220925_632926_28704">
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="634.0" Width="1922.0" BorderColor="#424242" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="21.0" YCoordinate="203.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Lane>
+            </Lanes>
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="634.0" Width="1964.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                    <Coordinates XCoordinate="0.0" YCoordinate="203.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+        <Pool Id="_18_5_1_11940316_1501091165360_120740_29133" Name="Poll Worker" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1501091165360_120740_29133_proc" Participant="_18_5_1_11940316_1501096470365_163806_30704" BoundaryVisible="true" MainPool="false" MultiInstance="false">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="134.0" Width="1964.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                    <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+    </Pools>
+    <MessageFlows>
+        <MessageFlow Id="_18_5_1_11940316_1501091367625_738886_29240" Name="" Source="_18_5_1_11940316_1501091165360_120740_29133" Target="_18_5_1_11940316_1501091643345_974437_29344">
+            <Message Id="_18_5_1_11940316_1501091379686_108336_29243" Name="Election Materials"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
+                    <Coordinates XCoordinate="277.0" YCoordinate="134.0"/>
+                    <Coordinates XCoordinate="277.0" YCoordinate="502.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+        <MessageFlow Id="_18_5_1_11940316_1501091491010_945548_29306" Name="" Source="_18_5_1_11940316_1501091471632_664623_29297" Target="_18_5_1_11940316_1501091165360_120740_29133">
+            <Message Id="_18_5_1_11940316_1501091505298_634809_29309" Name="Where are you?"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
+                    <Coordinates XCoordinate="413.0" YCoordinate="626.0"/>
+                    <Coordinates XCoordinate="413.0" YCoordinate="134.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+        <MessageFlow Id="_18_5_1_11940316_1501097655900_814234_30777" Name="" Source="_18_5_1_11940316_1501091165360_120740_29133" Target="_18_5_1_11940316_1501097645544_309409_30759">
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
+                    <Coordinates XCoordinate="885.0" YCoordinate="134.0"/>
+                    <Coordinates XCoordinate="885.0" YCoordinate="231.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+    </MessageFlows>
+    <Associations>
+        <Association Id="_18_5_1_11940316_1501086486645_113712_28444" Source="_18_5_1_11940316_1501086486639_402756_28417" Target="_18_5_1_11940316_1501086486640_346216_28422" AssociationDirection="None">
+            <Object Id="_18_5_1_11940316_1501448423932_894690_26034"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="1001.0" YCoordinate="410.0"/>
+                    <Coordinates XCoordinate="1038.0" YCoordinate="371.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_18_5_1_11940316_1501086486645_382682_28448" Source="_18_5_1_11940316_1501086486644_39570_28436" Target="_18_5_1_11940316_1501086486639_322184_28421" AssociationDirection="None">
+            <Object Id="_18_5_1_11940316_1501448423933_88126_26035"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="945.0" YCoordinate="651.0"/>
+                    <Coordinates XCoordinate="1029.0" YCoordinate="672.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_18_5_1_11940316_1501086486645_819150_28446" Source="_18_5_1_11940316_1501086486644_93956_28437" Target="_18_5_1_11940316_1501086486641_53406_28423" AssociationDirection="None">
+            <Object Id="_18_5_1_11940316_1501448423933_925591_26036"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="942.0" YCoordinate="427.0"/>
+                    <Coordinates XCoordinate="1029.0" YCoordinate="417.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_18_5_1_11940316_1501086486645_360049_28447" Source="_18_5_1_11940316_1501086486644_916664_28434" Target="_18_5_1_11940316_1501086486642_938382_28424" AssociationDirection="None">
+            <Object Id="_18_5_1_11940316_1501448423934_102676_26037"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="942.0" YCoordinate="513.0"/>
+                    <Coordinates XCoordinate="1029.0" YCoordinate="527.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+    </Associations>
+    <Artifacts>
+        <Artifact Id="_18_5_1_11940316_1501086486640_346216_28422" ArtifactType="Annotation" TextAnnotation="What is included in the unofficial count may vary ">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="69.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="1022.0" YCoordinate="302.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_1_11940316_1501086486639_322184_28421" ArtifactType="Annotation" TextAnnotation="Merge with Voted, but uncounted? These calls may be partially counted depending on polling equipment used ">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="159.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="1029.0" YCoordinate="605.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_1_11940316_1501086486641_53406_28423" ArtifactType="Annotation" TextAnnotation="may include provisionals and  uncounted absentees">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="69.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="1029.0" YCoordinate="378.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_1_11940316_1501086486642_938382_28424" ArtifactType="Annotation" TextAnnotation="These may remain sealed unless a recount or audit requires their counting ">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="99.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="1029.0" YCoordinate="486.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_1_11940316_1501096357776_683371_30689" ArtifactType="Annotation" TextAnnotation="Could be another entity transporting materials "/>
+    </Artifacts>
+    <WorkflowProcesses>
+        <WorkflowProcess Id="_18_5_1_11940316_1501086412314_397779_28157" Name="Deprocess Election Materials" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+            <ProcessHeader>
+                <Created>17-06-27T00:26:00</Created>
+            </ProcessHeader>
+            <Activities>
+                <Activity Id="_18_5_1_11940316_1501087477828_94360_28773" IsForCompensation="false" Name="Sign and Transfer Chain of Custody" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="P2.7">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="518.0" YCoordinate="427.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_1_11940316_1501087838806_752742_28829" IsForCompensation="false" Name="Receive Election Materials" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="P2.8">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="518.0" YCoordinate="502.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition Id="_18_5_1_11940316_1501100312664_384964_30856" From="_18_5_1_11940316_1501087838806_752742_28829" To="_18_5_1_11940316_1501100311730_525785_30849" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="638.0" YCoordinate="532.0"/>
+                            <Coordinates XCoordinate="673.0" YCoordinate="532.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos

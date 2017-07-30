@@ -4,18 +4,18 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-12T10:23:00</Created>
-        <ModificationDate>17-06-25T20:23:52</ModificationDate>
+        <ModificationDate>17-06-30T16:57:11</ModificationDate>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>420</Version>
+        <Version>437</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
     <ConformanceClass GraphConformance="NON_BLOCKED" BPMNModelPortabilityConformance="SIMPLE"/>
     <Participants>
-        <Participant Id="_18_5_1_11940316_1498999818037_96552_21933" Name="Election Authority" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
+        <Participant Id="_18_5_1_11940316_1498999818037_96552_21933" Name="Election Jurisdiction" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
             <ParticipantType Type="RESOURCE"/>
         </Participant>
     </Participants>
