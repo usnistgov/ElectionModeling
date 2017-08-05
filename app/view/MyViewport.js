@@ -803,7 +803,7 @@ function createHelpButtonPanel()
                             });
     }
 
-    var commentEnabled = "NA";
+    var commentEnabled = "https://github.com/usnistgov/ElectionModeling/issues/new";
 
     if(commentEnabled !== "" && commentEnabled!== "NA")
     {
@@ -907,10 +907,18 @@ function createCommentPanel()
                                                             result[0].commentSummary = summary;
                                                             result[0].contentTitle = document.getElementById('titleLabel').innerText;
                                                             result[0].comment = comment;
-
+                                                            
+                                                            var orginDisclaimer = "*Generated from Process Portal* \r\n" +
+                                                            "Reference Diagram: [" + result[0].contentTitle +
+                                                            "]("  +  window.location.href + ")";
+                                                            
+                                                            var constructedString = "https://github.com/usnistgov/ElectionModeling/issues/new" + "?title=" + summary + "&body=" + encodeURIComponent(comment + "\r\n" + orginDisclaimer);
+                                                            
+                                                            window.open(constructedString);
+                                                            /*
                                                             $.ajax({
                                                                        type: "GET",
-                                                                       url: "NA",
+                                                                       url: "https://github.com/usnistgov/ElectionModeling/issues/new",
                                                                        data: result[0],
                                                                        success: function()
                                                                        {
@@ -918,6 +926,7 @@ function createCommentPanel()
                                                                        },
                                                                        dataType: "jsonp"
                                                                    });
+                                                            */
                                                             Ext.getCmp('commentPanel').close();
                                                         }
                                                     })
@@ -1108,7 +1117,7 @@ function showTipPanel(all_tips_data)
 
 Ext.onReady(function()
             {
-                var showTip = "True".toLowerCase() === "true";
+                var showTip = "False".toLowerCase() === "true";
                 if (showTip && !Ext.util.Cookies.get('process_portal_first_load'))
                 {
                     showTipPanel(window.tips_data);
