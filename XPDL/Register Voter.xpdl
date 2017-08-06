@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-05-22T10:16:00</Created>
-        <ModificationDate>17-06-30T16:57:11</ModificationDate>
+        <ModificationDate>17-07-06T09:04:22</ModificationDate>
         <Documentation>&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -13,7 +13,7 @@
 	&lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-We won't tell you what these means&amp;#160;
+Remove?&amp;#160;
 
     &lt;/p&gt;
 
@@ -23,7 +23,7 @@ We won't tell you what these means&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>437</Version>
+        <Version>537</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -32,7 +32,7 @@ We won't tell you what these means&amp;#160;
         <Participant Id="_18_5_1_11940316_1498999818037_96552_21933" Name="Election Jurisdiction" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
             <ParticipantType Type="RESOURCE"/>
         </Participant>
-        <Participant Id="_18_5_1_11940316_1498828669742_83683_23366" Name="Voter" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
+        <Participant Id="_18_5_1_11940316_1501593348755_749813_40372" Name="Applicant" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
             <ParticipantType Type="RESOURCE"/>
         </Participant>
     </Participants>
@@ -50,7 +50,7 @@ We won't tell you what these means&amp;#160;
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Pool>
-        <Pool Id="_18_5_1_11940316_1498141084839_503660_20658" Name="Applicant" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1498141084839_503660_20658_proc" Participant="_18_5_1_11940316_1498828669742_83683_23366" BoundaryVisible="true" MainPool="false" MultiInstance="false">
+        <Pool Id="_18_5_1_11940316_1498141084839_503660_20658" Name="Applicant" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1498141084839_503660_20658_proc" Participant="_18_5_1_11940316_1501593348755_749813_40372" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="87.0" Width="1098.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
@@ -108,23 +108,21 @@ We won't tell you what these means&amp;#160;
         </MessageFlow>
     </MessageFlows>
     <Associations>
-        <Association Id="_18_5_1_11940316_1499108981965_462617_23540" Source="_18_5_1_11940316_1498143294565_209099_20911" Target="_18_5_1_11940316_1499110541809_526149_23547" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1501448416363_179533_26030"/>
+        <Association Id="_18_5_1_11940316_1501593702731_593417_40409" Source="_18_5_1_11940316_1499878510730_714391_27670" Target="_18_5_1_11940316_1501593713207_827954_40418" AssociationDirection="None">
+            <Object Id="_18_5_1_11940316_1502024702825_820496_37516"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="303.0" YCoordinate="553.0"/>
-                    <Coordinates XCoordinate="287.0" YCoordinate="553.0"/>
-                    <Coordinates XCoordinate="287.0" YCoordinate="532.0"/>
-                    <Coordinates XCoordinate="264.0" YCoordinate="532.0"/>
+                    <Coordinates XCoordinate="934.0" YCoordinate="561.0"/>
+                    <Coordinates XCoordinate="947.0" YCoordinate="584.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
     </Associations>
     <Artifacts>
-        <Artifact Id="_18_5_1_11940316_1499110541809_526149_23547" ArtifactType="Annotation" TextAnnotation="We won't tell you what these means ">
+        <Artifact Id="_18_5_1_11940316_1501593713207_827954_40418" ArtifactType="Annotation" TextAnnotation="Remove? ">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="164.0" YCoordinate="504.0"/>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="40.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="908.0" YCoordinate="584.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
@@ -147,7 +145,7 @@ We won't tell you what these means&amp;#160;
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>Determine if registration meets syntactic requirements; that it is prima facia valid.</Documentation>
+                    <Documentation>Determine if the registration meets syntactic requirements; that it is prima facie valid.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="154.0" YCoordinate="320.0"/>
@@ -205,7 +203,7 @@ We won't tell you what these means&amp;#160;
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>Verify that the applicant's personal and residence information meets the requirements to vote. For example, the date of birth day be verified to meet an eligibility requirement.</Documentation>
+                    <Documentation>Verify that the applicant's personal and residence information meets the requirements to register to vote. For example, the date of birth may be verified to meet an eligibility requirement.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="69.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="303.0" YCoordinate="497.0"/>
@@ -255,7 +253,7 @@ We won't tell you what these means&amp;#160;
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>If the election authority determines the applicant ineligible to vote, the applicant may be notified.</Documentation>
+                    <Documentation>If the election jurisdiction determines the applicant ineligible to register to vote, the applicant may be notified.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="700.0" YCoordinate="320.0"/>

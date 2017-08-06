@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-19T14:10:00</Created>
-        <ModificationDate>17-06-30T16:57:11</ModificationDate>
+        <ModificationDate>17-07-06T09:04:22</ModificationDate>
         <Documentation>&lt;html&gt;
   &lt;head&gt;
     &lt;style type="text/css"&gt;
@@ -55,7 +55,7 @@ I used returned here instead of voted because the voter may have made no selecti
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>437</Version>
+        <Version>537</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -140,6 +140,7 @@ I used returned here instead of voted because the voter may have made no selecti
             </ConnectorGraphicsInfos>
         </MessageFlow>
         <MessageFlow Id="_18_5_1_11940316_1500490081211_145460_31688" Name="" Source="_18_5_1_11940316_1500487834957_762963_30915" Target="_18_5_1_11940316_1500489692278_196686_31533">
+            <Message Id="_18_5_1_11940316_1500487920496_513160_30951" Name="Request to Vote"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="1239.0" YCoordinate="144.0"/>
@@ -152,7 +153,7 @@ I used returned here instead of voted because the voter may have made no selecti
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1500488035576_490537_31025" Source="_18_5_1_11940316_1500488057395_840499_31036" Target="_18_5_1_11940316_1500488057395_783673_31037" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1501448441503_462556_26043"/>
+            <Object Id="_18_5_1_11940316_1502024740993_72787_37687"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="354.0" YCoordinate="542.0"/>
@@ -161,7 +162,7 @@ I used returned here instead of voted because the voter may have made no selecti
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1500488140472_449297_31115" Source="_18_5_1_11940316_1500488104764_158676_31110" Target="_18_5_1_11940316_1500488140554_463123_31116" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1501448441504_785648_26044"/>
+            <Object Id="_18_5_1_11940316_1502024740994_102851_37688"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="354.0" YCoordinate="444.0"/>
@@ -170,7 +171,7 @@ I used returned here instead of voted because the voter may have made no selecti
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1500489297751_910345_31290" Source="_18_5_1_11940316_1500489259484_149831_31265" Target="_18_5_1_11940316_1500489325054_147673_31298" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1501448441505_833465_26045"/>
+            <Object Id="_18_5_1_11940316_1502024740995_994798_37689"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="973.0" YCoordinate="328.0"/>

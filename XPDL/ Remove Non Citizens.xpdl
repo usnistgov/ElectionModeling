@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1499459803168_807600_25555" Name=" Remove Non Citizens" cbm:numberedProperty="K2.K11">
+    <PackageHeader>
+        <XPDLVersion>2.2</XPDLVersion>
+        <Vendor>No Magic, Inc.</Vendor>
+        <Created></Created>
+        <ModificationDate>17-07-06T09:04:22</ModificationDate>
+        <LayoutInfo PixelsPerMillimeter="2.8346457"/>
+    </PackageHeader>
+    <RedefinableHeader>
+        <Author>jdziu_000</Author>
+        <Version>537</Version>
+        <Codepage>Cp1252</Codepage>
+        <Countrykey>US</Countrykey>
+    </RedefinableHeader>
+    <ConformanceClass GraphConformance="NON_BLOCKED" BPMNModelPortabilityConformance="SIMPLE"/>
+</Package>

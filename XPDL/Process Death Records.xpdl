@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-03T09:32:00</Created>
-        <ModificationDate>17-06-30T16:57:11</ModificationDate>
+        <ModificationDate>17-07-06T09:04:22</ModificationDate>
         <Documentation>&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -23,7 +23,7 @@ Assume trusted source
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>437</Version>
+        <Version>537</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -37,7 +37,7 @@ Assume trusted source
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Process Death Records" Id="_18_5_1_11940316_1499088773641_953997_22448" Height="712.0" Width="1305.0"/>
+        <Page Name="Process Death Records" Id="_18_5_1_11940316_1499088773641_953997_22448" Height="712.0" Width="1354.0"/>
     </Pages>
     <DataStores>
         <DataStore Id="_18_5_1_11940316_1499089049215_588855_22680" Name="Voter Registration Database" IsUnlimited="false"/>
@@ -45,7 +45,7 @@ Assume trusted source
     <Pools>
         <Pool Id="_18_5_1_11940316_1499088791731_760703_22456" Name="Election Authority" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1499088791731_760703_22456_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" Height="467.0" Width="1305.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" Height="467.0" Width="1354.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="245.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -90,16 +90,16 @@ Assume trusted source
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1500064336470_994540_23750" Source="_18_5_1_11940316_1500064324919_276366_23738" Target="_18_5_1_11940316_1499088791732_638548_22459" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1501448436226_413699_26040"/>
+            <Object Id="_18_5_1_11940316_1502024734684_245097_37684"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="91.0" YCoordinate="369.0"/>
-                    <Coordinates XCoordinate="82.0" YCoordinate="429.0"/>
+                    <Coordinates XCoordinate="93.0" YCoordinate="410.0"/>
+                    <Coordinates XCoordinate="93.0" YCoordinate="466.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1500487543781_311201_30851" Source="_18_5_1_11940316_1500065377718_599881_24017" Target="_18_5_1_11940316_1500487602740_146567_30870" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1501448436227_15930_26041"/>
+            <Object Id="_18_5_1_11940316_1502024734686_817394_37685"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="986.0" YCoordinate="518.0"/>
@@ -108,7 +108,7 @@ Assume trusted source
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1500487588272_14643_30861" Source="_18_5_1_11940316_1500064717152_276715_23864" Target="_18_5_1_11940316_1500487602740_879677_30871" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1501448436228_884942_26042"/>
+            <Object Id="_18_5_1_11940316_1502024734687_740308_37686"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="672.0" YCoordinate="346.0"/>
@@ -130,7 +130,7 @@ Assume trusted source
         <Artifact Id="_18_5_1_11940316_1500064324919_276366_23738" ArtifactType="Annotation" TextAnnotation="Assume trusted source">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" Height="54.0" Width="88.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="51.0" YCoordinate="315.0"/>
+                    <Coordinates XCoordinate="49.0" YCoordinate="356.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
@@ -172,20 +172,21 @@ Assume trusted source
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1499452861811_339180_23557" IsForCompensation="false" Name="Lookup Voter Record" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="K2.K13.2.2">
+                        <Activity Id="_18_5_1_11940316_1499452861811_339180_23557" IsForCompensation="false" Name="Lookup Voter Registration" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="K2.K13.2.2">
                             <Implementation>
 <No/>
                             </Implementation>
                             <Performers>
 <Performer cbm:resourceType="ResourceRole"></Performer>
                             </Performers>
+                            <Documentation>The death notice may not pertain to a record in the voter registration database. The election jurisdiction must find a matching record in order to proceed.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="231.0" YCoordinate="470.0"/>
+    <Coordinates XCoordinate="231.0" YCoordinate="469.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1499861320237_546917_24277" Name="Suitable Voter Record Found?" cbm:numberedProperty="K2.K13.2.3">
+                        <Activity Id="_18_5_1_11940316_1499861320237_546917_24277" Name="Suitable Voter Registration Found?" cbm:numberedProperty="K2.K13.2.3">
                             <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                             <TransitionRestrictions>
 <TransitionRestriction>
@@ -220,6 +221,7 @@ Assume trusted source
                             <Performers>
 <Performer cbm:resourceType="ResourceRole"></Performer>
                             </Performers>
+                            <Documentation>The decedent is removed from the list of eligible voters.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" Height="59.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
     <Coordinates XCoordinate="791.0" YCoordinate="467.0"/>
@@ -243,6 +245,7 @@ Assume trusted source
                             <Performers>
 <Performer cbm:resourceType="ResourceRole"></Performer>
                             </Performers>
+                            <Documentation>An election jurisdiction may require a confirmation of death be sent to the decedent’s residence on file with the voter registration database. This starts a cure period in which the removal can be challenged.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
     <Coordinates XCoordinate="672.0" YCoordinate="339.0"/>
@@ -336,15 +339,6 @@ Assume trusted source
                             </NodeGraphicsInfos>
                         </Activity>
                     </Activities>
-                    <DataObjects>
-                        <DataObject Id="_18_5_1_11940316_1499089152913_941999_22830" Name="Suitable  Record" cbm:realDataId="_18_5_1_11940316_1499089152905_850723_22828">
-                            <NodeGraphicsInfos>
-<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" Height="55.0" Width="105.0" BorderColor="#99995C" FillColor="#E1E1C3">
-    <Coordinates XCoordinate="351.0" YCoordinate="568.0"/>
-</NodeGraphicsInfo>
-                            </NodeGraphicsInfos>
-                        </DataObject>
-                    </DataObjects>
                     <DataStoreReferences>
                         <DataStoreReference DataStoreRef="_18_5_1_11940316_1499089049215_588855_22680" Id="_18_5_1_11940316_1499089052236_923103_22696" Name="Voter Registration Database">
                             <NodeGraphicsInfos>
@@ -491,29 +485,11 @@ Assume trusted source
                         </Transition>
                     </Transitions>
                     <DataAssociations>
-                        <DataAssociation Id="_18_5_1_11940316_1499454319197_646656_23801" Name="" From="_18_5_1_11940316_1499452861811_339180_23557" To="_18_5_1_11940316_1499089152913_941999_22830">
-                            <ConnectorGraphicsInfos>
-<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="308.0" YCoordinate="520.0"/>
-    <Coordinates XCoordinate="308.0" YCoordinate="589.0"/>
-    <Coordinates XCoordinate="386.0" YCoordinate="589.0"/>
-</ConnectorGraphicsInfo>
-                            </ConnectorGraphicsInfos>
-                        </DataAssociation>
                         <DataAssociation Id="_18_5_1_11940316_1499454333615_525680_23812" Name="" From="_18_5_1_11940316_1499089052236_923103_22696" To="_18_5_1_11940316_1499452861811_339180_23557">
                             <ConnectorGraphicsInfos>
 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" BorderColor="#424242" FillColor="#FFFFCC">
     <Coordinates XCoordinate="263.0" YCoordinate="613.0"/>
-    <Coordinates XCoordinate="263.0" YCoordinate="520.0"/>
-</ConnectorGraphicsInfo>
-                            </ConnectorGraphicsInfos>
-                        </DataAssociation>
-                        <DataAssociation Id="_18_5_1_11940316_1499861385859_910633_24353" Name="" From="_18_5_1_11940316_1499089152913_941999_22830" To="_18_5_1_11940316_1499861356241_987822_24319">
-                            <ConnectorGraphicsInfos>
-<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="420.0" YCoordinate="593.0"/>
-    <Coordinates XCoordinate="812.0" YCoordinate="593.0"/>
-    <Coordinates XCoordinate="812.0" YCoordinate="526.0"/>
+    <Coordinates XCoordinate="263.0" YCoordinate="519.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </DataAssociation>
@@ -530,15 +506,16 @@ Assume trusted source
                 </ActivitySet>
             </ActivitySets>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1499088791732_638548_22459" Name="Receive Death Record" cbm:numberedProperty="K2.K13.1">
+                <Activity Id="_18_5_1_11940316_1499088791732_638548_22459" Name="Receive Death Records" cbm:numberedProperty="K2.K13.1">
                     <Event>
                         <StartEvent Trigger="Message" Implementation="Unspecified" Interrupting="true">
                             <TriggerResultMessage CatchThrow="CATCH"/>
                         </StartEvent>
                     </Event>
+                    <Documentation>Attempt to find an eligible voter record matching the decedent’s information.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="70.0" YCoordinate="429.0"/>
+                            <Coordinates XCoordinate="81.0" YCoordinate="466.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -547,7 +524,8 @@ Assume trusted source
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>&lt;html&gt;
+                    <Documentation>Looks up a record in the voter registration database and removes the decedent from the list of eligible voters.
+&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
 			p {padding:0px; margin:0px;}
@@ -584,13 +562,13 @@ E.g. Maryland&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499099976988_969243_21609" Name="" cbm:numberedProperty="K2.K13.3">
+                <Activity Id="_18_5_1_11940316_1499099976988_969243_21609" Name="Death Records Processed" cbm:numberedProperty="K2.K13.3">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="1260.0" YCoordinate="429.0"/>
+                            <Coordinates XCoordinate="1260.0" YCoordinate="466.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -599,20 +577,16 @@ E.g. Maryland&amp;#160;
                 <Transition Id="_18_5_1_11940316_1499099713555_98477_21472" From="_18_5_1_11940316_1499088791732_638548_22459" To="_18_5_1_11940316_1499099623488_270558_21426" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="94.0" YCoordinate="441.0"/>
-                            <Coordinates XCoordinate="123.0" YCoordinate="441.0"/>
-                            <Coordinates XCoordinate="123.0" YCoordinate="483.0"/>
-                            <Coordinates XCoordinate="154.0" YCoordinate="483.0"/>
+                            <Coordinates XCoordinate="105.0" YCoordinate="478.0"/>
+                            <Coordinates XCoordinate="154.0" YCoordinate="478.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1499099974846_226073_21596" From="_18_5_1_11940316_1499099623488_270558_21426" To="_18_5_1_11940316_1499099976988_969243_21609" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="1190.0" YCoordinate="483.0"/>
-                            <Coordinates XCoordinate="1225.0" YCoordinate="483.0"/>
-                            <Coordinates XCoordinate="1225.0" YCoordinate="441.0"/>
-                            <Coordinates XCoordinate="1260.0" YCoordinate="441.0"/>
+                            <Coordinates XCoordinate="1190.0" YCoordinate="478.0"/>
+                            <Coordinates XCoordinate="1260.0" YCoordinate="478.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>

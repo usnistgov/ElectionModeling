@@ -4,12 +4,12 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T17:01:00</Created>
-        <ModificationDate>17-06-30T16:57:11</ModificationDate>
+        <ModificationDate>17-07-06T09:04:22</ModificationDate>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>437</Version>
+        <Version>537</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -82,6 +82,9 @@
                             <Implementation>
 <No/>
                             </Implementation>
+                            <Performers>
+<Performer cbm:resourceType="ResourceRole"></Performer>
+                            </Performers>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500584517880_913943_38325" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
     <Coordinates XCoordinate="688.0" YCoordinate="266.0"/>

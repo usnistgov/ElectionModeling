@@ -4,12 +4,12 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T09:25:00</Created>
-        <ModificationDate>17-06-30T16:57:11</ModificationDate>
+        <ModificationDate>17-07-06T09:04:22</ModificationDate>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>437</Version>
+        <Version>537</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -272,8 +272,8 @@
             <DataStoreReferences>
                 <DataStoreReference DataStoreRef="_18_5_1_11940316_1500557397670_188099_33740" Id="_18_5_1_11940316_1500557397685_917310_33746" Name="Voter Registration Database">
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557154909_554485_33530" Height="57.0" Width="167.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="572.0" YCoordinate="273.0"/>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557154909_554485_33530" Height="57.0" Width="249.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="531.0" YCoordinate="273.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </DataStoreReference>
