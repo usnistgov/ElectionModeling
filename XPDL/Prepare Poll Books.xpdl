@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-12T10:41:00</Created>
-        <ModificationDate>17-07-06T09:04:22</ModificationDate>
+        <ModificationDate>17-07-08T16:17:44</ModificationDate>
         <Documentation>&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -23,7 +23,7 @@ Redundant with K.3.2.2?
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>537</Version>
+        <Version>568</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -50,7 +50,7 @@ Redundant with K.3.2.2?
     </Pools>
     <Associations>
         <Association Id="_18_5_1_11940316_1500476540690_236823_29415" Source="_18_5_1_11940316_1499870777957_715039_23768" Target="_18_5_1_11940316_1500476616319_313525_29421" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502024713536_662001_37567"/>
+            <Object Id="_18_5_1_11940316_1502223570644_408451_30828"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499870500277_548144_23526" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="250.0" YCoordinate="133.0"/>
@@ -84,7 +84,7 @@ Redundant with K.3.2.2?
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499870539885_677422_23595" IsForCompensation="false" Name="Extract list of eligible voters and other data from VRDB" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR4.2.2">
+                <Activity Id="_18_5_1_11940316_1499870539885_677422_23595" IsForCompensation="false" Name="Extract list of eligible voters and other data from the voter registration database." StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR4.2.2">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -92,7 +92,7 @@ Redundant with K.3.2.2?
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499870500277_548144_23526" Height="69.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499870500277_548144_23526" Height="95.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="112.0" YCoordinate="266.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
@@ -370,7 +370,7 @@ Redundant with K.3.2.2?
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499870500277_548144_23526" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="165.0" YCoordinate="367.0"/>
-                            <Coordinates XCoordinate="165.0" YCoordinate="335.0"/>
+                            <Coordinates XCoordinate="165.0" YCoordinate="361.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>

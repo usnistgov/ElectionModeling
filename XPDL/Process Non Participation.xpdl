@@ -4,12 +4,12 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-07T15:06:00</Created>
-        <ModificationDate>17-07-06T09:04:22</ModificationDate>
+        <ModificationDate>17-07-08T16:17:44</ModificationDate>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>537</Version>
+        <Version>568</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -23,7 +23,7 @@
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Process Non Participation" Id="_18_5_1_11940316_1499454413924_384694_23843" Height="326.0" Width="1845.0"/>
+        <Page Name="Process Non Participation" Id="_18_5_1_11940316_1499454413924_384694_23843" Height="327.0" Width="1845.0"/>
     </Pages>
     <DataStores>
         <DataStore Id="_18_5_1_11940316_1501771963631_453942_32151" Name="Voter Registration Database" IsUnlimited="false" cbm:numberedProperty="K2.K17.2.D 1"/>
@@ -31,7 +31,7 @@
     <Pools>
         <Pool Id="_18_5_1_11940316_1499454436751_434917_23857" Name="Election Authority" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1499454436751_434917_23857_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499454413924_384694_23843" Height="326.0" Width="1845.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499454413924_384694_23843" Height="327.0" Width="1845.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -304,8 +304,8 @@
                         <LoopMultiInstance MI_Ordering="Parallel" MI_FlowCondition="All"/>
                     </Loop>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499454413924_384694_23843" Height="319.0" Width="1253.0" BorderColor="#636363" FillColor="#F7DD99">
-                            <Coordinates XCoordinate="196.0" YCoordinate="3.0"/>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499454413924_384694_23843" Height="320.0" Width="1253.0" BorderColor="#636363" FillColor="#F7DD99">
+                            <Coordinates XCoordinate="196.0" YCoordinate="2.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1502119377158_903_31932" Name="Election Conversations" cbm:numberedProperty="C1">
+    <PackageHeader>
+        <XPDLVersion>2.2</XPDLVersion>
+        <Vendor>No Magic, Inc.</Vendor>
+        <Created>17-07-07T11:22:00</Created>
+        <ModificationDate>17-07-08T16:17:44</ModificationDate>
+        <Documentation>&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+Voter Records&amp;#160;Interchange&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</Documentation>
+        <LayoutInfo PixelsPerMillimeter="2.8346457"/>
+    </PackageHeader>
+    <RedefinableHeader>
+        <Author>jdziu_000</Author>
+        <Version>568</Version>
+        <Codepage>Cp1252</Codepage>
+        <Countrykey>US</Countrykey>
+    </RedefinableHeader>
+    <ConformanceClass GraphConformance="NON_BLOCKED" BPMNModelPortabilityConformance="SIMPLE"/>
+    <Participants>
+        <Participant Id="_18_5_1_11940316_1498999818037_96552_21933" Name="Election Jurisdiction" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
+            <ParticipantType Type="RESOURCE"/>
+        </Participant>
+        <Participant Id="_18_5_1_11940316_1501593348755_749813_40372" Name="Applicant" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
+            <ParticipantType Type="RESOURCE"/>
+        </Participant>
+        <Participant Id="_18_5_1_11940316_1498828652641_269229_23308" Name="Poll Worker" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
+            <ParticipantType Type="RESOURCE"/>
+        </Participant>
+        <Participant Id="_18_5_1_11940316_1498828643817_94789_23277" Name="Voter Registration Database" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
+            <ParticipantType Type="RESOURCE"/>
+        </Participant>
+        <Participant Id="_18_5_1_11940316_1498828669742_83683_23366" Name="Voter" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
+            <ParticipantType Type="RESOURCE"/>
+        </Participant>
+        <Participant Id="_18_5_1_11940316_1500064569910_373836_23754" Name="Resident" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
+            <ParticipantType Type="RESOURCE"/>
+        </Participant>
+    </Participants>
+    <Pages>
+        <Page Name="Election Conversations" Id="_18_5_1_11940316_1502119377214_326233_31942" Height="594.0" Width="795.0"/>
+    </Pages>
+    <Pools>
+        <Pool Id="_18_5_1_11940316_1502119430716_135277_31955" Name="Election Jurisdiction" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1502119430716_135277_31955_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502119377214_326233_31942" Height="124.0" Width="172.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="true">
+                    <Coordinates XCoordinate="357.0" YCoordinate="280.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+        <Pool Id="_18_5_1_11940316_1502119461339_232328_31988" Name="Applicant" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1502119461339_232328_31988_proc" Participant="_18_5_1_11940316_1501593348755_749813_40372" BoundaryVisible="true" MainPool="false" MultiInstance="false">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502119377214_326233_31942" Height="100.0" Width="112.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="true">
+                    <Coordinates XCoordinate="742.0" YCoordinate="294.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+        <Pool Id="_18_5_1_11940316_1502121031751_129911_32087" Name="Poll Worker" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1502121031751_129911_32087_proc" Participant="_18_5_1_11940316_1498828652641_269229_23308" BoundaryVisible="true" MainPool="false" MultiInstance="false">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502119377214_326233_31942" Height="100.0" Width="125.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="true">
+                    <Coordinates XCoordinate="84.0" YCoordinate="70.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+        <Pool Id="_18_5_1_11940316_1502121677578_927484_32138" Name="Voter Registration Database" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1502121677578_927484_32138_proc" Participant="_18_5_1_11940316_1498828643817_94789_23277" BoundaryVisible="true" MainPool="false" MultiInstance="false">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502119377214_326233_31942" Height="167.0" Width="217.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="true">
+                    <Coordinates XCoordinate="539.0" YCoordinate="490.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+        <Pool Id="_18_5_1_11940316_1502122222536_57096_32161" Name="Voter" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1502122222536_57096_32161_proc" Participant="_18_5_1_11940316_1498828669742_83683_23366" BoundaryVisible="true" MainPool="false" MultiInstance="false">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502119377214_326233_31942" Height="100.0" Width="92.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="true">
+                    <Coordinates XCoordinate="385.0" YCoordinate="63.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+        <Pool Id="_18_5_1_11940316_1502122587349_231158_32281" Name="Resident" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1502122587349_231158_32281_proc" Participant="_18_5_1_11940316_1500064569910_373836_23754" BoundaryVisible="true" MainPool="false" MultiInstance="false">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502119377214_326233_31942" Height="100.0" Width="110.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="true">
+                    <Coordinates XCoordinate="98.0" YCoordinate="343.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+    </Pools>
+    <Associations>
+        <Association Id="_18_5_1_11940316_1502120814557_686409_32044" Source="_18_5_1_11940316_1502119531558_72672_32004" Target="_18_5_1_11940316_1502120994126_427011_32076" AssociationDirection="None">
+            <Object Id="_18_5_1_11940316_1502223557904_951165_30822"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502119377214_326233_31942" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="658.0" YCoordinate="353.0"/>
+                    <Coordinates XCoordinate="756.0" YCoordinate="427.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+    </Associations>
+    <Artifacts>
+        <Artifact Id="_18_5_1_11940316_1502120994126_427011_32076" ArtifactType="Annotation" TextAnnotation="Voter Records Interchange ">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502119377214_326233_31942" Height="40.0" Width="151.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="707.0" YCoordinate="427.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+    </Artifacts>
+    <WorkflowProcesses>
+        <WorkflowProcess Id="_18_5_1_11940316_1502119377155_115190_31931" Name="Election Conversations" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+            <ProcessHeader>
+                <Created>17-07-07T11:22:00</Created>
+            </ProcessHeader>
+        </WorkflowProcess>
+        <WorkflowProcess Id="_18_5_1_11940316_1502119430716_135277_31955_proc" Name="Election Jurisdiction" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+            <ProcessHeader>
+                <Created>17-07-07T11:22:00</Created>
+            </ProcessHeader>
+        </WorkflowProcess>
+        <WorkflowProcess Id="_18_5_1_11940316_1502119461339_232328_31988_proc" Name="Applicant" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+            <ProcessHeader>
+                <Created>17-07-07T11:22:00</Created>
+            </ProcessHeader>
+        </WorkflowProcess>
+        <WorkflowProcess Id="_18_5_1_11940316_1502121031751_129911_32087_proc" Name="Poll Worker" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+            <ProcessHeader>
+                <Created>17-07-07T11:22:00</Created>
+            </ProcessHeader>
+        </WorkflowProcess>
+        <WorkflowProcess Id="_18_5_1_11940316_1502121677578_927484_32138_proc" Name="Voter Registration Database" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+            <ProcessHeader>
+                <Created>17-07-07T11:22:00</Created>
+            </ProcessHeader>
+        </WorkflowProcess>
+        <WorkflowProcess Id="_18_5_1_11940316_1502122222536_57096_32161_proc" Name="Voter" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+            <ProcessHeader>
+                <Created>17-07-07T11:22:00</Created>
+            </ProcessHeader>
+        </WorkflowProcess>
+        <WorkflowProcess Id="_18_5_1_11940316_1502122587349_231158_32281_proc" Name="Resident" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+            <ProcessHeader>
+                <Created>17-07-07T11:22:00</Created>
+            </ProcessHeader>
+        </WorkflowProcess>
+    </WorkflowProcesses>
+</Package>

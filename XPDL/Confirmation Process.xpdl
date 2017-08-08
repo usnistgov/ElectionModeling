@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-12T08:49:00</Created>
-        <ModificationDate>17-07-06T09:04:22</ModificationDate>
+        <ModificationDate>17-07-08T16:17:44</ModificationDate>
         <Documentation>&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -65,7 +65,7 @@ But they still can respond to the mailer, right?&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>537</Version>
+        <Version>568</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -116,18 +116,10 @@ But they still can respond to the mailer, right?&amp;#160;
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
-        <MessageFlow Id="_18_5_1_11940316_1501016539184_705592_25648" Name="" Source="_18_5_1_11940316_1501015994142_837851_25392" Target="_18_5_1_11940316_1501016512745_857750_25633">
-            <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFFFCC">
-                    <Coordinates XCoordinate="599.0" YCoordinate="108.0"/>
-                    <Coordinates XCoordinate="599.0" YCoordinate="476.0"/>
-                </ConnectorGraphicsInfo>
-            </ConnectorGraphicsInfos>
-        </MessageFlow>
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1501775333386_688847_32323" Source="_18_5_1_11940316_1501016189283_169439_25467" Target="_18_5_1_11940316_1501775432910_827202_32383" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502024692875_209618_37436"/>
+            <Object Id="_18_5_1_11940316_1502223541996_661135_30810"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="452.0" YCoordinate="282.0"/>
@@ -136,16 +128,16 @@ But they still can respond to the mailer, right?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1501783719575_395793_32702" Source="_18_5_1_11940316_1501019794587_475431_26003" Target="_18_5_1_11940316_1501783719698_55059_32703" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502024692877_359959_37437"/>
+            <Object Id="_18_5_1_11940316_1502223541997_730770_30811"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="511.0" YCoordinate="233.0"/>
-                    <Coordinates XCoordinate="437.0" YCoordinate="187.0"/>
+                    <Coordinates XCoordinate="511.0" YCoordinate="229.0"/>
+                    <Coordinates XCoordinate="439.0" YCoordinate="187.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1501792388497_64434_33068" Source="_18_5_1_11940316_1501775471340_894640_32389" Target="_18_5_1_11940316_1501792388610_502374_33069" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502024692878_575141_37438"/>
+            <Object Id="_18_5_1_11940316_1502223541998_982352_30812"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1102.0" YCoordinate="285.0"/>
@@ -299,8 +291,8 @@ But they still can respond to the mailer, right?&amp;#160;
                 </Activity>
                 <Activity Id="_18_5_1_11940316_1501016512745_857750_25633" Name="Qualifying Activity Performed" cbm:numberedProperty="K2.K19.9">
                     <Event>
-                        <IntermediateEvent Trigger="Message" Implementation="WebService" Interrupting="true">
-                            <TriggerResultMessage CatchThrow="CATCH"/>
+                        <IntermediateEvent Trigger="Signal" Implementation="WebService" Interrupting="true">
+                            <TriggerResultSignal CatchThrow="CATCH"/>
                         </IntermediateEvent>
                     </Event>
                     <NodeGraphicsInfos>

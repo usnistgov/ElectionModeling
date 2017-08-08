@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-05-22T10:16:00</Created>
-        <ModificationDate>17-07-06T09:04:22</ModificationDate>
+        <ModificationDate>17-07-08T16:17:44</ModificationDate>
         <Documentation>&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -23,7 +23,7 @@ Remove?&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>537</Version>
+        <Version>568</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -101,15 +101,15 @@ Remove?&amp;#160;
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="725.0" YCoordinate="506.0"/>
                     <Coordinates XCoordinate="725.0" YCoordinate="476.0"/>
-                    <Coordinates XCoordinate="938.0" YCoordinate="476.0"/>
-                    <Coordinates XCoordinate="938.0" YCoordinate="87.0"/>
+                    <Coordinates XCoordinate="935.0" YCoordinate="476.0"/>
+                    <Coordinates XCoordinate="935.0" YCoordinate="87.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1501593702731_593417_40409" Source="_18_5_1_11940316_1499878510730_714391_27670" Target="_18_5_1_11940316_1501593713207_827954_40418" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502024702825_820496_37516"/>
+            <Object Id="_18_5_1_11940316_1502223545684_874179_30814"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="934.0" YCoordinate="561.0"/>
@@ -138,7 +138,7 @@ Remove?&amp;#160;
                 <Created>17-05-22T10:16:00</Created>
             </ProcessHeader>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1498140984144_153882_20588" IsForCompensation="false" Name="Check for Completeness" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.11.2">
+                <Activity Id="_18_5_1_11940316_1498140984144_153882_20588" IsForCompensation="false" Name="Check for completeness" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.11.2">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -152,7 +152,7 @@ Remove?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1498141060496_67409_20631" Name="Receive Voter Registration" cbm:numberedProperty="PR3.11.1">
+                <Activity Id="_18_5_1_11940316_1498141060496_67409_20631" Name="Receive voter registration" cbm:numberedProperty="PR3.11.1">
                     <Event>
                         <StartEvent Trigger="Message" Implementation="Unspecified" Interrupting="true">
                             <TriggerResultMessage CatchThrow="CATCH"/>
@@ -164,7 +164,7 @@ Remove?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1498141294964_837126_20844" Name="Registration Complete?" cbm:numberedProperty="PR3.11.3">
+                <Activity Id="_18_5_1_11940316_1498141294964_837126_20844" Name="Registration complete?" cbm:numberedProperty="PR3.11.3">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -182,7 +182,7 @@ Remove?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1498141330144_310223_20863" IsForCompensation="false" Name="Clarify with Applicant" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.11.4">
+                <Activity Id="_18_5_1_11940316_1498141330144_310223_20863" IsForCompensation="false" Name="Clarify with applicant" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.11.4">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -196,21 +196,21 @@ Remove?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1498143294565_209099_20911" IsForCompensation="false" Name="Verify Applicant's Personal and Residence Information" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.11.5">
+                <Activity Id="_18_5_1_11940316_1498143294565_209099_20911" IsForCompensation="false" Name="Verify applicant's personal and residence information" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.11.5">
                     <Implementation>
                         <No/>
                     </Implementation>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>Verify that the applicant's personal and residence information meets the requirements to register to vote. For example, the date of birth may be verified to meet an eligibility requirement.</Documentation>
+                    <Documentation>Verify that the applicant's personal and residence information meets the requirements to register to vote. For example, the date of birth may be verified to meet an age based eligibility requirement.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="69.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="303.0" YCoordinate="497.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1498143349484_427240_20937" Name="Clarification Required?" cbm:numberedProperty="PR3.11.8">
+                <Activity Id="_18_5_1_11940316_1498143349484_427240_20937" Name="Clarification required?" cbm:numberedProperty="PR3.11.8">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -246,7 +246,7 @@ Remove?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1498143466603_509363_21001" IsForCompensation="false" Name="Notify Applicant of Ineligibility" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.11.11">
+                <Activity Id="_18_5_1_11940316_1498143466603_509363_21001" IsForCompensation="false" Name="Notify applicant of ineligibility" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.11.11">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -260,7 +260,7 @@ Remove?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1498143631579_442956_21054" IsForCompensation="false" Name="Create/update Record" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.11.10">
+                <Activity Id="_18_5_1_11940316_1498143631579_442956_21054" IsForCompensation="false" Name="Create/update record" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR3.11.10">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -294,7 +294,7 @@ Remove?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1498150769790_16521_21415" Name="Eligible to Register?" cbm:numberedProperty="PR3.11.9">
+                <Activity Id="_18_5_1_11940316_1498150769790_16521_21415" Name="Eligible to register?" cbm:numberedProperty="PR3.11.9">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>

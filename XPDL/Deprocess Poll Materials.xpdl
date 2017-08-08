@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-27T00:26:00</Created>
-        <ModificationDate>17-07-06T09:04:22</ModificationDate>
+        <ModificationDate>17-07-08T16:17:44</ModificationDate>
         <Documentation>&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -46,7 +46,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>537</Version>
+        <Version>568</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -118,7 +118,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1501698995624_651481_26671" Source="_18_5_1_11940316_1501086486644_93956_28437" Target="_18_5_1_11940316_1501699237286_846542_26680" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502024699568_181470_37490"/>
+            <Object Id="_18_5_1_11940316_1502223543362_639424_30813"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="848.0" YCoordinate="462.0"/>
@@ -149,7 +149,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                 <Created>17-06-27T00:26:00</Created>
             </ProcessHeader>
             <ActivitySets>
-                <ActivitySet Id="_18_5_1_11940316_1501086486356_964504_28172" Name="Deprocess Other Materials_as" AdHoc="true" AdHocOrdering="Parallel" TriggeredByEvent="false">
+                <ActivitySet Id="_18_5_1_11940316_1501086486356_964504_28172" Name="Deprocess Other Materials_as" AdHoc="true" AdHocOrdering="Parallel" AdHocCompletionCondition="Deprocessed applicable other materials" TriggeredByEvent="false">
                     <Activities>
                         <Activity Id="_18_5_1_11940316_1501086486643_281035_28427" IsForCompensation="false" Name="Locate Voting Machines" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="P2.4.3">
                             <Implementation>
@@ -257,7 +257,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                         </Activity>
                     </Activities>
                 </ActivitySet>
-                <ActivitySet Id="_18_5_1_11940316_1501086486358_622752_28173" Name="Deprocess Results Materials_as" AdHoc="true" AdHocOrdering="Parallel" TriggeredByEvent="false">
+                <ActivitySet Id="_18_5_1_11940316_1501086486358_622752_28173" Name="Deprocess Results Materials_as" AdHoc="true" AdHocOrdering="Parallel" AdHocCompletionCondition="Deprocessed applicable results materials" TriggeredByEvent="false">
                     <Activities>
                         <Activity Id="_18_5_1_11940316_1501086486643_296720_28433" IsForCompensation="false" Name="Check ballot boxes for leftover ballots" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="P2.1.1">
                             <Implementation>

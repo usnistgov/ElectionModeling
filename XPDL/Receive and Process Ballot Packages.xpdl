@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T15:08:00</Created>
-        <ModificationDate>17-07-06T09:04:22</ModificationDate>
+        <ModificationDate>17-07-08T16:17:44</ModificationDate>
         <Documentation>&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -18,12 +18,26 @@ Includes factors, such as timeliness, completeness, eligibility
     &lt;/p&gt;
 
 &lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+Compare this process to Process Incoming Vote-By-Mail Ballots&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
 &lt;/html&gt;</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>537</Version>
+        <Version>568</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -89,7 +103,7 @@ Includes factors, such as timeliness, completeness, eligibility
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1501694552366_816674_26098" Source="_18_5_1_11940316_1501694466300_131571_26040" Target="_18_5_1_11940316_1501694733534_501859_26105" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502024694092_580867_37439"/>
+            <Object Id="_18_5_1_11940316_1502223565463_340921_30827"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="215.0" YCoordinate="383.0"/>
@@ -103,6 +117,13 @@ Includes factors, such as timeliness, completeness, eligibility
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" Height="84.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
                     <Coordinates XCoordinate="182.0" YCoordinate="285.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_1_11940316_1502200591443_298608_39745" ArtifactType="Annotation" TextAnnotation="Compare this process to Process Incoming Vote-By-Mail Ballots ">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" Height="63.0" Width="203.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="651.0" YCoordinate="203.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
