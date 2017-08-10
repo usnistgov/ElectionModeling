@@ -3,15 +3,218 @@
     <PackageHeader>
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
-        <Created></Created>
-        <ModificationDate>17-07-08T16:17:44</ModificationDate>
+        <Created>17-07-09T15:29:00</Created>
+        <ModificationDate>17-07-10T14:19:47</ModificationDate>
+        <Documentation>&lt;html&gt;
+  &lt;head&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+      Jurisdiction specific?&amp;#160;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+      EAC sets minimum bar&amp;#160;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+Convert to business rule&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+May have additional watermarks&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>568</Version>
+        <Version>603</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
     <ConformanceClass GraphConformance="NON_BLOCKED" BPMNModelPortabilityConformance="SIMPLE"/>
-</Package>
+    <Participants>
+        <Participant Id="_18_5_1_11940316_1498999818037_96552_21933" Name="Election Jurisdiction" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
+            <ParticipantType Type="RESOURCE"/>
+        </Participant>
+        <Participant Id="_18_5_1_11940316_1502307706264_466844_34409" Name="Printer" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
+            <ParticipantType Type="RESOURCE"/>
+        </Participant>
+    </Participants>
+    <Pages>
+        <Page Name="Print Ballots" Id="_18_5_1_11940316_1502306960954_228942_33977" Height="605.0" Width="2356.0"/>
+    </Pages>
+    <Pools>
+        <Pool Id="_18_5_1_11940316_1502307722220_152528_34439" Name="Election Jurisdiction" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1502307722220_152528_34439_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502306960954_228942_33977" Height="416.0" Width="2356.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                    <Coordinates XCoordinate="0.0" YCoordinate="189.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+        <Pool Id="_18_5_1_11940316_1502307778933_170573_34454" Name="Printer" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1502307778933_170573_34454_proc" Participant="_18_5_1_11940316_1502307706264_466844_34409" BoundaryVisible="true" MainPool="false" MultiInstance="false">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502306960954_228942_33977" Height="101.0" Width="2356.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                    <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+    </Pools>
+    <MessageFlows>
+        <MessageFlow Id="_18_5_1_11940316_1502307824501_484613_34465" Name="" Source="_18_5_1_11940316_1502307498497_92913_34172" Target="_18_5_1_11940316_1502307778933_170573_34454">
+            <Message Id="_18_5_1_11940316_1502383474653_691214_37410" Name="Ballot Styles and Order"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502306960954_228942_33977" BorderColor="#424242" FillColor="#FFFFCC">
+                    <Coordinates XCoordinate="800.0" YCoordinate="343.0"/>
+                    <Coordinates XCoordinate="800.0" YCoordinate="101.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+        <MessageFlow Id="_18_5_1_11940316_1502307857754_262871_34502" Name="" Source="_18_5_1_11940316_1502307778933_170573_34454" Target="_18_5_1_11940316_1502307834405_88500_34493">
+            <Message Id="_18_5_1_11940316_1502383525093_787339_37428" Name="Ballot Proofs"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502306960954_228942_33977" BorderColor="#424242" FillColor="#FFFFCC">
+                    <Coordinates XCoordinate="1013.0" YCoordinate="101.0"/>
+                    <Coordinates XCoordinate="1013.0" YCoordinate="343.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+        <MessageFlow Id="_18_5_1_11940316_1502308294602_811336_34594" Name="" Source="_18_5_1_11940316_1502308238955_386885_34585" Target="_18_5_1_11940316_1502307778933_170573_34454">
+            <Message Id="_18_5_1_11940316_1502383589568_847009_37446" Name="Corrections"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502306960954_228942_33977" BorderColor="#424242" FillColor="#FFFFCC">
+                    <Coordinates XCoordinate="1106.0" YCoordinate="427.0"/>
+                    <Coordinates XCoordinate="1106.0" YCoordinate="101.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+        <MessageFlow Id="_18_5_1_11940316_1502308640682_640132_34775" Name="" Source="_18_5_1_11940316_1502308495099_702177_34697" Target="_18_5_1_11940316_1502307778933_170573_34454">
+            <Message Id="_18_5_1_11940316_1502384275956_79912_37469" Name="Print Request"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502306960954_228942_33977" BorderColor="#424242" FillColor="#FFFFCC">
+                    <Coordinates XCoordinate="1504.0" YCoordinate="343.0"/>
+                    <Coordinates XCoordinate="1504.0" YCoordinate="101.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+        <MessageFlow Id="_18_5_1_11940316_1502308645827_117010_34781" Name="" Source="_18_5_1_11940316_1502307778933_170573_34454" Target="_18_5_1_11940316_1502384526417_817350_37506">
+            <Message Id="_18_5_1_11940316_1502384605214_995178_37522" Name="Printed Ballots"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502306960954_228942_33977" BorderColor="#424242" FillColor="#FFFFCC">
+                    <Coordinates XCoordinate="1673.0" YCoordinate="101.0"/>
+                    <Coordinates XCoordinate="1673.0" YCoordinate="343.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+    </MessageFlows>
+    <Associations>
+        <Association Id="_18_5_1_11940316_1502307129639_757061_34078" Source="_18_5_1_11940316_1502307063897_332438_34060" Target="_18_5_1_11940316_1502307209770_153207_34089" AssociationDirection="None">
+            <Object Id="_18_5_1_11940316_1502389330123_1587_39754"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502306960954_228942_33977" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="249.0" YCoordinate="393.0"/>
+                    <Coordinates XCoordinate="225.0" YCoordinate="427.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_18_5_1_11940316_1502307209656_428029_34087" Source="_18_5_1_11940316_1502307063897_332438_34060" Target="_18_5_1_11940316_1502307209770_805237_34088" AssociationDirection="None">
+            <Object Id="_18_5_1_11940316_1502389330124_601091_39755"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502306960954_228942_33977" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="261.0" YCoordinate="336.0"/>
+                    <Coordinates XCoordinate="245.0" YCoordinate="285.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_18_5_1_11940316_1502307438478_943094_34146" Source="_18_5_1_11940316_1502307063897_332438_34060" Target="_18_5_1_11940316_1502307438586_763081_34147" AssociationDirection="None">
+            <Object Id="_18_5_1_11940316_1502389330124_784637_39756"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502306960954_228942_33977" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="298.0" YCoordinate="393.0"/>
+                    <Coordinates XCoordinate="331.0" YCoordinate="427.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_18_5_1_11940316_1502308565127_250517_34709" Source="_18_5_1_11940316_1502307834405_88500_34493" Target="_18_5_1_11940316_1502308577235_39551_34720" AssociationDirection="None">
+            <Object Id="_18_5_1_11940316_1502389330126_43827_39757"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502306960954_228942_33977" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="991.0" YCoordinate="343.0"/>
+                    <Coordinates XCoordinate="943.0" YCoordinate="271.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+    </Associations>
+    <Artifacts>
+        <Artifact Id="_18_5_1_11940316_1502307209770_153207_34089" ArtifactType="Annotation" TextAnnotation="Jurisdiction specific? ">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502306960954_228942_33977" Height="40.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="161.0" YCoordinate="427.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_1_11940316_1502307209770_805237_34088" ArtifactType="Annotation" TextAnnotation="EAC sets minimum bar ">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502306960954_228942_33977" Height="40.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="189.0" YCoordinate="245.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_1_11940316_1502307438586_763081_34147" ArtifactType="Annotation" TextAnnotation="Convert to business rule ">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502306960954_228942_33977" Height="40.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="301.0" YCoordinate="427.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_1_11940316_1502308577235_39551_34720" ArtifactType="Annotation" TextAnnotation="May have additional watermarks ">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502306960954_228942_33977" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="875.0" YCoordinate="217.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+    </Artifacts>
+    <WorkflowProcesses>
+        <WorkflowProcess Id="_18_5_1_11940316_1502306960902_430031_33967" Name="Print Ballots" AccessLevel="PUBLIC" ProcessType

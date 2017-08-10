@@ -4,12 +4,12 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-05-29T09:12:00</Created>
-        <ModificationDate>17-07-08T16:17:44</ModificationDate>
+        <ModificationDate>17-07-10T14:19:47</ModificationDate>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>568</Version>
+        <Version>603</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -23,7 +23,7 @@
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Precinct Voter" Id="_18_5_1_11940316_1498741936331_435444_21134" Height="669.0" Width="1109.0"/>
+        <Page Name="Precinct Voter" Id="_18_5_1_11940316_1498741936331_435444_21134" Height="633.0" Width="1109.0"/>
     </Pages>
     <DataStores>
         <DataStore Id="_18_5_1_11940316_1500472861307_215878_29138" Name="Voter Registration Database" IsUnlimited="false" cbm:numberedProperty="PR3.12.D 1"/>
@@ -31,15 +31,15 @@
     <Pools>
         <Pool Id="_18_5_1_11940316_1499865386913_174285_25054" Name="Election Authority" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1499865386913_174285_25054_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498741936331_435444_21134" Height="388.0" Width="1102.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498741936331_435444_21134" Height="374.0" Width="1109.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Pool>
         <Pool Id="_18_5_1_11940316_1500473081553_305499_29184" Name="Voter" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1500473081553_305499_29184_proc" Participant="_18_5_1_11940316_1498828669742_83683_23366" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498741936331_435444_21134" Height="200.0" Width="1109.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
-                    <Coordinates XCoordinate="0.0" YCoordinate="469.0"/>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498741936331_435444_21134" Height="122.0" Width="1109.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                    <Coordinates XCoordinate="0.0" YCoordinate="511.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Pool>
@@ -50,7 +50,7 @@
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498741936331_435444_21134" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="781.0" YCoordinate="285.0"/>
-                    <Coordinates XCoordinate="781.0" YCoordinate="469.0"/>
+                    <Coordinates XCoordinate="781.0" YCoordinate="511.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
@@ -58,7 +58,7 @@
             <Message Id="_18_5_1_11940316_1500475026075_793153_29232" Name="Response"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498741936331_435444_21134" BorderColor="#424242" FillColor="#FFFFCC">
-                    <Coordinates XCoordinate="872.0" YCoordinate="469.0"/>
+                    <Coordinates XCoordinate="872.0" YCoordinate="511.0"/>
                     <Coordinates XCoordinate="872.0" YCoordinate="285.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>

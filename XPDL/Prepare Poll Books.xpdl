@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-12T10:41:00</Created>
-        <ModificationDate>17-07-08T16:17:44</ModificationDate>
+        <ModificationDate>17-07-10T14:19:47</ModificationDate>
         <Documentation>&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -23,7 +23,7 @@ Redundant with K.3.2.2?
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>568</Version>
+        <Version>603</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -34,7 +34,7 @@ Redundant with K.3.2.2?
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Prepare Poll Books" Id="_18_5_1_11940316_1499870500277_548144_23526" Height="421.0" Width="1011.0"/>
+        <Page Name="Prepare Poll Books" Id="_18_5_1_11940316_1499870500277_548144_23526" Height="449.0" Width="1011.0"/>
     </Pages>
     <DataStores>
         <DataStore Id="_18_5_1_11940316_1500476453742_710032_29374" Name="Voter Registration Database" IsUnlimited="false" cbm:numberedProperty="PR4.2.D 1"/>
@@ -42,7 +42,7 @@ Redundant with K.3.2.2?
     <Pools>
         <Pool Id="_18_5_1_11940316_1499870507138_124163_23538" Name="Election Authority" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1499870507138_124163_23538_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499870500277_548144_23526" Height="421.0" Width="1011.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499870500277_548144_23526" Height="449.0" Width="1011.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -50,7 +50,7 @@ Redundant with K.3.2.2?
     </Pools>
     <Associations>
         <Association Id="_18_5_1_11940316_1500476540690_236823_29415" Source="_18_5_1_11940316_1499870777957_715039_23768" Target="_18_5_1_11940316_1500476616319_313525_29421" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502223570644_408451_30828"/>
+            <Object Id="_18_5_1_11940316_1502389324144_995899_39753"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499870500277_548144_23526" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="250.0" YCoordinate="133.0"/>
@@ -235,8 +235,8 @@ Redundant with K.3.2.2?
             <DataStoreReferences>
                 <DataStoreReference DataStoreRef="_18_5_1_11940316_1500476453742_710032_29374" Id="_18_5_1_11940316_1500476453796_368889_29379" Name="Voter Registration Database">
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499870500277_548144_23526" Height="57.0" Width="249.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="48.0" YCoordinate="364.0"/>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499870500277_548144_23526" Height="57.0" Width="167.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="91.0" YCoordinate="385.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </DataStoreReference>
@@ -369,8 +369,8 @@ Redundant with K.3.2.2?
                 <DataAssociation Id="_18_5_1_11940316_1500476466724_108144_29400" Name="" From="_18_5_1_11940316_1500476453796_368889_29379" To="_18_5_1_11940316_1499870539885_677422_23595">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499870500277_548144_23526" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="165.0" YCoordinate="367.0"/>
-                            <Coordinates XCoordinate="165.0" YCoordinate="361.0"/>
+                            <Coordinates XCoordinate="175.0" YCoordinate="388.0"/>
+                            <Coordinates XCoordinate="175.0" YCoordinate="361.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>
