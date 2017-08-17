@@ -4,12 +4,13 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-07-02T15:36:00</Created>
-        <ModificationDate>17-07-10T14:19:47</ModificationDate>
+        <ModificationDate>17-07-17T08:48:28</ModificationDate>
+        <Documentation>Determine if there are differences in the general state of the equipment between when it left the custody of the election jurisdiction and when it returned.</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>603</Version>
+        <Version>712</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -33,7 +34,7 @@
     </Pools>
     <Associations>
         <Association Id="_18_5_1_11940316_1501702915012_402794_31124" Source="_18_5_1_11940316_1501702640515_804688_31005" Target="_18_5_1_11940316_1501703088427_848801_31167" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502389333498_38387_39759"/>
+            <Object Id="_18_5_1_11940316_1502974237679_489313_28308"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501702575046_448177_30957" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="819.0" YCoordinate="166.0"/>
@@ -42,7 +43,7 @@
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1501703088219_405071_31166" Source="_18_5_1_11940316_1501702640515_804688_31005" Target="_18_5_1_11940316_1501703088427_212483_31168" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502389333499_425142_39760"/>
+            <Object Id="_18_5_1_11940316_1502974237680_390078_28309"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501702575046_448177_30957" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="866.0" YCoordinate="166.0"/>
@@ -292,6 +293,7 @@
                             <Performers>
 <Performer cbm:resourceType="ResourceRole"></Performer>
                             </Performers>
+                            <Documentation>Attempt to locate the missing components. If the components cannot be found, spares may be used.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501702575046_448177_30957" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
     <Coordinates XCoordinate="791.0" YCoordinate="285.0"/>
@@ -523,7 +525,7 @@ May not always occur&amp;#160;
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501702575046_448177_30957" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFFFFF">
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501702575046_448177_30957" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
                             <Coordinates XCoordinate="1393.0" YCoordinate="217.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>

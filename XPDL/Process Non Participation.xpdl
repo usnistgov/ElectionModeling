@@ -4,12 +4,13 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-07T15:06:00</Created>
-        <ModificationDate>17-07-10T14:19:47</ModificationDate>
+        <ModificationDate>17-07-17T08:48:28</ModificationDate>
+        <Documentation>For each eligible voter: Determine if a voter’s lack of participation in the electoral process should begin a list maintenance process.</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>603</Version>
+        <Version>712</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -23,7 +24,7 @@
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Process Non Participation" Id="_18_5_1_11940316_1499454413924_384694_23843" Height="327.0" Width="1845.0"/>
+        <Page Name="Process Non Participation" Id="_18_5_1_11940316_1499454413924_384694_23843" Height="330.0" Width="1635.0"/>
     </Pages>
     <DataStores>
         <DataStore Id="_18_5_1_11940316_1501771963631_453942_32151" Name="Voter Registration Database" IsUnlimited="false" cbm:numberedProperty="K2.K17.2.D 1"/>
@@ -31,7 +32,7 @@
     <Pools>
         <Pool Id="_18_5_1_11940316_1499454436751_434917_23857" Name="Election Authority" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1499454436751_434917_23857_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499454413924_384694_23843" Height="327.0" Width="1845.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499454413924_384694_23843" Height="330.0" Width="1635.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -54,7 +55,7 @@
                 <Created>17-06-07T15:06:00</Created>
             </ProcessHeader>
             <ActivitySets>
-                <ActivitySet Id="_18_5_1_11940316_1499863008396_289070_24448" Name="Process Non Participation_as" AdHoc="false" TriggeredByEvent="false">
+                <ActivitySet Id="_18_5_1_11940316_1499863008396_289070_24448" Name="Process Voter for Non Participation_as" AdHoc="false" TriggeredByEvent="false">
                     <Activities>
                         <Activity Id="_18_5_1_11940316_1499863055780_101530_24525" Name="" cbm:numberedProperty="K2.K17.2.1">
                             <Event>
@@ -294,7 +295,7 @@
                 </ActivitySet>
             </ActivitySets>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1499863010715_216417_24475" IsForCompensation="false" Name="Process Non Participation" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="K2.K17.2">
+                <Activity Id="_18_5_1_11940316_1499863010715_216417_24475" IsForCompensation="false" Name="Process Voter for Non Participation" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="K2.K17.2">
                     <BlockActivity ActivitySetId="_18_5_1_11940316_1499863008396_289070_24448" View="EXPANDED"/>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
@@ -304,7 +305,7 @@
                         <LoopMultiInstance MI_Ordering="Parallel" MI_FlowCondition="All"/>
                     </Loop>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499454413924_384694_23843" Height="320.0" Width="1253.0" BorderColor="#636363" FillColor="#F7DD99">
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499454413924_384694_23843" Height="323.0" Width="1253.0" BorderColor="#636363" FillColor="#F7DD99">
                             <Coordinates XCoordinate="196.0" YCoordinate="2.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
@@ -315,7 +316,7 @@
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499454413924_384694_23843" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="1764.0" YCoordinate="161.0"/>
+                            <Coordinates XCoordinate="1526.0" YCoordinate="161.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -335,7 +336,7 @@
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499454413924_384694_23843" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="1449.0" YCoordinate="173.0"/>
-                            <Coordinates XCoordinate="1764.0" YCoordinate="173.0"/>
+                            <Coordinates XCoordinate="1526.0" YCoordinate="173.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -343,4 +344,15 @@
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499454413924_384694_23843" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="115.0" YCoordinate="157.0"/>
-                            <Coordinates XCoordinate="196.0" YCoordinate
+                            <Coordinates XCoordinate="196.0" YCoordinate="157.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+            </Transitions>
+            <DataAssociations>
+                <DataAssociation Id="_18_5_1_11940316_1501772581708_672960_32253" Name="" From="_18_5_1_11940316_1501772563106_19594_32227" To="_18_5_1_11940316_1499863010715_216417_24475">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499454413924_384694_23843" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="118.0" YCoordinate="246.0"/>
+                            <Coordinates XCoordinate="196.0" YCoordinate="246.0"/>
+                        

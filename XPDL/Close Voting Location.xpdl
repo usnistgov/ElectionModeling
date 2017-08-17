@@ -4,8 +4,9 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T09:09:00</Created>
-        <ModificationDate>17-07-10T14:19:47</ModificationDate>
-        <Documentation>&lt;html&gt;
+        <ModificationDate>17-07-17T08:48:28</ModificationDate>
+        <Documentation>Close the voting location on election day.
+&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
 			p {padding:0px; margin:0px;}
@@ -46,12 +47,26 @@ Can court orders occur after closing?&amp;#160;
     &lt;/p&gt;
 
 &lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+Convert to Ad-Hoc Subprocess?&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
 &lt;/html&gt;</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>603</Version>
+        <Version>712</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -80,7 +95,7 @@ Can court orders occur after closing?&amp;#160;
         </Pool>
         <Pool Id="_18_5_1_11940316_1500556340672_958002_33213" Name="Voter" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1500556340672_958002_33213_proc" Participant="_18_5_1_11940316_1498828669742_83683_23366" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" Height="116.0" Width="1159.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" Height="116.0" Width="1501.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -88,7 +103,7 @@ Can court orders occur after closing?&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_1_11940316_1500556862927_970734_33488" Source="_18_5_1_11940316_1500556823981_933998_33461" Target="_18_5_1_11940316_1500556884609_795504_33496" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502389300251_680654_39740"/>
+            <Object Id="_18_5_1_11940316_1502974213756_412416_28284"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1293.0" YCoordinate="308.0"/>
@@ -97,7 +112,7 @@ Can court orders occur after closing?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1500556909001_225222_33503" Source="_18_5_1_11940316_1500556424995_843263_33280" Target="_18_5_1_11940316_1500556909112_539588_33504" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502389300252_979410_39741"/>
+            <Object Id="_18_5_1_11940316_1502974213757_334778_28285"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="350.0" YCoordinate="307.0"/>
@@ -106,11 +121,20 @@ Can court orders occur after closing?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1501683856616_814059_34151" Source="_18_5_1_11940316_1500556280735_962343_33140" Target="_18_5_1_11940316_1501683856706_50994_34152" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502389300253_720516_39742"/>
+            <Object Id="_18_5_1_11940316_1502974213757_899566_28286"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="82.0" YCoordinate="336.0"/>
                     <Coordinates XCoordinate="101.0" YCoordinate="306.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_18_5_1_11940316_1502893063777_422173_31441" Source="_18_5_1_11940316_1500556726944_853427_33366" Target="_18_5_1_11940316_1502893063940_324368_31442" AssociationDirection="None">
+            <Object Id="_18_5_1_11940316_1502974213758_422399_28287"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="1006.0" YCoordinate="401.0"/>
+                    <Coordinates XCoordinate="1012.0" YCoordinate="413.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
@@ -134,6 +158,13 @@ Can court orders occur after closing?&amp;#160;
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
                     <Coordinates XCoordinate="63.0" YCoordinate="252.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_1_11940316_1502893063940_324368_31442" ArtifactType="Annotation" TextAnnotation="Convert to Ad-Hoc Subprocess? ">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="973.0" YCoordinate="413.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
@@ -164,6 +195,7 @@ Can court orders occur after closing?&amp;#160;
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>Notify everyone at the voting location that polls will be closing.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="147.0" YCoordinate="323.0"/>
@@ -177,6 +209,7 @@ Can court orders occur after closing?&amp;#160;
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>Reconcile the number of voters in the poll book  with the number of ballots cast.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" Height="69.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="490.0" YCoordinate="314.0"/>
@@ -194,6 +227,7 @@ Can court orders occur after closing?&amp;#160;
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>Anyone in line at the announcement of closing may have the opportunity to vote.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" Height="82.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="315.0" YCoordinate="307.0"/>
@@ -225,6 +259,7 @@ Can court orders occur after closing?&amp;#160;
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>Tally the votes cast at the polling location.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="756.0" YCoordinate="322.0"/>
@@ -251,6 +286,7 @@ Can court orders occur after closing?&amp;#160;
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>Some break down may be done after Election Day. However, break down that may occur on Election Day includes the shutdown and sealing of equipment, removal of forms and envelops, and other activities the return the voting location to its prior state.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" Height="76.0" Width="119.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="1078.0" YCoordinate="310.0"/>
@@ -264,6 +300,7 @@ Can court orders occur after closing?&amp;#160;
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>Deliver ballots and vote summaries to the election jurisdiction's office or another agreed upon location, observing chain of custody procedures.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" Height="76.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="1225.0" YCoordinate="308.0"/>

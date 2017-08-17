@@ -4,12 +4,13 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T14:37:00</Created>
-        <ModificationDate>17-07-10T14:19:47</ModificationDate>
+        <ModificationDate>17-07-17T08:48:28</ModificationDate>
+        <Documentation>For each remote voter: Send a ballot to the voter electronically (e.g. via email, fax or online).</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>603</Version>
+        <Version>712</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -76,7 +77,7 @@
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1500576087477_172476_36085" Source="_18_5_1_11940316_1500576069025_284740_36075" Target="_18_5_1_11940316_1500576094786_692801_36096" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502389331363_367221_39758"/>
+            <Object Id="_18_5_1_11940316_1502974236085_495231_28307"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500575835084_956232_35824" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="567.0" YCoordinate="370.0"/>
@@ -92,6 +93,15 @@
                     <Coordinates XCoordinate="448.0" YCoordinate="328.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_1_11940316_1502901700337_117415_31719" Name="Remote Voter List" ArtifactType="DataObject">
+            <DataObject Id="_18_5_1_11940316_1502901700368_99954_31723" Name="Remote Voter List" cbm:realDataId="_18_5_1_11940316_1502901700337_117415_31719" cbm:numberedProperty="E2.3.D 1">
+                <NodeGraphicsInfos>
+                    <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500575835084_956232_35824" Height="64.0" Width="126.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                        <Coordinates XCoordinate="49.0" YCoordinate="609.0"/>
+                    </NodeGraphicsInfo>
+                </NodeGraphicsInfos>
+            </DataObject>
         </Artifact>
     </Artifacts>
     <WorkflowProcesses>
@@ -110,7 +120,7 @@
                 <Created>17-06-20T14:37:00</Created>
             </ProcessHeader>
             <ActivitySets>
-                <ActivitySet Id="_18_5_1_11940316_1500575941276_465614_35906" Name="_as" AdHoc="false" TriggeredByEvent="false">
+                <ActivitySet Id="_18_5_1_11940316_1500575941276_465614_35906" Name="Send Ballot_as" AdHoc="false" TriggeredByEvent="false">
                     <Activities>
                         <Activity Id="_18_5_1_11940316_1500575989797_65472_35951" Name="" cbm:numberedProperty="E2.3.2.1">
                             <Event>
@@ -129,6 +139,7 @@
                             <Performers>
 <Performer cbm:resourceType="ResourceRole"></Performer>
                             </Performers>
+                            <Documentation>Prepare the electronic ballot package to be delivered. The exact details will vary based on the delivery method.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500575835084_956232_35824" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
     <Coordinates XCoordinate="315.0" YCoordinate="449.0"/>
@@ -163,6 +174,7 @@
                             <Performers>
 <Performer cbm:resourceType="ResourceRole"></Performer>
                             </Performers>
+                            <Documentation>Send the ballot package via telephonic facsimile.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500575835084_956232_35824" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
     <Coordinates XCoordinate="567.0" YCoordinate="452.0"/>
@@ -176,6 +188,7 @@
                             <Performers>
 <Performer cbm:resourceType="ResourceRole"></Performer>
                             </Performers>
+                            <Documentation>Make the ballot package available via an online delivery system (e.g. a web application).</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500575835084_956232_35824" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
     <Coordinates XCoordinate="567.0" YCoordinate="364.0"/>
@@ -191,6 +204,7 @@
                             <Performers>
 <Performer cbm:resourceType="ResourceRole"></Performer>
                             </Performers>
+                            <Documentation>Send the ballot package via networked electronic mail.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500575835084_956232_35824" Height="50.0" Width="127.0" BorderColor="#636363" FillColor="#FEEFA5">
     <Coordinates XCoordinate="564.0" YCoordinate="581.0"/>
@@ -206,6 +220,7 @@
                             <Performers>
 <Performer cbm:resourceType="ResourceRole"></Performer>
                             </Performers>
+                            <Documentation>Provide a notification to the voter that their ballot package is available via the online delivery system.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500575835084_956232_35824" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
     <Coordinates XCoordinate="770.0" YCoordinate="361.0"/>
@@ -219,6 +234,7 @@
                             <Performers>
 <Performer cbm:resourceType="ResourceRole"></Performer>
                             </Performers>
+                            <Documentation>If the ballot was returned undeliverable, note the fact on the voter's record.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500575835084_956232_35824" Height="71.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
     <Coordinates XCoordinate="882.0" YCoordinate="543.0"/>
@@ -252,6 +268,7 @@
                             <Performers>
 <Performer cbm:resourceType="ResourceRole"></Performer>
                             </Performers>
+                            <Documentation>Add voter to list maintenance report for purposes of confirming their current address.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500575835084_956232_35824" Height="71.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
     <Coordinates XCoordinate="1029.0" YCoordinate="543.0"/>
@@ -275,6 +292,7 @@
                             <Performers>
 <Performer cbm:resourceType="ResourceRole"></Performer>
                             </Performers>
+                            <Documentation>Note when the ballot package was transmitted or otherwise made available to the voter.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500575835084_956232_35824" Height="57.0" Width="127.0" BorderColor="#636363" FillColor="#FEEFA5">
     <Coordinates XCoordinate="875.0" YCoordinate="455.0"/>
@@ -436,16 +454,17 @@
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500575835084_956232_35824" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="70.0" YCoordinate="466.0"/>
+                            <Coordinates XCoordinate="91.0" YCoordinate="469.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500575941311_746777_35918" IsForCompensation="false" Name="" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="E2.3.2">
+                <Activity Id="_18_5_1_11940316_1500575941311_746777_35918" IsForCompensation="false" Name="Send Ballot" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="E2.3.2">
                     <BlockActivity ActivitySetId="_18_5_1_11940316_1500575941276_465614_35906" View="EXPANDED"/>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>&lt;html&gt;
+                    <Documentation>Send a ballot to the voter electronically (e.g. via email, fax or online).
+&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
 			p {padding:0px; margin:0px;}
@@ -475,13 +494,23 @@ Needs a better name&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
+                <Activity Id="_18_5_1_11940316_1502459810942_436469_31065" Name="Request After Voting Period Begins" cbm:numberedProperty="E2.3.4">
+                    <Event>
+                        <StartEvent Trigger="Conditional" Implementation="Unspecified" Interrupting="true"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500575835084_956232_35824" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="91.0" YCoordinate="371.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
             </Activities>
             <Transitions>
                 <Transition Id="_18_5_1_11940316_1500575962374_596825_35941" From="_18_5_1_11940316_1500575904450_288419_35889" To="_18_5_1_11940316_1500575941311_746777_35918" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500575835084_956232_35824" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="94.0" YCoordinate="478.0"/>
-                            <Coordinates XCoordinate="196.0" YCoordinate="478.0"/>
+                            <Coordinates XCoordinate="115.0" YCoordinate="481.0"/>
+                            <Coordinates XCoordinate="196.0" YCoordinate="481.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -493,7 +522,25 @@ Needs a better name&amp;#160;
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
+                <Transition Id="_18_5_1_11940316_1502459822972_206885_31076" From="_18_5_1_11940316_1502459810942_436469_31065" To="_18_5_1_11940316_1500575941311_746777_35918" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500575835084_956232_35824" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="115.0" YCoordinate="383.0"/>
+                            <Coordinates XCoordinate="196.0" YCoordinate="383.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
             </Transitions>
+            <DataAssociations>
+                <DataAssociation Id="_18_5_1_11940316_1502901705492_586645_31743" Name="" From="_18_5_1_11940316_1502901700368_99954_31723" To="_18_5_1_11940316_1500575941311_746777_35918">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500575835084_956232_35824" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="127.0" YCoordinate="634.0"/>
+                            <Coordinates XCoordinate="196.0" YCoordinate="634.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+            </DataAssociations>
         </WorkflowProcess>
     </WorkflowProcesses>
 </Package>

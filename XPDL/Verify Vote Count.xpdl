@@ -4,12 +4,26 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T16:44:00</Created>
-        <ModificationDate>17-07-10T14:19:47</ModificationDate>
+        <ModificationDate>17-07-17T08:48:28</ModificationDate>
+        <Documentation>&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+Is this paper vs. electronic? (DRE)&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>603</Version>
+        <Version>712</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -31,7 +45,32 @@
             </NodeGraphicsInfos>
         </Pool>
     </Pools>
+    <Associations>
+        <Association Id="_18_5_1_11940316_1502906351492_526521_31866" Source="_18_5_1_11940316_1500583571012_872422_37849" Target="_18_5_1_11940316_1502906365969_449719_31873" AssociationDirection="None">
+            <Object Id="_18_5_1_11940316_1502974233504_503246_28301"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="311.0" YCoordinate="167.0"/>
+                    <Coordinates XCoordinate="244.0" YCoordinate="96.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+    </Associations>
+    <Artifacts>
+        <Artifact Id="_18_5_1_11940316_1502906365969_449719_31873" ArtifactType="Annotation" TextAnnotation="Is this paper vs. electronic? (DRE) ">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="168.0" YCoordinate="42.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+    </Artifacts>
     <WorkflowProcesses>
+        <WorkflowProcess Id="_18_5_1_11940316_1500583444687_305356_37754" Name="Verify Vote Count" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+            <ProcessHeader>
+                <Created>17-06-20T16:44:00</Created>
+            </ProcessHeader>
+        </WorkflowProcess>
         <WorkflowProcess Id="_18_5_1_11940316_1500583453295_806471_37772_proc" Name="Election Authority" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
             <ProcessHeader>
                 <Created>17-06-20T16:44:00</Created>
@@ -54,6 +93,7 @@
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>The units to be audited, may be set by rule. They may include precincts, polling locations or machines, among others.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="145.0" YCoordinate="145.0"/>
@@ -200,10 +240,9 @@
                 <Transition Id="_18_5_1_11940316_1500583571012_322475_37850" From="_18_5_1_11940316_1500583571012_872422_37849" To="_18_5_1_11940316_1500583572999_988579_37868" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="334.0" YCoordinate="160.0"/>
-                            <Coordinates XCoordinate="384.0" YCoordinate="160.0"/>
-                            <Coordinates XCoordinate="384.0" YCoordinate="93.0"/>
-                            <Coordinates XCoordinate="425.0" YCoordinate="93.0"/>
+                            <Coordinates XCoordinate="326.0" YCoordinate="152.0"/>
+                            <Coordinates XCoordinate="326.0" YCoordinate="95.0"/>
+                            <Coordinates XCoordinate="425.0" YCoordinate="95.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>

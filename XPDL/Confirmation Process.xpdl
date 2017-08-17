@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-12T08:49:00</Created>
-        <ModificationDate>17-07-10T14:19:47</ModificationDate>
+        <ModificationDate>17-07-17T08:48:28</ModificationDate>
         <Documentation>&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -60,12 +60,26 @@ But they still can respond to the mailer, right?&amp;#160;
     &lt;/p&gt;
 
 &lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+If the form is valid. Keep?&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
 &lt;/html&gt;</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>603</Version>
+        <Version>712</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -119,7 +133,7 @@ But they still can respond to the mailer, right?&amp;#160;
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1501775333386_688847_32323" Source="_18_5_1_11940316_1501016189283_169439_25467" Target="_18_5_1_11940316_1501775432910_827202_32383" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502389294114_575561_39735"/>
+            <Object Id="_18_5_1_11940316_1502974207885_582340_28276"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="452.0" YCoordinate="282.0"/>
@@ -128,7 +142,7 @@ But they still can respond to the mailer, right?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1501783719575_395793_32702" Source="_18_5_1_11940316_1501019794587_475431_26003" Target="_18_5_1_11940316_1501783719698_55059_32703" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502389294115_601665_39736"/>
+            <Object Id="_18_5_1_11940316_1502974207886_67757_28277"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="511.0" YCoordinate="233.0"/>
@@ -137,11 +151,20 @@ But they still can respond to the mailer, right?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1501792388497_64434_33068" Source="_18_5_1_11940316_1501775471340_894640_32389" Target="_18_5_1_11940316_1501792388610_502374_33069" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502389294116_216370_39737"/>
+            <Object Id="_18_5_1_11940316_1502974207886_435188_28278"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1102.0" YCoordinate="285.0"/>
                     <Coordinates XCoordinate="924.0" YCoordinate="267.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_18_5_1_11940316_1502834084974_841199_41846" Source="_18_5_1_11940316_1501016337650_307351_25535" Target="_18_5_1_11940316_1502834085084_427116_41847" AssociationDirection="None">
+            <Object Id="_18_5_1_11940316_1502974207887_419878_28279"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="682.0" YCoordinate="407.0"/>
+                    <Coordinates XCoordinate="671.0" YCoordinate="413.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
@@ -169,6 +192,13 @@ But they still can respond to the mailer, right?&amp;#160;
             </NodeGraphicsInfos>
         </Artifact>
         <Artifact Id="_18_5_1_11940316_1501850848177_738406_26063" ArtifactType="Annotation" TextAnnotation="But they still can respond to the mailer, right? "/>
+        <Artifact Id="_18_5_1_11940316_1502834085084_427116_41847" ArtifactType="Annotation" TextAnnotation="If the form is valid. Keep? ">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" Height="40.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="581.0" YCoordinate="413.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
     </Artifacts>
     <WorkflowProcesses>
         <WorkflowProcess Id="_18_5_1_11940316_1499863743610_53488_24805" Name="Confirmation Process" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
@@ -377,6 +407,7 @@ But they still can respond to the mailer, right?&amp;#160;
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>Remove the voter from a suspended status or otherwise indicate the voter’s recent activity.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="672.0" YCoordinate="462.0"/>

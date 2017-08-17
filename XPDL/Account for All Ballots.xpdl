@@ -4,26 +4,13 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T16:52:00</Created>
-        <ModificationDate>17-07-10T14:19:47</ModificationDate>
-        <Documentation>&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-Shouldn't you always check the exception log? &amp;#160;
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;</Documentation>
+        <ModificationDate>17-07-17T08:48:28</ModificationDate>
+        <Documentation>Ensure that the total ballots cast matches that total number of voters and any exceptions to this are investigated and accounted for.</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>603</Version>
+        <Version>712</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -34,37 +21,17 @@ Shouldn't you always check the exception log? &amp;#160;
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Account for All Ballots" Id="_18_5_1_11940316_1500583939958_380699_38108" Height="620.0" Width="1040.0"/>
+        <Page Name="Account for All Ballots" Id="_18_5_1_11940316_1500583939958_380699_38108" Height="325.0" Width="787.0"/>
     </Pages>
     <Pools>
         <Pool Id="_18_5_1_11940316_1500584046375_927155_38120" Name="Election Authority" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1500584046375_927155_38120_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583939958_380699_38108" Height="620.0" Width="1040.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583939958_380699_38108" Height="325.0" Width="787.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Pool>
     </Pools>
-    <Associations>
-        <Association Id="_18_5_1_11940316_1500584329281_690285_38250" Source="_18_5_1_11940316_1500584383606_359157_38261" Target="_18_5_1_11940316_1500584383606_603861_38262" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502389304389_603488_39743"/>
-            <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583939958_380699_38108" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="322.0" YCoordinate="163.0"/>
-                    <Coordinates XCoordinate="240.0" YCoordinate="131.0"/>
-                </ConnectorGraphicsInfo>
-            </ConnectorGraphicsInfos>
-        </Association>
-    </Associations>
-    <Artifacts>
-        <Artifact Id="_18_5_1_11940316_1500584383606_603861_38262" ArtifactType="Annotation" TextAnnotation="Shouldn't you always check the exception log?  ">
-            <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583939958_380699_38108" Height="69.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="140.0" YCoordinate="77.0"/>
-                </NodeGraphicsInfo>
-            </NodeGraphicsInfos>
-        </Artifact>
-    </Artifacts>
     <WorkflowProcesses>
         <WorkflowProcess Id="_18_5_1_11940316_1500584046375_927155_38120_proc" Name="Election Authority" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
             <ProcessHeader>
@@ -77,7 +44,7 @@ Shouldn't you always check the exception log? &amp;#160;
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583939958_380699_38108" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="77.0" YCoordinate="298.0"/>
+                            <Coordinates XCoordinate="56.0" YCoordinate="99.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -88,27 +55,10 @@ Shouldn't you always check the exception log? &amp;#160;
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>Compare the number of voters in the poll book  with the number of ballots cast.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583939958_380699_38108" Height="69.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="168.0" YCoordinate="276.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_1_11940316_1500584134962_638842_38198" Name="Matches?" cbm:numberedProperty="PO1.1.3">
-                    <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
-                    <TransitionRestrictions>
-                        <TransitionRestriction>
-                            <Split Type="Exclusive" ExclusiveType="Data">
-<TransitionRefs>
-    <TransitionRef Id="_18_5_1_11940316_1500584134962_423625_38199"/>
-    <TransitionRef Id="_18_5_1_11940316_1500584290697_244219_38224"/>
-</TransitionRefs>
-                            </Split>
-                        </TransitionRestriction>
-                    </TransitionRestrictions>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583939958_380699_38108" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
-                            <Coordinates XCoordinate="364.0" YCoordinate="287.0"/>
+                            <Coordinates XCoordinate="147.0" YCoordinate="77.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -118,7 +68,7 @@ Shouldn't you always check the exception log? &amp;#160;
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583939958_380699_38108" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="511.0" YCoordinate="298.0"/>
+                            <Coordinates XCoordinate="644.0" YCoordinate="105.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -129,9 +79,10 @@ Shouldn't you always check the exception log? &amp;#160;
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>Check the activity log describing election day activity to address any reconciliation issues.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583939958_380699_38108" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="322.0" YCoordinate="161.0"/>
+                            <Coordinates XCoordinate="315.0" YCoordinate="88.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -149,7 +100,7 @@ Shouldn't you always check the exception log? &amp;#160;
                     </TransitionRestrictions>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583939958_380699_38108" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
-                            <Coordinates XCoordinate="504.0" YCoordinate="168.0"/>
+                            <Coordinates XCoordinate="497.0" YCoordinate="95.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -160,9 +111,10 @@ Shouldn't you always check the exception log? &amp;#160;
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>Investigate the mismatch to determine its cause and reconcile.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583939958_380699_38108" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="616.0" YCoordinate="161.0"/>
+                            <Coordinates XCoordinate="455.0" YCoordinate="196.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -171,46 +123,16 @@ Shouldn't you always check the exception log? &amp;#160;
                 <Transition Id="_18_5_1_11940316_1500584076065_94097_38146" From="_18_5_1_11940316_1500584066604_247153_38135" To="_18_5_1_11940316_1500584080534_998092_38172" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583939958_380699_38108" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="101.0" YCoordinate="310.0"/>
-                            <Coordinates XCoordinate="168.0" YCoordinate="310.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_1_11940316_1500584114194_13946_38178" From="_18_5_1_11940316_1500584080534_998092_38172" To="_18_5_1_11940316_1500584134962_638842_38198" Name="">
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583939958_380699_38108" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="288.0" YCoordinate="307.0"/>
-                            <Coordinates XCoordinate="364.0" YCoordinate="307.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_1_11940316_1500584134962_423625_38199" From="_18_5_1_11940316_1500584134962_638842_38198" To="_18_5_1_11940316_1500584137542_170601_38210" Name="">
-                    <Condition Type="CONDITION">
-                        <Expression>Yes</Expression>
-                    </Condition>
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583939958_380699_38108" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="404.0" YCoordinate="310.0"/>
-                            <Coordinates XCoordinate="511.0" YCoordinate="310.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_1_11940316_1500584290697_244219_38224" From="_18_5_1_11940316_1500584134962_638842_38198" To="_18_5_1_11940316_1500584383606_359157_38261" Name="">
-                    <Condition Type="CONDITION">
-                        <Expression>No</Expression>
-                    </Condition>
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583939958_380699_38108" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="384.0" YCoordinate="287.0"/>
-                            <Coordinates XCoordinate="384.0" YCoordinate="211.0"/>
+                            <Coordinates XCoordinate="80.0" YCoordinate="111.0"/>
+                            <Coordinates XCoordinate="147.0" YCoordinate="111.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1500584383606_305634_38263" From="_18_5_1_11940316_1500584383606_359157_38261" To="_18_5_1_11940316_1500584388797_275438_38277" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583939958_380699_38108" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="442.0" YCoordinate="188.0"/>
-                            <Coordinates XCoordinate="504.0" YCoordinate="188.0"/>
+                            <Coordinates XCoordinate="435.0" YCoordinate="115.0"/>
+                            <Coordinates XCoordinate="497.0" YCoordinate="115.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -220,8 +142,10 @@ Shouldn't you always check the exception log? &amp;#160;
                     </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583939958_380699_38108" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="523.0" YCoordinate="208.0"/>
-                            <Coordinates XCoordinate="523.0" YCoordinate="298.0"/>
+                            <Coordinates XCoordinate="537.0" YCoordinate="115.0"/>
+                            <Coordinates XCoordinate="606.0" YCoordinate="115.0"/>
+                            <Coordinates XCoordinate="606.0" YCoordinate="117.0"/>
+                            <Coordinates XCoordinate="644.0" YCoordinate="117.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -231,17 +155,25 @@ Shouldn't you always check the exception log? &amp;#160;
                     </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583939958_380699_38108" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="544.0" YCoordinate="188.0"/>
-                            <Coordinates XCoordinate="616.0" YCoordinate="188.0"/>
+                            <Coordinates XCoordinate="517.0" YCoordinate="135.0"/>
+                            <Coordinates XCoordinate="517.0" YCoordinate="196.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1500660162867_190614_26442" From="_18_5_1_11940316_1500584420630_441666_38309" To="_18_5_1_11940316_1500584137542_170601_38210" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583939958_380699_38108" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="676.0" YCoordinate="211.0"/>
-                            <Coordinates XCoordinate="676.0" YCoordinate="310.0"/>
-                            <Coordinates XCoordinate="535.0" YCoordinate="310.0"/>
+                            <Coordinates XCoordinate="575.0" YCoordinate="221.0"/>
+                            <Coordinates XCoordinate="656.0" YCoordinate="221.0"/>
+                            <Coordinates XCoordinate="656.0" YCoordinate="129.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_1_11940316_1502903648462_965621_31814" From="_18_5_1_11940316_1500584080534_998092_38172" To="_18_5_1_11940316_1500584383606_359157_38261" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583939958_380699_38108" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="267.0" YCoordinate="109.0"/>
+                            <Coordinates XCoordinate="315.0" YCoordinate="109.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>

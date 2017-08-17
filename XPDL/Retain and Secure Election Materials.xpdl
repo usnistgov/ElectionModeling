@@ -3,103 +3,15 @@
     <PackageHeader>
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
-        <Created>17-06-19T15:01:00</Created>
-        <ModificationDate>17-07-10T14:19:47</ModificationDate>
-        <Documentation>&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-may include provisionals and &amp;#160;uncounted absentees
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-What is included in the unofficial count may vary&amp;#160;
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-These may remain sealed unless a recount or audit requires their counting&amp;#160;
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;style type="text/css"&gt;
-      &lt;!--
-        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
-      --&gt;
-    &lt;/style&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-      Merge with Voted, but uncounted? These calls may be partially counted 
-      depending on polling equipment used&amp;#160;
-    &lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</Documentation>
+        <Created></Created>
+        <ModificationDate>17-07-17T08:48:28</ModificationDate>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>603</Version>
+        <Version>712</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
     <ConformanceClass GraphConformance="NON_BLOCKED" BPMNModelPortabilityConformance="SIMPLE"/>
-    <Participants>
-        <Participant Id="_18_5_1_11940316_1498999818037_96552_21933" Name="Election Jurisdiction" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
-            <ParticipantType Type="RESOURCE"/>
-        </Participant>
-    </Participants>
-    <Pages>
-        <Page Name="Retain and Secure Election Materials" Id="_18_5_1_11940316_1500490886538_248805_32401" Height="760.0" Width="1579.0"/>
-    </Pages>
-    <Pools>
-        <Pool Id="_18_5_1_11940316_1500490915295_708158_32413" Name="Election Authority" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1500490915295_708158_32413_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
-            <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500490886538_248805_32401" Height="760.0" Width="1579.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
-                    <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
-                </NodeGraphicsInfo>
-            </NodeGraphicsInfos>
-        </Pool>
-    </Pools>
-    <Artifacts>
-        <Artifact Id="_18_5_1_11940316_1500494011316_269656_33014" ArtifactType="Annotation" TextAnnotation="may include provisionals and  uncounted absentees"/>
-        <Artifact Id="_18_5_1_11940316_1500495520684_899351_33056" ArtifactType="Annotation" TextAnnotation="What is included in the unofficial count may vary "/>
-        <Artifact Id="_18_5_1_11940316_1500495584596_936349_33068" ArtifactType="Annotation" TextAnnotation="These may remain sealed unless a recount or audit requires their counting "/>
-        <Artifact Id="_18_5_1_11940316_1500495712957_379403_33082" ArtifactType="Annotation" TextAnnotation="Merge with Voted, but uncounted? These calls may be partially counted depending on polling equipment used "/>
-    </Artifacts>
-    <WorkflowProcesses>
-        <WorkflowProcess Id="_18_5_1_11940316_1500490915295_708158_32413_proc" Name="Election Authority" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
-            <ProcessHeader>
-                <Created>17-06-19T15:01:00</Created>
-            </ProcessHeader>
-        </WorkflowProcess>
-    </WorkflowProcesses>
 </Package>
