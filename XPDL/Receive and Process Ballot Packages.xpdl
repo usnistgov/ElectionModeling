@@ -1,53 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500467309814_661011_24185" Name="Receive and Process Ballot Packages" cbm:numberedProperty="PO1.6">
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500467309814_661011_24185" Name="Receive and Process Ballot Packages" cbm:numberedProperty="3.1.1">
     <PackageHeader>
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T15:08:00</Created>
-        <ModificationDate>17-07-17T08:48:28</ModificationDate>
+        <ModificationDate>17-08-22T08:39:18</ModificationDate>
         <Documentation>Receive and process a ballot package, e.g. an absentee or provisional ballot.
-&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-Includes factors, such as timeliness, completeness, eligibility
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-Compare this process to Process Incoming Vote-By-Mail Ballots&amp;#160;
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-When and why would this occur?&amp;#160;
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
 &lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -61,12 +19,15 @@ What is this?&amp;#160;
     &lt;/p&gt;
 
 &lt;/body&gt;
-&lt;/html&gt;</Documentation>
+&lt;/html&gt;
+&lt;html&gt;&lt;body&gt;
+&lt;p&gt;CVR may not be best term &lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>712</Version>
+        <Version>1084</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -83,7 +44,7 @@ What is this?&amp;#160;
         <Page Name="Receive and Process Ballot Packages" Id="_18_5_1_11940316_1500577702262_98388_36528" Height="662.0" Width="1375.0"/>
     </Pages>
     <DataStores>
-        <DataStore Id="_18_5_1_11940316_1501695325814_296626_26484" Name="Voter Registration Database" IsUnlimited="false" cbm:numberedProperty="PO1.6.D 1"/>
+        <DataStore Id="_18_5_1_11940316_1501695325814_296626_26484" Name="Ballot Tracking System" IsUnlimited="false" cbm:numberedProperty="3.1.1.D 1"/>
     </DataStores>
     <Pools>
         <Pool Id="_18_5_1_11940316_1501694356420_939283_25962" Name="Voter" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1501694356420_939283_25962_proc" Participant="_18_5_1_11940316_1498828669742_83683_23366" BoundaryVisible="true" MainPool="false" MultiInstance="false">
@@ -132,60 +93,37 @@ What is this?&amp;#160;
         </MessageFlow>
     </MessageFlows>
     <Associations>
-        <Association Id="_18_5_1_11940316_1501694552366_816674_26098" Source="_18_5_1_11940316_1501694466300_131571_26040" Target="_18_5_1_11940316_1501694733534_501859_26105" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502974225656_454155_28294"/>
-            <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="215.0" YCoordinate="383.0"/>
-                    <Coordinates XCoordinate="220.0" YCoordinate="369.0"/>
-                </ConnectorGraphicsInfo>
-            </ConnectorGraphicsInfos>
-        </Association>
-        <Association Id="_18_5_1_11940316_1502918421704_880233_27817" Source="_18_5_1_11940316_1501694990359_781669_26237" Target="_18_5_1_11940316_1502918421826_354197_27818" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502974225657_247465_28295"/>
-            <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="700.0" YCoordinate="385.0"/>
-                    <Coordinates XCoordinate="741.0" YCoordinate="348.0"/>
-                </ConnectorGraphicsInfo>
-            </ConnectorGraphicsInfos>
-        </Association>
         <Association Id="_18_5_1_11940316_1502918672015_24862_27828" Source="_18_5_1_11940316_1501695072809_439160_26344" Target="_18_5_1_11940316_1502918672119_474780_27829" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502974225658_465372_28296"/>
+            <Object Id="_18_5_2_11940316_1506084035160_902196_35181"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="1054.0" YCoordinate="491.0"/>
-                    <Coordinates XCoordinate="1026.0" YCoordinate="525.0"/>
+                    <Coordinates XCoordinate="1043.0" YCoordinate="491.0"/>
+                    <Coordinates XCoordinate="1018.0" YCoordinate="511.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_18_5_2_11940316_1504893956106_340784_33402" Source="_18_5_1_11940316_1501695006548_430877_26265" Target="_18_5_2_11940316_1504893956226_952040_33403" AssociationDirection="None">
+            <Object Id="_18_5_2_11940316_1506084035160_590425_35182"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="854.0" YCoordinate="384.0"/>
+                    <Coordinates XCoordinate="869.0" YCoordinate="341.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
     </Associations>
     <Artifacts>
-        <Artifact Id="_18_5_1_11940316_1501694733534_501859_26105" ArtifactType="Annotation" TextAnnotation="Includes factors, such as timeliness, completeness, eligibility">
-            <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" Height="84.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="182.0" YCoordinate="285.0"/>
-                </NodeGraphicsInfo>
-            </NodeGraphicsInfos>
-        </Artifact>
-        <Artifact Id="_18_5_1_11940316_1502200591443_298608_39745" ArtifactType="Annotation" TextAnnotation="Compare this process to Process Incoming Vote-By-Mail Ballots ">
-            <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" Height="63.0" Width="203.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="679.0" YCoordinate="203.0"/>
-                </NodeGraphicsInfo>
-            </NodeGraphicsInfos>
-        </Artifact>
-        <Artifact Id="_18_5_1_11940316_1502918421826_354197_27818" ArtifactType="Annotation" TextAnnotation="When and why would this occur? ">
-            <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="721.0" YCoordinate="294.0"/>
-                </NodeGraphicsInfo>
-            </NodeGraphicsInfos>
-        </Artifact>
         <Artifact Id="_18_5_1_11940316_1502918672119_474780_27829" ArtifactType="Annotation" TextAnnotation="What is this? ">
             <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" Height="36.0" Width="87.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="952.0" YCoordinate="511.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_2_11940316_1504893956226_952040_33403" ArtifactType="Annotation" TextAnnotation="CVR may not be best term ">
+            <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" Height="40.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="959.0" YCoordinate="525.0"/>
+                    <Coordinates XCoordinate="826.0" YCoordinate="301.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
@@ -206,7 +144,7 @@ What is this?&amp;#160;
                 <Created>17-06-20T15:08:00</Created>
             </ProcessHeader>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1501694409902_279812_25997" Name="Receive Ballot Package" cbm:numberedProperty="PO1.6.1">
+                <Activity Id="_18_5_1_11940316_1501694409902_279812_25997" Name="Receive Ballot Package" cbm:numberedProperty="3.1.1.1">
                     <Event>
                         <StartEvent Trigger="Message" Implementation="Unspecified" Interrupting="true">
                             <TriggerResultMessage CatchThrow="CATCH"/>
@@ -218,7 +156,7 @@ What is this?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501694466300_131571_26040" IsForCompensation="false" Name="Determine countability of ballot package" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.6.2">
+                <Activity Id="_18_5_1_11940316_1501694466300_131571_26040" IsForCompensation="false" Name="Determine countability of ballot package" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.1.2">
                     <Implementation>
                         <Task>
                             <TaskBusinessRule BusinessRuleTaskImplementation="Unspecified"/>
@@ -234,7 +172,7 @@ What is this?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501694541414_755343_26066" Name="Countability?" cbm:numberedProperty="PO1.6.3">
+                <Activity Id="_18_5_1_11940316_1501694541414_755343_26066" Name="Countability?" cbm:numberedProperty="3.1.1.3">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -253,7 +191,7 @@ What is this?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501694544542_828365_26084" IsForCompensation="false" Name="Contact voter to correct deficiency" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.6.4">
+                <Activity Id="_18_5_1_11940316_1501694544542_828365_26084" IsForCompensation="false" Name="Contact voter to correct deficiency" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.1.4">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -267,7 +205,7 @@ What is this?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501694765963_504055_26121" Name="Not Countable" cbm:numberedProperty="PO1.6.5">
+                <Activity Id="_18_5_1_11940316_1501694765963_504055_26121" Name="Not Countable" cbm:numberedProperty="3.1.1.5">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -277,7 +215,7 @@ What is this?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501694839605_894797_26145" IsForCompensation="false" Name="Update voter record with ballot package received" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.6.6">
+                <Activity Id="_18_5_1_11940316_1501694839605_894797_26145" IsForCompensation="false" Name="Update voter record with ballot package received" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.1.6">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -291,7 +229,7 @@ What is this?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501694870048_596232_26176" Name="Deadline Passes" cbm:numberedProperty="PO1.6.7">
+                <Activity Id="_18_5_1_11940316_1501694870048_596232_26176" Name="Deadline Passes" cbm:numberedProperty="3.1.1.7">
                     <Event>
                         <IntermediateEvent Trigger="Timer" Implementation="WebService" Target="_18_5_1_11940316_1501694544542_828365_26084" Interrupting="true"/>
                     </Event>
@@ -301,7 +239,7 @@ What is this?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501694927145_198481_26205" Name="Not Countable" cbm:numberedProperty="PO1.6.8">
+                <Activity Id="_18_5_1_11940316_1501694927145_198481_26205" Name="Not Countable" cbm:numberedProperty="3.1.1.8">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -311,20 +249,21 @@ What is this?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501694990359_781669_26237" IsForCompensation="false" Name="Sort ballot package as required" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.6.9">
+                <Activity Id="_18_5_1_11940316_1501694990359_781669_26237" IsForCompensation="false" Name="Index ballot package as required" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.1.9">
                     <Implementation>
                         <No/>
                     </Implementation>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>Index the ballot package so that it can be counted in its appropriate batch.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="609.0" YCoordinate="385.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501695006548_430877_26265" IsForCompensation="false" Name="Separate ballot/paper CVR from voter package" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.6.10">
+                <Activity Id="_18_5_1_11940316_1501695006548_430877_26265" IsForCompensation="false" Name="Separate ballot/paper CVR from voter package" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.1.10">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -338,7 +277,7 @@ What is this?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501695040646_931111_26292" Name="" cbm:numberedProperty="PO1.6.11">
+                <Activity Id="_18_5_1_11940316_1501695040646_931111_26292" Name="" cbm:numberedProperty="3.1.1.11">
                     <Route GatewayType="Parallel" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -356,7 +295,7 @@ What is this?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501695045087_54901_26316" IsForCompensation="false" Name="Retain ballot delivery package" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.6.12">
+                <Activity Id="_18_5_1_11940316_1501695045087_54901_26316" IsForCompensation="false" Name="Retain ballot delivery package" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.1.12">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -370,7 +309,7 @@ What is this?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501695072809_439160_26344" IsForCompensation="false" Name="Send ballot/vote summary to next" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.6.13">
+                <Activity Id="_18_5_1_11940316_1501695072809_439160_26344" IsForCompensation="false" Name="Send ballot/paper CVR to next" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.1.13">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -383,7 +322,7 @@ What is this?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501695102319_796660_26370" Name="" cbm:numberedProperty="PO1.6.14">
+                <Activity Id="_18_5_1_11940316_1501695102319_796660_26370" Name="" cbm:numberedProperty="3.1.1.14">
                     <Route GatewayType="Parallel" GatewayDirection="Unspecified"/>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" Height="40.0" Width="40.0" BorderColor="#424242" FillColor="#FFCC33">
@@ -391,7 +330,7 @@ What is this?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501695137316_71643_26420" Name="Ballot recieved and Processed" cbm:numberedProperty="PO1.6.15">
+                <Activity Id="_18_5_1_11940316_1501695137316_71643_26420" Name="Ballot received and Processed" cbm:numberedProperty="3.1.1.15">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -403,10 +342,10 @@ What is this?&amp;#160;
                 </Activity>
             </Activities>
             <DataStoreReferences>
-                <DataStoreReference DataStoreRef="_18_5_1_11940316_1501695325814_296626_26484" Id="_18_5_1_11940316_1501695325849_834382_26490" Name="Voter Registration Database">
+                <DataStoreReference DataStoreRef="_18_5_1_11940316_1501695325814_296626_26484" Id="_18_5_1_11940316_1501695325849_834382_26490" Name="Ballot Tracking System">
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" Height="64.0" Width="175.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="630.0" YCoordinate="518.0"/>
+                            <Coordinates XCoordinate="553.0" YCoordinate="511.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </DataStoreReference>
@@ -430,7 +369,7 @@ What is this?&amp;#160;
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1501694541414_902902_26067" From="_18_5_1_11940316_1501694541414_755343_26066" To="_18_5_1_11940316_1501694544542_828365_26084" Name="">
                     <Condition Type="CONDITION">
-                        <Expression>Deficient</Expression>
+                        <Expression>Correctable</Expression>
                     </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" BorderColor="#424242" FillColor="#FFFFCC">
@@ -467,8 +406,8 @@ What is this?&amp;#160;
                     <Condition Type="EXCEPTION"/>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="546.0" YCoordinate="323.0"/>
-                            <Coordinates XCoordinate="546.0" YCoordinate="327.0"/>
+                            <Coordinates XCoordinate="536.0" YCoordinate="323.0"/>
+                            <Coordinates XCoordinate="536.0" YCoordinate="327.0"/>
                             <Coordinates XCoordinate="609.0" YCoordinate="327.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
@@ -554,11 +493,10 @@ What is this?&amp;#160;
                 <DataAssociation Id="_18_5_1_11940316_1501695359250_575820_26510" Name="" From="_18_5_1_11940316_1501694839605_894797_26145" To="_18_5_1_11940316_1501695325849_834382_26490">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="547.0" YCoordinate="427.0"/>
-                            <Coordinates XCoordinate="571.0" YCoordinate="427.0"/>
-                            <Coordinates XCoordinate="571.0" YCoordinate="480.0"/>
-                            <Coordinates XCoordinate="718.0" YCoordinate="480.0"/>
-                            <Coordinates XCoordinate="718.0" YCoordinate="521.0"/>
+                            <Coordinates XCoordinate="487.0" YCoordinate="440.0"/>
+                            <Coordinates XCoordinate="487.0" YCoordinate="462.0"/>
+                            <Coordinates XCoordinate="641.0" YCoordinate="462.0"/>
+                            <Coordinates XCoordinate="641.0" YCoordinate="514.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>

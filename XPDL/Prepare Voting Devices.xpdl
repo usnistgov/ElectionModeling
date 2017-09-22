@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500468882115_966786_24545" Name="Prepare Voting Devices" cbm:numberedProperty="1.5.7">
+    <PackageHeader>
+        <XPDLVersion>2.2</XPDLVersion>
+        <Vendor>No Magic, Inc.</Vendor>
+        <Created>17-07-23T15:45:00</Created>
+        <ModificationDate>17-08-22T08:39:18</ModificationDate>
+        <Documentation>Prepare voting devices such that they are ready for election deployment.
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+Minimum allocation rules&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+Can have more than one voting machine per poll. One machine can serve multiple reporting units.&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+Precinct configuration&amp;#160;
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+Hi-Fi Ballot Styles
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+Poll Location Configuration
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+May or may not deviate from voter assigned precincts&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+Already done.&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+Media may be specifically configured for each precinct/poll&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</Documentation>
+        <LayoutInfo PixelsPerMillimeter="2.8346457"/>
+    </PackageHeader>
+    <RedefinableHeader>
+        <Author>jdziu_000</Author>
+        <Version>1084</Version>
+        <Codepage>Cp1252</Codepage>
+        <Countrykey>US</Countrykey>
+    </RedefinableHeader>
+    <ConformanceClass GraphConformance="NON_BLOCKED" BPMNModelPortabilityConformance="SIMPLE"/>
+    <Participants>
+        <Participant Id="_18_5_1_11940316_1498999818037_96552_21933" Name="Election Jurisdiction" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
+            <ParticipantType Type="RESOURCE"/>
+        </Participant>
+    </Participants>
+    <Pages>
+        <Page Name="Prepare Voting Devices" Id="_18_5_1_11940316_1503517552370_167560_61437" Height="374.0" Width="836.0"/>
+    </Pages>
+    <Pools>
+        <Pool Id="_18_5_2_11940316_1504125119655_106589_42578" Name="Election Jurisdiction" Orientation="HORIZONTAL" Process="_18_5_2_11940316_1504125119655_106589_42578_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" Height="374.0" Width="836.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                    <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+    </Pools>
+    <Associations>
+        <Association Id="_18_5_1_11940316_1503518181476_507985_61661" Source="_18_5_1_11940316_1503517587750_230276_61542" Target="_18_5_1_11940316_1503518317870_616862_61700" AssociationDirection="None">
+            <Object Id="_18_5_2_11940316_1506084025584_139739_35169"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="199.0" YCoordinate="210.0"/>
+                    <Coordinates XCoordinate="198.0" YCoordinate="170.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_18_5_1_11940316_1503518439574_399095_61707" Source="_18_5_1_11940316_1503518306057_33107_61681" Target="_18_5_1_11940316_1503518927082_372006_61750" AssociationDirection="None">
+            <Object Id="_18_5_2_11940316_1506084025585_138684_35170"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="399.0" YCoordinate="94.0"/>
+                    <Coordinates XCoordinate="389.0" YCoordinate="75.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_18_5_2_11940316_1504725755843_343979_28496" Source="_18_5_1_11940316_1503517759481_437255_61653" Target="_18_5_2_11940316_1504725755939_844790_28497" AssociationDirection="None">
+            <Object Id="_18_5_2_11940316_1506084025585_81050_35171"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="477.0" YCoordinate="203.0"/>
+                    <Coordinates XCoordinate="516.0" YCoordinate="161.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+    </Associations>
+    <Artifacts>
+        <Artifact Id="_18_5_1_11940316_1503517572131_228034_61477" ArtifactType="Annotation" TextAnnotation="Minimum allocation rules "/>
+        <Artifact Id="_18_5_1_11940316_1503518317870_616862_61700" ArtifactType="Annotation" TextAnnotation="Can have more than one voting machine per poll. One machine can serve multiple reporting units. ">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" Height="114.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="147.0" YCoordinate="56.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_1_11940316_1503518927082_372006_61750" ArtifactType="Annotation" TextAnnotation="Precinct configuration &#xA;Hi-Fi Ballot Styles&#xA;Poll Location Configuration">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" Height="54.0" Width="161.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="294.0" YCoordinate="21.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_1_11940316_1503518591149_95288_61742" ArtifactType="Annotation" TextAnnotation="May or may not deviate from voter assigned precincts "/>
+        <Artifact Id="_18_5_1_11940316_1503519197453_136373_61755" ArtifactType="Annotation" TextAnnotation="Already done. "/>
+        <Artifact Id="_18_5_2_11940316_1504725755939_844790_28497" ArtifactType="Annotation" TextAnnotation="Media may be specifically configured for each precinct/poll ">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" Height="84.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="504.0" YCoordinate="77.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+    </Artifacts>
+    <WorkflowProcesses>
+        <WorkflowProcess Id="_18_5_1_11940316_1503517552317_511902_61427" Name="Prepare Voting Devices" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+            <ProcessHeader>
+                <Created>17-07-23T15:45:00</Created>
+            </ProcessHeader>
+        </WorkflowProcess>
+        <WorkflowProcess Id="_18_5_2_11940316_1504125119655_106589_42578_proc" Name="Election Jurisdiction" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+            <ProcessHeader>
+                <Created>17-07-23T15:45:00</Created>
+            </ProcessHeader>
+            <Activities>
+                <Activity Id="_18_5_1_11940316_1503517554541_381854_61447" Name="" cbm:numberedProperty="1.5.4.1.5.4.PR1">
+                    <Event>
+                        <StartEvent Trigger="None" Implementation="Unspecified"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="42.0" YCoordinate="224.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_1_11940316_1503517587750_230276_61542" IsForCompensation="false" Name="Determine voting machine quantity" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.1.5.4.PR4">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <Documentation>Determine the number of voting machines that need to be deployed for the election. The quantity is determined by a mixture of factors, such as the polling location configuration, systems used, and expected turnout.</Documentation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="140.0" YCoordinate="210.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_1_11940316_1503517759481_437255_61653" IsForCompensation="false" Name="Write media devices" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.1.5.4.PR5">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <Documentation>Write the media devices that when fed into a voting device, determine its configuration.</Documentation>
+                    <Loop LoopType="MultiInstance">
+                        <LoopMultiInstance MI_Ordering="Parallel" MI_FlowCondition="All"/>
+                    </Loop>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" Height="70.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="385.0" YCoordinate="203.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1504725213291_533924_28473" IsForCompensation="false" Name="Allocate voting machines" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.1.5.4.PR7">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <Documentation>Identify the actual equipment used during the election, including spares. A minimum number of machines allocated per geography is often specified by law or policy.</Documentation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="385.0" YCoordinate="301.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1504726256852_810688_28590" Name="" cbm:numberedProperty="1.5.4.1.5.4.PR8">
+                    <Route GatewayType="Parallel" GatewayDirection="Unspecified"/>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="Parallel">
+<TransitionRefs>
+    <TransitionRef Id="_18_5_1_11940316_1503517757269_370835_61639"/>
+    <TransitionRef Id="_18_5_2_11940316_1504726263544_230085_28605"/>
+</TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" Height="40.0" Width="40.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="301.0" YCoordinate="218.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1505328482631_86795_40525" Name="Electronic Voting Devices Prepared" cbm:numberedProperty="1.5.4.1.5.4.PR10">
+                    <Event>
+                        <EndEvent Result="None" Implementation="Unspecified"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="693.0" YCoordinate="225.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1505329786612_441923_40663" Name="" cbm:numberedProperty="1.5.4.1.5.4.PR9">
+                    <Route GatewayType="Parallel" GatewayDirection="Unspecified"/>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" Height="40.0" Width="40.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="560.0" YCoordinate="217.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+            </Activities>
+            <DataObjects>
+                <DataObject Id="_18_5_1_11940316_1503518306057_33107_61681" Name="EMS Configurations" cbm:realDataId="_18_5_1_11940316_1503518306021_516837_61677" cbm:numberedProperty="1.5.4.1.5.4.D 1">
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" Height="70.0" Width="133.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="350.0" YCoordinate="91.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </DataObject>
+            </DataObjects>
+            <Transitions>
+                <Transition Id="_18_5_1_11940316_1503517752500_530985_61630" From="_18_5_1_11940316_1503517554541_381854_61447" To="_18_5_1_11940316_1503517587750_230276_61542" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="66.0" YCoordinate="236.0"/>
+                            <Coordinates XCoordinate="140.0" YCoordinate="236.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_1_11940316_1503517757269_370835_61639" From="_18_5_2_11940316_1504726256852_810688_28590" To="_18_5_1_11940316_1503517759481_437255_61653" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="341.0" YCoordinate="238.0"/>
+                            <Coordinates XCoordinate="385.0" YCoordinate="238.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_11940316_1504726256892_566409_28597" From="_18_5_1_11940316_1503517587750_230276_61542" To="_18_5_2_11940316_1504726256852_810688_28590" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="260.0" YCoordinate="238.0"/>
+                            <Coordinates XCoordinate="301.0" YCoordinate="238.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_11940316_1504726263544_230085_28605" From="_18_5_2_11940316_1504726256852_810688_28590" To="_18_5_2_11940316_1504725213291_533924_28473" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="322.0" YCoordinate="257.0"/>
+                            <Coordinates XCoordinate="322.0" YCoordinate="326.0"/>
+                            <Coordinates XCoordinate="385.0" YCoordinate="326.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_11940316_1505328480146_387682_40515" From="_18_5_2_11940316_1505329786612_441923_40663" To="_18_5_2_11940316_1505328482631_86795_40525" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="600.0" YCoordinate="237.0"/>
+                            <Coordinates XCoordinate="693.0" YCoordinate="237.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_11940316_1505328487764_549908_40531" From="_18_5_1_11940316_1503517759481_437255_61653" To="_18_5_2_11940316_1505329786612_441923_40663" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="505.0" YCoordinate="238.0"/>
+                            <Coordinates XCoordinate="561.0" YCoordinate="238.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_11940316_1505328491766_214102_40540" From="_18_5_2_11940316_1504725213291_533924_28473" To="_18_5_2_11940316_1505329786612_441923_40663" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="505.0" YCoordinate="326.0"/>
+                            <Coordinates XCoordinate="580.0" YCoordinate="326.0"/>
+                            <Coordinates XCoordinate="580.0" YCoordinate="257.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+            </Transitions>
+            <DataAssociations>
+                <DataAssociation Id="_18_5_1_11940316_1503518319029_760747_61702" Name="" From="_18_5_1_11940316_1503518306057_33107_61681" To="_18_5_1_11940316_1503517759481_437255_61653">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="431.0" YCoordinate="155.0"/>
+                            <Coordinates XCoordinate="431.0" YCoordinate="203.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+            </DataAssociations>
+        </WorkflowProcess>
+    </WorkflowProcesses>
+</Package>

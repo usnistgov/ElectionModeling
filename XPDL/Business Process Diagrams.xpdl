@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1503341203587_753319_28621" Name="Business Process Diagrams" cbm:numberedProperty="P1">
+    <PackageHeader>
+        <XPDLVersion>2.2</XPDLVersion>
+        <Vendor>No Magic, Inc.</Vendor>
+        <Created>17-07-21T14:46:00</Created>
+        <ModificationDate>17-08-22T08:39:18</ModificationDate>
+        <LayoutInfo PixelsPerMillimeter="2.8346457"/>
+    </PackageHeader>
+    <RedefinableHeader>
+        <Author>jdziu_000</Author>
+        <Version>1084</Version>
+        <Codepage>Cp1252</Codepage>
+        <Countrykey>US</Countrykey>
+    </RedefinableHeader>
+    <ConformanceClass GraphConformance="NON_BLOCKED" BPMNModelPortabilityConformance="SIMPLE"/>
+    <Pages>
+        <Page Name="Business Process Diagrams" Id="_18_5_1_11940316_1503341203656_464689_28631" Height="45.0" Width="132.0"/>
+    </Pages>
+    <WorkflowProcesses>
+        <WorkflowProcess Id="_18_5_1_11940316_1503341203587_352202_28620" Name="Business Process Diagrams" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+            <ProcessHeader>
+                <Created>17-07-21T14:46:00</Created>
+            </ProcessHeader>
+        </WorkflowProcess>
+    </WorkflowProcesses>
+</Package>

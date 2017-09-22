@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500466974661_508354_23709" Name="Vote and Submit Ballot" cbm:numberedProperty="E1.2">
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500466974661_508354_23709" Name="Vote and Submit Ballot" cbm:numberedProperty="2.1.2">
     <PackageHeader>
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-19T14:10:00</Created>
-        <ModificationDate>17-07-17T08:48:28</ModificationDate>
+        <ModificationDate>17-08-22T08:39:18</ModificationDate>
         <Documentation>A process describing in person voting.
 &lt;html&gt;
   &lt;head&gt;
@@ -79,12 +79,28 @@ They may be able to vote provisionally.&amp;#160;
     &lt;/p&gt;
 
 &lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+      This may break down if voters are allowed to vote a regular ballot and 
+      the absentee is canceled automatically&amp;#160;
+    &lt;/p&gt;
+  &lt;/body&gt;
 &lt;/html&gt;</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>712</Version>
+        <Version>1084</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -152,16 +168,19 @@ They may be able to vote provisionally.&amp;#160;
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="1005.0" YCoordinate="679.0"/>
-                    <Coordinates XCoordinate="613.0" YCoordinate="679.0"/>
-                    <Coordinates XCoordinate="613.0" YCoordinate="144.0"/>
+                    <Coordinates XCoordinate="648.0" YCoordinate="679.0"/>
+                    <Coordinates XCoordinate="648.0" YCoordinate="144.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
         <MessageFlow Id="_18_5_1_11940316_1500490064396_792146_31682" Name="" Source="_18_5_1_11940316_1500487834957_762963_30915" Target="_18_5_1_11940316_1500489684733_97487_31522">
+            <Message Id="_18_5_1_11940316_1503260556315_569624_27478" Name="Accept Directions"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                    <Coordinates XCoordinate="1334.0" YCoordinate="144.0"/>
-                    <Coordinates XCoordinate="1334.0" YCoordinate="631.0"/>
+                    <Coordinates XCoordinate="1337.0" YCoordinate="144.0"/>
+                    <Coordinates XCoordinate="1337.0" YCoordinate="585.0"/>
+                    <Coordinates XCoordinate="1355.0" YCoordinate="585.0"/>
+                    <Coordinates XCoordinate="1355.0" YCoordinate="606.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
@@ -177,27 +196,28 @@ They may be able to vote provisionally.&amp;#160;
             </ConnectorGraphicsInfos>
         </MessageFlow>
         <MessageFlow Id="_18_5_1_11940316_1502201789532_675919_39945" Name="" Source="_18_5_1_11940316_1500487961656_415653_31000" Target="_18_5_1_11940316_1500487834957_762963_30915">
+            <Message Id="_18_5_1_11940316_1503260286636_543015_27419" Name="Request Identification"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                    <Coordinates XCoordinate="179.0" YCoordinate="516.0"/>
-                    <Coordinates XCoordinate="179.0" YCoordinate="144.0"/>
+                    <Coordinates XCoordinate="210.0" YCoordinate="516.0"/>
+                    <Coordinates XCoordinate="210.0" YCoordinate="144.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
         <MessageFlow Id="_18_5_1_11940316_1502201800127_920932_39951" Name="" Source="_18_5_1_11940316_1500487834957_762963_30915" Target="_18_5_1_11940316_1500487961656_415653_31000">
+            <Message Id="_18_5_1_11940316_1503260377708_667445_27437" Name="Identification"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="322.0" YCoordinate="144.0"/>
-                    <Coordinates XCoordinate="322.0" YCoordinate="165.0"/>
-                    <Coordinates XCoordinate="266.0" YCoordinate="165.0"/>
-                    <Coordinates XCoordinate="266.0" YCoordinate="516.0"/>
+                    <Coordinates XCoordinate="322.0" YCoordinate="529.0"/>
+                    <Coordinates XCoordinate="285.0" YCoordinate="529.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1500488035576_490537_31025" Source="_18_5_1_11940316_1500488057395_840499_31036" Target="_18_5_1_11940316_1500488057395_783673_31037" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502974244515_542768_28312"/>
+            <Object Id="_18_5_2_11940316_1506084060044_998773_35210"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="808.0" YCoordinate="573.0"/>
@@ -206,16 +226,16 @@ They may be able to vote provisionally.&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1500488140472_449297_31115" Source="_18_5_1_11940316_1500488104764_158676_31110" Target="_18_5_1_11940316_1500488140554_463123_31116" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502974244516_459658_28313"/>
+            <Object Id="_18_5_2_11940316_1506084060047_851201_35211"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="788.0" YCoordinate="455.0"/>
-                    <Coordinates XCoordinate="450.0" YCoordinate="246.0"/>
+                    <Coordinates XCoordinate="562.0" YCoordinate="385.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1500489297751_910345_31290" Source="_18_5_1_11940316_1500489259484_149831_31265" Target="_18_5_1_11940316_1500489325054_147673_31298" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502974244517_879406_28314"/>
+            <Object Id="_18_5_2_11940316_1506084060049_578252_35212"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1404.0" YCoordinate="334.0"/>
@@ -224,7 +244,7 @@ They may be able to vote provisionally.&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1502218903959_428406_26292" Source="_18_5_1_11940316_1502218823715_926201_26262" Target="_18_5_1_11940316_1502218904043_197941_26293" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502974244519_843470_28315"/>
+            <Object Id="_18_5_2_11940316_1506084060050_132860_35213"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="156.0" YCoordinate="599.0"/>
@@ -233,11 +253,20 @@ They may be able to vote provisionally.&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1502219084419_878952_26324" Source="_18_5_1_11940316_1502219040715_928662_26312" Target="_18_5_1_11940316_1502219084506_774906_26325" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502974244520_718480_28316"/>
+            <Object Id="_18_5_2_11940316_1506084060051_14105_35214"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="257.0" YCoordinate="691.0"/>
-                    <Coordinates XCoordinate="427.0" YCoordinate="720.0"/>
+                    <Coordinates XCoordinate="427.0" YCoordinate="731.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_18_5_1_11940316_1503508554609_79673_55088" Source="_18_5_1_11940316_1502219040715_928662_26312" Target="_18_5_1_11940316_1503508554809_399448_55089" AssociationDirection="None">
+            <Object Id="_18_5_2_11940316_1506084060052_700797_35215"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="257.0" YCoordinate="691.0"/>
+                    <Coordinates XCoordinate="427.0" YCoordinate="655.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
@@ -253,7 +282,7 @@ They may be able to vote provisionally.&amp;#160;
         <Artifact Id="_18_5_1_11940316_1500488140554_463123_31116" ArtifactType="Annotation" TextAnnotation="This is somewhat unclear. Need to distinguish SDR from others. ">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="99.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="350.0" YCoordinate="168.0"/>
+                    <Coordinates XCoordinate="462.0" YCoordinate="322.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
@@ -274,7 +303,14 @@ They may be able to vote provisionally.&amp;#160;
         <Artifact Id="_18_5_1_11940316_1502219084506_774906_26325" ArtifactType="Annotation" TextAnnotation="They may be able to vote provisionally. ">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="427.0" YCoordinate="700.0"/>
+                    <Coordinates XCoordinate="427.0" YCoordinate="714.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_1_11940316_1503508554809_399448_55089" ArtifactType="Annotation" TextAnnotation="This may break down if voters are allowed to vote a regular ballot and the absentee is canceled automatically ">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="129.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="427.0" YCoordinate="581.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
@@ -293,7 +329,7 @@ They may be able to vote provisionally.&amp;#160;
                 <Created>17-06-19T14:10:00</Created>
             </ProcessHeader>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1500487884825_215646_30939" Name="Receive Request" cbm:numberedProperty="E1.2.1">
+                <Activity Id="_18_5_1_11940316_1500487884825_215646_30939" Name="Receive Request" cbm:numberedProperty="2.1.2.01">
                     <Event>
                         <StartEvent Trigger="Message" Implementation="Unspecified" Interrupting="true">
                             <TriggerResultMessage CatchThrow="CATCH"/>
@@ -305,7 +341,7 @@ They may be able to vote provisionally.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500487961656_415653_31000" IsForCompensation="false" Name="Acquire identification " StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="E1.2.2">
+                <Activity Id="_18_5_1_11940316_1500487961656_415653_31000" IsForCompensation="false" Name="Acquire identification " StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.03">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -319,7 +355,7 @@ They may be able to vote provisionally.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500488057395_840499_31036" Name="Voter is Registered" cbm:numberedProperty="E1.2.3">
+                <Activity Id="_18_5_1_11940316_1500488057395_840499_31036" Name="Voter is Registered" cbm:numberedProperty="2.1.2.02">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -337,7 +373,7 @@ They may be able to vote provisionally.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500488067403_110280_31086" Name="Voter is in correct voting location?" cbm:numberedProperty="E1.2.4">
+                <Activity Id="_18_5_1_11940316_1500488067403_110280_31086" Name="Voter is in correct voting location?" cbm:numberedProperty="2.1.2.23">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -355,7 +391,7 @@ They may be able to vote provisionally.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500488104764_158676_31110" Name="Voter can register to vote?" cbm:numberedProperty="E1.2.5">
+                <Activity Id="_18_5_1_11940316_1500488104764_158676_31110" Name="Voter can register to vote?" cbm:numberedProperty="2.1.2.22">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -373,20 +409,22 @@ They may be able to vote provisionally.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500488271254_815912_31144" IsForCompensation="false" Name="Record voter in poll book" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="E1.2.6">
+                <Activity Id="_18_5_1_11940316_1500488271254_815912_31144" IsForCompensation="false" Name="Record voter in poll book" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.07">
                     <Implementation>
                         <No/>
                     </Implementation>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>Record the voter as participating in the election.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="1005.0" YCoordinate="526.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500488291294_524354_31193" IsForCompensation="false" Name="Provide voter with ballot" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="E1.2.7">
+                <Activity Id="_18_5_1_11940316_1500488291294_524354_31193" IsForCompensation="false" Name="Provide voter with ballot" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.10">
                     <Implementation>
                         <Task>
                             <TaskSend Implementation="WebService"/>
@@ -401,7 +439,7 @@ They may be able to vote provisionally.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500489216834_17373_31250" IsForCompensation="false" Name="Receive ballot/vote summary" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="E1.2.8">
+                <Activity Id="_18_5_1_11940316_1500489216834_17373_31250" IsForCompensation="false" Name="Receive ballot/vote summary" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.15">
                     <Implementation>
                         <Task>
                             <TaskReceive Instantiate="false" Implementation="WebService"/>
@@ -416,7 +454,7 @@ They may be able to vote provisionally.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500489366576_395584_31318" Name="Ballot Submitted" cbm:numberedProperty="E1.2.9">
+                <Activity Id="_18_5_1_11940316_1500489366576_395584_31318" Name="Ballot Submitted" cbm:numberedProperty="2.1.2.11">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -426,7 +464,7 @@ They may be able to vote provisionally.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500489511701_959958_31404" IsForCompensation="false" Name="" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="E1.2.10">
+                <Activity Id="_18_5_1_11940316_1500489511701_959958_31404" IsForCompensation="false" Name="Register voter" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.06">
                     <Implementation>
                         <SubFlow Id="_18_5_1_11940316_1498140978087_930388_20553" Name="Register Voter" Execution="SYNCHR" View="EXPANDED" PackageRef="_18_5_1_11940316_1498140978087_930388_20553">
                             <EndPoint EndPointType="WSDL">
@@ -436,14 +474,16 @@ They may be able to vote provisionally.&amp;#160;
                     </Implementation>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>See Register Voter process documentation.</Documentation>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="52.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="64.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="879.0" YCoordinate="428.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500489585915_695957_31446" IsForCompensation="false" Name="Direct voter to correct location" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="E1.2.11">
+                <Activity Id="_18_5_1_11940316_1500489585915_695957_31446" IsForCompensation="false" Name="Direct voter to correct location" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.17">
                     <Implementation>
                         <Task>
                             <TaskSend Implementation="WebService"/>
@@ -458,7 +498,7 @@ They may be able to vote provisionally.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500489663551_77985_31499" Name="" cbm:numberedProperty="E1.2.12">
+                <Activity Id="_18_5_1_11940316_1500489663551_77985_31499" Name="" cbm:numberedProperty="2.1.2.12">
                     <Route GatewayType="Exclusive" ExclusiveType="Event" Instantiate="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -476,7 +516,7 @@ They may be able to vote provisionally.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500489684733_97487_31522" Name="Voter Accepts Direction" cbm:numberedProperty="E1.2.13">
+                <Activity Id="_18_5_1_11940316_1500489684733_97487_31522" Name="Voter Accepts Direction" cbm:numberedProperty="2.1.2.13">
                     <Event>
                         <IntermediateEvent Trigger="Message" Implementation="WebService" Interrupting="true">
                             <TriggerResultMessage CatchThrow="CATCH"/>
@@ -488,7 +528,7 @@ They may be able to vote provisionally.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500489692278_196686_31533" Name="Voter Wants to Vote Provisionally" cbm:numberedProperty="E1.2.14">
+                <Activity Id="_18_5_1_11940316_1500489692278_196686_31533" Name="Voter Wants to Vote Provisionally" cbm:numberedProperty="2.1.2.14">
                     <Event>
                         <IntermediateEvent Trigger="Message" Implementation="WebService" Interrupting="true">
                             <TriggerResultMessage CatchThrow="CATCH"/>
@@ -500,7 +540,7 @@ They may be able to vote provisionally.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500489866272_384062_31565" IsForCompensation="false" Name="Collect provisional voter information" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="E1.2.15">
+                <Activity Id="_18_5_1_11940316_1500489866272_384062_31565" IsForCompensation="false" Name="Collect provisional voter information" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.08">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -513,7 +553,7 @@ They may be able to vote provisionally.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500489936423_745938_31611" Name="No vote Submitted" cbm:numberedProperty="E1.2.16">
+                <Activity Id="_18_5_1_11940316_1500489936423_745938_31611" Name="No vote Submitted" cbm:numberedProperty="2.1.2.16">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -523,7 +563,7 @@ They may be able to vote provisionally.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500489974712_469406_31627" Name="Vote Provisionally" cbm:numberedProperty="E1.2.17">
+                <Activity Id="_18_5_1_11940316_1500489974712_469406_31627" Name="Vote Provisionally" cbm:numberedProperty="2.1.2.09">
                     <Event>
                         <IntermediateEvent Trigger="Link" Implementation="WebService" Interrupting="true">
                             <TriggerResultLink CatchThrow="THROW"/>
@@ -535,7 +575,7 @@ They may be able to vote provisionally.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500489999062_372918_31656" Name="Vote Provisionally" cbm:numberedProperty="E1.2.18">
+                <Activity Id="_18_5_1_11940316_1500489999062_372918_31656" Name="Vote Provisionally" cbm:numberedProperty="2.1.2.18">
                     <Event>
                         <IntermediateEvent Trigger="Link" Implementation="WebService" Interrupting="true">
                             <TriggerResultLink CatchThrow="CATCH" Name="_18_5_1_11940316_1500489999035_891297_31653"/>
@@ -547,7 +587,7 @@ They may be able to vote provisionally.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1502218823715_926201_26262" Name="Already Voted" cbm:numberedProperty="E1.2.19">
+                <Activity Id="_18_5_1_11940316_1502218823715_926201_26262" Name="Already Voted" cbm:numberedProperty="2.1.2.19">
                     <Event>
                         <IntermediateEvent Trigger="Error" Implementation="WebService" Target="_18_5_1_11940316_1500487961656_415653_31000" Interrupting="true"/>
                     </Event>
@@ -557,7 +597,7 @@ They may be able to vote provisionally.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1502218856993_750797_26289" Name="No vote submitted" cbm:numberedProperty="E1.2.20">
+                <Activity Id="_18_5_1_11940316_1502218856993_750797_26289" Name="No vote submitted" cbm:numberedProperty="2.1.2.20">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -567,7 +607,7 @@ They may be able to vote provisionally.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1502219040715_928662_26312" Name="" cbm:numberedProperty="E1.2.21">
+                <Activity Id="_18_5_1_11940316_1502219040715_928662_26312" Name="" cbm:numberedProperty="2.1.2.21">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
@@ -575,11 +615,12 @@ They may be able to vote provisionally.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1502234454592_53498_30894" IsForCompensation="false" Name="Lookup Voter in Poll Book" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="E1.2.22">
+                <Activity Id="_18_5_1_11940316_1502234454592_53498_30894" IsForCompensation="false" Name="Lookup voter in poll book" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.04">
                     <Implementation>
                         <No/>
                     </Implementation>
                     <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
                     <Documentation>Lookup the voter in the poll book using the voter's identification information.</Documentation>
@@ -589,7 +630,7 @@ They may be able to vote provisionally.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1502234471863_748891_30929" IsForCompensation="false" Name="Determine Eligibility" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="E1.2.23">
+                <Activity Id="_18_5_1_11940316_1502234471863_748891_30929" IsForCompensation="false" Name="Determine eligibility" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.05">
                     <Implementation>
                         <Task>
                             <TaskBusinessRule BusinessRuleTaskImplementation="Unspecified"/>
@@ -597,7 +638,9 @@ They may be able to vote provisionally.&amp;#160;
                     </Implementation>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>Determine eligibility according to local business rules.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="50.0" Width="120.0" BorderColor="#C7B299" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="504.0" YCoordinate="518.0"/>
@@ -606,9 +649,9 @@ They may be able to vote provisionally.&amp;#160;
                 </Activity>
             </Activities>
             <DataObjects>
-                <DataObject Id="_18_5_1_11940316_1502234497784_382062_30958" Name="Voter Record" cbm:realDataId="_18_5_1_11940316_1502234497766_808583_30954" cbm:numberedProperty="E1.2.D 1">
+                <DataObject Id="_18_5_1_11940316_1502234497784_382062_30958" Name="Voter Record" cbm:realDataId="_18_5_1_11940316_1502234497766_808583_30954" cbm:numberedProperty="2.1.2.D 1">
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="57.0" Width="86.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="57.0" Width="168.0" BorderColor="#99995C" FillColor="#E1E1C3">
                             <Coordinates XCoordinate="455.0" YCoordinate="427.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
@@ -845,7 +888,7 @@ They may be able to vote provisionally.&amp;#160;
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="417.0" YCoordinate="518.0"/>
                             <Coordinates XCoordinate="417.0" YCoordinate="448.0"/>
-                            <Coordinates XCoordinate="486.0" YCoordinate="448.0"/>
+                            <Coordinates XCoordinate="527.0" YCoordinate="448.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>

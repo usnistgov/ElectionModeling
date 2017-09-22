@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500467303942_561102_24025" Name="Verify Vote Count" cbm:numberedProperty="PO1.2">
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500467303942_561102_24025" Name="Verify Vote Count" cbm:numberedProperty="3.1.5">
     <PackageHeader>
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T16:44:00</Created>
-        <ModificationDate>17-07-17T08:48:28</ModificationDate>
+        <ModificationDate>17-08-22T08:39:18</ModificationDate>
         <Documentation>&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -18,12 +18,26 @@ Is this paper vs. electronic? (DRE)&amp;#160;
     &lt;/p&gt;
 
 &lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+Acceptable margin of error/victory&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
 &lt;/html&gt;</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>712</Version>
+        <Version>1084</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -34,12 +48,12 @@ Is this paper vs. electronic? (DRE)&amp;#160;
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Verify Vote Count" Id="_18_5_1_11940316_1500583444728_391845_37764" Height="274.0" Width="1419.0"/>
+        <Page Name="Verify Vote Count" Id="_18_5_1_11940316_1500583444728_391845_37764" Height="192.0" Width="1419.0"/>
     </Pages>
     <Pools>
         <Pool Id="_18_5_1_11940316_1500583453295_806471_37772" Name="Election Authority" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1500583453295_806471_37772_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" Height="274.0" Width="1419.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" Height="192.0" Width="1419.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -47,11 +61,20 @@ Is this paper vs. electronic? (DRE)&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_1_11940316_1502906351492_526521_31866" Source="_18_5_1_11940316_1500583571012_872422_37849" Target="_18_5_1_11940316_1502906365969_449719_31873" AssociationDirection="None">
-            <Object Id="_18_5_1_11940316_1502974233504_503246_28301"/>
+            <Object Id="_18_5_2_11940316_1506084044825_907600_35188"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="311.0" YCoordinate="167.0"/>
-                    <Coordinates XCoordinate="244.0" YCoordinate="96.0"/>
+                    <Coordinates XCoordinate="313.0" YCoordinate="120.0"/>
+                    <Coordinates XCoordinate="248.0" YCoordinate="70.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_18_5_2_11940316_1505511647064_575707_51510" Source="_18_5_1_11940316_1500583692328_304440_38014" Target="_18_5_2_11940316_1505511647182_17756_51511" AssociationDirection="None">
+            <Object Id="_18_5_2_11940316_1506084044825_427195_35189"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="1044.0" YCoordinate="98.0"/>
+                    <Coordinates XCoordinate="1039.0" YCoordinate="70.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
@@ -60,7 +83,14 @@ Is this paper vs. electronic? (DRE)&amp;#160;
         <Artifact Id="_18_5_1_11940316_1502906365969_449719_31873" ArtifactType="Annotation" TextAnnotation="Is this paper vs. electronic? (DRE) ">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="168.0" YCoordinate="42.0"/>
+                    <Coordinates XCoordinate="163.0" YCoordinate="16.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_2_11940316_1505511647182_17756_51511" ArtifactType="Annotation" TextAnnotation="Acceptable margin of error/victory ">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="984.0" YCoordinate="16.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
@@ -82,7 +112,7 @@ Is this paper vs. electronic? (DRE)&amp;#160;
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="54.0" YCoordinate="159.0"/>
+                            <Coordinates XCoordinate="56.0" YCoordinate="105.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -96,15 +126,15 @@ Is this paper vs. electronic? (DRE)&amp;#160;
                     <Documentation>The units to be audited, may be set by rule. They may include precincts, polling locations or machines, among others.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="145.0" YCoordinate="145.0"/>
+                            <Coordinates XCoordinate="147.0" YCoordinate="91.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
                 <Activity Id="_18_5_1_11940316_1500583571012_872422_37849" Name="" cbm:numberedProperty="PO1.2.3">
-                    <Route GatewayType="Parallel" GatewayDirection="Unspecified"/>
+                    <Route GatewayType="Inclusive" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
-                            <Split Type="Parallel">
+                            <Split Type="Inclusive">
 <TransitionRefs>
     <TransitionRef Id="_18_5_1_11940316_1500583571012_322475_37850"/>
     <TransitionRef Id="_18_5_1_11940316_1500583605382_285617_37907"/>
@@ -114,7 +144,7 @@ Is this paper vs. electronic? (DRE)&amp;#160;
                     </TransitionRestrictions>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" Height="40.0" Width="40.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="306.0" YCoordinate="152.0"/>
+                            <Coordinates XCoordinate="308.0" YCoordinate="105.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -127,7 +157,7 @@ Is this paper vs. electronic? (DRE)&amp;#160;
                     </Performers>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="425.0" YCoordinate="68.0"/>
+                            <Coordinates XCoordinate="427.0" YCoordinate="14.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -140,7 +170,7 @@ Is this paper vs. electronic? (DRE)&amp;#160;
                     </Performers>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="586.0" YCoordinate="68.0"/>
+                            <Coordinates XCoordinate="588.0" YCoordinate="14.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -153,15 +183,15 @@ Is this paper vs. electronic? (DRE)&amp;#160;
                     </Performers>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="425.0" YCoordinate="152.0"/>
+                            <Coordinates XCoordinate="427.0" YCoordinate="98.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
                 <Activity Id="_18_5_1_11940316_1500583662224_245788_37948" Name="" cbm:numberedProperty="PO1.2.7">
-                    <Route GatewayType="Parallel" GatewayDirection="Unspecified"/>
+                    <Route GatewayType="Inclusive" GatewayDirection="Unspecified"/>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" Height="40.0" Width="40.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="775.0" YCoordinate="159.0"/>
+                            <Coordinates XCoordinate="723.0" YCoordinate="107.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -174,7 +204,7 @@ Is this paper vs. electronic? (DRE)&amp;#160;
                     </Performers>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="880.0" YCoordinate="152.0"/>
+                            <Coordinates XCoordinate="828.0" YCoordinate="102.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -187,7 +217,7 @@ Is this paper vs. electronic? (DRE)&amp;#160;
                     </Performers>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="1041.0" YCoordinate="152.0"/>
+                            <Coordinates XCoordinate="989.0" YCoordinate="98.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -205,7 +235,7 @@ Is this paper vs. electronic? (DRE)&amp;#160;
                     </TransitionRestrictions>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
-                            <Coordinates XCoordinate="1202.0" YCoordinate="159.0"/>
+                            <Coordinates XCoordinate="1150.0" YCoordinate="107.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -215,7 +245,7 @@ Is this paper vs. electronic? (DRE)&amp;#160;
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="1323.0" YCoordinate="168.0"/>
+                            <Coordinates XCoordinate="1257.0" YCoordinate="114.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -224,83 +254,88 @@ Is this paper vs. electronic? (DRE)&amp;#160;
                 <Transition Id="_18_5_1_11940316_1500583482483_495453_37799" From="_18_5_1_11940316_1500583476764_487596_37788" To="_18_5_1_11940316_1500583486593_820258_37825" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="78.0" YCoordinate="171.0"/>
-                            <Coordinates XCoordinate="145.0" YCoordinate="171.0"/>
+                            <Coordinates XCoordinate="80.0" YCoordinate="117.0"/>
+                            <Coordinates XCoordinate="147.0" YCoordinate="117.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1500583565988_145305_37831" From="_18_5_1_11940316_1500583486593_820258_37825" To="_18_5_1_11940316_1500583571012_872422_37849" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="265.0" YCoordinate="170.0"/>
-                            <Coordinates XCoordinate="308.0" YCoordinate="170.0"/>
+                            <Coordinates XCoordinate="267.0" YCoordinate="123.0"/>
+                            <Coordinates XCoordinate="310.0" YCoordinate="123.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1500583571012_322475_37850" From="_18_5_1_11940316_1500583571012_872422_37849" To="_18_5_1_11940316_1500583572999_988579_37868" Name="">
+                    <Condition Type="CONDITION">
+                        <Expression>Electronic Audit</Expression>
+                    </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="326.0" YCoordinate="152.0"/>
-                            <Coordinates XCoordinate="326.0" YCoordinate="95.0"/>
-                            <Coordinates XCoordinate="425.0" YCoordinate="95.0"/>
+                            <Coordinates XCoordinate="328.0" YCoordinate="105.0"/>
+                            <Coordinates XCoordinate="328.0" YCoordinate="41.0"/>
+                            <Coordinates XCoordinate="427.0" YCoordinate="41.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1500583590190_100566_37879" From="_18_5_1_11940316_1500583572999_988579_37868" To="_18_5_1_11940316_1500583592750_81412_37896" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="545.0" YCoordinate="93.0"/>
-                            <Coordinates XCoordinate="586.0" YCoordinate="93.0"/>
+                            <Coordinates XCoordinate="547.0" YCoordinate="39.0"/>
+                            <Coordinates XCoordinate="588.0" YCoordinate="39.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1500583605382_285617_37907" From="_18_5_1_11940316_1500583571012_872422_37849" To="_18_5_1_11940316_1500583607366_433173_37924" Name="">
+                    <Condition Type="CONDITION">
+                        <Expression>Paper Audit</Expression>
+                    </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="338.0" YCoordinate="180.0"/>
-                            <Coordinates XCoordinate="425.0" YCoordinate="180.0"/>
+                            <Coordinates XCoordinate="348.0" YCoordinate="125.0"/>
+                            <Coordinates XCoordinate="427.0" YCoordinate="125.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1500583654662_498075_37935" From="_18_5_1_11940316_1500583607366_433173_37924" To="_18_5_1_11940316_1500583662224_245788_37948" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="545.0" YCoordinate="180.0"/>
-                            <Coordinates XCoordinate="776.0" YCoordinate="180.0"/>
+                            <Coordinates XCoordinate="547.0" YCoordinate="128.0"/>
+                            <Coordinates XCoordinate="724.0" YCoordinate="128.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1500583664940_703871_37954" From="_18_5_1_11940316_1500583592750_81412_37896" To="_18_5_1_11940316_1500583662224_245788_37948" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="706.0" YCoordinate="93.0"/>
-                            <Coordinates XCoordinate="734.0" YCoordinate="93.0"/>
-                            <Coordinates XCoordinate="734.0" YCoordinate="180.0"/>
-                            <Coordinates XCoordinate="776.0" YCoordinate="180.0"/>
+                            <Coordinates XCoordinate="708.0" YCoordinate="39.0"/>
+                            <Coordinates XCoordinate="741.0" YCoordinate="39.0"/>
+                            <Coordinates XCoordinate="741.0" YCoordinate="109.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1500583673962_110245_37963" From="_18_5_1_11940316_1500583662224_245788_37948" To="_18_5_1_11940316_1500583677157_906763_37980" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="814.0" YCoordinate="180.0"/>
-                            <Coordinates XCoordinate="880.0" YCoordinate="180.0"/>
+                            <Coordinates XCoordinate="762.0" YCoordinate="128.0"/>
+                            <Coordinates XCoordinate="828.0" YCoordinate="128.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1500583689732_769386_37997" From="_18_5_1_11940316_1500583677157_906763_37980" To="_18_5_1_11940316_1500583692328_304440_38014" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="1000.0" YCoordinate="180.0"/>
-                            <Coordinates XCoordinate="1041.0" YCoordinate="180.0"/>
+                            <Coordinates XCoordinate="948.0" YCoordinate="130.0"/>
+                            <Coordinates XCoordinate="989.0" YCoordinate="130.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1500583709872_320540_38025" From="_18_5_1_11940316_1500583692328_304440_38014" To="_18_5_1_11940316_1500583713009_565245_38040" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="1161.0" YCoordinate="179.0"/>
-                            <Coordinates XCoordinate="1202.0" YCoordinate="179.0"/>
+                            <Coordinates XCoordinate="1109.0" YCoordinate="127.0"/>
+                            <Coordinates XCoordinate="1150.0" YCoordinate="127.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -310,10 +345,10 @@ Is this paper vs. electronic? (DRE)&amp;#160;
                     </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="1222.0" YCoordinate="199.0"/>
-                            <Coordinates XCoordinate="1222.0" YCoordinate="228.0"/>
-                            <Coordinates XCoordinate="200.0" YCoordinate="228.0"/>
-                            <Coordinates XCoordinate="200.0" YCoordinate="202.0"/>
+                            <Coordinates XCoordinate="1170.0" YCoordinate="147.0"/>
+                            <Coordinates XCoordinate="1170.0" YCoordinate="174.0"/>
+                            <Coordinates XCoordinate="202.0" YCoordinate="174.0"/>
+                            <Coordinates XCoordinate="202.0" YCoordinate="148.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -323,10 +358,10 @@ Is this paper vs. electronic? (DRE)&amp;#160;
                     </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="1242.0" YCoordinate="179.0"/>
-                            <Coordinates XCoordinate="1243.0" YCoordinate="179.0"/>
-                            <Coordinates XCoordinate="1243.0" YCoordinate="180.0"/>
-                            <Coordinates XCoordinate="1323.0" YCoordinate="180.0"/>
+                            <Coordinates XCoordinate="1190.0" YCoordinate="127.0"/>
+                            <Coordinates XCoordinate="1220.0" YCoordinate="127.0"/>
+                            <Coordinates XCoordinate="1220.0" YCoordinate="126.0"/>
+                            <Coordinates XCoordinate="1257.0" YCoordinate="126.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>

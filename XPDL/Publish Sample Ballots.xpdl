@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500468929540_480782_24625" Name="Publish Sample Ballots" cbm:numberedProperty="PR4.6">
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500468929540_480782_24625" Name="Publish Sample Ballots" cbm:numberedProperty="1.5.4">
     <PackageHeader>
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-07-16T15:35:00</Created>
-        <ModificationDate>17-07-17T08:48:28</ModificationDate>
+        <ModificationDate>17-08-22T08:39:18</ModificationDate>
+        <Documentation>Publish sample ballots containing the contests and selections to be voted on.</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>712</Version>
+        <Version>1084</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -20,73 +21,72 @@
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Publish Sample Ballots" Id="_18_5_1_11940316_1502912158865_500317_27286" Height="325.0" Width="819.0"/>
+        <Page Name="Publish Sample Ballots" Id="_18_5_1_11940316_1502912158865_500317_27286" Height="311.0" Width="661.0"/>
     </Pages>
     <Pools>
         <Pool Id="_18_5_1_11940316_1502912176536_677630_27298" Name="Election Jurisdiction" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1502912176536_677630_27298_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" Height="325.0" Width="819.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" Height="311.0" Width="661.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Pool>
     </Pools>
+    <Artifacts>
+        <Artifact Id="_18_5_1_11940316_1502912896431_681895_27536" Name="Ballot Styles" ArtifactType="DataObject">
+            <DataObject Id="_18_5_1_11940316_1502912896449_696458_27540" Name="Ballot Styles" cbm:realDataId="_18_5_1_11940316_1502912896431_681895_27536" cbm:numberedProperty="1.5.4.1.5.6.D 2">
+                <NodeGraphicsInfos>
+                    <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" Height="64.0" Width="149.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                        <Coordinates XCoordinate="56.0" YCoordinate="49.0"/>
+                    </NodeGraphicsInfo>
+                </NodeGraphicsInfos>
+            </DataObject>
+        </Artifact>
+    </Artifacts>
     <WorkflowProcesses>
         <WorkflowProcess Id="_18_5_1_11940316_1502912176536_677630_27298_proc" Name="Election Jurisdiction" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
             <ProcessHeader>
                 <Created>17-07-16T15:35:00</Created>
             </ProcessHeader>
             <ActivitySets>
-                <ActivitySet Id="_18_5_1_11940316_1502912398169_334194_27409" Name="_as" AdHoc="true" AdHocOrdering="Parallel" TriggeredByEvent="false">
+                <ActivitySet Id="_18_5_1_11940316_1502913316674_983604_27675" Name="Publish Sample Ballot_as" AdHoc="true" AdHocOrdering="Parallel" AdHocCompletionCondition="Applicable tasks completed" TriggeredByEvent="false">
                     <Activities>
-                        <Activity Id="_18_5_1_11940316_1502912306618_554357_27334" IsForCompensation="false" Name="Remove Tracking Marks" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR4.6.4.1">
+                        <Activity Id="_18_5_1_11940316_1502913038764_548774_27584" IsForCompensation="false" Name="Publish to website" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.1.5.6.10.1">
                             <Implementation>
 <No/>
                             </Implementation>
-                            <NodeGraphicsInfos>
-<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="655.0" YCoordinate="147.0"/>
-</NodeGraphicsInfo>
-                            </NodeGraphicsInfos>
-                        </Activity>
-                        <Activity Id="_18_5_1_11940316_1502912404630_940623_27454" IsForCompensation="false" Name="Add watermark or disclaimer" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR4.6.4.2">
-                            <Implementation>
-<No/>
-                            </Implementation>
-                            <NodeGraphicsInfos>
-<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="658.0" YCoordinate="210.0"/>
-</NodeGraphicsInfo>
-                            </NodeGraphicsInfos>
-                        </Activity>
-                    </Activities>
-                </ActivitySet>
-                <ActivitySet Id="_18_5_1_11940316_1502913316674_983604_27675" Name="Publish Sample Ballot_as" AdHoc="true" AdHocOrdering="Parallel" TriggeredByEvent="false">
-                    <Activities>
-                        <Activity Id="_18_5_1_11940316_1502913038764_548774_27584" IsForCompensation="false" Name="Post to website" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR4.6.10.1">
-                            <Implementation>
-<No/>
-                            </Implementation>
+                            <Performers>
+<Performer cbm:resourceType="ResourceRole"></Performer>
+                            </Performers>
+                            <Documentation>Publish sample ballots to election authority's website.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
     <Coordinates XCoordinate="371.0" YCoordinate="133.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1502913063488_688434_27607" IsForCompensation="false" Name="Send to newspaper" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR4.6.10.2">
+                        <Activity Id="_18_5_1_11940316_1502913063488_688434_27607" IsForCompensation="false" Name="Publish to media" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.1.5.6.10.2">
                             <Implementation>
 <No/>
                             </Implementation>
+                            <Performers>
+<Performer cbm:resourceType="ResourceRole"></Performer>
+                            </Performers>
+                            <Documentation>Provide sample ballots to the media for general distribution.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
     <Coordinates XCoordinate="371.0" YCoordinate="70.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1502913073999_516705_27638" IsForCompensation="false" Name="Print for distribution" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR4.6.10.3">
+                        <Activity Id="_18_5_1_11940316_1502913073999_516705_27638" IsForCompensation="false" Name="Print for distribution" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.1.5.6.10.3">
                             <Implementation>
 <No/>
                             </Implementation>
+                            <Performers>
+<Performer cbm:resourceType="ResourceRole"></Performer>
+                            </Performers>
+                            <Documentation>Print sample ballots for distribution to interested parties.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
     <Coordinates XCoordinate="371.0" YCoordinate="196.0"/>
@@ -97,7 +97,7 @@
                 </ActivitySet>
             </ActivitySets>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1502912194606_997247_27311" Name="" cbm:numberedProperty="PR4.6.1">
+                <Activity Id="_18_5_1_11940316_1502912194606_997247_27311" Name="" cbm:numberedProperty="1.5.4.1.5.6.1">
                     <Event>
                         <StartEvent Trigger="None" Implementation="Unspecified"/>
                     </Event>
@@ -107,112 +107,79 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1502912398218_773979_27423" IsForCompensation="false" Name="" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="PR4.6.4">
-                    <BlockActivity ActivitySetId="_18_5_1_11940316_1502912398169_334194_27409" View="EXPANDED"/>
-                    <Performers>
-                        <Performer cbm:resourceType="ResourceRole"></Performer>
-                    </Performers>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" Height="175.0" Width="135.0" BorderColor="#636363" FillColor="#F7DD99">
-                            <Coordinates XCoordinate="651.0" YCoordinate="119.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_1_11940316_1502912720112_68643_27509" IsForCompensation="false" Name="Produce Sample Ballot" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PR4.6.6">
+                <Activity Id="_18_5_1_11940316_1502912720112_68643_27509" IsForCompensation="false" Name="Produce sample ballot" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.1.5.6.6">
                     <Implementation>
                         <No/>
                     </Implementation>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>Produce a sample ballot. At a minimum a sample ballot should contain the contests and candidates that will appear on the official ballot. A higher fidelity sample ballot will take the form of an official ballot with some of the features that make it countable removed.</Documentation>
+                    <Loop LoopType="MultiInstance">
+                        <LoopMultiInstance MI_Ordering="Parallel" MI_FlowCondition="All"/>
+                    </Loop>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="168.0" YCoordinate="133.0"/>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" Height="70.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="168.0" YCoordinate="126.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1502913316736_423596_27689" IsForCompensation="false" Name="Publish Sample Ballot" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="PR4.6.10">
+                <Activity Id="_18_5_1_11940316_1502913316736_423596_27689" IsForCompensation="false" Name="Publish Sample Ballot" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.5.4.1.5.6.10">
                     <BlockActivity ActivitySetId="_18_5_1_11940316_1502913316674_983604_27675" View="EXPANDED"/>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>Publish the sample ballot over multiple channels.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" Height="255.0" Width="133.0" BorderColor="#636363" FillColor="#F7DD99">
                             <Coordinates XCoordinate="364.0" YCoordinate="25.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1502969425303_149471_27416" Name="" cbm:numberedProperty="PR4.6.11">
+                <Activity Id="_18_5_1_11940316_1502969425303_149471_27416" Name="Sample Ballots Published" cbm:numberedProperty="1.5.4.1.5.6.11">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFFFFF">
-                            <Coordinates XCoordinate="560.0" YCoordinate="154.0"/>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="560.0" YCoordinate="147.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
             </Activities>
-            <DataObjects>
-                <DataObject Id="_18_5_1_11940316_1502912601271_43551_27477" Name="Production Proofs" cbm:realDataId="_18_5_1_11940316_1502912601253_955603_27473" cbm:numberedProperty="PR4.6.D 1">
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" Height="71.0" Width="126.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="693.0" YCoordinate="35.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </DataObject>
-                <DataObject Id="_18_5_1_11940316_1502912896449_696458_27540" Name="Ballot Styles" cbm:realDataId="_18_5_1_11940316_1502912896431_681895_27536" cbm:numberedProperty="PR4.6.D 2">
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" Height="64.0" Width="84.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="56.0" YCoordinate="49.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </DataObject>
-            </DataObjects>
             <Transitions>
                 <Transition Id="_18_5_1_11940316_1502912346155_680666_27357" From="_18_5_1_11940316_1502912194606_997247_27311" To="_18_5_1_11940316_1502912720112_68643_27509" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="94.0" YCoordinate="159.0"/>
-                            <Coordinates XCoordinate="123.0" YCoordinate="159.0"/>
-                            <Coordinates XCoordinate="123.0" YCoordinate="158.0"/>
-                            <Coordinates XCoordinate="168.0" YCoordinate="158.0"/>
+                            <Coordinates XCoordinate="168.0" YCoordinate="159.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1502913437280_464202_27712" From="_18_5_1_11940316_1502912720112_68643_27509" To="_18_5_1_11940316_1502913316736_423596_27689" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="288.0" YCoordinate="165.0"/>
-                            <Coordinates XCoordinate="364.0" YCoordinate="165.0"/>
+                            <Coordinates XCoordinate="288.0" YCoordinate="161.0"/>
+                            <Coordinates XCoordinate="364.0" YCoordinate="161.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1502969420391_671813_27406" From="_18_5_1_11940316_1502913316736_423596_27689" To="_18_5_1_11940316_1502969425303_149471_27416" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="497.0" YCoordinate="166.0"/>
-                            <Coordinates XCoordinate="560.0" YCoordinate="166.0"/>
+                            <Coordinates XCoordinate="497.0" YCoordinate="159.0"/>
+                            <Coordinates XCoordinate="560.0" YCoordinate="159.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
             </Transitions>
             <DataAssociations>
-                <DataAssociation Id="_18_5_1_11940316_1502912620975_761366_27497" Name="" From="_18_5_1_11940316_1502912601271_43551_27477" To="_18_5_1_11940316_1502912398218_773979_27423">
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="699.0" YCoordinate="88.0"/>
-                            <Coordinates XCoordinate="676.0" YCoordinate="88.0"/>
-                            <Coordinates XCoordinate="676.0" YCoordinate="119.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </DataAssociation>
                 <DataAssociation Id="_18_5_1_11940316_1502912911933_197290_27560" Name="" From="_18_5_1_11940316_1502912896449_696458_27540" To="_18_5_1_11940316_1502912720112_68643_27509">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="113.0" YCoordinate="81.0"/>
+                            <Coordinates XCoordinate="146.0" YCoordinate="81.0"/>
                             <Coordinates XCoordinate="207.0" YCoordinate="81.0"/>
-                            <Coordinates XCoordinate="207.0" YCoordinate="133.0"/>
+                            <Coordinates XCoordinate="207.0" YCoordinate="126.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>

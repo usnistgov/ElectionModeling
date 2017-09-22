@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500467306738_645571_24105" Name="Report Results" cbm:numberedProperty="PO1.4">
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500467306738_645571_24105" Name="Report Results" cbm:numberedProperty="3.1.4">
     <PackageHeader>
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T16:12:00</Created>
-        <ModificationDate>17-07-17T08:48:28</ModificationDate>
+        <ModificationDate>17-08-22T08:39:18</ModificationDate>
         <Documentation>Provide up to date election results.</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>712</Version>
+        <Version>1084</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -27,7 +27,7 @@
         <Page Name="Report Results" Id="_18_5_1_11940316_1500581577055_500859_37345" Height="500.0" Width="872.0"/>
     </Pages>
     <DataStores>
-        <DataStore Id="_18_5_1_11940316_1500582485846_499914_37452" Name="Tally Database" IsUnlimited="false" cbm:numberedProperty="PO1.4.D 1"/>
+        <DataStore Id="_18_5_1_11940316_1500582485846_499914_37452" Name="Tally Database" IsUnlimited="false" cbm:numberedProperty="3.1.4.D 1"/>
     </DataStores>
     <Pools>
         <Pool Id="_18_5_1_11940316_1500581652950_838831_37393" Name="Interested Party" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1500581652950_838831_37393_proc" Participant="_18_5_1_11940316_1500581627517_267564_37353" BoundaryVisible="true" MainPool="false" MultiInstance="false">
@@ -81,7 +81,7 @@
                 <Created>17-06-20T16:12:00</Created>
             </ProcessHeader>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1500582438657_183489_37441" Name="" cbm:numberedProperty="PO1.4.1">
+                <Activity Id="_18_5_1_11940316_1500582438657_183489_37441" Name="" cbm:numberedProperty="3.1.4.1">
                     <Event>
                         <StartEvent Trigger="Message" Implementation="Unspecified" Interrupting="true">
                             <TriggerResultMessage CatchThrow="CATCH"/>
@@ -93,7 +93,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500582510391_508902_37508" IsForCompensation="false" Name="Check for new results" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.4.2">
+                <Activity Id="_18_5_1_11940316_1500582510391_508902_37508" IsForCompensation="false" Name="Check for new results" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.4.2">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -107,7 +107,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500582630595_586537_37577" Name="Does the requested format exist" cbm:numberedProperty="PO1.4.4">
+                <Activity Id="_18_5_1_11940316_1500582630595_586537_37577" Name="Does the requested format exist?" cbm:numberedProperty="3.1.4.4">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -125,7 +125,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500582666663_553444_37611" IsForCompensation="false" Name="Build reports/results set" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.4.5">
+                <Activity Id="_18_5_1_11940316_1500582666663_553444_37611" IsForCompensation="false" Name="Build reports/results set" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.4.5">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -139,7 +139,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500582749799_342955_37639" Name="Publish Results" cbm:numberedProperty="PO1.4.6">
+                <Activity Id="_18_5_1_11940316_1500582749799_342955_37639" Name="Publish Results" cbm:numberedProperty="3.1.4.6">
                     <Event>
                         <EndEvent Result="Message" Implementation="Unspecified">
                             <TriggerResultMessage CatchThrow="THROW"/>
@@ -151,7 +151,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500583136477_682781_37665" Name="Has tally produced updated results?" cbm:numberedProperty="PO1.4.7">
+                <Activity Id="_18_5_1_11940316_1500583136477_682781_37665" Name="Has tally produced updated results?" cbm:numberedProperty="3.1.4.7">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
