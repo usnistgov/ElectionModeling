@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_2_11940316_1504022370702_272042_30547" Name="Schedule Election" cbm:numberedProperty="1.3.6">
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_2_11940316_1504022370702_272042_30547" Name="Schedule Election" cbm:numberedProperty="1.3.4">
     <PackageHeader>
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-07-29T14:44:00</Created>
-        <ModificationDate>17-08-22T08:39:18</ModificationDate>
+        <ModificationDate>17-08-24T11:00:20</ModificationDate>
         <Documentation>Fix a date for the election to be held.</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>1084</Version>
+        <Version>1106</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -38,7 +38,7 @@
                 <Created>17-07-29T14:44:00</Created>
             </ProcessHeader>
             <Activities>
-                <Activity Id="_18_5_2_11940316_1504032307498_194432_31276" Name="Qualified Candidates and Issues Determined" cbm:numberedProperty="1.3.6.1">
+                <Activity Id="_18_5_2_11940316_1504032307498_194432_31276" Name="Qualified Candidates and Issues Determined" cbm:numberedProperty="1.3.4.1">
                     <Event>
                         <StartEvent Trigger="Conditional" Implementation="Unspecified" Interrupting="true"/>
                     </Event>
@@ -48,7 +48,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504032331752_948150_31312" IsForCompensation="false" Name="Inspect qualified candidates and issues" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.3.6.2">
+                <Activity Id="_18_5_2_11940316_1504032331752_948150_31312" IsForCompensation="false" Name="Inspect qualified candidates and issues" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.3.4.2">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -62,7 +62,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504032372825_662974_31337" Name="Any Qualified?" cbm:numberedProperty="1.3.6.3">
+                <Activity Id="_18_5_2_11940316_1504032372825_662974_31337" Name="Any Qualified?" cbm:numberedProperty="1.3.4.3">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -80,7 +80,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504032375569_232619_31354" IsForCompensation="false" Name="Schedule election" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.3.6.6">
+                <Activity Id="_18_5_2_11940316_1504032375569_232619_31354" IsForCompensation="false" Name="Schedule election" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.3.4.6">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -94,7 +94,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504032387008_292282_31375" Name="Election Scheduled" cbm:numberedProperty="1.3.6.7">
+                <Activity Id="_18_5_2_11940316_1504032387008_292282_31375" Name="Election Scheduled" cbm:numberedProperty="1.3.4.7">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -104,7 +104,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504032401029_842125_31391" Name="Election Canceled" cbm:numberedProperty="1.3.6.9">
+                <Activity Id="_18_5_2_11940316_1504032401029_842125_31391" Name="Election Canceled" cbm:numberedProperty="1.3.4.9">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -114,7 +114,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504032483769_55934_31409" IsForCompensation="false" Name="Determine if election is to be held" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.3.6.4">
+                <Activity Id="_18_5_2_11940316_1504032483769_55934_31409" IsForCompensation="false" Name="Determine if election is to be held" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.3.4.4">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -128,7 +128,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504032507010_401752_31440" Name="Hold Election?" cbm:numberedProperty="1.3.6.5">
+                <Activity Id="_18_5_2_11940316_1504032507010_401752_31440" Name="Hold Election?" cbm:numberedProperty="1.3.4.5">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -146,7 +146,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504198418137_986456_47702" IsForCompensation="false" Name="Cancel election" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.3.6.8">
+                <Activity Id="_18_5_2_11940316_1504198418137_986456_47702" IsForCompensation="false" Name="Cancel election" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.3.4.8">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -162,7 +162,7 @@
                 </Activity>
             </Activities>
             <DataObjects>
-                <DataObject Id="_18_5_2_11940316_1504197212342_622100_47612" Name="List of Qualified Candidates and Issues" cbm:realDataId="_18_5_2_11940316_1504197212269_300742_47610" cbm:numberedProperty="1.3.6.D 1">
+                <DataObject Id="_18_5_2_11940316_1504197212342_622100_47612" Name="List of Qualified Candidates and Issues" cbm:realDataId="_18_5_2_11940316_1504197212269_300742_47610" cbm:numberedProperty="1.3.4.D 1">
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504032275920_241245_31251" Height="119.0" Width="100.0" BorderColor="#99995C" FillColor="#E1E1C3">
                             <Coordinates XCoordinate="154.0" YCoordinate="119.0"/>

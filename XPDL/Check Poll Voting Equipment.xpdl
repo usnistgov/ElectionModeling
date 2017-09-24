@@ -4,13 +4,13 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-07-02T15:36:00</Created>
-        <ModificationDate>17-08-22T08:39:18</ModificationDate>
+        <ModificationDate>17-08-24T11:00:20</ModificationDate>
         <Documentation>For each piece of equipment: Determine if there are differences in the general state of the equipment between when it left the custody of the election jurisdiction and when it returned.</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>1084</Version>
+        <Version>1106</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -34,7 +34,7 @@
     </Pools>
     <Associations>
         <Association Id="_18_5_1_11940316_1501702915012_402794_31124" Source="_18_5_1_11940316_1501702640515_804688_31005" Target="_18_5_1_11940316_1501703088427_848801_31167" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084050754_535660_35197"/>
+            <Object Id="_18_5_2_11940316_1506266395513_488342_29182"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501702575046_448177_30957" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="857.0" YCoordinate="145.0"/>

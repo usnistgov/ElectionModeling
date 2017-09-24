@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-27T00:26:00</Created>
-        <ModificationDate>17-08-22T08:39:18</ModificationDate>
+        <ModificationDate>17-08-24T11:00:20</ModificationDate>
         <Documentation>Return and inventory election materials in preparation of election night.
 &lt;html&gt;
   &lt;head&gt;
@@ -47,7 +47,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>1084</Version>
+        <Version>1106</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -61,28 +61,28 @@ Provisionals may become part of unofficial count&lt;/body&gt;
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Deprocess Poll Materials" Id="_18_5_1_11940316_1501086412358_104833_28167" Height="836.0" Width="1627.0"/>
+        <Page Name="Deprocess Poll Materials" Id="_18_5_1_11940316_1501086412358_104833_28167" Height="836.0" Width="1528.0"/>
     </Pages>
     <Pools>
         <Pool Id="_18_5_1_11940316_1501087220925_632926_28704" Name="" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1501087220925_632926_28704_proc" Participant="_18_5_1_11940316_1501089068915_624055_29001" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <Lanes>
                 <Lane Id="_18_5_1_11940316_1501087220900_556057_28697" Name="" ParentPool="_18_5_1_11940316_1501087220925_632926_28704">
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="612.0" Width="1585.0" BorderColor="#424242" FillColor="#E1E1C3">
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="612.0" Width="1486.0" BorderColor="#424242" FillColor="#E1E1C3">
                             <Coordinates XCoordinate="21.0" YCoordinate="224.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Lane>
             </Lanes>
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="612.0" Width="1627.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="612.0" Width="1528.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="224.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Pool>
         <Pool Id="_18_5_1_11940316_1501091165360_120740_29133" Name="Poll Worker" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1501091165360_120740_29133_proc" Participant="_18_5_1_11940316_1501096470365_163806_30704" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="134.0" Width="1627.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="134.0" Width="1528.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -102,8 +102,8 @@ Provisionals may become part of unofficial count&lt;/body&gt;
             <Message Id="_18_5_1_11940316_1501091505298_634809_29309" Name="Where are you?"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
-                    <Coordinates XCoordinate="413.0" YCoordinate="647.0"/>
-                    <Coordinates XCoordinate="413.0" YCoordinate="134.0"/>
+                    <Coordinates XCoordinate="357.0" YCoordinate="644.0"/>
+                    <Coordinates XCoordinate="357.0" YCoordinate="134.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
@@ -111,19 +111,19 @@ Provisionals may become part of unofficial count&lt;/body&gt;
             <Message Id="_18_5_1_11940316_1501091379686_108336_29243" Name="Election Materials"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
-                    <Coordinates XCoordinate="922.0" YCoordinate="134.0"/>
-                    <Coordinates XCoordinate="922.0" YCoordinate="266.0"/>
+                    <Coordinates XCoordinate="831.0" YCoordinate="134.0"/>
+                    <Coordinates XCoordinate="831.0" YCoordinate="266.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1501698995624_651481_26671" Source="_18_5_1_11940316_1501086486644_93956_28437" Target="_18_5_1_11940316_1501699237286_846542_26680" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084007903_906165_35141"/>
+            <Object Id="_18_5_2_11940316_1506266366622_410419_29143"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="848.0" YCoordinate="462.0"/>
-                    <Coordinates XCoordinate="910.0" YCoordinate="450.0"/>
+                    <Coordinates XCoordinate="669.0" YCoordinate="452.0"/>
+                    <Coordinates XCoordinate="590.0" YCoordinate="423.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
@@ -134,7 +134,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
         <Artifact Id="_18_5_1_11940316_1501699237286_846542_26680" ArtifactType="Annotation" TextAnnotation="Provisionals may become part of unofficial count">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="69.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="910.0" YCoordinate="406.0"/>
+                    <Coordinates XCoordinate="490.0" YCoordinate="371.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
@@ -162,7 +162,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                             <Documentation>Return voting machines from the voting location to the warehouse of the election jurisdiction.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="1071.0" YCoordinate="412.0"/>
+    <Coordinates XCoordinate="946.0" YCoordinate="412.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -176,7 +176,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                             <Documentation>Return ballot boxes from the voting location to the warehouse of the election jurisdiction.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="1071.0" YCoordinate="480.0"/>
+    <Coordinates XCoordinate="946.0" YCoordinate="480.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -190,7 +190,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                             <Documentation>The election results tape is a report outputting the recorded memory of a voting machine. In the case the memory device is misplaced or rendered inoperative, the results tape can be used to produce unofficial results.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="1071.0" YCoordinate="276.0"/>
+    <Coordinates XCoordinate="946.0" YCoordinate="276.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -204,7 +204,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                             <Documentation>Spoiled ballots may be used for ballot reconciliation purposes. They are not part of the official or unofficial counts.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="1071.0" YCoordinate="344.0"/>
+    <Coordinates XCoordinate="946.0" YCoordinate="344.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -218,7 +218,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                             <Documentation>The unvoted ballots may be used in ballot reconciliation.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="1071.0" YCoordinate="552.0"/>
+    <Coordinates XCoordinate="946.0" YCoordinate="552.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -232,7 +232,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                             <Documentation>Locate logs and other documentation that may be useful for reconciliation.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="59.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="1071.0" YCoordinate="679.0"/>
+    <Coordinates XCoordinate="946.0" YCoordinate="679.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -246,7 +246,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                             <Documentation>Locate the vote roster. It will be used during ballot reconciliation.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="1071.0" YCoordinate="615.0"/>
+    <Coordinates XCoordinate="946.0" YCoordinate="615.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -260,7 +260,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                             <Documentation>Locate completed voter registrations for processing.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="59.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="1071.0" YCoordinate="753.0"/>
+    <Coordinates XCoordinate="946.0" YCoordinate="753.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -278,7 +278,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                             <Documentation>Ensure the ballot boxes have been properly emptied.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="728.0" YCoordinate="378.0"/>
+    <Coordinates XCoordinate="669.0" YCoordinate="378.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -292,7 +292,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                             <Documentation>If the election jurisdiction tabulates at the voting location, then the recorded results will be captured onto media such as paper or a computer memory device.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="728.0" YCoordinate="586.0"/>
+    <Coordinates XCoordinate="669.0" YCoordinate="586.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -306,7 +306,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                             <Documentation>Ballots with write-in selections may require manual adjudication, such as determining if the write-in was valid and who it was for.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="728.0" YCoordinate="652.0"/>
+    <Coordinates XCoordinate="669.0" YCoordinate="652.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -320,7 +320,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                             <Documentation>Election Jurisdictions may deploy precinct count tabulators. In this configuration, some ballots will return to the Election Jurisdiction from the Voting Location already counted. These ballots may be referred to in specific scenarios, such as a recount or an audit.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="728.0" YCoordinate="520.0"/>
+    <Coordinates XCoordinate="669.0" YCoordinate="520.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -334,7 +334,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                             <Documentation>Certain ballots may not be counted at the voting location. These include ballots that require adjudication before they may be counted, such as a provisional ballots subject to cure. All ballots for an election jurisdiction performing central count will belong to this category. This could also include ballots not counted due to machine failures. Also could include absentees drooped off at polls.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="59.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="728.0" YCoordinate="445.0"/>
+    <Coordinates XCoordinate="669.0" YCoordinate="445.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -351,7 +351,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                     <Documentation>There are many materials appurtenant to the election but not related to the production of results. Because of the limited time to produce election night results, these materials may not be collected after election day.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="599.0" Width="185.0" BorderColor="#636363" FillColor="#F7DD99">
-                            <Coordinates XCoordinate="1040.0" YCoordinate="231.0"/>
+                            <Coordinates XCoordinate="915.0" YCoordinate="231.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -364,7 +364,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                     <Documentation>Depending on the division of labor between the Authorized Personnel and the Election Jurisdiction, certain materials will need to be deprocessed. This consists of taking an inventory of the election materials related to tabulation.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="386.0" Width="182.0" BorderColor="#636363" FillColor="#F7DD99">
-                            <Coordinates XCoordinate="700.0" YCoordinate="333.0"/>
+                            <Coordinates XCoordinate="641.0" YCoordinate="333.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -374,7 +374,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="1498.0" YCoordinate="531.0"/>
+                            <Coordinates XCoordinate="1404.0" YCoordinate="531.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -389,7 +389,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                     <Documentation>Ensure that all materials are accounted for in accordance with the log.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="1302.0" YCoordinate="518.0"/>
+                            <Coordinates XCoordinate="1192.0" YCoordinate="518.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -404,7 +404,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                     <Documentation>The election jurisdiction and the Authorized Personnel may sign a chain of custody document indicating that the election materials have changed hands.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="511.0" YCoordinate="527.0"/>
+                            <Coordinates XCoordinate="429.0" YCoordinate="527.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -429,7 +429,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                     <Documentation>If the Authorized Personnel do not arrive at the designated pickup location of the election jurisdiction by a certain time, the election jurisdiction may attempt to make contact with them.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="59.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="357.0" YCoordinate="647.0"/>
+                            <Coordinates XCoordinate="301.0" YCoordinate="644.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -468,7 +468,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="525.0" YCoordinate="664.0"/>
+                            <Coordinates XCoordinate="469.0" YCoordinate="661.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -480,7 +480,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="910.0" YCoordinate="266.0"/>
+                            <Coordinates XCoordinate="819.0" YCoordinate="266.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -499,24 +499,24 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                 <Transition Id="_18_5_1_11940316_1501086486644_152234_28442" From="_18_5_1_11940316_1501086486638_876080_28416" To="_18_5_1_11940316_1501086486643_869469_28429" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="1225.0" YCoordinate="546.0"/>
-                            <Coordinates XCoordinate="1302.0" YCoordinate="546.0"/>
+                            <Coordinates XCoordinate="1100.0" YCoordinate="546.0"/>
+                            <Coordinates XCoordinate="1192.0" YCoordinate="546.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1501086486644_908447_28441" From="_18_5_1_11940316_1501086486639_402756_28417" To="_18_5_1_11940316_1501086486638_876080_28416" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="882.0" YCoordinate="567.0"/>
-                            <Coordinates XCoordinate="1040.0" YCoordinate="567.0"/>
+                            <Coordinates XCoordinate="823.0" YCoordinate="567.0"/>
+                            <Coordinates XCoordinate="915.0" YCoordinate="567.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1501088112013_983067_28859" From="_18_5_1_11940316_1501086486643_869469_28429" To="_18_5_1_11940316_1501086486639_444445_28419" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="1422.0" YCoordinate="543.0"/>
-                            <Coordinates XCoordinate="1498.0" YCoordinate="543.0"/>
+                            <Coordinates XCoordinate="1312.0" YCoordinate="543.0"/>
+                            <Coordinates XCoordinate="1404.0" YCoordinate="543.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -535,24 +535,24 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="249.0" YCoordinate="624.0"/>
-                            <Coordinates XCoordinate="249.0" YCoordinate="676.0"/>
-                            <Coordinates XCoordinate="357.0" YCoordinate="676.0"/>
+                            <Coordinates XCoordinate="249.0" YCoordinate="673.0"/>
+                            <Coordinates XCoordinate="301.0" YCoordinate="673.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1501091739847_116571_29403" From="_18_5_1_11940316_1501091471632_664623_29297" To="_18_5_1_11940316_1501091743066_789329_29414" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="477.0" YCoordinate="676.0"/>
-                            <Coordinates XCoordinate="525.0" YCoordinate="676.0"/>
+                            <Coordinates XCoordinate="421.0" YCoordinate="673.0"/>
+                            <Coordinates XCoordinate="469.0" YCoordinate="673.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1501097646985_230458_30770" From="_18_5_1_11940316_1501097645544_309409_30759" To="_18_5_1_11940316_1501086486638_876080_28416" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="934.0" YCoordinate="278.0"/>
-                            <Coordinates XCoordinate="1040.0" YCoordinate="278.0"/>
+                            <Coordinates XCoordinate="843.0" YCoordinate="278.0"/>
+                            <Coordinates XCoordinate="915.0" YCoordinate="278.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -569,8 +569,8 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                 <Transition Id="_18_5_1_11940316_1501100315084_783743_30866" From="_18_5_1_11940316_1501087477828_94360_28773" To="_18_5_1_11940316_1501086486639_402756_28417" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="631.0" YCoordinate="550.0"/>
-                            <Coordinates XCoordinate="700.0" YCoordinate="550.0"/>
+                            <Coordinates XCoordinate="549.0" YCoordinate="550.0"/>
+                            <Coordinates XCoordinate="641.0" YCoordinate="550.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -578,7 +578,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="337.0" YCoordinate="550.0"/>
-                            <Coordinates XCoordinate="511.0" YCoordinate="550.0"/>
+                            <Coordinates XCoordinate="429.0" YCoordinate="550.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>

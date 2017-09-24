@@ -4,13 +4,13 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T09:39:00</Created>
-        <ModificationDate>17-08-22T08:39:18</ModificationDate>
+        <ModificationDate>17-08-24T11:00:20</ModificationDate>
         <Documentation>For each remote voter: Send a ballot to the voter via postal mail.</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>1084</Version>
+        <Version>1106</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -58,7 +58,7 @@
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_2_11940316_1505319129306_853849_35430" Source="_18_5_1_11940316_1500560582353_307515_34934" Target="_18_5_2_11940316_1505319129406_160525_35431" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084055898_7595_35209"/>
+            <Object Id="_18_5_2_11940316_1506266398918_550726_29184"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="683.0" YCoordinate="373.0"/>

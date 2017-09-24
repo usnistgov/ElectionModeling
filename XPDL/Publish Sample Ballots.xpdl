@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500468929540_480782_24625" Name="Publish Sample Ballots" cbm:numberedProperty="1.5.4">
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500468929540_480782_24625" Name="Publish Sample Ballots" cbm:numberedProperty="1.5.3">
     <PackageHeader>
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-07-16T15:35:00</Created>
-        <ModificationDate>17-08-22T08:39:18</ModificationDate>
+        <ModificationDate>17-08-24T11:00:20</ModificationDate>
         <Documentation>Publish sample ballots containing the contests and selections to be voted on.</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>1084</Version>
+        <Version>1106</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -34,7 +34,7 @@
     </Pools>
     <Artifacts>
         <Artifact Id="_18_5_1_11940316_1502912896431_681895_27536" Name="Ballot Styles" ArtifactType="DataObject">
-            <DataObject Id="_18_5_1_11940316_1502912896449_696458_27540" Name="Ballot Styles" cbm:realDataId="_18_5_1_11940316_1502912896431_681895_27536" cbm:numberedProperty="1.5.4.1.5.6.D 2">
+            <DataObject Id="_18_5_1_11940316_1502912896449_696458_27540" Name="Ballot Styles" cbm:realDataId="_18_5_1_11940316_1502912896431_681895_27536" cbm:numberedProperty="1.5.3.1.5.6.D 2">
                 <NodeGraphicsInfos>
                     <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1502912158865_500317_27286" Height="64.0" Width="149.0" BorderColor="#99995C" FillColor="#E1E1C3">
                         <Coordinates XCoordinate="56.0" YCoordinate="49.0"/>
@@ -51,7 +51,7 @@
             <ActivitySets>
                 <ActivitySet Id="_18_5_1_11940316_1502913316674_983604_27675" Name="Publish Sample Ballot_as" AdHoc="true" AdHocOrdering="Parallel" AdHocCompletionCondition="Applicable tasks completed" TriggeredByEvent="false">
                     <Activities>
-                        <Activity Id="_18_5_1_11940316_1502913038764_548774_27584" IsForCompensation="false" Name="Publish to website" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.1.5.6.10.1">
+                        <Activity Id="_18_5_1_11940316_1502913038764_548774_27584" IsForCompensation="false" Name="Publish to website" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.3.1.5.6.10.1">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -65,7 +65,7 @@
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1502913063488_688434_27607" IsForCompensation="false" Name="Publish to media" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.1.5.6.10.2">
+                        <Activity Id="_18_5_1_11940316_1502913063488_688434_27607" IsForCompensation="false" Name="Publish to media" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.3.1.5.6.10.2">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -79,7 +79,7 @@
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1502913073999_516705_27638" IsForCompensation="false" Name="Print for distribution" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.1.5.6.10.3">
+                        <Activity Id="_18_5_1_11940316_1502913073999_516705_27638" IsForCompensation="false" Name="Print for distribution" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.3.1.5.6.10.3">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -97,7 +97,7 @@
                 </ActivitySet>
             </ActivitySets>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1502912194606_997247_27311" Name="" cbm:numberedProperty="1.5.4.1.5.6.1">
+                <Activity Id="_18_5_1_11940316_1502912194606_997247_27311" Name="" cbm:numberedProperty="1.5.3.1.5.6.1">
                     <Event>
                         <StartEvent Trigger="None" Implementation="Unspecified"/>
                     </Event>
@@ -107,7 +107,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1502912720112_68643_27509" IsForCompensation="false" Name="Produce sample ballot" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.1.5.6.6">
+                <Activity Id="_18_5_1_11940316_1502912720112_68643_27509" IsForCompensation="false" Name="Produce sample ballot" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.3.1.5.6.6">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -124,7 +124,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1502913316736_423596_27689" IsForCompensation="false" Name="Publish Sample Ballot" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.5.4.1.5.6.10">
+                <Activity Id="_18_5_1_11940316_1502913316736_423596_27689" IsForCompensation="false" Name="Publish Sample Ballot" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.5.3.1.5.6.10">
                     <BlockActivity ActivitySetId="_18_5_1_11940316_1502913316674_983604_27675" View="EXPANDED"/>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
@@ -136,7 +136,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1502969425303_149471_27416" Name="Sample Ballots Published" cbm:numberedProperty="1.5.4.1.5.6.11">
+                <Activity Id="_18_5_1_11940316_1502969425303_149471_27416" Name="Sample Ballots Published" cbm:numberedProperty="1.5.3.1.5.6.11">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>

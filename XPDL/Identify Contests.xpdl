@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-07-29T10:54:00</Created>
-        <ModificationDate>17-08-22T08:39:18</ModificationDate>
+        <ModificationDate>17-08-24T11:00:20</ModificationDate>
         <Documentation>Identify the contests that may appear on an upcoming election's ballot.
 &lt;html&gt;
   &lt;head&gt;
@@ -24,7 +24,7 @@ Vacancy, Act of assembly, citizen initiative, recall attempt
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>1084</Version>
+        <Version>1106</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -48,7 +48,7 @@ Vacancy, Act of assembly, citizen initiative, recall attempt
     </Pools>
     <Associations>
         <Association Id="_18_5_2_11940316_1504026899138_487070_30634" Source="_18_5_2_11940316_1504018775318_195903_29276" Target="_18_5_2_11940316_1504026899214_383200_30635" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084003422_662628_35123"/>
+            <Object Id="_18_5_2_11940316_1506266363694_213981_29135"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="115.0" YCoordinate="250.0"/>

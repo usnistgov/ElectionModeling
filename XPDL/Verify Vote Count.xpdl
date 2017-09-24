@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T16:44:00</Created>
-        <ModificationDate>17-08-22T08:39:18</ModificationDate>
+        <ModificationDate>17-08-24T11:00:20</ModificationDate>
         <Documentation>&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -37,7 +37,7 @@ Acceptable margin of error/victory&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>1084</Version>
+        <Version>1106</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -61,7 +61,7 @@ Acceptable margin of error/victory&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_1_11940316_1502906351492_526521_31866" Source="_18_5_1_11940316_1500583571012_872422_37849" Target="_18_5_1_11940316_1502906365969_449719_31873" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084044825_907600_35188"/>
+            <Object Id="_18_5_2_11940316_1506266391917_331107_29173"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="313.0" YCoordinate="120.0"/>
@@ -70,7 +70,7 @@ Acceptable margin of error/victory&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1505511647064_575707_51510" Source="_18_5_1_11940316_1500583692328_304440_38014" Target="_18_5_2_11940316_1505511647182_17756_51511" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084044825_427195_35189"/>
+            <Object Id="_18_5_2_11940316_1506266391918_148879_29174"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1044.0" YCoordinate="98.0"/>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500469582302_579244_25018" Name="Qualify Contests and Candidates" cbm:numberedProperty="1.3.4">
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500469582302_579244_25018" Name="Qualify Contests and Candidates" cbm:numberedProperty="1.3.3">
     <PackageHeader>
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-07-29T11:27:00</Created>
-        <ModificationDate>17-08-22T08:39:18</ModificationDate>
+        <ModificationDate>17-08-24T11:00:20</ModificationDate>
         <Documentation>Qualify the contests and candidates that may appear on the ballot.
 &lt;html&gt;
   &lt;head&gt;
@@ -38,7 +38,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>1084</Version>
+        <Version>1106</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -62,7 +62,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_2_11940316_1504125027156_717651_42495" Source="_18_5_2_11940316_1504030082776_644383_31033" Target="_18_5_2_11940316_1504125027296_948193_42496" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084032511_204265_35176"/>
+            <Object Id="_18_5_2_11940316_1506266383574_982190_29160"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1006.0" YCoordinate="214.0"/>
@@ -71,7 +71,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1504129549505_785752_43108" Source="_18_5_2_11940316_1504030346111_506915_31139" Target="_18_5_2_11940316_1504129549660_353551_43109" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084032514_655613_35177"/>
+            <Object Id="_18_5_2_11940316_1506266383576_332315_29161"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="494.0" YCoordinate="533.0"/>
@@ -80,7 +80,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1504130317263_406268_43118" Source="_18_5_2_11940316_1504128680913_572844_43024" Target="_18_5_2_11940316_1504130317427_307069_43119" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084032515_602459_35178"/>
+            <Object Id="_18_5_2_11940316_1506266383577_424642_29162"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="124.0" YCoordinate="259.0"/>
@@ -89,7 +89,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1504130583856_892675_43127" Source="_18_5_2_11940316_1504030223600_590662_31055" Target="_18_5_2_11940316_1504130584008_619083_43128" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084032516_792699_35179"/>
+            <Object Id="_18_5_2_11940316_1506266383577_644102_29163"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="231.0" YCoordinate="105.0"/>
@@ -98,7 +98,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1504188212268_91525_43556" Source="_18_5_2_11940316_1504188157857_814178_43550" Target="_18_5_2_11940316_1504188212495_47334_43557" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084032516_650276_35180"/>
+            <Object Id="_18_5_2_11940316_1506266383578_33_29164"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1006.0" YCoordinate="430.0"/>
@@ -116,7 +116,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
             </NodeGraphicsInfos>
         </Artifact>
         <Artifact Id="_18_5_2_11940316_1504128736105_991669_43064" Name="List of Pending Contests and Candidates" ArtifactType="DataObject">
-            <DataObject Id="_18_5_2_11940316_1504128736129_714423_43068" Name="List of Pending Contests and Candidates" cbm:realDataId="_18_5_2_11940316_1504128736105_991669_43064" cbm:numberedProperty="1.3.4.D 1">
+            <DataObject Id="_18_5_2_11940316_1504128736129_714423_43068" Name="List of Pending Contests and Candidates" cbm:realDataId="_18_5_2_11940316_1504128736105_991669_43064" cbm:numberedProperty="1.3.3.D 1">
                 <NodeGraphicsInfos>
                     <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" Height="84.0" Width="182.0" BorderColor="#99995C" FillColor="#E1E1C3">
                         <Coordinates XCoordinate="28.0" YCoordinate="427.0"/>
@@ -161,7 +161,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
             <ActivitySets>
                 <ActivitySet Id="_18_5_2_11940316_1504030223557_560506_31045" Name="Qualify Contest or Candidate_as" AdHoc="false" TriggeredByEvent="false">
                     <Activities>
-                        <Activity Id="_18_5_2_11940316_1504028710402_492684_30707" Name="" cbm:numberedProperty="1.3.4.17.1">
+                        <Activity Id="_18_5_2_11940316_1504028710402_492684_30707" Name="" cbm:numberedProperty="1.3.3.17.1">
                             <Event>
 <StartEvent Trigger="None" Implementation="Unspecified"/>
                             </Event>
@@ -171,7 +171,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_11940316_1504028714391_978182_30730" IsForCompensation="false" Name="Determine  validity" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.3.4.17.3">
+                        <Activity Id="_18_5_2_11940316_1504028714391_978182_30730" IsForCompensation="false" Name="Determine  validity" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.3.3.17.3">
                             <Implementation>
 <Task>
     <TaskBusinessRule BusinessRuleTaskImplementation="Unspecified"/>
@@ -187,7 +187,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_11940316_1504029010066_293105_30761" IsForCompensation="false" Name="Perform acceptance review" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.3.4.17.2">
+                        <Activity Id="_18_5_2_11940316_1504029010066_293105_30761" IsForCompensation="false" Name="Perform acceptance review" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.3.3.17.2">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -201,7 +201,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_11940316_1504029193430_108210_30795" Name="Time to Certify Candidates and Issues" cbm:numberedProperty="1.3.4.17.4">
+                        <Activity Id="_18_5_2_11940316_1504029193430_108210_30795" Name="Time to Certify Candidates and Issues" cbm:numberedProperty="1.3.3.17.4">
                             <Event>
 <IntermediateEvent Trigger="Timer" Implementation="WebService" Interrupting="true"/>
                             </Event>
@@ -211,7 +211,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_11940316_1504029289069_883641_30827" Name="Valid?" cbm:numberedProperty="1.3.4.17.5">
+                        <Activity Id="_18_5_2_11940316_1504029289069_883641_30827" Name="Valid?" cbm:numberedProperty="1.3.3.17.5">
                             <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                             <TransitionRestrictions>
 <TransitionRestriction>
@@ -229,7 +229,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_11940316_1504029327883_126487_30852" Name="Not Qualified" cbm:numberedProperty="1.3.4.17.6">
+                        <Activity Id="_18_5_2_11940316_1504029327883_126487_30852" Name="Not Qualified" cbm:numberedProperty="1.3.3.17.6">
                             <Event>
 <EndEvent Result="None" Implementation="Unspecified"/>
                             </Event>
@@ -239,7 +239,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_11940316_1504029387285_17170_30899" Name="May be Remediated?" cbm:numberedProperty="1.3.4.17.7">
+                        <Activity Id="_18_5_2_11940316_1504029387285_17170_30899" Name="May be Remediated?" cbm:numberedProperty="1.3.3.17.7">
                             <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                             <TransitionRestrictions>
 <TransitionRestriction>
@@ -257,7 +257,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_11940316_1504029484672_584292_30928" Name="Review Successful?" cbm:numberedProperty="1.3.4.17.8">
+                        <Activity Id="_18_5_2_11940316_1504029484672_584292_30928" Name="Review Successful?" cbm:numberedProperty="1.3.3.17.8">
                             <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                             <TransitionRestrictions>
 <TransitionRestriction>
@@ -275,7 +275,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_11940316_1504030082776_644383_31033" Name="Qualified" cbm:numberedProperty="1.3.4.17.10">
+                        <Activity Id="_18_5_2_11940316_1504030082776_644383_31033" Name="Qualified" cbm:numberedProperty="1.3.3.17.10">
                             <Event>
 <EndEvent Result="Message" Implementation="Unspecified">
     <TriggerResultMessage CatchThrow="THROW"/>
@@ -287,7 +287,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_11940316_1504179220449_895363_43215" IsForCompensation="false" Name="Handle challenge" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.3.4.17.9">
+                        <Activity Id="_18_5_2_11940316_1504179220449_895363_43215" IsForCompensation="false" Name="Handle challenge" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.3.3.17.9">
                             <BlockActivity ActivitySetId="_18_5_2_11940316_1504179220409_104874_43205" View="EXPANDED"/>
                             <Documentation>&lt;html&gt;
   &lt;head&gt;
@@ -309,7 +309,7 @@ Do we want to describe this in any detail?&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_11940316_1504188157857_814178_43550" Name="No Determination" cbm:numberedProperty="1.3.4.17.11">
+                        <Activity Id="_18_5_2_11940316_1504188157857_814178_43550" Name="No Determination" cbm:numberedProperty="1.3.3.17.11">
                             <Event>
 <EndEvent Result="None" Implementation="Unspecified"/>
                             </Event>
@@ -428,7 +428,7 @@ Do we want to describe this in any detail?&amp;#160;
                 </ActivitySet>
             </ActivitySets>
             <Activities>
-                <Activity Id="_18_5_2_11940316_1504030223600_590662_31055" IsForCompensation="false" Name="Qualify Contest or Candidate" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.3.4.17">
+                <Activity Id="_18_5_2_11940316_1504030223600_590662_31055" IsForCompensation="false" Name="Qualify Contest or Candidate" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.3.3.17">
                     <BlockActivity ActivitySetId="_18_5_2_11940316_1504030223557_560506_31045" View="EXPANDED"/>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
@@ -470,7 +470,7 @@ Allow the authorizing party submit additional documents, and run the process aga
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504128680913_572844_43024" Name="" cbm:numberedProperty="1.3.4.22">
+                <Activity Id="_18_5_2_11940316_1504128680913_572844_43024" Name="" cbm:numberedProperty="1.3.3.22">
                     <Event>
                         <StartEvent Trigger="None" Implementation="Unspecified"/>
                     </Event>
@@ -480,7 +480,7 @@ Allow the authorizing party submit additional documents, and run the process aga
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504128703064_39818_43044" Name="Contests and Candidates Qualified" cbm:numberedProperty="1.3.4.23">
+                <Activity Id="_18_5_2_11940316_1504128703064_39818_43044" Name="Contests and Candidates Qualified" cbm:numberedProperty="1.3.3.23">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -492,7 +492,7 @@ Allow the authorizing party submit additional documents, and run the process aga
                 </Activity>
             </Activities>
             <DataObjects>
-                <DataObject Id="_18_5_2_11940316_1504193888992_793187_43720" Name="List of Qualified Contests and Candidates" cbm:realDataId="_18_5_2_11940316_1504193888978_700164_43716" cbm:numberedProperty="1.3.4.D 2">
+                <DataObject Id="_18_5_2_11940316_1504193888992_793187_43720" Name="List of Qualified Contests and Candidates" cbm:realDataId="_18_5_2_11940316_1504193888978_700164_43716" cbm:numberedProperty="1.3.3.D 2">
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" Height="126.0" Width="77.0" BorderColor="#99995C" FillColor="#E1E1C3">
                             <Coordinates XCoordinate="1211.0" YCoordinate="434.0"/>

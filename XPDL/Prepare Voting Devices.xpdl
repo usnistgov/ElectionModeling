@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500468882115_966786_24545" Name="Prepare Voting Devices" cbm:numberedProperty="1.5.7">
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500468882115_966786_24545" Name="Prepare Voting Devices" cbm:numberedProperty="1.5.6">
     <PackageHeader>
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-07-23T15:45:00</Created>
-        <ModificationDate>17-08-22T08:39:18</ModificationDate>
+        <ModificationDate>17-08-24T11:00:20</ModificationDate>
         <Documentation>Prepare voting devices such that they are ready for election deployment.
 &lt;html&gt;
   &lt;head&gt;
@@ -104,7 +104,7 @@ Media may be specifically configured for each precinct/poll&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>1084</Version>
+        <Version>1106</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -128,7 +128,7 @@ Media may be specifically configured for each precinct/poll&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_1_11940316_1503518181476_507985_61661" Source="_18_5_1_11940316_1503517587750_230276_61542" Target="_18_5_1_11940316_1503518317870_616862_61700" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084025584_139739_35169"/>
+            <Object Id="_18_5_2_11940316_1506266378256_185048_29153"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="199.0" YCoordinate="210.0"/>
@@ -137,7 +137,7 @@ Media may be specifically configured for each precinct/poll&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1503518439574_399095_61707" Source="_18_5_1_11940316_1503518306057_33107_61681" Target="_18_5_1_11940316_1503518927082_372006_61750" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084025585_138684_35170"/>
+            <Object Id="_18_5_2_11940316_1506266378257_992116_29154"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="399.0" YCoordinate="94.0"/>
@@ -146,7 +146,7 @@ Media may be specifically configured for each precinct/poll&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1504725755843_343979_28496" Source="_18_5_1_11940316_1503517759481_437255_61653" Target="_18_5_2_11940316_1504725755939_844790_28497" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084025585_81050_35171"/>
+            <Object Id="_18_5_2_11940316_1506266378259_15193_29155"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="477.0" YCoordinate="203.0"/>

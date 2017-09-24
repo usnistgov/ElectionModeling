@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T09:09:00</Created>
-        <ModificationDate>17-08-22T08:39:18</ModificationDate>
+        <ModificationDate>17-08-24T11:00:20</ModificationDate>
         <Documentation>Close the voting location on election day.
 &lt;html&gt;
   &lt;head&gt;
@@ -38,7 +38,7 @@ Convert to Ad-Hoc Subprocess?&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>1084</Version>
+        <Version>1106</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -72,7 +72,7 @@ Convert to Ad-Hoc Subprocess?&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_1_11940316_1501683856616_814059_34151" Source="_18_5_1_11940316_1500556280735_962343_33140" Target="_18_5_1_11940316_1501683856706_50994_34152" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084006353_141129_35129"/>
+            <Object Id="_18_5_2_11940316_1506266365660_471843_29141"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="82.0" YCoordinate="336.0"/>
@@ -81,7 +81,7 @@ Convert to Ad-Hoc Subprocess?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1502893063777_422173_31441" Source="_18_5_1_11940316_1500556726944_853427_33366" Target="_18_5_1_11940316_1502893063940_324368_31442" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084006353_95469_35130"/>
+            <Object Id="_18_5_2_11940316_1506266365661_816153_29142"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="972.0" YCoordinate="401.0"/>

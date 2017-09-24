@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T15:17:00</Created>
-        <ModificationDate>17-08-22T08:39:18</ModificationDate>
+        <ModificationDate>17-08-24T11:00:20</ModificationDate>
         <Documentation>Tally the ballot selections in order to report election results.
 &lt;html&gt;
   &lt;head&gt;
@@ -54,7 +54,7 @@ Convert to Ad Hoc Subprocess?&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>1084</Version>
+        <Version>1106</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -65,12 +65,12 @@ Convert to Ad Hoc Subprocess?&amp;#160;
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Tally" Id="_18_5_1_11940316_1500578226571_730654_36552" Height="493.0" Width="1130.0"/>
+        <Page Name="Tally" Id="_18_5_1_11940316_1500578226571_730654_36552" Height="472.0" Width="1130.0"/>
     </Pages>
     <Pools>
         <Pool Id="_18_5_1_11940316_1500578254510_314450_36577" Name="Election Authority" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1500578254510_314450_36577_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" Height="493.0" Width="1130.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" Height="472.0" Width="1130.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -78,7 +78,7 @@ Convert to Ad Hoc Subprocess?&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_1_11940316_1500579362435_384663_36666" Source="_18_5_1_11940316_1500588643281_710287_38710" Target="_18_5_1_11940316_1500579485655_197723_36707" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084030979_323747_35173"/>
+            <Object Id="_18_5_2_11940316_1506266382682_330838_29157"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="71.0" YCoordinate="185.0"/>
@@ -87,7 +87,7 @@ Convert to Ad Hoc Subprocess?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1500579508186_874147_36738" Source="_18_5_1_11940316_1500579521192_167327_36746" Target="_18_5_1_11940316_1500579508302_206644_36739" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084030980_652905_35174"/>
+            <Object Id="_18_5_2_11940316_1506266382683_898225_29158"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="337.0" YCoordinate="174.0"/>
@@ -96,7 +96,7 @@ Convert to Ad Hoc Subprocess?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1500580089051_879726_37164" Source="_18_5_1_11940316_1500579954596_794135_37045" Target="_18_5_1_11940316_1500580089146_409757_37165" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084030982_25995_35175"/>
+            <Object Id="_18_5_2_11940316_1506266382685_91319_29159"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="731.0" YCoordinate="344.0"/>

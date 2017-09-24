@@ -4,13 +4,13 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-08T14:20:00</Created>
-        <ModificationDate>17-08-22T08:39:18</ModificationDate>
+        <ModificationDate>17-08-24T11:00:20</ModificationDate>
         <Documentation>For each address update: Look up a record in the voter registration database, and confirm or update the voter’s address.</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>1084</Version>
+        <Version>1106</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -62,7 +62,7 @@
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1501786379330_502734_32971" Source="_18_5_1_11940316_1501785315023_3211_32877" Target="_18_5_1_11940316_1501786379448_257943_32973" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084063930_329152_35216"/>
+            <Object Id="_18_5_2_11940316_1506266404060_513065_29191"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499538016849_553126_25686" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1254.0" YCoordinate="432.0"/>
@@ -71,7 +71,7 @@
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1501854756873_821415_26297" Source="_18_5_1_11940316_1501851143364_567016_26136" Target="_18_5_1_11940316_1501854756984_58510_26298" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084063930_228221_35217"/>
+            <Object Id="_18_5_2_11940316_1506266404061_18022_29192"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499538016849_553126_25686" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1851.0" YCoordinate="333.0"/>
@@ -80,7 +80,7 @@
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1502835187333_145960_41865" Source="_18_5_1_11940316_1502834759886_523302_41859" Target="_18_5_1_11940316_1502835187444_257206_41866" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084063931_195584_35218"/>
+            <Object Id="_18_5_2_11940316_1506266404061_642289_29193"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499538016849_553126_25686" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1219.0" YCoordinate="578.0"/>
@@ -89,7 +89,7 @@
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1503593446976_332735_28400" Source="_18_5_1_11940316_1499538193365_870416_26020" Target="_18_5_1_11940316_1503593447076_687351_28401" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084063931_526534_35219"/>
+            <Object Id="_18_5_2_11940316_1506266404062_659410_29194"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499538016849_553126_25686" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="943.0" YCoordinate="469.0"/>
@@ -98,7 +98,7 @@
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1503599480347_107106_34309" Source="_18_5_1_11940316_1501785315023_3211_32877" Target="_18_5_1_11940316_1503599480522_486681_34310" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084063932_526681_35220"/>
+            <Object Id="_18_5_2_11940316_1506266404063_270284_29195"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499538016849_553126_25686" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1285.0" YCoordinate="416.0"/>
@@ -107,7 +107,7 @@
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1505943199865_490519_40669" Source="_18_5_1_11940316_1503599824060_804794_34333" Target="_18_5_2_11940316_1505943199997_918335_40670" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084063932_322712_35221"/>
+            <Object Id="_18_5_2_11940316_1506266404063_278330_29196"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499538016849_553126_25686" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1146.0" YCoordinate="491.0"/>

@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-12T08:49:00</Created>
-        <ModificationDate>17-08-22T08:39:18</ModificationDate>
+        <ModificationDate>17-08-24T11:00:20</ModificationDate>
         <Documentation>Confirm the location of the voter's current place of residence.
 &lt;html&gt;
   &lt;head&gt;
@@ -96,7 +96,7 @@ This will allow the callee to determine whether to cancel the confirmation proce
     </PackageHeader>
     <RedefinableHeader>
         <Author>jdziu_000</Author>
-        <Version>1084</Version>
+        <Version>1106</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -150,7 +150,7 @@ This will allow the callee to determine whether to cancel the confirmation proce
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1501775333386_688847_32323" Source="_18_5_1_11940316_1501016189283_169439_25467" Target="_18_5_1_11940316_1501775432910_827202_32383" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084005015_814644_35124"/>
+            <Object Id="_18_5_2_11940316_1506266364682_44926_29136"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="452.0" YCoordinate="282.0"/>
@@ -159,7 +159,7 @@ This will allow the callee to determine whether to cancel the confirmation proce
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1501783719575_395793_32702" Source="_18_5_1_11940316_1501019794587_475431_26003" Target="_18_5_1_11940316_1501783719698_55059_32703" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084005016_803544_35125"/>
+            <Object Id="_18_5_2_11940316_1506266364683_519991_29137"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="511.0" YCoordinate="230.0"/>
@@ -168,7 +168,7 @@ This will allow the callee to determine whether to cancel the confirmation proce
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1501792388497_64434_33068" Source="_18_5_1_11940316_1501775471340_894640_32389" Target="_18_5_1_11940316_1501792388610_502374_33069" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084005017_843691_35126"/>
+            <Object Id="_18_5_2_11940316_1506266364685_80567_29138"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="766.0" YCoordinate="282.0"/>
@@ -177,7 +177,7 @@ This will allow the callee to determine whether to cancel the confirmation proce
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1503594385278_659303_29232" Source="_18_5_1_11940316_1501859352858_615492_26394" Target="_18_5_1_11940316_1503594385394_67048_29233" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084005019_269886_35127"/>
+            <Object Id="_18_5_2_11940316_1506266364687_402107_29139"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="336.0" YCoordinate="413.0"/>
@@ -186,7 +186,7 @@ This will allow the callee to determine whether to cancel the confirmation proce
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1503596231603_370983_29387" Source="_18_5_1_11940316_1503596223005_647228_29369" Target="_18_5_1_11940316_1503596231719_647920_29388" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506084005020_214082_35128"/>
+            <Object Id="_18_5_2_11940316_1506266364688_182567_29140"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="287.0" YCoordinate="449.0"/>
