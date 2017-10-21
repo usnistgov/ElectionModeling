@@ -3,16 +3,166 @@
     <PackageHeader>
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
-        <Created></Created>
-        <ModificationDate>17-08-24T11:00:20</ModificationDate>
-        <Documentation>Maintain the registration or voting precinct boundaries that a voter is assigned.</Documentation>
+        <Created>17-08-27T15:09:00</Created>
+        <ModificationDate>17-09-21T14:26:26</ModificationDate>
+        <Documentation>Maintain the registration or voting precinct boundaries that a voter is assigned.
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+Could be a directory / ranges&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+If you do not reprecinct, you may get splits&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
-        <Author>jdziu_000</Author>
-        <Version>1106</Version>
+        <Author>john</Author>
+        <Version>1260</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
     <ConformanceClass GraphConformance="NON_BLOCKED" BPMNModelPortabilityConformance="SIMPLE"/>
+    <Participants>
+        <Participant Id="_18_5_1_11940316_1498999818037_96552_21933" Name="Election Jurisdiction" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
+            <ParticipantType Type="RESOURCE"/>
+        </Participant>
+    </Participants>
+    <Pages>
+        <Page Name="Maintain Precinct Boundaries" Id="_18_5_2_11940316_1506539395302_109047_38709" Height="710.0" Width="1151.0"/>
+    </Pages>
+    <Pools>
+        <Pool Id="_18_5_2_11940316_1506539408168_433271_38721" Name="Election Jurisdiction" Orientation="HORIZONTAL" Process="_18_5_2_11940316_1506539408168_433271_38721_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539395302_109047_38709" Height="710.0" Width="1151.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                    <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+    </Pools>
+    <Associations>
+        <Association Id="_18_5_2_11940316_1507120373286_968003_28689" Source="_18_5_2_11940316_1507120373283_376109_28685" Target="_18_5_2_11940316_1507120373284_691763_28687" AssociationDirection="None">
+            <Object Id="_18_5_2_43701b0_1508611150207_909043_29516"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539395302_109047_38709" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="400.0" YCoordinate="224.0"/>
+                    <Coordinates XCoordinate="404.0" YCoordinate="194.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+    </Associations>
+    <Artifacts>
+        <Artifact Id="_18_5_2_11940316_1507120371167_523951_28651" ArtifactType="Annotation" TextAnnotation="Could be a directory / ranges "/>
+        <Artifact Id="_18_5_2_11940316_1507120373284_691763_28687" ArtifactType="Annotation" TextAnnotation="If you do not reprecinct, you may get splits ">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539395302_109047_38709" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="357.0" YCoordinate="140.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+    </Artifacts>
+    <WorkflowProcesses>
+        <WorkflowProcess Id="_18_5_2_11940316_1506539408168_433271_38721_proc" Name="Election Jurisdiction" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+            <ProcessHeader>
+                <Created>17-08-27T15:09:00</Created>
+            </ProcessHeader>
+            <Activities>
+                <Activity Id="_18_5_2_11940316_1507068730713_943058_28808" Name="Precincts population exceeds maximum" cbm:numberedProperty="1.1.1.1">
+                    <Event>
+                        <StartEvent Trigger="Conditional" Implementation="Unspecified" Interrupting="true"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539395302_109047_38709" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="189.0" YCoordinate="182.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1507120373283_376109_28685" IsForCompensation="false" Name="Split or combine precincts as nessacary" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.1.3">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539395302_109047_38709" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="336.0" YCoordinate="224.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1507120385290_824568_28750" Name="Time to draw new precincts" cbm:numberedProperty="1.1.1.4">
+                    <Event>
+                        <StartEvent Trigger="None" Implementation="Unspecified"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539395302_109047_38709" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="98.0" YCoordinate="329.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1507127438855_533076_29497" IsForCompensation="false" Name="" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.1.7">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539395302_109047_38709" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="231.0" YCoordinate="315.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition Id="_18_5_2_11940316_1507120381379_841100_28732" From="_18_5_2_11940316_1507068730713_943058_28808" To="_18_5_2_11940316_1507120373283_376109_28685" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539395302_109047_38709" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="213.0" YCoordinate="194.0"/>
+                            <Coordinates XCoordinate="277.0" YCoordinate="194.0"/>
+                            <Coordinates XCoordinate="277.0" YCoordinate="242.0"/>
+                            <Coordinates XCoordinate="336.0" YCoordinate="242.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_11940316_1507120386573_417208_28761" From="_18_5_2_11940316_1507127438855_533076_29497" To="_18_5_2_11940316_1507120373283_376109_28685" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539395302_109047_38709" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="291.0" YCoordinate="315.0"/>
+                            <Coordinates XCoordinate="291.0" YCoordinate="259.0"/>
+                            <Coordinates XCoordinate="336.0" YCoordinate="259.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_11940316_1507127440003_417223_29510" From="_18_5_2_11940316_1507120385290_824568_28750" To="_18_5_2_11940316_1507127438855_533076_29497" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539395302_109047_38709" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="122.0" YCoordinate="341.0"/>
+                            <Coordinates XCoordinate="231.0" YCoordinate="341.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+            </Transitions>
+        </WorkflowProcess>
+    </WorkflowProcesses>
 </Package>

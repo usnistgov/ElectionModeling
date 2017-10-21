@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-05T10:24:00</Created>
-        <ModificationDate>17-08-24T11:00:20</ModificationDate>
+        <ModificationDate>17-09-21T14:26:26</ModificationDate>
         <Documentation>For each court record: lookup a record in the voter registration database, and change the record’s status according to the court action.
 &lt;html&gt;
   &lt;head&gt;
@@ -23,8 +23,8 @@ Verbiage here is a bit strange.
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
-        <Author>jdziu_000</Author>
-        <Version>1106</Version>
+        <Author>john</Author>
+        <Version>1260</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -38,15 +38,15 @@ Verbiage here is a bit strange.
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Process Court Actions" Id="_18_5_1_11940316_1499264668505_931485_22943" Height="545.0" Width="1053.0"/>
+        <Page Name="Process Court Actions" Id="_18_5_1_11940316_1499264668505_931485_22943" Height="528.0" Width="1053.0"/>
     </Pages>
     <DataStores>
-        <DataStore Id="_18_5_1_11940316_1499264717288_855607_22978" Name="Voter Registration Database" IsUnlimited="false"/>
+        <DataStore Id="_18_5_1_11940316_1499264717288_855607_22978" Name="Voter Record" IsUnlimited="false"/>
     </DataStores>
     <Pools>
         <Pool Id="_18_5_1_11940316_1499264717464_935001_23085" Name="Election Authority" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1499264717464_935001_23085_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499264668505_931485_22943" Height="391.0" Width="1053.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499264668505_931485_22943" Height="374.0" Width="1053.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="154.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -70,17 +70,6 @@ Verbiage here is a bit strange.
             </ConnectorGraphicsInfos>
         </MessageFlow>
     </MessageFlows>
-    <Associations>
-        <Association Id="_18_5_1_11940316_1500040675997_282036_23510" Source="_18_5_1_11940316_1500040662646_889824_23498" Target="_18_5_1_11940316_1499265733075_418747_22432" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506266396412_227938_29183"/>
-            <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499264668505_931485_22943" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="921.0" YCoordinate="428.0"/>
-                    <Coordinates XCoordinate="798.0" YCoordinate="419.0"/>
-                </ConnectorGraphicsInfo>
-            </ConnectorGraphicsInfos>
-        </Association>
-    </Associations>
     <Artifacts>
         <Artifact Id="_18_5_1_11940316_1499264717290_80609_22987" Name="Court Records" ArtifactType="DataObject">
             <DataObject Id="_18_5_1_11940316_1499264717505_31548_23126" Name="Court Records" cbm:realDataId="_18_5_1_11940316_1499264717290_80609_22987">
@@ -91,13 +80,8 @@ Verbiage here is a bit strange.
                 </NodeGraphicsInfos>
             </DataObject>
         </Artifact>
-        <Artifact Id="_18_5_1_11940316_1500040662646_889824_23498" ArtifactType="Annotation" TextAnnotation="Verbiage here is a bit strange.">
-            <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499264668505_931485_22943" Height="40.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="921.0" YCoordinate="412.0"/>
-                </NodeGraphicsInfo>
-            </NodeGraphicsInfos>
-        </Artifact>
+        <Artifact Id="_18_5_1_11940316_1500040662622_528544_23495" ArtifactType="Annotation" TextAnnotation="Verbiage here is a bit strange."/>
+        <Artifact Id="_18_5_2_11940316_1508527202159_689332_29906" ArtifactType="Annotation" TextAnnotation="Automatic restoration to rolls happens"/>
     </Artifacts>
     <WorkflowProcesses>
         <WorkflowProcess Id="_18_5_1_11940316_1499264668481_696700_22933" Name="Process Court Actions" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
@@ -223,7 +207,7 @@ Verbiage here is a bit strange.
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1499265871706_575785_22502" Name="Voting Rights Restored" cbm:numberedProperty="1.2.M4.2.8">
+                        <Activity Id="_18_5_1_11940316_1499265871706_575785_22502" Name="Eligibility Restored" cbm:numberedProperty="1.2.M4.2.8">
                             <Event>
 <EndEvent Result="None" Implementation="Unspecified"/>
                             </Event>
@@ -235,7 +219,7 @@ Verbiage here is a bit strange.
                         </Activity>
                     </Activities>
                     <DataStoreReferences>
-                        <DataStoreReference DataStoreRef="_18_5_1_11940316_1499264717288_855607_22978" Id="_18_5_1_11940316_1499264717465_739159_23089" Name="Voter Registration Database">
+                        <DataStoreReference DataStoreRef="_18_5_1_11940316_1499264717288_855607_22978" Id="_18_5_1_11940316_1499264717465_739159_23089" Name="Voter Record">
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499264668505_931485_22943" Height="55.0" Width="167.0" BorderColor="#99995C" FillColor="#E1E1C3">
     <Coordinates XCoordinate="196.0" YCoordinate="447.0"/>
@@ -360,12 +344,21 @@ Verbiage here is a bit strange.
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>Lookup a record in the voter registration database, and change the record’s status according to the court action.</Documentation>
+                    <Documentation>Lookup a record in the voter registration database, and change the record’s status according to the court action.
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+Automatic restoration to rolls happens&lt;/body&gt;
+&lt;/html&gt;</Documentation>
                     <Loop LoopType="MultiInstance">
                         <LoopMultiInstance LoopCounter="0" MI_Ordering="Parallel" MI_FlowCondition="All"/>
                     </Loop>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499264668505_931485_22943" Height="345.0" Width="756.0" BorderColor="#636363" FillColor="#F7DD99">
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499264668505_931485_22943" Height="335.0" Width="756.0" BorderColor="#636363" FillColor="#F7DD99">
                             <Coordinates XCoordinate="154.0" YCoordinate="176.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>

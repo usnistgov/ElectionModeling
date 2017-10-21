@@ -4,12 +4,12 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-08-20T14:01:00</Created>
-        <ModificationDate>17-08-24T11:00:20</ModificationDate>
+        <ModificationDate>17-09-21T14:26:26</ModificationDate>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
-        <Author>jdziu_000</Author>
-        <Version>1106</Version>
+        <Author>john</Author>
+        <Version>1260</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -39,7 +39,7 @@
             <ActivitySets>
                 <ActivitySet Id="_18_5_2_11940316_1505930639210_487980_39051" Name="_as" AdHoc="true" AdHocOrdering="Parallel" TriggeredByEvent="false">
                     <Activities>
-                        <Activity Id="_18_5_2_11940316_1505930660202_162674_39129" IsForCompensation="false" Name="Check and replace consumables" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.8.PR2.1">
+                        <Activity Id="_18_5_2_11940316_1505930660202_162674_39129" IsForCompensation="false" Name="Check and replace consumables" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.8.2.1">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -49,7 +49,7 @@
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_11940316_1505930694891_386308_39158" IsForCompensation="false" Name="Set date and time" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.8.PR2.2">
+                        <Activity Id="_18_5_2_11940316_1505930694891_386308_39158" IsForCompensation="false" Name="Set date and time" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.8.2.2">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -63,7 +63,7 @@
                 </ActivitySet>
             </ActivitySets>
             <Activities>
-                <Activity Id="_18_5_2_11940316_1505930549550_904118_38999" Name="" cbm:numberedProperty="1.5.8.PR1">
+                <Activity Id="_18_5_2_11940316_1505930549550_904118_38999" Name="" cbm:numberedProperty="1.5.8.1">
                     <Event>
                         <StartEvent Trigger="None" Implementation="Unspecified"/>
                     </Event>
@@ -73,7 +73,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1505930639280_389534_39065" IsForCompensation="false" Name="" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.5.8.PR2">
+                <Activity Id="_18_5_2_11940316_1505930639280_389534_39065" IsForCompensation="false" Name="" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.5.8.2">
                     <BlockActivity ActivitySetId="_18_5_2_11940316_1505930639210_487980_39051" View="EXPANDED"/>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
@@ -84,7 +84,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1505930809706_509746_39209" IsForCompensation="false" Name="Calibrate Components" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.8.PR3">
+                <Activity Id="_18_5_2_11940316_1505930809706_509746_39209" IsForCompensation="false" Name="Calibrate Components" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.8.3">
                     <Implementation>
                         <No/>
                     </Implementation>

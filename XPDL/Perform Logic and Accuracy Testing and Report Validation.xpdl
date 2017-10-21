@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-07-23T15:27:00</Created>
-        <ModificationDate>17-08-24T11:00:20</ModificationDate>
+        <ModificationDate>17-09-21T14:26:26</ModificationDate>
         <Documentation>Perform a set of tasks that tests equipment allocated for the election. The tasks test the machines' ability to perform its major functions. After the test concludes, validate the results and take any required corrective action.
 &lt;html&gt;
   &lt;head&gt;
@@ -79,8 +79,8 @@ Situation defined&amp;#160;
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
-        <Author>jdziu_000</Author>
-        <Version>1106</Version>
+        <Author>john</Author>
+        <Version>1260</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -93,6 +93,9 @@ Situation defined&amp;#160;
     <Pages>
         <Page Name="Perform Logic and Accuracy Testing and Report Validation" Id="_18_5_1_11940316_1503516430443_259666_61306" Height="416.0" Width="1305.0"/>
     </Pages>
+    <DataStores>
+        <DataStore Id="_18_5_2_11940316_1506429778783_535792_44138" Name="Ballot Styles" IsUnlimited="false" cbm:numberedProperty="1.5.7.D 1"/>
+    </DataStores>
     <Pools>
         <Pool Id="_18_5_1_11940316_1503516440436_673733_61318" Name="Election Jurisdiction" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1503516440436_673733_61318_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
@@ -104,7 +107,7 @@ Situation defined&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_2_11940316_1504700351802_301914_28239" Source="_18_5_1_11940316_1503516885183_970449_61399" Target="_18_5_2_11940316_1504700351902_959829_28240" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506266394628_473205_29179"/>
+            <Object Id="_18_5_2_43701b0_1508611111822_747689_29401"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="192.0" YCoordinate="204.0"/>
@@ -113,7 +116,7 @@ Situation defined&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1504703410808_880352_28487" Source="_18_5_2_11940316_1504700202011_450201_28183" Target="_18_5_2_11940316_1504703410920_810473_28488" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506266394629_862335_29180"/>
+            <Object Id="_18_5_2_43701b0_1508611111823_84560_29402"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="388.0" YCoordinate="204.0"/>
@@ -122,7 +125,7 @@ Situation defined&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1505333310290_913756_40924" Source="_18_5_2_11940316_1504700493218_881590_28288" Target="_18_5_2_11940316_1505333310442_520687_40925" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506266394629_945756_29181"/>
+            <Object Id="_18_5_2_43701b0_1508611111823_261672_29403"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1014.0" YCoordinate="350.0"/>
@@ -164,7 +167,7 @@ Situation defined&amp;#160;
             <ActivitySets>
                 <ActivitySet Id="_18_5_2_11940316_1504700141455_193673_28105" Name="Try to preform logic and accuracy testing_as" AdHoc="true" AdHocOrdering="Parallel" TriggeredByEvent="false">
                     <Activities>
-                        <Activity Id="_18_5_2_11940316_1504700158474_842993_28150" IsForCompensation="false" Name="Test mechanisms" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.1.1.5.7.PR5.1">
+                        <Activity Id="_18_5_2_11940316_1504700158474_842993_28150" IsForCompensation="false" Name="Test mechanisms" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.7.5.1">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -178,7 +181,7 @@ Situation defined&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_11940316_1504700281803_302219_28216" IsForCompensation="false" Name="Validate configuration" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.1.1.5.7.PR5.2">
+                        <Activity Id="_18_5_2_11940316_1504700281803_302219_28216" IsForCompensation="false" Name="Validate configuration" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.7.5.2">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -192,7 +195,7 @@ Situation defined&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_11940316_1504700656550_988134_28347" IsForCompensation="false" Name="Scan test deck" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.1.1.5.7.PR5.4">
+                        <Activity Id="_18_5_2_11940316_1504700656550_988134_28347" IsForCompensation="false" Name="Scan test deck" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.7.5.4">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -206,7 +209,7 @@ Situation defined&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_11940316_1505333178356_396214_40910" IsForCompensation="false" Name="Vote ballot set" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.1.1.5.7.PR5.5">
+                        <Activity Id="_18_5_2_11940316_1505333178356_396214_40910" IsForCompensation="false" Name="Vote ballot set" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.7.5.5">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -224,7 +227,7 @@ Situation defined&amp;#160;
                 </ActivitySet>
             </ActivitySets>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1503516509062_583819_61332" Name="Election Scheduled" cbm:numberedProperty="1.5.1.1.5.7.PR1">
+                <Activity Id="_18_5_1_11940316_1503516509062_583819_61332" Name="Election Scheduled" cbm:numberedProperty="1.5.7.1">
                     <Event>
                         <StartEvent Trigger="Signal" Implementation="Unspecified" Interrupting="true">
                             <TriggerResultSignal CatchThrow="CATCH"/>
@@ -236,7 +239,7 @@ Situation defined&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1503516885183_970449_61399" IsForCompensation="false" Name="Prepare ballot sets" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.1.1.5.7.PR3">
+                <Activity Id="_18_5_1_11940316_1503516885183_970449_61399" IsForCompensation="false" Name="Prepare ballot sets" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.7.3">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -250,7 +253,7 @@ Situation defined&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504700141524_615218_28119" IsForCompensation="false" Name="Try to preform logic and accuracy testing" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.5.1.1.5.7.PR5">
+                <Activity Id="_18_5_2_11940316_1504700141524_615218_28119" IsForCompensation="false" Name="Try to preform logic and accuracy testing" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.5.7.5">
                     <BlockActivity ActivitySetId="_18_5_2_11940316_1504700141455_193673_28105" View="EXPANDED"/>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
@@ -264,7 +267,7 @@ Situation defined&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504700202011_450201_28183" IsForCompensation="false" Name="Configure machines" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.1.1.5.7.PR6">
+                <Activity Id="_18_5_2_11940316_1504700202011_450201_28183" IsForCompensation="false" Name="Configure machines" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.7.6">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -278,7 +281,7 @@ Situation defined&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504700468697_54408_28255" Name="Test Fails" cbm:numberedProperty="1.5.1.1.5.7.PR5.3">
+                <Activity Id="_18_5_2_11940316_1504700468697_54408_28255" Name="Test Fails" cbm:numberedProperty="1.5.7.5.3">
                     <Event>
                         <IntermediateEvent Trigger="Escalation" Implementation="WebService" Target="_18_5_2_11940316_1504700141524_615218_28119" Interrupting="true"/>
                     </Event>
@@ -288,7 +291,7 @@ Situation defined&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504700493218_881590_28288" IsForCompensation="false" Name="Fix issue and retest" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.1.1.5.7.PR7">
+                <Activity Id="_18_5_2_11940316_1504700493218_881590_28288" IsForCompensation="false" Name="Fix issue and retest" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.7.7">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -301,7 +304,7 @@ Situation defined&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504701246124_566489_28442" IsForCompensation="false" Name="Validate Reports" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.1.1.5.7.PR8">
+                <Activity Id="_18_5_2_11940316_1504701246124_566489_28442" IsForCompensation="false" Name="Validate Reports" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.7.8">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -318,7 +321,7 @@ Situation defined&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504712088073_598783_28542" IsForCompensation="false" Name="Provide notice to public" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.1.1.5.7.PR9">
+                <Activity Id="_18_5_2_11940316_1504712088073_598783_28542" IsForCompensation="false" Name="Provide notice to public" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.7.9">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -332,7 +335,7 @@ Situation defined&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504717980684_533626_35093" Name="Is Test Public?" cbm:numberedProperty="1.5.1.1.5.7.PR10">
+                <Activity Id="_18_5_2_11940316_1504717980684_533626_35093" Name="Is Test Public?" cbm:numberedProperty="1.5.7.10">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -350,7 +353,7 @@ Situation defined&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504721521300_315857_35289" Name="Testing Performed and Validated" cbm:numberedProperty="1.5.1.1.5.7.PR11">
+                <Activity Id="_18_5_2_11940316_1504721521300_315857_35289" Name="Testing Performed and Validated" cbm:numberedProperty="1.5.7.11">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -360,7 +363,7 @@ Situation defined&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1505333474377_347008_40944" Name="Validation Fails" cbm:numberedProperty="1.5.1.1.5.7.PR12">
+                <Activity Id="_18_5_2_11940316_1505333474377_347008_40944" Name="Validation Fails" cbm:numberedProperty="1.5.7.12">
                     <Event>
                         <IntermediateEvent Trigger="Escalation" Implementation="WebService" Target="_18_5_2_11940316_1504701246124_566489_28442" Interrupting="true"/>
                     </Event>
@@ -370,7 +373,7 @@ Situation defined&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1505333543706_281851_40993" Name="" cbm:numberedProperty="1.5.1.1.5.7.PR13">
+                <Activity Id="_18_5_2_11940316_1505333543706_281851_40993" Name="" cbm:numberedProperty="1.5.7.13">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -382,9 +385,9 @@ Situation defined&amp;#160;
                 </Activity>
             </Activities>
             <DataObjects>
-                <DataObject Id="_18_5_2_11940316_1504700572062_606872_28307" Name="Voting Machines" cbm:realDataId="_18_5_2_11940316_1504700572031_406550_28303" cbm:numberedProperty="1.5.1.1.5.7.D 1">
+                <DataObject Id="_18_5_2_11940316_1504700572062_606872_28307" Name="Voting Machine&#xA;Allocation" cbm:realDataId="_18_5_2_11940316_1504700572031_406550_28303" cbm:numberedProperty="1.5.1.1.5.7.D 1">
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" Height="91.0" Width="70.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" Height="93.0" Width="70.0" BorderColor="#99995C" FillColor="#E1E1C3">
                             <Coordinates XCoordinate="574.0" YCoordinate="14.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
@@ -392,11 +395,20 @@ Situation defined&amp;#160;
                 <DataObject Id="_18_5_2_11940316_1504700679643_28875_28368" Name="Testing Artifacts" cbm:realDataId="_18_5_2_11940316_1504700679612_315549_28364" cbm:numberedProperty="1.5.1.1.5.7.D 2">
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" Height="81.0" Width="70.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="917.0" YCoordinate="203.0"/>
+                            <Coordinates XCoordinate="931.0" YCoordinate="217.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </DataObject>
             </DataObjects>
+            <DataStoreReferences>
+                <DataStoreReference DataStoreRef="_18_5_2_11940316_1506429778783_535792_44138" Id="_18_5_2_11940316_1506429778817_31255_44142" Name="Ballot Styles">
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" Height="77.0" Width="80.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="126.0" YCoordinate="49.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </DataStoreReference>
+            </DataStoreReferences>
             <Transitions>
                 <Transition Id="_18_5_2_11940316_1504700199462_139772_28167" From="_18_5_1_11940316_1503516885183_970449_61399" To="_18_5_2_11940316_1504700202011_450201_28183" Name="">
                     <ConnectorGraphicsInfos>
@@ -508,16 +520,25 @@ Situation defined&amp;#160;
                 <DataAssociation Id="_18_5_2_11940316_1504700698148_374433_28388" Name="" From="_18_5_2_11940316_1504700141524_615218_28119" To="_18_5_2_11940316_1504700679643_28875_28368">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="840.0" YCoordinate="245.0"/>
-                            <Coordinates XCoordinate="923.0" YCoordinate="245.0"/>
+                            <Coordinates XCoordinate="840.0" YCoordinate="259.0"/>
+                            <Coordinates XCoordinate="937.0" YCoordinate="259.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>
                 <DataAssociation Id="_18_5_2_11940316_1504701255160_388110_28454" Name="" From="_18_5_2_11940316_1504700679643_28875_28368" To="_18_5_2_11940316_1504701246124_566489_28442">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="966.0" YCoordinate="230.0"/>
-                            <Coordinates XCoordinate="966.0" YCoordinate="187.0"/>
+                            <Coordinates XCoordinate="980.0" YCoordinate="244.0"/>
+                            <Coordinates XCoordinate="980.0" YCoordinate="187.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+                <DataAssociation Id="_18_5_2_11940316_1506429794535_707878_44162" Name="" From="_18_5_2_11940316_1506429778817_31255_44142" To="_18_5_1_11940316_1503516885183_970449_61399">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="188.0" YCoordinate="84.0"/>
+                            <Coordinates XCoordinate="235.0" YCoordinate="84.0"/>
+                            <Coordinates XCoordinate="235.0" YCoordinate="154.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>

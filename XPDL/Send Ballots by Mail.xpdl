@@ -4,13 +4,27 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T09:39:00</Created>
-        <ModificationDate>17-08-24T11:00:20</ModificationDate>
-        <Documentation>For each remote voter: Send a ballot to the voter via postal mail.</Documentation>
+        <ModificationDate>17-09-21T14:26:26</ModificationDate>
+        <Documentation>For each remote voter: Send a ballot to the voter via postal mail.
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+OR has many different periods.&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
-        <Author>jdziu_000</Author>
-        <Version>1106</Version>
+        <Author>john</Author>
+        <Version>1260</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -57,12 +71,21 @@
         </MessageFlow>
     </MessageFlows>
     <Associations>
-        <Association Id="_18_5_2_11940316_1505319129306_853849_35430" Source="_18_5_1_11940316_1500560582353_307515_34934" Target="_18_5_2_11940316_1505319129406_160525_35431" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506266398918_550726_29184"/>
+        <Association Id="_18_5_2_11940316_1506357213638_206396_28336" Source="_18_5_2_11940316_1506357203655_311656_28326" Target="_18_5_1_11940316_1500560671326_525320_34976" AssociationDirection="None">
+            <Object Id="_18_5_2_43701b0_1508611136152_230140_29472"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="683.0" YCoordinate="373.0"/>
-                    <Coordinates XCoordinate="499.0" YCoordinate="327.0"/>
+                    <Coordinates XCoordinate="899.0" YCoordinate="390.0"/>
+                    <Coordinates XCoordinate="888.0" YCoordinate="399.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_18_5_2_11940316_1506357249406_516908_28377" Source="_18_5_2_11940316_1506357249404_800489_28372" Target="_18_5_2_11940316_1506357249404_916219_28373" AssociationDirection="None">
+            <Object Id="_18_5_2_43701b0_1508611136153_374143_29473"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="103.0" YCoordinate="490.0"/>
+                    <Coordinates XCoordinate="117.0" YCoordinate="467.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
@@ -72,15 +95,22 @@
             <DataObject Id="_18_5_1_11940316_1500560386621_608257_34851" Name="Remote Voter List" cbm:realDataId="_18_5_1_11940316_1500560386589_179933_34845" cbm:numberedProperty="2.2.2.D 1">
                 <NodeGraphicsInfos>
                     <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" Height="57.0" Width="114.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                        <Coordinates XCoordinate="65.0" YCoordinate="546.0"/>
+                        <Coordinates XCoordinate="49.0" YCoordinate="567.0"/>
                     </NodeGraphicsInfo>
                 </NodeGraphicsInfos>
             </DataObject>
         </Artifact>
-        <Artifact Id="_18_5_2_11940316_1505319129406_160525_35431" ArtifactType="Annotation" TextAnnotation="Possible alignment issue with Parallel paths ">
+        <Artifact Id="_18_5_2_11940316_1506357203655_311656_28326" ArtifactType="Annotation" TextAnnotation="From KB  slides. Does not seem to apply to All Vote By Mail states.">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" Height="69.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="399.0" YCoordinate="280.0"/>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" Height="40.0" Width="210.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="819.0" YCoordinate="350.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_2_11940316_1506357249404_916219_28373" ArtifactType="Annotation" TextAnnotation="OR has many different periods. ">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="77.0" YCoordinate="413.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
@@ -382,7 +412,7 @@
 	&lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-Possible alignment issue with Parallel paths&amp;#160;
+From KB&amp;#160;&amp;#160;slides.&amp;#160;Does not seem to apply to All Vote By Mail states.
 
     &lt;/p&gt;
 
@@ -397,16 +427,6 @@ Possible alignment issue with Parallel paths&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500560402780_532092_34883" Name="Voting Period Begins" cbm:numberedProperty="2.2.2.10">
-                    <Event>
-                        <StartEvent Trigger="Timer" Implementation="Unspecified" Interrupting="true"/>
-                    </Event>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="110.0" YCoordinate="407.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
                 <Activity Id="_18_5_1_11940316_1500560432082_733802_34917" Name="Ballots Sent" cbm:numberedProperty="2.2.2.11">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
@@ -417,26 +437,38 @@ Possible alignment issue with Parallel paths&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1502459527808_910888_31037" Name="Request After Voting Period Begins" cbm:numberedProperty="2.2.2.12">
+                <Activity Id="_18_5_2_11940316_1506357249404_548993_28371" Name="Request After Voting Period Begins" cbm:numberedProperty="2.2.2.13">
                     <Event>
                         <StartEvent Trigger="Conditional" Implementation="Unspecified" Interrupting="true"/>
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="112.0" YCoordinate="329.0"/>
+                            <Coordinates XCoordinate="91.0" YCoordinate="336.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1506357249404_800489_28372" Name="Voting Period Begins" cbm:numberedProperty="2.2.2.12">
+                    <Event>
+                        <StartEvent Trigger="Timer" Implementation="Unspecified" Interrupting="true"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="91.0" YCoordinate="490.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1506357249404_883840_28370" Name="UOCAVA Voting Period Begins" cbm:numberedProperty="2.2.2.14">
+                    <Event>
+                        <StartEvent Trigger="Timer" Implementation="Unspecified" Interrupting="true"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="91.0" YCoordinate="266.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
             </Activities>
             <Transitions>
-                <Transition Id="_18_5_1_11940316_1500560411502_765268_34894" From="_18_5_1_11940316_1500560402780_532092_34883" To="_18_5_1_11940316_1500560345357_946967_34818" Name="">
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="134.0" YCoordinate="419.0"/>
-                            <Coordinates XCoordinate="205.0" YCoordinate="419.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
                 <Transition Id="_18_5_1_11940316_1500560427843_35019_34903" From="_18_5_1_11940316_1500560345357_946967_34818" To="_18_5_1_11940316_1500560432082_733802_34917" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" BorderColor="#424242" FillColor="#FFFFCC">
@@ -445,11 +477,27 @@ Possible alignment issue with Parallel paths&amp;#160;
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
-                <Transition Id="_18_5_1_11940316_1502459538844_92467_31048" From="_18_5_1_11940316_1502459527808_910888_31037" To="_18_5_1_11940316_1500560345357_946967_34818" Name="">
+                <Transition Id="_18_5_2_11940316_1506357274042_803304_28398" From="_18_5_2_11940316_1506357249404_883840_28370" To="_18_5_1_11940316_1500560345357_946967_34818" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="136.0" YCoordinate="341.0"/>
-                            <Coordinates XCoordinate="205.0" YCoordinate="341.0"/>
+                            <Coordinates XCoordinate="115.0" YCoordinate="278.0"/>
+                            <Coordinates XCoordinate="205.0" YCoordinate="278.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_11940316_1506357277188_540651_28407" From="_18_5_2_11940316_1506357249404_548993_28371" To="_18_5_1_11940316_1500560345357_946967_34818" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="115.0" YCoordinate="348.0"/>
+                            <Coordinates XCoordinate="205.0" YCoordinate="348.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_11940316_1506357281015_244509_28416" From="_18_5_2_11940316_1506357249404_800489_28372" To="_18_5_1_11940316_1500560345357_946967_34818" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="115.0" YCoordinate="502.0"/>
+                            <Coordinates XCoordinate="205.0" YCoordinate="502.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -458,9 +506,8 @@ Possible alignment issue with Parallel paths&amp;#160;
                 <DataAssociation Id="_18_5_1_11940316_1500560390752_895341_34871" Name="" From="_18_5_1_11940316_1500560386621_608257_34851" To="_18_5_1_11940316_1500560345357_946967_34818">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="121.0" YCoordinate="549.0"/>
-                            <Coordinates XCoordinate="121.0" YCoordinate="501.0"/>
-                            <Coordinates XCoordinate="205.0" YCoordinate="501.0"/>
+                            <Coordinates XCoordinate="118.0" YCoordinate="581.0"/>
+                            <Coordinates XCoordinate="205.0" YCoordinate="581.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>

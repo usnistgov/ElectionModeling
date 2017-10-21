@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-12T09:50:00</Created>
-        <ModificationDate>17-08-24T11:00:20</ModificationDate>
+        <ModificationDate>17-09-21T14:26:26</ModificationDate>
         <Documentation>Identify the precincts that are used in the conduct of the election (e.g. in the establishing of polling locations or the reporting of results).
 &lt;html&gt;
   &lt;head&gt;
@@ -23,8 +23,8 @@ May not always occur&amp;#160;
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
-        <Author>jdziu_000</Author>
-        <Version>1106</Version>
+        <Author>john</Author>
+        <Version>1260</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -35,12 +35,18 @@ May not always occur&amp;#160;
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Determine Ballot Styles" Id="_18_5_1_11940316_1499867445797_811002_25831" Height="276.0" Width="1396.0"/>
+        <Page Name="Determine Ballot Styles" Id="_18_5_1_11940316_1499867445797_811002_25831" Height="307.0" Width="1396.0"/>
     </Pages>
+    <DataStores>
+        <DataStore Id="_18_5_2_11940316_1504882858846_630364_31421" Name="Precinct and District Boundaries" IsUnlimited="false" cbm:numberedProperty="1.4.1.D 1"/>
+        <DataStore Id="_18_5_2_11940316_1504882901159_736546_31453" Name="Qualified Contests" IsUnlimited="false" cbm:numberedProperty="1.4.1.D 2"/>
+        <DataStore Id="_18_5_2_11940316_1506428778750_554922_43620" Name="Voter Registration Database" IsUnlimited="false" cbm:numberedProperty="1.4.1.D 3"/>
+        <DataStore Id="_18_5_2_11940316_1506602927132_971854_29416" Name="Ballot Styles" IsUnlimited="false" cbm:numberedProperty="1.4.1.D 4"/>
+    </DataStores>
     <Pools>
         <Pool Id="_18_5_1_11940316_1499868473458_358300_22991" Name="Election Authority" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1499868473458_358300_22991_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499867445797_811002_25831" Height="276.0" Width="1396.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499867445797_811002_25831" Height="307.0" Width="1396.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -48,7 +54,7 @@ May not always occur&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_2_11940316_1504969146918_818349_33420" Source="_18_5_1_11940316_1499867731152_772433_26150" Target="_18_5_2_11940316_1504969147003_805272_33421" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506266373715_990407_29151"/>
+            <Object Id="_18_5_2_43701b0_1508611158095_899280_29544"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499867445797_811002_25831" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1151.0" YCoordinate="111.0"/>
@@ -210,22 +216,36 @@ May not always occur&amp;#160;
                     </NodeGraphicsInfos>
                 </Activity>
             </Activities>
-            <DataObjects>
-                <DataObject Id="_18_5_2_11940316_1504882858879_473735_31425" Name="Precinct and District Boundaries" cbm:realDataId="_18_5_2_11940316_1504882858846_630364_31421" cbm:numberedProperty="1.4.1.D 1">
+            <DataStoreReferences>
+                <DataStoreReference DataStoreRef="_18_5_2_11940316_1504882858846_630364_31421" Id="_18_5_2_11940316_1504882858879_473735_31425" Name="Precinct and District Boundaries">
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499867445797_811002_25831" Height="81.0" Width="77.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="70.0" YCoordinate="182.0"/>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499867445797_811002_25831" Height="57.0" Width="189.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="28.0" YCoordinate="203.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
-                </DataObject>
-                <DataObject Id="_18_5_2_11940316_1504882901178_878197_31457" Name="Qualified Contests" cbm:realDataId="_18_5_2_11940316_1504882901159_736546_31453" cbm:numberedProperty="1.4.1.D 2">
+                </DataStoreReference>
+                <DataStoreReference DataStoreRef="_18_5_2_11940316_1504882901159_736546_31453" Id="_18_5_2_11940316_1504882901178_878197_31457" Name="Qualified Contests">
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499867445797_811002_25831" Height="69.0" Width="70.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499867445797_811002_25831" Height="57.0" Width="115.0" BorderColor="#99995C" FillColor="#E1E1C3">
                             <Coordinates XCoordinate="70.0" YCoordinate="21.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
-                </DataObject>
-            </DataObjects>
+                </DataStoreReference>
+                <DataStoreReference DataStoreRef="_18_5_2_11940316_1506428778750_554922_43620" Id="_18_5_2_11940316_1506428778769_967941_43622" Name="Voter Registration Database">
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499867445797_811002_25831" Height="57.0" Width="167.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="1071.0" YCoordinate="196.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </DataStoreReference>
+                <DataStoreReference DataStoreRef="_18_5_2_11940316_1506602927132_971854_29416" Id="_18_5_2_11940316_1506602930315_279594_29431" Name="Ballot Styles">
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499867445797_811002_25831" Height="57.0" Width="80.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="959.0" YCoordinate="196.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </DataStoreReference>
+            </DataStoreReferences>
             <Transitions>
                 <Transition Id="_18_5_1_11940316_1499867480872_852600_25884" From="_18_5_1_11940316_1499867471902_924205_25844" To="_18_5_1_11940316_1499867582024_115905_25912" Name="">
                     <ConnectorGraphicsInfos>
@@ -319,7 +339,7 @@ May not always occur&amp;#160;
                 <DataAssociation Id="_18_5_2_11940316_1504882881145_494947_31445" Name="" From="_18_5_2_11940316_1504882858879_473735_31425" To="_18_5_1_11940316_1499867582024_115905_25912">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499867445797_811002_25831" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="123.0" YCoordinate="209.0"/>
+                            <Coordinates XCoordinate="123.0" YCoordinate="206.0"/>
                             <Coordinates XCoordinate="123.0" YCoordinate="163.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
@@ -327,8 +347,32 @@ May not always occur&amp;#160;
                 <DataAssociation Id="_18_5_2_11940316_1504882924232_964600_31477" Name="" From="_18_5_2_11940316_1504882901178_878197_31457" To="_18_5_1_11940316_1499867582024_115905_25912">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499867445797_811002_25831" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="119.0" YCoordinate="84.0"/>
-                            <Coordinates XCoordinate="119.0" YCoordinate="118.0"/>
+                            <Coordinates XCoordinate="126.0" YCoordinate="72.0"/>
+                            <Coordinates XCoordinate="126.0" YCoordinate="118.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+                <DataAssociation Id="_18_5_2_11940316_1506428799804_657540_43644" Name="" From="_18_5_1_11940316_1499867731152_772433_26150" To="_18_5_2_11940316_1506428778769_967941_43622">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499867445797_811002_25831" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="1152.0" YCoordinate="170.0"/>
+                            <Coordinates XCoordinate="1152.0" YCoordinate="199.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+                <DataAssociation Id="_18_5_2_11940316_1506428807719_34724_43653" Name="" From="_18_5_2_11940316_1506428778769_967941_43622" To="_18_5_1_11940316_1499867731152_772433_26150">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499867445797_811002_25831" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="1162.0" YCoordinate="199.0"/>
+                            <Coordinates XCoordinate="1162.0" YCoordinate="170.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+                <DataAssociation Id="_18_5_2_11940316_1506602927225_597589_29420" Name="" From="_18_5_1_11940316_1499867680954_289707_26045" To="_18_5_2_11940316_1506602930315_279594_29431">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499867445797_811002_25831" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="998.0" YCoordinate="169.0"/>
+                            <Coordinates XCoordinate="998.0" YCoordinate="199.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>

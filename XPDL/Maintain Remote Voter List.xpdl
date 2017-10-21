@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T09:25:00</Created>
-        <ModificationDate>17-08-24T11:00:20</ModificationDate>
+        <ModificationDate>17-09-21T14:26:26</ModificationDate>
         <Documentation>Maintain the list of voters whose ballot will be transmitted in advance of election day to a location outside the election jurisdiction.
 &lt;html&gt;
   &lt;head&gt;
@@ -23,8 +23,8 @@ Check alignment&amp;#160;
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
-        <Author>jdziu_000</Author>
-        <Version>1106</Version>
+        <Author>john</Author>
+        <Version>1260</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -461,8 +461,8 @@ Check alignment&amp;#160;
                 <DataAssociation Id="_18_5_1_11940316_1500557943860_840343_34017" Name="" From="_18_5_1_11940316_1500557746858_720843_33907" To="_18_5_1_11940316_1500557397685_917310_33746">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557154909_554485_33530" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="1015.0" YCoordinate="361.0"/>
-                            <Coordinates XCoordinate="795.0" YCoordinate="361.0"/>
+                            <Coordinates XCoordinate="1015.0" YCoordinate="350.0"/>
+                            <Coordinates XCoordinate="795.0" YCoordinate="350.0"/>
                             <Coordinates XCoordinate="795.0" YCoordinate="324.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>

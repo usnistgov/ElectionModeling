@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-12T08:49:00</Created>
-        <ModificationDate>17-08-24T11:00:20</ModificationDate>
+        <ModificationDate>17-09-21T14:26:26</ModificationDate>
         <Documentation>Confirm the location of the voter's current place of residence.
 &lt;html&gt;
   &lt;head&gt;
@@ -86,7 +86,7 @@ But they still can respond to the mailer, right?&amp;#160;
 	&lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-This will allow the callee to determine whether to cancel the confirmation process early (i.e. undeliverable results in immediate cancellation)&amp;#160;
+This will allow the callee to determine whether to cancel the confirmation process early (e.g. undeliverable results in immediate cancellation)&amp;#160;
 
     &lt;/p&gt;
 
@@ -95,8 +95,8 @@ This will allow the callee to determine whether to cancel the confirmation proce
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
-        <Author>jdziu_000</Author>
-        <Version>1106</Version>
+        <Author>john</Author>
+        <Version>1260</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -150,7 +150,7 @@ This will allow the callee to determine whether to cancel the confirmation proce
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1501775333386_688847_32323" Source="_18_5_1_11940316_1501016189283_169439_25467" Target="_18_5_1_11940316_1501775432910_827202_32383" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506266364682_44926_29136"/>
+            <Object Id="_18_5_2_43701b0_1508611157107_589097_29538"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="452.0" YCoordinate="282.0"/>
@@ -159,7 +159,7 @@ This will allow the callee to determine whether to cancel the confirmation proce
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1501783719575_395793_32702" Source="_18_5_1_11940316_1501019794587_475431_26003" Target="_18_5_1_11940316_1501783719698_55059_32703" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506266364683_519991_29137"/>
+            <Object Id="_18_5_2_43701b0_1508611157107_863390_29539"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="511.0" YCoordinate="230.0"/>
@@ -168,7 +168,7 @@ This will allow the callee to determine whether to cancel the confirmation proce
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1501792388497_64434_33068" Source="_18_5_1_11940316_1501775471340_894640_32389" Target="_18_5_1_11940316_1501792388610_502374_33069" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506266364685_80567_29138"/>
+            <Object Id="_18_5_2_43701b0_1508611157107_172483_29540"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="766.0" YCoordinate="282.0"/>
@@ -177,7 +177,7 @@ This will allow the callee to determine whether to cancel the confirmation proce
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1503594385278_659303_29232" Source="_18_5_1_11940316_1501859352858_615492_26394" Target="_18_5_1_11940316_1503594385394_67048_29233" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506266364687_402107_29139"/>
+            <Object Id="_18_5_2_43701b0_1508611157107_692393_29541"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="336.0" YCoordinate="413.0"/>
@@ -186,7 +186,7 @@ This will allow the callee to determine whether to cancel the confirmation proce
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1503596231603_370983_29387" Source="_18_5_1_11940316_1503596223005_647228_29369" Target="_18_5_1_11940316_1503596231719_647920_29388" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506266364688_182567_29140"/>
+            <Object Id="_18_5_2_43701b0_1508611157107_871401_29542"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="287.0" YCoordinate="449.0"/>
@@ -225,7 +225,7 @@ This will allow the callee to determine whether to cancel the confirmation proce
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
-        <Artifact Id="_18_5_1_11940316_1503596231719_647920_29388" ArtifactType="Annotation" TextAnnotation="This will allow the callee to determine whether to cancel the confirmation process early (i.e. undeliverable results in immediate cancellation) ">
+        <Artifact Id="_18_5_1_11940316_1503596231719_647920_29388" ArtifactType="Annotation" TextAnnotation="This will allow the callee to determine whether to cancel the confirmation process early (e.g. undeliverable results in immediate cancellation) ">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" Height="84.0" Width="191.0" BorderColor="#424242" FillColor="#FFFFFF">
                     <Coordinates XCoordinate="35.0" YCoordinate="455.0"/>

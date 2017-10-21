@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-07-29T11:27:00</Created>
-        <ModificationDate>17-08-24T11:00:20</ModificationDate>
+        <ModificationDate>17-09-21T14:26:26</ModificationDate>
         <Documentation>Qualify the contests and candidates that may appear on the ballot.
 &lt;html&gt;
   &lt;head&gt;
@@ -37,8 +37,8 @@ Why are these batched up? Does it reflect reality?&amp;#160;
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
-        <Author>jdziu_000</Author>
-        <Version>1106</Version>
+        <Author>john</Author>
+        <Version>1260</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -49,12 +49,12 @@ Why are these batched up? Does it reflect reality?&amp;#160;
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Qualify Contests and Candidates" Id="_18_5_2_11940316_1504020426916_634377_30059" Height="682.0" Width="1349.0"/>
+        <Page Name="Qualify Contests and Candidates" Id="_18_5_2_11940316_1504020426916_634377_30059" Height="682.0" Width="1347.0"/>
     </Pages>
     <Pools>
         <Pool Id="_18_5_2_11940316_1504123587353_765941_36158" Name="Election Jurisdiction" Orientation="HORIZONTAL" Process="_18_5_2_11940316_1504123587353_765941_36158_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" Height="682.0" Width="1349.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" Height="682.0" Width="1347.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -62,7 +62,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_2_11940316_1504125027156_717651_42495" Source="_18_5_2_11940316_1504030082776_644383_31033" Target="_18_5_2_11940316_1504125027296_948193_42496" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506266383574_982190_29160"/>
+            <Object Id="_18_5_2_43701b0_1508611159257_224451_29546"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1006.0" YCoordinate="214.0"/>
@@ -71,16 +71,16 @@ Why are these batched up? Does it reflect reality?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1504129549505_785752_43108" Source="_18_5_2_11940316_1504030346111_506915_31139" Target="_18_5_2_11940316_1504129549660_353551_43109" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506266383576_332315_29161"/>
+            <Object Id="_18_5_2_43701b0_1508611159257_141285_29547"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="494.0" YCoordinate="533.0"/>
-                    <Coordinates XCoordinate="460.0" YCoordinate="553.0"/>
+                    <Coordinates XCoordinate="513.0" YCoordinate="533.0"/>
+                    <Coordinates XCoordinate="495.0" YCoordinate="553.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1504130317263_406268_43118" Source="_18_5_2_11940316_1504128680913_572844_43024" Target="_18_5_2_11940316_1504130317427_307069_43119" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506266383577_424642_29162"/>
+            <Object Id="_18_5_2_43701b0_1508611159257_147867_29548"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="124.0" YCoordinate="259.0"/>
@@ -89,7 +89,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1504130583856_892675_43127" Source="_18_5_2_11940316_1504030223600_590662_31055" Target="_18_5_2_11940316_1504130584008_619083_43128" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506266383577_644102_29163"/>
+            <Object Id="_18_5_2_43701b0_1508611159257_584608_29549"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="231.0" YCoordinate="105.0"/>
@@ -98,7 +98,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1504188212268_91525_43556" Source="_18_5_2_11940316_1504188157857_814178_43550" Target="_18_5_2_11940316_1504188212495_47334_43557" AssociationDirection="None">
-            <Object Id="_18_5_2_11940316_1506266383578_33_29164"/>
+            <Object Id="_18_5_2_43701b0_1508611159257_896777_29550"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1006.0" YCoordinate="430.0"/>
@@ -124,10 +124,10 @@ Why are these batched up? Does it reflect reality?&amp;#160;
                 </NodeGraphicsInfos>
             </DataObject>
         </Artifact>
-        <Artifact Id="_18_5_2_11940316_1504129549660_353551_43109" ArtifactType="Annotation" TextAnnotation="Do we want to describe this in any detail? ">
+        <Artifact Id="_18_5_2_11940316_1504129549660_353551_43109" ArtifactType="Annotation" TextAnnotation="Validity of signatures, residency">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="364.0" YCoordinate="553.0"/>
+                    <Coordinates XCoordinate="420.0" YCoordinate="553.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
@@ -145,12 +145,21 @@ Why are these batched up? Does it reflect reality?&amp;#160;
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
-        <Artifact Id="_18_5_2_11940316_1504188212495_47334_43557" ArtifactType="Annotation" TextAnnotation="Allow the authorizing party submit additional documents, and run the process again ">
+        <Artifact Id="_18_5_2_11940316_1504188212495_47334_43557" ArtifactType="Annotation" TextAnnotation="Allow the authorizing party submit additional documents, and run the process again.">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" Height="114.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
                     <Coordinates XCoordinate="994.0" YCoordinate="483.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_2_11940316_1504193888978_700164_43716" Name="List of Qualified Contests and Candidates" ArtifactType="DataObject">
+            <DataObject Id="_18_5_2_11940316_1504193888992_793187_43720" Name="List of Qualified Contests and Candidates" cbm:realDataId="_18_5_2_11940316_1504193888978_700164_43716" cbm:numberedProperty="1.3.3.D 2">
+                <NodeGraphicsInfos>
+                    <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" Height="91.0" Width="133.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                        <Coordinates XCoordinate="1190.0" YCoordinate="434.0"/>
+                    </NodeGraphicsInfo>
+                </NodeGraphicsInfos>
+            </DataObject>
         </Artifact>
     </Artifacts>
     <WorkflowProcesses>
@@ -296,12 +305,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
 		&lt;/style&gt;
 	&lt;/head&gt;
   &lt;body&gt;
-    &lt;p&gt;
-Do we want to describe this in any detail?&amp;#160;
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
+Validity of signatures, residency&lt;/body&gt;
 &lt;/html&gt;</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" Height="191.0" Width="651.0" BorderColor="#636363" FillColor="#F7DD99">
@@ -433,7 +437,8 @@ Do we want to describe this in any detail?&amp;#160;
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>&lt;html&gt;
+                    <Documentation>Qualify the contest or candidate that may appear on the ballot.
+&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
 			p {padding:0px; margin:0px;}
@@ -455,7 +460,7 @@ Notify neighboring jurisdictions of shared candidate filings
 	&lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-Allow the authorizing party submit additional documents, and run the process again&amp;#160;
+Allow the authorizing party submit additional documents, and run the process again.
 
     &lt;/p&gt;
 
@@ -491,15 +496,6 @@ Allow the authorizing party submit additional documents, and run the process aga
                     </NodeGraphicsInfos>
                 </Activity>
             </Activities>
-            <DataObjects>
-                <DataObject Id="_18_5_2_11940316_1504193888992_793187_43720" Name="List of Qualified Contests and Candidates" cbm:realDataId="_18_5_2_11940316_1504193888978_700164_43716" cbm:numberedProperty="1.3.3.D 2">
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" Height="126.0" Width="77.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="1211.0" YCoordinate="434.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </DataObject>
-            </DataObjects>
             <Transitions>
                 <Transition Id="_18_5_2_11940316_1504128683472_808171_43035" From="_18_5_2_11940316_1504128680913_572844_43024" To="_18_5_2_11940316_1504030223600_590662_31055" Name="">
                     <ConnectorGraphicsInfos>
@@ -524,10 +520,4 @@ Allow the authorizing party submit additional documents, and run the process aga
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="204.0" YCoordinate="476.0"/>
-                            <Coordinates XCoordinate="231.0" YCoordinate="476.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </DataAssociation>
-                <DataAssociation Id="_18_5_2_11940316_1504193911257_772934_43740" Name="" From="_18_5_2_11940316_1504030223600_590662_31055" To="_18_5_2_11940316_1504193888992_793187_43720">
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo
+                            <Coordinates
