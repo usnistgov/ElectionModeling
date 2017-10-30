@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#"
+     xml:base="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:elections="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections">
+        <owl:imports rdf:resource="http://nomagic.com/ontology/upper"/>
+        <owl:imports rdf:resource="http://www.w3.org/2002/07/owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#appearsOn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#appearsOn">
+        <rdfs:subPropertyOf rdf:resource="http://nomagic.com/ontology/upper#withRespectTo"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#containing"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#VoterRegistrationIdentification"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#NvraForm"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">appears on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#assistedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#assistedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#registeredAt"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">assistedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#childOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#childOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#parentOf"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">childOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#containing -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#containing">
+        <rdfs:subPropertyOf rdf:resource="http://nomagic.com/ontology/upper#contextFor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#NvraForm"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#VoterRegistrationIdentification"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">containing</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#for -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#for">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Identification"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#grantedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#grantedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#hasStateIdentification"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#StateIdentification"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#MotorVehicleAuthority"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">granted by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#hasIdentificaiton -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#hasIdentificaiton">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#for"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Identification"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has identificaiton</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#hasIdentificationIssuer -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#hasIdentificationIssuer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Identification"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#IdentificationIssuer"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has identification issuer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#hasPerformer -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#hasPerformer">
+        <rdfs:subPropertyOf rdf:resource="http://nomagic.com/ontology/upper#facetOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#performsAs"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PersonInRole"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has performer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#hasPerson -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#hasPerson">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#hasStateIdentification"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#StateIdentification"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has person</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#hasStateIdentification -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#hasStateIdentification">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#MotorVehicleAuthority"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#StateIdentification"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has state identification</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#hasSubmittedRegistration -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#hasSubmittedRegistration">
+        <rdfs:subPropertyOf rdf:resource="http://nomagic.com/ontology/upper#hasFacet"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#for"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SubmittedRegistration"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has submitted registration</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#inPossessionOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#inPossessionOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#to"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#VoterRegistrationAgency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SubmittedRegistration"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in possession of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#issued -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#issued">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#issuedTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Citizen"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SocialSecurityNumber"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">issued</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#issuedTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#issuedTo">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#grantedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SocialSecurityAdministration"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SocialSecurityNumber"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">issued to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#memberOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#memberOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#MilitaryVoter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ArmedForces"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">memberOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#parentOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#parentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parentOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#performsAs -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#performsAs">
+        <rdfs:subPropertyOf rdf:resource="http://nomagic.com/ontology/upper#hasFacet"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PersonInRole"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">performs as</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#registeredAt -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#registeredAt">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">registeredAt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#registeredVia -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#registeredVia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Voter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#RegistrationForm"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">registeredVia</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#to -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#to">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SubmittedRegistration"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#VoterRegistrationAgency"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Agency -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Agency">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ArmedForces -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ArmedForces">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Crime"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Felony"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Hospital"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Jail"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Misdemeanor"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Prison"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ArmedForces</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Citizen -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Citizen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PersonInRole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#issued"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SocialSecurityNumber"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Citizen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Crime -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Crime">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Felony"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Hospital"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Jail"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Misdemeanor"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Prison"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#DesignatedAgency -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#DesignatedAgency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Agency"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DesignatedAgency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#DriversLicense -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#DriversLicense">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#StateIdentification"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#VoterRegistrationIdentification"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#LocalVoterRegistrationIdentification"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#OtherVoterRegistrationIdentificaiton"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SocialSecurityNumber"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#StateVoterRegistrationIdentification"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drivers License</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ElectionAgency -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ElectionAgency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#State"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ElectionAgency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Federal -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Federal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Government"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Federal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#FederalLaw -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#FederalLaw">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Law"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FederalLaw</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#FederallyDesignated -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#FederallyDesignated">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#VoterRegistrationAgency"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FederallyDesignated</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Felon -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Felon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PersonInRole"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Felony -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Felony">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Hospital"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Jail"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Misdemeanor"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Prison"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felony</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Form -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Form">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Form</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#FpcaForm -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#FpcaForm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#RegistrationForm"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FpcaForm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Government -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Government">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Organization"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Government</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Hospital -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Hospital">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Jail"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Misdemeanor"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Prison"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hospital</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Identification -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Identification">
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ontology/upper#RelativeThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#for"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#IdentificationIssuer -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#IdentificationIssuer">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identification Issuer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Incompetent -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Incompetent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PersonInRole"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incompetent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Infirmed -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Infirmed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infirmed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Jail -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Jail">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Misdemeanor"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Prison"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jail</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Law -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Law">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Rule"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Law</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#LocalVoterRegistrationIdentification -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#LocalVoterRegistrationIdentification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#VoterRegistrationIdentification"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#OtherVoterRegistrationIdentificaiton"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SocialSecurityNumber"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#StateVoterRegistrationIdentification"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Local Voter Registration Identification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Military -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Military">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PersonInRole"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Military</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#MilitaryVoter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#MilitaryVoter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Military"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Voter"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SeventeenYearOldVoter"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MilitaryVoter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Misdemeanor -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Misdemeanor">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Prison"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Misdemeanor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#MotorVehicleAuthority -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#MotorVehicleAuthority">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#IdentificationIssuer"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Motor Vehicle Authority</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#NvraAgency -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#NvraAgency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Agency"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NvraAgency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#NvraForm -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#NvraForm">
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ontology/upper#MediatingThing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#RegistrationForm"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#containing"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#VoterRegistrationIdentification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NvraForm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#NvraLaw -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#NvraLaw">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#FederalLaw"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NvraLaw</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Organization -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Organization">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#OtherVoterRegistrationIdentificaiton -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#OtherVoterRegistrationIdentificaiton">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#VoterRegistrationIdentification"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SocialSecurityNumber"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#StateVoterRegistrationIdentification"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other Voter Registration Identificaiton</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person">
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ontology/upper#IndependentThing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Prison"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PersonInRole -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PersonInRole">
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ontology/upper#RelativeThing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person in Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Prison -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Prison">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prison</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#RegistrationForm -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#RegistrationForm">
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ontology/upper#IndependentThing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Form"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RegistrationForm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Resident -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Resident">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PersonInRole"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Rule -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Rule">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SeventeenYearOldVoter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SeventeenYearOldVoter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Voter"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SeventeenYearOldVoter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SocialSecurityAdministration -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SocialSecurityAdministration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#IdentificationIssuer"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Social Security Administration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SocialSecurityNumber -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SocialSecurityNumber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Identification"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#VoterRegistrationIdentification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#grantedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SocialSecurityAdministration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#issuedTo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Citizen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#StateVoterRegistrationIdentification"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Social Security Number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#State -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#State">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Government"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">State</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#StateDesignated -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#StateDesignated">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#VoterRegistrationAgency"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StateDesignated</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#StateIdentification -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#StateIdentification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#VoterRegistrationIdentification"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">State Identification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#StateVoterRegistrationIdentification -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#StateVoterRegistrationIdentification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#VoterRegistrationIdentification"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">State Voter Registration Identification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SubmittedRegistration -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SubmittedRegistration">
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ontology/upper#RelativeThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#for"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#to"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#VoterRegistrationAgency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Submitted Registration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Voter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Voter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PersonInRole"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Voter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#VoterRegistrationAgency -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#VoterRegistrationAgency">
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ontology/upper#IndependentThing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#State"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VoterRegistrationAgency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#VoterRegistrationIdentification -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#VoterRegistrationIdentification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Identification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#appearsOn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#NvraForm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Voter Registration Identification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elections</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.0.2.20160507-1747) https://github.com/owlcs/owlapi/ -->
+
+
+
+
+
+<!-- Warning: type declarations were not added automatically. -->
+
+
+<!-- Generated using the No Magic Cameo Concept Modeler (18.0 SP10, build 2017 07 23 12:50 (3301)) on 2017-10-19 at 16:22:24 GMT -->
