@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-05T10:24:00</Created>
-        <ModificationDate>17-09-21T14:26:26</ModificationDate>
+        <ModificationDate>17-10-14T10:02:20</ModificationDate>
         <Documentation>For each court record: lookup a record in the voter registration database, and change the record’s status according to the court action.
 &lt;html&gt;
   &lt;head&gt;
@@ -24,7 +24,7 @@ Verbiage here is a bit strange.
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1260</Version>
+        <Version>1346</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>

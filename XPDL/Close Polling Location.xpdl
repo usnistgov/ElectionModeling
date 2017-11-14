@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T09:09:00</Created>
-        <ModificationDate>17-09-21T14:26:26</ModificationDate>
+        <ModificationDate>17-10-14T10:02:20</ModificationDate>
         <Documentation>Close the voting location on election day.
 &lt;html&gt;
   &lt;head&gt;
@@ -52,7 +52,7 @@ Change to call activity&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1260</Version>
+        <Version>1346</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -82,7 +82,7 @@ Change to call activity&amp;#160;
         </Pool>
         <Pool Id="_18_5_1_11940316_1500556340672_958002_33213" Name="Voter" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1500556340672_958002_33213_proc" Participant="_18_5_1_11940316_1498828669742_83683_23366" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" Height="118.0" Width="1375.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" Height="108.0" Width="1375.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -90,7 +90,7 @@ Change to call activity&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_1_11940316_1501683856616_814059_34151" Source="_18_5_1_11940316_1500556280735_962343_33140" Target="_18_5_1_11940316_1501683856706_50994_34152" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611106959_35637_29398"/>
+            <Object Id="_18_5_2_43701b0_1510672949868_472264_29890"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="82.0" YCoordinate="336.0"/>
@@ -99,7 +99,7 @@ Change to call activity&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1502893063777_422173_31441" Source="_18_5_1_11940316_1500556726944_853427_33366" Target="_18_5_1_11940316_1502893063940_324368_31442" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611106965_222785_29399"/>
+            <Object Id="_18_5_2_43701b0_1510672949874_289258_29891"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="972.0" YCoordinate="401.0"/>

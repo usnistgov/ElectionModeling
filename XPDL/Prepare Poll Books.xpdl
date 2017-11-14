@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-12T10:41:00</Created>
-        <ModificationDate>17-09-21T14:26:26</ModificationDate>
+        <ModificationDate>17-10-14T10:02:20</ModificationDate>
         <Documentation>Prepare poll books for use during the election.
 &lt;html&gt;
   &lt;head&gt;
@@ -80,7 +80,7 @@ NY&amp;#160;has eligible voters not on poll book (inactive)&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1260</Version>
+        <Version>1346</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -109,7 +109,7 @@ NY&amp;#160;has eligible voters not on poll book (inactive)&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_2_11940316_1504640902197_14224_28496" Source="_18_5_1_11940316_1499870517335_219215_23553" Target="_18_5_2_11940316_1504640902304_148276_28497" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611124293_125909_29418"/>
+            <Object Id="_18_5_2_43701b0_1510672963556_413037_30154"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499870500277_548144_23526" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="61.0" YCoordinate="287.0"/>
@@ -118,7 +118,7 @@ NY&amp;#160;has eligible voters not on poll book (inactive)&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1506964219235_161347_32128" Source="_18_5_1_11940316_1499870572683_681922_23634" Target="_18_5_2_11940316_1506964219365_304403_32129" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611124293_181006_29419"/>
+            <Object Id="_18_5_2_43701b0_1510672963557_522433_30155"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499870500277_548144_23526" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="463.0" YCoordinate="328.0"/>
@@ -127,7 +127,7 @@ NY&amp;#160;has eligible voters not on poll book (inactive)&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1506965188918_292945_32208" Source="_18_5_1_11940316_1499870539885_677422_23595" Target="_18_5_2_11940316_1506965189036_36278_32209" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611124295_421986_29420"/>
+            <Object Id="_18_5_2_43701b0_1510672963558_566240_30156"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499870500277_548144_23526" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="174.0" YCoordinate="266.0"/>

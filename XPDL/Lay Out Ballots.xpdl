@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-12T10:23:00</Created>
-        <ModificationDate>17-09-21T14:26:26</ModificationDate>
+        <ModificationDate>17-10-14T10:02:20</ModificationDate>
         <Documentation>For each ballot style: select the contests and selections to appear on the ballot and apply business rules determining their order and location.
 &lt;html&gt;
   &lt;head&gt;
@@ -14,7 +14,7 @@
 	&lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-What if it is too late to remove the withdrawn from the ballot (e.g. after voting has begun)&amp;#160;
+What if it is too late to remove the withdrawn from the ballot (e.g. after voting has begun)?
 
     &lt;/p&gt;
 
@@ -22,37 +22,24 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
 &lt;/html&gt;
 &lt;html&gt;
   &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-From&amp;#160;EP. Keep?&amp;#160;
-
+      Called &amp;quot;Ballot Definition File&amp;quot; in EP&amp;#160;
     &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-Called &amp;quot;Ballot Definition File&amp;quot; in EP&amp;#160;
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
+  &lt;/body&gt;
 &lt;/html&gt;</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1260</Version>
+        <Version>1346</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -63,12 +50,12 @@ Called &amp;quot;Ballot Definition File&amp;quot; in EP&amp;#160;
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Lay Out Ballots" Id="_18_5_1_11940316_1499869414878_955158_23236" Height="325.0" Width="1515.0"/>
+        <Page Name="Lay Out Ballots" Id="_18_5_1_11940316_1499869414878_955158_23236" Height="360.0" Width="1515.0"/>
     </Pages>
     <Pools>
         <Pool Id="_18_5_1_11940316_1499869616233_900474_23462" Name="Election Authority" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1499869616233_900474_23462_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="325.0" Width="1515.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="360.0" Width="1515.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -76,34 +63,25 @@ Called &amp;quot;Ballot Definition File&amp;quot; in EP&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_2_11940316_1504546807848_801491_42027" Source="_18_5_2_11940316_1505756357427_986896_29127" Target="_18_5_2_11940316_1504547207743_246114_42077" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611140622_694217_29487"/>
+            <Object Id="_18_5_2_43701b0_1510672972360_743623_30390"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="308.0" YCoordinate="199.0"/>
-                    <Coordinates XCoordinate="525.0" YCoordinate="228.0"/>
-                </ConnectorGraphicsInfo>
-            </ConnectorGraphicsInfos>
-        </Association>
-        <Association Id="_18_5_2_11940316_1506608500617_147842_29536" Source="_18_5_2_11940316_1506608480182_963469_29511" Target="_18_5_2_11940316_1506608544511_673013_29546" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611140622_660000_29488"/>
-            <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="127.0" YCoordinate="273.0"/>
-                    <Coordinates XCoordinate="168.0" YCoordinate="284.0"/>
+                    <Coordinates XCoordinate="308.0" YCoordinate="200.0"/>
+                    <Coordinates XCoordinate="469.0" YCoordinate="229.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1506608544396_839643_29544" Source="_18_5_2_11940316_1506456804105_450485_49771" Target="_18_5_2_11940316_1506608544511_37297_29545" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611140623_954566_29489"/>
+            <Object Id="_18_5_2_43701b0_1510672972361_208349_30391"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="1378.0" YCoordinate="208.0"/>
-                    <Coordinates XCoordinate="1318.0" YCoordinate="228.0"/>
+                    <Coordinates XCoordinate="1378.0" YCoordinate="210.0"/>
+                    <Coordinates XCoordinate="1339.0" YCoordinate="225.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1506633683809_132095_29936" Source="_18_5_1_11940316_1502910768248_620785_27243" Target="_18_5_2_11940316_1506633669929_241365_29930" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611140624_10707_29490"/>
+            <Object Id="_18_5_2_43701b0_1510672972361_333321_30392"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="108.0" YCoordinate="181.0"/>
@@ -113,24 +91,17 @@ Called &amp;quot;Ballot Definition File&amp;quot; in EP&amp;#160;
         </Association>
     </Associations>
     <Artifacts>
-        <Artifact Id="_18_5_2_11940316_1504547207743_246114_42077" ArtifactType="Annotation" TextAnnotation="What if it is too late to remove the withdrawn from the ballot (e.g. after voting has begun) ">
+        <Artifact Id="_18_5_2_11940316_1504547207743_246114_42077" ArtifactType="Annotation" TextAnnotation="What if it is too late to remove the withdrawn from the ballot (e.g. after voting has begun)?">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="70.0" Width="161.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="525.0" YCoordinate="203.0"/>
-                </NodeGraphicsInfo>
-            </NodeGraphicsInfos>
-        </Artifact>
-        <Artifact Id="_18_5_2_11940316_1506608544511_673013_29546" ArtifactType="Annotation" TextAnnotation="From EP. Keep? ">
-            <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="39.0" Width="64.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="168.0" YCoordinate="273.0"/>
+                    <Coordinates XCoordinate="469.0" YCoordinate="209.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
         <Artifact Id="_18_5_2_11940316_1506608544511_37297_29545" ArtifactType="Annotation" TextAnnotation="Called &quot;Ballot Definition File&quot; in EP ">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="1218.0" YCoordinate="217.0"/>
+                    <Coordinates XCoordinate="1239.0" YCoordinate="217.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
@@ -438,13 +409,6 @@ Same thing?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </DataObject>
-                <DataObject Id="_18_5_2_11940316_1506608480182_963469_29511" Name="Random Alpha Draw" cbm:realDataId="_18_5_2_11940316_1506608480149_475453_29507" cbm:numberedProperty="1.5.1.D 2">
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="69.0" Width="77.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="56.0" YCoordinate="231.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </DataObject>
             </DataObjects>
             <Transitions>
                 <Transition Id="_18_5_1_11940316_1502385704206_292040_38567" From="_18_5_1_11940316_1502385702936_368922_38556" To="_18_5_1_11940316_1502385374285_682876_38509" Name="">
@@ -489,9 +453,8 @@ Same thing?&amp;#160;
                 <DataAssociation Id="_18_5_2_11940316_1504032984626_503596_31551" Name="" From="_18_5_2_11940316_1504032964179_171346_31531" To="_18_5_1_11940316_1499869453889_470094_23280">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="95.0" YCoordinate="89.0"/>
-                            <Coordinates XCoordinate="95.0" YCoordinate="98.0"/>
-                            <Coordinates XCoordinate="308.0" YCoordinate="98.0"/>
+                            <Coordinates XCoordinate="154.0" YCoordinate="95.0"/>
+                            <Coordinates XCoordinate="308.0" YCoordinate="95.0"/>
                             <Coordinates XCoordinate="308.0" YCoordinate="105.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
@@ -501,15 +464,6 @@ Same thing?&amp;#160;
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="1330.0" YCoordinate="175.0"/>
                             <Coordinates XCoordinate="1391.0" YCoordinate="175.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </DataAssociation>
-                <DataAssociation Id="_18_5_2_11940316_1506608497945_830026_29531" Name="" From="_18_5_2_11940316_1506608480182_963469_29511" To="_18_5_1_11940316_1502385374285_682876_38509">
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="127.0" YCoordinate="266.0"/>
-                            <Coordinates XCoordinate="203.0" YCoordinate="266.0"/>
-                            <Coordinates XCoordinate="203.0" YCoordinate="199.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>

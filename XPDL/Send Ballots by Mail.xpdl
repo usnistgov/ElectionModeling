@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T09:39:00</Created>
-        <ModificationDate>17-09-21T14:26:26</ModificationDate>
+        <ModificationDate>17-10-14T10:02:20</ModificationDate>
         <Documentation>For each remote voter: Send a ballot to the voter via postal mail.
 &lt;html&gt;
   &lt;head&gt;
@@ -24,7 +24,7 @@ OR has many different periods.&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1260</Version>
+        <Version>1346</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -72,7 +72,7 @@ OR has many different periods.&amp;#160;
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_2_11940316_1506357213638_206396_28336" Source="_18_5_2_11940316_1506357203655_311656_28326" Target="_18_5_1_11940316_1500560671326_525320_34976" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611136152_230140_29472"/>
+            <Object Id="_18_5_2_43701b0_1510672970756_745693_30343"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="899.0" YCoordinate="390.0"/>
@@ -81,7 +81,7 @@ OR has many different periods.&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1506357249406_516908_28377" Source="_18_5_2_11940316_1506357249404_800489_28372" Target="_18_5_2_11940316_1506357249404_916219_28373" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611136153_374143_29473"/>
+            <Object Id="_18_5_2_43701b0_1510672970757_952911_30344"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="103.0" YCoordinate="490.0"/>

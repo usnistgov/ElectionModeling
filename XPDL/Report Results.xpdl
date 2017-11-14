@@ -4,13 +4,13 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T16:12:00</Created>
-        <ModificationDate>17-09-21T14:26:26</ModificationDate>
+        <ModificationDate>17-10-14T10:02:20</ModificationDate>
         <Documentation>Provide up to date election results.</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1260</Version>
+        <Version>1346</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -173,7 +173,7 @@
             <DataStoreReferences>
                 <DataStoreReference DataStoreRef="_18_5_1_11940316_1500582485846_499914_37452" Id="_18_5_1_11940316_1500582485876_997451_37458" Name="Tally Database">
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500581577055_500859_37345" Height="57.0" Width="91.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500581577055_500859_37345" Height="57.0" Width="125.0" BorderColor="#99995C" FillColor="#E1E1C3">
                             <Coordinates XCoordinate="196.0" YCoordinate="413.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
@@ -255,7 +255,7 @@
                 <DataAssociation Id="_18_5_1_11940316_1500582512118_392768_37510" Name="" From="_18_5_1_11940316_1500582485876_997451_37458" To="_18_5_1_11940316_1500582510391_508902_37508">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500581577055_500859_37345" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="242.0" YCoordinate="416.0"/>
+                            <Coordinates XCoordinate="242.0" YCoordinate="440.0"/>
                             <Coordinates XCoordinate="242.0" YCoordinate="351.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
@@ -266,14 +266,14 @@
                             <Coordinates XCoordinate="532.0" YCoordinate="438.0"/>
                             <Coordinates XCoordinate="343.0" YCoordinate="438.0"/>
                             <Coordinates XCoordinate="343.0" YCoordinate="427.0"/>
-                            <Coordinates XCoordinate="253.0" YCoordinate="427.0"/>
+                            <Coordinates XCoordinate="270.0" YCoordinate="427.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>
                 <DataAssociation Id="_18_5_1_11940316_1500583358943_524739_37751" Name="" From="_18_5_1_11940316_1500582485876_997451_37458" To="_18_5_1_11940316_1500582666663_553444_37611">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500581577055_500859_37345" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="281.0" YCoordinate="448.0"/>
+                            <Coordinates XCoordinate="315.0" YCoordinate="448.0"/>
                             <Coordinates XCoordinate="532.0" YCoordinate="448.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>

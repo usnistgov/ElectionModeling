@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-05-22T10:16:00</Created>
-        <ModificationDate>17-09-21T14:26:26</ModificationDate>
+        <ModificationDate>17-10-14T10:02:20</ModificationDate>
         <Documentation>For states requiring registration in order to vote, register a voter such that their name appears on the list of eligible voters for the next election qualified for.
 &lt;html&gt;
   &lt;head&gt;
@@ -22,18 +22,20 @@ Remove?&amp;#160;
 &lt;/html&gt;
 &lt;html&gt;
   &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-TBD Add Ineligibility&amp;#160;
-
+      TBD Add Ineligibility&amp;#160;
     &lt;/p&gt;
-
-&lt;/body&gt;
+  &lt;/body&gt;
 &lt;/html&gt;
+
 &lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -50,23 +52,24 @@ Problematic because this process also handles updates&amp;#160;
 &lt;/html&gt;
 &lt;html&gt;
   &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-May represent a state or local VRDB&amp;#160;
-
+      May represent a state or local VRDB&amp;#160;
     &lt;/p&gt;
-
-&lt;/body&gt;
+  &lt;/body&gt;
 &lt;/html&gt;</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1260</Version>
+        <Version>1346</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -147,15 +150,15 @@ May represent a state or local VRDB&amp;#160;
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="392.0" YCoordinate="665.0"/>
                     <Coordinates XCoordinate="392.0" YCoordinate="648.0"/>
-                    <Coordinates XCoordinate="1075.0" YCoordinate="648.0"/>
-                    <Coordinates XCoordinate="1075.0" YCoordinate="91.0"/>
+                    <Coordinates XCoordinate="1099.0" YCoordinate="648.0"/>
+                    <Coordinates XCoordinate="1099.0" YCoordinate="91.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_2_11940316_1505414850209_733710_36492" Source="_18_5_2_11940316_1505414637330_713695_36353" Target="_18_5_2_11940316_1505414850322_812953_36493" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611142320_465263_29493"/>
+            <Object Id="_18_5_2_43701b0_1510672974099_647327_30447"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="182.0" YCoordinate="654.0"/>
@@ -164,7 +167,7 @@ May represent a state or local VRDB&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1506103661145_200341_36669" Source="_18_5_2_11940316_1506102969690_825407_36623" Target="_18_5_2_11940316_1506103661281_48214_36670" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611142320_525279_29494"/>
+            <Object Id="_18_5_2_43701b0_1510672974099_58997_30448"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="507.0" YCoordinate="701.0"/>
@@ -173,7 +176,7 @@ May represent a state or local VRDB&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1506110306001_369819_36774" Source="_18_5_1_11940316_1502833880862_621510_41843" Target="_18_5_2_11940316_1506110306117_918594_36775" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611142320_156894_29495"/>
+            <Object Id="_18_5_2_43701b0_1510672974100_162030_30449"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="733.0" YCoordinate="805.0"/>
@@ -182,7 +185,7 @@ May represent a state or local VRDB&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1506602211377_943474_28867" Source="_18_5_1_11940316_1498143971006_81819_21348" Target="_18_5_2_11940316_1506602211515_494637_28868" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611142320_601442_29496"/>
+            <Object Id="_18_5_2_43701b0_1510672974100_875874_30450"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="774.0" YCoordinate="577.0"/>

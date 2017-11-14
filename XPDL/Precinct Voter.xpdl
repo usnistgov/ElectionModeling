@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-05-29T09:12:00</Created>
-        <ModificationDate>17-09-21T14:26:26</ModificationDate>
+        <ModificationDate>17-10-14T10:02:20</ModificationDate>
         <Documentation>&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -13,7 +13,7 @@
 	&lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-Non allowable address. Business, etc.&amp;#160;
+Non allowable address (Business, etc.).
 
     &lt;/p&gt;
 
@@ -23,7 +23,7 @@ Non allowable address. Business, etc.&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1260</Version>
+        <Version>1346</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -40,7 +40,7 @@ Non allowable address. Business, etc.&amp;#160;
         <Page Name="Precinct Voter" Id="_18_5_1_11940316_1498741936331_435444_21134" Height="528.0" Width="1109.0"/>
     </Pages>
     <DataStores>
-        <DataStore Id="_18_5_1_11940316_1500472861307_215878_29138" Name="Address Database" IsUnlimited="false" cbm:numberedProperty="1.2.2.D 1"/>
+        <DataStore Id="_18_5_1_11940316_1500472861307_215878_29138" Name="Address Records" IsUnlimited="false" cbm:numberedProperty="1.2.2.D 1"/>
         <DataStore Id="_18_5_2_11940316_1506630575461_91305_29418" Name="Voter Record" IsUnlimited="false" cbm:numberedProperty="1.2.2.D 2"/>
     </DataStores>
     <Pools>
@@ -81,7 +81,7 @@ Non allowable address. Business, etc.&amp;#160;
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_2_11940316_1507146980166_175802_38203" Source="_18_5_1_11940316_1499865815229_588324_25215" Target="_18_5_2_11940316_1507147912662_186953_38209" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611162006_788895_29557"/>
+            <Object Id="_18_5_2_43701b0_1510672990452_845843_30872"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498741936331_435444_21134" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="552.0" YCoordinate="71.0"/>
@@ -91,7 +91,7 @@ Non allowable address. Business, etc.&amp;#160;
         </Association>
     </Associations>
     <Artifacts>
-        <Artifact Id="_18_5_2_11940316_1507147912662_186953_38209" ArtifactType="Annotation" TextAnnotation="Non allowable address. Business, etc. ">
+        <Artifact Id="_18_5_2_11940316_1507147912662_186953_38209" ArtifactType="Annotation" TextAnnotation="Non allowable address (Business, etc.).">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498741936331_435444_21134" Height="39.0" Width="154.0" BorderColor="#424242" FillColor="#FFFFFF">
                     <Coordinates XCoordinate="602.0" YCoordinate="3.0"/>
@@ -328,14 +328,14 @@ Non allowable address. Business, etc.&amp;#160;
                 </Activity>
             </Activities>
             <DataStoreReferences>
-                <DataStoreReference DataStoreRef="_18_5_1_11940316_1500472861307_215878_29138" Id="_18_5_1_11940316_1500472861343_588983_29142" Name="Address Database">
+                <DataStoreReference DataStoreRef="_18_5_1_11940316_1500472861307_215878_29138" Id="_18_5_1_11940316_1500472861343_588983_29142" Name="Address Records">
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498741936331_435444_21134" Height="57.0" Width="167.0" BorderColor="#99995C" FillColor="#E1E1C3">
                             <Coordinates XCoordinate="588.0" YCoordinate="140.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </DataStoreReference>
-                <DataStoreReference DataStoreRef="_18_5_1_11940316_1500472861307_215878_29138" Id="_18_5_2_11940316_1506296002289_71303_33800" Name="Address Database">
+                <DataStoreReference DataStoreRef="_18_5_1_11940316_1500472861307_215878_29138" Id="_18_5_2_11940316_1506296002289_71303_33800" Name="Address Records">
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498741936331_435444_21134" Height="57.0" Width="167.0" BorderColor="#99995C" FillColor="#E1E1C3">
                             <Coordinates XCoordinate="105.0" YCoordinate="161.0"/>

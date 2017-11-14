@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T15:08:00</Created>
-        <ModificationDate>17-09-21T14:26:26</ModificationDate>
+        <ModificationDate>17-10-14T10:02:20</ModificationDate>
         <Documentation>Receive and process a ballot package, e.g. an absentee or provisional ballot.
 &lt;html&gt;
   &lt;head&gt;
@@ -20,14 +20,26 @@ What is this?&amp;#160;
 
 &lt;/body&gt;
 &lt;/html&gt;
-&lt;html&gt;&lt;body&gt;
-&lt;p&gt;CVR may not be best term &lt;/p&gt;
-&lt;/body&gt;&lt;/html&gt;</Documentation>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+      CVR may not be best term&amp;#160;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1260</Version>
+        <Version>1346</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -94,7 +106,7 @@ What is this?&amp;#160;
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1502918672015_24862_27828" Source="_18_5_1_11940316_1501695072809_439160_26344" Target="_18_5_1_11940316_1502918672119_474780_27829" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611117605_474883_29410"/>
+            <Object Id="_18_5_2_43701b0_1510672958250_812629_30026"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1043.0" YCoordinate="491.0"/>
@@ -103,7 +115,7 @@ What is this?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1504893956106_340784_33402" Source="_18_5_1_11940316_1501695006548_430877_26265" Target="_18_5_2_11940316_1504893956226_952040_33403" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611117606_335528_29411"/>
+            <Object Id="_18_5_2_43701b0_1510672958250_177473_30027"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="854.0" YCoordinate="384.0"/>
@@ -156,7 +168,7 @@ What is this?&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501694466300_131571_26040" IsForCompensation="false" Name="Determine countability of ballot package" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.1.2">
+                <Activity Id="_18_5_1_11940316_1501694466300_131571_26040" IsForCompensation="false" Name="Determine eligibility to  be counted" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.1.2">
                     <Implementation>
                         <Task>
                             <TaskBusinessRule BusinessRuleTaskImplementation="Unspecified"/>

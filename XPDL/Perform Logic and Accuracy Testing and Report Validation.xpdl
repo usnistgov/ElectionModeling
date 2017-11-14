@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-07-23T15:27:00</Created>
-        <ModificationDate>17-09-21T14:26:26</ModificationDate>
+        <ModificationDate>17-10-14T10:02:20</ModificationDate>
         <Documentation>Perform a set of tasks that tests equipment allocated for the election. The tasks test the machines' ability to perform its major functions. After the test concludes, validate the results and take any required corrective action.
 &lt;html&gt;
   &lt;head&gt;
@@ -36,18 +36,20 @@ Minimum allocation rules&amp;#160;
 &lt;/html&gt;
 &lt;html&gt;
   &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-Do this apply to all kinds of L&amp;amp;A? What about EPBs?&amp;#160;
-
+      Do this apply to all kinds of L&amp;amp;A? What about EPBs?&amp;#160;
     &lt;/p&gt;
-
-&lt;/body&gt;
+  &lt;/body&gt;
 &lt;/html&gt;
+
 &lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -80,7 +82,7 @@ Situation defined&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1260</Version>
+        <Version>1346</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -107,7 +109,7 @@ Situation defined&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_2_11940316_1504700351802_301914_28239" Source="_18_5_1_11940316_1503516885183_970449_61399" Target="_18_5_2_11940316_1504700351902_959829_28240" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611111822_747689_29401"/>
+            <Object Id="_18_5_2_43701b0_1510672952632_266741_29928"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="192.0" YCoordinate="204.0"/>
@@ -116,7 +118,7 @@ Situation defined&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1504703410808_880352_28487" Source="_18_5_2_11940316_1504700202011_450201_28183" Target="_18_5_2_11940316_1504703410920_810473_28488" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611111823_84560_29402"/>
+            <Object Id="_18_5_2_43701b0_1510672952633_464092_29929"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="388.0" YCoordinate="204.0"/>
@@ -125,7 +127,7 @@ Situation defined&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1505333310290_913756_40924" Source="_18_5_2_11940316_1504700493218_881590_28288" Target="_18_5_2_11940316_1505333310442_520687_40925" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611111823_261672_29403"/>
+            <Object Id="_18_5_2_43701b0_1510672952633_799766_29930"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1014.0" YCoordinate="350.0"/>
@@ -403,8 +405,8 @@ Situation defined&amp;#160;
             <DataStoreReferences>
                 <DataStoreReference DataStoreRef="_18_5_2_11940316_1506429778783_535792_44138" Id="_18_5_2_11940316_1506429778817_31255_44142" Name="Ballot Styles">
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" Height="77.0" Width="80.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="126.0" YCoordinate="49.0"/>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" Height="57.0" Width="80.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="126.0" YCoordinate="70.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </DataStoreReference>
@@ -536,8 +538,8 @@ Situation defined&amp;#160;
                 <DataAssociation Id="_18_5_2_11940316_1506429794535_707878_44162" Name="" From="_18_5_2_11940316_1506429778817_31255_44142" To="_18_5_1_11940316_1503516885183_970449_61399">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="188.0" YCoordinate="84.0"/>
-                            <Coordinates XCoordinate="235.0" YCoordinate="84.0"/>
+                            <Coordinates XCoordinate="200.0" YCoordinate="105.0"/>
+                            <Coordinates XCoordinate="235.0" YCoordinate="105.0"/>
                             <Coordinates XCoordinate="235.0" YCoordinate="154.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>

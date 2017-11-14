@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-08-23T00:41:00</Created>
-        <ModificationDate>17-09-21T14:26:26</ModificationDate>
+        <ModificationDate>17-10-14T10:02:20</ModificationDate>
         <Documentation>Process mail originating from the election jurisdiction that has been returned as undeliverable.
 &lt;html&gt;
   &lt;head&gt;
@@ -24,7 +24,7 @@ NC
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1260</Version>
+        <Version>1346</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -58,6 +58,7 @@ NC
     </Pools>
     <MessageFlows>
         <MessageFlow Id="_18_5_2_11940316_1506098897858_107666_36346" Name="" Source="_18_5_2_11940316_1506098694164_353463_36335" Target="_18_5_2_11940316_1506098909121_137759_36358">
+            <Message Id="_18_5_2_43701b0_1509890831920_279850_29167" Name="Undeliverable Mail"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506098468577_540421_36021" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="124.0" YCoordinate="139.0"/>
@@ -77,7 +78,7 @@ NC
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_2_11940316_1506099153671_302871_36468" Source="_18_5_2_11940316_1506099132554_499461_36460" Target="_18_5_2_11940316_1506099212434_917768_36477" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611128860_216899_29438"/>
+            <Object Id="_18_5_2_43701b0_1510672966878_451355_30242"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506098468577_540421_36021" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="637.0" YCoordinate="294.0"/>
@@ -96,6 +97,11 @@ NC
         </Artifact>
     </Artifacts>
     <WorkflowProcesses>
+        <WorkflowProcess Id="_18_5_2_11940316_1506098468533_141797_36011" Name="Process Undeliverable Mail" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+            <ProcessHeader>
+                <Created>17-08-23T00:41:00</Created>
+            </ProcessHeader>
+        </WorkflowProcess>
         <WorkflowProcess Id="_18_5_2_11940316_1506098492613_658729_36033_proc" Name="Election Jurisdiction" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
             <ProcessHeader>
                 <Created>17-08-23T00:41:00</Created>

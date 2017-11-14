@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T15:17:00</Created>
-        <ModificationDate>17-09-21T14:26:26</ModificationDate>
+        <ModificationDate>17-10-14T10:02:20</ModificationDate>
         <Documentation>Tally the ballot selections in order to report election results.
 &lt;html&gt;
   &lt;head&gt;
@@ -69,7 +69,7 @@ We're dealing we ballots, not sets&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1260</Version>
+        <Version>1346</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -93,7 +93,7 @@ We're dealing we ballots, not sets&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_1_11940316_1500579362435_384663_36666" Source="_18_5_1_11940316_1500588643281_710287_38710" Target="_18_5_1_11940316_1500579485655_197723_36707" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611163431_84420_29560"/>
+            <Object Id="_18_5_2_43701b0_1510672991831_67213_30915"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="71.0" YCoordinate="185.0"/>
@@ -102,7 +102,7 @@ We're dealing we ballots, not sets&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1500579508186_874147_36738" Source="_18_5_1_11940316_1500579521192_167327_36746" Target="_18_5_1_11940316_1500579508302_206644_36739" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611163431_165857_29561"/>
+            <Object Id="_18_5_2_43701b0_1510672991832_740736_30916"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="337.0" YCoordinate="174.0"/>
@@ -111,7 +111,7 @@ We're dealing we ballots, not sets&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1500580089051_879726_37164" Source="_18_5_1_11940316_1500579954596_794135_37045" Target="_18_5_1_11940316_1500580089146_409757_37165" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611163431_473307_29562"/>
+            <Object Id="_18_5_2_43701b0_1510672991836_757990_30917"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="731.0" YCoordinate="360.0"/>
@@ -120,7 +120,7 @@ We're dealing we ballots, not sets&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1507219173737_448895_37739" Source="_18_5_1_11940316_1500579540478_311638_36760" Target="_18_5_2_11940316_1507219173874_92306_37740" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611163446_254822_29563"/>
+            <Object Id="_18_5_2_43701b0_1510672991836_837391_30918"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="307.0" YCoordinate="357.0"/>

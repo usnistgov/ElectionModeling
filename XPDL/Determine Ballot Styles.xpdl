@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-12T09:50:00</Created>
-        <ModificationDate>17-09-21T14:26:26</ModificationDate>
+        <ModificationDate>17-10-14T10:02:20</ModificationDate>
         <Documentation>Identify the precincts that are used in the conduct of the election (e.g. in the establishing of polling locations or the reporting of results).
 &lt;html&gt;
   &lt;head&gt;
@@ -24,7 +24,7 @@ May not always occur&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1260</Version>
+        <Version>1346</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -40,7 +40,7 @@ May not always occur&amp;#160;
     <DataStores>
         <DataStore Id="_18_5_2_11940316_1504882858846_630364_31421" Name="Precinct and District Boundaries" IsUnlimited="false" cbm:numberedProperty="1.4.1.D 1"/>
         <DataStore Id="_18_5_2_11940316_1504882901159_736546_31453" Name="Qualified Contests" IsUnlimited="false" cbm:numberedProperty="1.4.1.D 2"/>
-        <DataStore Id="_18_5_2_11940316_1506428778750_554922_43620" Name="Voter Registration Database" IsUnlimited="false" cbm:numberedProperty="1.4.1.D 3"/>
+        <DataStore Id="_18_5_2_11940316_1506428778750_554922_43620" Name="Voter Records" IsUnlimited="false" cbm:numberedProperty="1.4.1.D 3"/>
         <DataStore Id="_18_5_2_11940316_1506602927132_971854_29416" Name="Ballot Styles" IsUnlimited="false" cbm:numberedProperty="1.4.1.D 4"/>
     </DataStores>
     <Pools>
@@ -54,7 +54,7 @@ May not always occur&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_2_11940316_1504969146918_818349_33420" Source="_18_5_1_11940316_1499867731152_772433_26150" Target="_18_5_2_11940316_1504969147003_805272_33421" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611158095_899280_29544"/>
+            <Object Id="_18_5_2_43701b0_1510672987210_24839_30737"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499867445797_811002_25831" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1151.0" YCoordinate="111.0"/>
@@ -231,7 +231,7 @@ May not always occur&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </DataStoreReference>
-                <DataStoreReference DataStoreRef="_18_5_2_11940316_1506428778750_554922_43620" Id="_18_5_2_11940316_1506428778769_967941_43622" Name="Voter Registration Database">
+                <DataStoreReference DataStoreRef="_18_5_2_11940316_1506428778750_554922_43620" Id="_18_5_2_11940316_1506428778769_967941_43622" Name="Voter Records">
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499867445797_811002_25831" Height="57.0" Width="167.0" BorderColor="#99995C" FillColor="#E1E1C3">
                             <Coordinates XCoordinate="1071.0" YCoordinate="196.0"/>

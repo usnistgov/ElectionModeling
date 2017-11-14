@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-07-29T11:07:00</Created>
-        <ModificationDate>17-09-21T14:26:26</ModificationDate>
+        <ModificationDate>17-10-14T10:02:20</ModificationDate>
         <Documentation>Receive a document package indicating potential eligibility to appear on the ballot for an upcoming election.
 &lt;html&gt;
   &lt;head&gt;
@@ -53,7 +53,7 @@ What about issues?&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1260</Version>
+        <Version>1346</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -110,7 +110,7 @@ What about issues?&amp;#160;
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_2_11940316_1504019753015_935482_29730" Source="_18_5_2_11940316_1504019741221_49704_29714" Target="_18_5_2_11940316_1504019753091_15829_29731" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1508611155537_262234_29535"/>
+            <Object Id="_18_5_2_43701b0_1510672985036_421901_30679"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504019220880_410071_29350" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="301.0" YCoordinate="287.0"/>
