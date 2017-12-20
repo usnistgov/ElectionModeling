@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-05T10:24:00</Created>
-        <ModificationDate>17-10-14T10:02:20</ModificationDate>
+        <ModificationDate>17-11-20T11:11:58</ModificationDate>
         <Documentation>For each court record: lookup a record in the voter registration database, and change the record’s status according to the court action.
 &lt;html&gt;
   &lt;head&gt;
@@ -24,7 +24,7 @@ Verbiage here is a bit strange.
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1346</Version>
+        <Version>1477</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -70,12 +70,25 @@ Verbiage here is a bit strange.
             </ConnectorGraphicsInfos>
         </MessageFlow>
     </MessageFlows>
+    <Associations>
+        <Association Id="_18_5_2_43701b0_1511987232740_526975_71072" Source="_18_5_1_11940316_1499264717464_690928_23086" Target="_18_5_1_11940316_1499264717505_31548_23126" Name="" AssociationDirection="To">
+            <Object Id="_18_5_2_43701b0_1513786378089_493029_37957"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499264668505_931485_22943" BorderColor="#424242" FillColor="#FFFFCC">
+                    <Coordinates XCoordinate="89.0" YCoordinate="346.0"/>
+                    <Coordinates XCoordinate="89.0" YCoordinate="375.0"/>
+                    <Coordinates XCoordinate="88.0" YCoordinate="375.0"/>
+                    <Coordinates XCoordinate="88.0" YCoordinate="416.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+    </Associations>
     <Artifacts>
         <Artifact Id="_18_5_1_11940316_1499264717290_80609_22987" Name="Court Records" ArtifactType="DataObject">
             <DataObject Id="_18_5_1_11940316_1499264717505_31548_23126" Name="Court Records" cbm:realDataId="_18_5_1_11940316_1499264717290_80609_22987">
                 <NodeGraphicsInfos>
                     <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499264668505_931485_22943" Height="55.0" Width="101.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                        <Coordinates XCoordinate="32.0" YCoordinate="413.0"/>
+                        <Coordinates XCoordinate="39.0" YCoordinate="413.0"/>
                     </NodeGraphicsInfo>
                 </NodeGraphicsInfos>
             </DataObject>
@@ -94,9 +107,9 @@ Verbiage here is a bit strange.
                 <Created>17-06-05T10:24:00</Created>
             </ProcessHeader>
             <ActivitySets>
-                <ActivitySet Id="_18_5_1_11940316_1499264717287_790777_22977" Name="Process Court Action_as" AdHoc="false" TriggeredByEvent="false">
+                <ActivitySet Id="_18_5_1_11940316_1499264717287_790777_22977" Name="Process court action_as" AdHoc="false" TriggeredByEvent="false">
                     <Activities>
-                        <Activity Id="_18_5_1_11940316_1499264717465_379992_23091" IsForCompensation="false" Name="Lookup Voter Registration" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.2.M4.2.2">
+                        <Activity Id="_18_5_1_11940316_1499264717465_379992_23091" IsForCompensation="false" Name="Lookup voter registration" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.2.M4.2.2">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -111,7 +124,7 @@ Verbiage here is a bit strange.
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1499264717465_440502_23092" IsForCompensation="false" Name="Remove Person from List of Eligible Voters" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.2.M4.2.6">
+                        <Activity Id="_18_5_1_11940316_1499264717465_440502_23092" IsForCompensation="false" Name="Remove person from list of eligible voters" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.2.M4.2.6">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -192,7 +205,7 @@ Verbiage here is a bit strange.
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1499265733075_418747_22432" IsForCompensation="false" Name="Mark Person as Eligible to Reregister" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.2.M4.2.5">
+                        <Activity Id="_18_5_1_11940316_1499265733075_418747_22432" IsForCompensation="false" Name="Mark person as eligible to reregister" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.2.M4.2.5">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -339,7 +352,7 @@ Verbiage here is a bit strange.
                 </ActivitySet>
             </ActivitySets>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1499264717464_636236_23088" IsForCompensation="false" Name="Process Court Action" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.2.M4.2">
+                <Activity Id="_18_5_1_11940316_1499264717464_636236_23088" IsForCompensation="false" Name="Process court action" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.2.M4.2">
                     <BlockActivity ActivitySetId="_18_5_1_11940316_1499264717287_790777_22977" View="EXPANDED"/>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
@@ -391,7 +404,7 @@ Automatic restoration to rolls happens&lt;/body&gt;
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499264668505_931485_22943" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="77.0" YCoordinate="245.0"/>
+                            <Coordinates XCoordinate="77.0" YCoordinate="224.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -416,8 +429,8 @@ Automatic restoration to rolls happens&lt;/body&gt;
                 <Transition Id="_18_5_1_11940316_1502468436394_159464_31478" From="_18_5_1_11940316_1502468435024_419866_31467" To="_18_5_1_11940316_1499264717464_636236_23088" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499264668505_931485_22943" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="101.0" YCoordinate="257.0"/>
-                            <Coordinates XCoordinate="154.0" YCoordinate="257.0"/>
+                            <Coordinates XCoordinate="101.0" YCoordinate="236.0"/>
+                            <Coordinates XCoordinate="154.0" YCoordinate="236.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -426,9 +439,8 @@ Automatic restoration to rolls happens&lt;/body&gt;
                 <DataAssociation Id="_18_5_1_11940316_1499264717291_520864_22999" Name="" From="_18_5_1_11940316_1499264717505_31548_23126" To="_18_5_1_11940316_1499264717464_636236_23088">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499264668505_931485_22943" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="84.0" YCoordinate="416.0"/>
-                            <Coordinates XCoordinate="84.0" YCoordinate="385.0"/>
-                            <Coordinates XCoordinate="154.0" YCoordinate="385.0"/>
+                            <Coordinates XCoordinate="106.0" YCoordinate="431.0"/>
+                            <Coordinates XCoordinate="154.0" YCoordinate="431.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>

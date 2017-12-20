@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-07-29T11:07:00</Created>
-        <ModificationDate>17-10-14T10:02:20</ModificationDate>
+        <ModificationDate>17-11-20T11:11:58</ModificationDate>
         <Documentation>Receive a document package indicating potential eligibility to appear on the ballot for an upcoming election.
 &lt;html&gt;
   &lt;head&gt;
@@ -53,7 +53,7 @@ What about issues?&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1346</Version>
+        <Version>1477</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -67,7 +67,7 @@ What about issues?&amp;#160;
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Receive Election Filing" Id="_18_5_2_11940316_1504019220880_410071_29350" Height="444.0" Width="717.0"/>
+        <Page Name="Receive Election Filing" Id="_18_5_2_11940316_1504019220880_410071_29350" Height="444.0" Width="689.0"/>
     </Pages>
     <DataStores>
         <DataStore Id="_18_5_2_11940316_1505837490854_724754_34112" Name="Election Management System" IsUnlimited="false" cbm:numberedProperty="D 1"/>
@@ -75,14 +75,14 @@ What about issues?&amp;#160;
     <Pools>
         <Pool Id="_18_5_2_11940316_1504019245287_667254_29362" Name="Election Jurisdiction" Orientation="HORIZONTAL" Process="_18_5_2_11940316_1504019245287_667254_29362_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504019220880_410071_29350" Height="262.0" Width="717.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504019220880_410071_29350" Height="262.0" Width="689.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="182.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Pool>
         <Pool Id="_18_5_2_11940316_1504020211290_360909_29978" Name="Authorizing Entity" Orientation="HORIZONTAL" Process="_18_5_2_11940316_1504020211290_360909_29978_proc" Participant="_18_5_2_11940316_1504020179240_478096_29942" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504019220880_410071_29350" Height="112.0" Width="717.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504019220880_410071_29350" Height="112.0" Width="689.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -110,7 +110,7 @@ What about issues?&amp;#160;
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_2_11940316_1504019753015_935482_29730" Source="_18_5_2_11940316_1504019741221_49704_29714" Target="_18_5_2_11940316_1504019753091_15829_29731" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672985036_421901_30679"/>
+            <Object Id="_18_5_2_43701b0_1513786398675_135474_38002"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504019220880_410071_29350" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="301.0" YCoordinate="287.0"/>

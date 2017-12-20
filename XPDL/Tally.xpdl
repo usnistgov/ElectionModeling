@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T15:17:00</Created>
-        <ModificationDate>17-10-14T10:02:20</ModificationDate>
+        <ModificationDate>17-11-20T11:11:58</ModificationDate>
         <Documentation>Tally the ballot selections in order to report election results.
 &lt;html&gt;
   &lt;head&gt;
@@ -33,43 +33,12 @@ Convert to Ad Hoc Subprocess?&amp;#160;
     &lt;/p&gt;
 
 &lt;/body&gt;
-&lt;/html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;style type="text/css"&gt;
-      &lt;!--
-        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
-      --&gt;
-    &lt;/style&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-      This was not originally in the KB models. However, if we receive ballots 
-      rather than&amp;#160;CVRs, rules may need to be applied&amp;#160;
-    &lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-
-&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-We're dealing we ballots, not sets&amp;#160;
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
 &lt;/html&gt;</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1346</Version>
+        <Version>1477</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -80,12 +49,15 @@ We're dealing we ballots, not sets&amp;#160;
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Tally" Id="_18_5_1_11940316_1500578226571_730654_36552" Height="474.0" Width="1130.0"/>
+        <Page Name="Tally" Id="_18_5_1_11940316_1500578226571_730654_36552" Height="409.0" Width="1130.0"/>
     </Pages>
+    <DataStores>
+        <DataStore Id="_18_5_2_43701b0_1510778046678_126063_29842" Name="" IsUnlimited="false" cbm:numberedProperty="3.1.3.D 2"/>
+    </DataStores>
     <Pools>
         <Pool Id="_18_5_1_11940316_1500578254510_314450_36577" Name="Election Authority" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1500578254510_314450_36577_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" Height="474.0" Width="1130.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" Height="409.0" Width="1130.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -93,7 +65,7 @@ We're dealing we ballots, not sets&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_1_11940316_1500579362435_384663_36666" Source="_18_5_1_11940316_1500588643281_710287_38710" Target="_18_5_1_11940316_1500579485655_197723_36707" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672991831_67213_30915"/>
+            <Object Id="_18_5_2_43701b0_1513786404262_511704_38017"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="71.0" YCoordinate="185.0"/>
@@ -102,29 +74,11 @@ We're dealing we ballots, not sets&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1500579508186_874147_36738" Source="_18_5_1_11940316_1500579521192_167327_36746" Target="_18_5_1_11940316_1500579508302_206644_36739" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672991832_740736_30916"/>
+            <Object Id="_18_5_2_43701b0_1513786404263_821386_38018"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="337.0" YCoordinate="174.0"/>
-                    <Coordinates XCoordinate="347.0" YCoordinate="96.0"/>
-                </ConnectorGraphicsInfo>
-            </ConnectorGraphicsInfos>
-        </Association>
-        <Association Id="_18_5_1_11940316_1500580089051_879726_37164" Source="_18_5_1_11940316_1500579954596_794135_37045" Target="_18_5_1_11940316_1500580089146_409757_37165" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672991836_757990_30917"/>
-            <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="731.0" YCoordinate="360.0"/>
-                    <Coordinates XCoordinate="700.0" YCoordinate="401.0"/>
-                </ConnectorGraphicsInfo>
-            </ConnectorGraphicsInfos>
-        </Association>
-        <Association Id="_18_5_2_11940316_1507219173737_448895_37739" Source="_18_5_1_11940316_1500579540478_311638_36760" Target="_18_5_2_11940316_1507219173874_92306_37740" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672991836_837391_30918"/>
-            <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="307.0" YCoordinate="357.0"/>
-                    <Coordinates XCoordinate="280.0" YCoordinate="378.0"/>
+                    <Coordinates XCoordinate="336.0" YCoordinate="174.0"/>
+                    <Coordinates XCoordinate="340.0" YCoordinate="129.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
@@ -140,30 +94,7 @@ We're dealing we ballots, not sets&amp;#160;
         <Artifact Id="_18_5_1_11940316_1500579508302_206644_36739" ArtifactType="Annotation" TextAnnotation="Convert to Ad Hoc Subprocess? ">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="301.0" YCoordinate="42.0"/>
-                </NodeGraphicsInfo>
-            </NodeGraphicsInfos>
-        </Artifact>
-        <Artifact Id="_18_5_1_11940316_1500579540446_534746_36754" Name="Ballot sets" ArtifactType="DataObject">
-            <DataObject Id="_18_5_1_11940316_1500579540478_311638_36760" Name="Ballot sets" cbm:realDataId="_18_5_1_11940316_1500579540446_534746_36754" cbm:numberedProperty="3.1.3.D 1">
-                <NodeGraphicsInfos>
-                    <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" Height="70.0" Width="83.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                        <Coordinates XCoordinate="301.0" YCoordinate="294.0"/>
-                    </NodeGraphicsInfo>
-                </NodeGraphicsInfos>
-            </DataObject>
-        </Artifact>
-        <Artifact Id="_18_5_1_11940316_1500580089146_409757_37165" ArtifactType="Annotation" TextAnnotation="This was not originally in the KB models. However, if we receive ballots rather than CVRs, rules may need to be applied ">
-            <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" Height="69.0" Width="203.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="574.0" YCoordinate="401.0"/>
-                </NodeGraphicsInfo>
-            </NodeGraphicsInfos>
-        </Artifact>
-        <Artifact Id="_18_5_2_11940316_1507219173874_92306_37740" ArtifactType="Annotation" TextAnnotation="We're dealing we ballots, not sets ">
-            <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="196.0" YCoordinate="378.0"/>
+                    <Coordinates XCoordinate="292.0" YCoordinate="75.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
@@ -449,6 +380,24 @@ We're dealing we ballots, not sets&amp;#160;
                     </NodeGraphicsInfos>
                 </Activity>
             </Activities>
+            <DataObjects>
+                <DataObject Id="_18_5_1_11940316_1500579540478_311638_36760" Name="Ballots" cbm:realDataId="_18_5_1_11940316_1500579540446_534746_36754" cbm:numberedProperty="3.1.3.D 1">
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" Height="70.0" Width="83.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="301.0" YCoordinate="294.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </DataObject>
+            </DataObjects>
+            <DataStoreReferences>
+                <DataStoreReference DataStoreRef="_18_5_2_43701b0_1510778046678_126063_29842" Id="_18_5_2_43701b0_1510778046705_112454_29847" Name="">
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" Height="63.0" Width="61.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="1046.0" YCoordinate="308.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </DataStoreReference>
+            </DataStoreReferences>
             <Transitions>
                 <Transition Id="_18_5_1_11940316_1500579758349_435550_36897" From="_18_5_1_11940316_1500579521192_167327_36746" To="_18_5_1_11940316_1500579659752_797766_36856" Name="">
                     <ConnectorGraphicsInfos>
@@ -519,6 +468,14 @@ We're dealing we ballots, not sets&amp;#160;
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="361.0" YCoordinate="315.0"/>
                             <Coordinates XCoordinate="455.0" YCoordinate="315.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+                <DataAssociation Id="_18_5_2_43701b0_1510778050914_381363_29867" Name="" From="_18_5_1_11940316_1500579659752_797766_36856" To="_18_5_2_43701b0_1510778046705_112454_29847">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500578226571_730654_36552" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="1022.0" YCoordinate="322.0"/>
+                            <Coordinates XCoordinate="1061.0" YCoordinate="322.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>

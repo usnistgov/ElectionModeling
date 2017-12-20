@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T15:08:00</Created>
-        <ModificationDate>17-10-14T10:02:20</ModificationDate>
+        <ModificationDate>17-11-20T11:11:58</ModificationDate>
         <Documentation>Receive and process a ballot package, e.g. an absentee or provisional ballot.
 &lt;html&gt;
   &lt;head&gt;
@@ -39,7 +39,7 @@ What is this?&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1346</Version>
+        <Version>1477</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -106,7 +106,7 @@ What is this?&amp;#160;
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1502918672015_24862_27828" Source="_18_5_1_11940316_1501695072809_439160_26344" Target="_18_5_1_11940316_1502918672119_474780_27829" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672958250_812629_30026"/>
+            <Object Id="_18_5_2_43701b0_1513786378835_179173_37958"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1043.0" YCoordinate="491.0"/>
@@ -115,7 +115,7 @@ What is this?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1504893956106_340784_33402" Source="_18_5_1_11940316_1501695006548_430877_26265" Target="_18_5_2_11940316_1504893956226_952040_33403" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672958250_177473_30027"/>
+            <Object Id="_18_5_2_43701b0_1513786378835_654905_37959"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="854.0" YCoordinate="384.0"/>

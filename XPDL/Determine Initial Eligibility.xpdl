@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-09-26T00:20:00</Created>
-        <ModificationDate>17-10-14T10:02:20</ModificationDate>
+        <ModificationDate>17-11-20T11:11:58</ModificationDate>
         <Documentation>&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -38,20 +38,6 @@ This could be occur because the voter already voted an absentee ballot. Some jur
 
 Outcomes:
 Registered moved inside precinct / Registered name change / Party change
-&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-They may be able to vote provisionally.&amp;#160;
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
 &lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -116,7 +102,7 @@ Not necessarily an issued identification&amp;#160;
 	&lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-include checking of id expiry&amp;#160;
+include checking of identification expiry&amp;#160;
 
     &lt;/p&gt;
 
@@ -126,7 +112,7 @@ include checking of id expiry&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1346</Version>
+        <Version>1477</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -189,7 +175,7 @@ include checking of id expiry&amp;#160;
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_2_43701b0_1508948548801_656048_30549" Source="_18_5_2_43701b0_1508957942524_962036_40309" Target="_18_5_2_43701b0_1508948548799_939728_30533" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672980323_233992_30593"/>
+            <Object Id="_18_5_2_43701b0_1513786394900_164490_37993"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1508948451139_407617_30350" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1288.0" YCoordinate="655.0"/>
@@ -198,7 +184,7 @@ include checking of id expiry&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1508949161855_922643_30921" Source="_18_5_2_43701b0_1508948935605_699612_30840" Target="_18_5_2_43701b0_1508949161903_110354_30922" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672980324_614282_30594"/>
+            <Object Id="_18_5_2_43701b0_1513786394901_445696_37994"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1508948451139_407617_30350" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="790.0" YCoordinate="342.0"/>
@@ -207,7 +193,7 @@ include checking of id expiry&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1508952943526_716886_31115" Source="_18_5_2_43701b0_1508952818845_764671_31110" Target="_18_5_2_43701b0_1508952943602_499715_31116" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672980324_549238_30595"/>
+            <Object Id="_18_5_2_43701b0_1513786394901_780469_37995"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1508948451139_407617_30350" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1554.0" YCoordinate="495.0"/>
@@ -216,7 +202,7 @@ include checking of id expiry&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1508956806500_348652_31707" Source="_18_5_2_43701b0_1508956803086_360500_31699" Target="_18_5_2_43701b0_1508956806555_572088_31708" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672980325_65667_30596"/>
+            <Object Id="_18_5_2_43701b0_1513786394901_859182_37996"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1508948451139_407617_30350" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1086.0" YCoordinate="403.0"/>
@@ -225,11 +211,11 @@ include checking of id expiry&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1508959693879_206323_40365" Source="_18_5_2_43701b0_1508948980461_616637_30878" Target="_18_5_2_43701b0_1508959693970_921357_40366" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672980325_216266_30597"/>
+            <Object Id="_18_5_2_43701b0_1513786394902_85286_37997"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1508948451139_407617_30350" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="570.0" YCoordinate="384.0"/>
-                    <Coordinates XCoordinate="583.0" YCoordinate="441.0"/>
+                    <Coordinates XCoordinate="574.0" YCoordinate="380.0"/>
+                    <Coordinates XCoordinate="601.0" YCoordinate="420.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
@@ -239,13 +225,6 @@ include checking of id expiry&amp;#160;
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1508948451139_407617_30350" Height="81.0" Width="105.0" BorderColor="#424242" FillColor="#FFFFFF">
                     <Coordinates XCoordinate="595.0" YCoordinate="539.0"/>
-                </NodeGraphicsInfo>
-            </NodeGraphicsInfos>
-        </Artifact>
-        <Artifact Id="_18_5_2_43701b0_1508948548800_425339_30536" ArtifactType="Annotation" TextAnnotation="They may be able to vote provisionally. ">
-            <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1508948451139_407617_30350" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="749.0" YCoordinate="538.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
@@ -285,10 +264,10 @@ include checking of id expiry&amp;#160;
             </NodeGraphicsInfos>
         </Artifact>
         <Artifact Id="_18_5_2_43701b0_1508958617591_981813_40348" ArtifactType="Annotation" TextAnnotation="Not necessarily an issued identification "/>
-        <Artifact Id="_18_5_2_43701b0_1508959693970_921357_40366" ArtifactType="Annotation" TextAnnotation="include checking of id expiry ">
+        <Artifact Id="_18_5_2_43701b0_1508959693970_921357_40366" ArtifactType="Annotation" TextAnnotation="include checking of identification expiry ">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1508948451139_407617_30350" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="539.0" YCoordinate="441.0"/>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1508948451139_407617_30350" Height="69.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="574.0" YCoordinate="420.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>

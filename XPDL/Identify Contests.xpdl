@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-07-29T10:54:00</Created>
-        <ModificationDate>17-10-14T10:02:20</ModificationDate>
+        <ModificationDate>17-11-20T11:11:58</ModificationDate>
         <Documentation>Identify the contests that may appear on an upcoming election's ballot.
 &lt;html&gt;
   &lt;head&gt;
@@ -24,7 +24,7 @@ E.g. vacancy, Act of assembly, citizen initiative, recall attempt
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1346</Version>
+        <Version>1477</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -35,7 +35,7 @@ E.g. vacancy, Act of assembly, citizen initiative, recall attempt
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Identify Contests" Id="_18_5_2_11940316_1504018481946_233864_29177" Height="375.0" Width="913.0"/>
+        <Page Name="Identify Contests" Id="_18_5_2_11940316_1504018481946_233864_29177" Height="339.0" Width="913.0"/>
     </Pages>
     <DataStores>
         <DataStore Id="_18_5_2_11940316_1504182991464_205499_43252" Name="List of Contests" IsUnlimited="false" cbm:numberedProperty="1.3.1.D 1"/>
@@ -44,7 +44,7 @@ E.g. vacancy, Act of assembly, citizen initiative, recall attempt
     <Pools>
         <Pool Id="_18_5_2_11940316_1504123056231_458394_36020" Name="Election Jurisdiction" Orientation="HORIZONTAL" Process="_18_5_2_11940316_1504123056231_458394_36020_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" Height="375.0" Width="913.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" Height="339.0" Width="913.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -52,11 +52,11 @@ E.g. vacancy, Act of assembly, citizen initiative, recall attempt
     </Pools>
     <Associations>
         <Association Id="_18_5_2_11940316_1504026899138_487070_30634" Source="_18_5_2_11940316_1504018775318_195903_29276" Target="_18_5_2_11940316_1504026899214_383200_30635" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672993686_475710_31009"/>
+            <Object Id="_18_5_2_43701b0_1513786405554_518712_38024"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="115.0" YCoordinate="250.0"/>
-                    <Coordinates XCoordinate="147.0" YCoordinate="287.0"/>
+                    <Coordinates XCoordinate="115.0" YCoordinate="208.0"/>
+                    <Coordinates XCoordinate="154.0" YCoordinate="244.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
@@ -65,7 +65,7 @@ E.g. vacancy, Act of assembly, citizen initiative, recall attempt
         <Artifact Id="_18_5_2_11940316_1504026899214_383200_30635" ArtifactType="Annotation" TextAnnotation="E.g. vacancy, Act of assembly, citizen initiative, recall attempt">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" Height="84.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="147.0" YCoordinate="287.0"/>
+                    <Coordinates XCoordinate="154.0" YCoordinate="238.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
@@ -85,7 +85,7 @@ E.g. vacancy, Act of assembly, citizen initiative, recall attempt
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="91.0" YCoordinate="133.0"/>
+                            <Coordinates XCoordinate="91.0" YCoordinate="91.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -101,7 +101,7 @@ E.g. vacancy, Act of assembly, citizen initiative, recall attempt
                     <Documentation>Identify the contests that may appear on the ballot of an upcoming election. This is determined by a range of factors, including the terms of office, the number of office seats, partisan status, etc.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="238.0" YCoordinate="168.0"/>
+                            <Coordinates XCoordinate="238.0" YCoordinate="126.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -118,7 +118,7 @@ E.g. vacancy, Act of assembly, citizen initiative, recall attempt
                     <Documentation>Vacancy, Act of assembly, citizen initiative, recall attempt</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="91.0" YCoordinate="238.0"/>
+                            <Coordinates XCoordinate="91.0" YCoordinate="196.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -132,7 +132,7 @@ E.g. vacancy, Act of assembly, citizen initiative, recall attempt
                     <Documentation>Calculate the requirements that are defined by formula, such as a filing fee based on salary, or a minimum number of valid signatures based on past turnout.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="441.0" YCoordinate="175.0"/>
+                            <Coordinates XCoordinate="441.0" YCoordinate="133.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -146,7 +146,7 @@ E.g. vacancy, Act of assembly, citizen initiative, recall attempt
                     <Documentation>Gather the requirements that do not change based on external factors. These may include age, residency requirements, and a filing fee, if it is fixed.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="441.0" YCoordinate="112.0"/>
+                            <Coordinates XCoordinate="441.0" YCoordinate="70.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -160,7 +160,7 @@ E.g. vacancy, Act of assembly, citizen initiative, recall attempt
                     <Documentation>Make the requirements for filing available to interested parties.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="658.0" YCoordinate="168.0"/>
+                            <Coordinates XCoordinate="658.0" YCoordinate="126.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -170,7 +170,7 @@ E.g. vacancy, Act of assembly, citizen initiative, recall attempt
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="847.0" YCoordinate="175.0"/>
+                            <Coordinates XCoordinate="847.0" YCoordinate="133.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -185,7 +185,7 @@ E.g. vacancy, Act of assembly, citizen initiative, recall attempt
                     </Loop>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" Height="182.0" Width="147.0" BorderColor="#636363" FillColor="#F7DD99">
-                            <Coordinates XCoordinate="427.0" YCoordinate="77.0"/>
+                            <Coordinates XCoordinate="427.0" YCoordinate="35.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -194,7 +194,7 @@ E.g. vacancy, Act of assembly, citizen initiative, recall attempt
                 <DataObject Id="_18_5_2_11940316_1504185000050_172185_43482" Name="List of Contest Requirements" cbm:realDataId="_18_5_2_11940316_1504185000021_951446_43478" cbm:numberedProperty="1.3.1.D 2">
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" Height="57.0" Width="177.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="644.0" YCoordinate="77.0"/>
+                            <Coordinates XCoordinate="644.0" YCoordinate="35.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </DataObject>
@@ -203,14 +203,14 @@ E.g. vacancy, Act of assembly, citizen initiative, recall attempt
                 <DataStoreReference DataStoreRef="_18_5_2_11940316_1504182991464_205499_43252" Id="_18_5_2_11940316_1504182991495_570730_43256" Name="List of Contests">
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" Height="70.0" Width="112.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="273.0" YCoordinate="273.0"/>
+                            <Coordinates XCoordinate="273.0" YCoordinate="231.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </DataStoreReference>
                 <DataStoreReference DataStoreRef="_18_5_2_11940316_1506375688143_993959_43392" Id="_18_5_2_11940316_1506375688176_964189_43396" Name="Legal Documents">
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" Height="69.0" Width="116.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="133.0" YCoordinate="49.0"/>
+                            <Coordinates XCoordinate="133.0" YCoordinate="7.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </DataStoreReference>
@@ -219,42 +219,42 @@ E.g. vacancy, Act of assembly, citizen initiative, recall attempt
                 <Transition Id="_18_5_2_11940316_1504018865855_706449_29287" From="_18_5_2_11940316_1504018568891_831790_29202" To="_18_5_2_11940316_1504018762563_232954_29255" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="115.0" YCoordinate="145.0"/>
-                            <Coordinates XCoordinate="249.0" YCoordinate="145.0"/>
-                            <Coordinates XCoordinate="249.0" YCoordinate="168.0"/>
+                            <Coordinates XCoordinate="115.0" YCoordinate="103.0"/>
+                            <Coordinates XCoordinate="249.0" YCoordinate="103.0"/>
+                            <Coordinates XCoordinate="249.0" YCoordinate="126.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_2_11940316_1504026878551_101362_30628" From="_18_5_2_11940316_1504018775318_195903_29276" To="_18_5_2_11940316_1504018762563_232954_29255" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="115.0" YCoordinate="250.0"/>
-                            <Coordinates XCoordinate="249.0" YCoordinate="250.0"/>
-                            <Coordinates XCoordinate="249.0" YCoordinate="225.0"/>
+                            <Coordinates XCoordinate="115.0" YCoordinate="208.0"/>
+                            <Coordinates XCoordinate="249.0" YCoordinate="208.0"/>
+                            <Coordinates XCoordinate="249.0" YCoordinate="183.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_2_11940316_1504028544478_449125_30681" From="_18_5_2_11940316_1504027048928_802342_30660" To="_18_5_2_11940316_1504028631166_226264_30701" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="778.0" YCoordinate="187.0"/>
-                            <Coordinates XCoordinate="847.0" YCoordinate="187.0"/>
+                            <Coordinates XCoordinate="778.0" YCoordinate="145.0"/>
+                            <Coordinates XCoordinate="847.0" YCoordinate="145.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_2_11940316_1504184598703_380606_43411" From="_18_5_2_11940316_1504018762563_232954_29255" To="_18_5_2_11940316_1504184452894_773847_43373" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="358.0" YCoordinate="196.0"/>
-                            <Coordinates XCoordinate="427.0" YCoordinate="196.0"/>
+                            <Coordinates XCoordinate="358.0" YCoordinate="154.0"/>
+                            <Coordinates XCoordinate="427.0" YCoordinate="154.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_2_11940316_1504184604151_313892_43420" From="_18_5_2_11940316_1504184452894_773847_43373" To="_18_5_2_11940316_1504027048928_802342_30660" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="574.0" YCoordinate="193.0"/>
-                            <Coordinates XCoordinate="658.0" YCoordinate="193.0"/>
+                            <Coordinates XCoordinate="574.0" YCoordinate="151.0"/>
+                            <Coordinates XCoordinate="658.0" YCoordinate="151.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -263,42 +263,42 @@ E.g. vacancy, Act of assembly, citizen initiative, recall attempt
                 <DataAssociation Id="_18_5_2_11940316_1504183022120_361000_43302" Name="" From="_18_5_2_11940316_1504018762563_232954_29255" To="_18_5_2_11940316_1504182991495_570730_43256">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="326.0" YCoordinate="225.0"/>
-                            <Coordinates XCoordinate="326.0" YCoordinate="276.0"/>
+                            <Coordinates XCoordinate="326.0" YCoordinate="183.0"/>
+                            <Coordinates XCoordinate="326.0" YCoordinate="234.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>
                 <DataAssociation Id="_18_5_2_11940316_1504183039846_875182_43311" Name="" From="_18_5_2_11940316_1504182991495_570730_43256" To="_18_5_2_11940316_1504184452894_773847_43373">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="347.0" YCoordinate="308.0"/>
-                            <Coordinates XCoordinate="529.0" YCoordinate="308.0"/>
-                            <Coordinates XCoordinate="529.0" YCoordinate="259.0"/>
+                            <Coordinates XCoordinate="347.0" YCoordinate="266.0"/>
+                            <Coordinates XCoordinate="529.0" YCoordinate="266.0"/>
+                            <Coordinates XCoordinate="529.0" YCoordinate="217.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>
                 <DataAssociation Id="_18_5_2_11940316_1504185049651_374114_43504" Name="" From="_18_5_2_11940316_1504184452894_773847_43373" To="_18_5_2_11940316_1504185000050_172185_43482">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="574.0" YCoordinate="95.0"/>
-                            <Coordinates XCoordinate="720.0" YCoordinate="95.0"/>
+                            <Coordinates XCoordinate="574.0" YCoordinate="53.0"/>
+                            <Coordinates XCoordinate="720.0" YCoordinate="53.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>
                 <DataAssociation Id="_18_5_2_11940316_1504185054610_821192_43513" Name="" From="_18_5_2_11940316_1504185000050_172185_43482" To="_18_5_2_11940316_1504027048928_802342_30660">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="732.0" YCoordinate="128.0"/>
-                            <Coordinates XCoordinate="732.0" YCoordinate="168.0"/>
+                            <Coordinates XCoordinate="732.0" YCoordinate="86.0"/>
+                            <Coordinates XCoordinate="732.0" YCoordinate="126.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>
                 <DataAssociation Id="_18_5_2_11940316_1506375707568_546390_43416" Name="" From="_18_5_2_11940316_1506375688176_964189_43396" To="_18_5_2_11940316_1504018762563_232954_29255">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504018481946_233864_29177" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="209.0" YCoordinate="84.0"/>
-                            <Coordinates XCoordinate="301.0" YCoordinate="84.0"/>
-                            <Coordinates XCoordinate="301.0" YCoordinate="168.0"/>
+                            <Coordinates XCoordinate="209.0" YCoordinate="42.0"/>
+                            <Coordinates XCoordinate="301.0" YCoordinate="42.0"/>
+                            <Coordinates XCoordinate="301.0" YCoordinate="126.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>

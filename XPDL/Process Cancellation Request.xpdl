@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1499867189394_949100_25741" Name="Recruit Polling Locations" cbm:numberedProperty="1.4.2">
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_2_43701b0_1512590113951_857335_30248" Name="Process Cancellation Request" cbm:numberedProperty="1.2.M11">
     <PackageHeader>
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created></Created>
         <ModificationDate>17-11-20T11:11:58</ModificationDate>
-        <Documentation>Recruit locations that can serve as polling locations during the election. The criteria to recruit a polling location may include several factors, such as accessibility, parking, and proximity to the voters it will serve.</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>

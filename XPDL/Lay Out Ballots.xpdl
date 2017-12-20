@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-12T10:23:00</Created>
-        <ModificationDate>17-10-14T10:02:20</ModificationDate>
+        <ModificationDate>17-11-20T11:11:58</ModificationDate>
         <Documentation>For each ballot style: select the contests and selections to appear on the ballot and apply business rules determining their order and location.
 &lt;html&gt;
   &lt;head&gt;
@@ -19,27 +19,12 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
     &lt;/p&gt;
 
 &lt;/body&gt;
-&lt;/html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;style type="text/css"&gt;
-      &lt;!--
-        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
-      --&gt;
-    &lt;/style&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-      Called &amp;quot;Ballot Definition File&amp;quot; in EP&amp;#160;
-    &lt;/p&gt;
-  &lt;/body&gt;
 &lt;/html&gt;</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1346</Version>
+        <Version>1477</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -50,12 +35,12 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Lay Out Ballots" Id="_18_5_1_11940316_1499869414878_955158_23236" Height="360.0" Width="1515.0"/>
+        <Page Name="Lay Out Ballots" Id="_18_5_1_11940316_1499869414878_955158_23236" Height="311.0" Width="1480.0"/>
     </Pages>
     <Pools>
         <Pool Id="_18_5_1_11940316_1499869616233_900474_23462" Name="Election Authority" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1499869616233_900474_23462_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="360.0" Width="1515.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="311.0" Width="1480.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -63,29 +48,11 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
     </Pools>
     <Associations>
         <Association Id="_18_5_2_11940316_1504546807848_801491_42027" Source="_18_5_2_11940316_1505756357427_986896_29127" Target="_18_5_2_11940316_1504547207743_246114_42077" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672972360_743623_30390"/>
+            <Object Id="_18_5_2_43701b0_1513786389410_810414_37981"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="308.0" YCoordinate="200.0"/>
-                    <Coordinates XCoordinate="469.0" YCoordinate="229.0"/>
-                </ConnectorGraphicsInfo>
-            </ConnectorGraphicsInfos>
-        </Association>
-        <Association Id="_18_5_2_11940316_1506608544396_839643_29544" Source="_18_5_2_11940316_1506456804105_450485_49771" Target="_18_5_2_11940316_1506608544511_37297_29545" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672972361_208349_30391"/>
-            <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="1378.0" YCoordinate="210.0"/>
-                    <Coordinates XCoordinate="1339.0" YCoordinate="225.0"/>
-                </ConnectorGraphicsInfo>
-            </ConnectorGraphicsInfos>
-        </Association>
-        <Association Id="_18_5_2_11940316_1506633683809_132095_29936" Source="_18_5_1_11940316_1502910768248_620785_27243" Target="_18_5_2_11940316_1506633669929_241365_29930" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672972361_333321_30392"/>
-            <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="108.0" YCoordinate="181.0"/>
-                    <Coordinates XCoordinate="240.0" YCoordinate="82.0"/>
+                    <Coordinates XCoordinate="308.0" YCoordinate="183.0"/>
+                    <Coordinates XCoordinate="476.0" YCoordinate="211.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
@@ -94,31 +61,12 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
         <Artifact Id="_18_5_2_11940316_1504547207743_246114_42077" ArtifactType="Annotation" TextAnnotation="What if it is too late to remove the withdrawn from the ballot (e.g. after voting has begun)?">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="70.0" Width="161.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="469.0" YCoordinate="209.0"/>
-                </NodeGraphicsInfo>
-            </NodeGraphicsInfos>
-        </Artifact>
-        <Artifact Id="_18_5_2_11940316_1506608544511_37297_29545" ArtifactType="Annotation" TextAnnotation="Called &quot;Ballot Definition File&quot; in EP ">
-            <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="1239.0" YCoordinate="217.0"/>
-                </NodeGraphicsInfo>
-            </NodeGraphicsInfos>
-        </Artifact>
-        <Artifact Id="_18_5_2_11940316_1506633669929_241365_29930" ArtifactType="Annotation" TextAnnotation="Same thing? ">
-            <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="40.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="217.0" YCoordinate="42.0"/>
+                    <Coordinates XCoordinate="476.0" YCoordinate="189.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
     </Artifacts>
     <WorkflowProcesses>
-        <WorkflowProcess Id="_18_5_1_11940316_1499869414837_588887_23226" Name="Lay Out Ballots" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
-            <ProcessHeader>
-                <Created>17-06-12T10:23:00</Created>
-            </ProcessHeader>
-        </WorkflowProcess>
         <WorkflowProcess Id="_18_5_1_11940316_1499869616233_900474_23462_proc" Name="Election Authority" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
             <ProcessHeader>
                 <Created>17-06-12T10:23:00</Created>
@@ -132,7 +80,7 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
                             </Event>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-    <Coordinates XCoordinate="182.0" YCoordinate="119.0"/>
+    <Coordinates XCoordinate="182.0" YCoordinate="106.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -146,7 +94,7 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
                             <Documentation>Select the contests appearing on this ballot style.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="45.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="273.0" YCoordinate="105.0"/>
+    <Coordinates XCoordinate="273.0" YCoordinate="92.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -160,7 +108,7 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
                             <Documentation>Put the contests in the relative order prescribed by law or policy.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="434.0" YCoordinate="105.0"/>
+    <Coordinates XCoordinate="434.0" YCoordinate="92.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -174,7 +122,7 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
                             <Documentation>Order the candidates within a contest (e.g. alphabetically, by name, party, etc.).</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="595.0" YCoordinate="105.0"/>
+    <Coordinates XCoordinate="595.0" YCoordinate="92.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -192,7 +140,7 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
                             </TransitionRestrictions>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
-    <Coordinates XCoordinate="756.0" YCoordinate="112.0"/>
+    <Coordinates XCoordinate="756.0" YCoordinate="99.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -206,7 +154,7 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
                             <Documentation>Apply formatting to the ballot. This may include applying fonts, setting line widths, applying page and column break rules, colors, etc.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="1106.0" YCoordinate="133.0"/>
+    <Coordinates XCoordinate="1106.0" YCoordinate="120.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -220,7 +168,7 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
                             <Documentation>Reorder the candidates from their original ordering by a fixed offset.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="910.0" YCoordinate="105.0"/>
+    <Coordinates XCoordinate="910.0" YCoordinate="92.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -230,7 +178,7 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
                             </Event>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-    <Coordinates XCoordinate="1260.0" YCoordinate="147.0"/>
+    <Coordinates XCoordinate="1260.0" YCoordinate="134.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -239,32 +187,32 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
                         <Transition Id="_18_5_1_11940316_1499869428966_377660_23255" From="_18_5_1_11940316_1499869420911_201575_23244" To="_18_5_1_11940316_1499869453889_470094_23280" Name="">
                             <ConnectorGraphicsInfos>
 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="206.0" YCoordinate="131.0"/>
-    <Coordinates XCoordinate="273.0" YCoordinate="131.0"/>
+    <Coordinates XCoordinate="206.0" YCoordinate="118.0"/>
+    <Coordinates XCoordinate="273.0" YCoordinate="118.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
                         <Transition Id="_18_5_1_11940316_1499869459560_546083_23298" From="_18_5_1_11940316_1499869453889_470094_23280" To="_18_5_1_11940316_1499869462345_245577_23313" Name="">
                             <ConnectorGraphicsInfos>
 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="393.0" YCoordinate="132.0"/>
-    <Coordinates XCoordinate="434.0" YCoordinate="132.0"/>
+    <Coordinates XCoordinate="393.0" YCoordinate="119.0"/>
+    <Coordinates XCoordinate="434.0" YCoordinate="119.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
                         <Transition Id="_18_5_1_11940316_1499869470733_194748_23327" From="_18_5_1_11940316_1499869462345_245577_23313" To="_18_5_1_11940316_1499869472310_950744_23342" Name="">
                             <ConnectorGraphicsInfos>
 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="554.0" YCoordinate="132.0"/>
-    <Coordinates XCoordinate="595.0" YCoordinate="132.0"/>
+    <Coordinates XCoordinate="554.0" YCoordinate="119.0"/>
+    <Coordinates XCoordinate="595.0" YCoordinate="119.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
                         <Transition Id="_18_5_1_11940316_1499869480933_209344_23353" From="_18_5_1_11940316_1499869472310_950744_23342" To="_18_5_1_11940316_1499869509325_902437_23373" Name="">
                             <ConnectorGraphicsInfos>
 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="715.0" YCoordinate="132.0"/>
-    <Coordinates XCoordinate="756.0" YCoordinate="132.0"/>
+    <Coordinates XCoordinate="715.0" YCoordinate="119.0"/>
+    <Coordinates XCoordinate="756.0" YCoordinate="119.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
@@ -274,9 +222,9 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
                             </Condition>
                             <ConnectorGraphicsInfos>
 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="776.0" YCoordinate="152.0"/>
-    <Coordinates XCoordinate="776.0" YCoordinate="172.0"/>
-    <Coordinates XCoordinate="1106.0" YCoordinate="172.0"/>
+    <Coordinates XCoordinate="776.0" YCoordinate="139.0"/>
+    <Coordinates XCoordinate="776.0" YCoordinate="159.0"/>
+    <Coordinates XCoordinate="1106.0" YCoordinate="159.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
@@ -286,26 +234,26 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
                             </Condition>
                             <ConnectorGraphicsInfos>
 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="796.0" YCoordinate="132.0"/>
-    <Coordinates XCoordinate="910.0" YCoordinate="132.0"/>
+    <Coordinates XCoordinate="796.0" YCoordinate="119.0"/>
+    <Coordinates XCoordinate="910.0" YCoordinate="119.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
                         <Transition Id="_18_5_1_11940316_1499869576076_42990_23430" From="_18_5_1_11940316_1499869560821_444219_23419" To="_18_5_1_11940316_1499869512523_91430_23389" Name="">
                             <ConnectorGraphicsInfos>
 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="1030.0" YCoordinate="132.0"/>
-    <Coordinates XCoordinate="1063.0" YCoordinate="132.0"/>
-    <Coordinates XCoordinate="1063.0" YCoordinate="147.0"/>
-    <Coordinates XCoordinate="1106.0" YCoordinate="147.0"/>
+    <Coordinates XCoordinate="1030.0" YCoordinate="119.0"/>
+    <Coordinates XCoordinate="1063.0" YCoordinate="119.0"/>
+    <Coordinates XCoordinate="1063.0" YCoordinate="134.0"/>
+    <Coordinates XCoordinate="1106.0" YCoordinate="134.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
                         <Transition Id="_18_5_1_11940316_1499869580589_191720_23439" From="_18_5_1_11940316_1499869512523_91430_23389" To="_18_5_1_11940316_1499869599859_477663_23453" Name="">
                             <ConnectorGraphicsInfos>
 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="1226.0" YCoordinate="159.0"/>
-    <Coordinates XCoordinate="1260.0" YCoordinate="159.0"/>
+    <Coordinates XCoordinate="1226.0" YCoordinate="146.0"/>
+    <Coordinates XCoordinate="1260.0" YCoordinate="146.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
@@ -318,27 +266,13 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>Try to select the contests and selections to appear on a ballot and apply business rules determining their order and location.
-&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-Same thing?&amp;#160;
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;</Documentation>
+                    <Documentation>Try to select the contests and selections to appear on a ballot and apply business rules determining their order and location.</Documentation>
                     <Loop LoopType="MultiInstance">
                         <LoopMultiInstance MI_Ordering="Parallel" MI_FlowCondition="All"/>
                     </Loop>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="190.0" Width="1169.0" BorderColor="#636363" FillColor="#F7DD99">
-                            <Coordinates XCoordinate="161.0" YCoordinate="9.0"/>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="173.0" Width="1169.0" BorderColor="#636363" FillColor="#F7DD99">
+                            <Coordinates XCoordinate="161.0" YCoordinate="10.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -350,7 +284,7 @@ Same thing?&amp;#160;
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="77.0" YCoordinate="98.0"/>
+                            <Coordinates XCoordinate="81.0" YCoordinate="91.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -382,7 +316,7 @@ Same thing?&amp;#160;
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="273.0" YCoordinate="186.0"/>
+                            <Coordinates XCoordinate="273.0" YCoordinate="170.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -391,14 +325,7 @@ Same thing?&amp;#160;
                 <DataObject Id="_18_5_1_11940316_1502910768248_620785_27243" Name="Ballot Styles" cbm:realDataId="_18_5_1_11940316_1502910768226_654671_27239" cbm:numberedProperty="1.5.1.1.5.1.D 1">
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="63.0" Width="117.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="35.0" YCoordinate="161.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </DataObject>
-                <DataObject Id="_18_5_2_11940316_1504032964179_171346_31531" Name="List of Qualified Contests and Candidates" cbm:realDataId="_18_5_2_11940316_1504032964154_543836_31527" cbm:numberedProperty="1.5.1.1.5.1.D 2">
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" Height="81.0" Width="119.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="35.0" YCoordinate="14.0"/>
+                            <Coordinates XCoordinate="35.0" YCoordinate="160.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </DataObject>
@@ -414,10 +341,8 @@ Same thing?&amp;#160;
                 <Transition Id="_18_5_1_11940316_1502385704206_292040_38567" From="_18_5_1_11940316_1502385702936_368922_38556" To="_18_5_1_11940316_1502385374285_682876_38509" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="101.0" YCoordinate="110.0"/>
-                            <Coordinates XCoordinate="126.0" YCoordinate="110.0"/>
-                            <Coordinates XCoordinate="126.0" YCoordinate="105.0"/>
-                            <Coordinates XCoordinate="161.0" YCoordinate="105.0"/>
+                            <Coordinates XCoordinate="105.0" YCoordinate="103.0"/>
+                            <Coordinates XCoordinate="161.0" YCoordinate="103.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -425,10 +350,9 @@ Same thing?&amp;#160;
                     <Condition Type="EXCEPTION"/>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="298.0" YCoordinate="211.0"/>
-                            <Coordinates XCoordinate="298.0" YCoordinate="228.0"/>
-                            <Coordinates XCoordinate="404.0" YCoordinate="228.0"/>
-                            <Coordinates XCoordinate="404.0" YCoordinate="238.0"/>
+                            <Coordinates XCoordinate="298.0" YCoordinate="225.0"/>
+                            <Coordinates XCoordinate="298.0" YCoordinate="250.0"/>
+                            <Coordinates XCoordinate="392.0" YCoordinate="250.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -445,17 +369,8 @@ Same thing?&amp;#160;
                 <DataAssociation Id="_18_5_1_11940316_1502910787231_517141_27263" Name="" From="_18_5_1_11940316_1502910768248_620785_27243" To="_18_5_1_11940316_1502385374285_682876_38509">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="108.0" YCoordinate="175.0"/>
-                            <Coordinates XCoordinate="161.0" YCoordinate="175.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </DataAssociation>
-                <DataAssociation Id="_18_5_2_11940316_1504032984626_503596_31551" Name="" From="_18_5_2_11940316_1504032964179_171346_31531" To="_18_5_1_11940316_1499869453889_470094_23280">
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="154.0" YCoordinate="95.0"/>
-                            <Coordinates XCoordinate="308.0" YCoordinate="95.0"/>
-                            <Coordinates XCoordinate="308.0" YCoordinate="105.0"/>
+                            <Coordinates XCoordinate="108.0" YCoordinate="168.0"/>
+                            <Coordinates XCoordinate="161.0" YCoordinate="168.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>

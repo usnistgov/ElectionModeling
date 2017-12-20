@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-07-29T11:27:00</Created>
-        <ModificationDate>17-10-14T10:02:20</ModificationDate>
+        <ModificationDate>17-11-20T11:11:58</ModificationDate>
         <Documentation>Qualify the contests and candidates that may appear on the ballot.
 &lt;html&gt;
   &lt;head&gt;
@@ -38,7 +38,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1346</Version>
+        <Version>1477</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -62,7 +62,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_2_11940316_1504125027156_717651_42495" Source="_18_5_2_11940316_1504030082776_644383_31033" Target="_18_5_2_11940316_1504125027296_948193_42496" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672988121_300684_30785"/>
+            <Object Id="_18_5_2_43701b0_1513786400796_382196_38009"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1006.0" YCoordinate="214.0"/>
@@ -71,7 +71,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1504129549505_785752_43108" Source="_18_5_2_11940316_1504030346111_506915_31139" Target="_18_5_2_11940316_1504129549660_353551_43109" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672988123_405761_30786"/>
+            <Object Id="_18_5_2_43701b0_1513786400798_426394_38010"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="513.0" YCoordinate="533.0"/>
@@ -80,16 +80,16 @@ Why are these batched up? Does it reflect reality?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1504130317263_406268_43118" Source="_18_5_2_11940316_1504128680913_572844_43024" Target="_18_5_2_11940316_1504130317427_307069_43119" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672988123_367242_30787"/>
+            <Object Id="_18_5_2_43701b0_1513786400799_489497_38011"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="124.0" YCoordinate="259.0"/>
-                    <Coordinates XCoordinate="121.0" YCoordinate="222.0"/>
+                    <Coordinates XCoordinate="124.0" YCoordinate="336.0"/>
+                    <Coordinates XCoordinate="121.0" YCoordinate="299.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1504130583856_892675_43127" Source="_18_5_2_11940316_1504030223600_590662_31055" Target="_18_5_2_11940316_1504130584008_619083_43128" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672988123_961995_30788"/>
+            <Object Id="_18_5_2_43701b0_1513786400799_991279_38012"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="231.0" YCoordinate="105.0"/>
@@ -98,7 +98,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1504188212268_91525_43556" Source="_18_5_2_11940316_1504188157857_814178_43550" Target="_18_5_2_11940316_1504188212495_47334_43557" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672988123_880275_30789"/>
+            <Object Id="_18_5_2_43701b0_1513786400799_796207_38013"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1006.0" YCoordinate="430.0"/>
@@ -134,7 +134,7 @@ Why are these batched up? Does it reflect reality?&amp;#160;
         <Artifact Id="_18_5_2_11940316_1504130317427_307069_43119" ArtifactType="Annotation" TextAnnotation="When does this start? ">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" Height="40.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="70.0" YCoordinate="182.0"/>
+                    <Coordinates XCoordinate="70.0" YCoordinate="259.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
@@ -481,7 +481,7 @@ Allow the authorizing party submit additional documents, and run the process aga
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="112.0" YCoordinate="259.0"/>
+                            <Coordinates XCoordinate="112.0" YCoordinate="336.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -500,9 +500,8 @@ Allow the authorizing party submit additional documents, and run the process aga
                 <Transition Id="_18_5_2_11940316_1504128683472_808171_43035" From="_18_5_2_11940316_1504128680913_572844_43024" To="_18_5_2_11940316_1504030223600_590662_31055" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="124.0" YCoordinate="283.0"/>
-                            <Coordinates XCoordinate="124.0" YCoordinate="354.0"/>
-                            <Coordinates XCoordinate="231.0" YCoordinate="354.0"/>
+                            <Coordinates XCoordinate="136.0" YCoordinate="348.0"/>
+                            <Coordinates XCoordinate="231.0" YCoordinate="348.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -520,4 +519,6 @@ Allow the authorizing party submit additional documents, and run the process aga
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504020426916_634377_30059" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="204.0" YCoordinate="476.0"/>
-                            <Coordinates
+                            <Coordinates XCoordinate="231.0" YCoordinate="476.0"/>
+                        </ConnectorGraphicsInfo>
+                    

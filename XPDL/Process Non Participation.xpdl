@@ -4,13 +4,13 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-07T15:06:00</Created>
-        <ModificationDate>17-10-14T10:02:20</ModificationDate>
+        <ModificationDate>17-11-20T11:11:58</ModificationDate>
         <Documentation>For each eligible voter: Determine if a voter’s lack of participation in the electoral process should begin a list maintenance process.</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1346</Version>
+        <Version>1477</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -24,7 +24,7 @@
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Process Non Participation" Id="_18_5_1_11940316_1499454413924_384694_23843" Height="381.0" Width="1417.0"/>
+        <Page Name="Process Non Participation" Id="_18_5_1_11940316_1499454413924_384694_23843" Height="385.0" Width="1417.0"/>
     </Pages>
     <DataStores>
         <DataStore Id="_18_5_1_11940316_1501771963631_453942_32151" Name="Voter Record" IsUnlimited="false" cbm:numberedProperty="1.2.M7.2.D 1"/>
@@ -32,12 +32,23 @@
     <Pools>
         <Pool Id="_18_5_1_11940316_1499454436751_434917_23857" Name="Election Authority" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1499454436751_434917_23857_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499454413924_384694_23843" Height="381.0" Width="1417.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499454413924_384694_23843" Height="385.0" Width="1417.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Pool>
     </Pools>
+    <Associations>
+        <Association Id="_18_5_2_43701b0_1511376899108_80105_47327" Source="_18_5_1_11940316_1501016883584_484866_25719" Target="_18_5_2_43701b0_1511378246145_552661_47635" AssociationDirection="None">
+            <Object Id="_18_5_2_43701b0_1513786379572_620829_37960"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499454413924_384694_23843" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="943.0" YCoordinate="79.0"/>
+                    <Coordinates XCoordinate="983.0" YCoordinate="105.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+    </Associations>
     <Artifacts>
         <Artifact Id="_18_5_1_11940316_1501772563087_18659_32225" Name="Eligible Voters" ArtifactType="DataObject">
             <DataObject Id="_18_5_1_11940316_1501772563106_19594_32227" Name="Eligible Voters" cbm:realDataId="_18_5_1_11940316_1501772563087_18659_32225" cbm:numberedProperty="1.2.M7.D 1">
@@ -48,6 +59,13 @@
                 </NodeGraphicsInfos>
             </DataObject>
         </Artifact>
+        <Artifact Id="_18_5_2_43701b0_1511378246145_552661_47635" ArtifactType="Annotation" TextAnnotation="Are there other outcomes?">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499454413924_384694_23843" Height="40.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="980.0" YCoordinate="105.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
     </Artifacts>
     <WorkflowProcesses>
         <WorkflowProcess Id="_18_5_1_11940316_1499454436751_434917_23857_proc" Name="Election Authority" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
@@ -55,7 +73,7 @@
                 <Created>17-06-07T15:06:00</Created>
             </ProcessHeader>
             <ActivitySets>
-                <ActivitySet Id="_18_5_1_11940316_1499863008396_289070_24448" Name="Process Voter for Non Participation_as" AdHoc="false" TriggeredByEvent="false">
+                <ActivitySet Id="_18_5_1_11940316_1499863008396_289070_24448" Name="Process voter for non participation_as" AdHoc="false" TriggeredByEvent="false">
                     <Activities>
                         <Activity Id="_18_5_1_11940316_1499863055780_101530_24525" Name="" cbm:numberedProperty="1.2.M7.2.1">
                             <Event>
@@ -120,7 +138,7 @@
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1501015047082_733644_25231" IsForCompensation="false" Name="Evaluate Voter Activity" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.2.M7.2.5">
+                        <Activity Id="_18_5_1_11940316_1501015047082_733644_25231" IsForCompensation="false" Name="Evaluate voter activity" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.2.M7.2.5">
                             <BlockActivity ActivitySetId="_18_5_1_11940316_1501015046987_459163_25217" View="EXPANDED"/>
                             <Performers>
 <Performer cbm:resourceType="ResourceRole"></Performer>
@@ -300,17 +318,18 @@
                 </ActivitySet>
             </ActivitySets>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1499863010715_216417_24475" IsForCompensation="false" Name="Process Voter for Non Participation" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.2.M7.2">
+                <Activity Id="_18_5_1_11940316_1499863010715_216417_24475" IsForCompensation="false" Name="Process voter for non participation" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.2.M7.2">
                     <BlockActivity ActivitySetId="_18_5_1_11940316_1499863008396_289070_24448" View="EXPANDED"/>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>Determine if a voter’s lack of participation in the electoral process should begin a list maintenance process.</Documentation>
+                    <Documentation>Determine if a voter’s lack of participation in the electoral process should begin a list maintenance process. 
+Are there other outcomes?</Documentation>
                     <Loop LoopType="MultiInstance">
                         <LoopMultiInstance MI_Ordering="Parallel" MI_FlowCondition="All"/>
                     </Loop>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499454413924_384694_23843" Height="372.0" Width="1064.0" BorderColor="#636363" FillColor="#F7DD99">
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499454413924_384694_23843" Height="378.0" Width="1064.0" BorderColor="#636363" FillColor="#F7DD99">
                             <Coordinates XCoordinate="196.0" YCoordinate="2.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
@@ -355,6 +374,4 @@
                 </Transition>
             </Transitions>
             <DataAssociations>
-                <DataAssociation Id="_18_5_1_11940316_1501772581708_672960_32253" Name="" From="_18_5_1_11940316_1501772563106_19594_32227" To="_18_5_1_11940316_1499863010715_216417_24475">
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499454413924_384694_23843
+                <DataAssociation

@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-07-23T15:27:00</Created>
-        <ModificationDate>17-10-14T10:02:20</ModificationDate>
+        <ModificationDate>17-11-20T11:11:58</ModificationDate>
         <Documentation>Perform a set of tasks that tests equipment allocated for the election. The tasks test the machines' ability to perform its major functions. After the test concludes, validate the results and take any required corrective action.
 &lt;html&gt;
   &lt;head&gt;
@@ -72,7 +72,7 @@ Is minor PM done at the same time? E.g. check and replace consumables, calibrati
 	&lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-Situation defined&amp;#160;
+Situationally defined&amp;#160;
 
     &lt;/p&gt;
 
@@ -82,7 +82,7 @@ Situation defined&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1346</Version>
+        <Version>1477</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -93,7 +93,7 @@ Situation defined&amp;#160;
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Perform Logic and Accuracy Testing and Report Validation" Id="_18_5_1_11940316_1503516430443_259666_61306" Height="416.0" Width="1305.0"/>
+        <Page Name="Perform Logic and Accuracy Testing and Report Validation" Id="_18_5_1_11940316_1503516430443_259666_61306" Height="416.0" Width="1270.0"/>
     </Pages>
     <DataStores>
         <DataStore Id="_18_5_2_11940316_1506429778783_535792_44138" Name="Ballot Styles" IsUnlimited="false" cbm:numberedProperty="1.5.7.D 1"/>
@@ -101,7 +101,7 @@ Situation defined&amp;#160;
     <Pools>
         <Pool Id="_18_5_1_11940316_1503516440436_673733_61318" Name="Election Jurisdiction" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1503516440436_673733_61318_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" Height="416.0" Width="1305.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" Height="416.0" Width="1270.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -109,7 +109,7 @@ Situation defined&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_2_11940316_1504700351802_301914_28239" Source="_18_5_1_11940316_1503516885183_970449_61399" Target="_18_5_2_11940316_1504700351902_959829_28240" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672952632_266741_29928"/>
+            <Object Id="_18_5_2_43701b0_1513786375141_167391_37954"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="192.0" YCoordinate="204.0"/>
@@ -118,7 +118,7 @@ Situation defined&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1504703410808_880352_28487" Source="_18_5_2_11940316_1504700202011_450201_28183" Target="_18_5_2_11940316_1504703410920_810473_28488" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672952633_464092_29929"/>
+            <Object Id="_18_5_2_43701b0_1513786375142_329797_37955"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="388.0" YCoordinate="204.0"/>
@@ -127,11 +127,11 @@ Situation defined&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1505333310290_913756_40924" Source="_18_5_2_11940316_1504700493218_881590_28288" Target="_18_5_2_11940316_1505333310442_520687_40925" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672952633_799766_29930"/>
+            <Object Id="_18_5_2_43701b0_1513786375142_253617_37956"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="1014.0" YCoordinate="350.0"/>
-                    <Coordinates XCoordinate="999.0" YCoordinate="341.0"/>
+                    <Coordinates XCoordinate="994.0" YCoordinate="356.0"/>
+                    <Coordinates XCoordinate="975.0" YCoordinate="351.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
@@ -153,10 +153,10 @@ Situation defined&amp;#160;
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
-        <Artifact Id="_18_5_2_11940316_1505333310442_520687_40925" ArtifactType="Annotation" TextAnnotation="Situation defined ">
+        <Artifact Id="_18_5_2_11940316_1505333310442_520687_40925" ArtifactType="Annotation" TextAnnotation="Situationally defined ">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" Height="40.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="917.0" YCoordinate="301.0"/>
+                    <Coordinates XCoordinate="875.0" YCoordinate="315.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>

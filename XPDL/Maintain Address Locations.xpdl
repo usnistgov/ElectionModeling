@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-09-04T10:36:00</Created>
-        <ModificationDate>17-10-14T10:02:20</ModificationDate>
+        <ModificationDate>17-11-20T11:11:58</ModificationDate>
         <Documentation>Maintain the locations of addresses in relation to other geographic features, such as precincts and districts.
 &lt;html&gt;
   &lt;head&gt;
@@ -148,12 +148,14 @@ Classification based on syntax. What about based on type? E.g. business vs resid
     &lt;/p&gt;
 
 &lt;/body&gt;
-&lt;/html&gt;</Documentation>
+&lt;/html&gt;
+Can also match, need to update
+GIS Centerlines,</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1346</Version>
+        <Version>1477</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -164,7 +166,7 @@ Classification based on syntax. What about based on type? E.g. business vs resid
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Maintain Address Locations" Id="_18_5_2_11940316_1507127801592_938949_29528" Height="507.0" Width="1816.0"/>
+        <Page Name="Maintain Address Locations" Id="_18_5_2_11940316_1507127801592_938949_29528" Height="465.0" Width="1816.0"/>
     </Pages>
     <DataStores>
         <DataStore Id="_18_5_2_11940316_1507139435657_511817_30061" Name="Address Record" IsUnlimited="false" cbm:numberedProperty="1.1.3.D 2"/>
@@ -172,7 +174,7 @@ Classification based on syntax. What about based on type? E.g. business vs resid
     <Pools>
         <Pool Id="_18_5_2_11940316_1507127820178_337985_29540" Name="Election Jurisdiction" Orientation="HORIZONTAL" Process="_18_5_2_11940316_1507127820178_337985_29540_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" Height="507.0" Width="1816.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" Height="465.0" Width="1816.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -180,16 +182,16 @@ Classification based on syntax. What about based on type? E.g. business vs resid
     </Pools>
     <Associations>
         <Association Id="_18_5_2_11940316_1507133951461_249102_29848" Source="_18_5_2_11940316_1507133941579_68778_29832" Target="_18_5_2_11940316_1507133951626_324965_29849" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672966056_424963_30221"/>
+            <Object Id="_18_5_2_43701b0_1513786383997_534068_37967"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="144.0" YCoordinate="393.0"/>
-                    <Coordinates XCoordinate="238.0" YCoordinate="411.0"/>
+                    <Coordinates XCoordinate="144.0" YCoordinate="323.0"/>
+                    <Coordinates XCoordinate="238.0" YCoordinate="341.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1507134162225_908187_29895" Source="_18_5_2_11940316_1507127829632_587392_29590" Target="_18_5_2_11940316_1507134162333_309921_29896" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672966057_476262_30222"/>
+            <Object Id="_18_5_2_43701b0_1513786383998_245582_37968"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1365.0" YCoordinate="311.0"/>
@@ -198,7 +200,7 @@ Classification based on syntax. What about based on type? E.g. business vs resid
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1507134294395_293329_29905" Source="_18_5_2_11940316_1507132313146_570943_29728" Target="_18_5_2_11940316_1507134294498_262618_29906" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672966057_707519_30223"/>
+            <Object Id="_18_5_2_43701b0_1513786383998_349437_37969"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1277.0" YCoordinate="89.0"/>
@@ -207,7 +209,7 @@ Classification based on syntax. What about based on type? E.g. business vs resid
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1507141646423_519875_37992" Source="_18_5_2_11940316_1507139255446_553110_30005" Target="_18_5_2_11940316_1507141646547_871281_37993" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672966058_802488_30224"/>
+            <Object Id="_18_5_2_43701b0_1513786383999_346410_37970"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="850.0" YCoordinate="198.0"/>
@@ -216,20 +218,38 @@ Classification based on syntax. What about based on type? E.g. business vs resid
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1507146639705_280415_38196" Source="_18_5_2_11940316_1507133876633_131702_29808" Target="_18_5_2_11940316_1507133941579_68778_29832" Name="" AssociationDirection="To">
-            <Object Id="_18_5_2_43701b0_1510672966058_263205_30225"/>
+            <Object Id="_18_5_2_43701b0_1513786384000_501418_37971"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" BorderColor="#424242" FillColor="#FFFFCC">
-                    <Coordinates XCoordinate="103.0" YCoordinate="276.0"/>
-                    <Coordinates XCoordinate="103.0" YCoordinate="360.0"/>
+                    <Coordinates XCoordinate="106.0" YCoordinate="221.0"/>
+                    <Coordinates XCoordinate="106.0" YCoordinate="290.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1510666717603_776621_29456" Source="_18_5_2_11940316_1507128058269_843452_29644" Target="_18_5_2_43701b0_1510666717670_263633_29457" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672966058_21252_30226"/>
+            <Object Id="_18_5_2_43701b0_1513786384000_908628_37972"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="993.0" YCoordinate="182.0"/>
                     <Coordinates XCoordinate="1000.0" YCoordinate="156.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_18_5_2_43701b0_1513353367409_561642_41138" Source="_18_5_2_11940316_1507139472300_310872_30101" Target="_18_5_2_43701b0_1513353367483_283135_41139" AssociationDirection="None">
+            <Object Id="_18_5_2_43701b0_1513786384000_827681_37973"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="716.0" YCoordinate="209.0"/>
+                    <Coordinates XCoordinate="656.0" YCoordinate="145.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_18_5_2_43701b0_1513353514198_575623_41151" Source="_18_5_2_11940316_1507133941579_68778_29832" Target="_18_5_2_43701b0_1513353514251_755141_41152" AssociationDirection="None">
+            <Object Id="_18_5_2_43701b0_1513786384000_327012_37974"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="109.0" YCoordinate="338.0"/>
+                    <Coordinates XCoordinate="111.0" YCoordinate="357.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
@@ -239,7 +259,7 @@ Classification based on syntax. What about based on type? E.g. business vs resid
         <Artifact Id="_18_5_2_11940316_1507133951626_324965_29849" ArtifactType="Annotation" TextAnnotation="Sources include USPS, Census TIGER, Engineering / Public Works or tax record ">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" Height="114.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="238.0" YCoordinate="364.0"/>
+                    <Coordinates XCoordinate="238.0" YCoordinate="294.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
@@ -273,6 +293,20 @@ Classification based on syntax. What about based on type? E.g. business vs resid
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" Height="114.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
                     <Coordinates XCoordinate="966.0" YCoordinate="42.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_2_43701b0_1513353367483_283135_41139" ArtifactType="Annotation" TextAnnotation="Can also match, need to update">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" Height="40.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="581.0" YCoordinate="105.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_2_43701b0_1513353514251_755141_41152" ArtifactType="Annotation" TextAnnotation="GIS Centerlines,&#xA;">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" Height="40.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="63.0" YCoordinate="357.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
@@ -373,17 +407,7 @@ Classification based on syntax. What about based on type? E.g. business vs resid
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1507133844568_972565_29784" Name="Redistricting" cbm:numberedProperty="1.1.3.9">
-                    <Event>
-                        <StartEvent Trigger="None" Implementation="Unspecified"/>
-                    </Event>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="84.0" YCoordinate="147.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_2_11940316_1507133876633_131702_29808" Name="Recieve New Address" cbm:numberedProperty="1.1.3.10">
+                <Activity Id="_18_5_2_11940316_1507133876633_131702_29808" Name="Recieve Address" cbm:numberedProperty="1.1.3.10">
                     <Event>
                         <StartEvent Trigger="Message" Implementation="Unspecified" Interrupting="true">
                             <TriggerResultMessage CatchThrow="CATCH"/>
@@ -391,7 +415,7 @@ Classification based on syntax. What about based on type? E.g. business vs resid
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="91.0" YCoordinate="252.0"/>
+                            <Coordinates XCoordinate="94.0" YCoordinate="197.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -548,12 +572,22 @@ Classification based on syntax. What about based on type? E.g. business vs resid
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
+                <Activity Id="_18_5_2_43701b0_1513693241713_748427_30407" Name="Time to Regeocode address" cbm:numberedProperty="1.1.3.23">
+                    <Event>
+                        <StartEvent Trigger="Timer" Implementation="Unspecified" Interrupting="true"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="94.0" YCoordinate="113.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
             </Activities>
             <DataObjects>
                 <DataObject Id="_18_5_2_11940316_1507133941579_68778_29832" Name="Address Data" cbm:realDataId="_18_5_2_11940316_1507133941549_985754_29828" cbm:numberedProperty="1.1.3.D 1">
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" Height="57.0" Width="87.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="63.0" YCoordinate="357.0"/>
+                            <Coordinates XCoordinate="63.0" YCoordinate="287.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </DataObject>
@@ -611,16 +645,6 @@ Classification based on syntax. What about based on type? E.g. business vs resid
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
-                <Transition Id="_18_5_2_11940316_1507133862504_813675_29795" From="_18_5_2_11940316_1507133844568_972565_29784" To="_18_5_2_11940316_1507134618291_97104_29929" Name="">
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="108.0" YCoordinate="159.0"/>
-                            <Coordinates XCoordinate="144.0" YCoordinate="159.0"/>
-                            <Coordinates XCoordinate="144.0" YCoordinate="196.0"/>
-                            <Coordinates XCoordinate="161.0" YCoordinate="196.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
                 <Transition Id="_18_5_2_11940316_1507133896532_358952_29819" From="_18_5_2_11940316_1507139255446_553110_30005" To="_18_5_2_11940316_1507128058269_843452_29644" Name="">
                     <Condition Type="CONDITION">
                         <Expression>Yes</Expression>
@@ -662,10 +686,8 @@ Classification based on syntax. What about based on type? E.g. business vs resid
                 <Transition Id="_18_5_2_11940316_1507134619367_221783_29942" From="_18_5_2_11940316_1507133876633_131702_29808" To="_18_5_2_11940316_1507134618291_97104_29929" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="115.0" YCoordinate="264.0"/>
-                            <Coordinates XCoordinate="140.0" YCoordinate="264.0"/>
-                            <Coordinates XCoordinate="140.0" YCoordinate="221.0"/>
-                            <Coordinates XCoordinate="161.0" YCoordinate="221.0"/>
+                            <Coordinates XCoordinate="118.0" YCoordinate="209.0"/>
+                            <Coordinates XCoordinate="161.0" YCoordinate="209.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -763,13 +785,22 @@ Classification based on syntax. What about based on type? E.g. business vs resid
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
+                <Transition Id="_18_5_2_43701b0_1513693250751_606462_30418" From="_18_5_2_43701b0_1513693241713_748427_30407" To="_18_5_2_11940316_1507134618291_97104_29929" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="118.0" YCoordinate="125.0"/>
+                            <Coordinates XCoordinate="179.0" YCoordinate="125.0"/>
+                            <Coordinates XCoordinate="179.0" YCoordinate="182.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
             </Transitions>
             <DataAssociations>
                 <DataAssociation Id="_18_5_2_11940316_1507139027381_72282_29954" Name="" From="_18_5_2_11940316_1507133941579_68778_29832" To="_18_5_2_11940316_1507134618291_97104_29929">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1507127801592_938949_29528" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="144.0" YCoordinate="385.0"/>
-                            <Coordinates XCoordinate="214.0" YCoordinate="385.0"/>
+                            <Coordinates XCoordinate="144.0" YCoordinate="319.0"/>
+                            <Coordinates XCoordinate="214.0" YCoordinate="319.0"/>
                             <Coordinates XCoordinate="214.0" YCoordinate="232.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>

@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-12T09:50:00</Created>
-        <ModificationDate>17-10-14T10:02:20</ModificationDate>
+        <ModificationDate>17-11-20T11:11:58</ModificationDate>
         <Documentation>Identify the precincts that are used in the conduct of the election (e.g. in the establishing of polling locations or the reporting of results).
 &lt;html&gt;
   &lt;head&gt;
@@ -24,7 +24,7 @@ May not always occur&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1346</Version>
+        <Version>1477</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -54,7 +54,7 @@ May not always occur&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_2_11940316_1504969146918_818349_33420" Source="_18_5_1_11940316_1499867731152_772433_26150" Target="_18_5_2_11940316_1504969147003_805272_33421" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672987210_24839_30737"/>
+            <Object Id="_18_5_2_43701b0_1513786400222_903517_38008"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499867445797_811002_25831" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1151.0" YCoordinate="111.0"/>

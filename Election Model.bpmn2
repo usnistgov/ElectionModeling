@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:ns2="http://www.omg.org/spec/DD/20100524/DI" xmlns:ns3="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:ns4="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="eee_1045467100313_135436_1" name="Election Model" targetNamespace="http://www.omg.org/spec/BPMN/20100524/MODEL" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
-    <import namespace="mdel://_18_5_1_11940316_1498999818037_96552_21933" location="C:\Users\john\Documents\GitHub\ElectionModeling\MagicDraw Election Model.xml" importType="com.nomagic.cbm"/>
     <import namespace="mdel://_18_5_1_11940316_1498828643817_94789_23277" location="C:\Users\john\Documents\GitHub\ElectionModeling\MagicDraw Election Model.xml" importType="com.nomagic.cbm"/>
+    <import namespace="mdel://_18_5_1_11940316_1498999818037_96552_21933" location="C:\Users\john\Documents\GitHub\ElectionModeling\MagicDraw Election Model.xml" importType="com.nomagic.cbm"/>
     <resource name="Poll Worker" id="_18_5_1_11940316_1498828652641_269229_23308">
         <documentation textFormat="text/plain">An often temporary worker that is trained by the election jurisdiction to perform a particular set of tasks on election day, such as checking in voters, or issuing ballots.</documentation>
         <resourceParameter name="" type="_18_5_1_11940316_1498999818037_96552_21933" id="_18_5_1_11940316_1501765539156_214921_31721"/>
@@ -51,11 +51,12 @@
         <resourceParameter name="" type="_18_5_1_11940316_1498999818037_96552_21933" id="_18_5_2_11940316_1504814415183_571767_31169"/>
     </resource>
     <resource name="Delivery Service" id="_18_5_2_11940316_1506098663212_166050_36305"/>
+    <resource name="Motor Vehicle Authority" id="_18_5_2_43701b0_1513030927477_421698_41611"/>
     <dataStore name="Voter Registration Database" isUnlimited="false" id="_18_5_1_11940316_1498143971000_592173_21342"/>
     <dataStore name="Voter Record" isUnlimited="false" id="_18_5_1_11940316_1499089049215_588855_22680"/>
     <dataStore name="Voter Record" isUnlimited="false" id="_18_5_1_11940316_1499264717288_855607_22978"/>
     <dataStore name="Address Records" isUnlimited="false" id="_18_5_1_11940316_1500472861307_215878_29138"/>
-    <dataStore name="Voter Records" isUnlimited="false" id="_18_5_1_11940316_1500476453742_710032_29374"/>
+    <dataStore name="Election Specific Eligible Voter List" isUnlimited="false" id="_18_5_1_11940316_1500476453742_710032_29374"/>
     <dataStore name="Voter Registration Database" isUnlimited="false" id="_18_5_1_11940316_1500557397670_188099_33740"/>
     <dataStore name="Ballot Tracking System" isUnlimited="false" id="_18_5_1_11940316_1500575746749_157073_35765"/>
     <dataStore name="Tally Database" isUnlimited="false" id="_18_5_1_11940316_1500582485846_499914_37452"/>
@@ -82,6 +83,7 @@
     <dataStore name="Geography" isUnlimited="false" id="_18_5_2_11940316_1506969278321_263002_32506"/>
     <dataStore name="Address Record" isUnlimited="false" id="_18_5_2_11940316_1507139435657_511817_30061"/>
     <dataStore name="Election Specific Eligible Voter List" isUnlimited="false" id="_18_5_2_43701b0_1509375884407_153269_39193"/>
+    <dataStore name="" isUnlimited="false" id="_18_5_2_43701b0_1510778046678_126063_29842"/>
     <message name="Voter Registration Documents" id="_18_5_1_11940316_1499273755724_771593_23983">
         <documentation textFormat="text/plain">A payload representing a voter registration, plus any additional required documents (e.g. identification, proof of citizenship, etc.).</documentation>
     </message>
@@ -125,6 +127,7 @@
     <message name="No Valid Identification" id="_18_5_2_43701b0_1509890553680_978819_29046"/>
     <message name="Insist on Voting" id="_18_5_2_43701b0_1509890676484_560765_29098"/>
     <message name="Undeliverable Mail" id="_18_5_2_43701b0_1509890831920_279850_29167"/>
+    <message name="Retrieval Request" id="_18_5_2_43701b0_1511791448372_279107_51195"/>
     <collaboration name="Election Conversations" isClosed="false" id="_18_5_1_11940316_1502119377158_903_31932">
         <conversationLink name="" sourceRef="_18_5_1_11940316_1502119461337_179587_31986" targetRef="_18_5_1_11940316_1502119531550_781417_32001" id="_18_5_1_11940316_1502119545883_996314_32020"/>
         <conversationLink name="" sourceRef="_18_5_1_11940316_1502119531550_781417_32001" targetRef="_18_5_1_11940316_1502119430712_418180_31953" id="_18_5_1_11940316_1502119550044_224162_32026"/>
@@ -154,6 +157,8 @@
         <messageFlow name="" sourceRef="_18_5_1_11940316_1501785439048_180514_32921" targetRef="_18_5_1_11940316_1501785393155_431077_32898" messageRef="_18_5_1_11940316_1501803856525_465657_33214" id="_18_5_1_11940316_1501859265582_26926_26351"/>
         <messageFlow name="" sourceRef="_18_5_2_11940316_1506098694162_782492_36333" targetRef="_18_5_2_11940316_1506098909101_207888_36354" messageRef="_18_5_2_43701b0_1509890831920_279850_29167" id="_18_5_2_11940316_1506098898727_382091_36347"/>
         <messageFlow name="" sourceRef="_18_5_2_11940316_1506099131996_130248_36445" targetRef="_18_5_2_11940316_1506098694162_782492_36333" id="_18_5_2_11940316_1506099214598_619024_36479"/>
+        <messageFlow name="" sourceRef="_18_5_2_43701b0_1513030801275_663471_41294" targetRef="_18_5_2_43701b0_1513030944797_661866_41639" id="_18_5_2_43701b0_1513030962411_217400_41657"/>
+        <messageFlow name="" sourceRef="_18_5_2_43701b0_1513030944797_661866_41639" targetRef="_18_5_2_43701b0_1513030912254_574635_41600" id="_18_5_2_43701b0_1513030970710_759164_41663"/>
         <messageFlow name="" sourceRef="_18_5_1_11940316_1502829240162_907768_41659" targetRef="_18_5_1_11940316_1498141084832_846681_20653" messageRef="_18_5_2_11940316_1506628452423_81495_29235" id="_18_5_1_11940316_1498150981542_658363_21477"/>
         <messageFlow name="" sourceRef="_18_5_1_11940316_1498141084832_846681_20653" targetRef="_18_5_1_11940316_1498141060496_347838_20632" messageRef="_18_5_1_11940316_1499273755724_771593_23983" id="_18_5_1_11940316_1498141110742_820073_20673"/>
         <messageFlow name="" sourceRef="_18_5_1_11940316_1498141330046_659664_20851" targetRef="_18_5_1_11940316_1498141084832_846681_20653" messageRef="_18_5_1_11940316_1499274158202_39386_24041" id="_18_5_1_11940316_1498141528735_292037_20880"/>
@@ -180,21 +185,27 @@
         <messageFlow name="" sourceRef="_18_5_1_11940316_1500487834955_503855_30913" targetRef="_18_5_2_43701b0_1508957342143_11520_31828" messageRef="_18_5_2_43701b0_1509890676484_560765_29098" id="_18_5_2_43701b0_1508957396030_742185_31855"/>
         <messageFlow name="" sourceRef="_18_5_1_11940316_1500557162555_115326_33540" targetRef="_18_5_1_11940316_1500557216084_29274_33572" messageRef="_18_5_1_11940316_1500557245570_859748_33589" id="_18_5_1_11940316_1500557231815_910848_33587"/>
         <messageFlow name="" sourceRef="_18_5_1_11940316_1500559449474_215319_34491" targetRef="_18_5_1_11940316_1500559429398_312874_34472" messageRef="_18_5_1_11940316_1500559481382_56985_34530" id="_18_5_1_11940316_1500559471896_308145_34528"/>
-        <messageFlow name="" sourceRef="_18_5_1_11940316_1500576119877_461179_36125" targetRef="_18_5_1_11940316_1500575848961_153208_35830" messageRef="_18_5_2_11940316_1505319390239_699846_35537" id="_18_5_1_11940316_1500576135400_299254_36149"/>
+        <messageFlow name="" sourceRef="_18_5_1_11940316_1500576068691_548518_36061" targetRef="_18_5_1_11940316_1500575848961_153208_35830" messageRef="_18_5_2_11940316_1505319390239_699846_35537" id="_18_5_1_11940316_1500576135400_299254_36149"/>
         <messageFlow name="" sourceRef="_18_5_1_11940316_1500576051379_836664_36019" targetRef="_18_5_1_11940316_1500575848961_153208_35830" messageRef="_18_5_1_11940316_1500640542704_174255_39081" id="_18_5_1_11940316_1500576231226_219593_36191"/>
         <messageFlow name="" sourceRef="_18_5_1_11940316_1500576097350_173832_36098" targetRef="_18_5_1_11940316_1500575848961_153208_35830" messageRef="_18_5_1_11940316_1500640542704_174255_39081" id="_18_5_1_11940316_1500576271815_917252_36197"/>
         <messageFlow name="" sourceRef="_18_5_2_43701b0_1510174762523_553577_32326" targetRef="_18_5_1_11940316_1500557162555_115326_33540" id="_18_5_2_43701b0_1510174788161_80996_32361"/>
+        <messageFlow name="" sourceRef="_18_5_1_11940316_1500575848961_153208_35830" targetRef="_18_5_1_11940316_1500576119877_461179_36125" messageRef="_18_5_2_43701b0_1511791448372_279107_51195" id="_18_5_2_43701b0_1511384587527_402655_53331"/>
+        <messageFlow name="" sourceRef="_18_5_1_11940316_1500576119877_461179_36125" targetRef="_18_5_1_11940316_1500575848961_153208_35830" messageRef="_18_5_1_11940316_1500640542704_174255_39081" id="_18_5_2_43701b0_1511791409462_195450_51193"/>
         <messageFlow name="" sourceRef="_18_5_1_11940316_1500581652948_165547_37391" targetRef="_18_5_1_11940316_1500582438625_776654_37436" messageRef="_18_5_1_11940316_1500640627255_40869_39127" id="_18_5_1_11940316_1500582430591_405258_37429"/>
         <messageFlow name="" sourceRef="_18_5_1_11940316_1500582749515_454951_37629" targetRef="_18_5_1_11940316_1500581652948_165547_37391" messageRef="_18_5_1_11940316_1500640654579_83437_39145" id="_18_5_1_11940316_1500582768142_296753_37644"/>
         <messageFlow name="" sourceRef="_18_5_1_11940316_1501694356414_390961_25960" targetRef="_18_5_1_11940316_1501694409888_748592_25992" messageRef="_18_5_1_11940316_1501803661543_815853_33160" id="_18_5_1_11940316_1501694420502_619531_26007"/>
         <messageFlow name="" sourceRef="_18_5_1_11940316_1501694544086_914833_26068" targetRef="_18_5_1_11940316_1501694356414_390961_25960" messageRef="_18_5_1_11940316_1501803735311_524444_33178" id="_18_5_1_11940316_1501694851625_973585_26155"/>
         <messageFlow name="" sourceRef="_18_5_1_11940316_1501694356414_390961_25960" targetRef="_18_5_1_11940316_1501694544086_914833_26068" messageRef="_18_5_1_11940316_1501803756899_396306_33196" id="_18_5_1_11940316_1501694859512_705653_26161"/>
+        <messageFlow name="" sourceRef="_18_5_1_11940316_1500584674631_49220_38540" targetRef="_18_5_2_43701b0_1511287007482_959087_29174" id="_18_5_2_43701b0_1511287034506_567289_29190"/>
         <messageFlow name="" sourceRef="_18_5_1_11940316_1501091165358_303275_29131" targetRef="_18_5_1_11940316_1501091643281_140134_29336" messageRef="_18_5_1_11940316_1501091379686_108336_29243" id="_18_5_1_11940316_1501091369251_933003_29241"/>
         <messageFlow name="" sourceRef="_18_5_1_11940316_1501091471074_49691_29276" targetRef="_18_5_1_11940316_1501091165358_303275_29131" messageRef="_18_5_1_11940316_1501091505298_634809_29309" id="_18_5_1_11940316_1501091499515_299120_29307"/>
         <messageFlow name="" sourceRef="_18_5_1_11940316_1501091165358_303275_29131" targetRef="_18_5_1_11940316_1501097645518_616416_30754" messageRef="_18_5_1_11940316_1501091379686_108336_29243" id="_18_5_1_11940316_1501097657327_450020_30778"/>
     </collaboration>
     <process isClosed="false" isExecutable="false" name="Register Voter" id="_18_5_1_11940316_1498140978087_930388_20553">
         <documentation textFormat="text/plain">For states requiring registration in order to vote, register a voter such that their name appears on the list of eligible voters for the next election qualified for.</documentation>
+        <laneSet id="_18_5_1_11940316_1498141084832_846681_20653_Ref-1_laneSet">
+            <lane name="Applicant" partitionElementRef="_18_5_1_11940316_1501593348755_749813_40372" id="_18_5_1_11940316_1498141084832_846681_20653"/>
+        </laneSet>
         <laneSet id="_18_5_1_11940316_1498140996278_551314_20598_Ref-1_laneSet">
             <lane name="Election Authority" partitionElementRef="_18_5_1_11940316_1498999818037_96552_21933" id="_18_5_1_11940316_1498140996278_551314_20598">
                 <flowNodeRef>_18_5_1_11940316_1498140984132_146266_20578</flowNodeRef>
@@ -217,9 +228,6 @@
                 <flowNodeRef>_18_5_2_11940316_1506108858628_37050_36724</flowNodeRef>
                 <flowNodeRef>_18_5_2_11940316_1506108935607_291195_36746</flowNodeRef>
             </lane>
-        </laneSet>
-        <laneSet id="_18_5_1_11940316_1498141084832_846681_20653_Ref-1_laneSet">
-            <lane name="Applicant" partitionElementRef="_18_5_1_11940316_1501593348755_749813_40372" id="_18_5_1_11940316_1498141084832_846681_20653"/>
         </laneSet>
         <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Check for completeness" id="_18_5_1_11940316_1498140984132_146266_20578">
             <documentation textFormat="text/plain">Determine if the registration meets syntactic requirements - that it is prima facie valid.</documentation>
@@ -273,8 +281,8 @@
             <documentation textFormat="text/plain">Depending on whether the registration applies to an existing voter registration record or is a new registration, update the voter registration database to reflect the acceptance of the record.</documentation>
             <incoming>_18_5_1_11940316_1498150822828_392006_21441</incoming>
             <outgoing>_18_5_2_11940316_1505663531637_230212_51614</outgoing>
-            <property name="Create or update voter record_pin_in" id="_18_5_1_11940316_1498143631469_397942_21043_pin_in"/>
             <property name="Create or update voter record_pin_out" id="_18_5_1_11940316_1498143631469_397942_21043_pin_out"/>
+            <property name="Create or update voter record_pin_in" id="_18_5_1_11940316_1498143631469_397942_21043_pin_in"/>
             <dataInputAssociation id="_18_5_1_11940316_1499457235631_659408_25368">
                 <sourceRef>_18_5_1_11940316_1498143971000_592173_21342</sourceRef>
                 <targetRef>_18_5_1_11940316_1498143631469_397942_21043_pin_out</targetRef>
@@ -338,14 +346,14 @@
 	&lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-NC check-wait period, MI?&amp;#160;
+Waiting period for mail to come back as undeliverable.
 
     &lt;/p&gt;
 
 &lt;/body&gt;
 &lt;/html&gt;</text>
             </textAnnotation>
-            <association sourceRef="_18_5_2_11940316_1506103661071_206727_36667" targetRef="_18_5_2_11940316_1506102969629_509633_36621" associationDirection="None" id="_18_5_2_36470677_1510673046244_59807_0"/>
+            <association sourceRef="_18_5_2_11940316_1506103661071_206727_36667" targetRef="_18_5_2_11940316_1506102969629_509633_36621" associationDirection="None" id="_18_5_2_36470677_1513786337330_409545_0"/>
         </subProcess>
         <endEvent name="Voter Registered" id="_18_5_1_11940316_1498143959537_550265_21323">
             <incoming>_18_5_2_11940316_1505413771403_30407_36317</incoming>
@@ -435,42 +443,6 @@ Remove?&amp;#160;
 &lt;/body&gt;
 &lt;/html&gt;</text>
         </textAnnotation>
-        <textAnnotation textFormat="text/plain" id="_18_5_2_11940316_1505414850149_48765_36490">
-            <text>&lt;html&gt;
-  &lt;head&gt;
-    &lt;style type="text/css"&gt;
-      &lt;!--
-        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
-      --&gt;
-    &lt;/style&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-      TBD Add Ineligibility&amp;#160;
-    &lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</text>
-        </textAnnotation>
-        <association sourceRef="_18_5_2_11940316_1505414850149_48765_36490" targetRef="_18_5_2_11940316_1505414637266_476930_36343" associationDirection="None" id="_18_5_2_36470677_1510673046242_322281_0"/>
-        <textAnnotation textFormat="text/plain" id="_18_5_2_11940316_1506110305942_582874_36772">
-            <text>&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-Problematic because this process also handles updates&amp;#160;
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;</text>
-        </textAnnotation>
-        <association sourceRef="_18_5_2_11940316_1506110305942_582874_36772" targetRef="_18_5_1_11940316_1502833880535_560922_41834" associationDirection="None" id="_18_5_2_36470677_1510673046242_467940_0"/>
         <textAnnotation textFormat="text/plain" id="_18_5_2_11940316_1506602211309_761993_28865">
             <text>&lt;html&gt;
   &lt;head&gt;
@@ -489,7 +461,7 @@ Problematic because this process also handles updates&amp;#160;
 &lt;/html&gt;
 </text>
         </textAnnotation>
-        <association sourceRef="_18_5_2_11940316_1506602211309_761993_28865" targetRef="_18_5_1_11940316_1498143971000_592173_21342" associationDirection="None" id="_18_5_2_36470677_1510673046242_169375_0"/>
+        <association sourceRef="_18_5_2_11940316_1506602211309_761993_28865" targetRef="_18_5_1_11940316_1498143971000_592173_21342" associationDirection="None" id="_18_5_2_36470677_1513786337328_313850_0"/>
         <resourceRole name="" id="_18_5_2_11940316_1505762460964_211779_33215"/>
         <resourceRole name="" id="_18_5_1_11940316_1499272305848_320305_23899"/>
     </process>
@@ -675,23 +647,37 @@ Non allowable address (Business, etc.).
 &lt;/body&gt;
 &lt;/html&gt;</text>
         </textAnnotation>
-        <association sourceRef="_18_5_2_11940316_1507146980074_597846_38201" targetRef="_18_5_1_11940316_1499865814960_663258_25201" associationDirection="None" id="_18_5_2_36470677_1510673046234_601100_0"/>
-        <resourceRole name="" id="_18_5_2_11940316_1505762560991_119917_33265"/>
+        <association sourceRef="_18_5_2_11940316_1507146980074_597846_38201" targetRef="_18_5_1_11940316_1499865814960_663258_25201" associationDirection="None" id="_18_5_2_36470677_1513786337320_587497_0"/>
         <resourceRole name="" id="_18_5_1_11940316_1499865472558_483598_25102"/>
+        <resourceRole name="" id="_18_5_2_11940316_1505762560991_119917_33265"/>
         <resourceRole name="" id="_18_5_2_11940316_1505762547186_921248_33249"/>
     </process>
     <process isClosed="true" isExecutable="false" name="Process Death Records" id="_18_5_1_11940316_1499087138966_11396_21608">
         <documentation textFormat="text/plain">For each death notice received: look up a record in the voter registration database and remove the decedent from the list of eligible voters. </documentation>
-        <ioSpecification id="_18_5_2_1_1510673046357_588350_0">
+        <ioSpecification id="_18_5_2_1_1513786337439_448302_0">
             <dataInput name="Death Records" isCollection="true" id="_18_5_1_11940316_1499100521589_119623_21939"/>
             <inputSet/>
             <outputSet/>
         </ioSpecification>
+        <laneSet id="_18_5_1_11940316_1500064596674_302035_23782_Ref-1_laneSet">
+            <lane name="Resident" partitionElementRef="_18_5_1_11940316_1500064569910_373836_23754" id="_18_5_1_11940316_1500064596674_302035_23782"/>
+        </laneSet>
         <laneSet id="_18_5_1_11940316_1499087400220_937426_21785_Ref-1_laneSet">
             <lane name="Voter Registration Database" partitionElementRef="_18_5_1_11940316_1498828643817_94789_23277" id="_18_5_1_11940316_1499087400220_937426_21785"/>
         </laneSet>
+        <laneSet id="_18_5_1_11940316_1499088406069_141303_22196_Ref-1_laneSet">
+            <lane name="Address Management System" partitionElementRef="_18_5_1_11940316_1498999872536_984458_21962" id="_18_5_1_11940316_1499088406069_141303_22196"/>
+        </laneSet>
         <laneSet id="_18_5_1_11940316_1499088411617_245606_22216_Ref-1_laneSet">
             <lane name="Voter Registration Database" partitionElementRef="_18_5_1_11940316_1498828643817_94789_23277" id="_18_5_1_11940316_1499088411617_245606_22216"/>
+        </laneSet>
+        <laneSet id="_18_5_1_11940316_1499087381599_452375_21752_Ref-1_laneSet">
+            <lane name="Election Authority" partitionElementRef="_18_5_1_11940316_1498999818037_96552_21933" id="_18_5_1_11940316_1499087381599_452375_21752">
+                <flowNodeRef>_18_5_1_11940316_1499087351135_422248_21708</flowNodeRef>
+                <flowNodeRef>_18_5_1_11940316_1499099623474_914985_21414</flowNodeRef>
+                <flowNodeRef>_18_5_1_11940316_1499099976894_937742_21598</flowNodeRef>
+                <flowNodeRef>_18_5_1_11940316_1502468749234_421246_31549</flowNodeRef>
+            </lane>
         </laneSet>
         <laneSet id="_18_5_1_11940316_1499088446090_259832_22240_Ref-1_laneSet">
             <lane name="" partitionElementRef="_18_5_1_11940316_1498999818037_96552_21933" id="_18_5_1_11940316_1499088446090_259832_22240">
@@ -702,20 +688,6 @@ Non allowable address (Business, etc.).
                     <lane name="" partitionElementRef="_18_5_1_11940316_1498828643817_94789_23277" id="_18_5_1_11940316_1499088446121_307765_22246"/>
                 </childLaneSet>
             </lane>
-        </laneSet>
-        <laneSet id="_18_5_1_11940316_1499088406069_141303_22196_Ref-1_laneSet">
-            <lane name="Address Management System" partitionElementRef="_18_5_1_11940316_1498999872536_984458_21962" id="_18_5_1_11940316_1499088406069_141303_22196"/>
-        </laneSet>
-        <laneSet id="_18_5_1_11940316_1499087381599_452375_21752_Ref-1_laneSet">
-            <lane name="Election Authority" partitionElementRef="_18_5_1_11940316_1498999818037_96552_21933" id="_18_5_1_11940316_1499087381599_452375_21752">
-                <flowNodeRef>_18_5_1_11940316_1499087351135_422248_21708</flowNodeRef>
-                <flowNodeRef>_18_5_1_11940316_1499099623474_914985_21414</flowNodeRef>
-                <flowNodeRef>_18_5_1_11940316_1499099976894_937742_21598</flowNodeRef>
-                <flowNodeRef>_18_5_1_11940316_1502468749234_421246_31549</flowNodeRef>
-            </lane>
-        </laneSet>
-        <laneSet id="_18_5_1_11940316_1500064596674_302035_23782_Ref-1_laneSet">
-            <lane name="Resident" partitionElementRef="_18_5_1_11940316_1500064569910_373836_23754" id="_18_5_1_11940316_1500064596674_302035_23782"/>
         </laneSet>
         <startEvent isInterrupting="true" name="Receive Death Records" id="_18_5_1_11940316_1499087351135_422248_21708">
             <documentation textFormat="text/plain">Attempt to find an eligible voter record matching the decedent’s information.</documentation>
@@ -852,7 +824,7 @@ E.g. Virginia&amp;#160;
 &lt;/body&gt;
 &lt;/html&gt;</text>
             </textAnnotation>
-            <association sourceRef="_18_5_1_11940316_1500487543659_601420_30848" targetRef="_18_5_1_11940316_1500065377639_718364_24011" associationDirection="None" id="_18_5_2_36470677_1510673046247_858628_0"/>
+            <association sourceRef="_18_5_1_11940316_1500487543659_601420_30848" targetRef="_18_5_1_11940316_1500065377639_718364_24011" associationDirection="None" id="_18_5_2_36470677_1513786337332_94530_0"/>
             <textAnnotation textFormat="text/plain" id="_18_5_1_11940316_1500487588096_739399_30857">
                 <text>&lt;html&gt;
   &lt;head&gt;
@@ -869,7 +841,7 @@ E.g. Maryland&amp;#160;
 &lt;/body&gt;
 &lt;/html&gt;</text>
             </textAnnotation>
-            <association sourceRef="_18_5_1_11940316_1500487588096_739399_30857" targetRef="_18_5_1_11940316_1500064717108_476573_23855" associationDirection="None" id="_18_5_2_36470677_1510673046247_573243_0"/>
+            <association sourceRef="_18_5_1_11940316_1500487588096_739399_30857" targetRef="_18_5_1_11940316_1500064717108_476573_23855" associationDirection="None" id="_18_5_2_36470677_1513786337332_689831_0"/>
         </subProcess>
         <endEvent name="Death Records Processed" id="_18_5_1_11940316_1499099976894_937742_21598">
             <incoming>_18_5_1_11940316_1499099976907_826473_21604</incoming>
@@ -877,8 +849,8 @@ E.g. Maryland&amp;#160;
         <startEvent name="Manual Start" id="_18_5_1_11940316_1502468749234_421246_31549">
             <outgoing>_18_5_1_11940316_1502468756259_481364_31563</outgoing>
         </startEvent>
-        <dataStoreReference dataStoreRef="_18_5_1_11940316_1499089049215_588855_22680" name="Voter Record" id="_18_5_1_11940316_1499089052236_923103_22696"/>
         <dataStoreReference dataStoreRef="_18_5_1_11940316_1499100521589_119623_21939" name="Death Records" id="_18_5_1_11940316_1499100521596_250589_21944"/>
+        <dataStoreReference dataStoreRef="_18_5_1_11940316_1499089049215_588855_22680" name="Voter Record" id="_18_5_1_11940316_1499089052236_923103_22696"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1499087351135_422248_21708" targetRef="_18_5_1_11940316_1499099623474_914985_21414" name="" id="_18_5_1_11940316_1499099715328_819139_21474"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1499099623474_914985_21414" targetRef="_18_5_1_11940316_1499099976894_937742_21598" name="" id="_18_5_1_11940316_1499099976907_826473_21604"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1502468749234_421246_31549" targetRef="_18_5_1_11940316_1499099623474_914985_21414" name="" id="_18_5_1_11940316_1502468756259_481364_31563"/>
@@ -898,14 +870,15 @@ Assume trusted source
 &lt;/body&gt;
 &lt;/html&gt;</text>
         </textAnnotation>
-        <association sourceRef="_18_5_1_11940316_1500064324893_907949_23736" targetRef="_18_5_1_11940316_1499087351135_422248_21708" associationDirection="None" id="_18_5_2_36470677_1510673046246_823818_0"/>
-        <association sourceRef="_18_5_1_11940316_1500064324893_907949_23736" targetRef="_18_5_1_11940316_1499100521589_119623_21939" associationDirection="None" id="_18_5_2_36470677_1510673046246_503748_0"/>
-        <resourceRole name="" id="_18_5_1_11940316_1499088503446_679836_22300"/>
+        <association sourceRef="_18_5_1_11940316_1500064324893_907949_23736" targetRef="_18_5_1_11940316_1499087351135_422248_21708" associationDirection="None" id="_18_5_2_36470677_1513786337331_925231_0"/>
+        <association sourceRef="_18_5_1_11940316_1500064324893_907949_23736" targetRef="_18_5_1_11940316_1499100521589_119623_21939" associationDirection="None" id="_18_5_2_36470677_1513786337331_371907_0"/>
+        <association sourceRef="_18_5_1_11940316_1499087351135_422248_21708" targetRef="_18_5_1_11940316_1499100521589_119623_21939" associationDirection="One" id="_18_5_2_43701b0_1511987061133_515787_71062"/>
         <resourceRole name="" id="_18_5_1_11940316_1499087390457_133872_21773"/>
+        <resourceRole name="" id="_18_5_1_11940316_1499088503446_679836_22300"/>
     </process>
     <process isClosed="false" isExecutable="false" name="Process Non Participation" id="_18_5_1_11940316_1499103581808_34316_22530">
         <documentation textFormat="text/plain">For each eligible voter: Determine if a voter’s lack of participation in the electoral process should begin a list maintenance process. </documentation>
-        <ioSpecification id="_18_5_2_1_1510673046358_450240_0">
+        <ioSpecification id="_18_5_2_1_1513786337438_462612_0">
             <dataInput name="Eligible Voters" isCollection="true" id="_18_5_1_11940316_1501772563087_18659_32225"/>
             <inputSet/>
             <outputSet/>
@@ -918,11 +891,11 @@ Assume trusted source
                 <flowNodeRef>_18_5_1_11940316_1501015134136_831949_25319</flowNodeRef>
             </lane>
         </laneSet>
-        <subProcess triggeredByEvent="false" isForCompensation="false" startQuantity="1" completionQuantity="1" name="Process Voter for Non Participation" id="_18_5_1_11940316_1499863008396_289070_24448">
+        <subProcess triggeredByEvent="false" isForCompensation="false" startQuantity="1" completionQuantity="1" name="Process voter for non participation" id="_18_5_1_11940316_1499863008396_289070_24448">
             <documentation textFormat="text/plain">Determine if a voter’s lack of participation in the electoral process should begin a list maintenance process. </documentation>
             <incoming>_18_5_1_11940316_1500666771124_787831_31226</incoming>
             <outgoing>_18_5_1_11940316_1499864992388_904672_24946</outgoing>
-            <property name="Process Voter for Non Participation_pin_out" id="_18_5_1_11940316_1499863008396_289070_24448_pin_out"/>
+            <property name="Process voter for non participation_pin_out" id="_18_5_1_11940316_1499863008396_289070_24448_pin_out"/>
             <dataInputAssociation id="_18_5_1_11940316_1501772581708_672960_32253">
                 <sourceRef>_18_5_1_11940316_1501772563087_18659_32225</sourceRef>
                 <targetRef>_18_5_1_11940316_1499863008396_289070_24448_pin_out</targetRef>
@@ -949,7 +922,7 @@ Assume trusted source
                 <incoming>_18_5_1_11940316_1499863405254_298714_24707</incoming>
                 <incoming>_18_5_2_11940316_1506098283383_188017_36008</incoming>
             </endEvent>
-            <adHocSubProcess cancelRemainingInstances="true" ordering="Parallel" triggeredByEvent="false" isForCompensation="false" startQuantity="1" completionQuantity="1" name="Evaluate Voter Activity" id="_18_5_1_11940316_1501015046987_459163_25217">
+            <adHocSubProcess cancelRemainingInstances="true" ordering="Parallel" triggeredByEvent="false" isForCompensation="false" startQuantity="1" completionQuantity="1" name="Evaluate voter activity" id="_18_5_1_11940316_1501015046987_459163_25217">
                 <documentation textFormat="text/plain">Determine if the voter has any qualifying activity during the activity period.</documentation>
                 <incoming>_18_5_1_11940316_1501015047981_152117_25242</incoming>
                 <outgoing>_18_5_1_11940316_1499863102073_227758_24550</outgoing>
@@ -1007,6 +980,10 @@ Assume trusted source
             </sequenceFlow>
             <sequenceFlow sourceRef="_18_5_1_11940316_1501017061582_181879_25750" targetRef="_18_5_1_11940316_1501017113661_967497_25783" name="" id="_18_5_1_11940316_1501017113693_791398_25788"/>
             <sequenceFlow sourceRef="_18_5_2_11940316_1506086965973_811837_35981" targetRef="_18_5_1_11940316_1499863405205_265585_24702" name="" id="_18_5_2_11940316_1506098283383_188017_36008"/>
+            <textAnnotation textFormat="text/plain" id="_18_5_2_43701b0_1511376899037_341020_47323">
+                <text>Are there other outcomes?</text>
+            </textAnnotation>
+            <association sourceRef="_18_5_2_43701b0_1511376899037_341020_47323" targetRef="_18_5_1_11940316_1501016883522_483537_25713" associationDirection="None" id="_18_5_2_36470677_1513786337334_185735_0"/>
         </subProcess>
         <endEvent name="Non Participation Processed" id="_18_5_1_11940316_1499864992330_565100_24940">
             <incoming>_18_5_1_11940316_1499864992388_904672_24946</incoming>
@@ -1015,8 +992,8 @@ Assume trusted source
             <outgoing>_18_5_1_11940316_1500666771124_787831_31226</outgoing>
             <timerEventDefinition id="_18_5_1_11940316_1500666761699_449471_31209_Ref-1"/>
         </startEvent>
-        <dataStoreReference dataStoreRef="_18_5_1_11940316_1501772563087_18659_32225" name="Eligible Voters" id="_18_5_1_11940316_1501772563106_19594_32227"/>
         <dataStoreReference dataStoreRef="_18_5_1_11940316_1501771963631_453942_32151" name="Voter Record" id="_18_5_1_11940316_1501771963670_844400_32157"/>
+        <dataStoreReference dataStoreRef="_18_5_1_11940316_1501772563087_18659_32225" name="Eligible Voters" id="_18_5_1_11940316_1501772563106_19594_32227"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1499863008396_289070_24448" targetRef="_18_5_1_11940316_1499864992330_565100_24940" name="" id="_18_5_1_11940316_1499864992388_904672_24946"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1500666761699_449471_31209" targetRef="_18_5_1_11940316_1499863008396_289070_24448" name="" id="_18_5_1_11940316_1500666771124_787831_31226"/>
         <resourceRole name="" id="_18_5_1_11940316_1499863008561_909610_24464"/>
@@ -1024,14 +1001,11 @@ Assume trusted source
     </process>
     <process isClosed="false" isExecutable="false" name="Process Court Actions" id="_18_5_1_11940316_1499264632465_651914_22899">
         <documentation textFormat="text/plain">For each court record: lookup a record in the voter registration database, and change the record’s status according to the court action.</documentation>
-        <ioSpecification id="_18_5_2_1_1510673046358_433621_0">
+        <ioSpecification id="_18_5_2_1_1513786337438_119432_0">
             <dataInput name="Court Records" isCollection="true" id="_18_5_1_11940316_1499264717290_80609_22987"/>
             <inputSet/>
             <outputSet/>
         </ioSpecification>
-        <laneSet id="_18_5_1_11940316_1500665602935_854357_30918_Ref-1_laneSet">
-            <lane name="Voter" partitionElementRef="_18_5_1_11940316_1498828669742_83683_23366" id="_18_5_1_11940316_1500665602935_854357_30918"/>
-        </laneSet>
         <laneSet id="_18_5_1_11940316_1499264717286_249159_22975_Ref-1_laneSet">
             <lane name="Election Authority" partitionElementRef="_18_5_1_11940316_1498999818037_96552_21933" id="_18_5_1_11940316_1499264717286_249159_22975">
                 <flowNodeRef>_18_5_1_11940316_1499264717287_461578_22976</flowNodeRef>
@@ -1040,28 +1014,31 @@ Assume trusted source
                 <flowNodeRef>_18_5_1_11940316_1502468434998_205774_31465</flowNodeRef>
             </lane>
         </laneSet>
+        <laneSet id="_18_5_1_11940316_1500665602935_854357_30918_Ref-1_laneSet">
+            <lane name="Voter" partitionElementRef="_18_5_1_11940316_1498828669742_83683_23366" id="_18_5_1_11940316_1500665602935_854357_30918"/>
+        </laneSet>
         <startEvent isInterrupting="true" name="Receive Court Record(s)" id="_18_5_1_11940316_1499264717287_461578_22976">
             <outgoing>_18_5_1_11940316_1499264717291_979139_22997</outgoing>
             <messageEventDefinition id="_18_5_1_11940316_1499264717287_461578_22976_Ref-1"/>
         </startEvent>
-        <subProcess triggeredByEvent="false" isForCompensation="false" startQuantity="1" completionQuantity="1" name="Process Court Action" id="_18_5_1_11940316_1499264717287_790777_22977">
+        <subProcess triggeredByEvent="false" isForCompensation="false" startQuantity="1" completionQuantity="1" name="Process court action" id="_18_5_1_11940316_1499264717287_790777_22977">
             <documentation textFormat="text/plain">Lookup a record in the voter registration database, and change the record’s status according to the court action.</documentation>
             <incoming>_18_5_1_11940316_1499264717291_979139_22997</incoming>
             <incoming>_18_5_1_11940316_1502468438540_36178_31479</incoming>
             <outgoing>_18_5_1_11940316_1499264717291_516502_22998</outgoing>
             <property name="" id="_18_5_1_11940316_1499264717292_209764_23003"/>
-            <property name="Process Court Action_pin_out" id="_18_5_1_11940316_1499264717287_790777_22977_pin_out"/>
+            <property name="Process court action_pin_out" id="_18_5_1_11940316_1499264717287_790777_22977_pin_out"/>
             <dataInputAssociation id="_18_5_1_11940316_1499264717291_520864_22999">
                 <sourceRef>_18_5_1_11940316_1499264717290_80609_22987</sourceRef>
                 <targetRef>_18_5_1_11940316_1499264717287_790777_22977_pin_out</targetRef>
             </dataInputAssociation>
             <resourceRole name="" id="_18_5_1_11940316_1499087390457_133872_21773_Ref-5"/>
             <multiInstanceLoopCharacteristics isSequential="false" behavior="All" id="_18_5_1_11940316_1499264717287_790777_22977_Ref-1"/>
-            <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Lookup Voter Registration" id="_18_5_1_11940316_1499264717288_174978_22980">
+            <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Lookup voter registration" id="_18_5_1_11940316_1499264717288_174978_22980">
                 <documentation textFormat="text/plain">The court action may not pertain to an eligible record in the voter registration database. The election jurisdiction must find a matching record in order to proceed.</documentation>
                 <incoming>_18_5_1_11940316_1499264717291_419043_22996</incoming>
                 <outgoing>_18_5_1_11940316_1499264717291_611608_22995</outgoing>
-                <property name="Lookup Voter Registration_pin_out" id="_18_5_1_11940316_1499264717288_174978_22980_pin_out"/>
+                <property name="Lookup voter registration_pin_out" id="_18_5_1_11940316_1499264717288_174978_22980_pin_out"/>
                 <dataInputAssociation id="_18_5_1_11940316_1499264717290_812606_22988">
                     <sourceRef>_18_5_1_11940316_1499264717288_855607_22978</sourceRef>
                     <targetRef>_18_5_1_11940316_1499264717288_174978_22980_pin_out</targetRef>
@@ -1069,11 +1046,11 @@ Assume trusted source
                 <resourceRole name="" id="_18_5_1_11940316_1499088503446_679836_22300_Ref-3"/>
                 <resourceRole name="" id="_18_5_1_11940316_1499433806084_15219_22378_Ref-1"/>
             </task>
-            <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Remove Person from List of Eligible Voters" id="_18_5_1_11940316_1499264717289_132639_22981">
+            <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Remove person from list of eligible voters" id="_18_5_1_11940316_1499264717289_132639_22981">
                 <documentation textFormat="text/plain">The disenfranchised is removed from the list of eligible voters. </documentation>
                 <incoming>_18_5_1_11940316_1499265387271_483487_22303</incoming>
                 <outgoing>_18_5_1_11940316_1499264717290_231691_22991</outgoing>
-                <property name="Remove Person from List of Eligible Voters_pin_in" id="_18_5_1_11940316_1499264717289_132639_22981_pin_in"/>
+                <property name="Remove person from list of eligible voters_pin_in" id="_18_5_1_11940316_1499264717289_132639_22981_pin_in"/>
                 <dataOutputAssociation id="_18_5_1_11940316_1499264717290_29314_22992">
                     <sourceRef>_18_5_1_11940316_1499264717289_132639_22981_pin_in</sourceRef>
                     <targetRef>_18_5_1_11940316_1499264717288_855607_22978</targetRef>
@@ -1100,11 +1077,11 @@ Assume trusted source
                 <outgoing>_18_5_1_11940316_1499265387271_483487_22303</outgoing>
                 <outgoing>_18_5_1_11940316_1499265733008_925691_22429</outgoing>
             </exclusiveGateway>
-            <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Mark Person as Eligible to Reregister" id="_18_5_1_11940316_1499265732973_193572_22420">
+            <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Mark person as eligible to reregister" id="_18_5_1_11940316_1499265732973_193572_22420">
                 <documentation textFormat="text/plain">The matching record is not added to the list of eligible voters. Instead, if the voter registration database has a record of this person indicating ineligibility to register to vote by court action, the flag is removed or otherwise indicates eligibility to reregister.</documentation>
                 <incoming>_18_5_1_11940316_1499265733008_925691_22429</incoming>
                 <outgoing>_18_5_1_11940316_1499265871673_157535_22497</outgoing>
-                <property name="Mark Person as Eligible to Reregister_pin_in" id="_18_5_1_11940316_1499265732973_193572_22420_pin_in"/>
+                <property name="Mark person as eligible to reregister_pin_in" id="_18_5_1_11940316_1499265732973_193572_22420_pin_in"/>
                 <dataOutputAssociation id="_18_5_1_11940316_1499265813073_153139_22449">
                     <sourceRef>_18_5_1_11940316_1499265732973_193572_22420_pin_in</sourceRef>
                     <targetRef>_18_5_1_11940316_1499264717288_855607_22978</targetRef>
@@ -1142,7 +1119,7 @@ Assume trusted source
 Automatic restoration to rolls happens&lt;/body&gt;
 &lt;/html&gt;</text>
             </textAnnotation>
-            <association sourceRef="_18_5_2_11940316_1508527202159_689332_29906" targetRef="_18_5_1_11940316_1499265732973_193572_22420" associationDirection="None" id="_18_5_2_36470677_1510673046252_594326_0"/>
+            <association sourceRef="_18_5_2_11940316_1508527202159_689332_29906" targetRef="_18_5_1_11940316_1499265732973_193572_22420" associationDirection="None" id="_18_5_2_36470677_1513786337337_679654_0"/>
         </subProcess>
         <endEvent name="Court Records Processed" id="_18_5_1_11940316_1499264717290_220528_22986">
             <incoming>_18_5_1_11940316_1499264717291_516502_22998</incoming>
@@ -1171,15 +1148,16 @@ Verbiage here is a bit strange.
 &lt;/body&gt;
 &lt;/html&gt;</text>
         </textAnnotation>
-        <association sourceRef="_18_5_1_11940316_1500040662622_528544_23495" targetRef="_18_5_1_11940316_1499265732973_193572_22420" associationDirection="None" id="_18_5_2_36470677_1510673046251_307036_0"/>
-        <association sourceRef="_18_5_1_11940316_1500040662622_528544_23495" targetRef="_18_5_1_11940316_1499265871656_808202_22493" associationDirection="None" id="_18_5_2_36470677_1510673046251_738821_0"/>
+        <association sourceRef="_18_5_1_11940316_1500040662622_528544_23495" targetRef="_18_5_1_11940316_1499265732973_193572_22420" associationDirection="None" id="_18_5_2_36470677_1513786337337_959076_0"/>
+        <association sourceRef="_18_5_1_11940316_1500040662622_528544_23495" targetRef="_18_5_1_11940316_1499265871656_808202_22493" associationDirection="None" id="_18_5_2_36470677_1513786337337_946093_0"/>
+        <association sourceRef="_18_5_1_11940316_1499264717287_461578_22976" targetRef="_18_5_1_11940316_1499264717290_80609_22987" associationDirection="One" id="_18_5_2_43701b0_1511987234077_276562_71073"/>
         <resourceRole name="" id="_18_5_2_11940316_1505763016050_836547_33397"/>
-        <resourceRole name="" id="_18_5_1_11940316_1499433806084_15219_22378"/>
         <resourceRole name="" id="_18_5_1_11940316_1499434521438_871252_22515"/>
+        <resourceRole name="" id="_18_5_1_11940316_1499433806084_15219_22378"/>
     </process>
     <process isClosed="false" isExecutable="false" name="NVRA General Program" id="_18_5_1_11940316_1499458815454_16555_25395">
         <documentation textFormat="text/plain">For each address update: Look up a record in the voter registration database, and confirm or update the voter’s address.</documentation>
-        <ioSpecification id="_18_5_2_1_1510673046358_947869_0">
+        <ioSpecification id="_18_5_2_1_1513786337438_983538_0">
             <dataInput name="Address Update Records" isCollection="true" id="_18_5_1_11940316_1499538115566_731701_25820"/>
             <inputSet/>
             <outputSet/>
@@ -1205,10 +1183,15 @@ Verbiage here is a bit strange.
             <incoming>_18_5_1_11940316_1502468865282_578236_31673</incoming>
             <outgoing>_18_5_1_11940316_1499607747772_164885_26831</outgoing>
             <property name="Modify Voter Record_pin_out" id="_18_5_1_11940316_1499538062196_328180_25784_pin_out"/>
+            <property name="Modify Voter Record_pin_in" id="_18_5_1_11940316_1499538062196_328180_25784_pin_in"/>
             <dataInputAssociation id="_18_5_1_11940316_1499538130371_753231_25847">
                 <sourceRef>_18_5_1_11940316_1499538115566_731701_25820</sourceRef>
                 <targetRef>_18_5_1_11940316_1499538062196_328180_25784_pin_out</targetRef>
             </dataInputAssociation>
+            <dataOutputAssociation id="_18_5_2_43701b0_1513005416666_745424_29782">
+                <sourceRef>_18_5_1_11940316_1499538062196_328180_25784_pin_in</sourceRef>
+                <targetRef>_18_5_2_43701b0_1513005382201_701288_29756</targetRef>
+            </dataOutputAssociation>
             <resourceRole name="" id="_18_5_1_11940316_1499538062256_793477_25797_Ref-1"/>
             <multiInstanceLoopCharacteristics isSequential="false" behavior="All" id="_18_5_1_11940316_1499538062196_328180_25784_Ref-1"/>
             <exclusiveGateway gatewayDirection="Unspecified" name="Addresses are Different?" id="_18_5_1_11940316_1499538193296_474424_25915">
@@ -1248,16 +1231,12 @@ Verbiage here is a bit strange.
                 <documentation textFormat="text/plain">Update the voting address to the new address identified by the address update record.</documentation>
                 <incoming>_18_5_1_11940316_1499538193301_325779_25930</incoming>
                 <outgoing>_18_5_1_11940316_1502834761396_767108_41860</outgoing>
-                <property name="Update voting address_pin_in" id="_18_5_1_11940316_1499538193298_34217_25919_pin_in"/>
-                <dataOutputAssociation id="_18_5_1_11940316_1503186560020_515851_33283">
-                    <sourceRef>_18_5_1_11940316_1499538193298_34217_25919_pin_in</sourceRef>
-                    <targetRef>_18_5_1_11940316_1503186415517_591465_33250</targetRef>
-                </dataOutputAssociation>
                 <resourceRole name="" id="_18_5_1_11940316_1499538062256_793477_25797_Ref-4"/>
                 <resourceRole name="" id="_18_5_2_11940316_1505762873474_919779_33334_Ref-3"/>
             </task>
             <endEvent name="Address Updated" id="_18_5_1_11940316_1499538193299_730655_25920">
                 <incoming>_18_5_1_11940316_1499538193301_838395_25935</incoming>
+                <terminateEventDefinition id="_18_5_1_11940316_1499538193299_730655_25920_Ref-1"/>
             </endEvent>
             <startEvent name="" id="_18_5_1_11940316_1499538214035_185206_26092">
                 <outgoing>_18_5_1_11940316_1499538218570_269807_26107</outgoing>
@@ -1279,8 +1258,8 @@ Verbiage here is a bit strange.
             </task>
             <callActivity calledElement="_18_5_1_11940316_1499863665088_643400_24771" isForCompensation="false" startQuantity="1" completionQuantity="1" name="Confirm address" id="_18_5_1_11940316_1501785314894_805902_32853">
                 <documentation textFormat="text/plain">Confirm the voter’s address according to the confirmation process.</documentation>
-                <incoming>_18_5_1_11940316_1501785314865_763926_32847</incoming>
                 <incoming>_18_5_1_11940316_1502834761396_767108_41860</incoming>
+                <incoming>_18_5_2_43701b0_1512591694741_315408_30328</incoming>
                 <outgoing>_18_5_1_11940316_1501792269507_107230_33047</outgoing>
                 <resourceRole name="" id="_18_5_1_11940316_1499538062256_793477_25797_Ref-6"/>
             </callActivity>
@@ -1303,15 +1282,6 @@ Verbiage here is a bit strange.
                 <incoming>_18_5_1_11940316_1501859503601_812323_26430</incoming>
                 <outgoing>_18_5_1_11940316_1501851143041_273227_26131</outgoing>
                 <outgoing>_18_5_1_11940316_1503600922720_449960_34369</outgoing>
-                <property name="Remove voter from list of eligible voters_pin_in" id="_18_5_1_11940316_1501850918134_940438_26092_pin_in"/>
-                <dataOutputAssociation id="_18_5_2_11940316_1506297465057_438209_28355">
-                    <sourceRef>_18_5_1_11940316_1501850918134_940438_26092_pin_in</sourceRef>
-                    <targetRef>_18_5_1_11940316_1503186415517_591465_33250</targetRef>
-                </dataOutputAssociation>
-                <dataOutputAssociation id="_18_5_2_11940316_1506297471534_791073_28364">
-                    <sourceRef>_18_5_1_11940316_1501850918134_940438_26092_pin_in</sourceRef>
-                    <targetRef>_18_5_1_11940316_1503186415517_591465_33250</targetRef>
-                </dataOutputAssociation>
                 <resourceRole name="" id="_18_5_1_11940316_1499538062256_793477_25797_Ref-8"/>
                 <resourceRole name="" id="_18_5_2_11940316_1505762873474_919779_33334_Ref-4"/>
             </task>
@@ -1322,21 +1292,18 @@ Verbiage here is a bit strange.
                 <resourceRole name="" id="_18_5_1_11940316_1499538062256_793477_25797_Ref-9"/>
             </task>
             <endEvent name="No Change" id="_18_5_1_11940316_1499538193299_345716_25921">
-                <incoming>_18_5_1_11940316_1501785314874_955401_32850</incoming>
+                <incoming>_18_5_2_43701b0_1513010180938_194115_30050</incoming>
+                <terminateEventDefinition id="_18_5_1_11940316_1499538193299_345716_25921_Ref-1"/>
             </endEvent>
             <endEvent name="Voter Removed" id="_18_5_1_11940316_1501851451629_90456_26151">
                 <incoming>_18_5_1_11940316_1501851451668_360889_26156</incoming>
                 <incoming>_18_5_1_11940316_1503600922720_449960_34369</incoming>
+                <terminateEventDefinition id="_18_5_1_11940316_1501851451629_90456_26151_Ref-1"/>
             </endEvent>
             <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Update address" id="_18_5_1_11940316_1501851979047_375778_26199">
                 <documentation textFormat="text/plain">Update the voter’s record to reflect the new address.</documentation>
-                <incoming>_18_5_1_11940316_1501851979120_947623_26208</incoming>
+                <incoming>_18_5_2_43701b0_1513010272149_472815_30128</incoming>
                 <outgoing>_18_5_1_11940316_1501859251266_413941_26341</outgoing>
-                <property name="Update address_pin_in" id="_18_5_1_11940316_1501851979047_375778_26199_pin_in"/>
-                <dataOutputAssociation id="_18_5_1_11940316_1503186601021_134226_33301">
-                    <sourceRef>_18_5_1_11940316_1501851979047_375778_26199_pin_in</sourceRef>
-                    <targetRef>_18_5_1_11940316_1503186415517_591465_33250</targetRef>
-                </dataOutputAssociation>
                 <resourceRole name="" id="_18_5_1_11940316_1499538062256_793477_25797_Ref-10"/>
                 <resourceRole name="" id="_18_5_2_11940316_1505762873474_919779_33334_Ref-5"/>
             </task>
@@ -1347,25 +1314,21 @@ Verbiage here is a bit strange.
                 <documentation textFormat="text/plain">Remove the voter from a suspended status or otherwise indicate the voter’s recent activity.</documentation>
                 <incoming>_18_5_1_11940316_1503595174016_629343_29314</incoming>
                 <outgoing>_18_5_1_11940316_1503595317307_556016_29354</outgoing>
-                <property name="Reactivate voter_pin_in" id="_18_5_1_11940316_1503595112303_578791_29242_pin_in"/>
-                <dataOutputAssociation id="_18_5_2_11940316_1506297499273_86843_28383">
-                    <sourceRef>_18_5_1_11940316_1503595112303_578791_29242_pin_in</sourceRef>
-                    <targetRef>_18_5_1_11940316_1503186415517_591465_33250</targetRef>
-                </dataOutputAssociation>
                 <resourceRole name="" id="_18_5_1_11940316_1499865181353_98061_25006"/>
                 <resourceRole name="" id="_18_5_2_11940316_1505762873474_919779_33334_Ref-6"/>
             </task>
-            <boundaryEvent cancelActivity="false" attachedToRef="_18_5_1_11940316_1501785314894_805902_32853" name="Qualifying Activity Performed" id="_18_5_1_11940316_1503595147644_269336_29287">
+            <boundaryEvent cancelActivity="true" attachedToRef="_18_5_1_11940316_1501785314894_805902_32853" name="Other Qualifying Activity Performed" id="_18_5_1_11940316_1503595147644_269336_29287">
                 <outgoing>_18_5_1_11940316_1503595174016_629343_29314</outgoing>
                 <signalEventDefinition id="_18_5_1_11940316_1503595147644_269336_29287_Ref-1"/>
             </boundaryEvent>
-            <endEvent name="" id="_18_5_1_11940316_1503595317269_281208_29350">
+            <endEvent name="No change" id="_18_5_1_11940316_1503595317269_281208_29350">
                 <incoming>_18_5_1_11940316_1503595317307_556016_29354</incoming>
+                <terminateEventDefinition id="_18_5_1_11940316_1503595317269_281208_29350_Ref-1"/>
             </endEvent>
             <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Mark record as inactive" id="_18_5_1_11940316_1503599823973_368225_34325">
                 <documentation textFormat="text/plain">Mark record as subject to future removal.</documentation>
-                <incoming>_18_5_1_11940316_1503599825323_838612_34343</incoming>
-                <outgoing>_18_5_1_11940316_1501785314865_763926_32847</outgoing>
+                <incoming>_18_5_2_43701b0_1512591634987_955282_30308</incoming>
+                <outgoing>_18_5_2_43701b0_1513009263404_314948_29979</outgoing>
                 <property name="Mark record as inactive_pin_in" id="_18_5_1_11940316_1503599823973_368225_34325_pin_in"/>
                 <dataOutputAssociation id="_18_5_2_11940316_1506297201327_950000_28313">
                     <sourceRef>_18_5_1_11940316_1503599823973_368225_34325_pin_in</sourceRef>
@@ -1373,6 +1336,27 @@ Verbiage here is a bit strange.
                 </dataOutputAssociation>
                 <resourceRole name="" id="_18_5_1_11940316_1499538062256_793477_25797_Ref-11"/>
                 <resourceRole name="" id="_18_5_2_11940316_1505762873474_919779_33334_Ref-7"/>
+            </task>
+            <intermediateCatchEvent name="Grace Period Elapsed" id="_18_5_2_43701b0_1512591594387_287433_30285">
+                <incoming>_18_5_2_43701b0_1512591701047_962999_30340</incoming>
+                <outgoing>_18_5_2_43701b0_1512591634987_955282_30308</outgoing>
+                <timerEventDefinition id="_18_5_2_43701b0_1512591594387_287433_30285_Ref-1"/>
+            </intermediateCatchEvent>
+            <parallelGateway gatewayDirection="Unspecified" name="" id="_18_5_2_43701b0_1512591693737_858577_30320">
+                <incoming>_18_5_1_11940316_1503599825323_838612_34343</incoming>
+                <outgoing>_18_5_2_43701b0_1512591694741_315408_30328</outgoing>
+                <outgoing>_18_5_2_43701b0_1512591701047_962999_30340</outgoing>
+            </parallelGateway>
+            <endEvent name="" id="_18_5_2_43701b0_1513009263389_882177_29974">
+                <incoming>_18_5_2_43701b0_1513009263404_314948_29979</incoming>
+            </endEvent>
+            <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Reactivate voter" id="_18_5_2_43701b0_1513010179752_223369_30031">
+                <incoming>_18_5_1_11940316_1501785314874_955401_32850</incoming>
+                <outgoing>_18_5_2_43701b0_1513010180938_194115_30050</outgoing>
+            </task>
+            <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Reactivate voter" id="_18_5_2_43701b0_1513010271065_119878_30109">
+                <incoming>_18_5_1_11940316_1501851979120_947623_26208</incoming>
+                <outgoing>_18_5_2_43701b0_1513010272149_472815_30128</outgoing>
             </task>
             <sequenceFlow sourceRef="_18_5_1_11940316_1499538193295_717500_25914" targetRef="_18_5_1_11940316_1499538193296_474424_25915" name="" id="_18_5_1_11940316_1499538193300_654421_25924"/>
             <sequenceFlow sourceRef="_18_5_1_11940316_1499538231310_711156_26118" targetRef="_18_5_1_11940316_1499538193295_717500_25914" name="" id="_18_5_1_11940316_1499538193299_469490_25922">
@@ -1399,10 +1383,7 @@ Verbiage here is a bit strange.
             <sequenceFlow sourceRef="_18_5_1_11940316_1501785059251_556155_32749" targetRef="_18_5_1_11940316_1501785086989_797748_32782" name="" id="_18_5_1_11940316_1501785087062_271708_32792">
                 <conditionExpression xsi:type="tFormalExpression">Mailing Address Changed</conditionExpression>
             </sequenceFlow>
-            <sequenceFlow sourceRef="_18_5_1_11940316_1503599823973_368225_34325" targetRef="_18_5_1_11940316_1501785314894_805902_32853" name="" id="_18_5_1_11940316_1501785314865_763926_32847">
-                <conditionExpression xsi:type="tFormalExpression"></conditionExpression>
-            </sequenceFlow>
-            <sequenceFlow sourceRef="_18_5_1_11940316_1501792268435_139035_33036" targetRef="_18_5_1_11940316_1499538193299_345716_25921" name="" id="_18_5_1_11940316_1501785314874_955401_32850">
+            <sequenceFlow sourceRef="_18_5_1_11940316_1501792268435_139035_33036" targetRef="_18_5_2_43701b0_1513010179752_223369_30031" name="" id="_18_5_1_11940316_1501785314874_955401_32850">
                 <conditionExpression xsi:type="tFormalExpression">Confirmed Current Address</conditionExpression>
             </sequenceFlow>
             <sequenceFlow sourceRef="_18_5_1_11940316_1501785314894_805902_32853" targetRef="_18_5_1_11940316_1501792268435_139035_33036" name="" id="_18_5_1_11940316_1501792269507_107230_33047"/>
@@ -1411,7 +1392,7 @@ Verbiage here is a bit strange.
             </sequenceFlow>
             <sequenceFlow sourceRef="_18_5_1_11940316_1501850918134_940438_26092" targetRef="_18_5_1_11940316_1501851142974_802370_26122" name="" id="_18_5_1_11940316_1501851143041_273227_26131"/>
             <sequenceFlow sourceRef="_18_5_1_11940316_1501851142974_802370_26122" targetRef="_18_5_1_11940316_1501851451629_90456_26151" name="" id="_18_5_1_11940316_1501851451668_360889_26156"/>
-            <sequenceFlow sourceRef="_18_5_1_11940316_1501792268435_139035_33036" targetRef="_18_5_1_11940316_1501851979047_375778_26199" name="" id="_18_5_1_11940316_1501851979120_947623_26208">
+            <sequenceFlow sourceRef="_18_5_1_11940316_1501792268435_139035_33036" targetRef="_18_5_2_43701b0_1513010271065_119878_30109" name="" id="_18_5_1_11940316_1501851979120_947623_26208">
                 <conditionExpression xsi:type="tFormalExpression">Moved inside jurisdiction</conditionExpression>
             </sequenceFlow>
             <sequenceFlow sourceRef="_18_5_1_11940316_1501785086989_797748_32782" targetRef="_18_5_1_11940316_1501859207903_877945_26318" name="" id="_18_5_1_11940316_1501859207959_138417_26323"/>
@@ -1422,10 +1403,16 @@ Verbiage here is a bit strange.
             <sequenceFlow sourceRef="_18_5_1_11940316_1499538193298_34217_25919" targetRef="_18_5_1_11940316_1501785314894_805902_32853" name="" id="_18_5_1_11940316_1502834761396_767108_41860"/>
             <sequenceFlow sourceRef="_18_5_1_11940316_1503595147644_269336_29287" targetRef="_18_5_1_11940316_1503595112303_578791_29242" name="" id="_18_5_1_11940316_1503595174016_629343_29314"/>
             <sequenceFlow sourceRef="_18_5_1_11940316_1503595112303_578791_29242" targetRef="_18_5_1_11940316_1503595317269_281208_29350" name="" id="_18_5_1_11940316_1503595317307_556016_29354"/>
-            <sequenceFlow sourceRef="_18_5_1_11940316_1499538193297_602063_25917" targetRef="_18_5_1_11940316_1503599823973_368225_34325" name="" id="_18_5_1_11940316_1503599825323_838612_34343">
+            <sequenceFlow sourceRef="_18_5_1_11940316_1499538193297_602063_25917" targetRef="_18_5_2_43701b0_1512591693737_858577_30320" name="" id="_18_5_1_11940316_1503599825323_838612_34343">
                 <conditionExpression xsi:type="tFormalExpression">Yes</conditionExpression>
             </sequenceFlow>
             <sequenceFlow sourceRef="_18_5_1_11940316_1501850918134_940438_26092" targetRef="_18_5_1_11940316_1501851451629_90456_26151" name="" id="_18_5_1_11940316_1503600922720_449960_34369"/>
+            <sequenceFlow sourceRef="_18_5_2_43701b0_1512591594387_287433_30285" targetRef="_18_5_1_11940316_1503599823973_368225_34325" name="" id="_18_5_2_43701b0_1512591634987_955282_30308"/>
+            <sequenceFlow sourceRef="_18_5_2_43701b0_1512591693737_858577_30320" targetRef="_18_5_1_11940316_1501785314894_805902_32853" name="" id="_18_5_2_43701b0_1512591694741_315408_30328"/>
+            <sequenceFlow sourceRef="_18_5_2_43701b0_1512591693737_858577_30320" targetRef="_18_5_2_43701b0_1512591594387_287433_30285" name="" id="_18_5_2_43701b0_1512591701047_962999_30340"/>
+            <sequenceFlow sourceRef="_18_5_1_11940316_1503599823973_368225_34325" targetRef="_18_5_2_43701b0_1513009263389_882177_29974" name="" id="_18_5_2_43701b0_1513009263404_314948_29979"/>
+            <sequenceFlow sourceRef="_18_5_2_43701b0_1513010179752_223369_30031" targetRef="_18_5_1_11940316_1499538193299_345716_25921" name="" id="_18_5_2_43701b0_1513010180938_194115_30050"/>
+            <sequenceFlow sourceRef="_18_5_2_43701b0_1513010271065_119878_30109" targetRef="_18_5_1_11940316_1501851979047_375778_26199" name="" id="_18_5_2_43701b0_1513010272149_472815_30128"/>
             <textAnnotation textFormat="text/plain" id="_18_5_1_11940316_1501786379256_265198_32967">
                 <text>&lt;html&gt;
   &lt;head&gt;
@@ -1442,7 +1429,7 @@ Can be confirming old or new address...&amp;#160;
 &lt;/body&gt;
 &lt;/html&gt;</text>
             </textAnnotation>
-            <association sourceRef="_18_5_1_11940316_1501786379256_265198_32967" targetRef="_18_5_1_11940316_1501785314894_805902_32853" associationDirection="None" id="_18_5_2_36470677_1510673046253_52141_0"/>
+            <association sourceRef="_18_5_1_11940316_1501786379256_265198_32967" targetRef="_18_5_1_11940316_1501785314894_805902_32853" associationDirection="None" id="_18_5_2_36470677_1513786337339_967851_0"/>
             <textAnnotation textFormat="text/plain" id="_18_5_1_11940316_1501786135093_680688_32957">
                 <text>&lt;html&gt;
   &lt;head&gt;
@@ -1478,24 +1465,7 @@ New Jurisdiction&amp;#160;
 &lt;/html&gt;
 </text>
             </textAnnotation>
-            <association sourceRef="_18_5_1_11940316_1501854756750_57606_26293" targetRef="_18_5_1_11940316_1501851142974_802370_26122" associationDirection="None" id="_18_5_2_36470677_1510673046253_25589_0"/>
-            <textAnnotation textFormat="text/plain" id="_18_5_1_11940316_1502835187257_705156_41863">
-                <text>&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-Is this the same process?&amp;#160;
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;</text>
-            </textAnnotation>
-            <association sourceRef="_18_5_1_11940316_1502835187257_705156_41863" targetRef="_18_5_1_11940316_1502834761396_767108_41860" associationDirection="None" id="_18_5_2_36470677_1510673046254_647189_0"/>
+            <association sourceRef="_18_5_1_11940316_1501854756750_57606_26293" targetRef="_18_5_1_11940316_1501851142974_802370_26122" associationDirection="None" id="_18_5_2_36470677_1513786337339_764990_0"/>
             <textAnnotation textFormat="text/plain" id="_18_5_1_11940316_1503593446891_566275_28398">
                 <text>&lt;html&gt;
   &lt;head&gt;
@@ -1514,42 +1484,12 @@ Is this the same process?&amp;#160;
 &lt;/html&gt;
 </text>
             </textAnnotation>
-            <association sourceRef="_18_5_1_11940316_1503593446891_566275_28398" targetRef="_18_5_1_11940316_1499538193300_337673_25927" associationDirection="None" id="_18_5_2_36470677_1510673046254_710056_0"/>
-            <association sourceRef="_18_5_1_11940316_1503593446891_566275_28398" targetRef="_18_5_1_11940316_1503599823973_368225_34325" associationDirection="None" id="_18_5_2_36470677_1510673046254_310647_0"/>
-            <textAnnotation textFormat="text/plain" id="_18_5_1_11940316_1503599480256_209255_34307">
-                <text>&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-Transfer Notice&amp;#160;
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;</text>
+            <association sourceRef="_18_5_1_11940316_1503593446891_566275_28398" targetRef="_18_5_1_11940316_1499538193300_337673_25927" associationDirection="None" id="_18_5_2_36470677_1513786337339_740969_0"/>
+            <association sourceRef="_18_5_1_11940316_1503593446891_566275_28398" targetRef="_18_5_1_11940316_1503599823973_368225_34325" associationDirection="None" id="_18_5_2_36470677_1513786337339_230906_0"/>
+            <textAnnotation textFormat="text/plain" id="_18_5_2_43701b0_1513007711574_184278_29880">
+                <text>Call something else?</text>
             </textAnnotation>
-            <association sourceRef="_18_5_1_11940316_1503599480256_209255_34307" targetRef="_18_5_1_11940316_1501785314894_805902_32853" associationDirection="None" id="_18_5_2_36470677_1510673046254_169488_0"/>
-            <textAnnotation textFormat="text/plain" id="_18_5_2_11940316_1505943199761_735929_40667">
-                <text>&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-NC has grace period&amp;#160;before deactivation
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;</text>
-            </textAnnotation>
-            <association sourceRef="_18_5_2_11940316_1505943199761_735929_40667" targetRef="_18_5_1_11940316_1503599823973_368225_34325" associationDirection="None" id="_18_5_2_36470677_1510673046254_162387_0"/>
+            <association sourceRef="_18_5_2_43701b0_1513007711574_184278_29880" targetRef="_18_5_2_43701b0_1512591594387_287433_30285" associationDirection="None" id="_18_5_2_36470677_1513786337339_939087_0"/>
         </subProcess>
         <endEvent name="General Program Ran" id="_18_5_1_11940316_1499607747739_896155_26827">
             <incoming>_18_5_1_11940316_1499607747772_164885_26831</incoming>
@@ -1557,8 +1497,10 @@ NC has grace period&amp;#160;before deactivation
         <startEvent name="Manual Start" id="_18_5_1_11940316_1502468850918_637775_31659">
             <outgoing>_18_5_1_11940316_1502468865282_578236_31673</outgoing>
         </startEvent>
-        <dataStoreReference dataStoreRef="_18_5_1_11940316_1503186415517_591465_33250" name="Voter Record" id="_18_5_1_11940316_1503186415532_643417_33252"/>
+        <dataObject isCollection="true" name="" id="_18_5_2_43701b0_1513005382201_701288_29756"/>
         <dataStoreReference dataStoreRef="_18_5_1_11940316_1499538115566_731701_25820" name="Address Update Records" id="_18_5_1_11940316_1499538115578_774756_25822"/>
+        <dataStoreReference dataStoreRef="_18_5_1_11940316_1503186415517_591465_33250" name="Voter Record" id="_18_5_2_11940316_1506297233865_410303_28316"/>
+        <dataObjectReference dataObjectRef="_18_5_2_43701b0_1513005382201_701288_29756" name="" id="_18_5_2_43701b0_1513005382223_621052_29758"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1499538054270_420723_25766" targetRef="_18_5_1_11940316_1499538062196_328180_25784" name="" id="_18_5_1_11940316_1499538062225_113105_25794"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1499538062196_328180_25784" targetRef="_18_5_1_11940316_1499607747739_896155_26827" name="" id="_18_5_1_11940316_1499607747772_164885_26831"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1502468850918_637775_31659" targetRef="_18_5_1_11940316_1499538062196_328180_25784" name="" id="_18_5_1_11940316_1502468865282_578236_31673"/>
@@ -1568,13 +1510,107 @@ NC has grace period&amp;#160;before deactivation
     </process>
     <process isClosed="false" isExecutable="false" name="Process Duplicate Report" id="_18_5_1_11940316_1499458828390_787248_25435">
         <documentation textFormat="text/plain">Process a report identifying potential duplicate records for the same voter.</documentation>
+        <laneSet id="_18_5_2_43701b0_1513034779041_533419_41939_Ref-1_laneSet">
+            <lane name="Election Jurisdiction" partitionElementRef="_18_5_1_11940316_1498999818037_96552_21933" id="_18_5_2_43701b0_1513034779041_533419_41939"/>
+        </laneSet>
     </process>
     <process isClosed="false" isExecutable="false" name="Perform Motor Vehicle/SSA Matching" id="_18_5_1_11940316_1499459792680_285026_25516">
         <documentation textFormat="text/plain">Try to match the voter's record against information on file with the motor vehicle authority and Social Security Administration.</documentation>
+        <laneSet id="_18_5_2_43701b0_1513029606397_81072_41200_Ref-1_laneSet">
+            <lane name="Election Jurisdiction" partitionElementRef="_18_5_1_11940316_1498999818037_96552_21933" id="_18_5_2_43701b0_1513029606397_81072_41200">
+                <flowNodeRef>_18_5_2_43701b0_1513029622778_470088_41215</flowNodeRef>
+                <flowNodeRef>_18_5_2_43701b0_1513030801275_663471_41294</flowNodeRef>
+                <flowNodeRef>_18_5_2_43701b0_1513030912254_574635_41600</flowNodeRef>
+                <flowNodeRef>_18_5_2_43701b0_1513031045832_427093_41671</flowNodeRef>
+                <flowNodeRef>_18_5_2_43701b0_1513031062241_697954_41692</flowNodeRef>
+                <flowNodeRef>_18_5_2_43701b0_1513032695912_464331_41721</flowNodeRef>
+                <flowNodeRef>_18_5_2_43701b0_1513033210928_519057_41774</flowNodeRef>
+                <flowNodeRef>_18_5_2_43701b0_1513033237240_754990_41795</flowNodeRef>
+                <flowNodeRef>_18_5_2_43701b0_1513033265654_27624_41823</flowNodeRef>
+                <flowNodeRef>_18_5_2_43701b0_1513033275592_309879_41841</flowNodeRef>
+            </lane>
+        </laneSet>
+        <laneSet id="_18_5_2_43701b0_1513030944797_661866_41639_Ref-1_laneSet">
+            <lane name="Motor Vehicle Authority" partitionElementRef="_18_5_2_43701b0_1513030927477_421698_41611" id="_18_5_2_43701b0_1513030944797_661866_41639"/>
+        </laneSet>
+        <startEvent name="Qualifying Transaction" id="_18_5_2_43701b0_1513029622778_470088_41215">
+            <outgoing>_18_5_2_43701b0_1513030776375_788256_41282</outgoing>
+        </startEvent>
+        <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Send registration data to motor vehicle authority" id="_18_5_2_43701b0_1513030801275_663471_41294">
+            <incoming>_18_5_2_43701b0_1513030776375_788256_41282</incoming>
+            <outgoing>_18_5_2_43701b0_1513030912269_630570_41603</outgoing>
+            <resourceRole name="" id="_18_5_2_43701b0_1513030686844_292239_41255_Ref-1"/>
+        </task>
+        <intermediateCatchEvent name="Recieve response" id="_18_5_2_43701b0_1513030912254_574635_41600">
+            <incoming>_18_5_2_43701b0_1513030912269_630570_41603</incoming>
+            <outgoing>_18_5_2_43701b0_1513031045847_381401_41680</outgoing>
+            <messageEventDefinition id="_18_5_2_43701b0_1513030912254_574635_41600_Ref-1"/>
+        </intermediateCatchEvent>
+        <exclusiveGateway gatewayDirection="Unspecified" name="Match?" id="_18_5_2_43701b0_1513031045832_427093_41671">
+            <incoming>_18_5_2_43701b0_1513031045847_381401_41680</incoming>
+            <outgoing>_18_5_2_43701b0_1513031062255_305966_41697</outgoing>
+            <outgoing>_18_5_2_43701b0_1513032695933_752368_41730</outgoing>
+        </exclusiveGateway>
+        <endEvent name="Record matches" id="_18_5_2_43701b0_1513031062241_697954_41692">
+            <incoming>_18_5_2_43701b0_1513031062255_305966_41697</incoming>
+        </endEvent>
+        <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Follow up with voter" id="_18_5_2_43701b0_1513032695912_464331_41721">
+            <incoming>_18_5_2_43701b0_1513032695933_752368_41730</incoming>
+            <outgoing>_18_5_2_43701b0_1513033210947_960115_41783</outgoing>
+            <resourceRole name="" id="_18_5_2_43701b0_1513030686844_292239_41255_Ref-2"/>
+        </task>
+        <boundaryEvent cancelActivity="true" attachedToRef="_18_5_2_43701b0_1513032695912_464331_41721" name="No response" id="_18_5_2_43701b0_1513032797800_281592_41748">
+            <outgoing>_18_5_2_43701b0_1513033390602_786772_41875</outgoing>
+            <timerEventDefinition id="_18_5_2_43701b0_1513032797800_281592_41748_Ref-1"/>
+        </boundaryEvent>
+        <exclusiveGateway gatewayDirection="Unspecified" name="Correction needed?" id="_18_5_2_43701b0_1513033210928_519057_41774">
+            <incoming>_18_5_2_43701b0_1513033210947_960115_41783</incoming>
+            <outgoing>_18_5_2_43701b0_1513033237260_812676_41804</outgoing>
+            <outgoing>_18_5_2_43701b0_1513033265666_619682_41829</outgoing>
+        </exclusiveGateway>
+        <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Make correction" id="_18_5_2_43701b0_1513033237240_754990_41795">
+            <incoming>_18_5_2_43701b0_1513033237260_812676_41804</incoming>
+            <outgoing>_18_5_2_43701b0_1513033275607_443367_41846</outgoing>
+            <resourceRole name="" id="_18_5_2_43701b0_1513030686844_292239_41255_Ref-3"/>
+        </task>
+        <endEvent name="No change made" id="_18_5_2_43701b0_1513033265654_27624_41823">
+            <incoming>_18_5_2_43701b0_1513033265666_619682_41829</incoming>
+            <incoming>_18_5_2_43701b0_1513033390602_786772_41875</incoming>
+        </endEvent>
+        <endEvent name="Record corrected" id="_18_5_2_43701b0_1513033275592_309879_41841">
+            <incoming>_18_5_2_43701b0_1513033275607_443367_41846</incoming>
+        </endEvent>
+        <sequenceFlow sourceRef="_18_5_2_43701b0_1513029622778_470088_41215" targetRef="_18_5_2_43701b0_1513030801275_663471_41294" name="" id="_18_5_2_43701b0_1513030776375_788256_41282"/>
+        <sequenceFlow sourceRef="_18_5_2_43701b0_1513030801275_663471_41294" targetRef="_18_5_2_43701b0_1513030912254_574635_41600" name="" id="_18_5_2_43701b0_1513030912269_630570_41603"/>
+        <sequenceFlow sourceRef="_18_5_2_43701b0_1513030912254_574635_41600" targetRef="_18_5_2_43701b0_1513031045832_427093_41671" name="" id="_18_5_2_43701b0_1513031045847_381401_41680"/>
+        <sequenceFlow sourceRef="_18_5_2_43701b0_1513031045832_427093_41671" targetRef="_18_5_2_43701b0_1513031062241_697954_41692" name="" id="_18_5_2_43701b0_1513031062255_305966_41697">
+            <conditionExpression xsi:type="tFormalExpression">Yes</conditionExpression>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="_18_5_2_43701b0_1513031045832_427093_41671" targetRef="_18_5_2_43701b0_1513032695912_464331_41721" name="" id="_18_5_2_43701b0_1513032695933_752368_41730"/>
+        <sequenceFlow sourceRef="_18_5_2_43701b0_1513032695912_464331_41721" targetRef="_18_5_2_43701b0_1513033210928_519057_41774" name="" id="_18_5_2_43701b0_1513033210947_960115_41783"/>
+        <sequenceFlow sourceRef="_18_5_2_43701b0_1513033210928_519057_41774" targetRef="_18_5_2_43701b0_1513033237240_754990_41795" name="" id="_18_5_2_43701b0_1513033237260_812676_41804">
+            <conditionExpression xsi:type="tFormalExpression">Yes</conditionExpression>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="_18_5_2_43701b0_1513033210928_519057_41774" targetRef="_18_5_2_43701b0_1513033265654_27624_41823" name="" id="_18_5_2_43701b0_1513033265666_619682_41829">
+            <conditionExpression xsi:type="tFormalExpression">No</conditionExpression>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="_18_5_2_43701b0_1513033237240_754990_41795" targetRef="_18_5_2_43701b0_1513033275592_309879_41841" name="" id="_18_5_2_43701b0_1513033275607_443367_41846"/>
+        <sequenceFlow sourceRef="_18_5_2_43701b0_1513032797800_281592_41748" targetRef="_18_5_2_43701b0_1513033265654_27624_41823" name="" id="_18_5_2_43701b0_1513033390602_786772_41875"/>
+        <textAnnotation textFormat="text/plain" id="_18_5_2_43701b0_1513034583466_460815_41882">
+            <text>What about dead people</text>
+        </textAnnotation>
+        <textAnnotation textFormat="text/plain" id="_18_5_2_43701b0_1513034601030_63179_41902">
+            <text>Is this always a confirmation notice</text>
+        </textAnnotation>
+        <association sourceRef="_18_5_2_43701b0_1513034601030_63179_41902" targetRef="_18_5_2_43701b0_1513032695912_464331_41721" associationDirection="None" id="_18_5_2_36470677_1513786337344_219958_0"/>
+        <resourceRole name="" id="_18_5_2_43701b0_1513030686844_292239_41255"/>
     </process>
     <process isClosed="false" isExecutable="false" name=" Remove Non Citizens" id="_18_5_1_11940316_1499459803168_807600_25555"/>
     <process isClosed="false" isExecutable="false" name="Confirmation Process" id="_18_5_1_11940316_1499863665088_643400_24771">
         <documentation textFormat="text/plain">Confirm the location of the voter's current place of residence.</documentation>
+        <laneSet id="_18_5_1_11940316_1501015994140_731116_25390_Ref-1_laneSet">
+            <lane name="Voter" partitionElementRef="_18_5_1_11940316_1498828669742_83683_23366" id="_18_5_1_11940316_1501015994140_731116_25390"/>
+        </laneSet>
         <laneSet id="_18_5_1_11940316_1501015990300_689992_25374_Ref-1_laneSet">
             <lane name="Election Authority" partitionElementRef="_18_5_1_11940316_1498999818037_96552_21933" id="_18_5_1_11940316_1501015990300_689992_25374">
                 <flowNodeRef>_18_5_1_11940316_1499865163906_678062_24988</flowNodeRef>
@@ -1588,9 +1624,6 @@ NC has grace period&amp;#160;before deactivation
                 <flowNodeRef>_18_5_1_11940316_1501848057745_758770_26425</flowNodeRef>
                 <flowNodeRef>_18_5_1_11940316_1503596222905_303317_29367</flowNodeRef>
             </lane>
-        </laneSet>
-        <laneSet id="_18_5_1_11940316_1501015994140_731116_25390_Ref-1_laneSet">
-            <lane name="Voter" partitionElementRef="_18_5_1_11940316_1498828669742_83683_23366" id="_18_5_1_11940316_1501015994140_731116_25390"/>
         </laneSet>
         <startEvent name="" id="_18_5_1_11940316_1499863753183_40263_24824">
             <outgoing>_18_5_1_11940316_1499863774607_829898_24850</outgoing>
@@ -1663,20 +1696,22 @@ NC has grace period&amp;#160;before deactivation
         <textAnnotation textFormat="text/plain" id="_18_5_1_11940316_1501775333302_160167_32320">
             <text>&lt;html&gt;
   &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-Second Step&amp;#160;
-
+      Second Step&amp;#160;(NVRA)
     &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;</text>
+  &lt;/body&gt;
+&lt;/html&gt;
+</text>
         </textAnnotation>
-        <association sourceRef="_18_5_1_11940316_1501775333302_160167_32320" targetRef="_18_5_1_11940316_1501016189258_179207_25463" associationDirection="None" id="_18_5_2_36470677_1510673046259_300663_0"/>
+        <association sourceRef="_18_5_1_11940316_1501775333302_160167_32320" targetRef="_18_5_1_11940316_1501016189258_179207_25463" associationDirection="None" id="_18_5_2_36470677_1513786337345_855605_0"/>
         <textAnnotation textFormat="text/plain" id="_18_5_1_11940316_1501783719486_442175_32699">
             <text>&lt;html&gt;
   &lt;head&gt;
@@ -1693,8 +1728,8 @@ WI calls Continuation of Registration&amp;#160;
 &lt;/body&gt;
 &lt;/html&gt;</text>
         </textAnnotation>
-        <association sourceRef="_18_5_1_11940316_1501783719486_442175_32699" targetRef="_18_5_1_11940316_1499863774581_708516_24841" associationDirection="None" id="_18_5_2_36470677_1510673046259_583366_0"/>
-        <association sourceRef="_18_5_1_11940316_1501783719486_442175_32699" targetRef="_18_5_1_11940316_1501019786583_55527_25997" associationDirection="None" id="_18_5_2_36470677_1510673046259_966227_0"/>
+        <association sourceRef="_18_5_1_11940316_1501783719486_442175_32699" targetRef="_18_5_1_11940316_1499863774581_708516_24841" associationDirection="None" id="_18_5_2_36470677_1513786337345_287566_0"/>
+        <association sourceRef="_18_5_1_11940316_1501783719486_442175_32699" targetRef="_18_5_1_11940316_1501019786583_55527_25997" associationDirection="None" id="_18_5_2_36470677_1513786337345_499491_0"/>
         <textAnnotation textFormat="text/plain" id="_18_5_1_11940316_1501792388396_800795_33066">
             <text>&lt;html&gt;
   &lt;head&gt;
@@ -1711,7 +1746,7 @@ Could also be &amp;quot;confirming new address&amp;quot; depending on jurisdicti
 &lt;/body&gt;
 &lt;/html&gt;</text>
         </textAnnotation>
-        <association sourceRef="_18_5_1_11940316_1501792388396_800795_33066" targetRef="_18_5_1_11940316_1501775473074_585301_32398" associationDirection="None" id="_18_5_2_36470677_1510673046259_859354_0"/>
+        <association sourceRef="_18_5_1_11940316_1501792388396_800795_33066" targetRef="_18_5_1_11940316_1501775473074_585301_32398" associationDirection="None" id="_18_5_2_36470677_1513786337345_587107_0"/>
         <textAnnotation textFormat="text/plain" id="_18_5_1_11940316_1501850848177_738406_26063">
             <text>&lt;html&gt;
   &lt;head&gt;
@@ -1746,7 +1781,7 @@ But they still can respond to the mailer, right?&amp;#160;
 &lt;/html&gt;
 </text>
         </textAnnotation>
-        <association sourceRef="_18_5_1_11940316_1503594385209_172506_29230" targetRef="_18_5_1_11940316_1501859355233_889888_26400" associationDirection="None" id="_18_5_2_36470677_1510673046259_165774_0"/>
+        <association sourceRef="_18_5_1_11940316_1503594385209_172506_29230" targetRef="_18_5_1_11940316_1501859355233_889888_26400" associationDirection="None" id="_18_5_2_36470677_1513786337346_909068_0"/>
         <textAnnotation textFormat="text/plain" id="_18_5_1_11940316_1503596231534_149856_29385">
             <text>&lt;html&gt;
   &lt;head&gt;
@@ -1763,7 +1798,7 @@ This will allow the callee to determine whether to cancel the confirmation proce
 &lt;/body&gt;
 &lt;/html&gt;</text>
         </textAnnotation>
-        <association sourceRef="_18_5_1_11940316_1503596231534_149856_29385" targetRef="_18_5_1_11940316_1503596222905_303317_29367" associationDirection="None" id="_18_5_2_36470677_1510673046259_693286_0"/>
+        <association sourceRef="_18_5_1_11940316_1503596231534_149856_29385" targetRef="_18_5_1_11940316_1503596222905_303317_29367" associationDirection="None" id="_18_5_2_36470677_1513786337346_199635_0"/>
         <resourceRole name="" id="_18_5_1_11940316_1499865181353_98061_25006_Ref-1"/>
     </process>
     <process isClosed="false" isExecutable="false" name="Determine Ballot Styles" id="_18_5_1_11940316_1499867178057_795388_25700">
@@ -1790,12 +1825,12 @@ This will allow the callee to determine whether to cancel the confirmation proce
             <incoming>_18_5_1_11940316_1499867483011_565031_25895</incoming>
             <outgoing>_18_5_1_11940316_1499867586150_389278_25924</outgoing>
             <property name="Activate districts with contests_pin_out" id="_18_5_1_11940316_1499867482946_270129_25886_pin_out"/>
-            <dataInputAssociation id="_18_5_2_11940316_1504882881145_494947_31445">
-                <sourceRef>_18_5_2_11940316_1504882858846_630364_31421</sourceRef>
-                <targetRef>_18_5_1_11940316_1499867482946_270129_25886_pin_out</targetRef>
-            </dataInputAssociation>
             <dataInputAssociation id="_18_5_2_11940316_1504882924232_964600_31477">
                 <sourceRef>_18_5_2_11940316_1504882901159_736546_31453</sourceRef>
+                <targetRef>_18_5_1_11940316_1499867482946_270129_25886_pin_out</targetRef>
+            </dataInputAssociation>
+            <dataInputAssociation id="_18_5_2_11940316_1504882881145_494947_31445">
+                <sourceRef>_18_5_2_11940316_1504882858846_630364_31421</sourceRef>
                 <targetRef>_18_5_1_11940316_1499867482946_270129_25886_pin_out</targetRef>
             </dataInputAssociation>
             <resourceRole name="" id="_18_5_1_11940316_1499868512667_409156_23006_Ref-1"/>
@@ -1860,10 +1895,10 @@ This will allow the callee to determine whether to cancel the confirmation proce
         <endEvent name="Ballot Styles Determined" id="_18_5_1_11940316_1499868282375_435015_22774">
             <incoming>_18_5_1_11940316_1499868282429_565198_22779</incoming>
         </endEvent>
-        <dataStoreReference dataStoreRef="_18_5_2_11940316_1504882858846_630364_31421" name="Precinct and District Boundaries" id="_18_5_2_11940316_1504882858879_473735_31425"/>
         <dataStoreReference dataStoreRef="_18_5_2_11940316_1504882901159_736546_31453" name="Qualified Contests" id="_18_5_2_11940316_1504882901178_878197_31457"/>
-        <dataStoreReference dataStoreRef="_18_5_2_11940316_1506602927132_971854_29416" name="Ballot Styles" id="_18_5_2_11940316_1506602930315_279594_29431"/>
         <dataStoreReference dataStoreRef="_18_5_2_11940316_1506428778750_554922_43620" name="Voter Records" id="_18_5_2_11940316_1506428778769_967941_43622"/>
+        <dataStoreReference dataStoreRef="_18_5_2_11940316_1506602927132_971854_29416" name="Ballot Styles" id="_18_5_2_11940316_1506602930315_279594_29431"/>
+        <dataStoreReference dataStoreRef="_18_5_2_11940316_1504882858846_630364_31421" name="Precinct and District Boundaries" id="_18_5_2_11940316_1504882858879_473735_31425"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1499867471884_992901_25840" targetRef="_18_5_1_11940316_1499867482946_270129_25886" name="" id="_18_5_1_11940316_1499867483011_565031_25895"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1499867482946_270129_25886" targetRef="_18_5_1_11940316_1499867586119_356629_25915" name="" id="_18_5_1_11940316_1499867586150_389278_25924"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1499867586119_356629_25915" targetRef="_18_5_1_11940316_1499867614018_563711_25945" name="" id="_18_5_1_11940316_1499867614043_587634_25954"/>
@@ -1894,7 +1929,7 @@ May not always occur&amp;#160;
 &lt;/body&gt;
 &lt;/html&gt;</text>
         </textAnnotation>
-        <association sourceRef="_18_5_2_11940316_1504969146818_215433_33418" targetRef="_18_5_1_11940316_1499867730922_354790_26136" associationDirection="None" id="_18_5_2_36470677_1510673046281_523812_0"/>
+        <association sourceRef="_18_5_2_11940316_1504969146818_215433_33418" targetRef="_18_5_1_11940316_1499867730922_354790_26136" associationDirection="None" id="_18_5_2_36470677_1513786337370_83369_0"/>
         <resourceRole name="" id="_18_5_1_11940316_1499868512667_409156_23006"/>
     </process>
     <process isClosed="false" isExecutable="false" name="Recruit Polling Locations" id="_18_5_1_11940316_1499867189394_949100_25741">
@@ -1933,11 +1968,6 @@ May not always occur&amp;#160;
                 <documentation textFormat="text/plain">Select the contests appearing on this ballot style.</documentation>
                 <incoming>_18_5_1_11940316_1499869439860_131292_23265</incoming>
                 <outgoing>_18_5_1_11940316_1499869462052_796081_23308</outgoing>
-                <property name="Select contests by ballot style_pin_out" id="_18_5_1_11940316_1499869439797_686060_23256_pin_out"/>
-                <dataInputAssociation id="_18_5_2_11940316_1504032984626_503596_31551">
-                    <sourceRef>_18_5_2_11940316_1504032964154_543836_31527</sourceRef>
-                    <targetRef>_18_5_1_11940316_1499869439797_686060_23256_pin_out</targetRef>
-                </dataInputAssociation>
                 <resourceRole name="" id="_18_5_1_11940316_1499869646570_282407_23499_Ref-2"/>
             </task>
             <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Order contests" id="_18_5_1_11940316_1499869461984_365275_23299">
@@ -1993,24 +2023,6 @@ May not always occur&amp;#160;
             <sequenceFlow sourceRef="_18_5_1_11940316_1499869420907_223277_23240" targetRef="_18_5_1_11940316_1499869439797_686060_23256" name="" id="_18_5_1_11940316_1499869439860_131292_23265"/>
             <sequenceFlow sourceRef="_18_5_1_11940316_1499869560445_412730_23404" targetRef="_18_5_1_11940316_1499869512160_211346_23375" name="" id="_18_5_1_11940316_1499869577840_631423_23431"/>
             <sequenceFlow sourceRef="_18_5_2_11940316_1505756357397_385592_29120" targetRef="_18_5_1_11940316_1502385811681_512272_38572" name="" id="_18_5_1_11940316_1502385811682_532818_38573"/>
-            <textAnnotation textFormat="text/plain" id="_18_5_2_11940316_1506633669731_452788_29927">
-                <text>&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-Same thing?&amp;#160;
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;</text>
-            </textAnnotation>
-            <association sourceRef="_18_5_2_11940316_1506633669731_452788_29927" targetRef="_18_5_2_11940316_1504032964154_543836_31527" associationDirection="None" id="_18_5_2_36470677_1510673046262_235861_0"/>
-            <association sourceRef="_18_5_2_11940316_1506633669731_452788_29927" targetRef="_18_5_1_11940316_1502910768226_654671_27239" associationDirection="None" id="_18_5_2_36470677_1510673046262_959384_0"/>
         </subProcess>
         <startEvent isInterrupting="true" name="Ballot Styles Determined" id="_18_5_1_11940316_1502385702916_567484_38554">
             <outgoing>_18_5_1_11940316_1502385707076_820428_38568</outgoing>
@@ -2024,11 +2036,9 @@ Same thing?&amp;#160;
             <incoming>_18_5_1_11940316_1502387411922_630601_38614</incoming>
         </endEvent>
         <dataObject isCollection="true" name="Ballot Styles" id="_18_5_1_11940316_1502910768226_654671_27239"/>
-        <dataObject isCollection="true" name="List of Qualified Contests and Candidates" id="_18_5_2_11940316_1504032964154_543836_31527"/>
         <dataObject isCollection="true" name="Laid out Ballots" id="_18_5_2_11940316_1506456804064_442267_49767"/>
-        <dataObjectReference dataObjectRef="_18_5_1_11940316_1502910768226_654671_27239" name="Ballot Styles" id="_18_5_1_11940316_1502910768248_620785_27243"/>
         <dataObjectReference dataObjectRef="_18_5_2_11940316_1506456804064_442267_49767" name="Laid out Ballots" id="_18_5_2_11940316_1506456804105_450485_49771"/>
-        <dataObjectReference dataObjectRef="_18_5_2_11940316_1504032964154_543836_31527" name="List of Qualified Contests and Candidates" id="_18_5_2_11940316_1504032964179_171346_31531"/>
+        <dataObjectReference dataObjectRef="_18_5_1_11940316_1502910768226_654671_27239" name="Ballot Styles" id="_18_5_1_11940316_1502910768248_620785_27243"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1502385702916_567484_38554" targetRef="_18_5_1_11940316_1502385374226_704371_38499" name="" id="_18_5_1_11940316_1502385707076_820428_38568"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1502385374226_704371_38499" targetRef="_18_5_1_11940316_1502387411863_221229_38610" name="" id="_18_5_1_11940316_1502387411922_630601_38614"/>
         <textAnnotation textFormat="text/plain" id="_18_5_2_11940316_1504546807800_657049_42025">
@@ -2047,26 +2057,7 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
 &lt;/body&gt;
 &lt;/html&gt;</text>
         </textAnnotation>
-        <association sourceRef="_18_5_2_11940316_1504546807800_657049_42025" targetRef="_18_5_2_11940316_1505756357397_385592_29120" associationDirection="None" id="_18_5_2_36470677_1510673046262_535154_0"/>
-        <textAnnotation textFormat="text/plain" id="_18_5_2_11940316_1506608544324_295256_29542">
-            <text>&lt;html&gt;
-  &lt;head&gt;
-    &lt;style type="text/css"&gt;
-      &lt;!--
-        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
-      --&gt;
-    &lt;/style&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-      Called &amp;quot;Ballot Definition File&amp;quot; in EP&amp;#160;
-    &lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</text>
-        </textAnnotation>
-        <association sourceRef="_18_5_2_11940316_1506608544324_295256_29542" targetRef="_18_5_2_11940316_1506456804064_442267_49767" associationDirection="None" id="_18_5_2_36470677_1510673046262_628743_0"/>
+        <association sourceRef="_18_5_2_11940316_1504546807800_657049_42025" targetRef="_18_5_2_11940316_1505756357397_385592_29120" associationDirection="None" id="_18_5_2_36470677_1513786337350_396230_0"/>
         <resourceRole name="" id="_18_5_1_11940316_1499869646570_282407_23499"/>
     </process>
     <process isClosed="false" isExecutable="false" name="Prepare Poll Books" id="_18_5_1_11940316_1499869362021_780130_23192">
@@ -2080,30 +2071,30 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
                 <flowNodeRef>_18_5_1_11940316_1499870605700_484891_23667</flowNodeRef>
                 <flowNodeRef>_18_5_1_11940316_1499870625898_743659_23701</flowNodeRef>
                 <flowNodeRef>_18_5_1_11940316_1499870710061_500087_23729</flowNodeRef>
-                <flowNodeRef>_18_5_1_11940316_1499870777413_25173_23752</flowNodeRef>
                 <flowNodeRef>_18_5_1_11940316_1499870792458_897907_23780</flowNodeRef>
                 <flowNodeRef>_18_5_1_11940316_1499870876407_321844_23811</flowNodeRef>
                 <flowNodeRef>_18_5_1_11940316_1500477163404_206974_29452</flowNodeRef>
             </lane>
         </laneSet>
-        <startEvent name="" id="_18_5_1_11940316_1499870517314_473605_23550">
+        <startEvent isInterrupting="true" name="Time to prepare poll books" id="_18_5_1_11940316_1499870517314_473605_23550">
             <outgoing>_18_5_1_11940316_1499870522028_322062_23574</outgoing>
+            <timerEventDefinition id="_18_5_1_11940316_1499870517314_473605_23550_Ref-1"/>
         </startEvent>
-        <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Extract voters to be appear on list and other data from the voter registration database" id="_18_5_1_11940316_1499870521941_349394_23565">
+        <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Extract data from the voter registration database" id="_18_5_1_11940316_1499870521941_349394_23565">
             <documentation textFormat="text/plain">Extract a list of eligible voters from the voter registration database, including at a minimum, those in the geopolitical units participating in the election.</documentation>
             <incoming>_18_5_1_11940316_1499870522028_322062_23574</incoming>
             <outgoing>_18_5_1_11940316_1499870542009_24106_23606</outgoing>
-            <property name="Extract voters to be appear on list and other data from the voter registration database_pin_out" id="_18_5_1_11940316_1499870521941_349394_23565_pin_out"/>
-            <dataInputAssociation id="_18_5_2_11940316_1506969273198_303680_32498">
-                <sourceRef>_18_5_2_11940316_1506969259396_846447_32474</sourceRef>
-                <targetRef>_18_5_1_11940316_1499870521941_349394_23565_pin_out</targetRef>
-            </dataInputAssociation>
+            <property name="Extract data from the voter registration database_pin_out" id="_18_5_1_11940316_1499870521941_349394_23565_pin_out"/>
             <dataInputAssociation id="_18_5_1_11940316_1500476466724_108144_29400">
                 <sourceRef>_18_5_1_11940316_1500476453742_710032_29374</sourceRef>
                 <targetRef>_18_5_1_11940316_1499870521941_349394_23565_pin_out</targetRef>
             </dataInputAssociation>
             <dataInputAssociation id="_18_5_2_11940316_1506969288092_555065_32530">
                 <sourceRef>_18_5_2_11940316_1506969278321_263002_32506</sourceRef>
+                <targetRef>_18_5_1_11940316_1499870521941_349394_23565_pin_out</targetRef>
+            </dataInputAssociation>
+            <dataInputAssociation id="_18_5_2_11940316_1506969273198_303680_32498">
+                <sourceRef>_18_5_2_11940316_1506969259396_846447_32474</sourceRef>
                 <targetRef>_18_5_1_11940316_1499870521941_349394_23565_pin_out</targetRef>
             </dataInputAssociation>
             <resourceRole name="" id="_18_5_1_11940316_1499870522170_914306_23579_Ref-1"/>
@@ -2126,7 +2117,7 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
             <resourceRole name="" id="_18_5_1_11940316_1499870522170_914306_23579_Ref-3"/>
         </task>
         <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Proof poll book data" id="_18_5_1_11940316_1499870625898_743659_23701">
-            <documentation textFormat="text/plain">Proof poll book data according to local rules. This may include spot checking, verification of page counts, among others.</documentation>
+            <documentation textFormat="text/plain">Proof poll book data according to local rules. This may include spot checking, verification of page counts, voter counts, among others.</documentation>
             <incoming>_18_5_1_11940316_1499870625963_161777_23710</incoming>
             <incoming>_18_5_1_11940316_1499870843934_684270_23802</incoming>
             <incoming>_18_5_1_11940316_1499870899121_592403_23840</incoming>
@@ -2137,22 +2128,16 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
             <incoming>_18_5_1_11940316_1499870710088_735280_23735</incoming>
             <incoming>_18_5_1_11940316_1500477172828_829534_29479</incoming>
         </endEvent>
-        <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Prepare database of eligible voters" id="_18_5_1_11940316_1499870777413_25173_23752">
-            <documentation textFormat="text/plain">Put the voter data into a form that the poll book system can understand.Create or update electronic poll book's database with voter data.</documentation>
+        <exclusiveGateway gatewayDirection="Unspecified" name="Are e-poll books preloaded" id="_18_5_1_11940316_1499870792458_897907_23780">
             <incoming>_18_5_1_11940316_1499870777527_438815_23761</incoming>
-            <outgoing>_18_5_1_11940316_1499870792513_846522_23790</outgoing>
-            <resourceRole name="" id="_18_5_1_11940316_1499870522170_914306_23579_Ref-5"/>
-        </task>
-        <exclusiveGateway gatewayDirection="Unspecified" name="Are e-poll books run offline?" id="_18_5_1_11940316_1499870792458_897907_23780">
-            <incoming>_18_5_1_11940316_1499870792513_846522_23790</incoming>
             <outgoing>_18_5_1_11940316_1499870843934_684270_23802</outgoing>
             <outgoing>_18_5_1_11940316_1499870876498_357989_23821</outgoing>
         </exclusiveGateway>
-        <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Load e-poll books with voter names and addresses" id="_18_5_1_11940316_1499870876407_321844_23811">
+        <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Load data onto &#xA;e-poll books" id="_18_5_1_11940316_1499870876407_321844_23811">
             <documentation textFormat="text/plain">Load memory devices or internal memory of each e-poll book with voter names and addresses.</documentation>
             <incoming>_18_5_1_11940316_1499870876498_357989_23821</incoming>
             <outgoing>_18_5_1_11940316_1499870899121_592403_23840</outgoing>
-            <resourceRole name="" id="_18_5_1_11940316_1499870522170_914306_23579_Ref-6"/>
+            <resourceRole name="" id="_18_5_1_11940316_1499870522170_914306_23579_Ref-5"/>
         </task>
         <boundaryEvent attachedToRef="_18_5_1_11940316_1499870625898_743659_23701" name="Problem Found" id="_18_5_1_11940316_1500477150857_760677_29428">
             <outgoing>_18_5_1_11940316_1500477163529_471777_29460</outgoing>
@@ -2161,10 +2146,10 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
             <documentation textFormat="text/plain">If there is a problem with the poll book data, perform an investigation to determine the cause and correct.</documentation>
             <incoming>_18_5_1_11940316_1500477163529_471777_29460</incoming>
             <outgoing>_18_5_1_11940316_1500477172828_829534_29479</outgoing>
-            <resourceRole name="" id="_18_5_1_11940316_1499870522170_914306_23579_Ref-7"/>
+            <resourceRole name="" id="_18_5_1_11940316_1499870522170_914306_23579_Ref-6"/>
         </task>
+        <dataStoreReference dataStoreRef="_18_5_1_11940316_1500476453742_710032_29374" name="Election Specific Eligible Voter List" id="_18_5_1_11940316_1500476453796_368889_29379"/>
         <dataStoreReference dataStoreRef="_18_5_2_11940316_1506969259396_846447_32474" name="Ballot Styles" id="_18_5_2_11940316_1506969259430_911481_32478"/>
-        <dataStoreReference dataStoreRef="_18_5_1_11940316_1500476453742_710032_29374" name="Voter Records" id="_18_5_1_11940316_1500476453796_368889_29379"/>
         <dataStoreReference dataStoreRef="_18_5_2_11940316_1506969278321_263002_32506" name="Geography" id="_18_5_2_11940316_1506969278341_456754_32510"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1499870517314_473605_23550" targetRef="_18_5_1_11940316_1499870521941_349394_23565" name="" id="_18_5_1_11940316_1499870522028_322062_23574"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1499870521941_349394_23565" targetRef="_18_5_1_11940316_1499870541962_851771_23597" name="" id="_18_5_1_11940316_1499870542009_24106_23606"/>
@@ -2174,10 +2159,9 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
         <sequenceFlow sourceRef="_18_5_1_11940316_1499870572212_665438_23618" targetRef="_18_5_1_11940316_1499870605700_484891_23667" name="" id="_18_5_1_11940316_1499870605782_461654_23676"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1499870605700_484891_23667" targetRef="_18_5_1_11940316_1499870625898_743659_23701" name="" id="_18_5_1_11940316_1499870625963_161777_23710"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1499870625898_743659_23701" targetRef="_18_5_1_11940316_1499870710061_500087_23729" name="" id="_18_5_1_11940316_1499870710088_735280_23735"/>
-        <sequenceFlow sourceRef="_18_5_1_11940316_1499870541962_851771_23597" targetRef="_18_5_1_11940316_1499870777413_25173_23752" name="" id="_18_5_1_11940316_1499870777527_438815_23761">
+        <sequenceFlow sourceRef="_18_5_1_11940316_1499870541962_851771_23597" targetRef="_18_5_1_11940316_1499870792458_897907_23780" name="" id="_18_5_1_11940316_1499870777527_438815_23761">
             <conditionExpression xsi:type="tFormalExpression">Yes</conditionExpression>
         </sequenceFlow>
-        <sequenceFlow sourceRef="_18_5_1_11940316_1499870777413_25173_23752" targetRef="_18_5_1_11940316_1499870792458_897907_23780" name="" id="_18_5_1_11940316_1499870792513_846522_23790"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1499870792458_897907_23780" targetRef="_18_5_1_11940316_1499870625898_743659_23701" name="" id="_18_5_1_11940316_1499870843934_684270_23802">
             <conditionExpression xsi:type="tFormalExpression">No</conditionExpression>
         </sequenceFlow>
@@ -2187,23 +2171,6 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
         <sequenceFlow sourceRef="_18_5_1_11940316_1499870876407_321844_23811" targetRef="_18_5_1_11940316_1499870625898_743659_23701" name="" id="_18_5_1_11940316_1499870899121_592403_23840"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1500477150857_760677_29428" targetRef="_18_5_1_11940316_1500477163404_206974_29452" name="" id="_18_5_1_11940316_1500477163529_471777_29460"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1500477163404_206974_29452" targetRef="_18_5_1_11940316_1499870710061_500087_23729" name="" id="_18_5_1_11940316_1500477172828_829534_29479"/>
-        <textAnnotation textFormat="text/plain" id="_18_5_2_11940316_1504640902109_753705_28494">
-            <text>&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-Convert this to a time based event &amp;quot;close of registration&amp;quot;&amp;#160;?
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;</text>
-        </textAnnotation>
-        <association sourceRef="_18_5_2_11940316_1504640902109_753705_28494" targetRef="_18_5_1_11940316_1499870517314_473605_23550" associationDirection="None" id="_18_5_2_36470677_1510673046264_640227_0"/>
         <textAnnotation textFormat="text/plain" id="_18_5_2_11940316_1506964219123_769391_32126">
             <text>&lt;html&gt;
   &lt;head&gt;
@@ -2220,7 +2187,7 @@ Can also split into separate poll books
 &lt;/body&gt;
 &lt;/html&gt;</text>
         </textAnnotation>
-        <association sourceRef="_18_5_2_11940316_1506964219123_769391_32126" targetRef="_18_5_1_11940316_1499870572212_665438_23618" associationDirection="None" id="_18_5_2_36470677_1510673046264_986674_0"/>
+        <association sourceRef="_18_5_2_11940316_1506964219123_769391_32126" targetRef="_18_5_1_11940316_1499870572212_665438_23618" associationDirection="None" id="_18_5_2_36470677_1513786337352_398615_0"/>
         <textAnnotation textFormat="text/plain" id="_18_5_2_11940316_1506964353377_32692_32139">
             <text>&lt;html&gt;
   &lt;head&gt;
@@ -2237,7 +2204,7 @@ Why are these together? Ask KB&amp;#160;
 &lt;/body&gt;
 &lt;/html&gt;</text>
         </textAnnotation>
-        <association sourceRef="_18_5_2_11940316_1506964353377_32692_32139" targetRef="_18_5_1_11940316_1499870572212_665438_23618" associationDirection="None" id="_18_5_2_36470677_1510673046264_575172_0"/>
+        <association sourceRef="_18_5_2_11940316_1506964353377_32692_32139" targetRef="_18_5_1_11940316_1499870572212_665438_23618" associationDirection="None" id="_18_5_2_36470677_1513786337352_461563_0"/>
         <textAnnotation textFormat="text/plain" id="_18_5_2_11940316_1506964533722_503606_32148">
             <text>&lt;html&gt;
   &lt;head&gt;
@@ -2254,7 +2221,7 @@ reword &amp;#160;
 &lt;/body&gt;
 &lt;/html&gt;</text>
         </textAnnotation>
-        <association sourceRef="_18_5_2_11940316_1506964533722_503606_32148" targetRef="_18_5_1_11940316_1499870572212_665438_23618" associationDirection="None" id="_18_5_2_36470677_1510673046264_625887_0"/>
+        <association sourceRef="_18_5_2_11940316_1506964533722_503606_32148" targetRef="_18_5_1_11940316_1499870572212_665438_23618" associationDirection="None" id="_18_5_2_36470677_1513786337352_288939_0"/>
         <textAnnotation textFormat="text/plain" id="_18_5_2_11940316_1506965188819_899969_32206">
             <text>&lt;html&gt;
   &lt;head&gt;
@@ -2271,116 +2238,116 @@ NY&amp;#160;has eligible voters not on poll book (inactive)&amp;#160;
 &lt;/body&gt;
 &lt;/html&gt;</text>
         </textAnnotation>
-        <association sourceRef="_18_5_2_11940316_1506965188819_899969_32206" targetRef="_18_5_1_11940316_1499870521941_349394_23565" associationDirection="None" id="_18_5_2_36470677_1510673046264_83121_0"/>
+        <association sourceRef="_18_5_2_11940316_1506965188819_899969_32206" targetRef="_18_5_1_11940316_1499870521941_349394_23565" associationDirection="None" id="_18_5_2_36470677_1513786337352_788291_0"/>
         <resourceRole name="" id="_18_5_1_11940316_1499870522170_914306_23579"/>
     </process>
     <process isClosed="false" isExecutable="false" name="Open Polling Location" id="_18_5_1_11940316_1500466962610_540406_23669">
         <documentation textFormat="text/plain">Open the polling location so that voters may begin voting.</documentation>
         <laneSet id="_18_5_1_11940316_1500486264582_842860_30271_Ref-1_laneSet">
             <lane name="Poll Worker" partitionElementRef="_18_5_1_11940316_1498828652641_269229_23308" id="_18_5_1_11940316_1500486264582_842860_30271">
-                <flowNodeRef>_18_5_1_11940316_1500486634097_993849_30344</flowNodeRef>
                 <flowNodeRef>_18_5_1_11940316_1500486684760_477056_30381</flowNodeRef>
-                <flowNodeRef>_18_5_1_11940316_1500486494501_695765_30322</flowNodeRef>
-                <flowNodeRef>_18_5_1_11940316_1500484221177_959191_30042</flowNodeRef>
                 <flowNodeRef>_18_5_1_11940316_1500486840501_928682_30489</flowNodeRef>
+                <flowNodeRef>_18_5_2_43701b0_1510172628594_934116_31588</flowNodeRef>
+                <flowNodeRef>_18_5_1_11940316_1500484369558_377245_30107</flowNodeRef>
+                <flowNodeRef>_18_5_2_43701b0_1510172051498_688756_31467</flowNodeRef>
+                <flowNodeRef>_18_5_1_11940316_1500484413699_537853_30144</flowNodeRef>
+                <flowNodeRef>_18_5_1_11940316_1500483928854_94691_29960</flowNodeRef>
+                <flowNodeRef>_18_5_1_11940316_1500483888954_41634_29908</flowNodeRef>
+                <flowNodeRef>_18_5_2_43701b0_1511354729579_921455_29818</flowNodeRef>
             </lane>
-        </laneSet>
-        <laneSet id="_18_5_1_11940316_1500483586611_446885_29560_Ref-1_laneSet">
-            <lane name="Poll Worker" partitionElementRef="_18_5_1_11940316_1498999818037_96552_21933" id="_18_5_1_11940316_1500483586611_446885_29560"/>
         </laneSet>
         <laneSet id="_18_5_1_11940316_1500483595861_801304_29591_Ref-1_laneSet">
             <lane name="Poll Worker" partitionElementRef="_18_5_1_11940316_1498828652641_269229_23308" id="_18_5_1_11940316_1500483595861_801304_29591"/>
         </laneSet>
-        <subProcess triggeredByEvent="false" isForCompensation="false" startQuantity="1" completionQuantity="1" name="Try to open polling location" id="_18_5_1_11940316_1500486634097_993849_30344">
-            <documentation textFormat="text/plain">Try to open the polling location so that voters may begin voting.</documentation>
-            <incoming>_18_5_1_11940316_1500486688296_943645_30396</incoming>
-            <outgoing>_18_5_1_11940316_1500486840535_626877_30494</outgoing>
-            <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922_Ref-1"/>
-            <adHocSubProcess cancelRemainingInstances="true" ordering="Parallel" triggeredByEvent="false" isForCompensation="false" startQuantity="1" completionQuantity="1" name="Setup activities" id="_18_5_1_11940316_1500484413699_537853_30144">
-                <documentation textFormat="text/plain">Perform setup activities according to the election jurisdiction's policies and procedures.</documentation>
-                <incoming>_18_5_1_11940316_1500484431985_584337_30182</incoming>
-                <outgoing>_18_5_2_43701b0_1510172629830_602494_31609</outgoing>
-                <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922_Ref-2"/>
-                <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Setup &#xA;e-poll books" id="_18_5_1_11940316_1500484521042_620887_30194">
-                    <documentation textFormat="text/plain">Setup, including unpacking the electronic poll books according to a predetermined configuration, for example connecting a tablet to a printer. There may be certain poll opening tasks as well, such as logging into the e-poll book software.
- 
-</documentation>
-                    <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922_Ref-3"/>
-                    <resourceRole name="" id="_18_5_2_11940316_1504815099805_538730_31251_Ref-1"/>
-                </task>
-                <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Set up voting devices" id="_18_5_1_11940316_1500484547517_471964_30224">
-                    <documentation textFormat="text/plain">Set up the voting devices, such as turning the devices on, and performing poll opening tasks.</documentation>
-                    <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922_Ref-4"/>
-                </task>
-                <completionCondition xsi:type="tFormalExpression">Applicable tasks completed</completionCondition>
-            </adHocSubProcess>
-            <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Set up voting stations, materials, and signage" id="_18_5_1_11940316_1500484369558_377245_30107">
-                <documentation textFormat="text/plain">Some setup may be done in the days leading up to voting. Other setup tasks may be done immediately before voting. Because voting locations are often rented facilities, the space may need to be modified to become conducive to voting. </documentation>
-                <incoming>_18_5_1_11940316_1500484369621_245455_30116</incoming>
-                <outgoing>_18_5_1_11940316_1500484431985_584337_30182</outgoing>
-                <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922_Ref-5"/>
-            </task>
-            <startEvent name="" id="_18_5_1_11940316_1500486462012_605436_30288">
-                <outgoing>_18_5_1_11940316_1500486463498_635039_30303</outgoing>
-            </startEvent>
-            <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Inventory and inspect equipment and materials" id="_18_5_1_11940316_1500483928854_94691_29960">
-                <documentation textFormat="text/plain">Ensure all the required materials for a polling location are accounted for. The poll workers may also inspect the equipment for damage or tampering.</documentation>
-                <incoming>_18_5_1_11940316_1500483928925_843238_29970</incoming>
-                <outgoing>_18_5_1_11940316_1500484369621_245455_30116</outgoing>
-                <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922_Ref-6"/>
-            </task>
-            <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Access polling location facility" id="_18_5_1_11940316_1500483888954_41634_29908">
-                <documentation textFormat="text/plain">Gain access to the polling location.</documentation>
-                <incoming>_18_5_1_11940316_1500486463498_635039_30303</incoming>
-                <outgoing>_18_5_1_11940316_1500483928925_843238_29970</outgoing>
-                <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922_Ref-7"/>
-            </task>
-            <boundaryEvent cancelActivity="false" attachedToRef="_18_5_1_11940316_1500486634097_993849_30344" name="Problem Discovered" id="_18_5_1_11940316_1500486749188_926473_30408">
-                <outgoing>_18_5_1_11940316_1500486759345_254814_30434</outgoing>
-                <escalationEventDefinition id="_18_5_1_11940316_1500486749188_926473_30408_Ref-1"/>
-            </boundaryEvent>
-            <endEvent name="" id="_18_5_1_11940316_1500486832700_949697_30472">
-                <incoming>_18_5_1_11940316_1500486799207_629768_30452</incoming>
-            </endEvent>
-            <intermediateCatchEvent name="Time to Open Polling Location" id="_18_5_2_43701b0_1510172051498_688756_31467">
-                <incoming>_18_5_2_43701b0_1510172052539_986327_31480</incoming>
-                <outgoing>_18_5_1_11940316_1500486799207_629768_30452</outgoing>
-                <timerEventDefinition id="_18_5_2_43701b0_1510172051498_688756_31467_Ref-1"/>
-            </intermediateCatchEvent>
-            <subProcess triggeredByEvent="false" isForCompensation="false" startQuantity="1" completionQuantity="1" name="Check equipment" id="_18_5_2_43701b0_1510172628594_934116_31588">
-                <incoming>_18_5_2_43701b0_1510172629830_602494_31609</incoming>
-                <outgoing>_18_5_2_43701b0_1510172052539_986327_31480</outgoing>
-                <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Validate no ballots cast" id="_18_5_2_43701b0_1510172316060_368685_31507"/>
-                <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Ensure equipment integrity " id="_18_5_2_43701b0_1510172414069_411660_31548"/>
-            </subProcess>
-            <sequenceFlow sourceRef="_18_5_1_11940316_1500484369558_377245_30107" targetRef="_18_5_1_11940316_1500484413699_537853_30144" name="" id="_18_5_1_11940316_1500484431985_584337_30182"/>
-            <sequenceFlow sourceRef="_18_5_1_11940316_1500483928854_94691_29960" targetRef="_18_5_1_11940316_1500484369558_377245_30107" name="" id="_18_5_1_11940316_1500484369621_245455_30116"/>
-            <sequenceFlow sourceRef="_18_5_1_11940316_1500486462012_605436_30288" targetRef="_18_5_1_11940316_1500483888954_41634_29908" name="" id="_18_5_1_11940316_1500486463498_635039_30303"/>
-            <sequenceFlow sourceRef="_18_5_1_11940316_1500483888954_41634_29908" targetRef="_18_5_1_11940316_1500483928854_94691_29960" name="" id="_18_5_1_11940316_1500483928925_843238_29970"/>
-            <sequenceFlow sourceRef="_18_5_1_11940316_1500486749188_926473_30408" targetRef="_18_5_1_11940316_1500484221177_959191_30042" name="" id="_18_5_1_11940316_1500486759345_254814_30434"/>
-            <sequenceFlow sourceRef="_18_5_2_43701b0_1510172051498_688756_31467" targetRef="_18_5_1_11940316_1500486832700_949697_30472" name="" id="_18_5_1_11940316_1500486799207_629768_30452"/>
-            <sequenceFlow sourceRef="_18_5_2_43701b0_1510172628594_934116_31588" targetRef="_18_5_2_43701b0_1510172051498_688756_31467" name="" id="_18_5_2_43701b0_1510172052539_986327_31480"/>
-            <sequenceFlow sourceRef="_18_5_1_11940316_1500484413699_537853_30144" targetRef="_18_5_2_43701b0_1510172628594_934116_31588" name="" id="_18_5_2_43701b0_1510172629830_602494_31609"/>
-        </subProcess>
-        <startEvent isInterrupting="true" name="Time to arrive at polls" id="_18_5_1_11940316_1500486684760_477056_30381">
+        <laneSet id="_18_5_1_11940316_1500483586611_446885_29560_Ref-1_laneSet">
+            <lane name="Poll Worker" partitionElementRef="_18_5_1_11940316_1498999818037_96552_21933" id="_18_5_1_11940316_1500483586611_446885_29560"/>
+        </laneSet>
+        <startEvent isInterrupting="true" name="Time to arrive at polling location" id="_18_5_1_11940316_1500486684760_477056_30381">
             <outgoing>_18_5_1_11940316_1500486688296_943645_30396</outgoing>
             <timerEventDefinition id="_18_5_1_11940316_1500486684760_477056_30381_Ref-1"/>
         </startEvent>
-        <endEvent name="" id="_18_5_1_11940316_1500486494501_695765_30322">
-            <incoming>_18_5_1_11940316_1500486494532_303058_30327</incoming>
-        </endEvent>
-        <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Contact election jurisdiction to resolve" id="_18_5_1_11940316_1500484221177_959191_30042">
-            <documentation textFormat="text/plain">Contact the election jurisdiction to receive guidance on resolving any discovered problem.</documentation>
-            <incoming>_18_5_1_11940316_1500486759345_254814_30434</incoming>
-            <outgoing>_18_5_1_11940316_1500486494532_303058_30327</outgoing>
-            <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922_Ref-8"/>
-        </task>
         <endEvent name="Polling Location Opened" id="_18_5_1_11940316_1500486840501_928682_30489">
             <incoming>_18_5_1_11940316_1500486840535_626877_30494</incoming>
         </endEvent>
-        <sequenceFlow sourceRef="_18_5_1_11940316_1500486684760_477056_30381" targetRef="_18_5_1_11940316_1500486634097_993849_30344" name="" id="_18_5_1_11940316_1500486688296_943645_30396"/>
-        <sequenceFlow sourceRef="_18_5_1_11940316_1500484221177_959191_30042" targetRef="_18_5_1_11940316_1500486494501_695765_30322" name="" id="_18_5_1_11940316_1500486494532_303058_30327"/>
-        <sequenceFlow sourceRef="_18_5_1_11940316_1500486634097_993849_30344" targetRef="_18_5_1_11940316_1500486840501_928682_30489" name="" id="_18_5_1_11940316_1500486840535_626877_30494"/>
+        <adHocSubProcess cancelRemainingInstances="true" ordering="Parallel" triggeredByEvent="false" isForCompensation="false" startQuantity="1" completionQuantity="1" name="Check equipment" id="_18_5_2_43701b0_1510172628594_934116_31588">
+            <documentation textFormat="text/plain">Check that the equipment is ready for use. The poll workers may also inspect the equipment for damage or tampering.</documentation>
+            <incoming>_18_5_2_43701b0_1510172629830_602494_31609</incoming>
+            <outgoing>_18_5_2_43701b0_1510172052539_986327_31480</outgoing>
+            <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922_Ref-1"/>
+            <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Validate no ballots cast" id="_18_5_2_43701b0_1510172316060_368685_31507">
+                <documentation textFormat="text/plain">Ensure that no ballots have been cast, such as by checking the ballot boxes, or machine totals.</documentation>
+                <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922_Ref-2"/>
+            </task>
+            <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Ensure equipment integrity " id="_18_5_2_43701b0_1510172414069_411660_31548">
+                <documentation textFormat="text/plain">Ensure the equipment has not been tampered with.</documentation>
+                <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922_Ref-3"/>
+            </task>
+        </adHocSubProcess>
+        <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Set up voting stations, materials, and signage" id="_18_5_1_11940316_1500484369558_377245_30107">
+            <documentation textFormat="text/plain">Some setup may be done in the days leading up to voting. Other setup tasks may be done immediately before voting. Because voting locations are often rented facilities, the space may need to be modified to become conducive to voting.</documentation>
+            <incoming>_18_5_1_11940316_1500484369621_245455_30116</incoming>
+            <outgoing>_18_5_1_11940316_1500484431985_584337_30182</outgoing>
+            <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922_Ref-4"/>
+        </task>
+        <intermediateCatchEvent name="Time to Open Polling Location" id="_18_5_2_43701b0_1510172051498_688756_31467">
+            <incoming>_18_5_2_43701b0_1510172052539_986327_31480</incoming>
+            <outgoing>_18_5_1_11940316_1500486840535_626877_30494</outgoing>
+            <timerEventDefinition id="_18_5_2_43701b0_1510172051498_688756_31467_Ref-1"/>
+        </intermediateCatchEvent>
+        <adHocSubProcess cancelRemainingInstances="true" ordering="Parallel" triggeredByEvent="false" isForCompensation="false" startQuantity="1" completionQuantity="1" name="Setup activities" id="_18_5_1_11940316_1500484413699_537853_30144">
+            <documentation textFormat="text/plain">Perform setup activities according to the election jurisdiction's policies and procedures.</documentation>
+            <incoming>_18_5_1_11940316_1500484431985_584337_30182</incoming>
+            <outgoing>_18_5_2_43701b0_1510172629830_602494_31609</outgoing>
+            <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922_Ref-5"/>
+            <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Setup e-poll books" id="_18_5_1_11940316_1500484521042_620887_30194">
+                <documentation textFormat="text/plain">Unpack and setup the electronic poll books according to a predetermined configuration, for example connecting a tablet to a printer. There may be certain poll opening tasks as well, such as logging into the e-poll book software.
+ 
+</documentation>
+                <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922_Ref-6"/>
+                <resourceRole name="" id="_18_5_2_11940316_1504815099805_538730_31251_Ref-1"/>
+            </task>
+            <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Set up voting devices" id="_18_5_1_11940316_1500484547517_471964_30224">
+                <documentation textFormat="text/plain">Set up the voting devices, such as turning the devices on, and performing poll opening tasks.</documentation>
+                <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922_Ref-7"/>
+            </task>
+            <completionCondition xsi:type="tFormalExpression">Applicable tasks completed</completionCondition>
+        </adHocSubProcess>
+        <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Inventory equipment and materials" id="_18_5_1_11940316_1500483928854_94691_29960">
+            <documentation textFormat="text/plain">Ensure all the required materials for a polling location are accounted for. </documentation>
+            <incoming>_18_5_1_11940316_1500483928925_843238_29970</incoming>
+            <outgoing>_18_5_1_11940316_1500484369621_245455_30116</outgoing>
+            <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922_Ref-8"/>
+        </task>
+        <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Access polling location facility" id="_18_5_1_11940316_1500483888954_41634_29908">
+            <documentation textFormat="text/plain">Gain access to the polling location.</documentation>
+            <incoming>_18_5_1_11940316_1500486688296_943645_30396</incoming>
+            <outgoing>_18_5_1_11940316_1500483928925_843238_29970</outgoing>
+            <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922_Ref-9"/>
+        </task>
+        <subProcess triggeredByEvent="true" isForCompensation="false" startQuantity="1" completionQuantity="1" name="Handle Problem" id="_18_5_2_43701b0_1511354729579_921455_29818">
+            <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922_Ref-10"/>
+            <endEvent name="" id="_18_5_1_11940316_1500486494501_695765_30322">
+                <incoming>_18_5_1_11940316_1500486494532_303058_30327</incoming>
+            </endEvent>
+            <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Contact election jurisdiction to resolve" id="_18_5_1_11940316_1500484221177_959191_30042">
+                <documentation textFormat="text/plain">Contact the election jurisdiction to receive guidance on resolving any discovered problem.</documentation>
+                <incoming>_18_5_2_43701b0_1511355850373_872464_29980</incoming>
+                <outgoing>_18_5_1_11940316_1500486494532_303058_30327</outgoing>
+                <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922_Ref-11"/>
+            </task>
+            <startEvent name="Problem discovered" id="_18_5_2_43701b0_1511355729446_899780_29964">
+                <outgoing>_18_5_2_43701b0_1511355850373_872464_29980</outgoing>
+            </startEvent>
+            <sequenceFlow sourceRef="_18_5_1_11940316_1500484221177_959191_30042" targetRef="_18_5_1_11940316_1500486494501_695765_30322" name="" id="_18_5_1_11940316_1500486494532_303058_30327"/>
+            <sequenceFlow sourceRef="_18_5_2_43701b0_1511355729446_899780_29964" targetRef="_18_5_1_11940316_1500484221177_959191_30042" name="" id="_18_5_2_43701b0_1511355850373_872464_29980"/>
+        </subProcess>
+        <sequenceFlow sourceRef="_18_5_1_11940316_1500486684760_477056_30381" targetRef="_18_5_1_11940316_1500483888954_41634_29908" name="" id="_18_5_1_11940316_1500486688296_943645_30396"/>
+        <sequenceFlow sourceRef="_18_5_2_43701b0_1510172051498_688756_31467" targetRef="_18_5_1_11940316_1500486840501_928682_30489" name="" id="_18_5_1_11940316_1500486840535_626877_30494"/>
+        <sequenceFlow sourceRef="_18_5_1_11940316_1500483928854_94691_29960" targetRef="_18_5_1_11940316_1500484369558_377245_30107" name="" id="_18_5_1_11940316_1500484369621_245455_30116"/>
+        <sequenceFlow sourceRef="_18_5_2_43701b0_1510172628594_934116_31588" targetRef="_18_5_2_43701b0_1510172051498_688756_31467" name="" id="_18_5_2_43701b0_1510172052539_986327_31480"/>
+        <sequenceFlow sourceRef="_18_5_1_11940316_1500484413699_537853_30144" targetRef="_18_5_2_43701b0_1510172628594_934116_31588" name="" id="_18_5_2_43701b0_1510172629830_602494_31609"/>
+        <sequenceFlow sourceRef="_18_5_1_11940316_1500484369558_377245_30107" targetRef="_18_5_1_11940316_1500484413699_537853_30144" name="" id="_18_5_1_11940316_1500484431985_584337_30182"/>
+        <sequenceFlow sourceRef="_18_5_1_11940316_1500483888954_41634_29908" targetRef="_18_5_1_11940316_1500483928854_94691_29960" name="" id="_18_5_1_11940316_1500483928925_843238_29970"/>
         <textAnnotation textFormat="text/plain" id="_18_5_1_11940316_1502201349882_64273_39845">
             <text>&lt;html&gt;
   &lt;head&gt;
@@ -2400,8 +2367,8 @@ NY&amp;#160;has eligible voters not on poll book (inactive)&amp;#160;
 &lt;/html&gt;
 </text>
         </textAnnotation>
-        <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922"/>
         <resourceRole name="" id="_18_5_1_11940316_1500640111805_541223_38986"/>
+        <resourceRole name="" id="_18_5_1_11940316_1500483889173_90615_29922"/>
         <resourceRole name="" id="_18_5_2_11940316_1504815099805_538730_31251"/>
     </process>
     <process isClosed="false" isExecutable="false" name="Vote and Submit Ballot" id="_18_5_1_11940316_1500466974661_508354_23709">
@@ -2695,7 +2662,7 @@ I used returned here instead of voted because the voter may have made no selecti
 &lt;/body&gt;
 &lt;/html&gt;</text>
         </textAnnotation>
-        <association sourceRef="_18_5_1_11940316_1500489297675_452692_31286" targetRef="_18_5_1_11940316_1500489260563_788486_31266" associationDirection="None" id="_18_5_2_36470677_1510673046291_892052_0"/>
+        <association sourceRef="_18_5_1_11940316_1500489297675_452692_31286" targetRef="_18_5_1_11940316_1500489260563_788486_31266" associationDirection="None" id="_18_5_2_36470677_1513786337380_308483_0"/>
         <textAnnotation textFormat="text/plain" id="_18_5_1_11940316_1502218903863_798622_26290">
             <text>&lt;html&gt;
   &lt;head&gt;
@@ -2750,7 +2717,7 @@ They may be able to vote provisionally.&amp;#160;
         <textAnnotation textFormat="text/plain" id="_18_5_2_11940316_1508355405949_208286_29445">
             <text>NVRA only?</text>
         </textAnnotation>
-        <association sourceRef="_18_5_2_11940316_1508355405949_208286_29445" targetRef="_18_5_1_11940316_1500489691975_887905_31524" associationDirection="None" id="_18_5_2_36470677_1510673046291_147096_0"/>
+        <association sourceRef="_18_5_2_11940316_1508355405949_208286_29445" targetRef="_18_5_1_11940316_1500489691975_887905_31524" associationDirection="None" id="_18_5_2_36470677_1513786337380_672454_0"/>
         <textAnnotation textFormat="text/plain" id="_18_5_2_11940316_1508355696502_376131_29458">
             <text>Outcomes:
 Registered moved inside precinct / Registered name change / Party change</text>
@@ -2771,24 +2738,26 @@ Need to route outcomes (failure)?&amp;#160;
 &lt;/body&gt;
 &lt;/html&gt;</text>
         </textAnnotation>
-        <association sourceRef="_18_5_2_43701b0_1509557964691_839735_30816" targetRef="_18_5_1_11940316_1500489511603_983761_31380" associationDirection="None" id="_18_5_2_36470677_1510673046291_528649_0"/>
+        <association sourceRef="_18_5_2_43701b0_1509557964691_839735_30816" targetRef="_18_5_1_11940316_1500489511603_983761_31380" associationDirection="None" id="_18_5_2_36470677_1513786337380_693966_0"/>
         <textAnnotation textFormat="text/plain" id="_18_5_2_43701b0_1509558022331_545078_30828">
             <text>&lt;html&gt;
   &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-NVRA only?&amp;#160;
-
+      NVRA only?&amp;#160;
     &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;</text>
+  &lt;/body&gt;
+&lt;/html&gt;
+</text>
         </textAnnotation>
-        <association sourceRef="_18_5_2_43701b0_1509558022331_545078_30828" targetRef="_18_5_2_43701b0_1508957342143_11520_31828" associationDirection="None" id="_18_5_2_36470677_1510673046291_446607_0"/>
+        <association sourceRef="_18_5_2_43701b0_1509558022331_545078_30828" targetRef="_18_5_2_43701b0_1508957342143_11520_31828" associationDirection="None" id="_18_5_2_36470677_1513786337380_48340_0"/>
         <textAnnotation textFormat="text/plain" id="_18_5_2_43701b0_1509564653210_484040_50187">
             <text>&lt;html&gt;
   &lt;head&gt;
@@ -2805,15 +2774,12 @@ E.g. Poll watcher,&amp;#160;Poll worker
 &lt;/body&gt;
 &lt;/html&gt;</text>
         </textAnnotation>
-        <association sourceRef="_18_5_2_43701b0_1509564653210_484040_50187" targetRef="_18_5_2_43701b0_1508961417137_517865_40476" associationDirection="None" id="_18_5_2_36470677_1510673046291_108118_0"/>
+        <association sourceRef="_18_5_2_43701b0_1509564653210_484040_50187" targetRef="_18_5_2_43701b0_1508961417137_517865_40476" associationDirection="None" id="_18_5_2_36470677_1513786337380_579378_0"/>
         <resourceRole name="" id="_18_5_1_11940316_1500487958703_912548_30989"/>
         <resourceRole name="" id="_18_5_2_11940316_1504815211941_169527_31285"/>
     </process>
     <process isClosed="false" isExecutable="false" name="Close Polling Location" id="_18_5_1_11940316_1500466984573_851025_23749">
         <documentation textFormat="text/plain">Close the voting location on election day.</documentation>
-        <laneSet id="_18_5_1_11940316_1500556340669_550103_33211_Ref-1_laneSet">
-            <lane name="Voter" partitionElementRef="_18_5_1_11940316_1498828669742_83683_23366" id="_18_5_1_11940316_1500556340669_550103_33211"/>
-        </laneSet>
         <laneSet id="_18_5_1_11940316_1500556238373_822215_33119_Ref-1_laneSet">
             <lane name="Poll Worker" partitionElementRef="_18_5_1_11940316_1498828652641_269229_23308" id="_18_5_1_11940316_1500556238373_822215_33119">
                 <flowNodeRef>_18_5_1_11940316_1500556280703_345611_33135</flowNodeRef>
@@ -2827,12 +2793,15 @@ E.g. Poll watcher,&amp;#160;Poll worker
                 <flowNodeRef>_18_5_2_11940316_1507470020133_463183_49660</flowNodeRef>
             </lane>
         </laneSet>
+        <laneSet id="_18_5_1_11940316_1500556340669_550103_33211_Ref-1_laneSet">
+            <lane name="Voter" partitionElementRef="_18_5_1_11940316_1498828669742_83683_23366" id="_18_5_1_11940316_1500556340669_550103_33211"/>
+        </laneSet>
         <startEvent isInterrupting="true" name="Closing Time" id="_18_5_1_11940316_1500556280703_345611_33135">
             <outgoing>_18_5_1_11940316_1500556293165_595333_33161</outgoing>
             <timerEventDefinition id="_18_5_1_11940316_1500556280703_345611_33135_Ref-1"/>
         </startEvent>
         <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Announce closing of polling location" id="_18_5_1_11940316_1500556293069_73420_33152">
-            <documentation textFormat="text/plain">Notify everyone at the voting location that polls will be closing.</documentation>
+            <documentation textFormat="text/plain">Notify everyone at the polling location that polls will be closing.</documentation>
             <incoming>_18_5_1_11940316_1500556293165_595333_33161</incoming>
             <outgoing>_18_5_2_11940316_1505306437004_612995_29405</outgoing>
             <resourceRole name="" id="_18_5_1_11940316_1500556293296_49494_33166_Ref-1"/>
@@ -2908,7 +2877,7 @@ Can court orders occur after closing?&amp;#160;
 &lt;/body&gt;
 &lt;/html&gt;</text>
         </textAnnotation>
-        <association sourceRef="_18_5_1_11940316_1501683856536_871131_34147" targetRef="_18_5_1_11940316_1500556280703_345611_33135" associationDirection="None" id="_18_5_2_36470677_1510673046294_743473_0"/>
+        <association sourceRef="_18_5_1_11940316_1501683856536_871131_34147" targetRef="_18_5_1_11940316_1500556280703_345611_33135" associationDirection="None" id="_18_5_2_36470677_1513786337383_732471_0"/>
         <textAnnotation textFormat="text/plain" id="_18_5_1_11940316_1502893063632_545870_31439">
             <text>&lt;html&gt;
   &lt;head&gt;
@@ -2925,7 +2894,7 @@ Convert to Ad-Hoc Subprocess?&amp;#160;
 &lt;/body&gt;
 &lt;/html&gt;</text>
         </textAnnotation>
-        <association sourceRef="_18_5_1_11940316_1502893063632_545870_31439" targetRef="_18_5_1_11940316_1500556726554_287160_33349" associationDirection="None" id="_18_5_2_36470677_1510673046294_587575_0"/>
+        <association sourceRef="_18_5_1_11940316_1502893063632_545870_31439" targetRef="_18_5_1_11940316_1500556726554_287160_33349" associationDirection="None" id="_18_5_2_36470677_1513786337383_340146_0"/>
         <textAnnotation textFormat="text/plain" id="_18_5_2_11940316_1507226041021_464151_29959">
             <text>&lt;html&gt;
   &lt;head&gt;
@@ -2942,16 +2911,18 @@ Change to call activity&amp;#160;
 &lt;/body&gt;
 &lt;/html&gt;</text>
         </textAnnotation>
-        <resourceRole name="" id="_18_5_2_11940316_1504815356079_464685_31332"/>
         <resourceRole name="" id="_18_5_1_11940316_1500556293296_49494_33166"/>
+        <resourceRole name="" id="_18_5_2_11940316_1504815356079_464685_31332"/>
     </process>
     <process isClosed="false" isExecutable="false" name="Maintain Remote Voter List" id="_18_5_1_11940316_1500467059636_224364_23800">
         <documentation textFormat="text/plain">Maintain the list of voters whose ballot will be transmitted in advance of election day to a location outside the election jurisdiction.</documentation>
+        <laneSet id="_18_5_1_11940316_1500557162555_115326_33540_Ref-1_laneSet">
+            <lane name="Voter" partitionElementRef="_18_5_1_11940316_1498828669742_83683_23366" id="_18_5_1_11940316_1500557162555_115326_33540"/>
+        </laneSet>
         <laneSet id="_18_5_1_11940316_1500557195514_415273_33556_Ref-1_laneSet">
             <lane name="Election Authority" partitionElementRef="_18_5_1_11940316_1498999818037_96552_21933" id="_18_5_1_11940316_1500557195514_415273_33556">
                 <flowNodeRef>_18_5_1_11940316_1500557216084_29274_33572</flowNodeRef>
                 <flowNodeRef>_18_5_1_11940316_1500557275999_90758_33613</flowNodeRef>
-                <flowNodeRef>_18_5_1_11940316_1500557296499_699594_33634</flowNodeRef>
                 <flowNodeRef>_18_5_1_11940316_1500557319812_585951_33655</flowNodeRef>
                 <flowNodeRef>_18_5_1_11940316_1500557382022_236650_33710</flowNodeRef>
                 <flowNodeRef>_18_5_1_11940316_1500557442874_90335_33769</flowNodeRef>
@@ -2961,12 +2932,8 @@ Change to call activity&amp;#160;
                 <flowNodeRef>_18_5_1_11940316_1500557784052_895042_33924</flowNodeRef>
                 <flowNodeRef>_18_5_1_11940316_1500557862993_578914_33968</flowNodeRef>
                 <flowNodeRef>_18_5_1_11940316_1502893686491_68325_31510</flowNodeRef>
-                <flowNodeRef>_18_5_2_11940316_1505310143641_259478_29500</flowNodeRef>
                 <flowNodeRef>_18_5_2_43701b0_1510174762523_553577_32326</flowNodeRef>
             </lane>
-        </laneSet>
-        <laneSet id="_18_5_1_11940316_1500557162555_115326_33540_Ref-1_laneSet">
-            <lane name="Voter" partitionElementRef="_18_5_1_11940316_1498828669742_83683_23366" id="_18_5_1_11940316_1500557162555_115326_33540"/>
         </laneSet>
         <startEvent isInterrupting="true" name="Receive request to vote remotely" id="_18_5_1_11940316_1500557216084_29274_33572">
             <outgoing>_18_5_1_11940316_1502893687718_124766_31528</outgoing>
@@ -2974,22 +2941,17 @@ Change to call activity&amp;#160;
         </startEvent>
         <exclusiveGateway gatewayDirection="Unspecified" name="Is requester eligible?" id="_18_5_1_11940316_1500557275999_90758_33613">
             <incoming>_18_5_1_11940316_1500557276041_946087_33622</incoming>
-            <outgoing>_18_5_1_11940316_1500557296538_618374_33643</outgoing>
             <outgoing>_18_5_1_11940316_1500557319842_514250_33660</outgoing>
-        </exclusiveGateway>
-        <exclusiveGateway gatewayDirection="Unspecified" name="Is the request permanent?" id="_18_5_1_11940316_1500557296499_699594_33634">
-            <incoming>_18_5_1_11940316_1500557296538_618374_33643</incoming>
-            <outgoing>_18_5_1_11940316_1500557382076_808717_33719</outgoing>
-            <outgoing>_18_5_1_11940316_1500557442911_569438_33777</outgoing>
+            <outgoing>_18_5_2_43701b0_1510777378518_734070_29694</outgoing>
         </exclusiveGateway>
         <endEvent name="No action" id="_18_5_1_11940316_1500557319812_585951_33655">
             <incoming>_18_5_2_43701b0_1510174764417_946039_32345</incoming>
         </endEvent>
-        <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Set permanent remote voting status" id="_18_5_1_11940316_1500557382022_236650_33710">
+        <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Set period of remote voting" id="_18_5_1_11940316_1500557382022_236650_33710">
             <documentation textFormat="text/plain">Set permanent remote voting status. This will result in the voter receiving ballots remotely for upcoming elections.</documentation>
-            <incoming>_18_5_1_11940316_1500557382076_808717_33719</incoming>
+            <incoming>_18_5_2_43701b0_1510777378518_734070_29694</incoming>
             <outgoing>_18_5_1_11940316_1500557616826_261137_33824</outgoing>
-            <property name="Set permanent remote voting status_pin_in" id="_18_5_1_11940316_1500557382022_236650_33710_pin_in"/>
+            <property name="Set period of remote voting_pin_in" id="_18_5_1_11940316_1500557382022_236650_33710_pin_in"/>
             <dataOutputAssociation id="_18_5_1_11940316_1500557934829_177490_33999">
                 <sourceRef>_18_5_1_11940316_1500557382022_236650_33710_pin_in</sourceRef>
                 <targetRef>_18_5_1_11940316_1500557397670_188099_33740</targetRef>
@@ -2998,7 +2960,6 @@ Change to call activity&amp;#160;
             <resourceRole name="" id="_18_5_2_11940316_1504815463553_622653_31354_Ref-1"/>
         </task>
         <exclusiveGateway gatewayDirection="Unspecified" name="Is this a military or overseas voter?" id="_18_5_1_11940316_1500557442874_90335_33769">
-            <incoming>_18_5_1_11940316_1500557442911_569438_33777</incoming>
             <incoming>_18_5_1_11940316_1500557616826_261137_33824</incoming>
             <outgoing>_18_5_1_11940316_1500557567639_532368_33799</outgoing>
             <outgoing>_18_5_1_11940316_1500557735149_372696_33882</outgoing>
@@ -3046,20 +3007,16 @@ Change to call activity&amp;#160;
             <resourceRole name="" id="_18_5_2_11940316_1504815463553_622653_31354_Ref-4"/>
         </task>
         <endEvent name="Updated Remote Voter List" id="_18_5_1_11940316_1500557862993_578914_33968">
-            <incoming>_18_5_2_11940316_1505310151148_203978_29518</incoming>
+            <incoming>_18_5_2_11940316_1505310154635_88139_29527</incoming>
+            <incoming>_18_5_2_11940316_1505310157186_748711_29536</incoming>
         </endEvent>
         <businessRuleTask implementation="##unspecified" isForCompensation="false" startQuantity="1" completionQuantity="1" name="Determine eligibility to vote remotely" id="_18_5_1_11940316_1502893686491_68325_31510">
-            <documentation textFormat="text/plain">Determine if the request to vote remotely can be fulfilled. Some jurisdictions require the voter to provide a valid reason to vote remotely. </documentation>
+            <documentation textFormat="text/plain">Determine if the request to vote remotely can be fulfilled. Some jurisdictions require the voter to provide a valid excuse to vote remotely. </documentation>
             <incoming>_18_5_1_11940316_1502893687718_124766_31528</incoming>
             <outgoing>_18_5_1_11940316_1500557276041_946087_33622</outgoing>
             <resourceRole name="" id="_18_5_1_11940316_1500557382198_41582_33724_Ref-5"/>
             <resourceRole name="" id="_18_5_2_11940316_1504815463553_622653_31354_Ref-5"/>
         </businessRuleTask>
-        <exclusiveGateway gatewayDirection="Unspecified" name="" id="_18_5_2_11940316_1505310143641_259478_29500">
-            <incoming>_18_5_2_11940316_1505310154635_88139_29527</incoming>
-            <incoming>_18_5_2_11940316_1505310157186_748711_29536</incoming>
-            <outgoing>_18_5_2_11940316_1505310151148_203978_29518</outgoing>
-        </exclusiveGateway>
         <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Notify voter of ineligibility" id="_18_5_2_43701b0_1510174762523_553577_32326">
             <incoming>_18_5_1_11940316_1500557319842_514250_33660</incoming>
             <outgoing>_18_5_2_43701b0_1510174764417_946039_32345</outgoing>
@@ -3067,16 +3024,7 @@ Change to call activity&amp;#160;
         </task>
         <dataStoreReference dataStoreRef="_18_5_1_11940316_1500557397670_188099_33740" name="Voter Registration Database" id="_18_5_1_11940316_1500557397685_917310_33746"/>
         <sequenceFlow sourceRef="_18_5_1_11940316_1502893686491_68325_31510" targetRef="_18_5_1_11940316_1500557275999_90758_33613" name="" id="_18_5_1_11940316_1500557276041_946087_33622"/>
-        <sequenceFlow sourceRef="_18_5_1_11940316_1500557275999_90758_33613" targetRef="_18_5_1_11940316_1500557296499_699594_33634" name="" id="_18_5_1_11940316_1500557296538_618374_33643">
-            <conditionExpression xsi:type="tFormalExpression">Yes</conditionExpression>
-        </sequenceFlow>
         <sequenceFlow sourceRef="_18_5_1_11940316_1500557275999_90758_33613" targetRef="_18_5_2_43701b0_1510174762523_553577_32326" name="" id="_18_5_1_11940316_1500557319842_514250_33660">
-            <conditionExpression xsi:type="tFormalExpression">No</conditionExpression>
-        </sequenceFlow>
-        <sequenceFlow sourceRef="_18_5_1_11940316_1500557296499_699594_33634" targetRef="_18_5_1_11940316_1500557382022_236650_33710" name="" id="_18_5_1_11940316_1500557382076_808717_33719">
-            <conditionExpression xsi:type="tFormalExpression">Yes</conditionExpression>
-        </sequenceFlow>
-        <sequenceFlow sourceRef="_18_5_1_11940316_1500557296499_699594_33634" targetRef="_18_5_1_11940316_1500557442874_90335_33769" name="" id="_18_5_1_11940316_1500557442911_569438_33777">
             <conditionExpression xsi:type="tFormalExpression">No</conditionExpression>
         </sequenceFlow>
         <sequenceFlow sourceRef="_18_5_1_11940316_1500557442874_90335_33769" targetRef="_18_5_1_11940316_1500557567569_944487_33790" name="" id="_18_5_1_11940316_1500557567639_532368_33799">
@@ -3094,10 +3042,10 @@ Change to call activity&amp;#160;
             <conditionExpression xsi:type="tFormalExpression">Yes</conditionExpression>
         </sequenceFlow>
         <sequenceFlow sourceRef="_18_5_1_11940316_1500557216084_29274_33572" targetRef="_18_5_1_11940316_1502893686491_68325_31510" name="" id="_18_5_1_11940316_1502893687718_124766_31528"/>
-        <sequenceFlow sourceRef="_18_5_2_11940316_1505310143641_259478_29500" targetRef="_18_5_1_11940316_1500557862993_578914_33968" name="" id="_18_5_2_11940316_1505310151148_203978_29518"/>
-        <sequenceFlow sourceRef="_18_5_1_11940316_1500557746455_655949_33891" targetRef="_18_5_2_11940316_1505310143641_259478_29500" name="" id="_18_5_2_11940316_1505310154635_88139_29527"/>
-        <sequenceFlow sourceRef="_18_5_1_11940316_1500557784052_895042_33924" targetRef="_18_5_2_11940316_1505310143641_259478_29500" name="" id="_18_5_2_11940316_1505310157186_748711_29536"/>
+        <sequenceFlow sourceRef="_18_5_1_11940316_1500557746455_655949_33891" targetRef="_18_5_1_11940316_1500557862993_578914_33968" name="" id="_18_5_2_11940316_1505310154635_88139_29527"/>
+        <sequenceFlow sourceRef="_18_5_1_11940316_1500557784052_895042_33924" targetRef="_18_5_1_11940316_1500557862993_578914_33968" name="" id="_18_5_2_11940316_1505310157186_748711_29536"/>
         <sequenceFlow sourceRef="_18_5_2_43701b0_1510174762523_553577_32326" targetRef="_18_5_1_11940316_1500557319812_585951_33655" name="" id="_18_5_2_43701b0_1510174764417_946039_32345"/>
+        <sequenceFlow sourceRef="_18_5_1_11940316_1500557275999_90758_33613" targetRef="_18_5_1_11940316_1500557382022_236650_33710" name="" id="_18_5_2_43701b0_1510777378518_734070_29694"/>
         <textAnnotation textFormat="text/plain" id="_18_5_2_11940316_1504815487135_583292_31388">
             <text>&lt;html&gt;
   &lt;head&gt;
@@ -3119,11 +3067,14 @@ Check alignment&amp;#160;
     </process>
     <process isClosed="false" isExecutable="false" name="Send Ballots by Mail" id="_18_5_1_11940316_1500467073311_581606_23840">
         <documentation textFormat="text/plain">For each remote voter: Send a ballot to the voter via postal mail.</documentation>
-        <ioSpecification id="_18_5_2_1_1510673046358_172483_0">
+        <ioSpecification id="_18_5_2_1_1513786337439_455784_0">
             <dataInput name="Remote Voter List" isCollection="true" id="_18_5_1_11940316_1500560386589_179933_34845"/>
             <inputSet/>
             <outputSet/>
         </ioSpecification>
+        <laneSet id="_18_5_1_11940316_1500559429398_312874_34472_Ref-1_laneSet">
+            <lane name="Voter" partitionElementRef="_18_5_1_11940316_1498828669742_83683_23366" id="_18_5_1_11940316_1500559429398_312874_34472"/>
+        </laneSet>
         <laneSet id="_18_5_1_11940316_1500559388794_346738_34440_Ref-1_laneSet">
             <lane name="Election Authority" partitionElementRef="_18_5_1_11940316_1498999818037_96552_21933" id="_18_5_1_11940316_1500559388794_346738_34440">
                 <flowNodeRef>_18_5_1_11940316_1500560345304_538163_34806</flowNodeRef>
@@ -3132,9 +3083,6 @@ Check alignment&amp;#160;
                 <flowNodeRef>_18_5_2_11940316_1506357245464_554723_28343</flowNodeRef>
                 <flowNodeRef>_18_5_2_11940316_1506357245464_627726_28342</flowNodeRef>
             </lane>
-        </laneSet>
-        <laneSet id="_18_5_1_11940316_1500559429398_312874_34472_Ref-1_laneSet">
-            <lane name="Voter" partitionElementRef="_18_5_1_11940316_1498828669742_83683_23366" id="_18_5_1_11940316_1500559429398_312874_34472"/>
         </laneSet>
         <subProcess triggeredByEvent="false" isForCompensation="false" startQuantity="1" completionQuantity="1" name="Send Ballot by Mail" id="_18_5_1_11940316_1500560345304_538163_34806">
             <documentation textFormat="text/plain">Send a ballot to the voter via postal mail.</documentation>
@@ -3160,7 +3108,7 @@ Check alignment&amp;#160;
                 <outgoing>_18_5_1_11940316_1500559332485_934657_34381</outgoing>
             </startEvent>
             <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Log sent date in voter registration database" id="_18_5_1_11940316_1500559672641_884502_34577">
-                <documentation textFormat="text/plain">vote by mailNote when the ballot package was mailed to the voter.</documentation>
+                <documentation textFormat="text/plain">Note when the ballot package was mailed to the voter.</documentation>
                 <incoming>_18_5_1_11940316_1500559672730_165078_34586</incoming>
                 <outgoing>_18_5_1_11940316_1500559744951_233052_34631</outgoing>
                 <property name="Log sent date in voter registration database_pin_in" id="_18_5_1_11940316_1500559672641_884502_34577_pin_in"/>
@@ -3187,6 +3135,7 @@ Check alignment&amp;#160;
             <sendTask implementation="Web Service" isForCompensation="false" startQuantity="1" completionQuantity="1" name="Mail package to voter" id="_18_5_1_11940316_1500559449474_215319_34491">
                 <documentation textFormat="text/plain">Mail the vote by mail package to the voter.</documentation>
                 <incoming>_18_5_1_11940316_1500559449572_645051_34500</incoming>
+                <incoming>_18_5_2_43701b0_1510778938078_390088_30206</incoming>
                 <outgoing>_18_5_1_11940316_1500559741449_829679_34622</outgoing>
                 <resourceRole name="" id="_18_5_1_11940316_1500559399723_830283_34459_Ref-4"/>
             </sendTask>
@@ -3197,7 +3146,7 @@ Check alignment&amp;#160;
             <task isForCompensation="false" startQuantity="1" completionQuantity="1" name="Record undeliverable ballot status on voter record" id="_18_5_1_11940316_1500560670975_61334_34961">
                 <documentation textFormat="text/plain">If the ballot was returned undeliverable, note the fact on the voter's record.</documentation>
                 <incoming>_18_5_1_11940316_1500560671036_978080_34971</incoming>
-                <outgoing>_18_5_1_11940316_1500560809943_531547_35019</outgoing>
+                <outgoing>_18_5_2_43701b0_1510778891064_215445_30193</outgoing>
                 <property name="Record undeliverable ballot status on voter record_pin_in" id="_18_5_1_11940316_1500560670975_61334_34961_pin_in"/>
                 <dataOutputAssociation id="_18_5_1_11940316_1500575773172_290809_35800">
                     <sourceRef>_18_5_1_11940316_1500560670975_61334_34961_pin_in</sourceRef>
@@ -3219,6 +3168,11 @@ Check alignment&amp;#160;
             <endEvent name="Ballot not delivered" id="_18_5_1_11940316_1500560829754_762778_35036">
                 <incoming>_18_5_1_11940316_1500560829791_750354_35041</incoming>
             </endEvent>
+            <exclusiveGateway gatewayDirection="Unspecified" name="Can address issue be resolved?" id="_18_5_2_43701b0_1510778890013_204498_30183">
+                <incoming>_18_5_2_43701b0_1510778891064_215445_30193</incoming>
+                <outgoing>_18_5_1_11940316_1500560809943_531547_35019</outgoing>
+                <outgoing>_18_5_2_43701b0_1510778938078_390088_30206</outgoing>
+            </exclusiveGateway>
             <sequenceFlow sourceRef="_18_5_1_11940316_1500559449474_215319_34491" targetRef="_18_5_1_11940316_1500559734914_589027_34604" name="" id="_18_5_1_11940316_1500559741449_829679_34622"/>
             <sequenceFlow sourceRef="_18_5_1_11940316_1500559672641_884502_34577" targetRef="_18_5_1_11940316_1500559734914_589027_34604" name="" id="_18_5_1_11940316_1500559744951_233052_34631"/>
             <sequenceFlow sourceRef="_18_5_1_11940316_1500559361460_670838_34415" targetRef="_18_5_1_11940316_1500559653215_309822_34553" name="" id="_18_5_1_11940316_1500559654353_822106_34562"/>
@@ -3227,8 +3181,14 @@ Check alignment&amp;#160;
             <sequenceFlow sourceRef="_18_5_1_11940316_1500559316847_584164_34330" targetRef="_18_5_1_11940316_1500559361460_670838_34415" name="" id="_18_5_1_11940316_1500559332485_934657_34381"/>
             <sequenceFlow sourceRef="_18_5_1_11940316_1500559734914_589027_34604" targetRef="_18_5_1_11940316_1500559759340_677399_34665" name="" id="_18_5_1_11940316_1500559762315_826299_34680"/>
             <sequenceFlow sourceRef="_18_5_1_11940316_1500560582305_178906_34926" targetRef="_18_5_1_11940316_1500560670975_61334_34961" name="" id="_18_5_1_11940316_1500560671036_978080_34971"/>
-            <sequenceFlow sourceRef="_18_5_1_11940316_1500560670975_61334_34961" targetRef="_18_5_1_11940316_1500560809877_727399_35010" name="" id="_18_5_1_11940316_1500560809943_531547_35019"/>
+            <sequenceFlow sourceRef="_18_5_2_43701b0_1510778890013_204498_30183" targetRef="_18_5_1_11940316_1500560809877_727399_35010" name="" id="_18_5_1_11940316_1500560809943_531547_35019">
+                <conditionExpression xsi:type="tFormalExpression">No</conditionExpression>
+            </sequenceFlow>
             <sequenceFlow sourceRef="_18_5_1_11940316_1500560809877_727399_35010" targetRef="_18_5_1_11940316_1500560829754_762778_35036" name="" id="_18_5_1_11940316_1500560829791_750354_35041"/>
+            <sequenceFlow sourceRef="_18_5_1_11940316_1500560670975_61334_34961" targetRef="_18_5_2_43701b0_1510778890013_204498_30183" name="" id="_18_5_2_43701b0_1510778891064_215445_30193"/>
+            <sequenceFlow sourceRef="_18_5_2_43701b0_1510778890013_204498_30183" targetRef="_18_5_1_11940316_1500559449474_215319_34491" name="" id="_18_5_2_43701b0_1510778938078_390088_30206">
+                <conditionExpression xsi:type="tFormalExpression">Yes</conditionExpression>
+            </sequenceFlow>
             <textAnnotation textFormat="text/plain" id="_18_5_2_11940316_1506357203632_782761_28324">
                 <text>&lt;html&gt;
   &lt;head&gt;
@@ -3245,8 +3205,8 @@ From KB&amp;#160;&amp;#160;slides.&amp;#160;Does not seem to apply to All Vote B
 &lt;/body&gt;
 &lt;/html&gt;</text>
             </textAnnotation>
-            <association sourceRef="_18_5_2_11940316_1506357203632_782761_28324" targetRef="_18_5_1_11940316_1500560670975_61334_34961" associationDirection="None" id="_18_5_2_36470677_1510673046300_584054_0"/>
-            <association sourceRef="_18_5_2_11940316_1506357203632_782761_28324" targetRef="_18_5_1_11940316_1500560809877_727399_35010" associationDirection="None" id="_18_5_2_36470677_1510673046300_61926_0"/>
+            <association sourceRef="_18_5_2_11940316_1506357203632_782761_28324" targetRef="_18_5_1_11940316_1500560670975_61334_34961" associationDirection="None" id="_18_5_2_36470677_1513786337390_313169_0"/>
+            <association sourceRef="_18_5_2_11940316_1506357203632_782761_28324" targetRef="_18_5_1_11940316_1500560809877_727399_35010" associationDirection="None" id="_18_5_2_36470677_1513786337390_886823_0"/>
         </subProcess>
         <endEvent name="Ballots Sent" id="_18_5_1_11940316_1500560431789_217815_34904">
             <incoming>_18_5_1_11940316_1500560431818_695552_34910</incoming>

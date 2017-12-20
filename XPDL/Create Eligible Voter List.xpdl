@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-09-02T13:06:00</Created>
-        <ModificationDate>17-10-14T10:02:20</ModificationDate>
+        <ModificationDate>17-11-20T11:11:58</ModificationDate>
         <Documentation>Derive the list of eligible voters from the voter registration database.
 &lt;html&gt;
   &lt;head&gt;
@@ -14,7 +14,7 @@
 	&lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-NY calls Election Districts, NC&amp;#160;administrative precincts?
+E.g. Must show ID, Provisional, Absentee Status&amp;#160;, Party Codes
 
     &lt;/p&gt;
 
@@ -28,49 +28,7 @@ NY calls Election Districts, NC&amp;#160;administrative precincts?
 	&lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-Make sure they can participate in an election. 
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-Must show ID, Provisional, Absentee Status&amp;#160;, Party Codes
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-Handle cases where voter registered too late for election&amp;#160;
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-Is this close of polls? What about UOCAVA?&amp;#160;
+E.g. close of registration
 
     &lt;/p&gt;
 
@@ -98,21 +56,7 @@ ND left out?&amp;#160;
 	&lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-Residency duration, age, citizen,&amp;#160;court action, living
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-Need to sync list during the voting period, already done elsewhere?
+Factors such as Residency duration, age, citizen,&amp;#160;court action, living
 
     &lt;/p&gt;
 
@@ -122,7 +66,7 @@ Need to sync list during the voting period, already done elsewhere?
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1346</Version>
+        <Version>1477</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -133,7 +77,7 @@ Need to sync list during the voting period, already done elsewhere?
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Create Eligible Voter List" Id="_18_5_2_11940316_1506963974232_268650_32105" Height="717.0" Width="1179.0"/>
+        <Page Name="Create Eligible Voter List" Id="_18_5_2_11940316_1506963974232_268650_32105" Height="570.0" Width="962.0"/>
     </Pages>
     <DataStores>
         <DataStore Id="_18_5_2_11940316_1506965234064_138255_32261" Name="List of Registered Voters" IsUnlimited="false" cbm:numberedProperty="1.5.4.D 1"/>
@@ -143,140 +87,92 @@ Need to sync list during the voting period, already done elsewhere?
     <Pools>
         <Pool Id="_18_5_2_11940316_1506964002445_952163_32117" Name="Election Jurisdiction" Orientation="HORIZONTAL" Process="_18_5_2_11940316_1506964002445_952163_32117_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="717.0" Width="1179.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="570.0" Width="962.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Pool>
     </Pools>
     <Associations>
-        <Association Id="_18_5_2_11940316_1506965840719_859804_32413" Source="_18_5_2_11940316_1506965829798_943914_32397" Target="_18_5_2_11940316_1506966467121_850050_32432" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672976002_8324_30504"/>
-            <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="687.0" YCoordinate="106.0"/>
-                    <Coordinates XCoordinate="707.0" YCoordinate="107.0"/>
-                </ConnectorGraphicsInfo>
-            </ConnectorGraphicsInfos>
-        </Association>
-        <Association Id="_18_5_2_11940316_1506966373366_826598_32421" Source="_18_5_2_43701b0_1509381359224_482625_39252" Target="_18_5_2_11940316_1506966467121_541499_32433" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672976002_629858_30505"/>
-            <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="220.0" YCoordinate="309.0"/>
-                    <Coordinates XCoordinate="236.0" YCoordinate="331.0"/>
-                </ConnectorGraphicsInfo>
-            </ConnectorGraphicsInfos>
-        </Association>
         <Association Id="_18_5_2_11940316_1506966483924_918744_32458" Source="_18_5_2_11940316_1506966469819_640913_32450" Target="_18_5_2_11940316_1506967096329_193479_32464" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672976002_735402_30506"/>
+            <Object Id="_18_5_2_43701b0_1513786391986_616300_37984"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="634.0" YCoordinate="309.0"/>
-                    <Coordinates XCoordinate="634.0" YCoordinate="329.0"/>
-                </ConnectorGraphicsInfo>
-            </ConnectorGraphicsInfos>
-        </Association>
-        <Association Id="_18_5_2_11940316_1508528100499_239478_30122" Source="_18_5_2_43701b0_1509381656951_263386_39312" Target="_18_5_2_11940316_1508528100635_49169_30123" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672976002_894951_30507"/>
-            <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="444.0" YCoordinate="252.0"/>
-                    <Coordinates XCoordinate="478.0" YCoordinate="218.0"/>
+                    <Coordinates XCoordinate="634.0" YCoordinate="218.0"/>
+                    <Coordinates XCoordinate="634.0" YCoordinate="238.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1509375802536_638733_39164" Source="_18_5_2_11940316_1506965219689_500828_32220" Target="_18_5_2_43701b0_1509375802596_50579_39165" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672976003_644320_30508"/>
+            <Object Id="_18_5_2_43701b0_1513786391986_327315_37985"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="75.0" YCoordinate="266.0"/>
-                    <Coordinates XCoordinate="106.0" YCoordinate="111.0"/>
+                    <Coordinates XCoordinate="75.0" YCoordinate="175.0"/>
+                    <Coordinates XCoordinate="89.0" YCoordinate="95.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1509381462406_834720_39278" Source="_18_5_2_11940316_1506965234095_660900_32265" Target="_18_5_2_43701b0_1509381462444_82992_39279" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672976003_598521_30509"/>
+            <Object Id="_18_5_2_43701b0_1513786391987_458152_37986"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="186.0" YCoordinate="192.0"/>
-                    <Coordinates XCoordinate="224.0" YCoordinate="159.0"/>
+                    <Coordinates XCoordinate="186.0" YCoordinate="101.0"/>
+                    <Coordinates XCoordinate="224.0" YCoordinate="68.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1509381500689_691857_39288" Source="_18_5_2_43701b0_1509381656951_263386_39312" Target="_18_5_2_43701b0_1509381500737_874479_39289" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672976003_233779_30510"/>
+            <Object Id="_18_5_2_43701b0_1513786391987_927960_37987"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="417.0" YCoordinate="309.0"/>
-                    <Coordinates XCoordinate="417.0" YCoordinate="324.0"/>
+                    <Coordinates XCoordinate="417.0" YCoordinate="218.0"/>
+                    <Coordinates XCoordinate="417.0" YCoordinate="233.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
-        <Association Id="_18_5_2_43701b0_1509382376210_49419_39433" Source="_18_5_2_43701b0_1509381982129_485991_39399" Target="_18_5_2_43701b0_1509382376245_107074_39434" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672976003_45333_30511"/>
+        <Association Id="_18_5_2_43701b0_1512415208112_710111_32003" Source="_18_5_2_43701b0_1509382020579_851726_39423" Target="_18_5_2_43701b0_1512415208156_498390_32004" AssociationDirection="None">
+            <Object Id="_18_5_2_43701b0_1513786391987_918835_37988"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="196.0" YCoordinate="537.0"/>
-                    <Coordinates XCoordinate="177.0" YCoordinate="537.0"/>
+                    <Coordinates XCoordinate="257.0" YCoordinate="468.0"/>
+                    <Coordinates XCoordinate="276.0" YCoordinate="444.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
     </Associations>
     <Artifacts>
-        <Artifact Id="_18_5_2_11940316_1506966467121_850050_32432" ArtifactType="Annotation" TextAnnotation="NY calls Election Districts, NC administrative precincts?">
-            <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="69.0" Width="111.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="707.0" YCoordinate="77.0"/>
-                </NodeGraphicsInfo>
-            </NodeGraphicsInfos>
-        </Artifact>
-        <Artifact Id="_18_5_2_11940316_1506966467121_541499_32433" ArtifactType="Annotation" TextAnnotation="Make sure they can participate in an election.">
-            <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="205.0" YCoordinate="331.0"/>
-                </NodeGraphicsInfo>
-            </NodeGraphicsInfos>
-        </Artifact>
-        <Artifact Id="_18_5_2_11940316_1506967096329_193479_32464" ArtifactType="Annotation" TextAnnotation="Must show ID, Provisional, Absentee Status , Party Codes">
+        <Artifact Id="_18_5_2_11940316_1506967096329_193479_32464" ArtifactType="Annotation" TextAnnotation="E.g. Must show ID, Provisional, Absentee Status , Party Codes">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="84.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="584.0" YCoordinate="329.0"/>
+                    <Coordinates XCoordinate="584.0" YCoordinate="238.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
-        <Artifact Id="_18_5_2_11940316_1508528100635_49169_30123" ArtifactType="Annotation" TextAnnotation="Handle cases where voter registered too late for election ">
+        <Artifact Id="_18_5_2_43701b0_1509375802596_50579_39165" ArtifactType="Annotation" TextAnnotation="E.g. close of registration">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="69.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="462.0" YCoordinate="149.0"/>
-                </NodeGraphicsInfo>
-            </NodeGraphicsInfos>
-        </Artifact>
-        <Artifact Id="_18_5_2_43701b0_1509375802596_50579_39165" ArtifactType="Annotation" TextAnnotation="Is this close of polls? What about UOCAVA? ">
-            <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="69.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="63.0" YCoordinate="42.0"/>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="39.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="42.0" YCoordinate="56.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
         <Artifact Id="_18_5_2_43701b0_1509381462444_82992_39279" ArtifactType="Annotation" TextAnnotation="ND left out? ">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="40.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="196.0" YCoordinate="119.0"/>
+                    <Coordinates XCoordinate="196.0" YCoordinate="28.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
-        <Artifact Id="_18_5_2_43701b0_1509381500737_874479_39289" ArtifactType="Annotation" TextAnnotation="Residency duration, age, citizen, court action, living">
-            <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="69.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="367.0" YCoordinate="324.0"/>
-                </NodeGraphicsInfo>
-            </NodeGraphicsInfos>
-        </Artifact>
-        <Artifact Id="_18_5_2_43701b0_1509382376245_107074_39434" ArtifactType="Annotation" TextAnnotation="Need to sync list during the voting period, already done elsewhere?">
+        <Artifact Id="_18_5_2_43701b0_1509381500737_874479_39289" ArtifactType="Annotation" TextAnnotation="Factors such as Residency duration, age, citizen, court action, living">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="84.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="77.0" YCoordinate="495.0"/>
+                    <Coordinates XCoordinate="367.0" YCoordinate="233.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_2_43701b0_1512415208156_498390_32004" ArtifactType="Annotation" TextAnnotation="E.g. Death, Incompetent, Registration after close, update after close">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="69.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="245.0" YCoordinate="375.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
@@ -294,35 +190,117 @@ Need to sync list during the voting period, already done elsewhere?
             <ActivitySets>
                 <ActivitySet Id="_18_5_2_43701b0_1509381982106_319351_39387" Name="Process Eligibility Event_as" AdHoc="false" TriggeredByEvent="true">
                     <Activities>
-                        <Activity Id="_18_5_2_43701b0_1509382020579_851726_39423" Name="Voter Decease" cbm:numberedProperty="1.5.4.PR10.1">
+                        <Activity Id="_18_5_2_43701b0_1509382020579_851726_39423" Name="Voter Eligibility Event" cbm:numberedProperty="1.5.4.PR10.1">
                             <Event>
-<StartEvent Trigger="Message" Implementation="Unspecified" Interrupting="true">
-    <TriggerResultMessage CatchThrow="CATCH"/>
+<StartEvent Trigger="Multiple" Implementation="Unspecified" Interrupting="true">
+    <TriggerMultiple>
+        <TriggerResultMessage CatchThrow="THROW"/>
+        <TriggerResultCompensation WaitForCompletion="true"/>
+        <TriggerResultSignal CatchThrow="THROW"/>
+    </TriggerMultiple>
 </StartEvent>
                             </Event>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-    <Coordinates XCoordinate="243.0" YCoordinate="519.0"/>
+    <Coordinates XCoordinate="245.0" YCoordinate="468.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_43701b0_1509382431199_311329_39472" IsForCompensation="false" Name="Process Eligibility Action" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.PR10.2">
+                        <Activity Id="_18_5_2_43701b0_1512413715436_184935_31859" Name="Decision" cbm:numberedProperty="1.5.4.PR10.2">
+                            <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
+                            <TransitionRestrictions>
+<TransitionRestriction>
+    <Split Type="Exclusive" ExclusiveType="Data">
+        <TransitionRefs>
+            <TransitionRef Id="_18_5_2_43701b0_1512413725028_78811_31869"/>
+            <TransitionRef Id="_18_5_2_43701b0_1512413788532_281450_31933"/>
+        </TransitionRefs>
+    </Split>
+</TransitionRestriction>
+                            </TransitionRestrictions>
+                            <NodeGraphicsInfos>
+<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
+    <Coordinates XCoordinate="366.0" YCoordinate="463.0"/>
+</NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity Id="_18_5_2_43701b0_1512413726665_158724_31884" IsForCompensation="false" Name="Add or update election specific eligible voter list" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.PR10.3">
                             <Implementation>
 <No/>
                             </Implementation>
                             <NodeGraphicsInfos>
-<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="329.0" YCoordinate="505.0"/>
+<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+    <Coordinates XCoordinate="490.0" YCoordinate="381.0"/>
+</NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity Id="_18_5_2_43701b0_1512413784956_426080_31916" IsForCompensation="false" Name="Remove from election specific eligible voter list" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.PR10.4">
+                            <Implementation>
+<No/>
+                            </Implementation>
+                            <NodeGraphicsInfos>
+<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+    <Coordinates XCoordinate="490.0" YCoordinate="463.0"/>
+</NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity Id="_18_5_2_43701b0_1512413893773_666379_31956" Name="Event processed" cbm:numberedProperty="1.5.4.PR10.5">
+                            <Event>
+<EndEvent Result="None" Implementation="Unspecified"/>
+                            </Event>
+                            <NodeGraphicsInfos>
+<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+    <Coordinates XCoordinate="672.0" YCoordinate="397.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
                     </Activities>
                     <Transitions>
-                        <Transition Id="_18_5_2_43701b0_1509382429501_737721_39457" From="_18_5_2_43701b0_1509382020579_851726_39423" To="_18_5_2_43701b0_1509382431199_311329_39472" Name="">
+                        <Transition Id="_18_5_2_43701b0_1512413707246_137483_31839" From="_18_5_2_43701b0_1509382020579_851726_39423" To="_18_5_2_43701b0_1512413715436_184935_31859" Name="">
                             <ConnectorGraphicsInfos>
 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="267.0" YCoordinate="531.0"/>
-    <Coordinates XCoordinate="329.0" YCoordinate="531.0"/>
+    <Coordinates XCoordinate="269.0" YCoordinate="483.0"/>
+    <Coordinates XCoordinate="366.0" YCoordinate="483.0"/>
+</ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition Id="_18_5_2_43701b0_1512413725028_78811_31869" From="_18_5_2_43701b0_1512413715436_184935_31859" To="_18_5_2_43701b0_1512413726665_158724_31884" Name="">
+                            <Condition Type="CONDITION">
+<Expression>Add to list</Expression>
+                            </Condition>
+                            <ConnectorGraphicsInfos>
+<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFFFCC">
+    <Coordinates XCoordinate="386.0" YCoordinate="463.0"/>
+    <Coordinates XCoordinate="386.0" YCoordinate="413.0"/>
+    <Coordinates XCoordinate="490.0" YCoordinate="413.0"/>
+</ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition Id="_18_5_2_43701b0_1512413788532_281450_31933" From="_18_5_2_43701b0_1512413715436_184935_31859" To="_18_5_2_43701b0_1512413784956_426080_31916" Name="">
+                            <Condition Type="CONDITION">
+<Expression>Remove from list</Expression>
+                            </Condition>
+                            <ConnectorGraphicsInfos>
+<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFFFCC">
+    <Coordinates XCoordinate="406.0" YCoordinate="483.0"/>
+    <Coordinates XCoordinate="490.0" YCoordinate="483.0"/>
+</ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition Id="_18_5_2_43701b0_1512413890486_774731_31945" From="_18_5_2_43701b0_1512413726665_158724_31884" To="_18_5_2_43701b0_1512413893773_666379_31956" Name="">
+                            <ConnectorGraphicsInfos>
+<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFFFCC">
+    <Coordinates XCoordinate="610.0" YCoordinate="409.0"/>
+    <Coordinates XCoordinate="672.0" YCoordinate="409.0"/>
+</ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition Id="_18_5_2_43701b0_1512413901073_680130_31962" From="_18_5_2_43701b0_1512413784956_426080_31916" To="_18_5_2_43701b0_1512413893773_666379_31956" Name="">
+                            <ConnectorGraphicsInfos>
+<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFFFCC">
+    <Coordinates XCoordinate="610.0" YCoordinate="490.0"/>
+    <Coordinates XCoordinate="684.0" YCoordinate="490.0"/>
+    <Coordinates XCoordinate="684.0" YCoordinate="421.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
@@ -330,26 +308,13 @@ Need to sync list during the voting period, already done elsewhere?
                 </ActivitySet>
             </ActivitySets>
             <Activities>
-                <Activity Id="_18_5_2_11940316_1506965219689_500828_32220" Name="" cbm:numberedProperty="1.5.4.PR2">
+                <Activity Id="_18_5_2_11940316_1506965219689_500828_32220" Name="Time to run list" cbm:numberedProperty="1.5.4.PR2">
                     <Event>
-                        <StartEvent Trigger="None" Implementation="Unspecified"/>
+                        <StartEvent Trigger="Timer" Implementation="Unspecified" Interrupting="true"/>
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="63.0" YCoordinate="266.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_2_11940316_1506965829798_943914_32397" IsForCompensation="false" Name="Assign Voters to Voting Precincts" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.PR5">
-                    <Implementation>
-                        <No/>
-                    </Implementation>
-                    <Performers>
-                        <Performer cbm:resourceType="ResourceRole"></Performer>
-                    </Performers>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="567.0" YCoordinate="77.0"/>
+                            <Coordinates XCoordinate="63.0" YCoordinate="175.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -363,7 +328,7 @@ Need to sync list during the voting period, already done elsewhere?
                     <Documentation>Calculate the notations that indicate additional information about the voter’s eligibility. For example, in a closed primary state, the voter’s party may be listed.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="574.0" YCoordinate="252.0"/>
+                            <Coordinates XCoordinate="574.0" YCoordinate="161.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -373,7 +338,7 @@ Need to sync list during the voting period, already done elsewhere?
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="791.0" YCoordinate="266.0"/>
+                            <Coordinates XCoordinate="896.0" YCoordinate="177.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -387,7 +352,7 @@ Need to sync list during the voting period, already done elsewhere?
                     <Documentation>Extract from the list of registered voters those whose assigned voting precinct is activated in the election.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="140.0" YCoordinate="252.0"/>
+                            <Coordinates XCoordinate="140.0" YCoordinate="161.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -398,10 +363,10 @@ Need to sync list during the voting period, already done elsewhere?
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>Filter out voters in the list of regisitered voters who are not eligible to vote in this election. For example, some voters on the list may be too young vote.</Documentation>
+                    <Documentation>Filter out voters in the list of registered voters who are not eligible to vote in this election. For example, some voters on the list may be too young vote.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="357.0" YCoordinate="252.0"/>
+                            <Coordinates XCoordinate="357.0" YCoordinate="161.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -410,9 +375,22 @@ Need to sync list during the voting period, already done elsewhere?
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>E.g. Death, Incompetent, Registration after close, update after close</Documentation>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="131.0" Width="588.0" BorderColor="#636363" FillColor="#F7DD99">
-                            <Coordinates XCoordinate="196.0" YCoordinate="472.0"/>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="207.0" Width="602.0" BorderColor="#636363" FillColor="#F7DD99">
+                            <Coordinates XCoordinate="196.0" YCoordinate="342.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_43701b0_1512414068491_731892_31977" Name="List Finalized" cbm:numberedProperty="1.5.4.PR11">
+                    <Event>
+                        <IntermediateEvent Trigger="Signal" Implementation="WebService" Interrupting="true">
+                            <TriggerResultSignal CatchThrow="CATCH"/>
+                        </IntermediateEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="763.0" YCoordinate="169.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -420,8 +398,8 @@ Need to sync list during the voting period, already done elsewhere?
             <DataObjects>
                 <DataObject Id="_18_5_2_43701b0_1509381788342_777957_39344" Name="Activated voters" cbm:realDataId="_18_5_2_43701b0_1509381788316_250076_39338" cbm:numberedProperty="1.5.4.D 4">
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="57.0" Width="103.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="245.0" YCoordinate="175.0"/>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="61.0" Width="105.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="252.0" YCoordinate="80.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </DataObject>
@@ -430,21 +408,21 @@ Need to sync list during the voting period, already done elsewhere?
                 <DataStoreReference DataStoreRef="_18_5_2_11940316_1506965234064_138255_32261" Id="_18_5_2_11940316_1506965234095_660900_32265" Name="List of Registered Voters">
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="57.0" Width="153.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="98.0" YCoordinate="175.0"/>
+                            <Coordinates XCoordinate="98.0" YCoordinate="84.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </DataStoreReference>
                 <DataStoreReference DataStoreRef="_18_5_2_11940316_1506965487361_173667_32325" Id="_18_5_2_11940316_1506965487395_245786_32329" Name="Activated Voting Precincts">
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="57.0" Width="158.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="84.0" YCoordinate="371.0"/>
+                            <Coordinates XCoordinate="95.0" YCoordinate="270.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </DataStoreReference>
                 <DataStoreReference DataStoreRef="_18_5_2_43701b0_1509375884407_153269_39193" Id="_18_5_2_43701b0_1509375884414_987938_39199" Name="Election Specific Eligible Voter List">
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" Height="57.0" Width="202.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="702.0" YCoordinate="175.0"/>
+                            <Coordinates XCoordinate="651.0" YCoordinate="56.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </DataStoreReference>
@@ -453,32 +431,40 @@ Need to sync list during the voting period, already done elsewhere?
                 <Transition Id="_18_5_2_11940316_1506965221020_471774_32231" From="_18_5_2_43701b0_1509381656951_263386_39312" To="_18_5_2_11940316_1506966469819_640913_32450" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="477.0" YCoordinate="280.0"/>
-                            <Coordinates XCoordinate="574.0" YCoordinate="280.0"/>
+                            <Coordinates XCoordinate="477.0" YCoordinate="189.0"/>
+                            <Coordinates XCoordinate="574.0" YCoordinate="189.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
-                <Transition Id="_18_5_2_43701b0_1509375873198_13879_39176" From="_18_5_2_11940316_1506966469819_640913_32450" To="_18_5_2_43701b0_1509375875579_743150_39187" Name="">
+                <Transition Id="_18_5_2_43701b0_1509375873198_13879_39176" From="_18_5_2_43701b0_1512414068491_731892_31977" To="_18_5_2_43701b0_1509375875579_743150_39187" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="694.0" YCoordinate="278.0"/>
-                            <Coordinates XCoordinate="791.0" YCoordinate="278.0"/>
+                            <Coordinates XCoordinate="795.0" YCoordinate="189.0"/>
+                            <Coordinates XCoordinate="896.0" YCoordinate="189.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_2_43701b0_1509381360160_883011_39265" From="_18_5_2_11940316_1506965219689_500828_32220" To="_18_5_2_43701b0_1509381359224_482625_39252" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="87.0" YCoordinate="278.0"/>
-                            <Coordinates XCoordinate="140.0" YCoordinate="278.0"/>
+                            <Coordinates XCoordinate="87.0" YCoordinate="187.0"/>
+                            <Coordinates XCoordinate="140.0" YCoordinate="187.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_2_43701b0_1509381657731_683715_39326" From="_18_5_2_43701b0_1509381359224_482625_39252" To="_18_5_2_43701b0_1509381656951_263386_39312" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="260.0" YCoordinate="280.0"/>
-                            <Coordinates XCoordinate="357.0" YCoordinate="280.0"/>
+                            <Coordinates XCoordinate="260.0" YCoordinate="189.0"/>
+                            <Coordinates XCoordinate="357.0" YCoordinate="189.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_43701b0_1512414068505_299873_31990" From="_18_5_2_11940316_1506966469819_640913_32450" To="_18_5_2_43701b0_1512414068491_731892_31977" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="694.0" YCoordinate="189.0"/>
+                            <Coordinates XCoordinate="777.0" YCoordinate="189.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -487,43 +473,43 @@ Need to sync list during the voting period, already done elsewhere?
                 <DataAssociation Id="_18_5_2_11940316_1506965246950_213314_32286" Name="" From="_18_5_2_11940316_1506965234095_660900_32265" To="_18_5_2_43701b0_1509381359224_482625_39252">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="175.0" YCoordinate="226.0"/>
-                            <Coordinates XCoordinate="175.0" YCoordinate="252.0"/>
+                            <Coordinates XCoordinate="175.0" YCoordinate="135.0"/>
+                            <Coordinates XCoordinate="175.0" YCoordinate="161.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>
                 <DataAssociation Id="_18_5_2_11940316_1506965493870_861871_32349" Name="" From="_18_5_2_11940316_1506965487395_245786_32329" To="_18_5_2_43701b0_1509381359224_482625_39252">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="161.0" YCoordinate="374.0"/>
-                            <Coordinates XCoordinate="161.0" YCoordinate="309.0"/>
+                            <Coordinates XCoordinate="172.0" YCoordinate="273.0"/>
+                            <Coordinates XCoordinate="172.0" YCoordinate="218.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>
                 <DataAssociation Id="_18_5_2_43701b0_1509375896130_529250_39219" Name="" From="_18_5_2_11940316_1506966469819_640913_32450" To="_18_5_2_43701b0_1509375884414_987938_39199">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="694.0" YCoordinate="263.0"/>
-                            <Coordinates XCoordinate="805.0" YCoordinate="263.0"/>
-                            <Coordinates XCoordinate="805.0" YCoordinate="226.0"/>
+                            <Coordinates XCoordinate="694.0" YCoordinate="172.0"/>
+                            <Coordinates XCoordinate="753.0" YCoordinate="172.0"/>
+                            <Coordinates XCoordinate="753.0" YCoordinate="107.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>
                 <DataAssociation Id="_18_5_2_43701b0_1509381802028_832235_39364" Name="" From="_18_5_2_43701b0_1509381359224_482625_39252" To="_18_5_2_43701b0_1509381788342_777957_39344">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="260.0" YCoordinate="263.0"/>
-                            <Coordinates XCoordinate="294.0" YCoordinate="263.0"/>
-                            <Coordinates XCoordinate="294.0" YCoordinate="226.0"/>
+                            <Coordinates XCoordinate="260.0" YCoordinate="172.0"/>
+                            <Coordinates XCoordinate="301.0" YCoordinate="172.0"/>
+                            <Coordinates XCoordinate="301.0" YCoordinate="135.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>
                 <DataAssociation Id="_18_5_2_43701b0_1509381806126_122337_39373" Name="" From="_18_5_2_43701b0_1509381788342_777957_39344" To="_18_5_2_43701b0_1509381656951_263386_39312">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="308.0" YCoordinate="226.0"/>
-                            <Coordinates XCoordinate="308.0" YCoordinate="259.0"/>
-                            <Coordinates XCoordinate="357.0" YCoordinate="259.0"/>
+                            <Coordinates XCoordinate="315.0" YCoordinate="135.0"/>
+                            <Coordinates XCoordinate="315.0" YCoordinate="168.0"/>
+                            <Coordinates XCoordinate="357.0" YCoordinate="168.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>

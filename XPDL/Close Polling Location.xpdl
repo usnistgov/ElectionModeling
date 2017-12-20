@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T09:09:00</Created>
-        <ModificationDate>17-10-14T10:02:20</ModificationDate>
+        <ModificationDate>17-11-20T11:11:58</ModificationDate>
         <Documentation>Close the voting location on election day.
 &lt;html&gt;
   &lt;head&gt;
@@ -52,7 +52,7 @@ Change to call activity&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1346</Version>
+        <Version>1477</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -90,7 +90,7 @@ Change to call activity&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_1_11940316_1501683856616_814059_34151" Source="_18_5_1_11940316_1500556280735_962343_33140" Target="_18_5_1_11940316_1501683856706_50994_34152" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672949868_472264_29890"/>
+            <Object Id="_18_5_2_43701b0_1513786373703_403863_37952"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="82.0" YCoordinate="336.0"/>
@@ -99,7 +99,7 @@ Change to call activity&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1502893063777_422173_31441" Source="_18_5_1_11940316_1500556726944_853427_33366" Target="_18_5_1_11940316_1502893063940_324368_31442" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672949874_289258_29891"/>
+            <Object Id="_18_5_2_43701b0_1513786373707_182512_37953"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="972.0" YCoordinate="401.0"/>
@@ -154,7 +154,7 @@ Change to call activity&amp;#160;
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>Notify everyone at the voting location that polls will be closing.</Documentation>
+                    <Documentation>Notify everyone at the polling location that polls will be closing.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500556198088_638781_33109" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="156.0" YCoordinate="323.0"/>

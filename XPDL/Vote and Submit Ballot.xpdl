@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-19T14:10:00</Created>
-        <ModificationDate>17-10-14T10:02:20</ModificationDate>
+        <ModificationDate>17-11-20T11:11:58</ModificationDate>
         <Documentation>A process describing in person voting.
 &lt;html&gt;
   &lt;head&gt;
@@ -116,18 +116,20 @@ Need to route outcomes (failure)?&amp;#160;
 &lt;/html&gt;
 &lt;html&gt;
   &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-NVRA only?&amp;#160;
-
+      NVRA only?&amp;#160;
     &lt;/p&gt;
-
-&lt;/body&gt;
+  &lt;/body&gt;
 &lt;/html&gt;
+
 &lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -146,7 +148,7 @@ E.g. Poll watcher,&amp;#160;Poll worker
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1346</Version>
+        <Version>1477</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -254,7 +256,7 @@ E.g. Poll watcher,&amp;#160;Poll worker
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1500489297751_910345_31290" Source="_18_5_1_11940316_1500489259484_149831_31265" Target="_18_5_1_11940316_1500489325054_147673_31298" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672992867_678610_30982"/>
+            <Object Id="_18_5_2_43701b0_1513786404882_839163_38019"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1022.0" YCoordinate="271.0"/>
@@ -263,7 +265,7 @@ E.g. Poll watcher,&amp;#160;Poll worker
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1508355406072_348093_29451" Source="_18_5_1_11940316_1500489692278_196686_31533" Target="_18_5_2_11940316_1508355406249_244871_29452" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672992868_557442_30983"/>
+            <Object Id="_18_5_2_43701b0_1513786404883_160277_38020"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="942.0" YCoordinate="800.0"/>
@@ -272,7 +274,7 @@ E.g. Poll watcher,&amp;#160;Poll worker
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1509557964734_220231_30820" Source="_18_5_1_11940316_1500489511701_959958_31404" Target="_18_5_2_43701b0_1509557964792_498515_30821" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672992868_634227_30984"/>
+            <Object Id="_18_5_2_43701b0_1513786404883_372825_38021"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="508.0" YCoordinate="532.0"/>
@@ -281,7 +283,7 @@ E.g. Poll watcher,&amp;#160;Poll worker
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1509558022364_638704_30832" Source="_18_5_2_43701b0_1508957342192_711265_31830" Target="_18_5_2_43701b0_1509558022430_384414_30833" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672992869_441056_30985"/>
+            <Object Id="_18_5_2_43701b0_1513786404884_292944_38022"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="303.0" YCoordinate="338.0"/>
@@ -290,7 +292,7 @@ E.g. Poll watcher,&amp;#160;Poll worker
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1509564653254_355137_50191" Source="_18_5_2_43701b0_1508961417179_956509_40482" Target="_18_5_2_43701b0_1509564653343_597132_50192" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672992869_985632_30986"/>
+            <Object Id="_18_5_2_43701b0_1513786404884_448239_38023"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="581.0" YCoordinate="961.0"/>

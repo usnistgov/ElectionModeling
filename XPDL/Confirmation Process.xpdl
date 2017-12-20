@@ -4,22 +4,24 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-12T08:49:00</Created>
-        <ModificationDate>17-10-14T10:02:20</ModificationDate>
+        <ModificationDate>17-11-20T11:11:58</ModificationDate>
         <Documentation>Confirm the location of the voter's current place of residence.
 &lt;html&gt;
   &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-Second Step&amp;#160;
-
+      Second Step&amp;#160;(NVRA)
     &lt;/p&gt;
-
-&lt;/body&gt;
+  &lt;/body&gt;
 &lt;/html&gt;
+
 &lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -96,7 +98,7 @@ This will allow the callee to determine whether to cancel the confirmation proce
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1346</Version>
+        <Version>1477</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -150,25 +152,25 @@ This will allow the callee to determine whether to cancel the confirmation proce
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1501775333386_688847_32323" Source="_18_5_1_11940316_1501016189283_169439_25467" Target="_18_5_1_11940316_1501775432910_827202_32383" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672986360_943626_30710"/>
+            <Object Id="_18_5_2_43701b0_1513786399644_290620_38003"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="452.0" YCoordinate="282.0"/>
-                    <Coordinates XCoordinate="380.0" YCoordinate="268.0"/>
+                    <Coordinates XCoordinate="453.0" YCoordinate="281.0"/>
+                    <Coordinates XCoordinate="401.0" YCoordinate="266.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1501783719575_395793_32702" Source="_18_5_1_11940316_1501019794587_475431_26003" Target="_18_5_1_11940316_1501783719698_55059_32703" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672986360_405802_30711"/>
+            <Object Id="_18_5_2_43701b0_1513786399644_390627_38004"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="511.0" YCoordinate="230.0"/>
-                    <Coordinates XCoordinate="438.0" YCoordinate="187.0"/>
+                    <Coordinates XCoordinate="511.0" YCoordinate="235.0"/>
+                    <Coordinates XCoordinate="436.0" YCoordinate="187.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1501792388497_64434_33068" Source="_18_5_1_11940316_1501775471340_894640_32389" Target="_18_5_1_11940316_1501792388610_502374_33069" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672986360_801418_30712"/>
+            <Object Id="_18_5_2_43701b0_1513786399644_360415_38005"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="766.0" YCoordinate="282.0"/>
@@ -177,7 +179,7 @@ This will allow the callee to determine whether to cancel the confirmation proce
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1503594385278_659303_29232" Source="_18_5_1_11940316_1501859352858_615492_26394" Target="_18_5_1_11940316_1503594385394_67048_29233" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672986361_460750_30713"/>
+            <Object Id="_18_5_2_43701b0_1513786399644_889331_38006"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="336.0" YCoordinate="413.0"/>
@@ -186,7 +188,7 @@ This will allow the callee to determine whether to cancel the confirmation proce
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1503596231603_370983_29387" Source="_18_5_1_11940316_1503596223005_647228_29369" Target="_18_5_1_11940316_1503596231719_647920_29388" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1510672986361_554326_30714"/>
+            <Object Id="_18_5_2_43701b0_1513786399644_428982_38007"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="287.0" YCoordinate="449.0"/>
@@ -196,10 +198,10 @@ This will allow the callee to determine whether to cancel the confirmation proce
         </Association>
     </Associations>
     <Artifacts>
-        <Artifact Id="_18_5_1_11940316_1501775432910_827202_32383" ArtifactType="Annotation" TextAnnotation="Second Step ">
+        <Artifact Id="_18_5_1_11940316_1501775432910_827202_32383" ArtifactType="Annotation" TextAnnotation="Second Step (NVRA)">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" Height="40.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="280.0" YCoordinate="238.0"/>
+                    <Coordinates XCoordinate="301.0" YCoordinate="231.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
