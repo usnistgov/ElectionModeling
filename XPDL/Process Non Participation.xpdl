@@ -4,13 +4,13 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-07T15:06:00</Created>
-        <ModificationDate>17-11-20T11:11:58</ModificationDate>
+        <ModificationDate>17-11-27T17:32:10</ModificationDate>
         <Documentation>For each eligible voter: Determine if a voter’s lack of participation in the electoral process should begin a list maintenance process.</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1477</Version>
+        <Version>1519</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -40,7 +40,7 @@
     </Pools>
     <Associations>
         <Association Id="_18_5_2_43701b0_1511376899108_80105_47327" Source="_18_5_1_11940316_1501016883584_484866_25719" Target="_18_5_2_43701b0_1511378246145_552661_47635" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786379572_620829_37960"/>
+            <Object Id="_18_5_2_43701b0_1514414039178_469375_33662"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499454413924_384694_23843" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="943.0" YCoordinate="79.0"/>

@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T17:01:00</Created>
-        <ModificationDate>17-11-20T11:11:58</ModificationDate>
+        <ModificationDate>17-11-27T17:32:10</ModificationDate>
         <Documentation>Publish the Official Results - that is - results including all valid votes.
 &lt;html&gt;
   &lt;head&gt;
@@ -24,7 +24,7 @@ Parties may be involved for nominations&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1477</Version>
+        <Version>1519</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -69,7 +69,7 @@ Parties may be involved for nominations&amp;#160;
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_2_11940316_1508526346171_498055_29642" Source="_18_5_1_11940316_1500584674660_747898_38548" Target="_18_5_2_11940316_1508526346343_219067_29643" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786394373_796445_37992"/>
+            <Object Id="_18_5_2_43701b0_1514414078163_566423_33697"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500584517880_913943_38325" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="808.0" YCoordinate="238.0"/>
@@ -95,7 +95,7 @@ Parties may be involved for nominations&amp;#160;
             <ActivitySets>
                 <ActivitySet Id="_18_5_1_11940316_1500584638530_552533_38460" Name="Perform optional tasks_as" AdHoc="true" AdHocOrdering="Parallel" AdHocCompletionCondition="Applicable tasks completed" TriggeredByEvent="false">
                     <Activities>
-                        <Activity Id="_18_5_1_11940316_1500584657283_952594_38519" IsForCompensation="false" Name="Transfer final vote results" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.5.5.1">
+                        <Activity Id="_18_5_1_11940316_1500584657283_952594_38519" IsForCompensation="false" Name="Transfer final vote results" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.6.2.1">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -109,7 +109,7 @@ Parties may be involved for nominations&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1500584674660_747898_38548" IsForCompensation="false" Name="Send winners certificate of election" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.5.5.2">
+                        <Activity Id="_18_5_1_11940316_1500584674660_747898_38548" IsForCompensation="false" Name="Send winners certificate of election" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.6.2.2">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -123,7 +123,7 @@ Parties may be involved for nominations&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1500659917348_374731_26296" IsForCompensation="false" Name="Publicize final voter results" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.5.5.4">
+                        <Activity Id="_18_5_1_11940316_1500659917348_374731_26296" IsForCompensation="false" Name="Publicize final voter results" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.6.2.4">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -141,7 +141,7 @@ Parties may be involved for nominations&amp;#160;
                 </ActivitySet>
             </ActivitySets>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1500584538789_457434_38353" Name="" cbm:numberedProperty="PO1.5.1">
+                <Activity Id="_18_5_1_11940316_1500584538789_457434_38353" Name="" cbm:numberedProperty="3.1.6.1">
                     <Event>
                         <StartEvent Trigger="None" Implementation="Unspecified"/>
                     </Event>
@@ -151,7 +151,7 @@ Parties may be involved for nominations&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500584556981_791359_38390" IsForCompensation="false" Name="Review and validate material" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.5.2">
+                <Activity Id="_18_5_1_11940316_1500584556981_791359_38390" IsForCompensation="false" Name="Review and validate material" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.6.2">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -164,7 +164,7 @@ Parties may be involved for nominations&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500584598773_221930_38416" Name="Is material consistent and complete?" cbm:numberedProperty="PO1.5.3">
+                <Activity Id="_18_5_1_11940316_1500584598773_221930_38416" Name="Is material consistent and complete?" cbm:numberedProperty="3.1.6.3">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -182,7 +182,7 @@ Parties may be involved for nominations&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500584602459_59169_38434" IsForCompensation="false" Name="Fill out affidavits necessary to certify results" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.5.4">
+                <Activity Id="_18_5_1_11940316_1500584602459_59169_38434" IsForCompensation="false" Name="Fill out affidavits necessary to certify results" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.6.6">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -196,7 +196,7 @@ Parties may be involved for nominations&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500584638597_633248_38475" IsForCompensation="false" Name="Perform optional tasks" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="PO1.5.5">
+                <Activity Id="_18_5_1_11940316_1500584638597_633248_38475" IsForCompensation="false" Name="Perform optional tasks" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="3.1.6.7">
                     <BlockActivity ActivitySetId="_18_5_1_11940316_1500584638530_552533_38460" View="EXPANDED"/>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
@@ -208,7 +208,7 @@ Parties may be involved for nominations&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500584708178_276037_38606" Name="Results Certified" cbm:numberedProperty="PO1.5.6">
+                <Activity Id="_18_5_1_11940316_1500584708178_276037_38606" Name="Results Certified" cbm:numberedProperty="3.1.6.8">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -218,7 +218,7 @@ Parties may be involved for nominations&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500659880282_169461_26267" IsForCompensation="false" Name="Investigate and resolve" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.5.7">
+                <Activity Id="_18_5_1_11940316_1500659880282_169461_26267" IsForCompensation="false" Name="Investigate and resolve" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.6.4">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -231,7 +231,7 @@ Parties may be involved for nominations&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500659993208_857712_26323" Name="Election authority also certifies?" cbm:numberedProperty="PO1.5.8">
+                <Activity Id="_18_5_1_11940316_1500659993208_857712_26323" Name="Election authority also certifies?" cbm:numberedProperty="3.1.6.5">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>

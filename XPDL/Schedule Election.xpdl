@@ -4,13 +4,13 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-07-29T14:44:00</Created>
-        <ModificationDate>17-11-20T11:11:58</ModificationDate>
+        <ModificationDate>17-11-27T17:32:10</ModificationDate>
         <Documentation>Fix a date for the election to be held.</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1477</Version>
+        <Version>1519</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -90,7 +90,7 @@
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>Schedule the election at a regularly defined time or in some circumstances, usually a vacancy or recall, a special time determined by law or policy.</Documentation>
+                    <Documentation>Schedule the election at a regularly defined time or in some circumstances, such as vacancy or recall, a special time determined by law or policy.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1504032275920_241245_31251" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="743.0" YCoordinate="84.0"/>

@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T09:25:00</Created>
-        <ModificationDate>17-11-20T11:11:58</ModificationDate>
+        <ModificationDate>17-11-27T17:32:10</ModificationDate>
         <Documentation>Maintain the list of voters whose ballot will be transmitted in advance of election day to a location outside the election jurisdiction.
 &lt;html&gt;
   &lt;head&gt;
@@ -24,7 +24,7 @@ Check alignment&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1477</Version>
+        <Version>1519</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -70,6 +70,7 @@ Check alignment&amp;#160;
             </ConnectorGraphicsInfos>
         </MessageFlow>
         <MessageFlow Id="_18_5_2_43701b0_1510174786954_408215_32360" Name="" Source="_18_5_2_43701b0_1510174762596_556783_32334" Target="_18_5_1_11940316_1500557162557_666555_33542">
+            <Message Id="_18_5_2_43701b0_1513786613958_597140_38032" Name="Notice"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557154909_554485_33530" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="364.0" YCoordinate="148.0"/>
@@ -402,6 +403,9 @@ Check alignment&amp;#160;
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_2_43701b0_1510777377878_408000_29693" From="_18_5_1_11940316_1500557293528_873605_33632" To="_18_5_1_11940316_1500557421992_347910_33760" Name="">
+                    <Condition Type="CONDITION">
+                        <Expression>Yes</Expression>
+                    </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557154909_554485_33530" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="376.0" YCoordinate="321.0"/>

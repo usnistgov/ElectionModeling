@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-12T10:23:00</Created>
-        <ModificationDate>17-11-20T11:11:58</ModificationDate>
+        <ModificationDate>17-11-27T17:32:10</ModificationDate>
         <Documentation>For each ballot style: select the contests and selections to appear on the ballot and apply business rules determining their order and location.
 &lt;html&gt;
   &lt;head&gt;
@@ -24,7 +24,7 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1477</Version>
+        <Version>1519</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -48,7 +48,7 @@ What if it is too late to remove the withdrawn from the ballot (e.g. after votin
     </Pools>
     <Associations>
         <Association Id="_18_5_2_11940316_1504546807848_801491_42027" Source="_18_5_2_11940316_1505756357427_986896_29127" Target="_18_5_2_11940316_1504547207743_246114_42077" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786389410_810414_37981"/>
+            <Object Id="_18_5_2_43701b0_1514414061869_559547_33683"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499869414878_955158_23236" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="308.0" YCoordinate="183.0"/>

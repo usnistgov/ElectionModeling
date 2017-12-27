@@ -4,15 +4,15 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-11-11T16:58:00</Created>
-        <ModificationDate>17-11-20T11:11:58</ModificationDate>
+        <ModificationDate>17-11-27T17:32:10</ModificationDate>
         <Documentation>Try to match the voter's record against information on file with the motor vehicle authority and Social Security Administration.
-What about dead people
+What about dead people?
 Is this always a confirmation notice</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1477</Version>
+        <Version>1519</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -26,19 +26,19 @@ Is this always a confirmation notice</Documentation>
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Perform Motor Vehicle/SSA Matching" Id="_18_5_2_43701b0_1513029519928_751160_41190" Height="500.0" Width="1235.0"/>
+        <Page Name="Perform Motor Vehicle/SSA Matching" Id="_18_5_2_43701b0_1513029519928_751160_41190" Height="451.0" Width="1039.0"/>
     </Pages>
     <Pools>
         <Pool Id="_18_5_2_43701b0_1513029606406_392407_41202" Name="Election Jurisdiction" Orientation="HORIZONTAL" Process="_18_5_2_43701b0_1513029606406_392407_41202_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="255.0" Width="1228.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
-                    <Coordinates XCoordinate="7.0" YCoordinate="245.0"/>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="255.0" Width="1039.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                    <Coordinates XCoordinate="0.0" YCoordinate="196.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Pool>
         <Pool Id="_18_5_2_43701b0_1513030944799_162272_41641" Name="Motor Vehicle Authority" Orientation="HORIZONTAL" Process="_18_5_2_43701b0_1513030944799_162272_41641_proc" Participant="_18_5_2_43701b0_1513030927477_421698_41611" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="171.0" Width="1193.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="147.0" Width="1039.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -48,43 +48,43 @@ Is this always a confirmation notice</Documentation>
         <MessageFlow Id="_18_5_2_43701b0_1513030961118_529321_41656" Name="" Source="_18_5_2_43701b0_1513030804284_860334_41315" Target="_18_5_2_43701b0_1513030944799_162272_41641">
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" BorderColor="#424242" FillColor="#FFFFCC">
-                    <Coordinates XCoordinate="231.0" YCoordinate="280.0"/>
-                    <Coordinates XCoordinate="231.0" YCoordinate="171.0"/>
+                    <Coordinates XCoordinate="224.0" YCoordinate="231.0"/>
+                    <Coordinates XCoordinate="224.0" YCoordinate="147.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
         <MessageFlow Id="_18_5_2_43701b0_1513030967487_569662_41662" Name="" Source="_18_5_2_43701b0_1513030944799_162272_41641" Target="_18_5_2_43701b0_1513030961117_225427_41655">
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" BorderColor="#424242" FillColor="#FFFFCC">
-                    <Coordinates XCoordinate="382.0" YCoordinate="171.0"/>
-                    <Coordinates XCoordinate="382.0" YCoordinate="294.0"/>
+                    <Coordinates XCoordinate="375.0" YCoordinate="147.0"/>
+                    <Coordinates XCoordinate="375.0" YCoordinate="245.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_2_43701b0_1513034611645_557204_41918" Source="_18_5_2_43701b0_1513034601052_499302_41905" Target="_18_5_2_43701b0_1513032696102_753153_41737" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786398179_607462_38001"/>
+            <Object Id="_18_5_2_43701b0_1514414085109_353169_33706"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="499.0" YCoordinate="436.0"/>
-                    <Coordinates XCoordinate="563.0" YCoordinate="420.0"/>
+                    <Coordinates XCoordinate="492.0" YCoordinate="387.0"/>
+                    <Coordinates XCoordinate="556.0" YCoordinate="371.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
     </Associations>
     <Artifacts>
-        <Artifact Id="_18_5_2_43701b0_1513034583489_611465_41886" ArtifactType="Annotation" TextAnnotation="What about dead people">
+        <Artifact Id="_18_5_2_43701b0_1513034583489_611465_41886" ArtifactType="Annotation" TextAnnotation="What about dead people?">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="40.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="294.0" YCoordinate="392.0"/>
+                    <Coordinates XCoordinate="287.0" YCoordinate="343.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
         <Artifact Id="_18_5_2_43701b0_1513034601052_499302_41905" ArtifactType="Annotation" TextAnnotation="Is this always a confirmation notice">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="45.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="399.0" YCoordinate="427.0"/>
+                    <Coordinates XCoordinate="392.0" YCoordinate="378.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
@@ -101,7 +101,7 @@ Is this always a confirmation notice</Documentation>
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="70.0" YCoordinate="296.0"/>
+                            <Coordinates XCoordinate="63.0" YCoordinate="247.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -114,7 +114,7 @@ Is this always a confirmation notice</Documentation>
                     </Performers>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="175.0" YCoordinate="280.0"/>
+                            <Coordinates XCoordinate="168.0" YCoordinate="231.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -126,7 +126,7 @@ Is this always a confirmation notice</Documentation>
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="357.0" YCoordinate="294.0"/>
+                            <Coordinates XCoordinate="350.0" YCoordinate="245.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -144,7 +144,7 @@ Is this always a confirmation notice</Documentation>
                     </TransitionRestrictions>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
-                            <Coordinates XCoordinate="483.0" YCoordinate="288.0"/>
+                            <Coordinates XCoordinate="476.0" YCoordinate="239.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -154,7 +154,7 @@ Is this always a confirmation notice</Documentation>
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="616.0" YCoordinate="294.0"/>
+                            <Coordinates XCoordinate="609.0" YCoordinate="245.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -167,7 +167,7 @@ Is this always a confirmation notice</Documentation>
                     </Performers>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="50.0" Width="131.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="563.0" YCoordinate="378.0"/>
+                            <Coordinates XCoordinate="556.0" YCoordinate="329.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -177,7 +177,7 @@ Is this always a confirmation notice</Documentation>
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="646.0" YCoordinate="415.0"/>
+                            <Coordinates XCoordinate="639.0" YCoordinate="366.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -195,7 +195,7 @@ Is this always a confirmation notice</Documentation>
                     </TransitionRestrictions>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
-                            <Coordinates XCoordinate="763.0" YCoordinate="385.0"/>
+                            <Coordinates XCoordinate="756.0" YCoordinate="336.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -208,7 +208,7 @@ Is this always a confirmation notice</Documentation>
                     </Performers>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="723.0" YCoordinate="281.0"/>
+                            <Coordinates XCoordinate="716.0" YCoordinate="232.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -218,7 +218,7 @@ Is this always a confirmation notice</Documentation>
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="917.0" YCoordinate="393.0"/>
+                            <Coordinates XCoordinate="910.0" YCoordinate="344.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -228,7 +228,7 @@ Is this always a confirmation notice</Documentation>
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="917.0" YCoordinate="294.0"/>
+                            <Coordinates XCoordinate="910.0" YCoordinate="245.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -237,24 +237,24 @@ Is this always a confirmation notice</Documentation>
                 <Transition Id="_18_5_2_43701b0_1513030774261_17216_41272" From="_18_5_2_43701b0_1513029622782_662506_41219" To="_18_5_2_43701b0_1513030804284_860334_41315" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="94.0" YCoordinate="308.0"/>
-                            <Coordinates XCoordinate="175.0" YCoordinate="308.0"/>
+                            <Coordinates XCoordinate="87.0" YCoordinate="259.0"/>
+                            <Coordinates XCoordinate="168.0" YCoordinate="259.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_2_43701b0_1513030904395_474653_41599" From="_18_5_2_43701b0_1513030804284_860334_41315" To="_18_5_2_43701b0_1513030961117_225427_41655" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="295.0" YCoordinate="308.0"/>
-                            <Coordinates XCoordinate="368.0" YCoordinate="308.0"/>
+                            <Coordinates XCoordinate="288.0" YCoordinate="259.0"/>
+                            <Coordinates XCoordinate="361.0" YCoordinate="259.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_2_43701b0_1513031039181_900764_41670" From="_18_5_2_43701b0_1513030961117_225427_41655" To="_18_5_2_43701b0_1513031045998_410295_41685" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="392.0" YCoordinate="308.0"/>
-                            <Coordinates XCoordinate="483.0" YCoordinate="308.0"/>
+                            <Coordinates XCoordinate="385.0" YCoordinate="259.0"/>
+                            <Coordinates XCoordinate="476.0" YCoordinate="259.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -264,25 +264,28 @@ Is this always a confirmation notice</Documentation>
                     </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="523.0" YCoordinate="306.0"/>
-                            <Coordinates XCoordinate="616.0" YCoordinate="306.0"/>
+                            <Coordinates XCoordinate="516.0" YCoordinate="257.0"/>
+                            <Coordinates XCoordinate="609.0" YCoordinate="257.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_2_43701b0_1513032693638_976027_41720" From="_18_5_2_43701b0_1513031045998_410295_41685" To="_18_5_2_43701b0_1513032696102_753153_41737" Name="">
+                    <Condition Type="CONDITION">
+                        <Expression>No</Expression>
+                    </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="503.0" YCoordinate="328.0"/>
-                            <Coordinates XCoordinate="503.0" YCoordinate="406.0"/>
-                            <Coordinates XCoordinate="563.0" YCoordinate="406.0"/>
+                            <Coordinates XCoordinate="496.0" YCoordinate="279.0"/>
+                            <Coordinates XCoordinate="496.0" YCoordinate="357.0"/>
+                            <Coordinates XCoordinate="556.0" YCoordinate="357.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_2_43701b0_1513033208407_453820_41773" From="_18_5_2_43701b0_1513032696102_753153_41737" To="_18_5_2_43701b0_1513033211101_303235_41788" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="694.0" YCoordinate="405.0"/>
-                            <Coordinates XCoordinate="763.0" YCoordinate="405.0"/>
+                            <Coordinates XCoordinate="687.0" YCoordinate="356.0"/>
+                            <Coordinates XCoordinate="756.0" YCoordinate="356.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -292,8 +295,8 @@ Is this always a confirmation notice</Documentation>
                     </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="783.0" YCoordinate="385.0"/>
-                            <Coordinates XCoordinate="783.0" YCoordinate="331.0"/>
+                            <Coordinates XCoordinate="776.0" YCoordinate="336.0"/>
+                            <Coordinates XCoordinate="776.0" YCoordinate="282.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -303,16 +306,16 @@ Is this always a confirmation notice</Documentation>
                     </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="803.0" YCoordinate="405.0"/>
-                            <Coordinates XCoordinate="917.0" YCoordinate="405.0"/>
+                            <Coordinates XCoordinate="796.0" YCoordinate="356.0"/>
+                            <Coordinates XCoordinate="910.0" YCoordinate="356.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_2_43701b0_1513033271698_970002_41840" From="_18_5_2_43701b0_1513033237444_555045_41811" To="_18_5_2_43701b0_1513033275750_705441_41851" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="843.0" YCoordinate="306.0"/>
-                            <Coordinates XCoordinate="917.0" YCoordinate="306.0"/>
+                            <Coordinates XCoordinate="836.0" YCoordinate="257.0"/>
+                            <Coordinates XCoordinate="910.0" YCoordinate="257.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -320,10 +323,10 @@ Is this always a confirmation notice</Documentation>
                     <Condition Type="EXCEPTION"/>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="669.0" YCoordinate="470.0"/>
-                            <Coordinates XCoordinate="669.0" YCoordinate="476.0"/>
-                            <Coordinates XCoordinate="929.0" YCoordinate="476.0"/>
-                            <Coordinates XCoordinate="929.0" YCoordinate="417.0"/>
+                            <Coordinates XCoordinate="662.0" YCoordinate="421.0"/>
+                            <Coordinates XCoordinate="662.0" YCoordinate="427.0"/>
+                            <Coordinates XCoordinate="922.0" YCoordinate="427.0"/>
+                            <Coordinates XCoordinate="922.0" YCoordinate="368.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>

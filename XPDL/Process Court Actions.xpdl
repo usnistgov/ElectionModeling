@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-05T10:24:00</Created>
-        <ModificationDate>17-11-20T11:11:58</ModificationDate>
+        <ModificationDate>17-11-27T17:32:10</ModificationDate>
         <Documentation>For each court record: lookup a record in the voter registration database, and change the record’s status according to the court action.
 &lt;html&gt;
   &lt;head&gt;
@@ -24,7 +24,7 @@ Verbiage here is a bit strange.
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1477</Version>
+        <Version>1519</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -72,7 +72,7 @@ Verbiage here is a bit strange.
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_2_43701b0_1511987232740_526975_71072" Source="_18_5_1_11940316_1499264717464_690928_23086" Target="_18_5_1_11940316_1499264717505_31548_23126" Name="" AssociationDirection="To">
-            <Object Id="_18_5_2_43701b0_1513786378089_493029_37957"/>
+            <Object Id="_18_5_2_43701b0_1514414035894_395682_33659"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499264668505_931485_22943" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="89.0" YCoordinate="346.0"/>
@@ -84,8 +84,8 @@ Verbiage here is a bit strange.
         </Association>
     </Associations>
     <Artifacts>
-        <Artifact Id="_18_5_1_11940316_1499264717290_80609_22987" Name="Court Records" ArtifactType="DataObject">
-            <DataObject Id="_18_5_1_11940316_1499264717505_31548_23126" Name="Court Records" cbm:realDataId="_18_5_1_11940316_1499264717290_80609_22987">
+        <Artifact Id="_18_5_1_11940316_1499264717290_80609_22987" Name="Court Actions" ArtifactType="DataObject">
+            <DataObject Id="_18_5_1_11940316_1499264717505_31548_23126" Name="Court Actions" cbm:realDataId="_18_5_1_11940316_1499264717290_80609_22987">
                 <NodeGraphicsInfos>
                     <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499264668505_931485_22943" Height="55.0" Width="101.0" BorderColor="#99995C" FillColor="#E1E1C3">
                         <Coordinates XCoordinate="39.0" YCoordinate="413.0"/>
@@ -187,7 +187,7 @@ Verbiage here is a bit strange.
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1499265497377_147620_22339" Name="Action?" cbm:numberedProperty="1.2.M4.2.4">
+                        <Activity Id="_18_5_1_11940316_1499265497377_147620_22339" Name="Court Action?" cbm:numberedProperty="1.2.M4.2.4">
                             <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                             <TransitionRestrictions>
 <TransitionRestriction>
@@ -376,7 +376,7 @@ Automatic restoration to rolls happens&lt;/body&gt;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499264717464_690928_23086" Name="Receive Court Record(s)" cbm:numberedProperty="1.2.M4.1">
+                <Activity Id="_18_5_1_11940316_1499264717464_690928_23086" Name="Receive Court Actions(s)" cbm:numberedProperty="1.2.M4.1">
                     <Event>
                         <StartEvent Trigger="Message" Implementation="Unspecified" Interrupting="true">
                             <TriggerResultMessage CatchThrow="CATCH"/>

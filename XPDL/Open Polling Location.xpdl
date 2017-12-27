@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T00:59:00</Created>
-        <ModificationDate>17-11-20T11:11:58</ModificationDate>
+        <ModificationDate>17-11-27T17:32:10</ModificationDate>
         <Documentation>Open the polling location so that voters may begin voting.
 &lt;html&gt;
   &lt;head&gt;
@@ -26,7 +26,7 @@
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1477</Version>
+        <Version>1519</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -134,17 +134,17 @@
                             <Documentation>Contact the election jurisdiction to receive guidance on resolving any discovered problem.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500483560108_270447_29550" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="323.0" YCoordinate="222.0"/>
+    <Coordinates XCoordinate="319.0" YCoordinate="222.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1500486494776_209980_30332" Name="" cbm:numberedProperty="2.1.1.25.2">
+                        <Activity Id="_18_5_1_11940316_1500486494776_209980_30332" Name="Problem Handled" cbm:numberedProperty="2.1.1.25.2">
                             <Event>
 <EndEvent Result="None" Implementation="Unspecified"/>
                             </Event>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500483560108_270447_29550" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-    <Coordinates XCoordinate="499.0" YCoordinate="236.0"/>
+    <Coordinates XCoordinate="495.0" YCoordinate="236.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -154,7 +154,7 @@
                             </Event>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500483560108_270447_29550" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-    <Coordinates XCoordinate="230.0" YCoordinate="238.0"/>
+    <Coordinates XCoordinate="226.0" YCoordinate="238.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -163,16 +163,16 @@
                         <Transition Id="_18_5_1_11940316_1500486492287_222210_30321" From="_18_5_1_11940316_1500484221597_25567_30058" To="_18_5_1_11940316_1500486494776_209980_30332" Name="">
                             <ConnectorGraphicsInfos>
 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500483560108_270447_29550" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="443.0" YCoordinate="248.0"/>
-    <Coordinates XCoordinate="499.0" YCoordinate="248.0"/>
+    <Coordinates XCoordinate="439.0" YCoordinate="248.0"/>
+    <Coordinates XCoordinate="495.0" YCoordinate="248.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
                         <Transition Id="_18_5_2_43701b0_1511355849017_921334_29979" From="_18_5_2_43701b0_1511355729448_473112_29966" To="_18_5_1_11940316_1500484221597_25567_30058" Name="">
                             <ConnectorGraphicsInfos>
 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500483560108_270447_29550" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="254.0" YCoordinate="250.0"/>
-    <Coordinates XCoordinate="323.0" YCoordinate="250.0"/>
+    <Coordinates XCoordinate="250.0" YCoordinate="250.0"/>
+    <Coordinates XCoordinate="319.0" YCoordinate="250.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
@@ -282,8 +282,8 @@
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500483560108_270447_29550" Height="120.0" Width="378.0" BorderColor="#636363" FillColor="#F7DD99">
-                            <Coordinates XCoordinate="174.0" YCoordinate="182.0"/>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500483560108_270447_29550" Height="120.0" Width="386.0" BorderColor="#636363" FillColor="#F7DD99">
+                            <Coordinates XCoordinate="170.0" YCoordinate="182.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>

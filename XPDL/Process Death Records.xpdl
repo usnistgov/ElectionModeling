@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-03T09:32:00</Created>
-        <ModificationDate>17-11-20T11:11:58</ModificationDate>
+        <ModificationDate>17-11-27T17:32:10</ModificationDate>
         <Documentation>For each death notice received: look up a record in the voter registration database and remove the decedent from the list of eligible voters. 
 &lt;html&gt;
   &lt;head&gt;
@@ -24,7 +24,7 @@ Assume trusted source
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1477</Version>
+        <Version>1519</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -38,7 +38,7 @@ Assume trusted source
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Process Death Records" Id="_18_5_1_11940316_1499088773641_953997_22448" Height="712.0" Width="1354.0"/>
+        <Page Name="Process Death Records" Id="_18_5_1_11940316_1499088773641_953997_22448" Height="677.0" Width="1354.0"/>
     </Pages>
     <DataStores>
         <DataStore Id="_18_5_1_11940316_1499089049215_588855_22680" Name="Voter Record" IsUnlimited="false"/>
@@ -46,7 +46,7 @@ Assume trusted source
     <Pools>
         <Pool Id="_18_5_1_11940316_1499088791731_760703_22456" Name="Election Authority" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1499088791731_760703_22456_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" Height="467.0" Width="1354.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" Height="432.0" Width="1354.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="245.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -91,7 +91,7 @@ Assume trusted source
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1500064336470_994540_23750" Source="_18_5_1_11940316_1500064324919_276366_23738" Target="_18_5_1_11940316_1499100521596_250589_21944" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786406664_295109_38025"/>
+            <Object Id="_18_5_2_43701b0_1514414097759_556157_33729"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="85.0" YCoordinate="616.0"/>
@@ -100,7 +100,7 @@ Assume trusted source
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1500487543781_311201_30851" Source="_18_5_1_11940316_1500065377718_599881_24017" Target="_18_5_1_11940316_1500487602740_146567_30870" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786406664_627844_38026"/>
+            <Object Id="_18_5_2_43701b0_1514414097760_183291_33730"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="986.0" YCoordinate="518.0"/>
@@ -109,7 +109,7 @@ Assume trusted source
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1500487588272_14643_30861" Source="_18_5_1_11940316_1500064717152_276715_23864" Target="_18_5_1_11940316_1500487602740_879677_30871" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786406664_416505_38027"/>
+            <Object Id="_18_5_2_43701b0_1514414097760_792167_33731"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="672.0" YCoordinate="346.0"/>
@@ -118,7 +118,7 @@ Assume trusted source
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1511987059849_319269_71061" Source="_18_5_1_11940316_1499088791732_638548_22459" Target="_18_5_1_11940316_1499100521596_250589_21944" Name="" AssociationDirection="To">
-            <Object Id="_18_5_2_43701b0_1513786406664_378811_38028"/>
+            <Object Id="_18_5_2_43701b0_1514414097760_81850_33732"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="82.0" YCoordinate="490.0"/>
@@ -170,7 +170,7 @@ Assume trusted source
                 <Created>17-06-03T09:32:00</Created>
             </ProcessHeader>
             <ActivitySets>
-                <ActivitySet Id="_18_5_1_11940316_1499099623474_914985_21414" Name="Remove Registration_as" AdHoc="false" TriggeredByEvent="false">
+                <ActivitySet Id="_18_5_1_11940316_1499099623474_914985_21414" Name="Process Death Record_as" AdHoc="false" TriggeredByEvent="false">
                     <Activities>
                         <Activity Id="_18_5_1_11940316_1499452634114_226116_23463" Name="" cbm:numberedProperty="1.2.M1.2.1">
                             <Event>
@@ -182,7 +182,7 @@ Assume trusted source
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1499452861811_339180_23557" IsForCompensation="false" Name="Lookup Voter Record" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.2.M1.2.2">
+                        <Activity Id="_18_5_1_11940316_1499452861811_339180_23557" IsForCompensation="false" Name="Lookup voter record" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.2.M1.2.2">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -225,7 +225,7 @@ Assume trusted source
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1499861356241_987822_24319" IsForCompensation="false" Name="Remove Person from List of Eligible Voters" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.2.M1.2.5">
+                        <Activity Id="_18_5_1_11940316_1499861356241_987822_24319" IsForCompensation="false" Name="Remove person from list of eligible voters" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.2.M1.2.5">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -233,7 +233,7 @@ Assume trusted source
 <Performer cbm:resourceType="ResourceRole"></Performer>
 <Performer cbm:resourceType="ResourceRole"></Performer>
                             </Performers>
-                            <Documentation>The decedent is removed from the list of eligible voters.</Documentation>
+                            <Documentation>Remove the decedent from the list of eligible voters.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" Height="59.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
     <Coordinates XCoordinate="791.0" YCoordinate="467.0"/>
@@ -250,14 +250,14 @@ Assume trusted source
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1500064717152_276715_23864" IsForCompensation="false" Name="Send Confirmation of Death" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.2.M1.2.8">
+                        <Activity Id="_18_5_1_11940316_1500064717152_276715_23864" IsForCompensation="false" Name="Send confirmation of death" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.2.M1.2.8">
                             <Implementation>
 <No/>
                             </Implementation>
                             <Performers>
 <Performer cbm:resourceType="ResourceRole"></Performer>
                             </Performers>
-                            <Documentation>An election jurisdiction may require a confirmation of death be sent to the decedent’s residence on file with the voter registration database. This starts a cure period in which the removal can be challenged.</Documentation>
+                            <Documentation>An election jurisdiction may require a confirmation of death be sent to the decedent’s residence on file with the voter registration database. This starts a cure period in which the removal may be challenged.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
     <Coordinates XCoordinate="672.0" YCoordinate="339.0"/>
@@ -355,7 +355,7 @@ Assume trusted source
                         <DataStoreReference DataStoreRef="_18_5_1_11940316_1499089049215_588855_22680" Id="_18_5_1_11940316_1499089052236_923103_22696" Name="Voter Record">
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" Height="55.0" Width="86.0" BorderColor="#99995C" FillColor="#E1E1C3">
-    <Coordinates XCoordinate="259.0" YCoordinate="595.0"/>
+    <Coordinates XCoordinate="259.0" YCoordinate="560.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </DataStoreReference>
@@ -500,7 +500,7 @@ Assume trusted source
                         <DataAssociation Id="_18_5_1_11940316_1499454333615_525680_23812" Name="" From="_18_5_1_11940316_1499089052236_923103_22696" To="_18_5_1_11940316_1499452861811_339180_23557">
                             <ConnectorGraphicsInfos>
 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="301.0" YCoordinate="598.0"/>
+    <Coordinates XCoordinate="301.0" YCoordinate="563.0"/>
     <Coordinates XCoordinate="301.0" YCoordinate="519.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
@@ -509,8 +509,8 @@ Assume trusted source
                             <ConnectorGraphicsInfos>
 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" BorderColor="#424242" FillColor="#FFFFCC">
     <Coordinates XCoordinate="823.0" YCoordinate="526.0"/>
-    <Coordinates XCoordinate="823.0" YCoordinate="616.0"/>
-    <Coordinates XCoordinate="319.0" YCoordinate="616.0"/>
+    <Coordinates XCoordinate="823.0" YCoordinate="581.0"/>
+    <Coordinates XCoordinate="319.0" YCoordinate="581.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </DataAssociation>
@@ -531,12 +531,12 @@ Assume trusted source
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1499099623488_270558_21426" IsForCompensation="false" Name="Remove Registration" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.2.M1.2">
+                <Activity Id="_18_5_1_11940316_1499099623488_270558_21426" IsForCompensation="false" Name="Process Death Record" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.2.M1.2">
                     <BlockActivity ActivitySetId="_18_5_1_11940316_1499099623474_914985_21414" View="EXPANDED"/>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>Look up a record in the voter registration database and removes the decedent from the list of eligible voters.
+                    <Documentation>Look up a record in the voter registration database and remove the decedent from the list of eligible voters.
 &lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -569,7 +569,7 @@ E.g. Maryland&amp;#160;
                         <LoopMultiInstance MI_Ordering="Parallel" MI_FlowCondition="All"/>
                     </Loop>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" Height="432.0" Width="1036.0" BorderColor="#636363" FillColor="#F7DD99">
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" Height="368.0" Width="1036.0" BorderColor="#636363" FillColor="#F7DD99">
                             <Coordinates XCoordinate="154.0" YCoordinate="262.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
@@ -607,7 +607,7 @@ E.g. Maryland&amp;#160;
                 <Transition Id="_18_5_1_11940316_1499099974846_226073_21596" From="_18_5_1_11940316_1499099623488_270558_21426" To="_18_5_1_11940316_1499099976988_969243_21609" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499088773641_953997_22448" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="1190.0" YCoordinate="478.0"/>
+                            <Coordinates XCoordinate="1190.0" YCoordinate="474.0"/>
                             <Coordinates XCoordinate="1260.0" YCoordinate="478.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>

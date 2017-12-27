@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-07-23T15:27:00</Created>
-        <ModificationDate>17-11-20T11:11:58</ModificationDate>
+        <ModificationDate>17-11-27T17:32:10</ModificationDate>
         <Documentation>Perform a set of tasks that tests equipment allocated for the election. The tasks test the machines' ability to perform its major functions. After the test concludes, validate the results and take any required corrective action.
 &lt;html&gt;
   &lt;head&gt;
@@ -36,20 +36,18 @@ Minimum allocation rules&amp;#160;
 &lt;/html&gt;
 &lt;html&gt;
   &lt;head&gt;
-    &lt;style type="text/css"&gt;
-      &lt;!--
-        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
-      --&gt;
-    &lt;/style&gt;
-    
-  &lt;/head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
   &lt;body&gt;
     &lt;p&gt;
-      Do this apply to all kinds of L&amp;amp;A? What about EPBs?&amp;#160;
-    &lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
+Does this apply to all kinds of L&amp;amp;A? What about EPBs?&amp;#160;
 
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
 &lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -82,7 +80,7 @@ Situationally defined&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1477</Version>
+        <Version>1519</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -109,7 +107,7 @@ Situationally defined&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_2_11940316_1504700351802_301914_28239" Source="_18_5_1_11940316_1503516885183_970449_61399" Target="_18_5_2_11940316_1504700351902_959829_28240" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786375141_167391_37954"/>
+            <Object Id="_18_5_2_43701b0_1514414030604_901801_33656"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="192.0" YCoordinate="204.0"/>
@@ -118,7 +116,7 @@ Situationally defined&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1504703410808_880352_28487" Source="_18_5_2_11940316_1504700202011_450201_28183" Target="_18_5_2_11940316_1504703410920_810473_28488" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786375142_329797_37955"/>
+            <Object Id="_18_5_2_43701b0_1514414030604_354178_33657"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="388.0" YCoordinate="204.0"/>
@@ -127,7 +125,7 @@ Situationally defined&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1505333310290_913756_40924" Source="_18_5_2_11940316_1504700493218_881590_28288" Target="_18_5_2_11940316_1505333310442_520687_40925" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786375142_253617_37956"/>
+            <Object Id="_18_5_2_43701b0_1514414030605_301666_33658"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="994.0" YCoordinate="356.0"/>
@@ -139,7 +137,7 @@ Situationally defined&amp;#160;
     <Artifacts>
         <Artifact Id="_18_5_1_11940316_1503516610447_698416_61369" ArtifactType="Annotation" TextAnnotation="Minimum allocation rules "/>
         <Artifact Id="_18_5_1_11940316_1503517697034_96688_61581" ArtifactType="Annotation" TextAnnotation="Minimum allocation rules "/>
-        <Artifact Id="_18_5_2_11940316_1504700351902_959829_28240" ArtifactType="Annotation" TextAnnotation="Do this apply to all kinds of L&amp;A? What about EPBs? ">
+        <Artifact Id="_18_5_2_11940316_1504700351902_959829_28240" ArtifactType="Annotation" TextAnnotation="Does this apply to all kinds of L&amp;A? What about EPBs? ">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503516430443_259666_61306" Height="69.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
                     <Coordinates XCoordinate="84.0" YCoordinate="238.0"/>
@@ -241,7 +239,7 @@ Situationally defined&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1503516885183_970449_61399" IsForCompensation="false" Name="Prepare ballot sets" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.7.3">
+                <Activity Id="_18_5_1_11940316_1503516885183_970449_61399" IsForCompensation="false" Name="Prepare ballot sets" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.7.2">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -255,7 +253,7 @@ Situationally defined&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504700141524_615218_28119" IsForCompensation="false" Name="Try to preform logic and accuracy testing" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.5.7.5">
+                <Activity Id="_18_5_2_11940316_1504700141524_615218_28119" IsForCompensation="false" Name="Try to preform logic and accuracy testing" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.5.7.7">
                     <BlockActivity ActivitySetId="_18_5_2_11940316_1504700141455_193673_28105" View="EXPANDED"/>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
@@ -269,7 +267,7 @@ Situationally defined&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504700202011_450201_28183" IsForCompensation="false" Name="Configure machines" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.7.6">
+                <Activity Id="_18_5_2_11940316_1504700202011_450201_28183" IsForCompensation="false" Name="Configure machines" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.7.5">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -293,7 +291,7 @@ Situationally defined&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504700493218_881590_28288" IsForCompensation="false" Name="Fix issue and retest" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.7.7">
+                <Activity Id="_18_5_2_11940316_1504700493218_881590_28288" IsForCompensation="false" Name="Fix issue and retest" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.7.9">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -323,7 +321,7 @@ Situationally defined&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504712088073_598783_28542" IsForCompensation="false" Name="Provide notice to public" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.7.9">
+                <Activity Id="_18_5_2_11940316_1504712088073_598783_28542" IsForCompensation="false" Name="Provide notice to public" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.7.6">
                     <Implementation>
                         <No/>
                     </Implementation>

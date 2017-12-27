@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-09-26T00:20:00</Created>
-        <ModificationDate>17-11-20T11:11:58</ModificationDate>
+        <ModificationDate>17-11-27T17:32:10</ModificationDate>
         <Documentation>&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -112,7 +112,7 @@ include checking of identification expiry&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1477</Version>
+        <Version>1519</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -175,7 +175,7 @@ include checking of identification expiry&amp;#160;
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_2_43701b0_1508948548801_656048_30549" Source="_18_5_2_43701b0_1508957942524_962036_40309" Target="_18_5_2_43701b0_1508948548799_939728_30533" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786394900_164490_37993"/>
+            <Object Id="_18_5_2_43701b0_1514414078981_889938_33698"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1508948451139_407617_30350" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1288.0" YCoordinate="655.0"/>
@@ -184,7 +184,7 @@ include checking of identification expiry&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1508949161855_922643_30921" Source="_18_5_2_43701b0_1508948935605_699612_30840" Target="_18_5_2_43701b0_1508949161903_110354_30922" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786394901_445696_37994"/>
+            <Object Id="_18_5_2_43701b0_1514414078982_624587_33699"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1508948451139_407617_30350" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="790.0" YCoordinate="342.0"/>
@@ -193,7 +193,7 @@ include checking of identification expiry&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1508952943526_716886_31115" Source="_18_5_2_43701b0_1508952818845_764671_31110" Target="_18_5_2_43701b0_1508952943602_499715_31116" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786394901_780469_37995"/>
+            <Object Id="_18_5_2_43701b0_1514414078982_56036_33700"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1508948451139_407617_30350" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1554.0" YCoordinate="495.0"/>
@@ -202,7 +202,7 @@ include checking of identification expiry&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1508956806500_348652_31707" Source="_18_5_2_43701b0_1508956803086_360500_31699" Target="_18_5_2_43701b0_1508956806555_572088_31708" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786394901_859182_37996"/>
+            <Object Id="_18_5_2_43701b0_1514414078982_175623_33701"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1508948451139_407617_30350" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1086.0" YCoordinate="403.0"/>
@@ -211,7 +211,7 @@ include checking of identification expiry&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1508959693879_206323_40365" Source="_18_5_2_43701b0_1508948980461_616637_30878" Target="_18_5_2_43701b0_1508959693970_921357_40366" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786394902_85286_37997"/>
+            <Object Id="_18_5_2_43701b0_1514414078983_524541_33702"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1508948451139_407617_30350" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="574.0" YCoordinate="380.0"/>
@@ -318,6 +318,9 @@ include checking of identification expiry&amp;#160;
                             <Implementation>
 <No/>
                             </Implementation>
+                            <Performers>
+<Performer cbm:resourceType="ResourceRole"></Performer>
+                            </Performers>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1508948451139_407617_30350" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
     <Coordinates XCoordinate="685.0" YCoordinate="342.0"/>
@@ -739,6 +742,9 @@ include checking of identification expiry&amp;#160;
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_2_43701b0_1508954550887_180387_31470" From="_18_5_2_43701b0_1508957908434_976307_40281" To="_18_5_2_43701b0_1508954552660_379914_31481" Name="">
+                    <Condition Type="CONDITION">
+                        <Expression>No</Expression>
+                    </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1508948451139_407617_30350" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="1224.0" YCoordinate="675.0"/>
@@ -796,6 +802,9 @@ include checking of identification expiry&amp;#160;
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_2_43701b0_1508957943958_21240_40323" From="_18_5_2_43701b0_1508957908434_976307_40281" To="_18_5_2_43701b0_1508957942524_962036_40309" Name="">
+                    <Condition Type="CONDITION">
+                        <Expression>Yes</Expression>
+                    </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1508948451139_407617_30350" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="1244.0" YCoordinate="655.0"/>

@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-08-27T15:09:00</Created>
-        <ModificationDate>17-11-20T11:11:58</ModificationDate>
+        <ModificationDate>17-11-27T17:32:10</ModificationDate>
         <Documentation>Maintain the registration or voting precinct boundaries that a voter is assigned.
 &lt;html&gt;
   &lt;head&gt;
@@ -30,7 +30,7 @@ voting tabulation district? Too vague?</Documentation>
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1477</Version>
+        <Version>1519</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -54,7 +54,7 @@ voting tabulation district? Too vague?</Documentation>
     </Pools>
     <Associations>
         <Association Id="_18_5_2_43701b0_1511809120123_234556_66164" Source="_18_5_2_43701b0_1511809101230_605056_66145" Target="_18_5_2_43701b0_1511809120174_635959_66165" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786395591_907213_37998"/>
+            <Object Id="_18_5_2_43701b0_1514414080146_348296_33703"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539395302_109047_38709" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="108.0" YCoordinate="114.0"/>
@@ -63,7 +63,7 @@ voting tabulation district? Too vague?</Documentation>
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1512398996809_431528_29966" Source="_18_5_2_43701b0_1512398844891_179762_29943" Target="_18_5_2_43701b0_1512398996875_214654_29967" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786395591_593271_37999"/>
+            <Object Id="_18_5_2_43701b0_1514414080146_705722_33704"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539395302_109047_38709" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="511.0" YCoordinate="39.0"/>
@@ -100,7 +100,7 @@ voting tabulation district? Too vague?</Documentation>
                 <ActivitySet Id="_18_5_2_43701b0_1513352751874_468283_40814" Name="Determine new precinct boundaries_as" AdHoc="false" TriggeredByEvent="false"/>
             </ActivitySets>
             <Activities>
-                <Activity Id="_18_5_2_11940316_1507120385290_824568_28750" Name="Time to draw new precincts" cbm:numberedProperty="1.1.1.4">
+                <Activity Id="_18_5_2_11940316_1507120385290_824568_28750" Name="Time to draw new precincts" cbm:numberedProperty="1.1.1.1">
                     <Event>
                         <StartEvent Trigger="Timer" Implementation="Unspecified" Interrupting="true"/>
                     </Event>
@@ -110,7 +110,7 @@ voting tabulation district? Too vague?</Documentation>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1511809101230_605056_66145" Name="Other trigger" cbm:numberedProperty="1.1.1.8">
+                <Activity Id="_18_5_2_43701b0_1511809101230_605056_66145" Name="Other trigger" cbm:numberedProperty="1.1.1.2">
                     <Event>
                         <StartEvent Trigger="Multiple" Implementation="Unspecified" Interrupting="true">
                             <TriggerMultiple>
@@ -126,7 +126,7 @@ voting tabulation district? Too vague?</Documentation>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1511877330478_718581_66199" Name="Precinct Boundaries Maintained" cbm:numberedProperty="1.1.1.9">
+                <Activity Id="_18_5_2_43701b0_1511877330478_718581_66199" Name="Precinct Boundaries Maintained" cbm:numberedProperty="1.1.1.7">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -136,7 +136,7 @@ voting tabulation district? Too vague?</Documentation>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1511877348312_534728_66217" IsForCompensation="false" Name="Perform validation" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.1.10">
+                <Activity Id="_18_5_2_43701b0_1511877348312_534728_66217" IsForCompensation="false" Name="Perform validation" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.1.5">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -150,7 +150,7 @@ voting tabulation district? Too vague?</Documentation>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1511877411732_314007_66262" Name="Validation successful?" cbm:numberedProperty="1.1.1.11">
+                <Activity Id="_18_5_2_43701b0_1511877411732_314007_66262" Name="Validation successful?" cbm:numberedProperty="1.1.1.6">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -168,7 +168,7 @@ voting tabulation district? Too vague?</Documentation>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1511879007730_689487_68754" IsForCompensation="false" Name="Determine geographic extent of change" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.1.14">
+                <Activity Id="_18_5_2_43701b0_1511879007730_689487_68754" IsForCompensation="false" Name="Determine geographic extent of change" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.1.3">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -182,7 +182,7 @@ voting tabulation district? Too vague?</Documentation>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1512398453074_994318_29865" IsForCompensation="false" Name="Generate alternatives" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.1.15">
+                <Activity Id="_18_5_2_43701b0_1512398453074_994318_29865" IsForCompensation="false" Name="Generate alternatives" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.1.9">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -195,7 +195,7 @@ voting tabulation district? Too vague?</Documentation>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1512398460804_458424_29901" IsForCompensation="false" Name="Pick alternative" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.1.16">
+                <Activity Id="_18_5_2_43701b0_1512398460804_458424_29901" IsForCompensation="false" Name="Pick alternative" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.1.10">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -208,7 +208,7 @@ voting tabulation district? Too vague?</Documentation>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1512398844891_179762_29943" IsForCompensation="false" Name="Set precinct criteria" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.1.17">
+                <Activity Id="_18_5_2_43701b0_1512398844891_179762_29943" IsForCompensation="false" Name="Set precinct criteria" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.1.8">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -221,7 +221,7 @@ voting tabulation district? Too vague?</Documentation>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1513352752032_578598_40838" IsForCompensation="false" Name="Determine new precinct boundaries" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.1.1.13">
+                <Activity Id="_18_5_2_43701b0_1513352752032_578598_40838" IsForCompensation="false" Name="Determine new precinct boundaries" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.1.1.4">
                     <BlockActivity ActivitySetId="_18_5_2_43701b0_1513352751874_468283_40814" View="COLLAPSED"/>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>

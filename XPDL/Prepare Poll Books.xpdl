@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-12T10:41:00</Created>
-        <ModificationDate>17-11-20T11:11:58</ModificationDate>
+        <ModificationDate>17-11-27T17:32:10</ModificationDate>
         <Documentation>Prepare poll books for use during the election.
 &lt;html&gt;
   &lt;head&gt;
@@ -66,7 +66,7 @@ NY&amp;#160;has eligible voters not on poll book (inactive)&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1477</Version>
+        <Version>1519</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -95,7 +95,7 @@ NY&amp;#160;has eligible voters not on poll book (inactive)&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_2_11940316_1506964219235_161347_32128" Source="_18_5_1_11940316_1499870572683_681922_23634" Target="_18_5_2_11940316_1506964219365_304403_32129" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786382001_821483_37961"/>
+            <Object Id="_18_5_2_43701b0_1514414043585_577993_33663"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499870500277_548144_23526" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="506.0" YCoordinate="328.0"/>
@@ -104,7 +104,7 @@ NY&amp;#160;has eligible voters not on poll book (inactive)&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1506965188918_292945_32208" Source="_18_5_1_11940316_1499870539885_677422_23595" Target="_18_5_2_11940316_1506965189036_36278_32209" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786382002_632070_37962"/>
+            <Object Id="_18_5_2_43701b0_1514414043586_561671_33664"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499870500277_548144_23526" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="214.0" YCoordinate="266.0"/>

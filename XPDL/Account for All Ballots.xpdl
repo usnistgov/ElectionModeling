@@ -4,13 +4,13 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T16:52:00</Created>
-        <ModificationDate>17-11-20T11:11:58</ModificationDate>
+        <ModificationDate>17-11-27T17:32:10</ModificationDate>
         <Documentation>Ensure that the total ballots cast matches that total number of voters and any exceptions to this are investigated and accounted for.</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1477</Version>
+        <Version>1519</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -38,7 +38,7 @@
                 <Created>17-06-20T16:52:00</Created>
             </ProcessHeader>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1500584066604_247153_38135" Name="" cbm:numberedProperty="PO1.1.1">
+                <Activity Id="_18_5_1_11940316_1500584066604_247153_38135" Name="" cbm:numberedProperty="3.1.2.1">
                     <Event>
                         <StartEvent Trigger="None" Implementation="Unspecified"/>
                     </Event>
@@ -48,7 +48,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500584080534_998092_38172" IsForCompensation="false" Name="Compare total number of ballots cast to voting history" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.1.2">
+                <Activity Id="_18_5_1_11940316_1500584080534_998092_38172" IsForCompensation="false" Name="Compare total number of ballots cast to voting history" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.2.2">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -63,7 +63,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500584137542_170601_38210" Name="Ballots Accounted For" cbm:numberedProperty="PO1.1.4">
+                <Activity Id="_18_5_1_11940316_1500584137542_170601_38210" Name="Ballots Accounted For" cbm:numberedProperty="3.1.2.8">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -73,7 +73,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500584383606_359157_38261" IsForCompensation="false" Name="Check exceptions on activity log" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.1.5">
+                <Activity Id="_18_5_1_11940316_1500584383606_359157_38261" IsForCompensation="false" Name="Check exceptions on activity log" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.2.3">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -87,7 +87,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500584388797_275438_38277" Name="Matches?" cbm:numberedProperty="PO1.1.6">
+                <Activity Id="_18_5_1_11940316_1500584388797_275438_38277" Name="Matches?" cbm:numberedProperty="3.1.2.4">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -105,7 +105,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500584420630_441666_38309" IsForCompensation="false" Name="Investigate exceptions" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.1.7">
+                <Activity Id="_18_5_1_11940316_1500584420630_441666_38309" IsForCompensation="false" Name="Investigate exceptions" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.2.5">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -119,7 +119,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1507218502257_718601_37641" Name="Exception  correctable?" cbm:numberedProperty="3.1.2.1">
+                <Activity Id="_18_5_2_11940316_1507218502257_718601_37641" Name="Exception  correctable?" cbm:numberedProperty="3.1.2.7">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -137,7 +137,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1507218541827_384711_37672" IsForCompensation="false" Name="Add explanation to activity log" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.2.2">
+                <Activity Id="_18_5_2_11940316_1507218541827_384711_37672" IsForCompensation="false" Name="Add explanation to activity log" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.2.6">
                     <Implementation>
                         <No/>
                     </Implementation>

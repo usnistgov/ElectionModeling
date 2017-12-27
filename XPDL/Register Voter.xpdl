@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-05-22T10:16:00</Created>
-        <ModificationDate>17-11-20T11:11:58</ModificationDate>
+        <ModificationDate>17-11-27T17:32:10</ModificationDate>
         <Documentation>For states requiring registration in order to vote, register a voter such that their name appears on the list of eligible voters for the next election qualified for.
 &lt;html&gt;
   &lt;head&gt;
@@ -34,12 +34,14 @@ Remove?&amp;#160;
       May represent a state or local VRDB&amp;#160;
     &lt;/p&gt;
   &lt;/body&gt;
-&lt;/html&gt;</Documentation>
+&lt;/html&gt;
+
+Waiting period for mail to come back as undeliverable.</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1477</Version>
+        <Version>1519</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -56,7 +58,7 @@ Remove?&amp;#160;
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Register Voter" Id="_18_5_1_11940316_1498140978114_581528_20563" Height="948.0" Width="1134.0"/>
+        <Page Name="Register Voter" Id="_18_5_1_11940316_1498140978114_581528_20563" Height="864.0" Width="1134.0"/>
     </Pages>
     <DataStores>
         <DataStore Id="_18_5_1_11940316_1498143971000_592173_21342" Name="Voter Registration Database" IsUnlimited="false"/>
@@ -65,13 +67,13 @@ Remove?&amp;#160;
         <Pool Id="_18_5_1_11940316_1498140996296_586350_20603" Name="Election Authority" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1498140996296_586350_20603_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="717.0" Width="1134.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
-                    <Coordinates XCoordinate="0.0" YCoordinate="231.0"/>
+                    <Coordinates XCoordinate="0.0" YCoordinate="147.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Pool>
         <Pool Id="_18_5_1_11940316_1498141084839_503660_20658" Name="Applicant" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1498141084839_503660_20658_proc" Participant="_18_5_1_11940316_1501593348755_749813_40372" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="91.0" Width="1134.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="73.0" Width="1134.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -82,8 +84,8 @@ Remove?&amp;#160;
             <Message Id="_18_5_1_11940316_1499273755724_771593_23983" Name="Voter Registration Documents"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                    <Coordinates XCoordinate="89.0" YCoordinate="91.0"/>
-                    <Coordinates XCoordinate="89.0" YCoordinate="319.0"/>
+                    <Coordinates XCoordinate="89.0" YCoordinate="73.0"/>
+                    <Coordinates XCoordinate="89.0" YCoordinate="235.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
@@ -91,8 +93,8 @@ Remove?&amp;#160;
             <Message Id="_18_5_1_11940316_1499274158202_39386_24041" Name="Clarification Request"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                    <Coordinates XCoordinate="452.0" YCoordinate="306.0"/>
-                    <Coordinates XCoordinate="452.0" YCoordinate="91.0"/>
+                    <Coordinates XCoordinate="452.0" YCoordinate="222.0"/>
+                    <Coordinates XCoordinate="452.0" YCoordinate="73.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
@@ -100,8 +102,8 @@ Remove?&amp;#160;
             <Message Id="_18_5_1_11940316_1499274467491_913996_24074" Name="Clarification Response"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                    <Coordinates XCoordinate="581.0" YCoordinate="91.0"/>
-                    <Coordinates XCoordinate="581.0" YCoordinate="306.0"/>
+                    <Coordinates XCoordinate="581.0" YCoordinate="73.0"/>
+                    <Coordinates XCoordinate="581.0" YCoordinate="222.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
@@ -109,8 +111,8 @@ Remove?&amp;#160;
             <Message Id="_18_5_1_11940316_1499274567293_618558_24119" Name="Negative Disposition Notice"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                    <Coordinates XCoordinate="767.0" YCoordinate="306.0"/>
-                    <Coordinates XCoordinate="767.0" YCoordinate="91.0"/>
+                    <Coordinates XCoordinate="767.0" YCoordinate="222.0"/>
+                    <Coordinates XCoordinate="767.0" YCoordinate="73.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
@@ -118,30 +120,30 @@ Remove?&amp;#160;
             <Message Id="_18_5_2_11940316_1506628452423_81495_29235" Name="Positive Disposition Notice"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                    <Coordinates XCoordinate="392.0" YCoordinate="665.0"/>
-                    <Coordinates XCoordinate="392.0" YCoordinate="648.0"/>
-                    <Coordinates XCoordinate="1099.0" YCoordinate="648.0"/>
-                    <Coordinates XCoordinate="1099.0" YCoordinate="91.0"/>
+                    <Coordinates XCoordinate="343.0" YCoordinate="581.0"/>
+                    <Coordinates XCoordinate="343.0" YCoordinate="571.0"/>
+                    <Coordinates XCoordinate="1099.0" YCoordinate="571.0"/>
+                    <Coordinates XCoordinate="1099.0" YCoordinate="73.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_2_11940316_1506103661145_200341_36669" Source="_18_5_2_11940316_1506102969690_825407_36623" Target="_18_5_2_11940316_1506103661281_48214_36670" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786390366_948521_37982"/>
+            <Object Id="_18_5_2_43701b0_1514414063860_324429_33684"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="507.0" YCoordinate="697.0"/>
-                    <Coordinates XCoordinate="527.0" YCoordinate="707.0"/>
+                    <Coordinates XCoordinate="463.0" YCoordinate="587.0"/>
+                    <Coordinates XCoordinate="398.0" YCoordinate="523.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1506602211377_943474_28867" Source="_18_5_1_11940316_1498143971006_81819_21348" Target="_18_5_2_11940316_1506602211515_494637_28868" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786390366_374637_37983"/>
+            <Object Id="_18_5_2_43701b0_1514414063860_535220_33685"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="738.0" YCoordinate="557.0"/>
-                    <Coordinates XCoordinate="653.0" YCoordinate="567.0"/>
+                    <Coordinates XCoordinate="738.0" YCoordinate="473.0"/>
+                    <Coordinates XCoordinate="653.0" YCoordinate="483.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
@@ -151,14 +153,14 @@ Remove?&amp;#160;
         <Artifact Id="_18_5_2_11940316_1506103661281_48214_36670" ArtifactType="Annotation" TextAnnotation="Waiting period for mail to come back as undeliverable.">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="54.0" Width="126.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="518.0" YCoordinate="707.0"/>
+                    <Coordinates XCoordinate="308.0" YCoordinate="469.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
         <Artifact Id="_18_5_2_11940316_1506602211515_494637_28868" ArtifactType="Annotation" TextAnnotation="May represent a state or local VRDB ">
             <NodeGraphicsInfos>
                 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="553.0" YCoordinate="546.0"/>
+                    <Coordinates XCoordinate="553.0" YCoordinate="462.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
@@ -186,7 +188,7 @@ Remove?&amp;#160;
                             <Documentation>Send a positive disposition notice. This notice may include such details as the voter’s polling location, voting districts, and voter identification requirements.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="45.0" Width="125.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="280.0" YCoordinate="665.0"/>
+    <Coordinates XCoordinate="280.0" YCoordinate="581.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -198,7 +200,7 @@ Remove?&amp;#160;
                             </Event>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-    <Coordinates XCoordinate="210.0" YCoordinate="675.0"/>
+    <Coordinates XCoordinate="210.0" YCoordinate="591.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -208,17 +210,17 @@ Remove?&amp;#160;
                             </Event>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
-    <Coordinates XCoordinate="449.0" YCoordinate="668.0"/>
+    <Coordinates XCoordinate="449.0" YCoordinate="584.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_11940316_1506103020648_712613_36665" Name="" cbm:numberedProperty="1.2.1.8.12">
+                        <Activity Id="_18_5_2_11940316_1506103020648_712613_36665" Name="Notice Sent" cbm:numberedProperty="1.2.1.8.12">
                             <Event>
 <EndEvent Result="None" Implementation="Unspecified"/>
                             </Event>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-    <Coordinates XCoordinate="560.0" YCoordinate="668.0"/>
+    <Coordinates XCoordinate="560.0" YCoordinate="591.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -227,26 +229,26 @@ Remove?&amp;#160;
                         <Transition Id="_18_5_2_11940316_1505418593420_765565_36583" From="_18_5_2_11940316_1505418581562_185450_36572" To="_18_5_1_11940316_1502829240211_523784_41667" Name="">
                             <ConnectorGraphicsInfos>
 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="234.0" YCoordinate="687.0"/>
-    <Coordinates XCoordinate="280.0" YCoordinate="687.0"/>
+    <Coordinates XCoordinate="234.0" YCoordinate="603.0"/>
+    <Coordinates XCoordinate="280.0" YCoordinate="603.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
                         <Transition Id="_18_5_2_11940316_1506102970939_738504_36636" From="_18_5_1_11940316_1502829240211_523784_41667" To="_18_5_2_11940316_1506102969690_825407_36623" Name="">
                             <ConnectorGraphicsInfos>
 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="405.0" YCoordinate="682.0"/>
-    <Coordinates XCoordinate="460.0" YCoordinate="682.0"/>
+    <Coordinates XCoordinate="405.0" YCoordinate="598.0"/>
+    <Coordinates XCoordinate="460.0" YCoordinate="598.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
                         <Transition Id="_18_5_2_11940316_1506103017603_183552_36655" From="_18_5_2_11940316_1506102969690_825407_36623" To="_18_5_2_11940316_1506103020648_712613_36665" Name="">
                             <ConnectorGraphicsInfos>
 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="484.0" YCoordinate="683.0"/>
-    <Coordinates XCoordinate="522.0" YCoordinate="683.0"/>
-    <Coordinates XCoordinate="522.0" YCoordinate="680.0"/>
-    <Coordinates XCoordinate="560.0" YCoordinate="680.0"/>
+    <Coordinates XCoordinate="484.0" YCoordinate="599.0"/>
+    <Coordinates XCoordinate="522.0" YCoordinate="599.0"/>
+    <Coordinates XCoordinate="522.0" YCoordinate="603.0"/>
+    <Coordinates XCoordinate="560.0" YCoordinate="603.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
@@ -265,7 +267,7 @@ Remove?&amp;#160;
                     <Documentation>Determine if the registration meets syntactic requirements - that it is prima facie valid.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="45.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="154.0" YCoordinate="306.0"/>
+                            <Coordinates XCoordinate="154.0" YCoordinate="222.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -277,7 +279,7 @@ Remove?&amp;#160;
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="77.0" YCoordinate="319.0"/>
+                            <Coordinates XCoordinate="77.0" YCoordinate="235.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -295,7 +297,7 @@ Remove?&amp;#160;
                     </TransitionRestrictions>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
-                            <Coordinates XCoordinate="340.0" YCoordinate="311.0"/>
+                            <Coordinates XCoordinate="340.0" YCoordinate="227.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -306,10 +308,10 @@ Remove?&amp;#160;
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>The applicant may be contacted to resolve an issue in the voter registration package provided.</Documentation>
+                    <Documentation>The applicant may be contacted to resolve an issue in the voter registration documents provided.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="50.0" Width="141.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="446.0" YCoordinate="306.0"/>
+                            <Coordinates XCoordinate="446.0" YCoordinate="222.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -324,7 +326,7 @@ Remove?&amp;#160;
                     <Documentation>Verify that the applicant's personal and residence information meets the requirements to register to vote. For example, the date of birth may be verified to meet an age based eligibility requirement.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="69.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="301.0" YCoordinate="441.0"/>
+                            <Coordinates XCoordinate="301.0" YCoordinate="357.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -342,7 +344,7 @@ Remove?&amp;#160;
                     </TransitionRestrictions>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
-                            <Coordinates XCoordinate="494.0" YCoordinate="456.0"/>
+                            <Coordinates XCoordinate="494.0" YCoordinate="372.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -360,7 +362,7 @@ Remove?&amp;#160;
                     </TransitionRestrictions>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
-                            <Coordinates XCoordinate="616.0" YCoordinate="311.0"/>
+                            <Coordinates XCoordinate="616.0" YCoordinate="227.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -374,7 +376,7 @@ Remove?&amp;#160;
                     <Documentation>If the election jurisdiction determines the applicant ineligible to register to vote, the applicant may be notified.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="45.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="700.0" YCoordinate="306.0"/>
+                            <Coordinates XCoordinate="700.0" YCoordinate="222.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -389,7 +391,7 @@ Remove?&amp;#160;
                     <Documentation>Depending on whether the registration applies to an existing voter registration record or is a new registration, update the voter registration database to reflect the acceptance of the record.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="45.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="698.0" YCoordinate="451.0"/>
+                            <Coordinates XCoordinate="698.0" YCoordinate="367.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -399,7 +401,7 @@ Remove?&amp;#160;
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="852.0" YCoordinate="319.0"/>
+                            <Coordinates XCoordinate="852.0" YCoordinate="235.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -409,7 +411,7 @@ Remove?&amp;#160;
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="985.0" YCoordinate="463.0"/>
+                            <Coordinates XCoordinate="985.0" YCoordinate="379.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -427,7 +429,7 @@ Remove?&amp;#160;
                     </TransitionRestrictions>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
-                            <Coordinates XCoordinate="614.0" YCoordinate="456.0"/>
+                            <Coordinates XCoordinate="614.0" YCoordinate="372.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -437,7 +439,7 @@ Remove?&amp;#160;
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="539.0" YCoordinate="343.0"/>
+                            <Coordinates XCoordinate="539.0" YCoordinate="259.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -452,19 +454,22 @@ Remove?&amp;#160;
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>Call process undeliverable mail process.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="65.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="399.0" YCoordinate="798.0"/>
+                            <Coordinates XCoordinate="399.0" YCoordinate="714.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
                 <Activity Id="_18_5_1_11940316_1502833880862_621510_41843" Name="Deny Registration" cbm:numberedProperty="1.2.1.26">
                     <Event>
-                        <EndEvent Result="Terminate" Implementation="Unspecified"/>
+                        <EndEvent Result="Compensation" Implementation="Unspecified">
+                            <TriggerResultCompensation WaitForCompletion="true"/>
+                        </EndEvent>
                     </Event>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="721.0" YCoordinate="819.0"/>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFFFFF">
+                            <Coordinates XCoordinate="721.0" YCoordinate="735.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -481,7 +486,7 @@ Remove?&amp;#160;
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="40.0" Width="48.0" BorderColor="#000000" FillColor="#FF9900">
-                            <Coordinates XCoordinate="915.0" YCoordinate="525.0"/>
+                            <Coordinates XCoordinate="915.0" YCoordinate="441.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -490,23 +495,10 @@ Remove?&amp;#160;
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-Waiting period for mail to come back as undeliverable.
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;</Documentation>
+                    <Documentation>Send a notice to the voter indicating their registration status.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="163.0" Width="469.0" BorderColor="#636363" FillColor="#F7DD99">
-                            <Coordinates XCoordinate="182.0" YCoordinate="616.0"/>
+                            <Coordinates XCoordinate="182.0" YCoordinate="532.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -524,7 +516,7 @@ Waiting period for mail to come back as undeliverable.
                     </TransitionRestrictions>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
-                            <Coordinates XCoordinate="859.0" YCoordinate="456.0"/>
+                            <Coordinates XCoordinate="859.0" YCoordinate="372.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -534,7 +526,7 @@ Waiting period for mail to come back as undeliverable.
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="308.0" YCoordinate="766.0"/>
+                            <Coordinates XCoordinate="308.0" YCoordinate="682.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -552,7 +544,7 @@ Waiting period for mail to come back as undeliverable.
                     </TransitionRestrictions>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
-                            <Coordinates XCoordinate="574.0" YCoordinate="811.0"/>
+                            <Coordinates XCoordinate="574.0" YCoordinate="727.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -562,7 +554,7 @@ Waiting period for mail to come back as undeliverable.
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="721.0" YCoordinate="889.0"/>
+                            <Coordinates XCoordinate="721.0" YCoordinate="805.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -571,7 +563,7 @@ Waiting period for mail to come back as undeliverable.
                 <DataStoreReference DataStoreRef="_18_5_1_11940316_1498143971000_592173_21342" Id="_18_5_1_11940316_1498143971006_81819_21348" Name="Voter Registration Database">
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" Height="55.0" Width="167.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="672.0" YCoordinate="528.0"/>
+                            <Coordinates XCoordinate="672.0" YCoordinate="444.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </DataStoreReference>
@@ -580,16 +572,16 @@ Waiting period for mail to come back as undeliverable.
                 <Transition Id="_18_5_1_11940316_1498141066096_919418_20649" From="_18_5_1_11940316_1498141060496_67409_20631" To="_18_5_1_11940316_1498140984144_153882_20588" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="101.0" YCoordinate="331.0"/>
-                            <Coordinates XCoordinate="154.0" YCoordinate="331.0"/>
+                            <Coordinates XCoordinate="101.0" YCoordinate="247.0"/>
+                            <Coordinates XCoordinate="154.0" YCoordinate="247.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1498141286801_496642_20828" From="_18_5_1_11940316_1498140984144_153882_20588" To="_18_5_1_11940316_1498141294964_837126_20844" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="274.0" YCoordinate="331.0"/>
-                            <Coordinates XCoordinate="340.0" YCoordinate="331.0"/>
+                            <Coordinates XCoordinate="274.0" YCoordinate="247.0"/>
+                            <Coordinates XCoordinate="340.0" YCoordinate="247.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -599,8 +591,8 @@ Waiting period for mail to come back as undeliverable.
                     </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="380.0" YCoordinate="331.0"/>
-                            <Coordinates XCoordinate="446.0" YCoordinate="331.0"/>
+                            <Coordinates XCoordinate="380.0" YCoordinate="247.0"/>
+                            <Coordinates XCoordinate="446.0" YCoordinate="247.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -610,16 +602,16 @@ Waiting period for mail to come back as undeliverable.
                     </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="360.0" YCoordinate="351.0"/>
-                            <Coordinates XCoordinate="360.0" YCoordinate="441.0"/>
+                            <Coordinates XCoordinate="360.0" YCoordinate="267.0"/>
+                            <Coordinates XCoordinate="360.0" YCoordinate="357.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1498143347291_963897_20922" From="_18_5_1_11940316_1498143294565_209099_20911" To="_18_5_1_11940316_1498143349484_427240_20937" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="421.0" YCoordinate="476.0"/>
-                            <Coordinates XCoordinate="494.0" YCoordinate="476.0"/>
+                            <Coordinates XCoordinate="421.0" YCoordinate="392.0"/>
+                            <Coordinates XCoordinate="494.0" YCoordinate="392.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -629,16 +621,16 @@ Waiting period for mail to come back as undeliverable.
                     </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="514.0" YCoordinate="456.0"/>
-                            <Coordinates XCoordinate="514.0" YCoordinate="356.0"/>
+                            <Coordinates XCoordinate="514.0" YCoordinate="372.0"/>
+                            <Coordinates XCoordinate="514.0" YCoordinate="272.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1498143415812_625444_20958" From="_18_5_1_11940316_1498141330144_310223_20863" To="_18_5_1_11940316_1498143420313_907178_20973" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="587.0" YCoordinate="331.0"/>
-                            <Coordinates XCoordinate="616.0" YCoordinate="331.0"/>
+                            <Coordinates XCoordinate="587.0" YCoordinate="247.0"/>
+                            <Coordinates XCoordinate="616.0" YCoordinate="247.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -648,10 +640,10 @@ Waiting period for mail to come back as undeliverable.
                     </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="636.0" YCoordinate="311.0"/>
-                            <Coordinates XCoordinate="636.0" YCoordinate="270.0"/>
-                            <Coordinates XCoordinate="214.0" YCoordinate="270.0"/>
-                            <Coordinates XCoordinate="214.0" YCoordinate="306.0"/>
+                            <Coordinates XCoordinate="636.0" YCoordinate="227.0"/>
+                            <Coordinates XCoordinate="636.0" YCoordinate="186.0"/>
+                            <Coordinates XCoordinate="214.0" YCoordinate="186.0"/>
+                            <Coordinates XCoordinate="214.0" YCoordinate="222.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -661,16 +653,16 @@ Waiting period for mail to come back as undeliverable.
                     </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="656.0" YCoordinate="331.0"/>
-                            <Coordinates XCoordinate="700.0" YCoordinate="331.0"/>
+                            <Coordinates XCoordinate="656.0" YCoordinate="247.0"/>
+                            <Coordinates XCoordinate="700.0" YCoordinate="247.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1498143690172_960233_21070" From="_18_5_1_11940316_1498143466603_509363_21001" To="_18_5_1_11940316_1498143691902_487354_21081" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="820.0" YCoordinate="331.0"/>
-                            <Coordinates XCoordinate="852.0" YCoordinate="331.0"/>
+                            <Coordinates XCoordinate="820.0" YCoordinate="247.0"/>
+                            <Coordinates XCoordinate="852.0" YCoordinate="247.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -680,8 +672,8 @@ Waiting period for mail to come back as undeliverable.
                     </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="534.0" YCoordinate="476.0"/>
-                            <Coordinates XCoordinate="614.0" YCoordinate="476.0"/>
+                            <Coordinates XCoordinate="534.0" YCoordinate="392.0"/>
+                            <Coordinates XCoordinate="614.0" YCoordinate="392.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -691,10 +683,10 @@ Waiting period for mail to come back as undeliverable.
                     </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="634.0" YCoordinate="456.0"/>
-                            <Coordinates XCoordinate="634.0" YCoordinate="420.0"/>
-                            <Coordinates XCoordinate="763.0" YCoordinate="420.0"/>
-                            <Coordinates XCoordinate="763.0" YCoordinate="351.0"/>
+                            <Coordinates XCoordinate="634.0" YCoordinate="372.0"/>
+                            <Coordinates XCoordinate="634.0" YCoordinate="336.0"/>
+                            <Coordinates XCoordinate="763.0" YCoordinate="336.0"/>
+                            <Coordinates XCoordinate="763.0" YCoordinate="267.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -704,8 +696,8 @@ Waiting period for mail to come back as undeliverable.
                     </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="654.0" YCoordinate="476.0"/>
-                            <Coordinates XCoordinate="698.0" YCoordinate="476.0"/>
+                            <Coordinates XCoordinate="654.0" YCoordinate="392.0"/>
+                            <Coordinates XCoordinate="698.0" YCoordinate="392.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -713,10 +705,10 @@ Waiting period for mail to come back as undeliverable.
                     <Condition Type="EXCEPTION"/>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="567.0" YCoordinate="398.0"/>
-                            <Coordinates XCoordinate="567.0" YCoordinate="403.0"/>
-                            <Coordinates XCoordinate="864.0" YCoordinate="403.0"/>
-                            <Coordinates XCoordinate="864.0" YCoordinate="343.0"/>
+                            <Coordinates XCoordinate="567.0" YCoordinate="310.0"/>
+                            <Coordinates XCoordinate="567.0" YCoordinate="319.0"/>
+                            <Coordinates XCoordinate="864.0" YCoordinate="319.0"/>
+                            <Coordinates XCoordinate="864.0" YCoordinate="259.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -726,8 +718,8 @@ Waiting period for mail to come back as undeliverable.
                     </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="614.0" YCoordinate="831.0"/>
-                            <Coordinates XCoordinate="721.0" YCoordinate="831.0"/>
+                            <Coordinates XCoordinate="614.0" YCoordinate="747.0"/>
+                            <Coordinates XCoordinate="721.0" YCoordinate="747.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -737,9 +729,9 @@ Waiting period for mail to come back as undeliverable.
                     </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="879.0" YCoordinate="496.0"/>
-                            <Coordinates XCoordinate="879.0" YCoordinate="539.0"/>
-                            <Coordinates XCoordinate="926.0" YCoordinate="539.0"/>
+                            <Coordinates XCoordinate="879.0" YCoordinate="412.0"/>
+                            <Coordinates XCoordinate="879.0" YCoordinate="455.0"/>
+                            <Coordinates XCoordinate="926.0" YCoordinate="455.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -749,25 +741,25 @@ Waiting period for mail to come back as undeliverable.
                     </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="899.0" YCoordinate="475.0"/>
-                            <Coordinates XCoordinate="985.0" YCoordinate="475.0"/>
+                            <Coordinates XCoordinate="899.0" YCoordinate="391.0"/>
+                            <Coordinates XCoordinate="985.0" YCoordinate="391.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_2_11940316_1505414943436_842504_36504" From="_18_5_2_11940316_1505413630215_722768_36290" To="_18_5_1_11940316_1498143959630_299850_21333" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="950.0" YCoordinate="536.0"/>
-                            <Coordinates XCoordinate="997.0" YCoordinate="536.0"/>
-                            <Coordinates XCoordinate="997.0" YCoordinate="487.0"/>
+                            <Coordinates XCoordinate="950.0" YCoordinate="452.0"/>
+                            <Coordinates XCoordinate="997.0" YCoordinate="452.0"/>
+                            <Coordinates XCoordinate="997.0" YCoordinate="403.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_2_11940316_1505663530330_603615_51613" From="_18_5_1_11940316_1498143631579_442956_21054" To="_18_5_2_11940316_1505663498299_123915_51602" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="818.0" YCoordinate="476.0"/>
-                            <Coordinates XCoordinate="859.0" YCoordinate="476.0"/>
+                            <Coordinates XCoordinate="818.0" YCoordinate="392.0"/>
+                            <Coordinates XCoordinate="859.0" YCoordinate="392.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -775,17 +767,17 @@ Waiting period for mail to come back as undeliverable.
                     <Condition Type="EXCEPTION"/>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="333.0" YCoordinate="821.0"/>
-                            <Coordinates XCoordinate="333.0" YCoordinate="840.0"/>
-                            <Coordinates XCoordinate="399.0" YCoordinate="840.0"/>
+                            <Coordinates XCoordinate="333.0" YCoordinate="733.0"/>
+                            <Coordinates XCoordinate="333.0" YCoordinate="756.0"/>
+                            <Coordinates XCoordinate="399.0" YCoordinate="756.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_2_11940316_1506108859780_592848_36737" From="_18_5_1_11940316_1502829812619_597197_41775" To="_18_5_2_11940316_1506108858783_229012_36730" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="519.0" YCoordinate="831.0"/>
-                            <Coordinates XCoordinate="574.0" YCoordinate="831.0"/>
+                            <Coordinates XCoordinate="519.0" YCoordinate="747.0"/>
+                            <Coordinates XCoordinate="574.0" YCoordinate="747.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -795,9 +787,9 @@ Waiting period for mail to come back as undeliverable.
                     </Condition>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="594.0" YCoordinate="851.0"/>
-                            <Coordinates XCoordinate="594.0" YCoordinate="901.0"/>
-                            <Coordinates XCoordinate="721.0" YCoordinate="901.0"/>
+                            <Coordinates XCoordinate="594.0" YCoordinate="767.0"/>
+                            <Coordinates XCoordinate="594.0" YCoordinate="817.0"/>
+                            <Coordinates XCoordinate="721.0" YCoordinate="817.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -806,16 +798,16 @@ Waiting period for mail to come back as undeliverable.
                 <DataAssociation Id="_18_5_1_11940316_1498143988300_727808_21369" Name="" From="_18_5_1_11940316_1498143631579_442956_21054" To="_18_5_1_11940316_1498143971006_81819_21348">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="765.0" YCoordinate="496.0"/>
-                            <Coordinates XCoordinate="765.0" YCoordinate="531.0"/>
+                            <Coordinates XCoordinate="765.0" YCoordinate="412.0"/>
+                            <Coordinates XCoordinate="765.0" YCoordinate="447.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>
                 <DataAssociation Id="_18_5_1_11940316_1499457235631_659408_25368" Name="" From="_18_5_1_11940316_1498143971006_81819_21348" To="_18_5_1_11940316_1498143631579_442956_21054">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1498140978114_581528_20563" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="751.0" YCoordinate="531.0"/>
-                            <Coordinates XCoordinate="751.0" YCoordinate="496.0"/>
+                            <Coordinates XCoordinate="751.0" YCoordinate="447.0"/>
+                            <Coordinates XCoordinate="751.0" YCoordinate="412.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>

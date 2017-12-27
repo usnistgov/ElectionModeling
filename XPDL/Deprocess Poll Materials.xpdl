@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-27T00:26:00</Created>
-        <ModificationDate>17-11-20T11:11:58</ModificationDate>
+        <ModificationDate>17-11-27T17:32:10</ModificationDate>
         <Documentation>Return and inventory election materials in preparation of election night.
 &lt;html&gt;
   &lt;head&gt;
@@ -47,7 +47,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1477</Version>
+        <Version>1519</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -119,7 +119,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1501698995624_651481_26671" Source="_18_5_1_11940316_1501086486644_93956_28437" Target="_18_5_1_11940316_1501699237286_846542_26680" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786397609_102999_38000"/>
+            <Object Id="_18_5_2_43701b0_1514414084009_220172_33705"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="669.0" YCoordinate="452.0"/>
@@ -348,7 +348,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>There are many materials appurtenant to the election but not related to the production of results. Because of the limited time to produce election night results, these materials may not be collected after election day.</Documentation>
+                    <Documentation>There are many materials appurtenant to the election but not related to the production of results. Because of the limited time to produce election night results, these materials may not be collected until after election day.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="599.0" Width="185.0" BorderColor="#636363" FillColor="#F7DD99">
                             <Coordinates XCoordinate="915.0" YCoordinate="231.0"/>

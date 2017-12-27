@@ -4,8 +4,8 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-08-27T15:11:00</Created>
-        <ModificationDate>17-11-20T11:11:58</ModificationDate>
-        <Documentation>Maintain the boundaries of political districts - that is - where a contest may appear.
+        <ModificationDate>17-11-27T17:32:10</ModificationDate>
+        <Documentation>Maintain the boundaries of political districts  where a contest may appear.
 &lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
@@ -84,7 +84,7 @@ Could be a directory / ranges&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1477</Version>
+        <Version>1519</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -112,7 +112,7 @@ Could be a directory / ranges&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_2_11940316_1506539849538_497712_38804" Source="_18_5_2_11940316_1506539654802_952268_38766" Target="_18_5_2_11940316_1506539908564_90826_38811" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786392507_254737_37989"/>
+            <Object Id="_18_5_2_43701b0_1514414074745_388656_33694"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="82.0" YCoordinate="126.0"/>
@@ -121,7 +121,7 @@ Could be a directory / ranges&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1506541532430_142780_38912" Source="_18_5_2_11940316_1506541220882_12605_38873" Target="_18_5_2_11940316_1506541532550_911146_38913" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786392507_87843_37990"/>
+            <Object Id="_18_5_2_43701b0_1514414074745_699403_33695"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="852.0" YCoordinate="154.0"/>
@@ -130,7 +130,7 @@ Could be a directory / ranges&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1506987348726_34534_34146" Source="_18_5_2_11940316_1506541219094_753929_38856" Target="_18_5_2_11940316_1506987348833_601620_34147" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786392509_317084_37991"/>
+            <Object Id="_18_5_2_43701b0_1514414074748_491117_33696"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="996.0" YCoordinate="190.0"/>
@@ -187,7 +187,9 @@ Could be a directory / ranges&amp;#160;
             <Activities>
                 <Activity Id="_18_5_2_11940316_1506539654802_952268_38766" Name="New District Created" cbm:numberedProperty="1.1.2.1">
                     <Event>
-                        <StartEvent Trigger="None" Implementation="Unspecified"/>
+                        <StartEvent Trigger="Signal" Implementation="Unspecified" Interrupting="true">
+                            <TriggerResultSignal CatchThrow="CATCH"/>
+                        </StartEvent>
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
@@ -195,7 +197,7 @@ Could be a directory / ranges&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1506539908564_164541_38810" IsForCompensation="false" Name="Determine district boundary" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.2">
+                <Activity Id="_18_5_2_11940316_1506539908564_164541_38810" IsForCompensation="false" Name="Determine district boundary" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.3">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -209,9 +211,11 @@ Could be a directory / ranges&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1506539912994_572015_38817" Name="District Changed" cbm:numberedProperty="1.1.2.3">
+                <Activity Id="_18_5_2_11940316_1506539912994_572015_38817" Name="District Changed" cbm:numberedProperty="1.1.2.2">
                     <Event>
-                        <StartEvent Trigger="None" Implementation="Unspecified"/>
+                        <StartEvent Trigger="Signal" Implementation="Unspecified" Interrupting="true">
+                            <TriggerResultSignal CatchThrow="CATCH"/>
+                        </StartEvent>
                     </Event>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
@@ -219,7 +223,7 @@ Could be a directory / ranges&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1506541219094_753929_38856" Name="Spatial relationships validate?" cbm:numberedProperty="1.1.2.4">
+                <Activity Id="_18_5_2_11940316_1506541219094_753929_38856" Name="Spatial relationships validate?" cbm:numberedProperty="1.1.2.10">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -237,21 +241,21 @@ Could be a directory / ranges&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1506541220882_12605_38873" IsForCompensation="false" Name="Validate spatial relationships" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.5">
+                <Activity Id="_18_5_2_11940316_1506541220882_12605_38873" IsForCompensation="false" Name="Validate spatial relationships" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.7">
                     <Implementation>
                         <No/>
                     </Implementation>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>Remove or adjust the geography such that topographic rules applied to the feature class validate successfully.</Documentation>
+                    <Documentation>Remove or adjust the geography such that topographic rules applied to the layer validate successfully.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="794.0" YCoordinate="154.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1506977428130_785693_32626" IsForCompensation="false" Name="Determine reprecincting requirement" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.9">
+                <Activity Id="_18_5_2_11940316_1506977428130_785693_32626" IsForCompensation="false" Name="Determine reprecincting requirement" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.8">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -265,7 +269,7 @@ Could be a directory / ranges&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1506979122150_608009_32658" Name="Reprecincting Required?" cbm:numberedProperty="1.1.2.10">
+                <Activity Id="_18_5_2_11940316_1506979122150_608009_32658" Name="Reprecincting Required?" cbm:numberedProperty="1.1.2.14">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -283,7 +287,7 @@ Could be a directory / ranges&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1507120587467_570581_29034" IsForCompensation="false" Name="" Status="None" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.11">
+                <Activity Id="_18_5_2_11940316_1507120587467_570581_29034" IsForCompensation="false" Name="Maintain precinct boundaries" Status="None" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.9">
                     <Implementation>
                         <SubFlow Id="_18_5_1_11940316_1500469242709_565708_24720" Name="Maintain Precinct Boundaries" Execution="SYNCHR" View="EXPANDED" PackageRef="_18_5_1_11940316_1500469242709_565708_24720">
                             <EndPoint EndPointType="WSDL">
@@ -296,40 +300,40 @@ Could be a directory / ranges&amp;#160;
                     </Performers>
                     <Documentation>Call the Maintain Precinct Boundaries process.</Documentation>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="77.0" Width="100.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="1377.0" YCoordinate="140.0"/>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="85.0" Width="100.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="1377.0" YCoordinate="136.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1507120954052_71_29075" IsForCompensation="false" Name="Determine if other districts are affected" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.12">
+                <Activity Id="_18_5_2_11940316_1507120954052_71_29075" IsForCompensation="false" Name="Determine if other districts are affected" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.4">
                     <Implementation>
                         <No/>
                     </Implementation>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>Determine if other districts should change as a result of the primary district change. This may include shared services districts.</Documentation>
+                    <Documentation>Determine if other districts should change as a result of the primary district change. This may include such things as shared services districts.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="355.0" YCoordinate="150.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1507121304788_190999_29110" IsForCompensation="false" Name="Modify or draw new lines" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.13">
+                <Activity Id="_18_5_2_11940316_1507121304788_190999_29110" IsForCompensation="false" Name="Modify or draw new lines" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.6">
                     <Implementation>
                         <No/>
                     </Implementation>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>Modify existing district lines, or construct new ones, as needed.</Documentation>
+                    <Documentation>Modify existing district lines, or draw new ones, as needed.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="621.0" YCoordinate="154.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1507121773134_560394_29141" Name="Other Districts Affected?" cbm:numberedProperty="1.1.2.14">
+                <Activity Id="_18_5_2_11940316_1507121773134_560394_29141" Name="Other Districts Affected?" cbm:numberedProperty="1.1.2.15">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -347,7 +351,7 @@ Could be a directory / ranges&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1507121811086_869644_29218" IsForCompensation="false" Name="" Status="None" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.15">
+                <Activity Id="_18_5_2_11940316_1507121811086_869644_29218" IsForCompensation="false" Name="Maintain district boundaries" Status="None" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.5">
                     <Implementation>
                         <SubFlow Id="_18_5_1_11940316_1500469250821_521454_24760" Name="Maintain District Boundaries" Execution="SYNCHR" View="EXPANDED" PackageRef="_18_5_1_11940316_1500469250821_521454_24760">
                             <EndPoint EndPointType="WSDL">
@@ -363,8 +367,8 @@ Could be a directory / ranges&amp;#160;
                         <LoopMultiInstance MI_Ordering="Parallel" MI_FlowCondition="All"/>
                     </Loop>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="77.0" Width="100.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="631.0" YCoordinate="18.0"/>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="87.0" Width="100.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="631.0" YCoordinate="34.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -469,15 +473,15 @@ Could be a directory / ranges&amp;#160;
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="548.0" YCoordinate="159.0"/>
-                            <Coordinates XCoordinate="548.0" YCoordinate="67.0"/>
-                            <Coordinates XCoordinate="631.0" YCoordinate="67.0"/>
+                            <Coordinates XCoordinate="548.0" YCoordinate="91.0"/>
+                            <Coordinates XCoordinate="631.0" YCoordinate="91.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_2_11940316_1507121910886_507729_29289" From="_18_5_2_11940316_1507121811086_869644_29218" To="_18_5_2_11940316_1507121304788_190999_29110" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="683.0" YCoordinate="95.0"/>
+                            <Coordinates XCoordinate="683.0" YCoordinate="121.0"/>
                             <Coordinates XCoordinate="683.0" YCoordinate="154.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
@@ -548,8 +552,8 @@ Could be a directory / ranges&amp;#160;
                 <DataAssociation Id="_18_5_2_11940316_1507121837044_640227_29268" Name="" From="_18_5_2_11940316_1507121830094_695884_29248" To="_18_5_2_11940316_1507121811086_869644_29218">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="427.0" YCoordinate="42.0"/>
-                            <Coordinates XCoordinate="631.0" YCoordinate="42.0"/>
+                            <Coordinates XCoordinate="464.0" YCoordinate="56.0"/>
+                            <Coordinates XCoordinate="631.0" YCoordinate="56.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </DataAssociation>

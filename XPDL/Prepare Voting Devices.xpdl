@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-07-23T15:45:00</Created>
-        <ModificationDate>17-11-20T11:11:58</ModificationDate>
+        <ModificationDate>17-11-27T17:32:10</ModificationDate>
         <Documentation>Prepare voting devices such that they are ready for election deployment.
 &lt;html&gt;
   &lt;head&gt;
@@ -90,7 +90,7 @@ Already done.&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1477</Version>
+        <Version>1519</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -118,7 +118,7 @@ Already done.&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_1_11940316_1503518181476_507985_61661" Source="_18_5_1_11940316_1503517587750_230276_61542" Target="_18_5_1_11940316_1503518317870_616862_61700" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786386211_826939_37977"/>
+            <Object Id="_18_5_2_43701b0_1514414053793_941565_33679"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="168.0" YCoordinate="147.0"/>
@@ -127,7 +127,7 @@ Already done.&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1503518439574_399095_61707" Source="_18_5_1_11940316_1503518306057_33107_61681" Target="_18_5_1_11940316_1503518927082_372006_61750" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1513786386212_51348_37978"/>
+            <Object Id="_18_5_2_43701b0_1514414053794_100977_33680"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="385.0" YCoordinate="55.0"/>
