@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<definitions namespace="http://www.signavio.com/dmn/1.1/diagram/6878f297988c45ddac65264aea88d749.xml" exporterVersion="11.10.0" name="Regular Ballot Eligibility" id="id-87eb20359635407290ba2df8059e54f8" sigExt:revisionId="a3a20052dd1448bd98f876e320e17ee1" sigExt:revisionNumber="54" xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:sig="http://www.signavio.com/dmn/1.1/diagram/6878f297988c45ddac65264aea88d749.xml" xmlns:sigExt="http://www.signavio.com/schema/dmn/1.1/" xmlns:feel="http://www.omg.org/spec/FEEL/20140401">
+    <extensionElements/>
+    <itemDefinition isCollection="false" name="determineIfAbsenteeBallotIsVoidable" id="id-0cc5d0da9a01edea630d10b2b59a0306" label="Determine if absentee ballot is voidable">
+        <typeRef>feel:boolean</typeRef>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="checkIdentificationForSuitability" id="id-6e03fbed72a91c8638237094a8cdb49e" label="Check identification for suitability">
+        <typeRef>feel:boolean</typeRef>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="allowedDocumentType" id="id-f3a341c53e5305a2d3ed5b2bc5c0e6e9" label="Allowed Document Type">
+        <typeRef>feel:boolean</typeRef>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="applicantData" id="id-7e0a180c534d71c11ec79127563fb504" label="Applicant Data">
+        <itemComponent isCollection="false" name="eligibleToRegister" id="id-7e0a180c534d71c11ec79127563fb504-relation-1" label="Eligible to Register" sigExt:slotId="1">
+            <typeRef>feel:boolean</typeRef>
+        </itemComponent>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="determineIfRegistrationIsRequired" id="id-2c437bd2e8508b752a9f35843845ec24" label="Determine if registration is required">
+        <typeRef>feel:boolean</typeRef>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="isRegistered" id="id-10fe3a971beb73426b51c3175ee6ca9b" label="Is registered?">
+        <typeRef>feel:boolean</typeRef>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="isAddressCurrent" id="id-22046c1f30074f1d85290b778fe8c904" label="Is address current">
+        <typeRef>feel:boolean</typeRef>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="pollingLocationConfiguration" id="id-b00c8104fbffec75f771009c99decd1c" label="Polling Location Configuration">
+        <typeRef>feel:string</typeRef>
+        <allowedValues>
+            <text>"geographic","vote-center"</text>
+        </allowedValues>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="registrationData" id="id-8b560c5e04253d829adfba71c0112351" label="Registration Data">
+        <itemComponent isCollection="false" name="hasCurrentRegistration" id="id-8b560c5e04253d829adfba71c0112351-relation-0" label="Has current registration" sigExt:slotId="0">
+            <typeRef>feel:boolean</typeRef>
+        </itemComponent>
+        <itemComponent isCollection="false" name="partyAffiliation" id="id-8b560c5e04253d829adfba71c0112351-relation-1" label="Party Affiliation" sigExt:slotId="1">
+            <typeRef>feel:string</typeRef>
+        </itemComponent>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="identification" id="id-79672cad3c14edc251b3e6293fa0b618" label="Identification">
+        <itemComponent isCollection="false" name="addressCurrent" id="id-79672cad3c14edc251b3e6293fa0b618-relation-0" label="Address Current" sigExt:slotId="0">
+            <typeRef>feel:boolean</typeRef>
+        </itemComponent>
+        <itemComponent isCollection="false" name="identificationUnexpired" id="id-79672cad3c14edc251b3e6293fa0b618-relation-1" label="Identification Unexpired" sigExt:slotId="1">
+            <typeRef>feel:boolean</typeRef>
+        </itemComponent>
+        <itemComponent isCollection="false" name="documentType" id="id-79672cad3c14edc251b3e6293fa0b618-relation-2" label="Document Type" sigExt:slotId="2">
+            <typeRef>feel:string</typeRef>
+        </itemComponent>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="numberBallotsAllowed" id="id-e31e35ea684ab68aae451677b548805e" label="Number Ballots Allowed">
+        <typeRef>feel:number</typeRef>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="ballotTrackingData" id="id-ce2e5cd1ca79acb4b211ae172786d0ce" label="Ballot Tracking Data">
+        <typeRef>feel:string</typeRef>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="determineRegularBallotIssuanceEligibility" id="id-e48ad06815142d8b401c3d3ebf4e7bba" label="Determine Regular Ballot Issuance Eligibility">
+        <typeRef>feel:boolean</typeRef>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="registrationAvailable" id="id-2e77624ada9c56122fb7653354621cd0" label="Registration Available">
+        <typeRef>feel:boolean</typeRef>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="eligibleToRegister" id="id-24eff5fe9c739ec3cfe6427ca5b612ce" label="Eligible to Register">
+        <typeRef>feel:boolean</typeRef>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="checkBallotStyleAvailability" id="id-497f92e58fa28a97979e02d6d9a61c91" label="Check ballot style availability">
+        <typeRef>feel:boolean</typeRef>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="ballotStyles" id="id-7065c611f92e47e8ff428e5852c66bed" label="Ballot Styles">
+        <itemComponent isCollection="false" name="ballotStyleAvailible" id="id-7065c611f92e47e8ff428e5852c66bed-relation-0" label="Ballot style availible" sigExt:slotId="0">
+            <typeRef>feel:boolean</typeRef>
+        </itemComponent>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="numberBallotsIssued" id="id-5f55b494e32e88879e0bb58390d2d6ca" label="Number Ballots Issued">
+        <typeRef>feel:number</typeRef>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="ballot" id="id-76a2da94cd76b2a143c32de657c24e6d" label="Ballot">
+        <itemComponent isCollection="false" name="ballotIssued" id="id-76a2da94cd76b2a143c32de657c24e6d-relation-0" label="Ballot Issued" sigExt:slotId="0">
+            <typeRef>feel:boolean</typeRef>
+        </itemComponent>
+        <itemComponent isCollection="false" name="ballotReturned" id="id-76a2da94cd76b2a143c32de657c24e6d-relation-2" label="Ballot Returned" sigExt:slotId="2">
+            <typeRef>feel:boolean</typeRef>
+        </itemComponent>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="performRegistrationCheck" id="id-a2f6278286a5a71736f96fde0c653181" label="Perform registration check">
+        <itemComponent isCollection="false" name="registrationCheck" id="id-a2f6278286a5a71736f96fde0c653181-relation-937DB649-EEBA-4312-A194-A821D88F5F1D" label="Registration Check" sigExt:slotId="937DB649-EEBA-4312-A194-A821D88F5F1D">
+            <typeRef>feel:boolean</typeRef>
+        </itemComponent>
+        <itemComponent isCollection="false" name="requiredAction" id="id-a2f6278286a5a71736f96fde0c653181-relation-C724B9FD-AAEC-4013-B1B3-16A961220CF6" label="Required Action" sigExt:slotId="C724B9FD-AAEC-4013-B1B3-16A961220CF6">
+            <typeRef>feel:string</typeRef>
+        </itemComponent>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="checkIfMaxBallotIssued" id="id-df4acc29a4a90a82ef5b23960119653e" label="Check if max ballot issued">
+        <typeRef>feel:boolean</typeRef>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="determineIfVoterIsAtCorrectPollingLocation" id="id-0acc9038992597b524ede7b086f55056" label="Determine if voter is at correct polling location">
+        <typeRef>feel:boolean</typeRef>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="voidingRules" id="id-1b18aa917e44d0358a9139a2b3f8bfc2" label="Voiding Rules">
+        <itemComponent isCollection="false" name="voterMustReturnBallot" id="id-1b18aa917e44d0358a9139a2b3f8bfc2-relation-0" label="Voter must return ballot" sigExt:slotId="0">
+            <typeRef>feel:boolean</typeRef>
+        </itemComponent>
+        <itemComponent isCollection="false" name="voterMustNotReturnBallot" id="id-1b18aa917e44d0358a9139a2b3f8bfc2-relation-2" label=" Voter must not return ballot" sigExt:slotId="2">
+            <typeRef>feel:boolean</typeRef>
+        </itemComponent>
+        <itemComponent isCollection="false" name="canBeVoided" id="id-1b18aa917e44d0358a9139a2b3f8bfc2-relation-3" label="Can be voided" sigExt:slotId="3">
+            <typeRef>feel:boolean</typeRef>
+        </itemComponent>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="jurisdictionRules" id="id-cdd025aa3f6db47f15295aeab85bbb53" label="Jurisdiction Rules">
+        <itemComponent isCollection="false" name="registrationRequired" id="id-cdd025aa3f6db47f15295aeab85bbb53-relation-0" label="Registration Required" sigExt:slotId="0">
+            <typeRef>feel:boolean</typeRef>
+        </itemComponent>
+        <itemComponent isCollection="false" name="registrationAvailible" id="id-cdd025aa3f6db47f15295aeab85bbb53-relation-3" label="Registration Availible" sigExt:slotId="3">
+            <typeRef>feel:boolean</typeRef>
+        </itemComponent>
+        <itemComponent isCollection="false" name="registrationPeriod" id="id-cdd025aa3f6db47f15295aeab85bbb53-relation-4" label="Registration Period" sigExt:slotId="4">
+            <typeRef>feel:string</typeRef>
+        </itemComponent>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="determineProvisionalBallotIssuanceEligibility" id="id-49e8f4443a33e5d99f57dfe6313092e6" label="Determine provisional ballot issuance eligibility">
+        <typeRef>feel:boolean</typeRef>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="isRegistrationUpToDate" id="id-465ea92218bab9b1587289724dfc582e" label="Is registration up to date">
+        <typeRef>feel:boolean</typeRef>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="identificationRules" id="id-190d1664d42f39b0f943007dc7cec059" label="Identification Rules">
+        <itemComponent isCollection="false" name="currentAddressRequired" id="id-190d1664d42f39b0f943007dc7cec059-relation-0" label="Current Address Required" sigExt:slotId="0">
+            <typeRef>feel:boolean</typeRef>
+        </itemComponent>
+        <itemComponent isCollection="false" name="allowDocuments" id="id-190d1664d42f39b0f943007dc7cec059-relation-2" label="Allow Documents" sigExt:slotId="2">
+            <typeRef>feel:string</typeRef>
+        </itemComponent>
+        <itemComponent isCollection="false" name="unexpiredIdentificationRequired" id="id-190d1664d42f39b0f943007dc7cec059-relation-3" label="Unexpired Identification Required" sigExt:slotId="3">
+            <typeRef>feel:boolean</typeRef>
+        </itemComponent>
+    </itemDefinition>
+    <itemDefinition isCollection="false" name="identificationUnexpired" id="id-ee6a7d596e3caba14df7373a7d9045c1" label="Identification Unexpired">
+        <typeRef>feel:boolean</typeRef>
+    </itemDefinition>
+    <inputData name="ballotTrackingData" id="id-e20439244b79d3be7475b10d56caf762" label="Ballot Tracking Data" sigExt:shapeId="sid-F31E4834-CA4B-418F-AB53-C02E24D60242" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:ballotTrackingData" name="ballotTrackingData" id="id-e20439244b79d3be7475b10d56caf762_variable"/>
+    </inputData>
+    <inputData name="jurisdictionRules" id="id-5f78aee18c7a27ccacf1e77f77602941" label="Jurisdiction Rules" sigExt:shapeId="sid-3B38F7E7-9216-4DF9-8731-927E6F40E83E" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:jurisdictionRules" name="jurisdictionRules" id="id-5f78aee18c7a27ccacf1e77f77602941_variable"/>
+    </inputData>
+    <inputData name="identification" id="id-1501a481f367dc78d879ff1f740ad6ba" label="Identification" sigExt:shapeId="sid-8C40672C-F17B-499B-B3CA-75FB308FB239" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:identification" name="identification" id="id-1501a481f367dc78d879ff1f740ad6ba_variable"/>
+    </inputData>
+    <inputData name="pollingLocationConfiguration" id="id-7e8a84fb58b4e2a9744373c6f5849f8d" label="Polling Location Configuration" sigExt:shapeId="sid-FC5EAABB-8E99-4627-A550-49033E373691" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:pollingLocationConfiguration" name="pollingLocationConfiguration" id="id-7e8a84fb58b4e2a9744373c6f5849f8d_variable"/>
+    </inputData>
+    <inputData name="numberBallotsAllowed" id="id-edbba9b5d5431e05fb68865ba7c081ae" label="Number Ballots Allowed" sigExt:shapeId="sid-AD18E0D7-328C-41FA-B699-25E9DB5603AA" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:numberBallotsAllowed" name="numberBallotsAllowed" id="id-edbba9b5d5431e05fb68865ba7c081ae_variable"/>
+    </inputData>
+    <inputData name="numberBallotsIssued" id="id-1b7435033b6290d1dfc9bb0eb4a0dd54" label="Number Ballots Issued" sigExt:shapeId="sid-CF1214AE-D0A4-4DDD-9129-04C1B8855E70" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:numberBallotsIssued" name="numberBallotsIssued" id="id-1b7435033b6290d1dfc9bb0eb4a0dd54_variable"/>
+    </inputData>
+    <inputData name="ballotStyles" id="id-03430db273e1bd8718afde260d6d0769" label="Ballot Styles" sigExt:shapeId="sid-1AB790D7-F728-4271-8E6E-9E7C041FA9BE" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:ballotStyles" name="ballotStyles" id="id-03430db273e1bd8718afde260d6d0769_variable"/>
+    </inputData>
+    <inputData name="voidingRules" id="id-c73134479de6e7c5e502be88ccc539c0" label="Voiding Rules" sigExt:shapeId="sid-24FA0AB5-6E5F-4E6B-869C-0C4A26BD6B7F" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:voidingRules" name="voidingRules" id="id-c73134479de6e7c5e502be88ccc539c0_variable"/>
+    </inputData>
+    <inputData name="identificationRules" id="id-2aa15e2ceaef4db87cefbd7c64beea91" label="Identification Rules" sigExt:shapeId="sid-C7E22E04-1CC6-430C-9F84-4006B81BA19C" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:identificationRules" name="identificationRules" id="id-2aa15e2ceaef4db87cefbd7c64beea91_variable"/>
+    </inputData>
+    <inputData name="registrationData" id="id-0e8d7d73333122b72020d1f3ab69103b" label="Registration Data" sigExt:shapeId="sid-D4413FFF-70E8-4AB7-914C-C14E71081816" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:registrationData" name="registrationData" id="id-0e8d7d73333122b72020d1f3ab69103b_variable"/>
+    </inputData>
+    <inputData name="applicantData" id="id-75c8afbb540e2aac8552a11717d1585a" label="Applicant Data" sigExt:shapeId="sid-8B78B6F8-C17F-49C3-97CD-6FBD0FC3A35F" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:applicantData" name="applicantData" id="id-75c8afbb540e2aac8552a11717d1585a_variable"/>
+    </inputData>
+    <inputData name="ballot" id="id-43a965a75c1de7a5ebed0b264be76023" label="Ballot" sigExt:shapeId="sid-AEBDDE29-4BCE-42A2-9E4D-7557F0AB7F79" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:ballot" name="ballot" id="id-43a965a75c1de7a5ebed0b264be76023_variable"/>
+    </inputData>
+    <decision name="determineProvisionalBallotIssuanceEligibility" id="id-ef0007efa2e6dba81a8b9a3dd175fc56" label="Determine provisional ballot issuance eligibility" sigExt:shapeId="sid-E58DB0B0-B29C-40DB-8D72-23C7357DA2D7" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:determineProvisionalBallotIssuanceEligibility" name="determineProvisionalBallotIssuanceEligibility" id="id-ef0007efa2e6dba81a8b9a3dd175fc56_variable"/>
+        <informationRequirement>
+            <requiredDecision href="#id-7c3c70d5481e5fee3b27288353b10d4e"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredDecision href="#id-4dc3f79b260e62e9bcb68e2b75a78705"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredDecision href="#id-d6829fc835e74e63d8b4d53e67816a0c"/>
+        </informationRequirement>
+        <literalExpression expressionLanguage="http://www.omg.org/spec/FEEL/20140401">
+            <text>true</text>
+        </literalExpression>
+    </decision>
+    <decision name="performRegistrationCheck" id="id-a9ce6c128b436cd8c34d9590df6e3986" label="Perform registration check" sigExt:shapeId="sid-C256D353-E715-4410-95F0-B87AA221B4E2" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:performRegistrationCheck" name="performRegistrationCheck" id="id-a9ce6c128b436cd8c34d9590df6e3986_variable"/>
+        <informationRequirement>
+            <requiredDecision href="#id-13bec2ac7f55ec3e1459f1b5f23aecdd"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredDecision href="#id-13b5e11ce7b373d9e815fd504de7a8a0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredDecision href="#id-5564e009d2cb4086c6b31c647a2ac579"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredDecision href="#id-62b6d2fca691e880fc79ef745e578bda"/>
+        </informationRequirement>
+        <decisionTable hitPolicy="UNIQUE">
+            <input id="id-e7028e0e59fdf53240a4a9cb6abf5158" label="Is registered?">
+                <inputExpression>
+                    <text>isRegistered</text>
+                </inputExpression>
+            </input>
+            <input id="id-543ed19be7e332b43d29c0e9031d5ba3" label="Registration Available">
+                <inputExpression>
+                    <text>registrationAvailable</text>
+                </inputExpression>
+            </input>
+            <input id="id-09c1c086ca44b995883efb060313142b" label="Eligible to Register">
+                <inputExpression>
+                    <text>eligibleToRegister</text>
+                </inputExpression>
+            </input>
+            <input id="id-e51463e69817b35ecf577514e524273d" label="Determine if registration is required">
+                <inputExpression>
+                    <text>determineIfRegistrationIsRequired</text>
+                </inputExpression>
+            </input>
+            <output name="registrationCheck" typeRef="feel:boolean" id="id-ad7ef140117f215a308faa8ef010055a" label="Registration Check"/>
+            <output name="requiredAction" typeRef="feel:string" id="id-56b7e16bf9769ec4172506c289adb805" label="Required Action"/>
+            <rule id="id-cc497ea42fa7b57f1850471771928c5b">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>true</text>
+                </outputEntry>
+                <outputEntry>
+                    <text>"must register"</text>
+                </outputEntry>
+            </rule>
+            <rule id="id-1517f00b276e5bba31508b066838fa6e">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>false</text>
+                </outputEntry>
+                <outputEntry>
+                    <text>"cannot register"</text>
+                </outputEntry>
+            </rule>
+            <rule id="id-c1682673fbcd2dbb01cb9b44a89572ca">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>false</text>
+                </outputEntry>
+                <outputEntry>
+                    <text>"cannot register"</text>
+                </outputEntry>
+            </rule>
+            <rule id="id-e6ea29762f35064a0ea9810f599444b7">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>true</text>
+                </outputEntry>
+                <outputEntry>
+                    <text>"registered"</text>
+                </outputEntry>
+            </rule>
+            <rule id="id-fc116e8fabe447e7e3cc9066eae2eb98">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>true</text>
+                </outputEntry>
+                <outputEntry>
+                    <text>"registered"</text>
+                </outputEntry>
+            </rule>
+        </decisionTable>
+    </decision>
+    <decision name="eligibleToRegister" id="id-13b5e11ce7b373d9e815fd504de7a8a0" label="Eligible to Register" sigExt:shapeId="sid-39D8332C-F05D-4906-BB75-E73E25D9CFA0" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:eligibleToRegister" name="eligibleToRegister" id="id-13b5e11ce7b373d9e815fd504de7a8a0_variable"/>
+        <informationRequirement>
+            <requiredInput href="#id-75c8afbb540e2aac8552a11717d1585a"/>
+        </informationRequirement>
+        <authorityRequirement>
+            <requiredAuthority href="#id-0b00ce7b0e11d4c1b6f92137eb8a2c61"/>
+        </authorityRequirement>
+        <literalExpression expressionLanguage="http://www.omg.org/spec/FEEL/20140401">
+            <text>applicantData.eligibleToRegister</text>
+        </literalExpression>
+    </decision>
+    <decision name="determineIfVoterIsAtCorrectPollingLocation" id="id-c2f73b74f3ec3d41d4594ef1294d6288" label="Determine if voter is at correct polling location" sigExt:shapeId="sid-C42D7E7D-675C-430B-B3E8-9B522F7F21A7" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:determineIfVoterIsAtCorrectPollingLocation" name="determineIfVoterIsAtCorrectPollingLocation" id="id-c2f73b74f3ec3d41d4594ef1294d6288_variable"/>
+        <informationRequirement>
+            <requiredInput href="#id-7e8a84fb58b4e2a9744373c6f5849f8d"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#id-0e8d7d73333122b72020d1f3ab69103b"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#id-03430db273e1bd8718afde260d6d0769"/>
+        </informationRequirement>
+        <decisionTable hitPolicy="UNIQUE">
+            <input id="id-338bd3507c131269870a2f8072054835" label="Ballot style availible">
+                <inputExpression>
+                    <text>ballotStyles.ballotStyleAvailible</text>
+                </inputExpression>
+            </input>
+            <input id="id-7666c88f83f78d4355b88cbacf6867ec" label="Polling Location Configuration">
+                <inputExpression>
+                    <text>pollingLocationConfiguration</text>
+                </inputExpression>
+            </input>
+            <output name="determineIfVoterIsAtCorrectPollingLocation" typeRef="feel:boolean" id="id-fd614c38fe7d1ebaaac65b8acf58a2b4" label="Determine if voter is at correct polling location"/>
+            <rule id="id-9d2b0fe032afa3fb1361ed92b108ea6a">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>"geographic"</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>false</text>
+                </outputEntry>
+            </rule>
+            <rule id="id-f6f3ba5662b2184c1d9062a4fabd84c5">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>"geographic"</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>true</text>
+                </outputEntry>
+            </rule>
+            <rule id="id-85ed0b476a0e8778e75bd5daab2b3c97">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>"vote-center"</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>true</text>
+                </outputEntry>
+            </rule>
+        </decisionTable>
+    </decision>
+    <decision name="isAddressCurrent" id="id-f6edef90da414a0189bf029a0c562830" label="Is address current" sigExt:shapeId="sid-73DEDF5F-7093-4F82-A779-6E255B091F37" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:isAddressCurrent" name="isAddressCurrent" id="id-f6edef90da414a0189bf029a0c562830_variable"/>
+        <informationRequirement>
+            <requiredInput href="#id-2aa15e2ceaef4db87cefbd7c64beea91"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#id-0e8d7d73333122b72020d1f3ab69103b"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#id-1501a481f367dc78d879ff1f740ad6ba"/>
+        </informationRequirement>
+        <literalExpression expressionLanguage="http://www.omg.org/spec/FEEL/20140401">
+            <text>not(identificationRules.currentAddressRequired) or registrationData.hasCurrentRegistration</text>
+        </literalExpression>
+    </decision>
+    <decision name="checkIdentificationForSuitability" id="id-6abafc11de47a5289cf1f333799adca5" label="Check identification for suitability" sigExt:shapeId="sid-66AD5171-F706-4694-BF44-211B8BFF6766" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:checkIdentificationForSuitability" name="checkIdentificationForSuitability" id="id-6abafc11de47a5289cf1f333799adca5_variable"/>
+        <informationRequirement>
+            <requiredDecision href="#id-f6edef90da414a0189bf029a0c562830"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredDecision href="#id-e3009b2f616f00a8681d5f0b48e20eba"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredDecision href="#id-4b83d6197c23c9b561eef5e31c5784c5"/>
+        </informationRequirement>
+        <decisionTable hitPolicy="UNIQUE">
+            <input id="id-7192f79bc42b3ac5653d4d5ee8be38d6" label="Is address current">
+                <inputExpression>
+                    <text>isAddressCurrent</text>
+                </inputExpression>
+            </input>
+            <input id="id-7d5524368e2b6de8d9943e6af3ee787a" label="Identification Unexpired">
+                <inputExpression>
+                    <text>identificationUnexpired</text>
+                </inputExpression>
+            </input>
+            <input id="id-118b74a58768a37c67cfa0b41bb301b3" label="Allowed Document Type">
+                <inputExpression>
+                    <text>allowedDocumentType</text>
+                </inputExpression>
+            </input>
+            <output name="checkIdentificationForSuitability" typeRef="feel:boolean" id="id-b69474752e3ba32655b06d7470f9d35f" label="Check identification for suitability"/>
+            <rule id="id-61c8e35e9207aec43928225f11061135">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>true</text>
+                </outputEntry>
+            </rule>
+            <rule id="id-83143124302cbf22c06ece18ff488c2d">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>false</text>
+                </outputEntry>
+            </rule>
+            <rule id="id-f3cfeea7d2b27fc40ed70676ca1ce4fa">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>false</text>
+                </outputEntry>
+            </rule>
+            <rule id="id-5113ceca0a4e3c0a8ee783e7c0d5e85f">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>false</text>
+                </outputEntry>
+            </rule>
+        </decisionTable>
+    </decision>
+    <decision name="registrationAvailable" id="id-13bec2ac7f55ec3e1459f1b5f23aecdd" label="Registration Available" sigExt:shapeId="sid-409225C4-6726-4441-9904-BFFA63D9BDEB" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:registrationAvailable" name="registrationAvailable" id="id-13bec2ac7f55ec3e1459f1b5f23aecdd_variable"/>
+        <informationRequirement>
+            <requiredInput href="#id-5f78aee18c7a27ccacf1e77f77602941"/>
+        </informationRequirement>
+        <literalExpression expressionLanguage="http://www.omg.org/spec/FEEL/20140401">
+            <text>jurisdictionRules.registrationAvailible</text>
+        </literalExpression>
+    </decision>
+    <decision name="isRegistrationUpToDate" id="id-baf1ae40a7a1729c2fdc9a8724f22466" label="Is registration up to date" sigExt:shapeId="sid-24F6D168-589A-4198-86E3-E763679CBE2F" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:isRegistrationUpToDate" name="isRegistrationUpToDate" id="id-baf1ae40a7a1729c2fdc9a8724f22466_variable"/>
+        <informationRequirement>
+            <requiredInput href="#id-0e8d7d73333122b72020d1f3ab69103b"/>
+        </informationRequirement>
+        <authorityRequirement>
+            <requiredAuthority href="#id-c89b587216c887e72f30361f8f1bd33c"/>
+        </authorityRequirement>
+        <literalExpression expressionLanguage="http://www.omg.org/spec/FEEL/20140401">
+            <text>true</text>
+        </literalExpression>
+    </decision>
+    <decision name="determineIfRegistrationIsRequired" id="id-5564e009d2cb4086c6b31c647a2ac579" label="Determine if registration is required" sigExt:shapeId="sid-7B6C0F25-8DFA-4B03-9342-D6BC280D771C" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:determineIfRegistrationIsRequired" name="determineIfRegistrationIsRequired" id="id-5564e009d2cb4086c6b31c647a2ac579_variable"/>
+        <informationRequirement>
+            <requiredInput href="#id-5f78aee18c7a27ccacf1e77f77602941"/>
+        </informationRequirement>
+        <literalExpression expressionLanguage="http://www.omg.org/spec/FEEL/20140401">
+            <text>jurisdictionRules.registrationRequired</text>
+        </literalExpression>
+    </decision>
+    <decision name="checkIfMaxBallotIssued" id="id-7c3c70d5481e5fee3b27288353b10d4e" label="Check if max ballot issued" sigExt:shapeId="sid-4D9D7FEF-B22F-423B-B32F-C7B15E248E16" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:checkIfMaxBallotIssued" name="checkIfMaxBallotIssued" id="id-7c3c70d5481e5fee3b27288353b10d4e_variable"/>
+        <informationRequirement>
+            <requiredInput href="#id-1b7435033b6290d1dfc9bb0eb4a0dd54"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#id-edbba9b5d5431e05fb68865ba7c081ae"/>
+        </informationRequirement>
+        <literalExpression expressionLanguage="http://www.omg.org/spec/FEEL/20140401">
+            <text>(numberBallotsIssued=numberBallotsAllowed)</text>
+        </literalExpression>
+    </decision>
+    <decision name="determineRegularBallotIssuanceEligibility" id="id-4dc3f79b260e62e9bcb68e2b75a78705" label="Determine Regular Ballot Issuance Eligibility" sigExt:shapeId="sid-05997E79-4C50-46AF-8B5F-BF415717B1AC" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:determineRegularBallotIssuanceEligibility" name="determineRegularBallotIssuanceEligibility" id="id-4dc3f79b260e62e9bcb68e2b75a78705_variable"/>
+        <informationRequirement>
+            <requiredDecision href="#id-a9ce6c128b436cd8c34d9590df6e3986"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredDecision href="#id-c2f73b74f3ec3d41d4594ef1294d6288"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredDecision href="#id-7c3c70d5481e5fee3b27288353b10d4e"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredDecision href="#id-d6829fc835e74e63d8b4d53e67816a0c"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredDecision href="#id-f74ee88cb4f77e74671b45599490b574"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredDecision href="#id-6abafc11de47a5289cf1f333799adca5"/>
+        </informationRequirement>
+        <decisionTable hitPolicy="UNIQUE">
+            <input id="id-f14d72f51cae2bc620ebfd9cf38a40b5" label="Check ballot style availability">
+                <inputExpression>
+                    <text>checkBallotStyleAvailability</text>
+                </inputExpression>
+            </input>
+            <input id="id-dc6fa46e680bbca78092b84246efc69a" label="Check if max ballot issued">
+                <inputExpression>
+                    <text>checkIfMaxBallotIssued</text>
+                </inputExpression>
+            </input>
+            <input id="id-8ac3bdc6fa1b994fedc5263f3935447c" label="Determine if voter is at correct polling location">
+                <inputExpression>
+                    <text>determineIfVoterIsAtCorrectPollingLocation</text>
+                </inputExpression>
+            </input>
+            <input id="id-c9305608e74e0a85c97276963ed7e803" label="Registration Check">
+                <inputExpression>
+                    <text>performRegistrationCheck.registrationCheck</text>
+                </inputExpression>
+            </input>
+            <input id="id-75bddc5349a6bb638f687a5715fd6a77" label="Determine if absentee ballot is voidable">
+                <inputExpression>
+                    <text>determineIfAbsenteeBallotIsVoidable</text>
+                </inputExpression>
+            </input>
+            <output name="determineRegularBallotIssuanceEligibility" typeRef="feel:boolean" id="id-af05b635ebbd08b722cf81ce3b11601e" label="Determine Regular Ballot Issuance Eligibility"/>
+            <rule id="id-ee7a355b24ca01e7043ad41cd63fd6e4">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>true</text>
+                </outputEntry>
+            </rule>
+            <rule id="id-42e64c53109159db21f9727b8b404b8e">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>false</text>
+                </outputEntry>
+            </rule>
+            <rule id="id-8850cb1f72e7fa7ee0a35cd6f65ad633">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>false</text>
+                </outputEntry>
+            </rule>
+            <rule id="id-d49de854ecdbbc5a16e892173657deec">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>false</text>
+                </outputEntry>
+            </rule>
+            <rule id="id-f6b994addd4b5d5e919fe2ce0630c2ab">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>false</text>
+                </outputEntry>
+            </rule>
+            <rule id="id-c9fd6534a76f3645e8d28b7da7ce2408">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>false</text>
+                </outputEntry>
+            </rule>
+        </decisionTable>
+    </decision>
+    <decision name="identificationUnexpired" id="id-e3009b2f616f00a8681d5f0b48e20eba" label="Identification Unexpired" sigExt:shapeId="sid-44AE1481-2DCA-41C2-B48B-DCF89437CE4A" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:identificationUnexpired" name="identificationUnexpired" id="id-e3009b2f616f00a8681d5f0b48e20eba_variable"/>
+        <informationRequirement>
+            <requiredInput href="#id-2aa15e2ceaef4db87cefbd7c64beea91"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#id-1501a481f367dc78d879ff1f740ad6ba"/>
+        </informationRequirement>
+        <literalExpression expressionLanguage="http://www.omg.org/spec/FEEL/20140401">
+            <text>not(identificationRules.unexpiredIdentificationRequired) or identification.identificationUnexpired</text>
+        </literalExpression>
+    </decision>
+    <decision name="checkBallotStyleAvailability" id="id-d6829fc835e74e63d8b4d53e67816a0c" label="Check ballot style availability" sigExt:shapeId="sid-BF77681D-BB3F-4BA0-BEC5-3704D13FF040" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:checkBallotStyleAvailability" name="checkBallotStyleAvailability" id="id-d6829fc835e74e63d8b4d53e67816a0c_variable"/>
+        <informationRequirement>
+            <requiredInput href="#id-0e8d7d73333122b72020d1f3ab69103b"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#id-03430db273e1bd8718afde260d6d0769"/>
+        </informationRequirement>
+        <authorityRequirement>
+            <requiredAuthority href="#id-6a4015ae8d816490f846eeb8edc6670b"/>
+        </authorityRequirement>
+        <literalExpression expressionLanguage="http://www.omg.org/spec/FEEL/20140401">
+            <text>ballotStyles.ballotStyleAvailible</text>
+        </literalExpression>
+    </decision>
+    <decision name="determineIfAbsenteeBallotIsVoidable" id="id-f74ee88cb4f77e74671b45599490b574" label="Determine if absentee ballot is voidable" sigExt:shapeId="sid-FDF92228-D09E-4732-B3E5-D68491065F7C" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:determineIfAbsenteeBallotIsVoidable" name="determineIfAbsenteeBallotIsVoidable" id="id-f74ee88cb4f77e74671b45599490b574_variable"/>
+        <informationRequirement>
+            <requiredInput href="#id-c73134479de6e7c5e502be88ccc539c0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#id-e20439244b79d3be7475b10d56caf762"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#id-43a965a75c1de7a5ebed0b264be76023"/>
+        </informationRequirement>
+        <decisionTable hitPolicy="UNIQUE">
+            <input id="id-b37f18fe77838230d123846bf6905e65" label="Ballot Issued">
+                <inputExpression>
+                    <text>ballot.ballotIssued</text>
+                </inputExpression>
+            </input>
+            <input id="id-ecfdd85e7cc4b207e1f208b925748e17" label="Ballot Returned">
+                <inputExpression>
+                    <text>ballot.ballotReturned</text>
+                </inputExpression>
+            </input>
+            <input id="id-b7dc2619dc8866680e31b604810e0d64" label="Voter must return ballot">
+                <inputExpression>
+                    <text>voidingRules.voterMustReturnBallot</text>
+                </inputExpression>
+            </input>
+            <input id="id-ff3b24b5096d6876dce2eead61497e16" label=" Voter must not return ballot">
+                <inputExpression>
+                    <text>voidingRules.voterMustNotReturnBallot</text>
+                </inputExpression>
+            </input>
+            <input id="id-6a81fb39a6c1cf3dc482bc84c0a49f1e" label="Can be voided">
+                <inputExpression>
+                    <text>voidingRules.canBeVoided</text>
+                </inputExpression>
+            </input>
+            <output name="determineIfAbsenteeBallotIsVoidable" typeRef="feel:boolean" id="id-445e2b9273f27073f629e57e17ee4f21" label="Determine if absentee ballot is voidable"/>
+            <rule id="id-cad6a6506d37604fc9c5e8c196281335">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>true</text>
+                </outputEntry>
+            </rule>
+            <rule id="id-906dd873169ed12a2d380c36936d3e9c">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>true</text>
+                </outputEntry>
+            </rule>
+            <rule id="id-6b933b8534f90f5c87284b3a283d6aa7">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>false</text>
+                </outputEntry>
+            </rule>
+            <rule id="id-39ab6d12bffd0ffa682b3275cf611e40">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>false</text>
+                </outputEntry>
+            </rule>
+            <rule id="id-f4584b97c95680ebb53d2dd1ad738f0d">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>true</text>
+                </outputEntry>
+            </rule>
+            <rule id="id-98b23876c6f813f6171665d4216ec314">
+                <description>string(-)</description>
+                <inputEntry>
+                    <text>true</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>false</text>
+                </outputEntry>
+            </rule>
+        </decisionTable>
+    </decision>
+    <decision name="isRegistered" id="id-62b6d2fca691e880fc79ef745e578bda" label="Is registered?" sigExt:shapeId="sid-E11D0ED9-9C40-4388-A8DB-68C9778E1427" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:isRegistered" name="isRegistered" id="id-62b6d2fca691e880fc79ef745e578bda_variable"/>
+        <informationRequirement>
+            <requiredInput href="#id-0e8d7d73333122b72020d1f3ab69103b"/>
+        </informationRequirement>
+        <authorityRequirement>
+            <requiredAuthority href="#id-c89b587216c887e72f30361f8f1bd33c"/>
+        </authorityRequirement>
+        <authorityRequirement>
+            <requiredAuthority href="#id-729144aafa440041d2943d0c13b3aa28"/>
+        </authorityRequirement>
+        <literalExpression expressionLanguage="http://www.omg.org/spec/FEEL/20140401">
+            <text>registrationData.hasCurrentRegistration</text>
+        </literalExpression>
+    </decision>
+    <decision name="allowedDocumentType" id="id-4b83d6197c23c9b561eef5e31c5784c5" label="Allowed Document Type" sigExt:shapeId="sid-E83474D2-2737-4463-9C04-A19064AD59C0" sigExt:diagramId="6878f297988c45ddac65264aea88d749">
+        <extensionElements/>
+        <variable typeRef="sig:allowedDocumentType" name="allowedDocumentType" id="id-4b83d6197c23c9b561eef5e31c5784c5_variable"/>
+        <informationRequirement>
+            <requiredInput href="#id-2aa15e2ceaef4db87cefbd7c64beea91"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#id-1501a481f367dc78d879ff1f740ad6ba"/>
+        </informationRequirement>
+        <literalExpression expressionLanguage="http://www.omg.org/spec/FEEL/20140401">
+            <text>true</text>
+        </literalExpression>
+    </decision>
+    <knowledgeSource name="activatedPrecinctsPartiesClosedPrimary" id="id-6a4015ae8d816490f846eeb8edc6670b" label="Activated precincts, parties (closed primary)"/>
+    <knowledgeSource name="convertToIsRegistered" id="id-729144aafa440041d2943d0c13b3aa28" label="Convert to &quot;Is Registered&quot;"/>
+    <knowledgeSource name="stateAndFederalRegistrationRequirements" id="id-0b00ce7b0e11d4c1b6f92137eb8a2c61" label="State and federal registration requirements"/>
+    <knowledgeSource name="jurisdictionSpecificRules" id="id-c89b587216c887e72f30361f8f1bd33c" label="Jurisdiction specific rules"/>
+</definitions>
