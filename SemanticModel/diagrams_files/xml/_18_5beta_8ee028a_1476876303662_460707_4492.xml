@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><opaqueexpression classType="OpaqueExpression" humanType="Opaque Expression" icon="diagrams_files/icon_opaqueexpression_1255445356.png" id="_18_5beta_8ee028a_1476876303662_460707_4492"><body humanName="Body" mode="e"><String>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;unionExpressionSpecification xmlns="http://www.nomagic.com/schemas/MagicDraw/StructuredExpression/2013"&gt;
+    &lt;taggedValues&gt;
+        &lt;entry key="name"&gt;
+            &lt;value&gt;Body&lt;/value&gt;
+        &lt;/entry&gt;
+        &lt;entry key="ROOT_UNION"&gt;
+            &lt;value&gt;true&lt;/value&gt;
+        &lt;/entry&gt;
+    &lt;/taggedValues&gt;
+    &lt;value xsi:type="callExpressionSpecification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+        &lt;taggedValues&gt;
+            &lt;entry key="name"&gt;
+                &lt;value&gt;Script1&lt;/value&gt;
+            &lt;/entry&gt;
+        &lt;/taggedValues&gt;
+        &lt;argument xsi:type="callExpressionSpecification"&gt;
+            &lt;taggedValues&gt;
+                &lt;entry key="name"&gt;
+                    &lt;value&gt;Find1&lt;/value&gt;
+                &lt;/entry&gt;
+            &lt;/taggedValues&gt;
+            &lt;argument xsi:type="stringExpressionSpecification"&gt;
+                &lt;value&gt;*&lt;/value&gt;
+            &lt;/argument&gt;
+            &lt;argument xsi:type="callExpressionSpecification"&gt;
+                &lt;taggedValues&gt;
+                    &lt;entry key="name"&gt;
+                        &lt;value&gt;Script1&lt;/value&gt;
+                    &lt;/entry&gt;
+                &lt;/taggedValues&gt;
+                &lt;argument xsi:type="lookupExpressionSpecification" symbol="THIS"/&gt;
+                &lt;expression xsi:type="makeInlineExpressionSpecification" language="Groovy"&gt;
+                    &lt;parameter name="arg1" type="java.lang.Object" ordered="false" unique="false" multiple="false"/&gt;
+                    &lt;body&gt;return  valueContext.getValue("scope")&lt;/body&gt;
+                &lt;/expression&gt;
+            &lt;/argument&gt;
+            &lt;argument xsi:type="callExpressionSpecification"&gt;
+                &lt;taggedValues&gt;
+                    &lt;entry key="name"&gt;
+                        &lt;value&gt;Script1&lt;/value&gt;
+                    &lt;/entry&gt;
+                &lt;/taggedValues&gt;
+                &lt;argument xsi:type="lookupExpressionSpecification" symbol="THIS"/&gt;
+                &lt;expression xsi:type="makeInlineExpressionSpecification" language="Groovy"&gt;
+                    &lt;parameter name="arg1" type="java.lang.Object" ordered="false" unique="false" multiple="false"/&gt;
+                    &lt;body&gt;return valueContext.getValue("type")&lt;/body&gt;
+                &lt;/expression&gt;
+            &lt;/argument&gt;
+            &lt;argument xsi:type="booleanExpressionSpecification" value="false"/&gt;
+            &lt;argument xsi:type="stringExpressionSpecification"&gt;
+                &lt;value&gt;&lt;/value&gt;
+            &lt;/argument&gt;
+            &lt;argument xsi:type="stringExpressionSpecification"&gt;
+                &lt;value&gt;&lt;/value&gt;
+            &lt;/argument&gt;
+            &lt;argument xsi:type="booleanExpressionSpecification" value="false"/&gt;
+            &lt;argument xsi:type="booleanExpressionSpecification" value="false"/&gt;
+            &lt;argument xsi:type="booleanExpressionSpecification" value="true"/&gt;
+            &lt;argument xsi:type="booleanExpressionSpecification" value="false"/&gt;
+            &lt;argument xsi:type="booleanExpressionSpecification" value="false"/&gt;
+            &lt;argument xsi:type="booleanExpressionSpecification" value="false"/&gt;
+            &lt;expression xsi:type="interpretElementExpressionSpecification"&gt;
+                &lt;element xsi:type="elementExpressionSpecification" element="_17_0_5beta_f720368_1373897899638_243554_3290"/&gt;
+            &lt;/expression&gt;
+        &lt;/argument&gt;
+        &lt;expression xsi:type="makeInlineExpressionSpecification" language="Groovy"&gt;
+            &lt;parameter name="arg1" type="java.lang.Object" ordered="false" unique="false" multiple="false"/&gt;
+            &lt;body&gt;import com.nomagic.uml2.ext.jmi.helpers.StereotypesHelper
+import com.nomagic.uml2.ext.magicdraw.classes.mdkernel.InstanceSpecification
+
+Set set = (HashSet)arg1;
+def iterator = set.iterator()
+while (iterator.hasNext())
+{
+    def next = iterator.next()
+    if (next instanceof InstanceSpecification &amp;amp;&amp;amp; StereotypesHelper.isAppliedStereotypeInstance((InstanceSpecification) next))
+    {    
+        iterator.remove();
+    }
+}
+return set.size()&lt;/body&gt;
+        &lt;/expression&gt;
+    &lt;/value&gt;
+&lt;/unionExpressionSpecification&gt;
+</String></body><documentation humanName="Documentation"/><language humanName="Language" mode="e"><String>StructuredExpression</String></language><name humanName="Name"/><owner classType="Property" humanName="Owner" humanType="Metric Definition" icon="diagrams_files/icon_metricdefinition_1074366879.png" mode="s,e" name="count" refid="_18_5beta_8ee028a_1476876288119_824641_4489"/><owningProperty classType="Property" humanName="Owning Property" humanType="Metric Definition" icon="diagrams_files/icon_metricdefinition_1074366879.png" name="count" refid="_18_5beta_8ee028a_1476876288119_824641_4489"/><qualifiedName humanName="Qualified Name">UML Standard Profile::MagicDraw Profile::PredefinedMetricSuites::MetricSuiteWithCount::count::</qualifiedName><text humanName="Text" mode="standard">Body</text><TO_DO humanName="To Do" mode="s,e"/><TYPE_MODIFIER humanName="Type Modifier"/><visibility humanName="Visibility">public</visibility></opaqueexpression></magicdraw>

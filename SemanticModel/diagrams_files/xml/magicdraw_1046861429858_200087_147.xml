@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><comment classType="Comment" humanType="Comment" icon="diagrams_files/icon_comment_1105641037.png" id="magicdraw_1046861429858_200087_147"><annotatedElement humanName="Annotated Element" mode="s,e"><stereotype classType="Stereotype" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="Trace" refid="magicdraw_1046861421246_733231_63"/></annotatedElement><body humanName="Body" mode="s,e">Specifies a trace relationship between model elements or sets
+of model elements that represent the same concept in
+different models. Traces are mainly used for tracking
+requirements and changes across models. Since model
+changes can occur in both directions, the directionality of the
+dependency can often be ignored. The mapping specifies the
+relationship between the two, but it is rarely computable and
+is usually informal.</body><documentation humanName="Documentation"/><owner classType="Stereotype" humanName="Owner" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" mode="s,e" name="Trace" refid="magicdraw_1046861421246_733231_63"/><owningElement classType="Stereotype" humanName="Owning Element" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="Trace" refid="magicdraw_1046861421246_733231_63"/><TO_DO humanName="To Do" mode="s,e"/></comment></magicdraw>

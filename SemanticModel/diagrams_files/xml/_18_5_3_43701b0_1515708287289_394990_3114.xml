@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1932546331.png" id="_18_5_3_43701b0_1515708287289_394990_3114"><documentation humanName="Documentation"/><name humanName="Name"/><owner classType="Slot" humanName="Owner" humanType="Slot" icon="diagrams_files/icon_slot_186568829.png" mode="e" refid="_18_5_3_43701b0_1515708287289_202483_3113"/><owningSlot classType="Slot" humanName="Owning Slot" humanType="Slot" icon="diagrams_files/icon_slot_186568829.png" refid="_18_5_3_43701b0_1515708287289_202483_3113"/><qualifiedName humanName="Qualified Name"/><text humanName="Text" mode="standard">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;callExpressionSpecification xmlns="http://www.nomagic.com/schemas/MagicDraw/StructuredExpression/2013"&gt;
+    &lt;taggedValues&gt;
+        &lt;entry key="name"&gt;
+            &lt;value&gt;mount&lt;/value&gt;
+        &lt;/entry&gt;
+    &lt;/taggedValues&gt;
+    &lt;argument xsi:type="lookupExpressionSpecification" symbol="THIS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+    &lt;expression xsi:type="dslRelationExpressionSpecification" stereotype="_18_1beta_8850271_1414498574471_127583_3926" includeSubtypes="true" direction="DIRECT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+&lt;/callExpressionSpecification&gt;
+</text><TO_DO humanName="To Do"/><TYPE_MODIFIER humanName="Type Modifier"/><value humanName="Value" mode="s,e">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;callExpressionSpecification xmlns="http://www.nomagic.com/schemas/MagicDraw/StructuredExpression/2013"&gt;
+    &lt;taggedValues&gt;
+        &lt;entry key="name"&gt;
+            &lt;value&gt;mount&lt;/value&gt;
+        &lt;/entry&gt;
+    &lt;/taggedValues&gt;
+    &lt;argument xsi:type="lookupExpressionSpecification" symbol="THIS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+    &lt;expression xsi:type="dslRelationExpressionSpecification" stereotype="_18_1beta_8850271_1414498574471_127583_3926" includeSubtypes="true" direction="DIRECT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+&lt;/callExpressionSpecification&gt;
+</value><visibility humanName="Visibility">public</visibility></literalstring></magicdraw>

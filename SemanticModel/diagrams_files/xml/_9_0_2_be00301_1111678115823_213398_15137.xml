@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><comment classType="Comment" humanType="Comment" icon="diagrams_files/icon_comment_1105641037.png" id="_9_0_2_be00301_1111678115823_213398_15137"><annotatedElement humanName="Annotated Element" mode="s,e"><stereotype classType="Stereotype" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="Refine" refid="magicdraw_1046861421236_260147_44"/></annotatedElement><body humanName="Body" mode="s,e">Specifies a refinement relationship between model elements
+at different semantic levels, such as analysis and design. The
+mapping specifies the relationship between the two elements
+or sets of elements. The mapping may or may not be
+computable, and it may be unidirectional or bidirectional.
+Refinement can be used to model transformations from
+analysis to design and other such changes.</body><documentation humanName="Documentation"/><owner classType="Stereotype" humanName="Owner" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" mode="s,e" name="Refine" refid="magicdraw_1046861421236_260147_44"/><owningElement classType="Stereotype" humanName="Owning Element" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="Refine" refid="magicdraw_1046861421236_260147_44"/><TO_DO humanName="To Do" mode="s,e"/></comment></magicdraw>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><comment classType="Comment" humanType="Comment" icon="diagrams_files/icon_comment_1105641037.png" id="_16_8beta_9020291_1263281633420_123747_1143"><annotatedElement humanName="Annotated Element" mode="s,e"><stereotype classType="Stereotype" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="RelationMap" refid="_16_8beta_9020291_1260453936960_387965_1187"/></annotatedElement><body humanName="Body" mode="s,e">&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+The &lt;b&gt;Relation Map&lt;/b&gt; allows rapid creation, review, and analysis of relationships among the elements of the whole model.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&amp;#160;
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&lt;b&gt;To create a relation map: &lt;/b&gt;
+
+    &lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+Drag an element from the Model Browser to the relation map.
+
+      &lt;/li&gt;
+      &lt;li&gt;
+Specify filters: Relation Criterion, Element Type, Scope, and Depth.
+
+      &lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p&gt;
+&amp;#160;
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+Relation map can display the model structure in two different layouts - &lt;b&gt;tree&lt;/b&gt; or &lt;b&gt;radial&lt;/b&gt;.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&amp;#160;
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+The relations represented on the map can be analyzed in one of the following ways:
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+Dynamically - according to the applied filters: element type, dependencies criterion, depth, and scope.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+Statically - step-by-step by expanding the branches of the structure.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&amp;#160;
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+To represent the same element as a single node in the map, click the Options button on the toolbar and then select the &lt;b&gt;Show Single Node Per Element&lt;/b&gt; command.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&amp;#160;
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;b&gt;Manipulations:&lt;/b&gt;
+    &lt;p&gt;
+&amp;#160;
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&lt;b&gt;Create a relation map structure&lt;/b&gt; - drag an element from the Model Browser to the relation map.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&lt;b&gt;Restore manually suppressed / expanded branches and hidden elements and they position&lt;/b&gt; - click the Refresh button       
+&lt;img src="mdp://resource/com/nomagic/magicdraw/icons/refresh.png" border="0" /&gt;.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&lt;b&gt;Expand / suppress branches&lt;/b&gt; - click       
+&lt;img border="0" src="mdp://resource/com/nomagic/magicdraw/visualization/relationshipmap/icons/expand.png" /&gt; /       
+&lt;img border="0" src="mdp://resource/com/nomagic/magicdraw/visualization/relationshipmap/icons/supp.png" /&gt; near the node.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&lt;b&gt;Move the whole structure&lt;/b&gt; - click an empty space on the relation map and drag.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&lt;b&gt;Move the selected node&lt;/b&gt; - click the node and drag.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&lt;b&gt;Insert New Element&lt;/b&gt; - select an element and click       
+&lt;img border="0" src="mdp://resource/com/nomagic/magicdraw/visualization/relationshipmap/icons/create_node.png" /&gt; to choose an element and relationship. Press Insert (Cmd+I for MAC users) to create an element faster and more easily.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&lt;b&gt;Insert New Element of the Same Type&lt;/b&gt; - type the name and press Ctrl+Enter to create an element of the same type.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&lt;b&gt;Zoom in&lt;/b&gt; - hold down Ctrl while scrolling up.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&lt;b&gt;Zoom out&lt;/b&gt; - hold down Ctrl while scrolling down.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&lt;b&gt;Fit in window&lt;/b&gt; - press Ctrl+W.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&lt;b&gt;Zoom 1:1&lt;/b&gt; - press Ctrl+NumPad /.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&lt;b&gt;Turn on the ability to change the context element with single click&lt;/b&gt; - click the Options button on the toolbar and then select the &lt;b&gt;Make Element as Context on Selection&lt;/b&gt; command.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&amp;#160;
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&amp;#160;
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&lt;b&gt;Filters:&lt;/b&gt;
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&amp;#160;
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&lt;b&gt;Context&lt;/b&gt; - the core element of the structure.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&lt;b&gt;Relation Criterion&lt;/b&gt; - relations that are shown. Property, custom Tag definition, or relationship from diagrams can be chosen as a relation.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&lt;b&gt;Element Type&lt;/b&gt; - element types that are shown.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&lt;b&gt;Scope&lt;/b&gt; - fragment of the model (or the whole model) from which the relation map is built.
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+&lt;b&gt;Depth&lt;/b&gt; - level of branches automatically expanded starting from the context element.
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</body><documentation humanName="Documentation"/><owner classType="Stereotype" humanName="Owner" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" mode="s,e" name="RelationMap" refid="_16_8beta_9020291_1260453936960_387965_1187"/><owningElement classType="Stereotype" humanName="Owning Element" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="RelationMap" refid="_16_8beta_9020291_1260453936960_387965_1187"/><TO_DO humanName="To Do" mode="s,e"/></comment></magicdraw>

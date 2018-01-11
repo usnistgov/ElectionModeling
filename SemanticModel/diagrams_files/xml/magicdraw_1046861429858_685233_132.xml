@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><comment classType="Comment" humanType="Comment" icon="diagrams_files/icon_comment_1105641037.png" id="magicdraw_1046861429858_685233_132"><annotatedElement humanName="Annotated Element" mode="s,e"><stereotype classType="Stereotype" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="Derive" refid="magicdraw_1046861421246_13781_70"/></annotatedElement><body humanName="Body" mode="s,e">Specifies a derivation relationship among model elements
+that are usually, but not necessarily, of the same type. A
+derived dependency specifies that the client may be
+computed from the supplier. The mapping specifies the
+computation. The client may be implemented for design
+reasons, such as efficiency, even though it is logically
+redundant.</body><documentation humanName="Documentation"/><owner classType="Stereotype" humanName="Owner" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" mode="s,e" name="Derive" refid="magicdraw_1046861421246_13781_70"/><owningElement classType="Stereotype" humanName="Owning Element" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="Derive" refid="magicdraw_1046861421246_13781_70"/><TO_DO humanName="To Do" mode="s,e"/></comment></magicdraw>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><comment classType="Comment" humanType="Comment" icon="diagrams_files/icon_comment_1105641037.png" id="magicdraw_1046861429848_70802_120"><annotatedElement humanName="Annotated Element" mode="s,e"><stereotype classType="Stereotype" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="Framework" refid="magicdraw_1046861421236_673724_40"/></annotatedElement><body humanName="Body" mode="s,e">A package that contains model elements which specify a
+reusable architecture for all or part of a
+system. Frameworks typically include classes, patterns or
+templates. When frameworks are specialized for an
+application domain, they are sometimes referred to as
+application frameworks.</body><documentation humanName="Documentation"/><owner classType="Stereotype" humanName="Owner" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" mode="s,e" name="Framework" refid="magicdraw_1046861421236_673724_40"/><owningElement classType="Stereotype" humanName="Owning Element" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="Framework" refid="magicdraw_1046861421236_673724_40"/><TO_DO humanName="To Do" mode="s,e"/></comment></magicdraw>

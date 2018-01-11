@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><opaqueexpression classType="OpaqueExpression" humanType="Opaque Expression" icon="diagrams_files/icon_opaqueexpression_1255445356.png" id="_12_0_8f90291_1163465880812_18095_718"><body humanName="Body" mode="e"><String>((self.oclIsKindOf(State) and self.oclAsType(State).submachine.oclIsUndefined() and self.oclAsType(State).region-&gt;isEmpty()
+or self.oclIsKindOf(Pseudostate) or self.oclIsKindOf(ConnectionPointReference))
+
+and (not (self.oclIsKindOf(ConnectionPointReference) or self.oclIsKindOf(FinalState) or (self.oclIsKindOf(Pseudostate) and (self.oclAsType(Pseudostate).kind=PseudostateKind::exitPoint or self.oclAsType(Pseudostate).kind=PseudostateKind::entryPoint or self.oclAsType(Pseudostate).kind=PseudostateKind::terminate or self.oclAsType(Pseudostate).kind=PseudostateKind::deepHistory or self.oclAsType(Pseudostate).kind=PseudostateKind::shallowHistory)))))
+
+
+implies outgoing-&gt;notEmpty()</String></body><documentation humanName="Documentation"/><language humanName="Language" mode="e"><String>OCL2.0</String></language><name humanName="Name"/><owner classType="Constraint" humanName="Owner" humanType="Constraint" icon="diagrams_files/icon_constraint_1273879638.png" mode="s,e" name="No Outgoing Transitions" refid="_12_0_8f90291_1163465880812_943477_717"/><owningConstraint classType="Constraint" humanName="Owning Constraint" humanType="Constraint" icon="diagrams_files/icon_constraint_1273879638.png" name="No Outgoing Transitions" refid="_12_0_8f90291_1163465880812_943477_717"/><qualifiedName humanName="Qualified Name">UML Standard Profile::Validation Profile::UML completeness constraints::No Outgoing Transitions::</qualifiedName><text humanName="Text" mode="standard">((self.oclIsKindOf(State) and self.oclAsType(State).submachine.oclIsUndefined() and self.oclAsType(State).region-&gt;isEmpty()
+or self.oclIsKindOf(Pseudostate) or self.oclIsKindOf(ConnectionPointReference))
+
+and (not (self.oclIsKindOf(ConnectionPointReference) or self.oclIsKindOf(FinalState) or (self.oclIsKindOf(Pseudostate) and (self.oclAsType(Pseudostate).kind=PseudostateKind::exitPoint or self.oclAsType(Pseudostate).kind=PseudostateKind::entryPoint or self.oclAsType(Pseudostate).kind=PseudostateKind::terminate or self.oclAsType(Pseudostate).kind=PseudostateKind::deepHistory or self.oclAsType(Pseudostate).kind=PseudostateKind::shallowHistory)))))
+
+
+implies outgoing-&gt;notEmpty()</text><TO_DO humanName="To Do" mode="s,e"/><TYPE_MODIFIER humanName="Type Modifier"/><visibility humanName="Visibility">public</visibility></opaqueexpression></magicdraw>

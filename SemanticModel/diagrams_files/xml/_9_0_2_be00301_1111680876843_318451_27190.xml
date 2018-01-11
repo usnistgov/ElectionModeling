@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><comment classType="Comment" humanType="Comment" icon="diagrams_files/icon_comment_1105641037.png" id="_9_0_2_be00301_1111680876843_318451_27190"><annotatedElement humanName="Annotated Element" mode="s,e"><stereotype classType="Stereotype" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="Realization" refid="_9_0_2_be00301_1111679412748_910181_17354"/></annotatedElement><body humanName="Body" mode="s,e">A classifier that specifies a domain of objects and that also
+defines the physical implementation of those objects. For
+example, a Component stereotyped by «realization» will
+only have realizing Classifiers that implement behavior
+specified by a separate «specification» Component. See
+«specification». This differs from «implementation class»
+because an «implementation class» is a realization of a Class
+which can have features such as attributes and methods
+which is useful to system designers.</body><documentation humanName="Documentation"/><owner classType="Stereotype" humanName="Owner" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" mode="s,e" name="Realization" refid="_9_0_2_be00301_1111679412748_910181_17354"/><owningElement classType="Stereotype" humanName="Owning Element" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="Realization" refid="_9_0_2_be00301_1111679412748_910181_17354"/><TO_DO humanName="To Do" mode="s,e"/></comment></magicdraw>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><comment classType="Comment" humanType="Comment" icon="diagrams_files/icon_comment_1105641037.png" id="magicdraw_1046861429848_462334_111"><annotatedElement humanName="Annotated Element" mode="s,e"><stereotype classType="Stereotype" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="ImplementationClass" refid="magicdraw_1046861421236_324444_45"/></annotatedElement><body humanName="Body" mode="s,e">The implementation of a class in some programming
+language (e.g., C++, Smalltalk, Java) in which an instance
+may not have more than one class. This is in contrast to
+Class, for which an instance may have multiple classes at one
+time and may gain or lose classes over time, and an object (a
+child of instance) may dynamically
+have multiple classes.
+An Implementation class is said to realize a Classifier if it
+provides all of the operations defined for the Classifier with
+the same behavior as specified for the Classifier's operations.
+An Implementation Class may realize a number of different
+Types. Note that the physical attributes and associations of
+the Implementation class do not have to be the same as those
+of any Classifier it realizes and that the Implementation
+Class may provide methods for its operations in terms of its
+physical attributes and associations. See also: «type».</body><documentation humanName="Documentation"/><owner classType="Stereotype" humanName="Owner" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" mode="s,e" name="ImplementationClass" refid="magicdraw_1046861421236_324444_45"/><owningElement classType="Stereotype" humanName="Owning Element" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="ImplementationClass" refid="magicdraw_1046861421236_324444_45"/><TO_DO humanName="To Do" mode="s,e"/></comment></magicdraw>

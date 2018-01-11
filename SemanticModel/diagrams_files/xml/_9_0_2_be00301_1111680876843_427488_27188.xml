@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><comment classType="Comment" humanType="Comment" icon="diagrams_files/icon_comment_1105641037.png" id="_9_0_2_be00301_1111680876843_427488_27188"><annotatedElement humanName="Annotated Element" mode="s,e"><stereotype classType="Stereotype" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="Subsystem" refid="_9_0_2_91a0295_1111479028825_93211_0"/></annotatedElement><body humanName="Body" mode="s,e">A unit of hierarchical decomposition for large systems. A
+subsystem is commonly instantiated indirectly. Definitions
+of subsystems vary widely among domains and methods,
+and it is expected that domain and method profiles will
+specialize this construct. A subsystem may be defined to
+have specification and realization elements. See also:
+«specification» and «realization».</body><documentation humanName="Documentation"/><owner classType="Stereotype" humanName="Owner" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" mode="s,e" name="Subsystem" refid="_9_0_2_91a0295_1111479028825_93211_0"/><owningElement classType="Stereotype" humanName="Owning Element" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="Subsystem" refid="_9_0_2_91a0295_1111479028825_93211_0"/><TO_DO humanName="To Do" mode="s,e"/></comment></magicdraw>
