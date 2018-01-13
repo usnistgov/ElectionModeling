@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><magicdraw><opaqueexpression classType="OpaqueExpression" humanType="Opaque Expression" icon="diagrams_files/icon_opaqueexpression_1255445356.png" id="_16_5beta1_8c6027f_1228471175015_848499_326"><body humanName="Body" mode="e"><String>let lifelineType:Type = self.covered-&gt;any(true).represents.type in
-let constraintBody:ValueSpecification = self.invariant.specification in
-constraintBody.oclIsKindOf(ElementValue) implies
-(let stateType:Classifier = constraintBody.oclAsType(ElementValue).element.oclAsType(State).redefinitionContext-&gt;any(true) in
-stateType = lifelineType)</String></body><documentation humanName="Documentation"/><language humanName="Language" mode="e"><String>OCL2.0</String></language><name humanName="Name"/><owner classType="Constraint" humanName="Owner" humanType="Constraint" icon="diagrams_files/icon_constraint_1273879638.png" mode="s,e" name="State of State Invariant" refid="_16_5beta1_8c6027f_1228471175015_758320_324"/><owningConstraint classType="Constraint" humanName="Owning Constraint" humanType="Constraint" icon="diagrams_files/icon_constraint_1273879638.png" name="State of State Invariant" refid="_16_5beta1_8c6027f_1228471175015_758320_324"/><qualifiedName humanName="Qualified Name">UML Standard Profile::Validation Profile::UML correctness constraints::State of State Invariant::</qualifiedName><text humanName="Text" mode="standard">let lifelineType:Type = self.covered-&gt;any(true).represents.type in
-let constraintBody:ValueSpecification = self.invariant.specification in
-constraintBody.oclIsKindOf(ElementValue) implies
-(let stateType:Classifier = constraintBody.oclAsType(ElementValue).element.oclAsType(State).redefinitionContext-&gt;any(true) in
-stateType = lifelineType)</text><TO_DO humanName="To Do" mode="s,e"/><TYPE_MODIFIER humanName="Type Modifier"/><visibility humanName="Visibility">public</visibility></opaqueexpression></magicdraw>

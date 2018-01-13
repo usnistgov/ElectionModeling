@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><magicdraw><comment classType="Comment" humanType="Comment" icon="diagrams_files/icon_comment_1105641037.png" id="magicdraw_1046861429848_350311_94"><annotatedElement humanName="Annotated Element" mode="s,e"><stereotype classType="Stereotype" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="Auxiliary" refid="magicdraw_1046861421226_752229_1"/></annotatedElement><body humanName="Body" mode="s,e">A class that supports another more central or fundamental
-class, typically by implementing secondary logic or control
-flow. The class that the auxiliary supports may be defined
-explicitly using a Focus class or implicitly by a dependency
-relationship. Auxiliary classes are typically used together
-with Focus classes, and are particularly useful for specifying
-the secondary business logic or control flow of components
-during design. See also: «focus».</body><documentation humanName="Documentation"/><owner classType="Stereotype" humanName="Owner" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" mode="s,e" name="Auxiliary" refid="magicdraw_1046861421226_752229_1"/><owningElement classType="Stereotype" humanName="Owning Element" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="Auxiliary" refid="magicdraw_1046861421226_752229_1"/><TO_DO humanName="To Do" mode="s,e"/></comment></magicdraw>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><magicdraw><comment classType="Comment" humanType="Comment" icon="diagrams_files/icon_comment_1105641037.png" id="magicdraw_1046861429858_86637_145"><annotatedElement humanName="Annotated Element" mode="s,e"><stereotype classType="Stereotype" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="Type" refid="magicdraw_1046861421246_603748_67"/></annotatedElement><body humanName="Body" mode="s,e">A class that specifies a domain of objects together with the
-operations applicable to the objects, without defining the
-physical implementation of those objects. However, it may
-have attributes and associations. Behavioral specifications
-for type operations may be expressed using, for example,
-activity diagrams. An object may have at most one
-implementation class, however it may conform to multiple
-different types. See also: «implementationClass».</body><documentation humanName="Documentation"/><owner classType="Stereotype" humanName="Owner" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" mode="s,e" name="Type" refid="magicdraw_1046861421246_603748_67"/><owningElement classType="Stereotype" humanName="Owning Element" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="Type" refid="magicdraw_1046861421246_603748_67"/><TO_DO humanName="To Do" mode="s,e"/></comment></magicdraw>

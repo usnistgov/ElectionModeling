@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><magicdraw><comment classType="Comment" humanType="Comment" icon="diagrams_files/icon_comment_1105641037.png" id="_9_0_2_be00301_1111680876843_974960_27192"><annotatedElement humanName="Annotated Element" mode="s,e"><stereotype classType="Stereotype" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="Specification" refid="_9_0_2_be00301_1111679791472_309998_22030"/></annotatedElement><body humanName="Body" mode="s,e">A classifier that specifies a domain of objects without
-defining the physical implementation of those objects. For
-example, a Component stereotyped by «specification» will
-only have provided and required interfaces, and is not
-intended to have any realizingClassifiers as part of its
-definition. This differs from «type» because a «type» can
-have features such as attributes and methods which is useful
-to analysts modeling systems. Also see: «realization»</body><documentation humanName="Documentation"/><owner classType="Stereotype" humanName="Owner" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" mode="s,e" name="Specification" refid="_9_0_2_be00301_1111679791472_309998_22030"/><owningElement classType="Stereotype" humanName="Owning Element" humanType="Stereotype" icon="diagrams_files/icon_stereotype_2041996211.png" name="Specification" refid="_9_0_2_be00301_1111679791472_309998_22030"/><TO_DO humanName="To Do" mode="s,e"/></comment></magicdraw>

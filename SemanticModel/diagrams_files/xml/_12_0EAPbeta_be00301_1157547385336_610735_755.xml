@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><magicdraw><comment classType="Comment" humanType="Comment" icon="diagrams_files/icon_comment_1105641037.png" id="_12_0EAPbeta_be00301_1157547385336_610735_755"><annotatedElement humanName="Annotated Element" mode="s,e"><primitivetype classType="PrimitiveType" humanType="Primitive Type" icon="diagrams_files/icon_primitivetype_83674409.png" name="Boolean" refid="_12_0EAPbeta_be00301_1157529792739_987548_11"/></annotatedElement><body humanName="Body" mode="s,e">Boolean is an instance of PrimitiveType. In the metamodel, Boolean defines an enumeration that denotes a logical condition. 
-Its enumeration literals are:
-• true - The Boolean condition is satisfied. 
-• false - The Boolean condition is not satisfied. 
-
-It is used for Boolean attribute and Boolean expressions in the metamodel, such as OCL expression. 
-</body><documentation humanName="Documentation"/><owner classType="PrimitiveType" humanName="Owner" humanType="Primitive Type" icon="diagrams_files/icon_primitivetype_83674409.png" mode="s,e" name="Boolean" refid="_12_0EAPbeta_be00301_1157529792739_987548_11"/><owningElement classType="PrimitiveType" humanName="Owning Element" humanType="Primitive Type" icon="diagrams_files/icon_primitivetype_83674409.png" name="Boolean" refid="_12_0EAPbeta_be00301_1157529792739_987548_11"/><TO_DO humanName="To Do" mode="s,e"/></comment></magicdraw>
