@@ -2,6 +2,34 @@
 <magicdraw>
 <model classType="Model" humanType="Model" icon="diagrams_files/icon_model_951677655.png" name="Data" refid="eee_1045467100313_135436_1">
 <ownedElement>
+<diagram classType="Diagram" humanType="Diagram" icon="diagrams_files/icon_Content Diagram_817548229.png" name="Index" refid="_18_5_3_43701b0_1515880915007_606059_6622">
+<ownedElement>
+<instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_910504711.png" isHidden="true" name=" : UML Standard Profile::MagicDraw Profile::DiagramInfo" refid="_18_5_3_43701b0_1515880915021_49357_6633">
+<ownedElement>
+<slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_501340627.png" isHidden="true" refid="_18_5_3_43701b0_1515880915025_790462_6634">
+<ownedElement>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1417103101.png" isHidden="true" name="1/13/18 5:01 PM" refid="_18_5_3_43701b0_1515880915028_276351_6635" text="1/13/18 5:01 PM"/>
+</ownedElement>
+</slot>
+<slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_501340627.png" isHidden="true" refid="_18_5_3_43701b0_1515880915031_915767_6636">
+<ownedElement>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1417103101.png" isHidden="true" name="1/14/18 6:31 PM" refid="_18_5_3_43701b0_1515880915032_272912_6637" text="1/14/18 6:31 PM"/>
+</ownedElement>
+</slot>
+<slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_501340627.png" isHidden="true" refid="_18_5_3_43701b0_1515880915033_439859_6638">
+<ownedElement>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1417103101.png" isHidden="true" name="john" refid="_18_5_3_43701b0_1515880915034_913638_6639" text="john"/>
+</ownedElement>
+</slot>
+<slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_501340627.png" isHidden="true" refid="_18_5_3_43701b0_1515880915035_665618_6640">
+<ownedElement>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1417103101.png" isHidden="true" name="john" refid="_18_5_3_43701b0_1515880915037_166_6641" text="john"/>
+</ownedElement>
+</slot>
+</ownedElement>
+</instancespecification>
+</ownedElement>
+</diagram>
 <package classType="Package" humanType="Package" icon="diagrams_files/icon_package_2110558717.png" name="elections" refid="_18_5_2_11940316_1505145263760_291633_5848">
 <ownedElement>
 <diagram classType="Diagram" humanType="Diagram" icon="diagrams_files/icon_Glossary Table_1460643444.png" name="elections Glossary" refid="_18_5_2_43701b0_1510267448234_153631_6459">
