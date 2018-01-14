@@ -20,7 +20,8 @@ exclude:
 - README.md
 - CONTRIBUTING.md
 - LICENSE.md
-
+include:
+- _*.xml
 # GitHub information
 org_name: usnistgov
 repo_name: ElectionModeling
