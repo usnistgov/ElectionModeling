@@ -36,6 +36,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#appearsOn">
         <rdfs:subPropertyOf rdf:resource="http://nomagic.com/ontology/upper#withRespectTo"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#containing"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#VoterRegistrationIdentification"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#NvraForm"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">appears on</rdfs:label>
@@ -69,6 +70,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#bornAt">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ofPerson"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Birth"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">born at</rdfs:label>
@@ -76,10 +78,21 @@
     
 
 
-    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ccm_temp_07e1d343-3955-4208-945a-04a759de6ac9 -->
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ccm_temp_2ac49a2e-46ab-4a8c-9d26-9e26a9521647 -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ccm_temp_07e1d343-3955-4208-945a-04a759de6ac9">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ccm_temp_2ac49a2e-46ab-4a8c-9d26-9e26a9521647">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#GivenName"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ccm_temp_52efeca0-7164-4f79-b7a8-1400f8e15af8 -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ccm_temp_52efeca0-7164-4f79-b7a8-1400f8e15af8">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PollingPlace"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#InPersonVoting"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:label>
@@ -87,21 +100,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ccm_temp_12bc6e4e-e90f-40d0-8c57-56dbf3648c90 -->
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ccm_temp_5b24adf4-a3ca-4edf-9dc9-e6a9350560ec -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ccm_temp_12bc6e4e-e90f-40d0-8c57-56dbf3648c90">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#EarlyVotingPeriod"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#EarlyVoting"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ccm_temp_36304a38-6791-4a97-b515-3dfdb91d8ee4 -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ccm_temp_36304a38-6791-4a97-b515-3dfdb91d8ee4">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ccm_temp_5b24adf4-a3ca-4edf-9dc9-e6a9350560ec">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#playsRoleOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ElectionJurisdictionInRole"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ElectionJurisdiction"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:label>
@@ -109,12 +112,12 @@
     
 
 
-    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ccm_temp_d01452b9-85f8-4c95-9a1c-348c414d4246 -->
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ccm_temp_bf20e573-6ce3-4207-9948-b6d92c082f24 -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ccm_temp_d01452b9-85f8-4c95-9a1c-348c414d4246">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#GivenName"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ccm_temp_bf20e573-6ce3-4207-9948-b6d92c082f24">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#EarlyVotingPeriod"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#EarlyVoting"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:label>
     </owl:ObjectProperty>
     
@@ -137,7 +140,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#conductedDuringEarlyVotingPeriod">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#conductedDuringVotingPeriod"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ccm_temp_12bc6e4e-e90f-40d0-8c57-56dbf3648c90"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ccm_temp_bf20e573-6ce3-4207-9948-b6d92c082f24"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#EarlyVoting"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#EarlyVotingPeriod"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conducted during early voting period</rdfs:label>
@@ -161,7 +164,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#containing">
         <rdfs:subPropertyOf rdf:resource="http://nomagic.com/ontology/upper#contextFor"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#appearsOn"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#NvraForm"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#VoterRegistrationIdentification"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">containing</rdfs:label>
@@ -173,7 +175,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#employedBy">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#employs"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PollWorker"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ElectionJurisdiction"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">employed by</rdfs:label>
@@ -185,6 +186,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#employs">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#employedBy"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ElectionJurisdiction"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PollWorker"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">employs</rdfs:label>
@@ -281,7 +283,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#hasElectionSupervisor">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#hasSupervisedVoting"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SupervisedVoting"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ElectionSupervisor"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has election supervisor</rdfs:label>
@@ -354,6 +355,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#hasPollingLocation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#servesPrecinct"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Precinct"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PollingLocation"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has polling location</rdfs:label>
@@ -390,6 +392,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#hasSupervisedVoting">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#hasElectionSupervisor"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ElectionSupervisor"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#SupervisedVoting"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has supervised voting</rdfs:label>
@@ -471,7 +474,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ofPerson">
         <rdfs:subPropertyOf rdf:resource="http://nomagic.com/ontology/upper#contextFor"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#bornAt"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Birth"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Person"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">of person</rdfs:label>
@@ -506,7 +508,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#playsRoleOf">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ccm_temp_36304a38-6791-4a97-b515-3dfdb91d8ee4"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ElectionJurisdiction"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#ElectionJurisdictionInRole"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plays role of</rdfs:label>
@@ -539,6 +540,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#serves">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#votesAt"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PollingLocation"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Voter"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">serves</rdfs:label>
@@ -550,7 +552,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#servesPrecinct">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#hasPollingLocation"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PollingLocation"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Precinct"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">serves precinct</rdfs:label>
@@ -562,6 +563,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#staffedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#staffs"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PollingLocation"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PollWorker"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">staffed by</rdfs:label>
@@ -573,7 +575,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#staffs">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#staffedBy"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PollWorker"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PollingLocation"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">staffs</rdfs:label>
@@ -596,7 +597,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#votesAt">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#serves"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#Voter"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#PollingLocation"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">votes at</rdfs:label>
@@ -1812,4 +1812,4 @@
 <!-- Warning: type declarations were not added automatically. -->
 
 
-<!-- Generated using the No Magic Cameo Concept Modeler (18.0 SP12, build 2017 12 20 13:56 (3634)) on 2018-01-15 at 22:15:27 GMT -->
+<!-- Generated using the No Magic Cameo Concept Modeler (18.0 SP12, build 2017 12 20 13:56 (3634)) on 2018-01-15 at 22:13:58 GMT -->
