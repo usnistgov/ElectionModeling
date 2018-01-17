@@ -13,7 +13,7 @@
 </slot>
 <slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_233805019.png" isHidden="true" refid="_18_5_3_43701b0_1516196366569_550787_5614">
 <ownedElement>
-<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_675965045.png" isHidden="true" name="1/17/18 1:56 PM" refid="_18_5_3_43701b0_1516196366569_114172_5615" text="1/17/18 1:56 PM"/>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_675965045.png" isHidden="true" name="1/17/18 2:12 PM" refid="_18_5_3_43701b0_1516196366569_114172_5615" text="1/17/18 2:12 PM"/>
 </ownedElement>
 </slot>
 <slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_233805019.png" isHidden="true" refid="_18_5_3_43701b0_1516196366570_629782_5616">
@@ -1696,7 +1696,7 @@
 </ownedElement>
 </property>
 <generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_648358364.png" isRelationship="true" refid="_18_5_3_43701b0_1516029944436_993258_13051"/>
-<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_2002169160.png" isRelationship="true" refid="_18_5_3_43701b0_1516030070723_545207_13093">
+<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1343027619.png" isRelationship="true" refid="_18_5_3_43701b0_1516030070723_545207_13093">
 <ownedElement>
 <instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_910504711.png" isHidden="true" name=" : Concept Modeling Profile::Equivalent Class" refid="_18_5_3_43701b0_1516030070724_385469_13094"/>
 </ownedElement>
@@ -2252,7 +2252,7 @@
 </instancespecification>
 <property classType="Property" humanType="Property" icon="diagrams_files/icon_property_604060264.png" name="employed by" refid="_18_5_3_43701b0_1516042209272_565290_10966"/>
 <property classType="Property" humanType="Property" icon="diagrams_files/icon_property_604060264.png" name="staffs" refid="_18_5_3_43701b0_1516041780783_45935_10630"/>
-<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_2002169160.png" isRelationship="true" refid="_18_5_3_43701b0_1516036936722_566709_13754">
+<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1343027619.png" isRelationship="true" refid="_18_5_3_43701b0_1516036936722_566709_13754">
 <ownedElement>
 <instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_910504711.png" isHidden="true" name=" : Concept Modeling Profile::Equivalent Class, UML Standard Profile::MagicDraw Profile::HyperlinkOwner" refid="_18_5_3_43701b0_1516036936722_610904_13755">
 <ownedElement>
@@ -2326,7 +2326,7 @@
 </ownedElement>
 </comment>
 <property classType="Property" humanType="Property" icon="diagrams_files/icon_property_604060264.png" name=" : Elections::In Person Voting" refid="_18_5_3_43701b0_1516031193934_59474_13432"/>
-<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_2002169160.png" isRelationship="true" refid="_18_5_3_43701b0_1516037159753_596773_13811">
+<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1343027619.png" isRelationship="true" refid="_18_5_3_43701b0_1516037159753_596773_13811">
 <ownedElement>
 <instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_910504711.png" isHidden="true" name=" : Concept Modeling Profile::Equivalent Class" refid="_18_5_3_43701b0_1516037159753_190652_13812"/>
 </ownedElement>
