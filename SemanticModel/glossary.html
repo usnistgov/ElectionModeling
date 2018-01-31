@@ -25,7 +25,7 @@
 				                    <span ><a href="#class_heading_D">D</a></span>
 																																																													
 				                    <span ><a href="#class_heading_E">E</a></span>
-																																																																																																																																																											
+																																																																																																																																																																									
 				                    <span ><a href="#class_heading_F">F</a></span>
 																																																																																																																																																									
 				                    <span ><a href="#class_heading_G">G</a></span>
@@ -373,16 +373,16 @@
 							<ul>
 																																															<li class='propdesc'>
 					
-												<span id="ID__18_5_3_43701b0_1516820233356_780507_8507" class='propname'>has absentee ballot</span>
+												<span id="ID__18_5_3_43701b0_1516820973856_5510_8926" class='propname'>has valid absentee request</span>
 	 any number of occurrences
-																							of <span class='classname'><a href="#Elections::Absentee Ballot">Absentee Ballot</a></span>.
+																							of <span class='classname'><a href="#Elections::Valid Absentee Request">Valid Absentee Request</a></span>.
 																		
 								</li>
 																																															<li class='propdesc'>
 					
-												<span id="ID__18_5_3_43701b0_1516820973856_5510_8926" class='propname'>has valid absentee request</span>
+												<span id="ID__18_5_3_43701b0_1516820233356_780507_8507" class='propname'>has absentee ballot</span>
 	 any number of occurrences
-																							of <span class='classname'><a href="#Elections::Valid Absentee Request">Valid Absentee Request</a></span>.
+																							of <span class='classname'><a href="#Elections::Absentee Ballot">Absentee Ballot</a></span>.
 																		
 								</li>
 				
@@ -429,7 +429,7 @@
 						<dd>
 							<p>A kind of
                                 									
-<span class='classname'><a href="#Elections::Pre Election Day">Pre Election Day</a></span>
+<span class='classname'><a href="#Elections::Pre Election Day Voting">Pre Election Day Voting</a></span>
 				
 and <span class='classname'><a href="#Elections::Unsupervised Voting">Unsupervised Voting</a></span>.</p>
 						</dd>
@@ -609,18 +609,18 @@ and <span class='classname'><a href="#Elections::Unsupervised Voting">Unsupervis
 <span class='classname' xmlns="http://www.w3.org/1999/html"><a href="#Sowa::Situation">Situation</a></span>.							A valid occurrence satisfies the following necessary conditions:</p>
 				
 							<ul>
-																																													
-								<li class='propdesc'>
-											
-												<span id="ID__18_5_2_43701b0_1510768467654_437117_9103" class='propname'>of person</span>
-																	at least one occurrence of <span class=''><a href="#Elections::Person">Person</a></span>.
-																		
-								</li>
 																																	
 								<li class='propdesc'>
 											
 												<span id="ID__18_5_2_43701b0_1510762679353_918919_8323" class='propname'>has date</span>
 																	exactly one occurrence of <span class=''><a href="#Elections::Birth Date">Birth Date</a></span>.
+																		
+								</li>
+																																													
+								<li class='propdesc'>
+											
+												<span id="ID__18_5_2_43701b0_1510768467654_437117_9103" class='propname'>of person</span>
+																	at least one occurrence of <span class=''><a href="#Elections::Person">Person</a></span>.
 																		
 								</li>
 				
@@ -1570,7 +1570,7 @@ or <span class='classname'><a href="#Imported Ontologies::core::Collection">Coll
 						<dd>
 							<p>A kind of
                                 								
-<span class='classname' xmlns="http://www.w3.org/1999/html"><a href="#Elections::Pre Election Day">Pre Election Day</a></span>.</p>
+<span class='classname' xmlns="http://www.w3.org/1999/html"><a href="#Elections::Pre Election Day Voting">Pre Election Day Voting</a></span>.</p>
 						</dd>
 							
 						</div>
@@ -1677,23 +1677,97 @@ and <span class='classname'><a href="#Sowa::Situation">Situation</a></span>.				
 		<dt>
 			<span id="Elections::Election Day Voting" class="headterm headtermclass padding-top">Election Day Voting</span>
 		</dt>
-																																																																												<dd class="modeldefinition"><p><span class='annoprophumanname'>Model-Generated Definition</span>:</p></dd>
+																																																																																																																																																																														<dd class="modeldefinition"><p><span class='annoprophumanname'>Model-Generated Definition</span>:</p></dd>
 			<div class='generateddesc'>
 			
-						
-										
-						<dd>
+																	<dd>
+				
 							<p>A kind of
-                                									
+																	
 <span class='classname'><a href="#Elections::In Person Voting">In Person Voting</a></span>
 				
-and <span class='classname'><a href="#Elections::Temporal Voting Category">Temporal Voting Category</a></span>.</p>
+and <span class='classname'><a href="#Elections::Temporal Voting Category">Temporal Voting Category</a></span>							that can be recognized when an occurrence meets the following condition:</p>
+				
+							<ul>
+																																	
+								<li class='propdesc'>
+											
+												<span id="ID__18_5_3_43701b0_1517420477912_24637_8133" class='propname'>conducted during election day voting period</span>
+																	exactly one occurrence of <span class=''><a href="#Elections::Election Day Voting Period">Election Day Voting Period</a></span>.
+																		
+								</li>
+				
+							</ul>
 						</dd>
-							
+						
+						
 						</div>
 						<dd>
 						<p class="defaultannotation"><span class='annoprophumanname'>Definition</span>:
 																																						<span class='classdoc'>Voting that occurs on the final day of a voting period, commonly known as &quot;Election Day&quot;.</span>
+																											</p>
+						<p class="annoprop">												<p class="annotation">
+					<span class='annoprophumanname'>Definition Origin</span>:
+			
+				</p>
+					<p class="annotation">
+					<span class='annoprophumanname'>Abbreviation</span>:
+			
+				</p>
+					<p class="annotation">
+					<span class='annoprophumanname'>Explanatory Note</span>:
+			
+				</p>
+					<p class="annotation">
+					<span class='annoprophumanname'>Usage Note</span>:
+			
+				</p>
+					<p class="annotation">
+					<span class='annoprophumanname'>Term Origin</span>:
+			
+				</p>
+								</p>
+						</dd>
+
+													
+						
+		<dt>
+			<span id="Elections::Election Day Voting Period" class="headterm headtermclass padding-top">Election Day Voting Period</span>
+		</dt>
+																																																																																																																																																																														<dd class="modeldefinition"><p><span class='annoprophumanname'>Model-Generated Definition</span>:</p></dd>
+			<div class='generateddesc'>
+			
+						
+			
+						<dd>
+									
+							<p>A kind of
+																
+<span class='classname' xmlns="http://www.w3.org/1999/html"><a href="#Elections::Voting Period">Voting Period</a></span>.							A valid occurrence may have the following properties:</p>
+									
+							<ul>
+																																															<li class='propdesc'>
+					
+												<span id="ID__18_5_3_43701b0_1517422585355_722092_12728" class='propname'>occurs before election day voting period</span>
+	 any number of occurrences
+																							of <span class='classname'><a href="#Elections::Pre Election Day Voting Period">Pre Election Day Voting Period</a></span>.
+																		
+								</li>
+																																															<li class='propdesc'>
+					
+												<span id="ID__18_5_3_43701b0_1517420477913_251758_8134" class='propname'>has election day voting</span>
+	 any number of occurrences
+																							of <span class='classname'><a href="#Elections::Election Day Voting">Election Day Voting</a></span>.
+																		
+								</li>
+				
+							</ul>
+						</dd>
+						
+						</div>
+						<dd>
+						<p class="defaultannotation"><span class='annoprophumanname'>Definition</span>:
+																																						<span class='classdoc'>The period in which Election Day Voting may occur. Usually starting in the morning and continuing until early evening.</span>
 																											</p>
 						<p class="annoprop">												<p class="annotation">
 					<span class='annoprophumanname'>Definition Origin</span>:
@@ -3986,16 +4060,16 @@ or <span class='classname'><a href="#Elections::Driver&#39;s License">Driver&#39
 							<ul>
 																																																				<li class='propdesc'>
 					
-												<span id="ID__18_5_2_11940316_1508338342263_890439_6438" class='propname'>has submitted registration</span>
-	 any number of occurrences
-																							of <span class='classname'><a href="#Elections::Submitted Registration">Submitted Registration</a></span>.
-																		
-								</li>
-																																																				<li class='propdesc'>
-					
 												<span id="ID__18_5_2_11940316_1508348320703_761926_8373" class='propname'>is identified by</span>
 	 any number of occurrences
 																							of <span class='classname'><a href="#Elections::Identification">Identification</a></span>.
+																		
+								</li>
+																																													<li class='propdesc'>
+					
+												<span id="ID__18_5_2_11940316_1508266136110_5143_7117" class='propname'>has facet</span>
+	 at most one occurrence
+																							of <span class='classname'><a href="#Elections::Given Name">Given Name</a></span>.
 																		
 								</li>
 																																																				<li class='propdesc'>
@@ -4005,11 +4079,11 @@ or <span class='classname'><a href="#Elections::Driver&#39;s License">Driver&#39
 																							of <span class='classname'><a href="#Elections::Person in Role">Person in Role</a></span>.
 																		
 								</li>
-																																													<li class='propdesc'>
+																																																				<li class='propdesc'>
 					
-												<span id="ID__18_5_2_11940316_1508266136110_5143_7117" class='propname'>has facet</span>
-	 at most one occurrence
-																							of <span class='classname'><a href="#Elections::Given Name">Given Name</a></span>.
+												<span id="ID__18_5_2_11940316_1508338342263_890439_6438" class='propname'>has submitted registration</span>
+	 any number of occurrences
+																							of <span class='classname'><a href="#Elections::Submitted Registration">Submitted Registration</a></span>.
 																		
 								</li>
 				
@@ -4218,18 +4292,18 @@ and <span class='classname'><a href="#Elections::Election Jurisdiction in Role">
 																	at least one occurrence of <span class=''><a href="#Elections::Poll Worker">Poll Worker</a></span>.
 																		
 								</li>
-																																													
-								<li class='propdesc'>
-											
-												<span id="ID__18_5_3_43701b0_1516041843670_980229_10693" class='propname'>serves</span>
-																	at least one occurrence of <span class=''><a href="#Elections::Voter">Voter</a></span>.
-																		
-								</li>
 																																							
 								<li class='propdesc'>
 											
 												<span id="ID__18_5_3_43701b0_1516044403336_790727_11316" class='propname'>serves precinct</span>
 																	at least one occurrence of <span class=''><a href="#Elections::Precinct">Precinct</a></span>.
+																		
+								</li>
+																																													
+								<li class='propdesc'>
+											
+												<span id="ID__18_5_3_43701b0_1516041843670_980229_10693" class='propname'>serves</span>
+																	at least one occurrence of <span class=''><a href="#Elections::Voter">Voter</a></span>.
 																		
 								</li>
 				
@@ -4310,7 +4384,7 @@ and <span class='classname'><a href="#Elections::Election Jurisdiction in Role">
 												
 						
 		<dt>
-			<span id="Elections::Pre Election Day" class="headterm headtermclass padding-top">Pre Election Day</span>
+			<span id="Elections::Pre Election Day Voting" class="headterm headtermclass padding-top">Pre Election Day Voting</span>
 		</dt>
 																																																																																																																																																																																																																																											<dd class="modeldefinition"><p><span class='annoprophumanname'>Model-Generated Definition</span>:</p></dd>
 			<div class='generateddesc'>
@@ -4382,7 +4456,7 @@ and <span class='classname'><a href="#Elections::Election Jurisdiction in Role">
 		<dt>
 			<span id="Elections::Pre Election Day Voting Period" class="headterm headtermclass padding-top">Pre Election Day Voting Period</span>
 		</dt>
-																																																																																																																					<dd class="modeldefinition"><p><span class='annoprophumanname'>Model-Generated Definition</span>:</p></dd>
+																																																																																																																																																																																	<dd class="modeldefinition"><p><span class='annoprophumanname'>Model-Generated Definition</span>:</p></dd>
 			<div class='generateddesc'>
 			
 						
@@ -4396,9 +4470,16 @@ and <span class='classname'><a href="#Elections::Election Jurisdiction in Role">
 							<ul>
 																																															<li class='propdesc'>
 					
+												<span id="ID__18_5_3_43701b0_1517422585355_502054_12729" class='propname'>starts before election day voting period</span>
+	 any number of occurrences
+																							of <span class='classname'><a href="#Elections::Election Day Voting Period">Election Day Voting Period</a></span>.
+																		
+								</li>
+																																															<li class='propdesc'>
+					
 												<span id="ID__18_5_3_43701b0_1516039389281_91261_10317" class='propname'></span>
 	 any number of occurrences
-																							of <span class='classname'><a href="#Elections::Pre Election Day">Pre Election Day</a></span>.
+																							of <span class='classname'><a href="#Elections::Pre Election Day Voting">Pre Election Day Voting</a></span>.
 																		
 								</li>
 				
@@ -4408,7 +4489,7 @@ and <span class='classname'><a href="#Elections::Election Jurisdiction in Role">
 						</div>
 						<dd>
 						<p class="defaultannotation"><span class='annoprophumanname'>Definition</span>:
-																																						<span class='classdoc'>The period during which early voting may take place.</span>
+																																						<span class='classdoc'>The period during which early voting may take place. This period must begin prior to Election Day.</span>
 																											</p>
 						<p class="annoprop">												<p class="annotation">
 					<span class='annoprophumanname'>Definition Origin</span>:
@@ -4452,16 +4533,16 @@ and <span class='classname'><a href="#Elections::Election Jurisdiction in Role">
 							<ul>
 																																															<li class='propdesc'>
 					
-												<span id="ID__18_5_3_43701b0_1516044450376_597749_11353" class='propname'>has vote center</span>
+												<span id="ID__18_5_3_43701b0_1516044403336_774881_11315" class='propname'>has polling location</span>
 	 any number of occurrences
-																							of <span class='classname'><a href="#Elections::Vote Center">Vote Center</a></span>.
+																							of <span class='classname'><a href="#Elections::Polling Location">Polling Location</a></span>.
 																		
 								</li>
 																																															<li class='propdesc'>
 					
-												<span id="ID__18_5_3_43701b0_1516044403336_774881_11315" class='propname'>has polling location</span>
+												<span id="ID__18_5_3_43701b0_1516044450376_597749_11353" class='propname'>has vote center</span>
 	 any number of occurrences
-																							of <span class='classname'><a href="#Elections::Polling Location">Polling Location</a></span>.
+																							of <span class='classname'><a href="#Elections::Vote Center">Vote Center</a></span>.
 																		
 								</li>
 				
@@ -4759,15 +4840,15 @@ and <span class='classname'><a href="#Sowa::Independent Thing">Independent Thing
 																																							
 								<li class='propdesc'>
 											
-												<span id="ID__18_5_2_11940316_1508266136110_883846_7115" class='propname'>with respect to</span>
-																	exactly one occurrence of <span class=''><a href="#Sowa::Mediating Thing">Mediating Thing</a></span>.
+												<span id="ID__18_5_2_11940316_1508266136110_984804_7114" class='propname'>facet of</span>
+																	exactly one occurrence of <span class=''><a href="#Sowa::Independent Thing">Independent Thing</a></span>.
 																		
 								</li>
 																																							
 								<li class='propdesc'>
 											
-												<span id="ID__18_5_2_11940316_1508266136110_984804_7114" class='propname'>facet of</span>
-																	exactly one occurrence of <span class=''><a href="#Sowa::Independent Thing">Independent Thing</a></span>.
+												<span id="ID__18_5_2_11940316_1508266136110_883846_7115" class='propname'>with respect to</span>
+																	exactly one occurrence of <span class=''><a href="#Sowa::Mediating Thing">Mediating Thing</a></span>.
 																		
 								</li>
 				
@@ -5047,6 +5128,13 @@ and <span class='classname'><a href="#Sowa::Independent Thing">Independent Thing
 <span class='classname' xmlns="http://www.w3.org/1999/html"><a href="#Elections::Identification">Identification</a></span>.							A valid occurrence satisfies the following necessary conditions:</p>
 				
 							<ul>
+																																							
+								<li class='propdesc'>
+											
+												<span id="ID__18_5_2_11940316_1508348512710_952367_8458" class='propname'>issued</span>
+																	exactly one occurrence of <span class=''><a href="#Elections::Social Security Number">Social Security Number</a></span>.
+																		
+								</li>
 																																													
 								<li class='propdesc'>
 											
@@ -5060,13 +5148,6 @@ and <span class='classname'><a href="#Sowa::Independent Thing">Independent Thing
 												<span id="ID__18_5_2_11940316_1508359132746_962320_6364" class='propname'>issued by</span>
 	 exactly one occurrence of <span class='classname'><a href="#Elections::Social Security Administration">Social Security Administration</a></span>.
 											
-								</li>
-																																							
-								<li class='propdesc'>
-											
-												<span id="ID__18_5_2_11940316_1508348512710_952367_8458" class='propname'>issued</span>
-																	exactly one occurrence of <span class=''><a href="#Elections::Social Security Number">Social Security Number</a></span>.
-																		
 								</li>
 				
 							</ul>
@@ -5366,15 +5447,15 @@ and <span class='classname'><a href="#Sowa::Independent Thing">Independent Thing
 																																													
 								<li class='propdesc'>
 											
-												<span id="ID__18_5_2_11940316_1508338342278_254648_6439" class='propname'>for</span>
-																	exactly one occurrence of <span class=''><a href="#Elections::Person">Person</a></span>.
+												<span id="ID__18_5_2_11940316_1508336778716_761344_6198" class='propname'>to</span>
+																	exactly one occurrence of <span class=''><a href="#Elections::VoterRegistrationAgency">VoterRegistrationAgency</a></span>.
 																		
 								</li>
 																																													
 								<li class='propdesc'>
 											
-												<span id="ID__18_5_2_11940316_1508336778716_761344_6198" class='propname'>to</span>
-																	exactly one occurrence of <span class=''><a href="#Elections::VoterRegistrationAgency">VoterRegistrationAgency</a></span>.
+												<span id="ID__18_5_2_11940316_1508338342278_254648_6439" class='propname'>for</span>
+																	exactly one occurrence of <span class=''><a href="#Elections::Person">Person</a></span>.
 																		
 								</li>
 				
@@ -5790,7 +5871,7 @@ and <span class='classname'><a href="#Sowa::Independent Thing">Independent Thing
 					
 												<span id="ID__18_5_3_43701b0_1516820801680_677935_8866" class='propname'>meets requirements of</span>
 	 any number of occurrences
-																							of <span class='classname'><a href="#Elections::Pre Election Day">Pre Election Day</a></span>.
+																							of <span class='classname'><a href="#Elections::Pre Election Day Voting">Pre Election Day Voting</a></span>.
 																		
 								</li>
 				
@@ -5913,11 +5994,11 @@ and <span class='classname'><a href="#Sowa::Independent Thing">Independent Thing
 							<p>A valid occurrence may also have the following properties:</p>
 				
 							<ul>
-																																															<li class='propdesc'>
+																																																											<li class='propdesc'>
 					
-												<span id="ID__18_5_3_43701b0_1517348267432_12425_9519" class='propname'>has voting</span>
+												<span id="ID__18_5_2_11940316_1505145263945_903425_6093" class='propname'>registeredVia</span>
 	 any number of occurrences
-																							of <span class='classname'><a href="#Elections::Voting Motivation">Voting Motivation</a></span>.
+																							of <span class='classname'><a href="#Elections::RegistrationForm">RegistrationForm</a></span>.
 																		
 								</li>
 																																															<li class='propdesc'>
@@ -5927,11 +6008,11 @@ and <span class='classname'><a href="#Sowa::Independent Thing">Independent Thing
 																							of <span class='classname'><a href="#Elections::Absentee Request">Absentee Request</a></span>.
 																		
 								</li>
-																																																											<li class='propdesc'>
+																																															<li class='propdesc'>
 					
-												<span id="ID__18_5_2_11940316_1505145263945_903425_6093" class='propname'>registeredVia</span>
+												<span id="ID__18_5_3_43701b0_1517348267432_12425_9519" class='propname'>has voting</span>
 	 any number of occurrences
-																							of <span class='classname'><a href="#Elections::RegistrationForm">RegistrationForm</a></span>.
+																							of <span class='classname'><a href="#Elections::Voting Motivation">Voting Motivation</a></span>.
 																		
 								</li>
 				
@@ -6247,7 +6328,7 @@ and <span class='classname'><a href="#Sowa::Reason">Reason</a></span>.							A v
 		<dt>
 			<span id="Elections::Voting Period" class="headterm headtermclass padding-top">Voting Period</span>
 		</dt>
-																																																																																																																								<dd class="modeldefinition"><p><span class='annoprophumanname'>Model-Generated Definition</span>:</p></dd>
+																																																																																																																											<dd class="modeldefinition"><p><span class='annoprophumanname'>Model-Generated Definition</span>:</p></dd>
 			<div class='generateddesc'>
 			
 						
