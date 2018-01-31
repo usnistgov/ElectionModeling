@@ -13,7 +13,7 @@
 </slot>
 <slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419242835_10591_5624">
 <ownedElement>
-<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="1/30/18 5:41 PM" refid="_18_5_3_43701b0_1517419242835_658450_5625" text="1/30/18 5:41 PM"/>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="1/31/18 4:42 PM" refid="_18_5_3_43701b0_1517419242835_658450_5625" text="1/31/18 4:42 PM"/>
 </ownedElement>
 </slot>
 <slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419242835_819482_5626">
@@ -73,34 +73,6 @@
 </instancespecification>
 </ownedElement>
 </diagram>
-<diagram classType="Diagram" humanType="Diagram" icon="diagrams_files/icon_Concept Modeling Diagram_363481443.png" name="Early Voting" refid="_18_5_3_43701b0_1516045275987_454583_11425">
-<ownedElement>
-<instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_1011104118.png" isHidden="true" name=" : UML Standard Profile::MagicDraw Profile::DiagramInfo" refid="_18_5_3_43701b0_1516045275989_993482_11436">
-<ownedElement>
-<slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419242849_82293_5710">
-<ownedElement>
-<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="1/15/18 2:41 PM" refid="_18_5_3_43701b0_1517419242849_172170_5711" text="1/15/18 2:41 PM"/>
-</ownedElement>
-</slot>
-<slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419242850_130976_5712">
-<ownedElement>
-<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="1/31/18 12:38 PM" refid="_18_5_3_43701b0_1517419242850_846976_5713" text="1/31/18 12:38 PM"/>
-</ownedElement>
-</slot>
-<slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419242850_445248_5714">
-<ownedElement>
-<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="john" refid="_18_5_3_43701b0_1517419242850_506954_5715" text="john"/>
-</ownedElement>
-</slot>
-<slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419242850_392091_5716">
-<ownedElement>
-<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="john" refid="_18_5_3_43701b0_1517419242850_299512_5717" text="john"/>
-</ownedElement>
-</slot>
-</ownedElement>
-</instancespecification>
-</ownedElement>
-</diagram>
 <diagram classType="Diagram" humanType="Diagram" icon="diagrams_files/icon_Concept Modeling Diagram_363481443.png" name="Election" refid="_18_5_3_43701b0_1516042271267_61108_10995">
 <ownedElement>
 <instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_1011104118.png" isHidden="true" name=" : UML Standard Profile::MagicDraw Profile::DiagramInfo" refid="_18_5_3_43701b0_1516042271269_129261_11006">
@@ -112,7 +84,7 @@
 </slot>
 <slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419242847_162432_5696">
 <ownedElement>
-<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="1/17/18 12:22 PM" refid="_18_5_3_43701b0_1517419242847_113047_5697" text="1/17/18 12:22 PM"/>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="1/31/18 2:24 PM" refid="_18_5_3_43701b0_1517419242847_113047_5697" text="1/31/18 2:24 PM"/>
 </ownedElement>
 </slot>
 <slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419242847_920324_5698">
@@ -291,6 +263,34 @@
 <slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419242846_159351_5692">
 <ownedElement>
 <literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="john" refid="_18_5_3_43701b0_1517419242846_695320_5693" text="john"/>
+</ownedElement>
+</slot>
+</ownedElement>
+</instancespecification>
+</ownedElement>
+</diagram>
+<diagram classType="Diagram" humanType="Diagram" icon="diagrams_files/icon_Concept Modeling Diagram_363481443.png" name="Pre-Election Day Voting" refid="_18_5_3_43701b0_1516045275987_454583_11425">
+<ownedElement>
+<instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_1011104118.png" isHidden="true" name=" : UML Standard Profile::MagicDraw Profile::DiagramInfo" refid="_18_5_3_43701b0_1516045275989_993482_11436">
+<ownedElement>
+<slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419242849_82293_5710">
+<ownedElement>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="1/15/18 2:41 PM" refid="_18_5_3_43701b0_1517419242849_172170_5711" text="1/15/18 2:41 PM"/>
+</ownedElement>
+</slot>
+<slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419242850_130976_5712">
+<ownedElement>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="1/31/18 4:42 PM" refid="_18_5_3_43701b0_1517419242850_846976_5713" text="1/31/18 4:42 PM"/>
+</ownedElement>
+</slot>
+<slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419242850_445248_5714">
+<ownedElement>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="john" refid="_18_5_3_43701b0_1517419242850_506954_5715" text="john"/>
+</ownedElement>
+</slot>
+<slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419242850_392091_5716">
+<ownedElement>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="john" refid="_18_5_3_43701b0_1517419242850_299512_5717" text="john"/>
 </ownedElement>
 </slot>
 </ownedElement>
@@ -541,10 +541,10 @@
 <elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="has absentee excuse" refid="_18_5_3_43701b0_1517419242965_258844_6080" text="has absentee excuse"/>
 <elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="has valid absentee request" refid="_18_5_3_43701b0_1517419242965_860561_6081" text="has valid absentee request"/>
 <elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="has election" refid="_18_5_3_43701b0_1517419242966_898376_6082" text="has election"/>
-<elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="has absentee request" refid="_18_5_3_43701b0_1517419242966_102585_6083" text="has absentee request"/>
+<elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="fills out absentee request" refid="_18_5_3_43701b0_1517419242966_102585_6083" text="fills out absentee request"/>
 <elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="Absentee Request Form" refid="_18_5_3_43701b0_1517419242966_528202_6084" text="Absentee Request Form"/>
 <elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="appears on" refid="_18_5_3_43701b0_1517419242966_72771_6085" text="appears on"/>
-<elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="Other Non ED" refid="_18_5_3_43701b0_1517419242966_479318_6086" text="Other Non ED"/>
+<elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="Pre Election Day Voting" refid="_18_5_3_43701b0_1517419242966_479318_6086" text="Pre Election Day Voting"/>
 <elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="Voting Motivation" refid="_18_5_3_43701b0_1517419242966_497941_6087" text="Voting Motivation"/>
 <elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="Voting Process" refid="_18_5_3_43701b0_1517419242966_754564_6088" text="Voting Process"/>
 <elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="has voting" refid="_18_5_3_43701b0_1517419242966_583387_6089" text="has voting"/>
@@ -564,6 +564,14 @@
 <elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="Election Day Voting Period" refid="_18_5_3_43701b0_1517420447088_254206_8123" text="Election Day Voting Period"/>
 <elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="has election day voting" refid="_18_5_3_43701b0_1517420477966_112324_8143" text="has election day voting"/>
 <elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="conducted during election day voting period" refid="_18_5_3_43701b0_1517421510876_983282_8375" text="conducted during election day voting period"/>
+<elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="occurs before election day voting period" refid="_18_5_3_43701b0_1517422585372_682614_12736" text="occurs before election day voting period"/>
+<elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="starts before election day voting period" refid="_18_5_3_43701b0_1517422585377_321410_12738" text="starts before election day voting period"/>
+<elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="occurs for" refid="_18_5_3_43701b0_1517424163628_463127_12801" text="occurs for"/>
+<elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="UOCAVA Voting" refid="_18_5_3_43701b0_1517427840066_665720_13123" text="UOCAVA Voting"/>
+<elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="conducted during uocava voting period" refid="_18_5_3_43701b0_1517428162220_319547_13469" text="conducted during uocava voting period"/>
+<elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="Election Calendar" refid="_18_5_3_43701b0_1517432219404_306617_13595" text="Election Calendar"/>
+<elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="Calendar Based Absentee Request" refid="_18_5_3_43701b0_1517432283062_996441_13623" text="Calendar Based Absentee Request"/>
+<elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="Election Cycle Absentee Request" refid="_18_5_3_43701b0_1517432361747_945243_13654" text="Election Cycle Absentee Request"/>
 </ownedElement>
 </slot>
 <slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419242969_371539_6103">
@@ -751,6 +759,14 @@
 <literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="_18_5_3_43701b0_1517420423395_385598_8098" refid="_18_5_3_43701b0_1517420447094_328711_8124" text="_18_5_3_43701b0_1517420423395_385598_8098"/>
 <literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="_18_5_3_43701b0_1517420477913_251758_8134" refid="_18_5_3_43701b0_1517420477972_687745_8144" text="_18_5_3_43701b0_1517420477913_251758_8134"/>
 <literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="_18_5_3_43701b0_1517420477912_24637_8133" refid="_18_5_3_43701b0_1517421510878_474317_8376" text="_18_5_3_43701b0_1517420477912_24637_8133"/>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="_18_5_3_43701b0_1517422585355_722092_12728" refid="_18_5_3_43701b0_1517422585374_404030_12737" text="_18_5_3_43701b0_1517422585355_722092_12728"/>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="_18_5_3_43701b0_1517422585355_502054_12729" refid="_18_5_3_43701b0_1517422585378_63112_12739" text="_18_5_3_43701b0_1517422585355_502054_12729"/>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="_18_5_3_43701b0_1516820801680_913523_8867" refid="_18_5_3_43701b0_1517424163630_177917_12802" text="_18_5_3_43701b0_1516820801680_913523_8867"/>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="_18_5_3_43701b0_1517427834994_457870_13098" refid="_18_5_3_43701b0_1517427840068_259510_13124" text="_18_5_3_43701b0_1517427834994_457870_13098"/>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="_18_5_3_43701b0_1517428162191_578786_13461" refid="_18_5_3_43701b0_1517428162223_481898_13470" text="_18_5_3_43701b0_1517428162191_578786_13461"/>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="_18_5_3_43701b0_1517432215391_975237_13570" refid="_18_5_3_43701b0_1517432219406_565980_13596" text="_18_5_3_43701b0_1517432215391_975237_13570"/>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="_18_5_3_43701b0_1517432272334_516070_13598" refid="_18_5_3_43701b0_1517432283065_862615_13624" text="_18_5_3_43701b0_1517432272334_516070_13598"/>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="_18_5_3_43701b0_1517432352857_149992_13629" refid="_18_5_3_43701b0_1517432361753_964101_13655" text="_18_5_3_43701b0_1517432352857_149992_13629"/>
 </ownedElement>
 </slot>
 </ownedElement>
@@ -768,7 +784,7 @@
 </slot>
 <slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419242844_499496_5672">
 <ownedElement>
-<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="1/31/18 12:58 PM" refid="_18_5_3_43701b0_1517419242844_233733_5673" text="1/31/18 12:58 PM"/>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="1/31/18 4:42 PM" refid="_18_5_3_43701b0_1517419242844_233733_5673" text="1/31/18 4:42 PM"/>
 </ownedElement>
 </slot>
 <slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419242844_274893_5674">
@@ -796,7 +812,7 @@
 </slot>
 <slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419242853_341434_5736">
 <ownedElement>
-<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="1/30/18 5:20 PM" refid="_18_5_3_43701b0_1517419242854_991763_5737" text="1/30/18 5:20 PM"/>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="1/31/18 2:24 PM" refid="_18_5_3_43701b0_1517419242854_991763_5737" text="1/31/18 2:24 PM"/>
 </ownedElement>
 </slot>
 <slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419242854_570482_5738">
@@ -880,7 +896,7 @@
 </slot>
 <slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419242852_118033_5728">
 <ownedElement>
-<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="1/30/18 4:58 PM" refid="_18_5_3_43701b0_1517419242853_487463_5729" text="1/30/18 4:58 PM"/>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="1/31/18 2:24 PM" refid="_18_5_3_43701b0_1517419242853_487463_5729" text="1/31/18 2:24 PM"/>
 </ownedElement>
 </slot>
 <slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419242853_799045_5730">
@@ -897,7 +913,6 @@
 </instancespecification>
 </ownedElement>
 </diagram>
-<generalizationset classType="GeneralizationSet" humanType="Generalization Set" icon="diagrams_files/icon_generalizationset_103318763.png" name="early voting set" refid="_18_5_3_43701b0_1516818816234_496861_8081"/>
 <generalizationset classType="GeneralizationSet" humanType="Generalization Set" icon="diagrams_files/icon_generalizationset_103318763.png" name="in person voting set" refid="_18_5_3_43701b0_1516818984322_402856_8094"/>
 <generalizationset classType="GeneralizationSet" humanType="Generalization Set" icon="diagrams_files/icon_generalizationset_103318763.png" name="set1" refid="_18_5_2_11940316_1505145263960_868803_6129"/>
 <generalizationset classType="GeneralizationSet" humanType="Generalization Set" icon="diagrams_files/icon_generalizationset_103318763.png" name="set2" refid="_18_5_2_11940316_1505145263960_534990_6130"/>
@@ -906,6 +921,7 @@
 <generalizationset classType="GeneralizationSet" humanType="Generalization Set" icon="diagrams_files/icon_generalizationset_103318763.png" name="set5" refid="_18_5_2_11940316_1505145263960_258515_6133"/>
 <generalizationset classType="GeneralizationSet" humanType="Generalization Set" icon="diagrams_files/icon_generalizationset_103318763.png" name="set6" refid="_18_5_2_11940316_1505145263960_843332_6134"/>
 <generalizationset classType="GeneralizationSet" humanType="Generalization Set" icon="diagrams_files/icon_generalizationset_103318763.png" name="set7" refid="_18_5_2_11940316_1505145263960_755838_6135"/>
+<generalizationset classType="GeneralizationSet" humanType="Generalization Set" icon="diagrams_files/icon_generalizationset_103318763.png" name="set8" refid="_18_5_3_43701b0_1517433338091_42687_13684"/>
 <generalizationset classType="GeneralizationSet" humanType="Generalization Set" icon="diagrams_files/icon_generalizationset_103318763.png" name="voting category set" refid="_18_5_3_43701b0_1516038084659_899808_7443"/>
 <generalizationset classType="GeneralizationSet" humanType="Generalization Set" icon="diagrams_files/icon_generalizationset_103318763.png" name="voting location category set" refid="_18_5_3_43701b0_1516050229535_971922_12077"/>
 <generalizationset classType="GeneralizationSet" humanType="Generalization Set" icon="diagrams_files/icon_generalizationset_103318763.png" name="voting period set" refid="_18_5_3_43701b0_1517420780230_700852_8240"/>
@@ -951,7 +967,7 @@
 </slot>
 <slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419243184_596883_6582">
 <ownedElement>
-<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="1/17/18 2:05 PM" refid="_18_5_3_43701b0_1517419243184_988319_6583" text="1/17/18 2:05 PM"/>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="1/31/18 2:24 PM" refid="_18_5_3_43701b0_1517419243184_988319_6583" text="1/31/18 2:24 PM"/>
 </ownedElement>
 </slot>
 <slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419243184_27357_6584">
@@ -976,11 +992,7 @@
 <property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name="has nvra form" refid="_18_5_3_43701b0_1516215666690_355236_12991"/>
 </ownedElement>
 </class>
-<class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="" refid="_18_5_3_43701b0_1517420201802_258830_8059">
-<ownedElement>
-<instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_1011104118.png" isHidden="true" name=" : Concept Modeling Profile::Union" refid="_18_5_3_43701b0_1517420201803_438866_8060"/>
-</ownedElement>
-</class>
+<class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="" refid="_18_5_3_43701b0_1517425084617_39140_12825"/>
 <class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name=" State Government" refid="_18_5_2_11940316_1505145263844_241802_5939">
 <ownedElement>
 <instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_1011104118.png" isHidden="true" name=" : Concept Modeling Profile::Resource, UML Standard Profile::MagicDraw Profile::HyperlinkOwner" refid="_18_5_2_11940316_1505145263844_893114_5940">
@@ -1062,7 +1074,7 @@
 </ownedElement>
 </property>
 <property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name="has election" refid="_18_5_3_43701b0_1516821065070_770753_8982"/>
-<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1516821339135_83625_9241"/>
+<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1517425299783_55562_12923"/>
 </ownedElement>
 </class>
 <class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="Absentee Request Form" refid="_18_5_3_43701b0_1516822305017_259178_9272">
@@ -1239,6 +1251,11 @@
 <generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1516045711718_635217_11678"/>
 </ownedElement>
 </class>
+<class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="Calendar Based Absentee Request" refid="_18_5_3_43701b0_1517432272334_516070_13598">
+<ownedElement>
+<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1517432307412_23342_13627"/>
+</ownedElement>
+</class>
 <class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="Citizen" refid="_18_5_2_11940316_1505145263860_579319_5987">
 <ownedElement>
 <instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_1011104118.png" isHidden="true" name=" : Concept Modeling Profile::Resource, UML Standard Profile::MagicDraw Profile::HyperlinkOwner" refid="_18_5_2_11940316_1505145263860_56342_5988">
@@ -1378,6 +1395,7 @@
 </ownedElement>
 </comment>
 <generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1516825561475_736037_12611"/>
+<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1517431319399_408202_13537"/>
 </ownedElement>
 </class>
 <class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="Election" refid="_18_5_3_43701b0_1516042276924_909318_11028">
@@ -1427,6 +1445,12 @@
 <generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1516198089165_898623_11223"/>
 </ownedElement>
 </class>
+<class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="Election Calendar" refid="_18_5_3_43701b0_1517432215391_975237_13570"/>
+<class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="Election Cycle Absentee Request" refid="_18_5_3_43701b0_1517432352857_149992_13629">
+<ownedElement>
+<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1517432367724_795158_13658"/>
+</ownedElement>
+</class>
 <class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="Election Day Voting" refid="_18_5_3_43701b0_1516028732385_368029_12151">
 <ownedElement>
 <comment classType="Comment" humanType="Comment" icon="diagrams_files/icon_comment_1610864488.png" refid="_18_5_3_43701b0_1516031500683_951949_13550">
@@ -1454,7 +1478,21 @@
 </class>
 <class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="Election Day Voting Period" refid="_18_5_3_43701b0_1517420423395_385598_8098">
 <ownedElement>
+<comment classType="Comment" humanType="Comment" icon="diagrams_files/icon_comment_1610864488.png" refid="_18_5_3_43701b0_1517422371122_872604_12702">
+<ownedElement>
+<instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_1011104118.png" isHidden="true" name=" : Concept Modeling Profile::Annotation" refid="_18_5_3_43701b0_1517422371136_781319_12703">
+<ownedElement>
+<slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517422371140_795397_12704">
+<ownedElement>
+<elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="definition" refid="_18_5_3_43701b0_1517422371141_615675_12705" text="definition"/>
+</ownedElement>
+</slot>
+</ownedElement>
+</instancespecification>
+</ownedElement>
+</comment>
 <property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name="has election day voting" refid="_18_5_3_43701b0_1517420477913_251758_8134"/>
+<property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name="occurs before election day voting period" refid="_18_5_3_43701b0_1517422585355_722092_12728"/>
 <generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1517420461954_320963_8127"/>
 </ownedElement>
 </class>
@@ -1846,7 +1884,6 @@
 <literalunlimitednatural classType="LiteralUnlimitedNatural" humanType="Literal Unlimited Natural" icon="diagrams_files/icon_literalunlimitednatural_218836197.png" isHidden="true" name="1" refid="_18_5_3_43701b0_1516817810431_13082_7825" text="1"/>
 </ownedElement>
 </property>
-<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1516028529251_282687_12093"/>
 <generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1516818030372_589011_7674"/>
 </ownedElement>
 </class>
@@ -1865,23 +1902,9 @@
 </instancespecification>
 </ownedElement>
 </comment>
-<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1516038708311_69530_10216"/>
-<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1516050334336_685023_12100">
+<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_540857543.png" isRelationship="true" refid="_18_5_3_43701b0_1517431801952_512684_13564">
 <ownedElement>
-<instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_1011104118.png" isHidden="true" name=" : UML Standard Profile::MagicDraw Profile::HyperlinkOwner" refid="_18_5_3_43701b0_1516050334349_794846_12101">
-<ownedElement>
-<slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419243171_9564_6510">
-<ownedElement>
-<elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="SpatioTemporal Voting" refid="_18_5_3_43701b0_1517419243171_181022_6511" text="SpatioTemporal Voting"/>
-</ownedElement>
-</slot>
-<slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419243171_313442_6512">
-<ownedElement>
-<elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="SpatioTemporal Voting" refid="_18_5_3_43701b0_1517419243171_108933_6513" text="SpatioTemporal Voting"/>
-</ownedElement>
-</slot>
-</ownedElement>
-</instancespecification>
+<instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_1011104118.png" isHidden="true" name=" : Concept Modeling Profile::Equivalent Class" refid="_18_5_3_43701b0_1517431801953_17112_13565"/>
 </ownedElement>
 </generalization>
 </ownedElement>
@@ -1908,7 +1931,7 @@
 </ownedElement>
 </property>
 <generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1516029944436_993258_13051"/>
-<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1381147299.png" isRelationship="true" refid="_18_5_3_43701b0_1516030070723_545207_13093">
+<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_540857543.png" isRelationship="true" refid="_18_5_3_43701b0_1516030070723_545207_13093">
 <ownedElement>
 <instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_1011104118.png" isHidden="true" name=" : Concept Modeling Profile::Equivalent Class" refid="_18_5_3_43701b0_1516030070724_385469_13094"/>
 </ownedElement>
@@ -2265,23 +2288,6 @@
 </instancespecification>
 </ownedElement>
 </class>
-<class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="Other Non ED" refid="_18_5_3_43701b0_1516825530163_659995_12571">
-<ownedElement>
-<property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name=" : Elections::Valid Absentee Request [1]" refid="_18_5_3_43701b0_1516820801680_913523_8867">
-<ownedElement>
-<literalinteger classType="LiteralInteger" humanType="Literal Integer" icon="diagrams_files/icon_literalinteger_295864175.png" isHidden="true" name="1" refid="_18_5_3_43701b0_1517352007281_260212_10391" text="1"/>
-<literalunlimitednatural classType="LiteralUnlimitedNatural" humanType="Literal Unlimited Natural" icon="diagrams_files/icon_literalunlimitednatural_218836197.png" isHidden="true" name="1" refid="_18_5_3_43701b0_1517352007281_334301_10392" text="1"/>
-</ownedElement>
-</property>
-<property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name="conducted during pre election day voting period" refid="_18_5_3_43701b0_1516039389281_37003_10316">
-<ownedElement>
-<literalinteger classType="LiteralInteger" humanType="Literal Integer" icon="diagrams_files/icon_literalinteger_295864175.png" isHidden="true" name="1" refid="_18_5_3_43701b0_1516039401730_507218_10343" text="1"/>
-<literalunlimitednatural classType="LiteralUnlimitedNatural" humanType="Literal Unlimited Natural" icon="diagrams_files/icon_literalunlimitednatural_218836197.png" isHidden="true" name="1" refid="_18_5_3_43701b0_1516039401730_403085_10344" text="1"/>
-</ownedElement>
-</property>
-<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1516825564802_427292_12614"/>
-</ownedElement>
-</class>
 <class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="Other Voter Registration Identificaiton" refid="_18_5_2_11940316_1508351355673_258746_9415">
 <ownedElement>
 <instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_1011104118.png" isHidden="true" name=" : UML Standard Profile::MagicDraw Profile::HyperlinkOwner" refid="_18_5_2_11940316_1508351355689_721702_9440">
@@ -2488,7 +2494,7 @@
 </instancespecification>
 <property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name="employed by" refid="_18_5_3_43701b0_1516042209272_565290_10966"/>
 <property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name="staffs" refid="_18_5_3_43701b0_1516041780783_45935_10630"/>
-<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1381147299.png" isRelationship="true" refid="_18_5_3_43701b0_1516036936722_566709_13754">
+<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_540857543.png" isRelationship="true" refid="_18_5_3_43701b0_1516036936722_566709_13754">
 <ownedElement>
 <instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_1011104118.png" isHidden="true" name=" : Concept Modeling Profile::Equivalent Class, UML Standard Profile::MagicDraw Profile::HyperlinkOwner" refid="_18_5_3_43701b0_1516036936722_610904_13755">
 <ownedElement>
@@ -2576,7 +2582,7 @@
 <literalunlimitednatural classType="LiteralUnlimitedNatural" humanType="Literal Unlimited Natural" icon="diagrams_files/icon_literalunlimitednatural_218836197.png" isHidden="true" name="*" refid="_18_5_3_43701b0_1516041809417_731359_10659" text="*"/>
 </ownedElement>
 </property>
-<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1381147299.png" isRelationship="true" refid="_18_5_3_43701b0_1516037159753_596773_13811">
+<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_540857543.png" isRelationship="true" refid="_18_5_3_43701b0_1516037159753_596773_13811">
 <ownedElement>
 <instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_1011104118.png" isHidden="true" name=" : Concept Modeling Profile::Equivalent Class" refid="_18_5_3_43701b0_1516037159753_190652_13812"/>
 </ownedElement>
@@ -2584,6 +2590,36 @@
 </ownedElement>
 </class>
 <class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="Polling Place Voting" refid="_18_5_3_43701b0_1516030066060_68536_13063"/>
+<class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="Pre Election Day Voting" refid="_18_5_3_43701b0_1516825530163_659995_12571">
+<ownedElement>
+<comment classType="Comment" humanType="Comment" icon="diagrams_files/icon_comment_1610864488.png" refid="_18_5_3_43701b0_1517430467060_297975_13520">
+<ownedElement>
+<instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_1011104118.png" isHidden="true" name=" : Concept Modeling Profile::Annotation" refid="_18_5_3_43701b0_1517430467066_603591_13521">
+<ownedElement>
+<slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517430467066_812660_13522">
+<ownedElement>
+<elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="definition" refid="_18_5_3_43701b0_1517430467067_578028_13523" text="definition"/>
+</ownedElement>
+</slot>
+</ownedElement>
+</instancespecification>
+</ownedElement>
+</comment>
+<property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name="conducted during pre election day voting period" refid="_18_5_3_43701b0_1516039389281_37003_10316">
+<ownedElement>
+<literalinteger classType="LiteralInteger" humanType="Literal Integer" icon="diagrams_files/icon_literalinteger_295864175.png" isHidden="true" name="1" refid="_18_5_3_43701b0_1516039401730_507218_10343" text="1"/>
+<literalunlimitednatural classType="LiteralUnlimitedNatural" humanType="Literal Unlimited Natural" icon="diagrams_files/icon_literalunlimitednatural_218836197.png" isHidden="true" name="1" refid="_18_5_3_43701b0_1516039401730_403085_10344" text="1"/>
+</ownedElement>
+</property>
+<property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name="occurs for" refid="_18_5_3_43701b0_1516820801680_913523_8867">
+<ownedElement>
+<literalinteger classType="LiteralInteger" humanType="Literal Integer" icon="diagrams_files/icon_literalinteger_295864175.png" isHidden="true" name="1" refid="_18_5_3_43701b0_1517352007281_260212_10391" text="1"/>
+<literalunlimitednatural classType="LiteralUnlimitedNatural" humanType="Literal Unlimited Natural" icon="diagrams_files/icon_literalunlimitednatural_218836197.png" isHidden="true" name="1" refid="_18_5_3_43701b0_1517352007281_334301_10392" text="1"/>
+</ownedElement>
+</property>
+<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1516825564802_427292_12614"/>
+</ownedElement>
+</class>
 <class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="Pre Election Day Voting Period" refid="_18_5_3_43701b0_1516031330419_601759_13462">
 <ownedElement>
 <comment classType="Comment" humanType="Comment" icon="diagrams_files/icon_comment_1610864488.png" refid="_18_5_3_43701b0_1516031451102_178_13546">
@@ -2599,7 +2635,13 @@
 </instancespecification>
 </ownedElement>
 </comment>
-<property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name=" : Elections::Other Non ED" refid="_18_5_3_43701b0_1516039389281_91261_10317"/>
+<property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name=" : Elections::Pre Election Day Voting" refid="_18_5_3_43701b0_1516039389281_91261_10317"/>
+<property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name="starts before election day voting period" refid="_18_5_3_43701b0_1517422585355_502054_12729">
+<ownedElement>
+<literalinteger classType="LiteralInteger" humanType="Literal Integer" icon="diagrams_files/icon_literalinteger_295864175.png" isHidden="true" name="1" refid="_18_5_3_43701b0_1517433144702_38770_13678" text="1"/>
+<literalunlimitednatural classType="LiteralUnlimitedNatural" humanType="Literal Unlimited Natural" icon="diagrams_files/icon_literalunlimitednatural_218836197.png" isHidden="true" name="1" refid="_18_5_3_43701b0_1517433144702_791317_13679" text="1"/>
+</ownedElement>
+</property>
 <generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1516039154375_422877_10296"/>
 </ownedElement>
 </class>
@@ -3215,6 +3257,30 @@
 </ownedElement>
 </class>
 <class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="Uocava Voting" refid="_18_5_3_43701b0_1517350695637_328519_10047"/>
+<class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="UOCAVA Voting" refid="_18_5_3_43701b0_1517427834994_457870_13098">
+<ownedElement>
+<comment classType="Comment" humanType="Comment" icon="diagrams_files/icon_comment_1610864488.png" refid="_18_5_3_43701b0_1517427900956_736156_13149">
+<ownedElement>
+<instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_1011104118.png" isHidden="true" name=" : Concept Modeling Profile::Annotation" refid="_18_5_3_43701b0_1517427900961_616459_13150">
+<ownedElement>
+<slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517427900961_441704_13151">
+<ownedElement>
+<elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="definition" refid="_18_5_3_43701b0_1517427900961_395010_13152" text="definition"/>
+</ownedElement>
+</slot>
+</ownedElement>
+</instancespecification>
+</ownedElement>
+</comment>
+<property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name="conducted during uocava voting period" refid="_18_5_3_43701b0_1517428162191_578786_13461">
+<ownedElement>
+<literalinteger classType="LiteralInteger" humanType="Literal Integer" icon="diagrams_files/icon_literalinteger_295864175.png" isHidden="true" name="1" refid="_18_5_3_43701b0_1517428177814_413610_13497" text="1"/>
+<literalunlimitednatural classType="LiteralUnlimitedNatural" humanType="Literal Unlimited Natural" icon="diagrams_files/icon_literalunlimitednatural_218836197.png" isHidden="true" name="1" refid="_18_5_3_43701b0_1517428177814_499374_13498" text="1"/>
+</ownedElement>
+</property>
+<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1517427998125_119684_13172"/>
+</ownedElement>
+</class>
 <class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="UOCAVA Voting Period" refid="_18_5_3_43701b0_1516031340282_583615_13490">
 <ownedElement>
 <comment classType="Comment" humanType="Comment" icon="diagrams_files/icon_comment_1610864488.png" refid="_18_5_3_43701b0_1516049302375_949933_11918">
@@ -3289,7 +3355,12 @@
 </slot>
 </ownedElement>
 </instancespecification>
-<property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name="has absentee request" refid="_18_5_3_43701b0_1516821090939_235016_9007"/>
+<property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name="fills out absentee request" refid="_18_5_3_43701b0_1516821090939_235016_9007">
+<ownedElement>
+<literalinteger classType="LiteralInteger" humanType="Literal Integer" icon="diagrams_files/icon_literalinteger_295864175.png" isHidden="true" name="1" refid="_18_5_3_43701b0_1517427084687_515907_13029" text="1"/>
+<literalunlimitednatural classType="LiteralUnlimitedNatural" humanType="Literal Unlimited Natural" icon="diagrams_files/icon_literalunlimitednatural_218836197.png" isHidden="true" name="*" refid="_18_5_3_43701b0_1517427084687_545118_13030" text="*"/>
+</ownedElement>
+</property>
 <property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name="has voting" refid="_18_5_3_43701b0_1517348267432_12425_9519"/>
 <property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name="registeredVia" refid="_18_5_2_11940316_1505145263945_903425_6093">
 <ownedElement>
@@ -3810,7 +3881,7 @@
 <property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name=" : Elections::Temporal Voting Category" refid="_18_5_3_43701b0_1516039118312_194069_10266"/>
 </ownedElement>
 </association>
-<association classType="Association" humanType="Association" icon="diagrams_files/icon_association_1627824331.png" isRelationship="true" name="Association[Elections::Other Non ED - conducted during pre election day voting period:Elections::Pre Election Day Voting Period]" refid="_18_5_3_43701b0_1516039389281_427719_10315"/>
+<association classType="Association" humanType="Association" icon="diagrams_files/icon_association_1627824331.png" isRelationship="true" name="Association[Elections::Pre Election Day Voting - conducted during pre election day voting period:Elections::Pre Election Day Voting Period]" refid="_18_5_3_43701b0_1516039389281_427719_10315"/>
 <association classType="Association" humanType="Association" icon="diagrams_files/icon_association_1627824331.png" isRelationship="true" name="Association[staffed by:Elections::Poll Worker - staffs:Elections::Polling Place]" refid="_18_5_3_43701b0_1516041780783_306394_10629"/>
 <association classType="Association" humanType="Association" icon="diagrams_files/icon_association_1627824331.png" isRelationship="true" name="Association[votes at:Elections::Polling Location - serves:Elections::Voter]" refid="_18_5_3_43701b0_1516041843670_171175_10692"/>
 <association classType="Association" humanType="Association" icon="diagrams_files/icon_association_1627824331.png" isRelationship="true" name="Association[employed by:Elections::Election Jurisdiction - employs:Elections::Poll Worker]" refid="_18_5_3_43701b0_1516042209272_752923_10964">
@@ -3858,6 +3929,7 @@
 <association classType="Association" humanType="Association" icon="diagrams_files/icon_association_1627824331.png" isRelationship="true" name="Association[Elections::Country - Elections::Federal Government]" refid="_18_5_3_43701b0_1516210023952_781314_12807"/>
 <association classType="Association" humanType="Association" icon="diagrams_files/icon_association_1627824331.png" isRelationship="true" name="Association[has nvra form:Elections::Nvra Form - unnamed property1:Elections::]" refid="_18_5_3_43701b0_1516215666690_715427_12989"/>
 <association classType="Association" humanType="Association" icon="diagrams_files/icon_association_1627824331.png" isRelationship="true" name="Association[has absentee ballot:Elections::Absentee Ballot - has absentee voter:Elections::Absentee Voter]" refid="_18_5_3_43701b0_1516820233355_473861_8505"/>
+<association classType="Association" humanType="Association" icon="diagrams_files/icon_association_1627824331.png" isRelationship="true" name="Association[occurs for:Elections::Valid Absentee Request - meets requirements of:Elections::Pre Election Day Voting]" refid="_18_5_3_43701b0_1516820801679_611391_8865"/>
 <association classType="Association" humanType="Association" icon="diagrams_files/icon_association_293949450.png" isRelationship="true" name="Association[Elections::Absentee Request -&gt; has absentee excuse:Elections::Absentee Excuse]" refid="_18_5_3_43701b0_1516820848644_714621_8894">
 <ownedElement>
 <property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name=" : Elections::Absentee Request" refid="_18_5_3_43701b0_1516820848645_411656_8896"/>
@@ -3873,7 +3945,7 @@
 <property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name=" : Elections::Absentee Request" refid="_18_5_3_43701b0_1516821065071_956283_8983"/>
 </ownedElement>
 </association>
-<association classType="Association" humanType="Association" icon="diagrams_files/icon_association_1627824331.png" isRelationship="true" name="Association[Elections::Voter - has absentee request:Elections::Absentee Request]" refid="_18_5_3_43701b0_1516821090938_756487_9006"/>
+<association classType="Association" humanType="Association" icon="diagrams_files/icon_association_1627824331.png" isRelationship="true" name="Association[Elections::Voter - fills out absentee request:Elections::Absentee Request]" refid="_18_5_3_43701b0_1516821090938_756487_9006"/>
 <association classType="Association" humanType="Association" icon="diagrams_files/icon_association_293949450.png" isRelationship="true" name="Association[Elections::Absentee Request -&gt; appears on:Elections::Absentee Request Form]" refid="_18_5_3_43701b0_1516822335518_111600_9306">
 <ownedElement>
 <property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name=" : Elections::Absentee Request" refid="_18_5_3_43701b0_1516822335519_905794_9308"/>
@@ -3885,7 +3957,12 @@
 <association classType="Association" humanType="Association" icon="diagrams_files/icon_association_1627824331.png" isRelationship="true" name="Association[produces:Elections::Outcome - has voting:Elections::Voting Motivation]" refid="_18_5_3_43701b0_1517348829846_425990_9715"/>
 <association classType="Association" humanType="Association" icon="diagrams_files/icon_association_1627824331.png" isRelationship="true" name="Association[has election outcome:Elections::Election Outcome - unnamed property1:Elections::Contest]" refid="_18_5_3_43701b0_1517349189327_691335_9783"/>
 <association classType="Association" humanType="Association" icon="diagrams_files/icon_association_1627824331.png" isRelationship="true" name="Association[has election day voting:Elections::Election Day Voting - conducted during election day voting period:Elections::Election Day Voting Period]" refid="_18_5_3_43701b0_1517420477912_864790_8132"/>
-<association classType="Association" humanType="Association" icon="diagrams_files/icon_association_1627824331.png" isRelationship="true" name="occurs for" refid="_18_5_3_43701b0_1516820801679_611391_8865"/>
+<association classType="Association" humanType="Association" icon="diagrams_files/icon_association_1627824331.png" isRelationship="true" name="Association[starts before election day voting period:Elections::Election Day Voting Period - occurs before election day voting period:Elections::Pre Election Day Voting Period]" refid="_18_5_3_43701b0_1517422585354_273852_12727"/>
+<association classType="Association" humanType="Association" icon="diagrams_files/icon_association_293949450.png" isRelationship="true" name="Association[Elections::UOCAVA Voting -&gt; conducted during uocava voting period:Elections::UOCAVA Voting Period]" refid="_18_5_3_43701b0_1517428162190_377333_13460">
+<ownedElement>
+<property classType="Property" humanType="Property" icon="diagrams_files/icon_property_917588213.png" name=" : Elections::UOCAVA Voting" refid="_18_5_3_43701b0_1517428162191_232652_13462"/>
+</ownedElement>
+</association>
 <dependency classType="Dependency" humanType="Dependency" icon="diagrams_files/icon_dependency_778337881.png" isRelationship="true" name="Dependency[Elections::Felony -&gt; Elections::Prison]" refid="_18_5_2_11940316_1505145263876_165802_6007">
 <ownedElement>
 <instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_1011104118.png" isHidden="true" name=" : Concept Modeling Profile::Disjoint With" refid="_18_5_2_11940316_1505145263876_39015_6008"/>
@@ -4122,6 +4199,8 @@
 <elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="Reason" refid="_18_5_3_43701b0_1517419243206_820897_6664" text="Reason"/>
 <elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="Purpose" refid="_18_5_3_43701b0_1517419243206_382603_6665" text="Purpose"/>
 <elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="Process" refid="_18_5_3_43701b0_1517419243206_951561_6666" text="Process"/>
+<elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="Object" refid="_18_5_3_43701b0_1517425618466_227941_12950" text="Object"/>
+<elementvalue classType="ElementValue" humanType="Element Value" icon="diagrams_files/icon_elementvalue_1682020557.png" isHidden="true" name="Nexus" refid="_18_5_3_43701b0_1517426640843_307103_13006" text="Nexus"/>
 </ownedElement>
 </slot>
 <slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419243206_527795_6667">
@@ -4134,6 +4213,8 @@
 <literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="_18_5_3_43701b0_1517346116849_460915_8955" refid="_18_5_3_43701b0_1517419243207_509047_6673" text="_18_5_3_43701b0_1517346116849_460915_8955"/>
 <literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="_18_5_3_43701b0_1517346964230_713441_9047" refid="_18_5_3_43701b0_1517419243207_887193_6674" text="_18_5_3_43701b0_1517346964230_713441_9047"/>
 <literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="_18_5_3_43701b0_1517347524882_205232_9149" refid="_18_5_3_43701b0_1517419243207_219554_6675" text="_18_5_3_43701b0_1517347524882_205232_9149"/>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="_18_5_3_43701b0_1517425614751_551182_12925" refid="_18_5_3_43701b0_1517425618467_613134_12951" text="_18_5_3_43701b0_1517425614751_551182_12925"/>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="_18_5_3_43701b0_1517426572090_956676_12981" refid="_18_5_3_43701b0_1517426640843_420223_13007" text="_18_5_3_43701b0_1517426572090_956676_12981"/>
 </ownedElement>
 </slot>
 </ownedElement>
@@ -4151,7 +4232,7 @@
 </slot>
 <slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419243196_692700_6598">
 <ownedElement>
-<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="1/30/18 4:32 PM" refid="_18_5_3_43701b0_1517419243196_704704_6599" text="1/30/18 4:32 PM"/>
+<literalstring classType="LiteralString" humanType="Literal String" icon="diagrams_files/icon_literalstring_1494676730.png" isHidden="true" name="1/31/18 2:23 PM" refid="_18_5_3_43701b0_1517419243196_704704_6599" text="1/31/18 2:23 PM"/>
 </ownedElement>
 </slot>
 <slot classType="Slot" humanType="Slot" icon="diagrams_files/icon_slot_1827070180.png" isHidden="true" refid="_18_5_3_43701b0_1517419243197_816467_6600">
@@ -4243,7 +4324,7 @@
 <literalunlimitednatural classType="LiteralUnlimitedNatural" humanType="Literal Unlimited Natural" icon="diagrams_files/icon_literalunlimitednatural_218836197.png" isHidden="true" name="*" refid="_18_5_2_11940316_1508266136195_230894_7542" text="*"/>
 </ownedElement>
 </property>
-<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1381147299.png" isRelationship="true" refid="_18_5_2_11940316_1508266136110_305213_7119">
+<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_540857543.png" isRelationship="true" refid="_18_5_2_11940316_1508266136110_305213_7119">
 <ownedElement>
 <instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_1011104118.png" isHidden="true" name=" : Concept Modeling Profile::Equivalent Class, UML Standard Profile::MagicDraw Profile::HyperlinkOwner" refid="_18_5_2_11940316_1508266136195_931984_7539">
 <ownedElement>
@@ -4261,6 +4342,16 @@
 </instancespecification>
 </ownedElement>
 </generalization>
+</ownedElement>
+</class>
+<class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="Nexus" refid="_18_5_3_43701b0_1517426572090_956676_12981">
+<ownedElement>
+<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1515884784182_230182_8878"/>
+</ownedElement>
+</class>
+<class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="Object" refid="_18_5_3_43701b0_1517425614751_551182_12925">
+<ownedElement>
+<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1517425620851_457392_12954"/>
 </ownedElement>
 </class>
 <class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="Participation" refid="_18_5_3_43701b0_1515884793994_944059_8880">
@@ -4316,7 +4407,7 @@
 </class>
 <class classType="Class" humanType="Class" icon="diagrams_files/icon_class_1019348343.png" name="Situation" refid="_18_5_3_43701b0_1515884755230_43757_8824">
 <ownedElement>
-<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1515884784182_230182_8878"/>
+<generalization classType="Generalization" humanType="Generalization" icon="diagrams_files/icon_generalization_1856589162.png" isRelationship="true" refid="_18_5_3_43701b0_1517426644440_597334_13008"/>
 </ownedElement>
 </class>
 <instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="diagrams_files/icon_instancespecification_1011104118.png" isHidden="true" name=" : Concept Modeling Profile::Concept Model, CCM Internal Implementation Profile::File Export Path" refid="_18_5_2_11940316_1508266135979_901784_6850">
