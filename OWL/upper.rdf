@@ -118,11 +118,41 @@
     
 
 
+    <!-- http://nomagic.com/ontology/upper#Intention -->
+
+
+    <owl:Class rdf:about="http://nomagic.com/ontology/upper#Intention">
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ontology/upper#MediatingThing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intention</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://nomagic.com/ontology/upper#MediatingThing -->
 
 
     <owl:Class rdf:about="http://nomagic.com/ontology/upper#MediatingThing">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mediating Thing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://nomagic.com/ontology/upper#Nexus -->
+
+
+    <owl:Class rdf:about="http://nomagic.com/ontology/upper#Nexus">
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ontology/upper#MediatingThing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nexus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://nomagic.com/ontology/upper#Object -->
+
+
+    <owl:Class rdf:about="http://nomagic.com/ontology/upper#Object">
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ontology/upper#IndependentThing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Object</rdfs:label>
     </owl:Class>
     
 
@@ -133,6 +163,37 @@
     <owl:Class rdf:about="http://nomagic.com/ontology/upper#Participation">
         <rdfs:subClassOf rdf:resource="http://nomagic.com/ontology/upper#RelativeThing"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Participation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://nomagic.com/ontology/upper#Process -->
+
+
+    <owl:Class rdf:about="http://nomagic.com/ontology/upper#Process">
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ontology/upper#IndependentThing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://nomagic.com/ontology/upper#Purpose -->
+
+
+    <owl:Class rdf:about="http://nomagic.com/ontology/upper#Purpose">
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ontology/upper#MediatingThing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purpose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://nomagic.com/ontology/upper#Reason -->
+
+
+    <owl:Class rdf:about="http://nomagic.com/ontology/upper#Reason">
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ontology/upper#Continuant"/>
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ontology/upper#Intention"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reason</rdfs:label>
     </owl:Class>
     
 
@@ -164,7 +225,7 @@
 
 
     <owl:Class rdf:about="http://nomagic.com/ontology/upper#Situation">
-        <rdfs:subClassOf rdf:resource="http://nomagic.com/ontology/upper#MediatingThing"/>
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ontology/upper#Nexus"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Situation</rdfs:label>
     </owl:Class>
     
@@ -195,4 +256,4 @@
 <!-- Warning: type declarations were not added automatically. -->
 
 
-<!-- Generated using the No Magic Cameo Concept Modeler (18.0 SP12, build 2017 12 20 13:56 (3634)) on 2018-01-15 at 19:30:36 GMT -->
+<!-- Generated using the No Magic Cameo Concept Modeler (18.0 SP12, build 2017 12 20 13:56 (3634)) on 2018-02-02 at 19:17:30 GMT -->
