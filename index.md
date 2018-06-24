@@ -1,7 +1,6 @@
 # **Election Modeling**
 
-This is a placeholder for a GitHub pages version of an election modeling specification.
-
-* [Election Business Process Model](diagrams.html)
+* [Election Business Process Model (web)](diagrams.html)
+* [Election Business Process Model (pdf)](ElectionProcessModel.pdf)
 * [Election Semantic Model](./SemanticModel/diagrams.html)
 * [Election Semantic Glossary](./SemanticModel/glossary.html)
