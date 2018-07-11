@@ -312,7 +312,7 @@ function createChild(responseXML) {
 								relationUL = parentUL.firstChild.lastChild;
 							else {
 								var relationLI = addNode(parentUL, 'Relations', 'javascript:void(0);',
-									'diagrams_files/icon_Relationship_1713546896.png', 'true');
+									'diagrams_files/icon_Relationship_235154585.png', 'true');
 								relationLI.setAttribute('refid', 'relations');
 								relationUL = document.createElement('ul');
 								relationUL.onExpand = function() {
