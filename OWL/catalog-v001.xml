@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1533130120498" name="http://example.com/ontology/VVSG" uri="VVSG.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1533130120498" name="http://nomagic.com/ontology/upper" uri="upper.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1533130120498" name="http://purl.org/dc/terms" uri="terms.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1533130120498" name="http://spec.edmcouncil.org/fibo/FND/Utilities/AnnotationVocabulary" uri="AnnotationVocabulary.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1533130120498" name="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections" uri="elections.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1533130120498" name="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors" uri="humanFactors.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1533130120498" name="http://www.w3.org/1999/02/22-rdf-syntax-ns" uri="22-rdf-syntax-ns.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1533130120498" name="http://www.w3.org/2000/01/rdf-schema" uri="rdf-schema.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1533130120498" name="http://www.w3.org/2001/XMLSchema" uri="XMLSchema.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1533130120498" name="http://www.w3.org/2002/07/owl" uri="owl.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1533130120498" name="http://www.w3.org/2004/02/skos/core" uri="core.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1533130120498" name="https://spec.edmcouncil.org/fibo/FND/ArrangementsExt/Mereological/" uri="Mereological.rdf"/>
+    </group>
+</catalog>

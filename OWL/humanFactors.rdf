@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#"
+     xml:base="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors"
+     xmlns:fibo-fnd-rel-rel="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:fibo-fnd-aap-agt="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/"
+     xmlns:elections="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors">
+        <owl:imports rdf:resource="http://nomagic.com/ontology/upper"/>
+        <owl:imports rdf:resource="http://example.com/ontology/VVSG"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections"/>
+        <owl:imports rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/"/>
+        <owl:imports rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#partOfBallotFormat -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#partOfBallotFormat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#DisplayFormat"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#BallotFormat"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part of ballot format</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#AlternativeFormat -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#AlternativeFormat">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alternative Format</rdfs:label>
+        <skos:definition xml:lang="en">The ballot or accompanying information is said to be in an alternative format if it is in a representation other than the standard ballot language and format. Examples include, but are not limited to languages other than English, Braille, ASCII text, large print, recorded audio. (VVSG 1.1)</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#AudioFormat -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#AudioFormat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#AlternativeFormat"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#DisplayFormat"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Audio Format</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#DisplayFormat -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#DisplayFormat">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Display Format</rdfs:label>
+        <skos:definition xml:lang="en">The way the voting system communicates ballot choices and other information. (Human Factors Group)</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#EnhancedVisualFormat -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#EnhancedVisualFormat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#AlternativeFormat"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#VisualFormat"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enhanced Visual Format</rdfs:label>
+        <skos:definition xml:lang="en">Visual display format options for displaying ballot choices and other information with the addition of personal choices such as text size and color contrast.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#VisualFormat -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#VisualFormat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#DisplayFormat"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visual Format</rdfs:label>
+        <skos:definition xml:lang="en">A display format in which ballot choices and other information are displayed on screen or paper for perception using sight.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HumanFactors</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.0.2.20160507-1747) https://github.com/owlcs/owlapi/ -->
+
+
+
+
+
+<!-- Warning: type declarations were not added automatically. -->
+
+
+<!-- Generated using the No Magic Cameo Concept Modeler (18.0 SP12, build 2017 12 20 13:56 (3634)) on 2018-08-08 at 18:53:22 GMT -->
