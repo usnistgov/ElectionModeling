@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/"
+     xml:base="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/"
+     xmlns:fibo-fnd-rel-rel="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sm="http://www.omg.org/techprocess/ab/SpecificationMetadata#"
+     xmlns:fibo-fnd-aap-agt="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/">
+    <owl:Ontology rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/">
+        <owl:versionIRI rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/20141101/AgentsAndPeople/Agents/"/>
+        <owl:imports rdf:resource="http://www.omg.org/techprocess/ab/SpecificationMetadata"/>
+        <owl:imports rdf:resource="http://www.w3.org/2000/01/rdf-schema"/>
+        <owl:imports rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/identifies -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/identifies">
+        <owl:inverseOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/isIdentifiedBy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">identifies</rdfs:label>
+        <skos:definition xml:lang="en">is the relationship between something and that which provides a unique reference for it</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/isIdentifiedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/isIdentifiedBy">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is identified by</rdfs:label>
+        <skos:definition xml:lang="en">provides a unique identifier for something</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/hasName">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has name</rdfs:label>
+        <skos:definition xml:lang="en">that by which some thing is known; may apply to anything</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/AutonomousAgent -->
+
+
+    <owl:Class rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/AutonomousAgent">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/isIdentifiedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <sm:directSource xml:lang="en">http://www.omg.org/techprocess/meetings/schedule/AMP.html</sm:directSource>
+        <sm:relatedSpecification xml:lang="en">http://www.omg.org/spec/SoaML/</sm:relatedSpecification>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autonomous agent</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">http://www.jamesodell.com/WhatIsAnAgent.pdf</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">http://www.jamesodell.com/WhyShouldWeCareAboutAgents.pdf</rdfs:seeAlso>
+        <skos:definition xml:lang="en">Agents, then, can be software agents, hardware agents, firmware agents, robotic agents, human agents, and so on.  While software developers naturally think of IT systems as being constructed of only software agents, a combination of agent mechanisms might in fact be used from shop-floor manufacturing to warfare systems.  The definition incorporated herein must be sufficiently general to account for these and other uses, such as for describing people and organizations who participate in broader processes and systems, for FIBO, other OMG standards and usage, and in general.
+
+Whether or not you restrict your view of agents to the software variety, most agree that agents deployed for IT systems are not useful without the following three important properties:
+
+(1) Autonomous - an agent is capable of acting without direct external intervention.  Agents have some degree of control over their internal state and can act based on their own experiences. They can also possess their own set of internal responsibilities and processing that enable them to act without any external choreography.  When an agent acts on behalf of (or as a proxy for) some person or thing, its autonomy is expected to embody the goals and policies of the entity that it represents.
+
+(2) Interactive - an agent communicates with the environment and other agents. Agents are interactive entities because they are capable of exchanging rich forms of messages with other entities in their environment.  These messages can support requests for services and other kinds of resources, as well as event detection and notification.  They can be synchronous or asynchronous in nature.  The interaction can also be conversational in nature, such as negotiating contracts, marketplace-style bidding, or simply making a query.
+
+(3) Adaptive - an agent is capable of responding to other agents and/or its environment. Agents can react to messages and events and then respond appropriately.  Agents can be designed to make difficult decisions and even modify their behavior based on their experiences.  They can learn and evolve.</skos:definition>
+        <skos:definition xml:lang="en">An agent is an autonomous individual that can adapt to and interact with its environment.</skos:definition>
+        <skos:definition xml:lang="en">Note that this does not necessarily imply that an agent is free to act as it sees fit, without constraint. Rather, an autonomous thing in the sense meant here is something which may or may not be subject to controls and constraints but is self-actualizing in its behavior in response to any such constraints. Autonomous things may include human beings, organizations, software agents, robots and animals.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agents</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.0.2.20160507-1747) https://github.com/owlcs/owlapi/ -->
+
+
+
+
+
+<!-- Warning: type declarations were not added automatically. -->
+
+
+<!-- Generated using the No Magic Cameo Concept Modeler (18.0 SP12, build 2017 12 20 13:56 (3634)) on 2018-08-08 at 18:58:15 GMT -->

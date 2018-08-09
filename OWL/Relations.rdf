@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/"
+     xml:base="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/"
+     xmlns:fibo-fnd-rel-rel="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/"
+     xmlns:dct="http://purl.org/dc/terms#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sm="http://www.omg.org/techprocess/ab/SpecificationMetadata#"
+     xmlns:fibo-fnd-aap-agt="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/">
+    <owl:Ontology rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/">
+        <owl:versionIRI rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/20170201/Relations/Relations/"/>
+        <owl:imports rdf:resource="http://www.omg.org/techprocess/ab/SpecificationMetadata"/>
+        <owl:imports rdf:resource="http://www.w3.org/2000/01/rdf-schema"/>
+        <owl:imports rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <owl:imports rdf:resource="http://purl.org/dc/terms"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/appliesTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/appliesTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/refersTo"/>
+        <rdfs:domain rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">applies to</rdfs:label>
+        <skos:definition xml:lang="en">a relation indicating something that is pertinent or relevant to the concept</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/appoints -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/appoints">
+        <rdfs:subPropertyOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/designates"/>
+        <rdfs:domain rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/AutonomousAgent"/>
+        <rdfs:range rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/AutonomousAgent"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">appoints</rdfs:label>
+        <skos:definition xml:lang="en">assigns a job or role to someone, selects or designates to fill an office or a position, fixes or sets by authority or by mutual agreement</skos:definition>
+        <skos:scopeNote xml:lang="en">typically requires having the capacity or authority to appoint</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/causes -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/causes">
+        <owl:inverseOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isCausedBy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">causes</rdfs:label>
+        <skos:definition xml:lang="en">the relationship between an event (the cause) and a second event (the effect), where the second event is understood as a consequence of the first; also, the relationship between a set of factors (causes) and a phenomenon (the effect)</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/characterizes -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/characterizes">
+        <rdfs:subPropertyOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/refersTo"/>
+        <rdfs:domain rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">characterizes</rdfs:label>
+        <skos:definition xml:lang="en">describes the character or quality of</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/classifies -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/classifies">
+        <rdfs:subPropertyOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/refersTo"/>
+        <owl:inverseOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isClassifiedBy"/>
+        <rdfs:domain rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">classifies</rdfs:label>
+        <skos:definition xml:lang="en">Merriam-Webster Dictionary</skos:definition>
+        <skos:definition xml:lang="en">arranges in classes; assigns to a category</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/comprises -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/comprises">
+        <owl:inverseOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isIncludedIn"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comprises</rdfs:label>
+        <skos:definition xml:lang="en">Note that something can be comprised of something(s) that may or may not be understood as separable parts, and thus is not defined as being explicitly transitive.</skos:definition>
+        <skos:definition xml:lang="en">https://www.merriam-webster.com/dictionary/comprise</skos:definition>
+        <skos:definition xml:lang="en">includes, especially within a particular scope, is made up of</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/confers -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/confers">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confers</rdfs:label>
+        <skos:definition xml:lang="en">Merriam-Webster Online Dictionary</skos:definition>
+        <skos:definition xml:lang="en">This property should be read as describing the conferral of some legal power or duty, some commitment or some social construct, and is a property of some social construct such as an agreement or some legal authority. These concepts, which would describe the kind of thing of which this is a property, and the kinds of thing in terms of which this property is framed, are outside the scope of this mode land so are not shown.</skos:definition>
+        <skos:definition xml:lang="en">grants or bestows by virtue of some authority</skos:definition>
+        <skos:definition xml:lang="en">invests with</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/controls -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/controls">
+        <owl:inverseOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isControlledBy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">controls</rdfs:label>
+        <skos:definition xml:lang="en">The American Heritage(R) Dictionary of the English Language, Fourth Edition</skos:definition>
+        <skos:definition xml:lang="en">exercises authoritative or dominating influence over; directs</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/defines -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/defines">
+        <rdfs:subPropertyOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/represents"/>
+        <rdfs:domain rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">defines</rdfs:label>
+        <skos:definition xml:lang="en">determines or identifies the essential qualities or meaning of, discovers and sets forth the meaning of, fixes or marks the limits of, demarcates</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/denotes -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/denotes">
+        <rdfs:subPropertyOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/represents"/>
+        <owl:inverseOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasDenotation"/>
+        <rdfs:domain rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">denotes</rdfs:label>
+        <skos:definition xml:lang="en">represents, calls by a distinctive title, term, or expression</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/designates -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/designates">
+        <rdfs:domain rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/AutonomousAgent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">designates</rdfs:label>
+        <skos:definition xml:lang="en">to name something officially or appoint someone to a position officially</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/embodies -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/embodies">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embodies</rdfs:label>
+        <skos:definition xml:lang="en">This property should be interpreted as being the property of a union of concrete things and information constructs, and as referring to some abstract thing or to some mediating thing or both, in the informative ontology of conceptual abstractions. </skos:definition>
+        <skos:definition xml:lang="en">http://www.merriam-webster.com/dictionary/govern</skos:definition>
+        <skos:definition xml:lang="en">is an expression of, or gives a tangible or visible form to (an idea, quality, or feeling), makes concrete and perceptible
+ </skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/governs -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/governs">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">governs</rdfs:label>
+        <skos:definition xml:lang="en">This property should be read as being the property of a logical union of social construct (in the informative abstractions ontology) and legal person, and as referring to &apos;thing&apos;. </skos:definition>
+        <skos:definition xml:lang="en">http://www.merriam-webster.com/dictionary/govern</skos:definition>
+        <skos:definition xml:lang="en">prevails or has decisive influence over; exercises authority</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/has -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/has">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has</rdfs:label>
+        <skos:definition xml:lang="en">Encarta Webster&apos;s Dictionary of the English Language (2004)</skos:definition>
+        <skos:definition xml:lang="en">indicates that someone (or something) possesses something, as a characteristic, attribute, feature, capability, and so forth</skos:definition>
+        <skos:editorialNote xml:lang="en">As used in FIBO, this definition of has specifically excludes possession in the sense of ownership.</skos:editorialNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasContext -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasContext">
+        <rdfs:subPropertyOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/has"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has context</rdfs:label>
+        <skos:definition xml:lang="en">This property should be read as referring to some context (known as &apos;mediating thing&apos;) in the informative upper ontology which is not included in this model. It should also be read as being the property of some contextually defined thing (known in the informative upper ontology as &apos;relative thing&apos;).</skos:definition>
+        <skos:definition xml:lang="en">provides a context in which something is defined, expressed, or represented</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasDefinition -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasDefinition">
+        <rdfs:subPropertyOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasRepresentation"/>
+        <owl:inverseOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/defines"/>
+        <rdfs:range rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/Reference"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has definition</rdfs:label>
+        <skos:definition xml:lang="en">specifies a form of words that conveys the meaning associated with something</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasDenotation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasDenotation">
+        <rdfs:subPropertyOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasRepresentation"/>
+        <rdfs:range rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/Reference"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has denotation</rdfs:label>
+        <skos:definition xml:lang="en">relates a concept (or something else, but typically a concept) to a representation or denotation for that concept</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasDesignation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasDesignation">
+        <rdfs:domain rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/AutonomousAgent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has designation</rdfs:label>
+        <skos:definition xml:lang="en">relates an individual or organization to a position, role, or other designation</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasIdentity -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasIdentity">
+        <rdfs:subPropertyOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/has"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has identity</rdfs:label>
+        <skos:definition xml:lang="en">This property should be read as being a property of some kind of &apos;relative thing&apos; as defined externality to this ontology. The property is usually but not exclusively framed with reference to some &apos;independent thing&apos; but may take other forms and so should be regarded as having a target of &apos;thing&apos;.</skos:definition>
+        <skos:definition xml:lang="en">provides a means for identifying something that fills a particular role</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasMember -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasMember">
+        <owl:inverseOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isMemberOf"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has member</rdfs:label>
+        <skos:definition xml:lang="en">This property should be read as being the property of a logical union of group and organization (not shown).</skos:definition>
+        <skos:definition xml:lang="en">relates something, typically a group or organization, to some discrete thing identified as a part (member) of it </skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasPart -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasPart">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has part </rdfs:label>
+        <skos:definition xml:lang="en">Stanford Encyclopedia of Philosophy at http://plato.stanford.edu/entries/mereology/</skos:definition>
+        <skos:definition xml:lang="en">This property relates a thing to anything which is a proper part of that thing. This is not parthood in the sense of a the role of part which may be played by interchangeable things such as wheels; instead this property relates an independent thing to something which makes up a part of it. </skos:definition>
+        <skos:definition xml:lang="en">indicates any portion of a thing, regardless of whether the portion itself is attached to the remainder or detached; cognitively salient or arbitrarily demarcated; self-connected or disconnected; homogeneous or gerrymandered; material or immaterial; extended or unextended; spatial or temporal</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasRepresentation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasRepresentation">
+        <rdfs:subPropertyOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/has"/>
+        <rdfs:range rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/Reference"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has representation</rdfs:label>
+        <skos:definition xml:lang="en">relates a concept to some textual or other symbol which is intended to convey the sense of that concept or to some form of words which sets out the meaning of that concept</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/holds -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/holds">
+        <owl:inverseOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isHeldBy"/>
+        <rdfs:domain rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/AutonomousAgent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">holds</rdfs:label>
+        <skos:definition xml:lang="en">is the relationship between an individual or organization and something it possesses, or over which it exercises some ownership or control or has at its discretion the ability to dispose of it as it sees fit </skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/involves -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/involves">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">involves</rdfs:label>
+        <skos:definition xml:lang="en">(of a situation or event) includes (something) as a necessary part or result</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isAppointedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isAppointedBy">
+        <rdfs:domain rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/AutonomousAgent"/>
+        <rdfs:range rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/AutonomousAgent"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is appointed by</rdfs:label>
+        <skos:definition xml:lang="en">indicates the individual or group that has assigned or appointed someone to an office or position</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isCausedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isCausedBy">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is caused by</rdfs:label>
+        <skos:definition xml:lang="en">is the relationship between an event (the effect) and a second event (the cause), where the first event is understood as a consequence of the second; also, the relationship between a set of factors (causes) and a phenomenon (the effect)</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isClassifiedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isClassifiedBy">
+        <rdfs:range rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/Reference"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is classified by</rdfs:label>
+        <skos:definition xml:lang="en">indicates the classification scheme used to classify something</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isConferredBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isConferredBy">
+        <owl:inverseOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/confers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is conferred by</rdfs:label>
+        <skos:definition xml:lang="en">This property should be read as describing some legal power or duty, some commitment or some social construct being conferred as a result of some social construct such as an agreement or some legal authority. These concepts, which would describe the kind of thing of which this is a property, and the kinds of thing in terms of which this property is framed, are outside the scope of this model and so are not shown.</skos:definition>
+        <skos:definition xml:lang="en">a relationship between a right or obligation and the vehicle, such as an agreement or contract, that vests (or confers) said right or obligation</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isConferredOn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isConferredOn">
+        <rdfs:range rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/AutonomousAgent"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is conferred on</rdfs:label>
+        <skos:definition xml:lang="en">that on which the conferred thing is conferred</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isControlledBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isControlledBy">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is controlled by</rdfs:label>
+        <skos:definition xml:lang="en">is influenced, managed, or directed by</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isGovernedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isGovernedBy">
+        <owl:inverseOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/governs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is governed by</rdfs:label>
+        <skos:definition xml:lang="en">This property should be read as being the property of some thing and as referring to a logical union of social construct (in the informative abstractions ontology) and legal person. </skos:definition>
+        <skos:definition xml:lang="en">a relationship between a contract, agreement, jurisdiction, or other legal construct and the regulation, policy, procedure, or legal person that regulates or oversees (governs) it</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isHeldBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isHeldBy">
+        <rdfs:range rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/AutonomousAgent"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is held by</rdfs:label>
+        <skos:definition xml:lang="en">something that is possessed by and at least partially under the control of something which can be used or acted on by the holder, regardless of ownership</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isIncludedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isIncludedIn">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is included in</rdfs:label>
+        <skos:definition xml:lang="en">relates something to something that contains it</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isIssuedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isIssuedBy">
+        <rdfs:range rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/AutonomousAgent"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is issued by</rdfs:label>
+        <skos:definition xml:lang="en">http://www.thefreedictionary.com/issue</skos:definition>
+        <skos:definition xml:lang="en">identifies an office or organization responsible for circulating, distributing, or publishing something</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isManagedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isManagedBy">
+        <owl:inverseOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/manages"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is managed by</rdfs:label>
+        <skos:definition xml:lang="en">The target or range of this property should be read as always being some kind of &apos;relative thing&apos;, that is a thing defined in some context. Generally this will be a &apos;party in role&apos;. This property is not intended to be used to relate a thing to some independent thing which it is managed by, only to something in the role of being that which manages it.</skos:definition>
+        <skos:definition xml:lang="en">relates something to another thing that has some role in directing its affairs</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isMandatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isMandatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isConferredBy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is mandated by</rdfs:label>
+        <skos:definition xml:lang="en">This prooerty should be read as being a property of some social construct as defined in the informative ontology for conceptual abstractions, to some other social construct such as a legal instrument or an agreement. </skos:definition>
+        <skos:definition xml:lang="en">relates a responsibility, capacity, or action to that which requires it</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isMemberOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isMemberOf">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is member of</rdfs:label>
+        <skos:definition xml:lang="en">This property should be read as being framed in terms of a logical union of group and organization (not shown).</skos:definition>
+        <skos:definition xml:lang="en">belonging, either individually or collectively, to a group</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isPartOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isPartOf">
+        <owl:inverseOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasPart"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is a part of</rdfs:label>
+        <skos:definition xml:lang="en">Stanford Encyclopedia of Philosophy at http://plato.stanford.edu/entries/mereology/</skos:definition>
+        <skos:definition xml:lang="en">This property represents what is also known in the literature of &apos;proper parthood&apos;,that is the recursive (transitive) relationship whereby things have parts which have parts and so on. This is distinct from a separate meaning of &apos;has part&apos; which would refer to an item playing the named role of a part such as a nearside front wheel. for the avoidance of doubt, this is not that relationship, and this property applies betwen independent things and other independent things which may make up their parts.</skos:definition>
+        <skos:definition xml:lang="en">relates something to a thing that it is some component or portion of, regardless of how that whole-part relationship is manifested, i.e., attached to the remainder or detached; cognitively salient or arbitrarily demarcated; self-connected or disconnected; homogeneous or gerrymandered; material or immaterial; extended or unextended; spatial or temporal; the most generic part relation, reflexive, asymmetric, and transitive</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isProvidedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isProvidedBy">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is provided by</rdfs:label>
+        <skos:definition xml:lang="en">The target or range of this property should be read as always being some kind of &apos;relative thing&apos;, that is a thing defined in some context. Generally this will be a &apos;party in role&apos;. This property is not intended to be used to relate a thing to some independent thing which it is provided by, only to something in the role of being that which provides it.</skos:definition>
+        <skos:definition xml:lang="en">is made available by</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isUsedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isUsedBy">
+        <owl:inverseOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/uses"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is used by</rdfs:label>
+        <skos:definition xml:lang="en">relates something to a thing that has the ability to employ or deploy it as appropriate</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/manages -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/manages">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manages</rdfs:label>
+        <skos:definition xml:lang="en">This property should be read as always being a property of some kind of &apos;relative thing&apos;, that is a thing defined in some context. Generally this will be a &apos;party in role&apos;. This property is not intended to be used to relate some independent thing to that which it manages, instead it must only be a property of something in the role of being that which manages some thing. </skos:definition>
+        <skos:definition xml:lang="en">relates an autonomous agent to something that it directs in some way</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/provides -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/provides">
+        <owl:inverseOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/isProvidedBy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provides</rdfs:label>
+        <skos:definition xml:lang="en">This property should be read as always being a property of some kind of &apos;relative thing&apos;, that is a thing defined in some context. Generally this will be a &apos;party in role&apos;. This property is not intended to be used to relate some independent thing to that which it provides, instead it must only be a property of something in the role of being that which provides some thing.</skos:definition>
+        <skos:definition xml:lang="en">makes something available</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/refersTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/refersTo">
+        <rdfs:domain rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">refers to</rdfs:label>
+        <skos:definition xml:lang="en">the relationship between a reference and the concept it stands for or refers to, i.e., the referent for that reference</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/represents -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/represents">
+        <rdfs:subPropertyOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/refersTo"/>
+        <owl:inverseOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasRepresentation"/>
+        <rdfs:domain rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">represents</rdfs:label>
+        <skos:definition xml:lang="en">relates some textual or other symbol or some set of words to some concept that has the sense or meaning the representation is intended to convey</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/uses -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/uses">
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uses</rdfs:label>
+        <skos:definition xml:lang="en">relates something to something else that it has the ability to employ in some way</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasAcquisitionDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasAcquisitionDate">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has acquisition date</rdfs:label>
+        <skos:definition xml:lang="en">links an asset or owner/controller/controllee to the date of acquisition</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasAlias -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasAlias">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has alias</rdfs:label>
+        <skos:definition xml:lang="en">Any other name by which an individual or organization is known</skos:definition>
+        <skos:editorialNote xml:lang="en">Added at SME Review, to meet AML requirements</skos:editorialNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasCommonName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasCommonName">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has common name</rdfs:label>
+        <skos:definition xml:lang="en">a name by which something is frequently referred, without reference to any formal usage or structure</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasDispositionDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasDispositionDate">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has disposition date</rdfs:label>
+        <skos:definition xml:lang="en">links something, such as an asset or its owner/controller/controllee to the date something was sold, transferred, destroyed, etc.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasFormalName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasFormalName">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has formal name</rdfs:label>
+        <skos:definition xml:lang="en">a name by which something is known for some official purpose or context, or which is structured in some way such as to always follow the same format regardless of usage</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasLegalName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasLegalName">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has legal name</rdfs:label>
+        <skos:definition xml:lang="en">the name used to refer to an person or organization in legal communications</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasUniqueIdentifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/hasUniqueIdentifier">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has unique identifier</rdfs:label>
+        <skos:definition xml:lang="en">With reference to a given (possibly implicit) set of objects, a unique identifier (UID) is any identifier which is guaranteed to be unique among all identifiers used for those objects and for a specific purpose. The uniqueness requires and is guaranteed by the existence of a scheme associated with the identifier.</skos:definition>
+        <skos:definition xml:lang="en">has some textual or numeric information which when taken in combination with some associated scheme is unique to the thing and may be used to distinguish it from other things of the same or different type</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/wasFormerlyKnownAs -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/wasFormerlyKnownAs">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">was formerly known as</rdfs:label>
+        <skos:definition xml:lang="en">a name by which something was known in the past</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/Reference -->
+
+
+    <owl:Class rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/Reference">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reference</rdfs:label>
+        <skos:definition xml:lang="en">a concept that refers to (or stands in for) another concept</skos:definition>
+        <skos:definition xml:lang="en">http://grammar.about.com/od/rs/g/referenceterm.htm</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/Referent -->
+
+
+    <owl:Class rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/Referent">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">referent</rdfs:label>
+        <skos:definition xml:lang="en">http://grammar.about.com/od/rs/g/referentterm.htm</skos:definition>
+        <skos:definition xml:lang="en">the concept that another concept stands for or refers to</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relations</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.0.2.20160507-1747) https://github.com/owlcs/owlapi/ -->
+
+
+
+
+
+<!-- Warning: type declarations were not added automatically. -->
+
+
+<!-- Generated using the No Magic Cameo Concept Modeler (18.0 SP12, build 2017 12 20 13:56 (3634)) on 2018-08-08 at 18:58:17 GMT -->
