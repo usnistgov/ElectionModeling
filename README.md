@@ -1,4 +1,4 @@
-# ElectionModeling
+# Election Modeling
 The nist-pages branch of this repository holds documentation files for an HTML version located on https://pages.nist.gov/ElectionModeling/diagrams.html.
 
 ## Files
@@ -8,5 +8,6 @@ The nist-pages branch of this repository holds documentation files for an HTML v
 * EP_Profile.xml - Eriksson-Penker Profile for MagicDraw
 * MagicDraw Election Model.xml - Election Models in MagicDraw Format
 * MagicDraw Semantic Model.xml - Semantic Model in MagicDraw CCM Format
+* DMN (directory) - Business Process Models in Decision Model Notation
 * OWL (directory) - Semantic Model in Web Ontology Language
 * XPDL (directory) - Business Process Models in XML Process Definition Language Format
