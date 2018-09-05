@@ -8,6 +8,7 @@ var usecontextmenu = false;
 var showappearsinpage = true;
 var displayelementid = false;
 var displayelementnumber = false;
+var gotoLinkByIcon = false;
 var selecthistorynode = true; // turn off to improve performance on very large report.
 var nonamedNode = '< >';
 var nonamedLink = '';
@@ -312,7 +313,7 @@ function createChild(responseXML) {
 								relationUL = parentUL.firstChild.lastChild;
 							else {
 								var relationLI = addNode(parentUL, 'Relations', 'javascript:void(0);',
-									'diagrams_files/icon_Relationship_967531000.png', 'true');
+									'diagrams_files/icon_Relationship_460333119.png', 'true');
 								relationLI.setAttribute('refid', 'relations');
 								relationUL = document.createElement('ul');
 								relationUL.onExpand = function() {
@@ -576,19 +577,36 @@ function addChildNode(ul, nodeName, member, icon) {
 
 	if (icon) {
 		var imgAnchor = document.createElement('a');
-		if (member.getAttribute('hasLink') == "true")
-			imgAnchor.href = "javascript: showSpec('" + member.getAttribute('refid') + "');";
-		else
+		if ((gotoLinkByIcon == true && member.getAttribute('hasLink') == "true") || member.getAttribute('hasLink') != "true")
+		{
+			var refID = member.getAttribute('refid');
+			if (isSmart)
 			{
-				var refID = member.getAttribute('refid');
-				if (isSmart)
-				{
-					refID = member.getAttribute('mr_smart_id');
-				}
-				imgAnchor.href = "javascript: gotoElement('" + refID + "', false, true);";
+				refID = member.getAttribute('mr_smart_id');
 			}
+			imgAnchor.href = "javascript: gotoElement('" + refID + "', false, true);";
+		}
+		else
+			imgAnchor.href = "javascript: showSpec('" + member.getAttribute('refid') + "');";
+		
 		imgAnchor.style.verticalAlign = 'middle';
 		imgAnchor.onclick = anchor.onclick;
+		
+		if (member.getAttribute('hasActiveHyperLink') == "true")
+		{
+			var navigatingIcon = document.createElement('img');
+			navigatingIcon.src = resourcesLocation + 'images/tree/hyperlinknode.png';;
+			navigatingIcon.alt = '';
+			navigatingIcon.border = '0';
+			navigatingIcon.height = '8';
+			navigatingIcon.width = '8';
+			navigatingIcon.style.verticalAlign = 'middle';
+			navigatingIcon.style.position = 'absolute';
+			navigatingIcon.style.zIndex = 2;
+			navigatingIcon.style.marginTop = '8px';
+			imgAnchor.appendChild(navigatingIcon);
+		}
+		
 		var img = document.createElement('img');
 		img.src = icon;
 		img.alt = '';
@@ -781,36 +799,39 @@ function createDocBallon(evt) {
 	}
 
 	if (documentation != null) {
-		var value = document.getElementById('docBalloon');
-		if (value == null) {
-			var value = document.createElement('span');
-			value.id = 'docBalloon';
-			value.style.position = 'absolute';
-			value.style.border = '#A5CFE9 solid 1px';
-			value.style.fontFamily = 'arial';
-			value.style.fontSize = 'x-small';
-			value.style.padding = '3px';
-			value.style.color = '#1B4966';
-			value.style.background = '#FFFFFF';
-			value.style.textAlign = 'left';
-			value.style.zIndex = 900;
-			value.onmouseout = function(e) {
-				var value = document.getElementById('docBalloon');
-				if (value)
-					value.style.visibility = 'hidden';
-			};
-			document.body.appendChild(value);
-		}
-		if (value.style.visibility == 'hidden' || !firstShow) {
-			firstShow = true;
-			var mic = Graphics.mousePosition(evt);
-			var mouseX = mic.x + 2;
-			var mouseY = mic.y + 2;
-			value.style.left = mouseX + 'px';
-			value.style.top = mouseY + 'px';
-			value.style.visibility = 'visible';
-			removeAll(value);
-			renderValueNode(value, documentation);
+		var text = nodeValue(documentation);
+		if (text != null && text.length > 0) {
+			var value = document.getElementById('docBalloon');
+			if (value == null) {
+				var value = document.createElement('span');
+				value.id = 'docBalloon';
+				value.style.position = 'absolute';
+				value.style.border = '#A5CFE9 solid 1px';
+				value.style.fontFamily = 'arial';
+				value.style.fontSize = 'x-small';
+				value.style.padding = '3px';
+				value.style.color = '#1B4966';
+				value.style.background = '#FFFFFF';
+				value.style.textAlign = 'left';
+				value.style.zIndex = 900;
+				value.onmouseout = function(e) {
+					var value = document.getElementById('docBalloon');
+					if (value)
+						value.style.visibility = 'hidden';
+				};
+				document.body.appendChild(value);
+			}
+			if (value.style.visibility == 'hidden' || !firstShow) {
+				firstShow = true;
+				var mic = Graphics.mousePosition(evt);
+				var mouseX = mic.x + 2;
+				var mouseY = mic.y + 2;
+				value.style.left = mouseX + 'px';
+				value.style.top = mouseY + 'px';
+				value.style.visibility = 'visible';
+				removeAll(value);
+				renderValueNode(value, documentation);
+			}
 		}
 	}
 }
@@ -1020,10 +1041,12 @@ function renderValueNode(value, element) {
 function renderValueText(value, text) {
 	var htmlContent = "";
 	var foundHTMLText = false;
-	if (text && text.indexOf('<html>') >= 0) {
+	if (text && (text.indexOf('<html>') >= 0 || text.indexOf('<html ') >= 0)) {
 		// Found HTML code
 		var endBodyIndex = -1;
 		var startBodyIndex = text.indexOf('<body>');
+		if (startBodyIndex < 0)
+			startBodyIndex = text.indexOf('<body ');
 		if (startBodyIndex > 0) {
 			endBodyIndex = text.indexOf('</body>', startBodyIndex);
 			//if (startBodyIndex > 0 && endBodyIndex > 0) {
@@ -1035,6 +1058,8 @@ function renderValueText(value, text) {
 		else {
 			// If <body> not found, use <html> instead
 			startBodyIndex = text.indexOf('<html>');
+			if (startBodyIndex < 0)
+				startBodyIndex = text.indexOf('<html ');
 			endBodyIndex = text.indexOf('</html>', startBodyIndex);
 			//if (startBodyIndex >= 0 && endBodyIndex > 0) {
 			if (endBodyIndex > 0) {
@@ -1045,7 +1070,7 @@ function renderValueText(value, text) {
 	} 
 	if (foundHTMLText) {
 		if (htmlContent.indexOf('mdel://') >= 0) {
-			var reg = new RegExp('(<\s*a.+)href\s*=\s*\"(mdel://)(.*)\"(.*>)', 'gi');
+			var reg = new RegExp('(<\s*a.+)href\s*=\s*\"(mdel://)([^"]*)\"(.*>)', 'gi');
 			htmlContent = htmlContent.replace(reg, "$1href=\"javascript:showSpec('$3')\"$4");
 		}
 		value.innerHTML += htmlContent;
@@ -1073,7 +1098,7 @@ function renderValueText(value, text) {
 function renderValueLink(value, text) {
 	if (text == null)
 		text = '';
-	if (text.indexOf('http://') == 1) {
+	if (text.indexOf('http://') == 1 || text.indexOf('https://') == 1 || text.indexOf('smb://') == 1) {
 		text = text.substring(1);
 		var anchor = document.createElement('a');
 		anchor.href = text;
@@ -1131,6 +1156,7 @@ function renderValueLink(value, text) {
 				if (pathOffset >= 0)
 					name = url.substring(pathOffset + 1);
 				var anchor = document.createElement('a');
+				url = getFileURL(url);
 				anchor.href = url;
 				anchor.target = '_blank';
 				anchor.appendChild(document.createTextNode(name));
@@ -1278,7 +1304,7 @@ function renderModel(responseXML) {
 													if (uri.indexOf("file://") == 0) {
 														var tokens = uri.substring(7);
 														//window.open(tokens);
-														window.open('','_blank').location.href = tokens; 
+														window.open('','_blank').location.href = getFileURL(tokens); 
 													} else {
 														var tokens = (' ' + uri).split(/(\r\n|[\r\n])/g);
 														//window.open(tokens[0]);
@@ -1396,8 +1422,19 @@ function renderModel(responseXML) {
 					|| classType == 'ProtocolStateMachine' || classType == 'OpaqueBehavior'
 					|| classType == 'FunctionalBehavior') {
 					var diagramTags = model.getElementsByTagName('diagram');
+					var diagramTagsRID = null;
 					if (diagramTags.length > 0) {
-						gotoElement(diagramTags[0].getAttribute('refid'), false);
+						// find diagram id
+						for (var k = 0; k < diagramTags.length; k++) {
+							if ("appearsIn" != diagramTags[k].parentElement.nodeName) {
+								diagramTagsRID = diagramTags[k].getAttribute('refid');
+								break;
+							}
+						}
+					} 
+					
+					if (diagramTagsRID != null) {
+						gotoElement(diagramTagsRID, false);
 						stopRender = true;
 					} else {
 						renderElement(model);
@@ -1745,7 +1782,7 @@ function createContextItem(container, icon, label, func, href, refid) {
 	var link = document.createElement('a');
 	if (href != null && href != "") {
 		if (href.indexOf("file://") == 0)
-			link.href = href.substring(7);
+			link.href = getFileURL(href.substring(7));
 		else
 			link.href = href;
 		link.target = "_blank";
@@ -1833,9 +1870,18 @@ function renderDiagram(model, diagamModel) {
 							var type = areas[this.id].getAttribute('type');
 							var elementId = areas[this.id].getAttribute('refid');
 							var isNotContentShape = areas[this.id].getAttribute('isNotContentShape');
+							var isHyperlink = areas[this.id].getAttribute('isHyperlink');
+							if (isHyperlink == true || isHyperlink == "true") {
+								url = areas[this.id].getAttribute('linkUrl');
+								if (url.indexOf("file://") == 0) {
+									url = getFileURL(url.substring(7));
+								}
+								window.open('','_blank').location.href = url; 
+								return false;
+							}
 							// for textbox, note
 							// fix bug when isNotContentShape is not defined in xml
-							if (isNotContentShape == true || isNotContentShape == "true") {
+							else if (isNotContentShape == true || isNotContentShape == "true") {
 								if (type == 1 || type == 2) { // link or file
 									//window.open(elementId, '_blank');
 									// http://www.dynamicdrive.com/forums/entry.php?256-Force-a-page-to-open-in-a-new-tab
@@ -1861,6 +1907,7 @@ function renderDiagram(model, diagamModel) {
 							var elementId = areas[this.id].getAttribute('refid');
 							var type = areas[this.id].getAttribute('type');
 							var isNotContentShape = areas[this.id].getAttribute('isNotContentShape');
+							var isHyperlink = areas[this.id].getAttribute('isHyperlink');
 							var id = this.id
 							// for textbox, note
 							if (isNotContentShape == true || isNotContentShape == "true") {
@@ -1872,13 +1919,7 @@ function renderDiagram(model, diagamModel) {
 									return false;
 								}
 								else {
-									ulcontext = document.getElementById('elementcontextmenu');
-									if (ulcontext == null) {
-										ulcontext = document.createElement('ul');
-										ulcontext.id = 'elementcontextmenu';
-										ulcontext.className = 'contextMenu';
-									}
-									removeAll(ulcontext);
+									ulcontext = createULContext();
 
 									var elementIds = elementId;
 									var elementsArray = [];
@@ -1925,133 +1966,143 @@ function renderDiagram(model, diagamModel) {
 									}
 
 									if (arrayLength > 0 && foundItem) {
-										// show context menu
-										var mic = Graphics.mousePosition(evt);
-										var mouseX = mic.x + 2;
-										var mouseY = mic.y + 2;
-										ulcontext.style.position = 'absolute';
-										ulcontext.style.left = mouseX + 'px';
-										ulcontext.style.top = mouseY + 'px';
-										ulcontext.style.display = 'block';
-										ulcontext.style.visibility = 'visible';
-										ulcontext.style.zIndex = (content.style.zIndex ? content.style.zIndex : 133) + 100;
-										content.appendChild(ulcontext);
-										Shadow.castShadow(ulcontext);
+										showContext(evt, content, ulcontext);
 									}
 								}				
 							}
 							else if (usecontextmenu) {
-								XMLRequest.send(resourcesLocation + 'xml/' + elementId + '.xml', function(responseXML) {
-									var hyperlinkModel = new Array();
-									var hyperlinkText = new Array();
-									var referTo = new Array();
-									var hyperlinkModelActive;
-									var hyperlinkTextActive;
-									var magicdraw;
-									var isShowMenu = true;
-									if (responseXML)
-										magicdraw = responseXML.getElementsByTagName('magicdraw')[0];
-									if (magicdraw != null) {
-										var model = firstChild(magicdraw);
-										specIcon = model.getAttribute('icon');
-										hyperlinkModelActive = getActiveHyperlinkModel(model);
+								if (isHyperlink == true || isHyperlink == 'true') {
+									ulcontext = createULContext();
+									
+									var name = areas[this.id].getAttribute('linkUrl');
+									if (name.indexOf("file://") == 0) {
+										name = getFileURL(name.substring(7));
 									}
-									var model = null;
-									if (magicdraw != null) {
-										model = firstChild(magicdraw);
-										if (model.hasChildNodes) {
-											var childNodes = model.childNodes;
-											for ( var i = 0; i < childNodes.length; i++) {
-												if (childNodes[i].tagName == 'appliedStereotype') {
-													if (childNodes[i].hasChildNodes) {
-														var stereotypes = childNodes[i].childNodes;
-														for (s = 0; s < stereotypes.length; s++) {
-															var stereotypesName = stereotypes[s].getAttribute('name')
-															if (stereotypesName == 'HyperlinkOwner') {
-																if (stereotypes[s].hasChildNodes) {
-																	var properties = stereotypes[s].childNodes;
-																	for (p = 0; p < properties.length; p++) {
-																		var propertyName = properties[p].getAttribute('name');
-																		if (propertyName == 'hyperlinkModel') {
-																			if (properties[p].hasChildNodes) {
-																				var elements = properties[p].childNodes;
-																				for ( var e = 0; e < elements.length; e++) {
-																					if (elements[e].tagName == "String" && elements[e].hasChildNodes())
-																					{
-																						var linkText = elements[e].childNodes;
-																						if (hyperlinkModelActive == null || linkText[0].nodeValue != hyperlinkModelActive.id)
+									var liitem = createContextItem(ulcontext, resourcesLocation + 'images/hyperlink_url.gif',  name,
+											function() {
+												var elementContext = document.getElementById('elementcontextmenu');
+												if (elementContext) {
+													elementContext.style.visibility = 'hidden';
+													Shadow.removeShadow(elementContext);
+												}
+											}, name);
+									
+									// show context menu
+									showContext(evt, content, ulcontext);
+								}
+								else {
+									XMLRequest.send(resourcesLocation + 'xml/' + elementId + '.xml', function(responseXML) {
+										var hyperlinkModel = new Array();
+										var hyperlinkText = new Array();
+										var referTo = new Array();
+										var hyperlinkModelActive;
+										var hyperlinkTextActive;
+										var magicdraw;
+										var isShowMenu = true;
+										if (responseXML)
+											magicdraw = responseXML.getElementsByTagName('magicdraw')[0];
+										if (magicdraw != null) {
+											var model = firstChild(magicdraw);
+											specIcon = model.getAttribute('icon');
+											hyperlinkModelActive = getActiveHyperlinkModel(model);
+										}
+										var model = null;
+										if (magicdraw != null) {
+											model = firstChild(magicdraw);
+											if (model.hasChildNodes) {
+												var childNodes = model.childNodes;
+												for ( var i = 0; i < childNodes.length; i++) {
+													if (childNodes[i].tagName == 'appliedStereotype') {
+														if (childNodes[i].hasChildNodes) {
+															var stereotypes = childNodes[i].childNodes;
+															for (s = 0; s < stereotypes.length; s++) {
+																var stereotypesName = stereotypes[s].getAttribute('name')
+																if (stereotypesName == 'HyperlinkOwner') {
+																	if (stereotypes[s].hasChildNodes) {
+																		var properties = stereotypes[s].childNodes;
+																		for (p = 0; p < properties.length; p++) {
+																			var propertyName = properties[p].getAttribute('name');
+																			if (propertyName == 'hyperlinkModel') {
+																				if (properties[p].hasChildNodes) {
+																					var elements = properties[p].childNodes;
+																					for ( var e = 0; e < elements.length; e++) {
+																						if (elements[e].tagName == "String" && elements[e].hasChildNodes())
 																						{
-																							hyperlinkText.push(new ModelLink(
-																								linkText[0].nodeValue, linkText[0].nodeValue,
-																								resourcesLocation + 'images/hyperlink_url.gif',
-																								false))
-																						}
-																					}
-																					else
-																					{
-																					var refid = elements[e].getAttribute('refid');
-																						if (hyperlinkModelActive == null || refid != hyperlinkModelActive.id)
-																						{
-																						hyperlinkModel.push(new ModelLink(refid, elements[e]
-																							.getAttribute('name'), elements[e]
-																								.getAttribute('icon'), true))
-																						}
-																					}
-																				}
-																			}
-																		} else if (propertyName == 'hyperlinkText') {
-																			if (properties[p].hasChildNodes) {
-																				var elements = properties[p].childNodes;
-																				for ( var e = 0; e < elements.length; e++) {
-																					if (elements[e].tagName == "String") {
-																						if (elements[e].hasChildNodes()) {
 																							var linkText = elements[e].childNodes;
-																							hyperlinkText.push(new ModelLink(
-																								linkText[0].nodeValue, linkText[0].nodeValue,
-																								resourcesLocation + 'images/hyperlink_url.gif',
-																								false))
-																						}
-																					} else {
-																						var refid = elements[e].getAttribute('refid');
-																						if (hyperlinkModelActive && hyperlinkModelActive.id) {
-																							if (refid != hyperlinkModelActive.id) {
-																								hyperlinkText.push(new ModelLink(refid,
-																									elements[e].getAttribute('name'),
-																									elements[e].getAttribute('icon'), true))
+																							if (hyperlinkModelActive == null || linkText[0].nodeValue != hyperlinkModelActive.id)
+																							{
+																								hyperlinkText.push(new ModelLink(
+																									linkText[0].nodeValue, linkText[0].nodeValue,
+																									resourcesLocation + 'images/hyperlink_url.gif',
+																									false))
 																							}
-																						} else {
-																							hyperlinkText.push(new ModelLink(refid,
-																								elements[e].getAttribute('name'), elements[e]
+																						}
+																						else
+																						{
+																						var refid = elements[e].getAttribute('refid');
+																							if (hyperlinkModelActive == null || refid != hyperlinkModelActive.id)
+																							{
+																							hyperlinkModel.push(new ModelLink(refid, elements[e]
+																								.getAttribute('name'), elements[e]
 																									.getAttribute('icon'), true))
+																							}
 																						}
 																					}
 																				}
-																			}
-																		} else if (propertyName == 'hyperlinkTextActive') {
-																			if (properties[p].hasChildNodes) {
-																				var elements = properties[p].childNodes;
-																				for ( var e = 0; e < elements.length; e++) {
-																					if (elements[e].tagName == "String") {
-																						if (elements[e].hasChildNodes) {
-																							var linkText = elements[e].childNodes;
-																							hyperlinkTextActive = new ModelLink(
-																								linkText[0].nodeValue, linkText[0].nodeValue,
-																								resourcesLocation + 'images/hyperlink_url.gif',
-																								false);
-																						}
-																					} else {
-																						var refid = elements[e].getAttribute('refid');
-																						if (hyperlinkModelActive && hyperlinkModelActive.id) {
-																							if (refid != hyperlinkModelActive.id) {
-																								hyperlinkTextActive = new ModelLink(refid,
-																									elements[e].getAttribute('name'),
-																									elements[e].getAttribute('icon'), true);
-
+																			} else if (propertyName == 'hyperlinkText') {
+																				if (properties[p].hasChildNodes) {
+																					var elements = properties[p].childNodes;
+																					for ( var e = 0; e < elements.length; e++) {
+																						if (elements[e].tagName == "String") {
+																							if (elements[e].hasChildNodes()) {
+																								var linkText = elements[e].childNodes;
+																								hyperlinkText.push(new ModelLink(
+																									linkText[0].nodeValue, linkText[0].nodeValue,
+																									resourcesLocation + 'images/hyperlink_url.gif',
+																									false))
 																							}
 																						} else {
-																							hyperlinkTextActive = new ModelLink(refid,
-																								elements[e].getAttribute('name'), elements[e]
-																									.getAttribute('icon'), true);
+																							var refid = elements[e].getAttribute('refid');
+																							if (hyperlinkModelActive && hyperlinkModelActive.id) {
+																								if (refid != hyperlinkModelActive.id) {
+																									hyperlinkText.push(new ModelLink(refid,
+																										elements[e].getAttribute('name'),
+																										elements[e].getAttribute('icon'), true))
+																								}
+																							} else {
+																								hyperlinkText.push(new ModelLink(refid,
+																									elements[e].getAttribute('name'), elements[e]
+																										.getAttribute('icon'), true))
+																							}
+																						}
+																					}
+																				}
+																			} else if (propertyName == 'hyperlinkTextActive') {
+																				if (properties[p].hasChildNodes) {
+																					var elements = properties[p].childNodes;
+																					for ( var e = 0; e < elements.length; e++) {
+																						if (elements[e].tagName == "String") {
+																							if (elements[e].hasChildNodes) {
+																								var linkText = elements[e].childNodes;
+																								hyperlinkTextActive = new ModelLink(
+																									linkText[0].nodeValue, linkText[0].nodeValue,
+																									resourcesLocation + 'images/hyperlink_url.gif',
+																									false);
+																							}
+																						} else {
+																							var refid = elements[e].getAttribute('refid');
+																							if (hyperlinkModelActive && hyperlinkModelActive.id) {
+																								if (refid != hyperlinkModelActive.id) {
+																									hyperlinkTextActive = new ModelLink(refid,
+																										elements[e].getAttribute('name'),
+																										elements[e].getAttribute('icon'), true);
+	
+																								}
+																							} else {
+																								hyperlinkTextActive = new ModelLink(refid,
+																									elements[e].getAttribute('name'), elements[e]
+																										.getAttribute('icon'), true);
+																							}
 																						}
 																					}
 																				}
@@ -2062,153 +2113,136 @@ function renderDiagram(model, diagamModel) {
 															}
 														}
 													}
-												}
-												else if (childNodes[i].tagName == 'refersTo') {
-													var referId = childNodes[i].getAttribute('refid');
-													var referIcon = childNodes[i].getAttribute('icon');
-													var referName = childNodes[i].getAttribute('name');
-													referTo.push(new ModelLink(referId, referName, referIcon, true));
+													else if (childNodes[i].tagName == 'refersTo') {
+														var referId = childNodes[i].getAttribute('refid');
+														var referIcon = childNodes[i].getAttribute('icon');
+														var referName = childNodes[i].getAttribute('name');
+														referTo.push(new ModelLink(referId, referName, referIcon, true));
+													}
 												}
 											}
 										}
-									}
-
-									ulcontext = document.getElementById('elementcontextmenu');
-									if (ulcontext == null) {
-										ulcontext = document.createElement('ul');
-										ulcontext.id = 'elementcontextmenu';
-										ulcontext.className = 'contextMenu';
-									}
-									removeAll(ulcontext);
-
-									var foundOtherLink = false;
-									// specification
-									var liitem = createContextItem(ulcontext, specIcon, 'Specification', function() {
-										showSpec(areas[id].getAttribute('refid'));
-									});
-									// active model
-									if (hyperlinkModelActive) {
-										if (!hyperlinkModelActive.isModel) {
-											liitem = createContextItem(ulcontext, hyperlinkModelActive.icon,
-												hyperlinkModelActive.name, function() {
-													var elementContext = document.getElementById('elementcontextmenu');
-													if (elementContext) {
-														elementContext.style.visibility = 'hidden';
-														Shadow.removeShadow(elementContext);
-													}
-												}, hyperlinkModelActive.name);
-										} else {
-										liitem = createContextItem(ulcontext, hyperlinkModelActive.icon, 'Go to '
-											+ hyperlinkModelActive.name, function() {
-											gotoElement(areas[id].getAttribute('refid'), false, true);
+	
+										ulcontext = createULContext();
+	
+										var foundOtherLink = false;
+										// specification
+										var liitem = createContextItem(ulcontext, specIcon, 'Specification', function() {
+											showSpec(areas[id].getAttribute('refid'));
 										});
-									}
-										foundOtherLink = true;
-									}
-									// active text
-									if (hyperlinkTextActive) {
-										if (!hyperlinkTextActive.isModel) {
-											liitem = createContextItem(ulcontext, hyperlinkTextActive.icon,
-												hyperlinkTextActive.name, function() {
-													var elementContext = document.getElementById('elementcontextmenu');
-													if (elementContext) {
-														elementContext.style.visibility = 'hidden';
-														Shadow.removeShadow(elementContext);
-													}
-												}, hyperlinkTextActive.name);
-										} else {
-											liitem = createContextItem(ulcontext, hyperlinkTextActive.icon, 'Go to '
-												+ hyperlinkTextActive.name, function() {
-												gotoElement(hyperlinkTextActive.id, false, true);
-											});
-										}
-										foundOtherLink = true;
-									}
-									// model links
-									var liitemIndex = liitem.length;
-									for ( var h = 0; h < hyperlinkModel.length; h++) {
-										liitem = createContextItem(ulcontext, hyperlinkModel[h].icon, 'Go to '
-											+ hyperlinkModel[h].name, function() {
-											showSpec(this.refid);
-										}, "", hyperlinkModel[h].id);
-										foundOtherLink = true;
-									}
-									// text links
-									var liitemIndex = liitem.length;
-									for ( var h = 0; h < hyperlinkText.length; h++) {
-										if (hyperlinkTextActive == null || hyperlinkText[h].id != hyperlinkTextActive.id) {
-											if (!hyperlinkText[h].isModel) {
-												liitem = createContextItem(ulcontext, hyperlinkText[h].icon, hyperlinkText[h].name,
-													function() {
+										// active model
+										if (hyperlinkModelActive) {
+											if (!hyperlinkModelActive.isModel) {
+												liitem = createContextItem(ulcontext, hyperlinkModelActive.icon,
+													hyperlinkModelActive.name, function() {
 														var elementContext = document.getElementById('elementcontextmenu');
 														if (elementContext) {
 															elementContext.style.visibility = 'hidden';
 															Shadow.removeShadow(elementContext);
 														}
-													}, hyperlinkText[h].name);
+													}, hyperlinkModelActive.name);
 											} else {
-												liitem = createContextItem(ulcontext, hyperlinkText[h].icon, 'Go to '
-													+ hyperlinkText[h].name, function() {
-													gotoElement(this.refid, false, true);
-												}, "", hyperlinkText[h].id);
+											liitem = createContextItem(ulcontext, hyperlinkModelActive.icon, 'Go to '
+												+ hyperlinkModelActive.name, function() {
+												gotoElement(areas[id].getAttribute('refid'), false, true);
+											});
+										}
+											foundOtherLink = true;
+										}
+										// active text
+										if (hyperlinkTextActive) {
+											if (!hyperlinkTextActive.isModel) {
+												liitem = createContextItem(ulcontext, hyperlinkTextActive.icon,
+													hyperlinkTextActive.name, function() {
+														var elementContext = document.getElementById('elementcontextmenu');
+														if (elementContext) {
+															elementContext.style.visibility = 'hidden';
+															Shadow.removeShadow(elementContext);
+														}
+													}, hyperlinkTextActive.name);
+											} else {
+												liitem = createContextItem(ulcontext, hyperlinkTextActive.icon, 'Go to '
+													+ hyperlinkTextActive.name, function() {
+													gotoElement(hyperlinkTextActive.id, false, true);
+												});
 											}
 											foundOtherLink = true;
 										}
-									}
-
-									// referItem
-									var liitemIndex = liitem.length;
-									for ( var h = 0; h < referTo.length; h++) {
-										liitem = createContextItem(ulcontext, referTo[h].icon, 'Go to '
-											+ referTo[h].name, function() {
-											gotoElement(this.refid, false, true);
-										}, "", referTo[h].id);
-										foundOtherLink = true;
-									}
-									
-									if (model) {
-										var classType = model.getAttribute('classType');
-										if (classType == 'State') {
-											var submachineTags = model.getElementsByTagName('submachine');
-											if (submachineTags.length > 0) {
-												liitem = createContextItem(ulcontext, submachineTags[0].getAttribute('icon'),
-													'Go to ' + submachineTags[0].getAttribute('name'), function() {
-														gotoElement(submachineTags[0].getAttribute('refid'), false, true);
-													});
-												foundOtherLink = true;
-											}
-										} else if (classType == 'CallBehaviorAction') {
-											var behaviorTags = model.getElementsByTagName('behavior');
-											if (behaviorTags.length > 0) {
-												liitem = createContextItem(ulcontext, behaviorTags[0].getAttribute('icon'),
-													'Go to ' + behaviorTags[0].getAttribute('name'), function() {
-														gotoElement(behaviorTags[0].getAttribute('refid'), false, true);
-													});
-												foundOtherLink = true;
-											}
-										} else if (classType == 'Diagram' && !foundOtherLink) {
-											isShowMenu = false;
+										// model links
+										var liitemIndex = liitem.length;
+										for ( var h = 0; h < hyperlinkModel.length; h++) {
+											liitem = createContextItem(ulcontext, hyperlinkModel[h].icon, 'Go to '
+												+ hyperlinkModel[h].name, function() {
+												showSpec(this.refid);
+											}, "", hyperlinkModel[h].id);
+											foundOtherLink = true;
 										}
-									}
-
-									if (isShowMenu) {
-									// show context menu
-									var mic = Graphics.mousePosition(evt);
-									var mouseX = mic.x + 2;
-									var mouseY = mic.y + 2;
-									ulcontext.style.position = 'absolute';
-									ulcontext.style.left = mouseX + 'px';
-									ulcontext.style.top = mouseY + 'px';
-									ulcontext.style.display = 'block';
-									ulcontext.style.visibility = 'visible';
-									ulcontext.style.zIndex = (content.style.zIndex ? content.style.zIndex : 133) + 100;
-									content.appendChild(ulcontext);
-									Shadow.castShadow(ulcontext);
-									}
-									else {
-										showSpec(areas[id].getAttribute('refid'));
-									}
-								});
+										// text links
+										var liitemIndex = liitem.length;
+										for ( var h = 0; h < hyperlinkText.length; h++) {
+											if (hyperlinkTextActive == null || hyperlinkText[h].id != hyperlinkTextActive.id) {
+												if (!hyperlinkText[h].isModel) {
+													liitem = createContextItem(ulcontext, hyperlinkText[h].icon, hyperlinkText[h].name,
+														function() {
+															var elementContext = document.getElementById('elementcontextmenu');
+															if (elementContext) {
+																elementContext.style.visibility = 'hidden';
+																Shadow.removeShadow(elementContext);
+															}
+														}, hyperlinkText[h].name);
+												} else {
+													liitem = createContextItem(ulcontext, hyperlinkText[h].icon, 'Go to '
+														+ hyperlinkText[h].name, function() {
+														gotoElement(this.refid, false, true);
+													}, "", hyperlinkText[h].id);
+												}
+												foundOtherLink = true;
+											}
+										}
+	
+										// referItem
+										var liitemIndex = liitem.length;
+										for ( var h = 0; h < referTo.length; h++) {
+											liitem = createContextItem(ulcontext, referTo[h].icon, 'Go to '
+												+ referTo[h].name, function() {
+												gotoElement(this.refid, false, true);
+											}, "", referTo[h].id);
+											foundOtherLink = true;
+										}
+										
+										if (model) {
+											var classType = model.getAttribute('classType');
+											if (classType == 'State') {
+												var submachineTags = model.getElementsByTagName('submachine');
+												if (submachineTags.length > 0) {
+													liitem = createContextItem(ulcontext, submachineTags[0].getAttribute('icon'),
+														'Go to ' + submachineTags[0].getAttribute('name'), function() {
+															gotoElement(submachineTags[0].getAttribute('refid'), false, true);
+														});
+													foundOtherLink = true;
+												}
+											} else if (classType == 'CallBehaviorAction') {
+												var behaviorTags = model.getElementsByTagName('behavior');
+												if (behaviorTags.length > 0) {
+													liitem = createContextItem(ulcontext, behaviorTags[0].getAttribute('icon'),
+														'Go to ' + behaviorTags[0].getAttribute('name'), function() {
+															gotoElement(behaviorTags[0].getAttribute('refid'), false, true);
+														});
+													foundOtherLink = true;
+												}
+											} else if (classType == 'Diagram' && !foundOtherLink) {
+												isShowMenu = false;
+											}
+										}
+	
+										if (isShowMenu) {
+											showContext(evt, content, ulcontext);
+										}
+										else {
+											showSpec(areas[id].getAttribute('refid'));
+										}
+									});
+								}
 							} else {
 								gotoElement(elementId, false);
 							}
@@ -2301,6 +2335,34 @@ function renderDiagram(model, diagamModel) {
 		image.useMap = '#' + mapName;
 	diagramContainer.appendChild(image);
 	content.appendChild(diagramContainer);
+}
+
+
+function createULContext() {
+	ulcontext = document.getElementById('elementcontextmenu');
+	if (typeof ulcontext == 'undefined' || ulcontext == null) {
+		ulcontext = document.createElement('ul');
+		ulcontext.id = 'elementcontextmenu';
+		ulcontext.className = 'contextMenu';
+	}
+	removeAll(ulcontext);
+	
+	return ulcontext;
+}
+
+function showContext(evt, content, ulcontext) {
+	// show context menu
+	var mic = Graphics.mousePosition(evt);
+	var mouseX = mic.x + 2;
+	var mouseY = mic.y + 2;
+	ulcontext.style.position = 'absolute';
+	ulcontext.style.left = mouseX + 'px';
+	ulcontext.style.top = mouseY + 'px';
+	ulcontext.style.display = 'block';
+	ulcontext.style.visibility = 'visible';
+	ulcontext.style.zIndex = (content.style.zIndex ? content.style.zIndex : 133) + 100;
+	content.appendChild(ulcontext);
+	Shadow.castShadow(ulcontext);
 }
 
 /**
@@ -2920,4 +2982,16 @@ function isResizableSVG(imageFormat){
 		result = true;
 	}
 	return result;
+}
+
+function getFileURL(url){
+	var is_firefox = /firefox/i.test(navigator.userAgent)
+	if (is_firefox && !url.startsWith(contextPath))
+	{
+		if (url.startsWith("\\\\"))
+			url = "file:///" + url;
+		else
+			url = "file://" + url;
+	}
+	return url;
 }
