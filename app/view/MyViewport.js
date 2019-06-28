@@ -908,9 +908,9 @@ function createCommentPanel()
                                                             result[0].contentTitle = document.getElementById('titleLabel').innerText;
                                                             result[0].comment = comment;
                                                             
-                                                            var orginDisclaimer = "*Generated from Process Portal* \r\n" +
-                                                            "Reference Diagram: [" + result[0].contentTitle +
-                                                            "]("  +  window.location.href + ")";
+                                                             var orginDisclaimer = "Reference Diagram: [" + result[0].contentTitle +
+                                                            "]("  +  window.location.href + ")\r\n" +
+                                                            "*Generated from Process Portal*";
                                                             
                                                             var constructedString = "https://github.com/usnistgov/ElectionModeling/issues/new" + "?title=" + summary + "&body=" + encodeURIComponent(comment + "\r\n" + orginDisclaimer);
                                                             
