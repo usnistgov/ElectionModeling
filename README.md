@@ -6,6 +6,7 @@ The nist-pages branch of this repository holds documentation files for an HTML v
 
 |Name                          |Description  |
 |------------------------------|-------------|
+| **BPMN2** | Selected Business Process Models in BPMN2 XMI Format |
 | **DMN** | Business Process Models in Decision Model Notation |
 | **OWL** | Semantic Model in Web Ontology Language |
 | **XPDL** | Business Process Models in XML Process Definition Language Format |

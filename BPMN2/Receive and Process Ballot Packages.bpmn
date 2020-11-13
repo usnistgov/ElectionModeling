@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<semantic:definitions id="_18_5_1_11940316_1500467309814_661011_24185" name="Receive and Process Ballot Packages" targetNamespace="http://www.trisotech.com/definitions/_18_5_1_11940316_1500467309814_661011_24185" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:semantic="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:rss="http://purl.org/rss/2.0/" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:trisobpmn="http://www.trisotech.com/2014/triso/bpmn" xmlns:trisofeed="http://trisotech.com/feed" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:ns1="http://www.trisotech.com/definitions/_18_5_1_11940316_1500467309814_661011_24185" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:triso="http://www.trisotech.com/2015/triso/modeling" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC">
+    <semantic:dataStore isUnlimited="false" name="Ballot Tracking System" id="_18_5_1_11940316_1501695325814_296626_26484"/>
+    <semantic:process isExecutable="false" name="Receive and Process Ballot Packages" id="_18_5_1_11940316_1500577702222_198105_36518"/>
+    <semantic:process isExecutable="false" name="Voter" id="_18_5_1_11940316_1501694356420_939283_25962_proc"/>
+    <semantic:process isExecutable="false" name="Election Jurisdiction" id="_18_5_1_11940316_1501694377700_989448_25978_proc">
+        <semantic:startEvent name="Receive Ballot Package" id="_18_5_1_11940316_1501694409902_279812_25997">
+            <semantic:outgoing>_18_5_1_11940316_1501694460502_151256_26014</semantic:outgoing>
+            <semantic:messageEventDefinition messageRef="_18_5_1_11940316_1501803661543_815853_33160"/>
+        </semantic:startEvent>
+        <semantic:businessRuleTask completionQuantity="1" isForCompensation="false" startQuantity="1" name="Determine eligibility to  be counted" id="_18_5_1_11940316_1501694466300_131571_26040">
+            <semantic:documentation>Determine whether the ballot can be counted. This may be based on a variety of factors, such as timeliness, completeness of the ballot package, and eligibility to vote.</semantic:documentation>
+            <semantic:incoming>_18_5_1_11940316_1501694460502_151256_26014</semantic:incoming>
+            <semantic:outgoing>_18_5_1_11940316_1501694515916_308940_26046</semantic:outgoing>
+        </semantic:businessRuleTask>
+        <semantic:exclusiveGateway gatewayDirection="Unspecified" name="Countability?" id="_18_5_1_11940316_1501694541414_755343_26066">
+            <semantic:incoming>_18_5_1_11940316_1501694515916_308940_26046</semantic:incoming>
+            <semantic:outgoing>_18_5_1_11940316_1501694541414_902902_26067</semantic:outgoing>
+            <semantic:outgoing>_18_5_1_11940316_1501694757717_832041_26111</semantic:outgoing>
+            <semantic:outgoing>_18_5_1_11940316_1501694836704_408127_26129</semantic:outgoing>
+        </semantic:exclusiveGateway>
+        <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Contact voter to correct deficiency" id="_18_5_1_11940316_1501694544542_828365_26084">
+            <semantic:documentation>If the ballot package is deficient, the voter may be contacted to correct the deficiency. There is usually a limited time window for this correction to occur.</semantic:documentation>
+            <semantic:incoming>_18_5_1_11940316_1501694541414_902902_26067</semantic:incoming>
+            <semantic:outgoing>_18_5_1_11940316_1501694965481_193032_26211</semantic:outgoing>
+        </semantic:task>
+        <semantic:endEvent name="Not Countable" id="_18_5_1_11940316_1501694765963_504055_26121">
+            <semantic:incoming>_18_5_1_11940316_1501694757717_832041_26111</semantic:incoming>
+        </semantic:endEvent>
+        <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Update voter record with ballot package received" id="_18_5_1_11940316_1501694839605_894797_26145">
+            <semantic:documentation>Update the voter record to indicate that the ballot package has been received by the election jurisdiction.</semantic:documentation>
+            <semantic:incoming>_18_5_1_11940316_1501694836704_408127_26129</semantic:incoming>
+            <semantic:incoming>_18_5_1_11940316_1501694965481_193032_26211</semantic:incoming>
+            <semantic:outgoing>_18_5_1_11940316_1501694985538_682963_26220</semantic:outgoing>
+            <semantic:ioSpecification>
+                <semantic:dataOutput id="Dout1605267752964"/>
+                <semantic:inputSet/>
+                <semantic:outputSet>
+                    <semantic:dataOutputRefs>Dout1605267752964</semantic:dataOutputRefs>
+                </semantic:outputSet>
+            </semantic:ioSpecification>
+            <semantic:dataOutputAssociation id="_18_5_1_11940316_1501695359250_575820_26510">
+                <semantic:sourceRef>Dout1605267752964</semantic:sourceRef>
+                <semantic:targetRef>_18_5_1_11940316_1501695325849_834382_26490</semantic:targetRef>
+            </semantic:dataOutputAssociation>
+        </semantic:task>
+        <semantic:boundaryEvent attachedToRef="_18_5_1_11940316_1501694544542_828365_26084" cancelActivity="true" parallelMultiple="false" name="Deadline Passes" id="_18_5_1_11940316_1501694870048_596232_26176">
+            <semantic:outgoing>_18_5_1_11940316_1501694924378_34155_26193</semantic:outgoing>
+            <semantic:timerEventDefinition/>
+        </semantic:boundaryEvent>
+        <semantic:endEvent name="Not Countable" id="_18_5_1_11940316_1501694927145_198481_26205">
+            <semantic:incoming>_18_5_1_11940316_1501694924378_34155_26193</semantic:incoming>
+        </semantic:endEvent>
+        <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Index ballot package as required" id="_18_5_1_11940316_1501694990359_781669_26237">
+            <semantic:documentation>Index the ballot package so that it can be counted in its appropriate batch.</semantic:documentation>
+            <semantic:incoming>_18_5_1_11940316_1501694985538_682963_26220</semantic:incoming>
+            <semantic:outgoing>_18_5_1_11940316_1501695004441_491961_26248</semantic:outgoing>
+        </semantic:task>
+        <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Separate ballot/paper CVR from voter package" id="_18_5_1_11940316_1501695006548_430877_26265">
+            <semantic:documentation>Separate the voter's identification information from the ballot.</semantic:documentation>
+            <semantic:incoming>_18_5_1_11940316_1501695004441_491961_26248</semantic:incoming>
+            <semantic:outgoing>_18_5_1_11940316_1501695037117_984222_26279</semantic:outgoing>
+        </semantic:task>
+        <semantic:parallelGateway gatewayDirection="Unspecified" name="" id="_18_5_1_11940316_1501695040646_931111_26292">
+            <semantic:incoming>_18_5_1_11940316_1501695037117_984222_26279</semantic:incoming>
+            <semantic:outgoing>_18_5_1_11940316_1501695042622_386453_26298</semantic:outgoing>
+            <semantic:outgoing>_18_5_1_11940316_1501695070762_793130_26327</semantic:outgoing>
+        </semantic:parallelGateway>
+        <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Retain ballot delivery package" id="_18_5_1_11940316_1501695045087_54901_26316">
+            <semantic:documentation>Retain the ballot package (i.e. the voter identification information) according to retention schedules.</semantic:documentation>
+            <semantic:incoming>_18_5_1_11940316_1501695042622_386453_26298</semantic:incoming>
+            <semantic:outgoing>_18_5_1_11940316_1501695097313_322185_26356</semantic:outgoing>
+        </semantic:task>
+        <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Send ballot/paper CVR to next" id="_18_5_1_11940316_1501695072809_439160_26344">
+            <semantic:incoming>_18_5_1_11940316_1501695070762_793130_26327</semantic:incoming>
+            <semantic:outgoing>_18_5_1_11940316_1501695106228_904135_26376</semantic:outgoing>
+        </semantic:task>
+        <semantic:parallelGateway gatewayDirection="Unspecified" name="" id="_18_5_1_11940316_1501695102319_796660_26370">
+            <semantic:incoming>_18_5_1_11940316_1501695097313_322185_26356</semantic:incoming>
+            <semantic:incoming>_18_5_1_11940316_1501695106228_904135_26376</semantic:incoming>
+            <semantic:outgoing>_18_5_1_11940316_1501695139984_800237_26434</semantic:outgoing>
+        </semantic:parallelGateway>
+        <semantic:endEvent name="Ballot received and Processed" id="_18_5_1_11940316_1501695137316_71643_26420">
+            <semantic:incoming>_18_5_1_11940316_1501695139984_800237_26434</semantic:incoming>
+        </semantic:endEvent>
+        <semantic:dataStoreReference dataStoreRef="_18_5_1_11940316_1501695325814_296626_26484" name="Ballot Tracking System" id="_18_5_1_11940316_1501695325849_834382_26490"/>
+        <semantic:sequenceFlow sourceRef="_18_5_1_11940316_1501694409902_279812_25997" targetRef="_18_5_1_11940316_1501694466300_131571_26040" name="" id="_18_5_1_11940316_1501694460502_151256_26014"/>
+        <semantic:sequenceFlow sourceRef="_18_5_1_11940316_1501694466300_131571_26040" targetRef="_18_5_1_11940316_1501694541414_755343_26066" name="" id="_18_5_1_11940316_1501694515916_308940_26046"/>
+        <semantic:sequenceFlow sourceRef="_18_5_1_11940316_1501694541414_755343_26066" targetRef="_18_5_1_11940316_1501694544542_828365_26084" name="" id="_18_5_1_11940316_1501694541414_902902_26067">
+            <semantic:conditionExpression>Correctable</semantic:conditionExpression>
+        </semantic:sequenceFlow>
+        <semantic:sequenceFlow sourceRef="_18_5_1_11940316_1501694541414_755343_26066" targetRef="_18_5_1_11940316_1501694765963_504055_26121" name="" id="_18_5_1_11940316_1501694757717_832041_26111">
+            <semantic:conditionExpression>Not Countable</semantic:conditionExpression>
+        </semantic:sequenceFlow>
+        <semantic:sequenceFlow sourceRef="_18_5_1_11940316_1501694541414_755343_26066" targetRef="_18_5_1_11940316_1501694839605_894797_26145" name="" id="_18_5_1_11940316_1501694836704_408127_26129">
+            <semantic:conditionExpression>Countable</semantic:conditionExpression>
+        </semantic:sequenceFlow>
+        <semantic:sequenceFlow sourceRef="_18_5_1_11940316_1501694870048_596232_26176" targetRef="_18_5_1_11940316_1501694927145_198481_26205" name="" id="_18_5_1_11940316_1501694924378_34155_26193">
+            <semantic:conditionExpression/>
+        </semantic:sequenceFlow>
+        <semantic:sequenceFlow sourceRef="_18_5_1_11940316_1501694544542_828365_26084" targetRef="_18_5_1_11940316_1501694839605_894797_26145" name="" id="_18_5_1_11940316_1501694965481_193032_26211"/>
+        <semantic:sequenceFlow sourceRef="_18_5_1_11940316_1501694839605_894797_26145" targetRef="_18_5_1_11940316_1501694990359_781669_26237" name="" id="_18_5_1_11940316_1501694985538_682963_26220"/>
+        <semantic:sequenceFlow sourceRef="_18_5_1_11940316_1501694990359_781669_26237" targetRef="_18_5_1_11940316_1501695006548_430877_26265" name="" id="_18_5_1_11940316_1501695004441_491961_26248"/>
+        <semantic:sequenceFlow sourceRef="_18_5_1_11940316_1501695006548_430877_26265" targetRef="_18_5_1_11940316_1501695040646_931111_26292" name="" id="_18_5_1_11940316_1501695037117_984222_26279"/>
+        <semantic:sequenceFlow sourceRef="_18_5_1_11940316_1501695040646_931111_26292" targetRef="_18_5_1_11940316_1501695045087_54901_26316" name="" id="_18_5_1_11940316_1501695042622_386453_26298"/>
+        <semantic:sequenceFlow sourceRef="_18_5_1_11940316_1501695040646_931111_26292" targetRef="_18_5_1_11940316_1501695072809_439160_26344" name="" id="_18_5_1_11940316_1501695070762_793130_26327"/>
+        <semantic:sequenceFlow sourceRef="_18_5_1_11940316_1501695045087_54901_26316" targetRef="_18_5_1_11940316_1501695102319_796660_26370" name="" id="_18_5_1_11940316_1501695097313_322185_26356"/>
+        <semantic:sequenceFlow sourceRef="_18_5_1_11940316_1501695072809_439160_26344" targetRef="_18_5_1_11940316_1501695102319_796660_26370" name="" id="_18_5_1_11940316_1501695106228_904135_26376"/>
+        <semantic:sequenceFlow sourceRef="_18_5_1_11940316_1501695102319_796660_26370" targetRef="_18_5_1_11940316_1501695137316_71643_26420" name="" id="_18_5_1_11940316_1501695139984_800237_26434"/>
+        <semantic:textAnnotation id="_18_5_1_11940316_1502918672119_474780_27829">
+            <semantic:text>What is this? </semantic:text>
+        </semantic:textAnnotation>
+        <semantic:association associationDirection="None" sourceRef="_18_5_1_11940316_1501695072809_439160_26344" targetRef="_18_5_1_11940316_1502918672119_474780_27829" id="_18_5_1_11940316_1502918672015_24862_27828"/>
+        <semantic:textAnnotation id="_18_5_2_11940316_1504893956226_952040_33403">
+            <semantic:text>CVR may not be best term </semantic:text>
+        </semantic:textAnnotation>
+        <semantic:association associationDirection="None" sourceRef="_18_5_1_11940316_1501695006548_430877_26265" targetRef="_18_5_2_11940316_1504893956226_952040_33403" id="_18_5_2_11940316_1504893956106_340784_33402"/>
+    </semantic:process>
+    <semantic:message name="Ballot Package" id="_18_5_1_11940316_1501803661543_815853_33160"/>
+    <semantic:message name="Clarification Request" id="_18_5_1_11940316_1501803735311_524444_33178"/>
+    <semantic:message name="Clarification Response" id="_18_5_1_11940316_1501803756899_396306_33196"/>
+    <semantic:collaboration id="C1605267752967">
+        <semantic:participant name="Voter" processRef="_18_5_1_11940316_1501694356420_939283_25962_proc" id="_18_5_1_11940316_1501694356420_939283_25962"/>
+        <semantic:participant name="Election Jurisdiction" processRef="_18_5_1_11940316_1501694377700_989448_25978_proc" id="_18_5_1_11940316_1501694377700_989448_25978"/>
+        <semantic:messageFlow messageRef="_18_5_1_11940316_1501803661543_815853_33160" name="" sourceRef="_18_5_1_11940316_1501694356420_939283_25962" targetRef="ns1:_18_5_1_11940316_1501694409902_279812_25997" id="_18_5_1_11940316_1501694418096_172047_26006"/>
+        <semantic:messageFlow messageRef="_18_5_1_11940316_1501803735311_524444_33178" name="" sourceRef="ns1:_18_5_1_11940316_1501694544542_828365_26084" targetRef="_18_5_1_11940316_1501694356420_939283_25962" id="_18_5_1_11940316_1501694849868_380922_26154"/>
+        <semantic:messageFlow messageRef="_18_5_1_11940316_1501803756899_396306_33196" name="" sourceRef="_18_5_1_11940316_1501694356420_939283_25962" targetRef="ns1:_18_5_1_11940316_1501694544542_828365_26084" id="_18_5_1_11940316_1501694858786_830356_26160"/>
+    </semantic:collaboration>
+    <bpmndi:BPMNDiagram documentation="" id="_18_5_1_11940316_1500577702262_98388_36528" name="Receive and Process Ballot Packages" resolution="72.00000200271606">
+        <bpmndi:BPMNPlane bpmnElement="C1605267752967" trisobpmn:diagramHeight="662.0" trisobpmn:diagramWidth="1375.0">
+            <bpmndi:BPMNShape bpmnElement="_18_5_1_11940316_1501694356420_939283_25962" isHorizontal="true" color:background-color="#e1e1c3" color:border-color="#424242" id="S1605267752946__18_5_1_11940316_1501694356420_939283_25962">
+                <dc:Bounds height="111.0" width="1333.0" x="0.0" y="0.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_18_5_1_11940316_1501694377700_989448_25978" isHorizontal="true" color:background-color="#e1e1c3" color:border-color="#424242" id="S1605267752947__18_5_1_11940316_1501694377700_989448_25978">
+                <dc:Bounds height="501.0" width="1375.0" x="0.0" y="161.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_18_5_1_11940316_1501694409902_279812_25997" color:background-color="#ffcc33" color:border-color="#424242" id="S1605267752948__18_5_1_11940316_1501694409902_279812_25997">
+                <dc:Bounds height="25.0" width="25.0" x="70.0" y="399.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_18_5_1_11940316_1501694466300_131571_26040" color:background-color="#feefa5" color:border-color="#c7b299" id="S1605267752949__18_5_1_11940316_1501694466300_131571_26040">
+                <dc:Bounds height="57.0" width="120.0" x="147.0" y="383.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_18_5_1_11940316_1501694541414_755343_26066" isMarkerVisible="false" color:background-color="#d5d5d5" color:border-color="#7c816d" id="S1605267752950__18_5_1_11940316_1501694541414_755343_26066">
+                <dc:Bounds height="40.0" width="40.0" x="322.0" y="392.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_18_5_1_11940316_1501694544542_828365_26084" color:background-color="#feefa5" color:border-color="#636363" id="S1605267752951__18_5_1_11940316_1501694544542_828365_26084">
+                <dc:Bounds height="50.0" width="141.0" x="417.0" y="231.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_18_5_1_11940316_1501694765963_504055_26121" color:background-color="#ffcc33" color:border-color="#424242" id="S1605267752952__18_5_1_11940316_1501694765963_504055_26121">
+                <dc:Bounds height="25.0" width="25.0" x="475.0" y="532.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_18_5_1_11940316_1501694839605_894797_26145" color:background-color="#feefa5" color:border-color="#636363" id="S1605267752953__18_5_1_11940316_1501694839605_894797_26145">
+                <dc:Bounds height="57.0" width="120.0" x="427.0" y="383.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_18_5_1_11940316_1501694870048_596232_26176" color:background-color="#e1e1c3" color:border-color="#99995c" id="S1605267752954__18_5_1_11940316_1501694870048_596232_26176">
+                <dc:Bounds height="40.0" width="48.0" x="510.0" y="268.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_18_5_1_11940316_1501694927145_198481_26205" color:background-color="#ffcc33" color:border-color="#424242" id="S1605267752955__18_5_1_11940316_1501694927145_198481_26205">
+                <dc:Bounds height="25.0" width="25.0" x="609.0" y="315.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_18_5_1_11940316_1501694990359_781669_26237" color:background-color="#feefa5" color:border-color="#636363" id="S1605267752956__18_5_1_11940316_1501694990359_781669_26237">
+                <dc:Bounds height="57.0" width="120.0" x="609.0" y="385.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_18_5_1_11940316_1501695006548_430877_26265" color:background-color="#feefa5" color:border-color="#636363" id="S1605267752957__18_5_1_11940316_1501695006548_430877_26265">
+                <dc:Bounds height="57.0" width="120.0" x="784.0" y="384.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_18_5_1_11940316_1501695040646_931111_26292" color:background-color="#ffcc33" color:border-color="#424242" id="S1605267752958__18_5_1_11940316_1501695040646_931111_26292">
+                <dc:Bounds height="40.0" width="40.0" x="959.0" y="392.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_18_5_1_11940316_1501695045087_54901_26316" color:background-color="#feefa5" color:border-color="#636363" id="S1605267752959__18_5_1_11940316_1501695045087_54901_26316">
+                <dc:Bounds height="50.0" width="120.0" x="1015.0" y="322.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_18_5_1_11940316_1501695072809_439160_26344" color:background-color="#feefa5" color:border-color="#636363" id="S1605267752960__18_5_1_11940316_1501695072809_439160_26344">
+                <dc:Bounds height="50.0" width="120.0" x="1015.0" y="441.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_18_5_1_11940316_1501695102319_796660_26370" color:background-color="#ffcc33" color:border-color="#424242" id="S1605267752961__18_5_1_11940316_1501695102319_796660_26370">
+                <dc:Bounds height="40.0" width="40.0" x="1169.0" y="392.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_18_5_1_11940316_1501695137316_71643_26420" color:background-color="#ffcc33" color:border-color="#424242" id="S1605267752962__18_5_1_11940316_1501695137316_71643_26420">
+                <dc:Bounds height="25.0" width="25.0" x="1274.0" y="399.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_18_5_1_11940316_1501695325849_834382_26490" color:background-color="#e1e1c3" color:border-color="#99995c" id="S1605267752963__18_5_1_11940316_1501695325849_834382_26490">
+                <dc:Bounds height="64.0" width="175.0" x="553.0" y="511.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_18_5_1_11940316_1502918672119_474780_27829" color:background-color="#ffffff" color:border-color="#424242" id="S1605267752965__18_5_1_11940316_1502918672119_474780_27829">
+                <dc:Bounds height="36.0" width="87.0" x="952.0" y="511.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_18_5_2_11940316_1504893956226_952040_33403" color:background-color="#ffffff" color:border-color="#424242" id="S1605267752966__18_5_2_11940316_1504893956226_952040_33403">
+                <dc:Bounds height="40.0" width="100.0" x="826.0" y="301.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_1_11940316_1501695359250_575820_26510" sourceElement="S1605267752953__18_5_1_11940316_1501694839605_894797_26145" color:border-color="#424242" id="E1605267752968__18_5_1_11940316_1501695359250_575820_26510">
+                <di:waypoint x="487.0" y="440.0"/>
+                <di:waypoint x="487.0" y="462.0"/>
+                <di:waypoint x="641.0" y="462.0"/>
+                <di:waypoint x="641.0" y="514.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_2_11940316_1504893956106_340784_33402" color:border-color="#424242" id="E1605267752969__18_5_2_11940316_1504893956106_340784_33402">
+                <di:waypoint x="854.0" y="384.0"/>
+                <di:waypoint x="869.0" y="341.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_1_11940316_1501695106228_904135_26376" color:border-color="#424242" id="E1605267752970__18_5_1_11940316_1501695106228_904135_26376">
+                <di:waypoint x="1135.0" y="466.0"/>
+                <di:waypoint x="1187.0" y="466.0"/>
+                <di:waypoint x="1187.0" y="430.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_1_11940316_1501695042622_386453_26298" color:border-color="#424242" id="E1605267752971__18_5_1_11940316_1501695042622_386453_26298">
+                <di:waypoint x="977.0" y="394.0"/>
+                <di:waypoint x="977.0" y="350.0"/>
+                <di:waypoint x="1015.0" y="350.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_1_11940316_1501694757717_832041_26111" color:border-color="#424242" id="E1605267752972__18_5_1_11940316_1501694757717_832041_26111">
+                <di:waypoint x="342.0" y="432.0"/>
+                <di:waypoint x="342.0" y="544.0"/>
+                <di:waypoint x="475.0" y="544.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_1_11940316_1501694836704_408127_26129" color:border-color="#424242" id="E1605267752973__18_5_1_11940316_1501694836704_408127_26129">
+                <di:waypoint x="362.0" y="412.0"/>
+                <di:waypoint x="427.0" y="412.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_1_11940316_1501694985538_682963_26220" color:border-color="#424242" id="E1605267752974__18_5_1_11940316_1501694985538_682963_26220">
+                <di:waypoint x="547.0" y="412.0"/>
+                <di:waypoint x="609.0" y="412.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_1_11940316_1501695004441_491961_26248" color:border-color="#424242" id="E1605267752975__18_5_1_11940316_1501695004441_491961_26248">
+                <di:waypoint x="729.0" y="410.0"/>
+                <di:waypoint x="784.0" y="410.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_1_11940316_1501694849868_380922_26154" color:border-color="#424242" id="E1605267752976__18_5_1_11940316_1501694849868_380922_26154">
+                <di:waypoint x="434.0" y="231.0"/>
+                <di:waypoint x="434.0" y="111.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_1_11940316_1501694858786_830356_26160" color:border-color="#424242" id="E1605267752977__18_5_1_11940316_1501694858786_830356_26160">
+                <di:waypoint x="574.0" y="111.0"/>
+                <di:waypoint x="574.0" y="231.0"/>
+                <di:waypoint x="558.0" y="231.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_1_11940316_1501695037117_984222_26279" color:border-color="#424242" id="E1605267752978__18_5_1_11940316_1501695037117_984222_26279">
+                <di:waypoint x="904.0" y="413.0"/>
+                <di:waypoint x="960.0" y="413.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_1_11940316_1501694460502_151256_26014" color:border-color="#424242" id="E1605267752979__18_5_1_11940316_1501694460502_151256_26014">
+                <di:waypoint x="94.0" y="411.0"/>
+                <di:waypoint x="147.0" y="411.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_1_11940316_1501694965481_193032_26211" color:border-color="#424242" id="E1605267752980__18_5_1_11940316_1501694965481_193032_26211">
+                <di:waypoint x="487.0" y="281.0"/>
+                <di:waypoint x="487.0" y="383.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_1_11940316_1501695139984_800237_26434" color:border-color="#424242" id="E1605267752981__18_5_1_11940316_1501695139984_800237_26434">
+                <di:waypoint x="1208.0" y="411.0"/>
+                <di:waypoint x="1274.0" y="411.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_1_11940316_1501694418096_172047_26006" color:border-color="#424242" id="E1605267752982__18_5_1_11940316_1501694418096_172047_26006">
+                <di:waypoint x="82.0" y="111.0"/>
+                <di:waypoint x="82.0" y="399.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_1_11940316_1501695070762_793130_26327" color:border-color="#424242" id="E1605267752983__18_5_1_11940316_1501695070762_793130_26327">
+                <di:waypoint x="980.0" y="431.0"/>
+                <di:waypoint x="980.0" y="466.0"/>
+                <di:waypoint x="1015.0" y="466.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_1_11940316_1502918672015_24862_27828" color:border-color="#424242" id="E1605267752984__18_5_1_11940316_1502918672015_24862_27828">
+                <di:waypoint x="1043.0" y="491.0"/>
+                <di:waypoint x="1018.0" y="511.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_1_11940316_1501694541414_902902_26067" color:border-color="#424242" id="E1605267752985__18_5_1_11940316_1501694541414_902902_26067">
+                <di:waypoint x="342.0" y="392.0"/>
+                <di:waypoint x="342.0" y="256.0"/>
+                <di:waypoint x="417.0" y="256.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_1_11940316_1501694924378_34155_26193" color:border-color="#424242" id="E1605267752986__18_5_1_11940316_1501694924378_34155_26193">
+                <di:waypoint x="536.0" y="323.0"/>
+                <di:waypoint x="536.0" y="327.0"/>
+                <di:waypoint x="609.0" y="327.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_1_11940316_1501695097313_322185_26356" color:border-color="#424242" id="E1605267752987__18_5_1_11940316_1501695097313_322185_26356">
+                <di:waypoint x="1135.0" y="347.0"/>
+                <di:waypoint x="1190.0" y="347.0"/>
+                <di:waypoint x="1190.0" y="393.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_18_5_1_11940316_1501694515916_308940_26046" color:border-color="#424242" id="E1605267752988__18_5_1_11940316_1501694515916_308940_26046">
+                <di:waypoint x="267.0" y="412.0"/>
+                <di:waypoint x="322.0" y="412.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+        </bpmndi:BPMNPlane>
+    </bpmndi:BPMNDiagram>
+</semantic:definitions>
+
