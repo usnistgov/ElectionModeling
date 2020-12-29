@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><opaqueexpression classType="OpaqueExpression" humanType="Opaque Expression" icon="diagrams_files/icon_opaqueexpression_1702478809.png" id="_19_0_4_43701b0_1608733587671_176904_15295"><body humanName="Body" mode="e"><String>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;unionExpressionSpecification xmlns="http://www.nomagic.com/schemas/MagicDraw/StructuredExpression/2013"&gt;
+    &lt;taggedValues&gt;
+        &lt;entry key="name"&gt;
+            &lt;value&gt;Body&lt;/value&gt;
+        &lt;/entry&gt;
+        &lt;entry key="ROOT_UNION"&gt;
+            &lt;value&gt;true&lt;/value&gt;
+        &lt;/entry&gt;
+    &lt;/taggedValues&gt;
+    &lt;value xsi:type="callExpressionSpecification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+        &lt;taggedValues&gt;
+            &lt;entry key="name"&gt;
+                &lt;value&gt;Script1&lt;/value&gt;
+            &lt;/entry&gt;
+        &lt;/taggedValues&gt;
+        &lt;argument xsi:type="lookupExpressionSpecification" symbol="THIS"/&gt;
+        &lt;expression xsi:type="makeInlineExpressionSpecification" language="OCL2.0"&gt;
+            &lt;parameter name="arg1" type="java.lang.Object" ordered="false" unique="false" multiple="false"/&gt;
+            &lt;body&gt;self.generalization-&amp;gt;select(not oclIsTypeOf(Concept_Modeling_Profile::Equivalent_Class))-&amp;gt;size() &amp;gt; 0&lt;/body&gt;
+        &lt;/expression&gt;
+    &lt;/value&gt;
+&lt;/unionExpressionSpecification&gt;
+</String></body><documentation humanName="Documentation"/><language humanName="Language" mode="e"><String>StructuredExpression</String></language><name humanName="Name"/><owner classType="Constraint" humanName="Owner" humanType="Constraint" icon="diagrams_files/icon_constraint_1765690649.png" mode="s,e" name="HasBaseClassifier" refid="_19_0_4_43701b0_1608733587671_401339_15294"/><owningConstraint classType="Constraint" humanName="Owning Constraint" humanType="Constraint" icon="diagrams_files/icon_constraint_1765690649.png" name="HasBaseClassifier" refid="_19_0_4_43701b0_1608733587671_401339_15294"/><qualifiedName humanName="Qualified Name">Validation Suite for EM::HasBaseClassifier::</qualifiedName><text humanName="Text" mode="standard">Script1</text><TO_DO humanName="To Do" mode="s,e"/><TYPE_MODIFIER humanName="Type Modifier"/><visibility humanName="Visibility">public</visibility></opaqueexpression></magicdraw>

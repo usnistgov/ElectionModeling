@@ -64,6 +64,7 @@ function repaint() {
 			if (divs[i].hasChildNodes() && contentNode.id) {
 				if (divs[i].childNodes[0].nodeName != 'IMG') {
 					var img = document.createElement('img');
+					img.className = 'nm-content';
 					img.src = Content.imgShow;
 					img.alt = '';
 					img.style.margin = '.1em';
@@ -158,6 +159,7 @@ function showDiagramsTab() {
 			if (responseXML) {
 				showLoading();
 				var root = document.createElement('ul');
+				root.className = 'nm-content';
 				root.id = 'dtree';
 				diagramsTree = new Tree(root.id);
 				diagramsTree.image.plus = resourcesLocation + 'images/tree/plus.gif';
@@ -195,6 +197,7 @@ function buildTree(li) {
 	var hasChild = Boolean(model.getAttribute('hasChild'));
 	if (hasChild) {
 		var emptyUL = document.createElement('ul');
+		emptyUL.className = 'nm-content';
 		var nodeID = model.getAttribute('refid');
 		emptyUL.id = 'ul_' + nodeID;
 		emptyUL.setAttribute('refid', nodeID);
@@ -244,6 +247,7 @@ function buildDiagramsTree(li) {
 	var hasChild = Boolean(model.getAttribute('hasChild'));
 	if (hasChild) {
 		var emptyUL = document.createElement('ul');
+		emptyUL.className = 'nm-content';
 		var nodeID = model.getAttribute('refid');
 		emptyUL.id = 'ul_' + nodeID;
 		emptyUL.setAttribute('refid', nodeID);
@@ -313,9 +317,10 @@ function createChild(responseXML) {
 								relationUL = parentUL.firstChild.lastChild;
 							else {
 								var relationLI = addNode(parentUL, 'Relations', 'javascript:void(0);',
-									'diagrams_files/icon_Relationship_185203393.png', 'true');
+									'diagrams_files/icon_Relationship_1320869181.png', 'true');
 								relationLI.setAttribute('refid', 'relations');
 								relationUL = document.createElement('ul');
+								relationUL.className = 'nm-content';
 								relationUL.onExpand = function() {
 								};
 								relationUL.onCollapse = function() {
@@ -363,6 +368,7 @@ function createChild(responseXML) {
 										}
 										if (typeof (tmpOwnedElement) == 'undefined') {
 											tmpOwnedElement = createElement('ownedElement');
+											tmpOwnedElement.className = 'nm-content';
 											childNode.data.appendChild(tmpOwnedElement);
 										}
 										if (tmpOwnedElement) {
@@ -445,7 +451,7 @@ function findNodeForSelected(nodeId, selectInTree) {
 		}
 		hideLoading();
 	} else {
-		XMLRequest.send(resourcesLocation + '/xml/' + 'data.xml', function(responseXML) {
+		XMLRequest.send(resourcesLocation + 'xml/' + 'data.xml', function(responseXML) {
 			var magicdraw;
 			if (responseXML)
 				magicdraw = responseXML.getElementsByTagName('magicdraw')[0];
@@ -550,10 +556,12 @@ function selectNode(node) {
 
 function addChildNode(ul, nodeName, member, icon) {
 	var node = document.createElement('li');
+	node.className = 'nm-content';
 	node.elementName = nodeName;
 	node.hasChild = Boolean(member.getAttribute('hasChild'));
 
 	var anchor = document.createElement('a');
+	anchor.className = 'nm-content';
 	var textNode = document.createTextNode(nodeName)
 	anchor.appendChild(textNode);
 	anchor.name = 'anchorNode';
@@ -577,6 +585,7 @@ function addChildNode(ul, nodeName, member, icon) {
 
 	if (icon) {
 		var imgAnchor = document.createElement('a');
+		imgAnchor.className = 'nm-content';
 		if ((gotoLinkByIcon == true && member.getAttribute('hasLink') == "true") || member.getAttribute('hasLink') != "true")
 		{
 			var refID = member.getAttribute('refid');
@@ -595,6 +604,7 @@ function addChildNode(ul, nodeName, member, icon) {
 		if (member.getAttribute('hasActiveHyperLink') == "true")
 		{
 			var navigatingIcon = document.createElement('img');
+			navigatingIcon.className = 'nm-content';
 			navigatingIcon.src = resourcesLocation + 'images/tree/hyperlinknode.png';;
 			navigatingIcon.alt = '';
 			navigatingIcon.border = '0';
@@ -608,6 +618,7 @@ function addChildNode(ul, nodeName, member, icon) {
 		}
 		
 		var img = document.createElement('img');
+		img.className = 'nm-content';
 		img.src = icon;
 		img.alt = '';
 		img.border = '0';
@@ -626,6 +637,7 @@ function addChildNode(ul, nodeName, member, icon) {
 		if (typeof(extendedID) != 'undefined' && extendedID != null)
 		{
 			var idNode = document.createElement('span');
+			idNode.className = 'nm-content';
 			idNode.style.color = '#9E9E9E';
 			idNode.appendChild(document.createTextNode(extendedID + " "));
 			anchor.insertBefore(idNode, textNode);
@@ -638,6 +650,7 @@ function addChildNode(ul, nodeName, member, icon) {
 		if (typeof(extendedID) != 'undefined' && extendedID != null && extendedID.length != 0)
 		{
 			var idNode = document.createElement('span');
+			idNode.className = 'nm-content';
 			idNode.style.color = '#9E9E9E';
 			idNode.appendChild(document.createTextNode(extendedID + " "));
 			anchor.insertBefore(idNode, textNode);
@@ -654,9 +667,11 @@ function addChildNode(ul, nodeName, member, icon) {
  */
 function addChildTextNode(ul, nodeName, member, icon) {
 	var node = document.createElement('li');
+	node.className = 'nm-content';
 	node.elementName = nodeName;
 
 	var span = document.createElement('span');
+	span.className = 'nm-content';
 	span.appendChild(document.createTextNode(nodeName));
 	span.name = 'spanNode';
 	span.style.verticalAlign = 'middle';
@@ -666,6 +681,7 @@ function addChildTextNode(ul, nodeName, member, icon) {
 
 	if (icon) {
 		var img = document.createElement('img');
+		img.className = 'nm-content';
 		img.src = icon;
 		img.alt = '';
 		img.border = '0';
@@ -681,9 +697,11 @@ function addChildTextNode(ul, nodeName, member, icon) {
 
 function addNode(ul, nodeName, href, icon, hasChild) {
 	var node = document.createElement('li');
+	node.className = 'nm-content';
 	node.elementName = nodeName;
 	node.hasChild = Boolean(hasChild);
 	var anchor = document.createElement('a');
+	anchor.className = 'nm-content';
 	anchor.appendChild(document.createTextNode(nodeName));
 	anchor.name = 'anchorNode';
 	anchor.href = href;
@@ -696,10 +714,12 @@ function addNode(ul, nodeName, href, icon, hasChild) {
 	node.appendChild(anchor);
 	if (icon) {
 		var imgAnchor = document.createElement('a');
+		imgAnchor.className = 'nm-content';
 		imgAnchor.href = href;
 		imgAnchor.style.verticalAlign = 'middle';
 		imgAnchor.onclick = anchor.onclick;
 		var img = document.createElement('img');
+		img.className = 'nm-content';
 		img.src = icon;
 		img.alt = '';
 		img.border = '0';
@@ -732,8 +752,10 @@ function createLink(parentNode, linkToElement) {
 
 	if (icon) {
 		var fieldAnchor = document.createElement('a');
+		fieldAnchor.className = 'nm-content';
 		fieldAnchor.href = "javascript: showSpec('" + refid + "');";
 		var fieldImage = document.createElement('img');
+		fieldImage.className = 'nm-content';
 		fieldImage.alt = '';
 		fieldImage.border = '0';
 		fieldImage.height = '16';
@@ -746,6 +768,7 @@ function createLink(parentNode, linkToElement) {
 		name = nonamedLink || nonamedLink == '' ? nonamedLink : linkToElement.tagName;
 	if (refid && name != '') {
 		var fieldAnchor = document.createElement('a');
+		fieldAnchor.className = 'nm-content';
 		fieldAnchor.href = "javascript: showSpec('" + refid + "');";
 		fieldAnchor.style.marginLeft = '4px';
 		fieldAnchor.style.marginRight = '4px';
@@ -758,7 +781,7 @@ function createLink(parentNode, linkToElement) {
 				documentation = documentMap.get(refid);
 				createDocBallon(evt);
 			} else {
-				XMLRequest.send(resourcesLocation + '/xml/' + refid + '.xml', function(responseXML) {
+				XMLRequest.send(resourcesLocation + 'xml/' + refid + '.xml', function(responseXML) {
 					if (responseXML) {
 						documentation = responseXML.getElementsByTagName('documentation').item(0);
 						if (documentation != null) {
@@ -786,6 +809,7 @@ function createLink(parentNode, linkToElement) {
 	var additionalText = linkToElement.getAttribute('text');
 	if (additionalText) {
 		var cite = document.createElement('cite');
+		cite.className = 'nm-content';
 		cite.style.marginLeft = '4px';
 		cite.style.marginRight = '4px';
 		renderValueText(cite, additionalText);
@@ -804,6 +828,7 @@ function createDocBallon(evt) {
 			var value = document.getElementById('docBalloon');
 			if (value == null) {
 				var value = document.createElement('span');
+				value.className = 'nm-content';
 				value.id = 'docBalloon';
 				value.style.position = 'absolute';
 				value.style.border = '#A5CFE9 solid 1px';
@@ -860,14 +885,16 @@ function createViewBar(model) {
 		return viewbar;
 	// lazy initialize
 	viewbar = document.createElement('div');
+	viewbar.className = 'nm-content';
 	viewbar.id = 'viewbar';
 	viewbar.currentType = model.tagName == 'diagram' ? 'diagram' : 'element';
 	viewbar.currentView = 'specification';
 	// tab bar
 	var tabul = document.createElement('ul');
 	tabul.id = 'viewtab';
-	tabul.className = 'tab';
+	tabul.className = 'nm-content tab';
 	var diali = document.createElement('li');
+	diali.className = 'nm-content';
 	diali.id = 'diagramtab';
 	diali.tabName = 'diagram';
 	diali.appendChild(document.createTextNode('Diagram'));
@@ -879,6 +906,7 @@ function createViewBar(model) {
 	};
 	tabul.appendChild(diali);
 	var speli = document.createElement('li');
+	speli.className = 'nm-content';
 	speli.id = 'specificationtab';
 	speli.tabName = 'specification';
 	speli.appendChild(document.createTextNode('Specification'));
@@ -891,6 +919,7 @@ function createViewBar(model) {
 	tabul.appendChild(speli);
 	if (showappearsinpage) {
 		var apearli = document.createElement('li');
+		apearli.className = 'nm-content';
 		apearli.id = 'appearsintab';
 		apearli.tabName = 'appearsin';
 		apearli.appendChild(document.createTextNode('Appears in'));
@@ -909,6 +938,7 @@ function createViewBar(model) {
 	if (typeof (content.mode) == 'undefined')
 		content.mode = 's';
 	var modeItem = document.createElement('li');
+	modeItem.className = 'nm-content';
 	modeItem.id = 'modeItem';
 	modeItem.style.cssFloat = 'right';
 	modeItem.style.styleFloat = 'right';
@@ -923,13 +953,14 @@ function createViewBar(model) {
 	// mode label
 	var modeLabel = document.createElement('div');
 	modeLabel.title = 'Display properties by selected filter';
-	modeLabel.className = 'item';
+	modeLabel.className = 'nm-content item';
 	modeLabel.style.cssFloat = 'left';
 	modeLabel.style.styleFloat = 'left';
 	modeLabel.appendChild(document.createTextNode('Mode : '));
 	modeItem.appendChild(modeLabel);
 	// move options
 	var modeSelect = document.createElement('select');
+	modeSelect.className = 'nm-content';
 	modeSelect.id = 'modeSelect';
 	modeSelect.onchange = function() {
 		var content = document.getElementById('content');
@@ -939,18 +970,21 @@ function createViewBar(model) {
 		repaint();
 	};
 	var standardModeOption = document.createElement('option');
+	standardModeOption.className = 'nm-content';
 	standardModeOption.value = 's';
 	if (content.mode == 's')
 		standardModeOption.selected = 'true';
 	standardModeOption.appendChild(document.createTextNode('Standard'));
 	modeSelect.appendChild(standardModeOption);
 	var expertModeOption = document.createElement('option');
+	expertModeOption.className = 'nm-content';
 	expertModeOption.value = 'e';
 	if (content.mode == 'e')
 		expertModeOption.selected = 'true';
 	expertModeOption.appendChild(document.createTextNode('Expert'));
 	modeSelect.appendChild(expertModeOption);
 	var allModeOption = document.createElement('option');
+	allModeOption.className = 'nm-content';
 	allModeOption.value = '';
 	if (content.mode == '')
 		allModeOption.selected = 'true';
@@ -972,11 +1006,12 @@ function createActionBar(model) {
 	}
 	// lazy initialize
 	actionbar = document.createElement('div');
+	actionbar.className = 'nm-content';
 	actionbar.id = 'actionbar';
 	// back
 	var backButton = document.createElement('div');
 	backButton.id = 'backButton';
-	backButton.className = 'backDisabled';
+	backButton.className = 'nm-content backDisabled';
 	backButton.title = 'Back';
 	backButton.onclick = function() {
 		back();
@@ -985,7 +1020,7 @@ function createActionBar(model) {
 	// forward
 	var forwardButton = document.createElement('div');
 	forwardButton.id = 'forwardButton';
-	forwardButton.className = 'forwardDisabled';
+	forwardButton.className = 'nm-content forwardDisabled';
 	forwardButton.title = 'Forward';
 	forwardButton.onclick = function() {
 		forward();
@@ -994,7 +1029,7 @@ function createActionBar(model) {
 	// select in containment tree
 	var selectTreeButton = document.createElement('div');
 	selectTreeButton.id = 'selectTreeButton';
-	selectTreeButton.className = 'selectTreeButton';
+	selectTreeButton.className = 'nm-content selectTreeButton';
 	selectTreeButton.title = 'Select in Containment Tree';
 	selectTreeButton.onclick = function() {
 		var content = document.getElementById('content');
@@ -1006,13 +1041,14 @@ function createActionBar(model) {
 	actionbar.appendChild(selectTreeButton);
 	// permanent link
 	var permLinkAnchor = document.createElement('a');
+	permLinkAnchor.className = 'nm-content';
 	permLinkAnchor.id = 'permLinkAnchor';
 	permLinkAnchor.target = "_blank";
 	permLinkAnchor.href = new String(window.location.protocol + "//" + window.location.host + window.location.pathname
 		+ '?refid=' + model.getAttribute('id'));
 	var permLinkButton = document.createElement('div');
 	permLinkButton.id = 'permLinkButton';
-	permLinkButton.className = 'permLinkButton';
+	permLinkButton.className = 'nm-content permLinkButton';
 	permLinkButton.title = 'Open element in new page';
 	permLinkAnchor.appendChild(permLinkButton);
 	actionbar.appendChild(permLinkAnchor);
@@ -1101,6 +1137,7 @@ function renderValueLink(value, text) {
 	if (text.indexOf('http://') == 1 || text.indexOf('https://') == 1 || text.indexOf('smb://') == 1) {
 		text = text.substring(1);
 		var anchor = document.createElement('a');
+		anchor.className = 'nm-content';
 		anchor.href = text;
 		anchor.target = '_blank';
 		anchor.appendChild(document.createTextNode(text));
@@ -1113,9 +1150,11 @@ function renderValueLink(value, text) {
 			var endsWith = url.substring(url.length - 4).toLowerCase();
 			if (endsWith == '.flv' || endsWith == '.mp4') {
 				var container = document.createElement('div');
+				container.className = 'nm-content';
 				container.style.height = '344px';
 				container.style.width = '480px';
 				var embed = document.createElement('embed');
+				embed.className = 'nm-content';
 				embed.src = resourcesLocation + 'swf/WebVideo.swf';
 				embed.type = 'application/x-shockwave-flash';
 				embed.width = '100%';
@@ -1126,9 +1165,11 @@ function renderValueLink(value, text) {
 				value.appendChild(container);
 			} else if (endsWith == '.mp3') {
 				var container = document.createElement('div');
+				container.className = 'nm-content';
 				container.style.height = '24px';
 				container.style.width = '320px';
 				var embed = document.createElement('embed');
+				embed.className = 'nm-content';
 				embed.src = resourcesLocation + 'swf/WebAudio.swf';
 				embed.type = 'application/x-shockwave-flash';
 				embed.width = '100%';
@@ -1140,9 +1181,11 @@ function renderValueLink(value, text) {
 				value.appendChild(container);
 			} else if (endsWith == '.swf') {
 				var container = document.createElement('div');
+				container.className = 'nm-content';
 				container.style.height = '344px';
 				container.style.width = '480px';
 				var embed = document.createElement('embed');
+				embed.className = 'nm-content';
 				embed.src = url;
 				embed.type = 'application/x-shockwave-flash';
 				embed.width = '100%';
@@ -1156,6 +1199,7 @@ function renderValueLink(value, text) {
 				if (pathOffset >= 0)
 					name = url.substring(pathOffset + 1);
 				var anchor = document.createElement('a');
+				anchor.className = 'nm-content';
 				url = getFileURL(url);
 				anchor.href = url;
 				anchor.target = '_blank';
@@ -1178,6 +1222,7 @@ function renderBrowser(responseXML) {
 	if (responseXML) {
 		showLoading();
 		var root = document.createElement('ul');
+		root.className = 'nm-content';
 		root.id = 'tree';
 		tree = new Tree(root.id);
 		tree.image.plus = resourcesLocation + 'images/tree/plus.gif';
@@ -1530,6 +1575,7 @@ function renderElement(model) {
 	content.appendChild(createActionBar(model));
 	content.appendChild(createViewBar(model));
 	var header = document.createElement('h2');
+	header.className = 'nm-content';
 	header.id = 'contentHeader';
 	header.appendChild(document.createTextNode(model.getAttribute('humanType')));
 	if (navigator.userAgent.indexOf('MSIE 6') >= 0)
@@ -1538,14 +1584,14 @@ function renderElement(model) {
 	// content table
 	if (model.hasChildNodes) {
 		var table = document.createElement('div');
-		table.className = 'table';
+		table.className = 'nm-content table';
 		var thead = document.createElement('div');
-		thead.className = 'thead';
+		thead.className = 'nm-content thead';
 		thead.appendChild(document.createTextNode('General Information'));
 		table.appendChild(thead);
 		var tbody = document.createElement('div');
 		tbody.id = 'generalTable';
-		tbody.className = 'tbody';
+		tbody.className = 'nm-content tbody';
 		table.appendChild(tbody);
 		content.appendChild(table);
 		// peoperties
@@ -1585,15 +1631,15 @@ function renderElement(model) {
 							}
 							// continue on stereotype
 							var stable = document.createElement('div');
-							stable.className = 'table';
+							stable.className = 'nm-content table';
 							var sthead = document.createElement('div');
-							sthead.className = 'thead';
+							sthead.className = 'nm-content thead';
 							sthead.appendChild(document.createTextNode(stereotypes[s].getAttribute('humanType') + ' '
 								+ stereotypes[s].getAttribute('name')));
 							stable.appendChild(sthead);
 							var stbody = document.createElement('div');
 							stbody.id = stereotypes[s].getAttribute('refid');
-							stbody.className = 'tbody';
+							stbody.className = 'nm-content tbody';
 							stable.appendChild(stbody);
 							content.appendChild(stable);
 							var properties = stereotypes[s].childNodes;
@@ -1601,19 +1647,21 @@ function renderElement(model) {
 							for ( var p = 0; p < properties.length; p++) {
 								if (properties[p].firstChild && properties[p].firstChild.nodeType == 1) {
 									var row = document.createElement('div');
-									row.className = 'row';
+									row.className = 'nm-content row';
 									var label = document.createElement('label');
+									label.className = 'nm-content';
 									label.appendChild(document.createTextNode(properties[p].getAttribute('humanName')));
 									row.appendChild(label);
 									var separator = document.createElement('span');
-									separator.className = 'col';
+									separator.className = 'nm-content col';
 									separator.appendChild(document.createTextNode(' : '));
 									row.appendChild(separator);
 									var value = document.createElement('span');
-									value.className = 'col';
+									value.className = 'nm-content col';
 									var collections = properties[p].childNodes;
 									if (customImageHolder && properties[p].getAttribute('name') == 'Content') {
 										var img = document.createElement('img');
+										img.className = 'nm-content';
 										img.setAttribute('src', nodeValue(collections[0]));
 										value.appendChild(img);
 									} else {
@@ -1634,19 +1682,20 @@ function renderElement(model) {
 					continue;
 				} else if (childNodes[c].tagName == 'documentation') {
 					var dtable = document.createElement('div');
-					dtable.className = 'table';
+					dtable.className = 'nm-content table';
 					var dthead = document.createElement('div');
-					dthead.className = 'thead';
+					dthead.className = 'nm-content thead';
 					dthead.appendChild(document.createTextNode(childNodes[c].getAttribute('humanName')));
 					dtable.appendChild(dthead);
 					var dtbody = document.createElement('div');
 					dtbody.id = 'documentationTable';
-					dtbody.className = 'tbody';
+					dtbody.className = 'nm-content tbody';
 					dtable.appendChild(dtbody);
 					content.appendChild(dtable);
 					var row = document.createElement('div');
-					row.className = 'row';
+					row.className = 'nm-content row';
 					var value = document.createElement('div');
+					value.className = 'nm-content documentation';
 					renderValueNode(value, childNodes[c]);
 					row.appendChild(value);
 					dtbody.appendChild(row);
@@ -1665,26 +1714,27 @@ function renderElement(model) {
 				}
 				if (showProperty) {
 					var row = document.createElement('div');
-					row.className = 'row';
+					row.className = 'nm-content row';
 					var label = document.createElement('label');
+					label.className = 'nm-content';
 					label.appendChild(document.createTextNode(childNodes[c].getAttribute('humanName')));
 					row.appendChild(label);
 					var separator = document.createElement('span');
-					separator.className = 'col';
+					separator.className = 'nm-content col';
 					separator.appendChild(document.createTextNode(' : '));
 					row.appendChild(separator);
 					var value = document.createElement('span');
-					value.className = 'col';
+					value.className = 'nm-content col';
 					if (childNodes[c].firstChild && childNodes[c].firstChild.nodeType == 1) {
 						var collections = childNodes[c].childNodes;
 						var cdiv = document.createElement('div');
-						cdiv.className = 'none';
+						cdiv.className = 'nm-content none';
 						cdiv.id = childNodes[c].getAttribute('humanName');
 						if (collections.length > 1) {
 							var img = document.createElement('img');
 							img.src = Content.imgShow;
 							img.alt = '';
-							img.className = 'toggle';
+							img.className = 'nm-content toggle';
 							img.contentId = cdiv.id;
 							img.onclick = function() {
 								var content = new Content();
@@ -1749,19 +1799,20 @@ function renderAppearsIn(model) {
 
 	if (appearsInDiagram.length > 0) {
 		var atable = document.createElement('div');
-		atable.className = 'table';
+		atable.className = 'nm-content table';
 		var athead = document.createElement('div');
-		athead.className = 'thead';
+		athead.className = 'nm-content thead';
 		athead.appendChild(document.createTextNode('Diagrams'));
 		atable.appendChild(athead);
 		var atbody = document.createElement('div');
-		atbody.className = 'tbody';
+		atbody.className = 'nm-content tbody';
 		atable.appendChild(atbody);
 		content.appendChild(atable);
 		for ( var p = 0; p < appearsInDiagram.length; p++) {
 			var row = document.createElement('div');
-			row.className = 'row';
+			row.className = 'nm-content row';
 			var name = document.createElement('span');
+			name.className = 'nm-content';
 			name.style.verticalAlign = 'middle';
 			createLink(name, appearsInDiagram[p]);
 			row.appendChild(name);
@@ -1770,6 +1821,7 @@ function renderAppearsIn(model) {
 		repaint();
 	} else {
 		var message = document.createElement('h5');
+		message.className = 'nm-content';
 		message.style.padding = '1em';
 		message.appendChild(document.createTextNode('Selected element is not appeared in any diagram.'));
 		content.appendChild(message);
@@ -1779,7 +1831,9 @@ function renderAppearsIn(model) {
 
 function createContextItem(container, icon, label, func, href, refid) {
 	var liitem = document.createElement('li');
+	liitem.className = 'nm-content';
 	var link = document.createElement('a');
+	link.className = 'nm-content';
 	if (href != null && href != "") {
 		if (href.indexOf("file://") == 0)
 			link.href = getFileURL(href.substring(7));
@@ -1790,6 +1844,7 @@ function createContextItem(container, icon, label, func, href, refid) {
 		link.href = 'javascript:void(0);';
 	}
 	var linkIcon = document.createElement('img');
+	linkIcon.className = 'nm-content';
 	linkIcon.alt = '';
 	linkIcon.border = '0';
 	
@@ -1839,6 +1894,7 @@ function renderDiagram(model, diagamModel) {
 	if (diagamModel)
 		model = diagamModel;
 	var header = document.createElement('h2');
+	header.className = 'nm-content';
 	header.id = 'contentHeader';
 	header.appendChild(document.createTextNode(model.getAttribute('diagramType')));
 	if (navigator.userAgent.indexOf('MSIE 6') >= 0)
@@ -1855,6 +1911,7 @@ function renderDiagram(model, diagamModel) {
 				header.appendChild(document.createTextNode(' ' + nodeValue(childNodes[c])));
 			else if (childNodes[c].tagName == 'map') {
 				var map = document.createElement('map');
+				map.className = 'nm-content';
 				map.id = mapName;
 				map.setAttribute('name', mapName);
 				if (childNodes[c].hasChildNodes) {
@@ -1862,6 +1919,7 @@ function renderDiagram(model, diagamModel) {
 					var elementArea = new Array();
 					for (a = 0; a < areas.length; a++) {
 						elementArea[a] = document.createElement('area');
+						elementArea[a].className = 'nm-content';
 						elementArea[a].shape = 'poly';
 						elementArea[a].alt = areas[a].getAttribute('name');
 						elementArea[a].id = a;
@@ -2261,7 +2319,11 @@ function renderDiagram(model, diagamModel) {
 						for ( var p = 0; p < points.length; p++) {
 							coordsList.push(new Point(p, points[p].getAttribute('x'), points[p].getAttribute('y')));
 						}
-						sortPoint(coordsList);
+						
+						// fixed https://jira.nomagic.com/browse/MGRP-4085
+						if (coordsList.length == 4)
+							sortPoint(coordsList);
+						
 						for ( var p = 0; p < coordsList.length; p++, coordsString += ',') {
 							coordsString += coordsList[p].pointX + ',' + coordsList[p].pointY;
 						}
@@ -2291,6 +2353,7 @@ function renderDiagram(model, diagamModel) {
 	}
 
 	var diagramContainer = document.createElement('div');
+	diagramContainer.className = 'nm-content';
 	diagramContainer.id = 'diagramContainer';
 	var imagePath = model.getAttribute('src');
 	var imageFormat = imagePath.substring(imagePath.lastIndexOf(".") + 1, imagePath.length);
@@ -2298,6 +2361,7 @@ function renderDiagram(model, diagamModel) {
 	if (isResizableSVG(imageFormat)) {
 		// create image tag for resizing svg
 		image = document.createElement('object');
+		image.className = 'nm-content';
 		image.type = "image/svg+xml";
 		image.data = model.getAttribute('src');
 
@@ -2322,7 +2386,7 @@ function renderDiagram(model, diagamModel) {
 	else {
 		// create image tag
 		image = document.createElement('img');
-		
+		image.className = 'nm-content';
 		image.width = model.getAttribute('width');
 		image.height = model.getAttribute('height');
 	}
@@ -2343,7 +2407,7 @@ function createULContext() {
 	if (typeof ulcontext == 'undefined' || ulcontext == null) {
 		ulcontext = document.createElement('ul');
 		ulcontext.id = 'elementcontextmenu';
-		ulcontext.className = 'contextMenu';
+		ulcontext.className = 'nm-content contextMenu';
 	}
 	removeAll(ulcontext);
 	
@@ -2512,21 +2576,22 @@ function renderReviewBox(reviewList) {
 	// render review history
 	if (reviewList.length > 0) {
 		var rtable = document.createElement('div');
-		rtable.className = 'table';
+		rtable.className = 'nm-content table';
 		var rthead = document.createElement('div');
-		rthead.className = 'thead';
+		rthead.className = 'nm-content thead';
 		rthead.appendChild(document.createTextNode('Review'));
 		rtable.appendChild(rthead);
 		var rtbody = document.createElement('div');
 		rtbody.id = 'reviewHistoryTable';
-		rtbody.className = 'tbody';
+		rtbody.className = 'nm-content tbody';
 		rtable.appendChild(rtbody);
 		content.appendChild(rtable);
 		for ( var i = 0; i < reviewList.length; i++) {
 			var review = reviewList[i];
 			var row = document.createElement('div');
-			row.className = 'row';
+			row.className = 'nm-content row';
 			var valueSect = document.createElement('span');
+			valueSect.className = 'nm-content';
 			var text = review.text;
 			var startBodyIndex = text.indexOf('<body>');
 			var endBodyIndex = text.indexOf('</body>', startBodyIndex);
@@ -2534,6 +2599,7 @@ function renderReviewBox(reviewList) {
 				text = text.substring(startBodyIndex, endBodyIndex);
 			valueSect.innerHTML = review.text;
 			var authorSect = document.createElement('p');
+			authorSect.className = 'nm-content';
 			authorSect.style.marginTop = '20px';
 			authorSect.style.fontStyle = 'italic';
 			authorSect.style.color = '#888888';
@@ -2850,7 +2916,7 @@ function search(elementName) {
 		}
 		// Load data.xml file.
 		else {
-			XMLRequest.send(resourcesLocation + '/xml/' + 'data.xml', function(responseXML) {
+			XMLRequest.send(resourcesLocation + 'xml/' + 'data.xml', function(responseXML) {
 				var magicdraw;
 				if (responseXML)
 					magicdraw = responseXML.getElementsByTagName('magicdraw')[0];
@@ -2884,29 +2950,32 @@ function createSearchContent(dataModel, elementName) {
 		var content = document.getElementById('content');
 		removeAll(content);
 		var header = document.createElement('h2');
+		header.className = 'nm-content';
 		header.id = 'contentHeader';
 		header.appendChild(document.createTextNode('Search Results'));
 		content.appendChild(header);
 		if (searchResults.length > 0) {
 			var stable = document.createElement('div');
-			stable.className = 'table';
+			stable.className = 'nm-content table';
 			var sthead = document.createElement('div');
-			sthead.className = 'thead';
+			sthead.className = 'nm-content thead';
 			sthead.appendChild(document.createTextNode('Search Results'));
 			stable.appendChild(sthead);
 			var stbody = document.createElement('div');
-			stbody.className = 'tbody';
+			stbody.className = 'nm-content tbody';
 			stable.appendChild(stbody);
 			content.appendChild(stable);
 			for ( var p = 0; p < searchResults.length; p++) {
 				if (searchResults[p].nodeType == 1) {
 					var row = document.createElement('div');
-					row.className = 'row';
+					row.className = 'nm-content row';
 					var name = document.createElement('span');
+					name.className = 'nm-content';
 					name.style.verticalAlign = 'middle';
 					createLink(name, searchResults[p]);
 					row.appendChild(name);
 					var type = document.createElement('span');
+					type.className = 'nm-content';
 					type.style.verticalAlign = 'middle';
 					type.appendChild(document.createTextNode(searchResults[p].getAttribute('humanType')));
 					row.appendChild(type);
@@ -2916,6 +2985,7 @@ function createSearchContent(dataModel, elementName) {
 			repaint();
 		} else {
 			var message = document.createElement('h5');
+			message.className = 'nm-content';
 			message.style.padding = '1em';
 			message.appendChild(document.createTextNode('No element name containing all your search terms were found.'));
 			content.appendChild(message);
@@ -2929,8 +2999,9 @@ loadingDialog = {
 		var popup = document.getElementById('popup');
 		if (!popup) {
 			popup = document.createElement('div');
+			popup.className = 'nm-content';
 			popup.setAttribute('id', 'popup');
-			popup.innerHTML = '<span class="loading">Loading...</span>';
+			popup.innerHTML = '<span class="nm-content loading">Loading...</span>';
 			document.body.appendChild(popup);
 		}
 	},

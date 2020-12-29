@@ -21,33 +21,34 @@
    <script type="text/javascript" src="diagrams_files/js/navigator.js"></script>
    <script type="text/javascript" src="diagrams_files/js/tooltip.js"></script>
 </head>
-<body>
-<div id="titlebar">
-   <form id="searchForm" name="searchForm" action="" onsubmit="search(document.getElementById('searchText').value); return false;" style="display:inline">
-   <ul id="menubar" class="toolbar">
-      <li style="float:left;"><a href ="diagrams.html" class="home"><img src="diagrams_files/images/mdicon.gif" width="16" height="16" alt="MagicDraw" style="border:none">Election Modeling Semantic Model</a></li>
-      <li style="float:right;" id="quicksearch"><span style="vertical-align:middle; font-size: 80%;" title="Search for element&lt;br&gt;Tip: Use regular expressions to search more precisely">QUICK SEARCH:</span> <input name="searchText" id="searchText" type="text"></li>
+<body class="nm-content">
+<div class="nm-content" id="titlebar">
+   <form id="searchForm" class="nm-content" name="searchForm" action="" onsubmit="search(document.getElementById('searchText').value); return false;" style="display:inline">
+   <ul id="menubar" class="nm-content toolbar">
+      <li class="nm-content" style="float:left;"><a href ="diagrams.html" class="nm-content home"><img src="diagrams_files/images/mdicon.gif" width="16" height="16" alt="MagicDraw" style="border:none" class="nm-content">Election Modeling Semantic Model</a></li>
+      <li class="nm-content" style="float:right;" id="quicksearch"><span class="nm-content" style="vertical-align:middle; font-size: 80%;" title="Search for element&lt;br&gt;Tip: Use regular expressions to search more precisely">QUICK SEARCH:</span> <input name="searchText" id="searchText" type="text" class="nm-content"></li>
    </ul>
    </form>
 </div>
-<div id="container">
-   <table cellspacing="0" cellpadding="0" border="0" id="splitpane" class="splitpane" width="100%">
-      <tr>
-         <td id="splitpane-first" class="splitpane-first" style="min-width: 255px; width:20%;">
-          	<div id="tabs" style="text-align: left;" class="tabs">
-          		<ul class="tabheader">
-          			<li id="containment_tab" class="active" onclick="showContainmentTab()">Containment</li>
-          			<li id="diagrams_tab" onclick="showDiagramsTab()">Diagrams</li>
-          			<li id="expand_icon" class="expandIcon"></li>
+<div class="nm-content" id="container">
+   <table cellspacing="0" cellpadding="0" border="0" id="splitpane" class="nm-content splitpane" width="100%">
+      <tr class="nm-content">
+         <td id="splitpane-first" class="nm-content splitpane-first" style="min-width: 255px; width:20%;">
+          	<div id="tabs" style="text-align: left;" class="nm-content tabs">
+          		<ul class="nm-content tabheader">
+          			<li id="containment_tab" class="nm-content active" onclick="showContainmentTab()">Containment</li>
+          			<li id="diagrams_tab" class="nm-content" onclick="showDiagramsTab()">Diagrams</li>
+          			<li id="expand_icon" class="nm-content expandIcon"></li>
           		</ul>
-          		<div id="containment_content" class="tabInner"></div>
-          		<div id="diagrams_content" class="tabInner" style="display:none"></div></div>
+          		<div id="containment_content" class="nm-content tabInner"></div>
+          		<div id="diagrams_content" class="nm-content tabInner" style="display:none"></div>
+          	</div>
          </td>
-         <td class="splitpane-vdivider">&nbsp;</td>
-         <td id="splitpane-second" class="splitpane-second" style="min-width: 430px; width:80%;">
-            <div id="content">
-               <div style="">
-                  <div style="text-align: center"><img src="" alt="Index"/></div>
+         <td class="nm-content splitpane-vdivider">&nbsp;</td>
+         <td id="splitpane-second" class="nm-content splitpane-second" style="min-width: 430px; width:80%;">
+            <div id="content" class="nm-content">
+               <div class="nm-content" style="">
+                  <div class="nm-content" style="text-align: center"><img class="nm-content" src="" alt="Index"/></div>
                                  </div>
             </div>
          </td>

@@ -1,13 +1,13 @@
 /* Cascade style sheet file */
 /* Project Web Publisher 2.0 */
 /* Created by Siri Chongasamethaworn (siri_c@nomagicasia.com) */
-body					{ margin: 0; font: small sans-serif; color: #525252; background-color: #FFFFFF; text-align:center; -moz-box-sizing: border-box; }
-table					{ background: #FFFFFF; font-size: 100%; color: #000000; }
-td						{ font-family: sans-serif; }
-a						{ font-family: sans-serif; color: #1863A1; text-decoration: underline; }
-a:link					{ color: #1863A1; }
-a:hover					{ color: #7EC541; }
-a:visited				{ color: #1863A1; }
+body.nm-content			{ margin: 0; font: small sans-serif; color: #525252; background-color: #FFFFFF; text-align:center; -moz-box-sizing: border-box; }
+table.nm-content		{ background: #FFFFFF; font-size: 100%; color: #000000; }
+td.nm-content			{ font-family: sans-serif; }
+a.nm-content			{ font-family: sans-serif; color: #1863A1; text-decoration: underline; }
+a.nm-content:link		{ color: #1863A1; }
+a.nm-content:hover		{ color: #7EC541; }
+a.nm-content:visited	{ color: #1863A1; }
 a.more					{ font-family: sans-serif; color: #7EC541; text-decoration: underline; }
 a.more:link				{ color: #7EC541; }
 a.more:hover			{ color: #7EC541; }
@@ -16,21 +16,24 @@ a.node					{ font-family: sans-serif; font-size: 100%; line-height: 1em; color: 
 a.node:link				{ color: #1863A1; }
 a.node:hover			{ color: #7EC541; }
 a.node:visited			{ color: #1863A1; }
-h1, h2					{ color: black; background: none; font-weight: normal; margin: .2em .2em 0 0; padding-top: .5em; padding-bottom: .17em; }
-h3, h4, h5, h6			{ color: black; background: none; font-weight: bold; margin: .2em 0 0 0; padding-top: .5em; padding-bottom: .17em; }
-h1						{ font-size: 188%; border-bottom: 1px solid #0A0A0A; }
-h2						{ font-size: 150%; border-bottom: 1px solid #0A0A0A; }
-h3						{ font-size: 132%; }
-h4						{ font-size: 116%; }
-h5						{ font-size: 100%; }
-h6						{ font-size: 90%;  }
-ol						{ line-height: 1em; margin: 0 0 0 1.5em; padding: 0; }
-ul						{ line-height: 1.5em; margin: .3em 0 0 1.5em; padding: 0; list-style-type: square; }
+h1.nm-content, h2.nm-content	{ color: black; background: none; font-weight: normal; margin: .2em .2em 0 0; padding-top: .5em; padding-bottom: .17em; }
+h3.nm-content, h4.nm-content, h5.nm-content, h6.nm-content			{ color: black; background: none; font-weight: bold; margin: .2em 0 0 0; padding-top: .5em; padding-bottom: .17em; }
+h1.nm-content			{ font-size: 188%; border-bottom: 1px solid #0A0A0A; }
+h2.nm-content			{ font-size: 150%; border-bottom: 1px solid #0A0A0A; }
+h3.nm-content			{ font-size: 132%; }
+h4.nm-content			{ font-size: 116%; }
+h5.nm-content			{ font-size: 100%; }
+h6.nm-content			{ font-size: 90%;  }
+ol.nm-content			{ line-height: 1em; margin: 0 0 0 1.5em; padding: 0; }
+ul.nm-content			{ line-height: 1.5em; margin: .3em 0 0 1.5em; padding: 0; list-style-type: square; }
 ul.none					{ line-height: 1.5em; margin: .3em 0 0 1.5em; padding: 0; list-style-type: none; list-style-image:none;}
-img						{ vertical-align: middle; }
-p						{ margin: .1em 0 .1em 0; }
-ins						{ text-decoration: underline; color: #00FF00; }
-del						{ text-decoration: line-through; color: #FF0000; }
+img.nm-content			{ vertical-align: middle; }
+p.nm-content			{ margin: .1em 0 .1em 0; }
+ins.nm-content			{ text-decoration: underline; color: #00FF00; }
+del.nm-content			{ text-decoration: line-through; color: #FF0000; }
+
+/* default style of documentation */
+.documentation p		{padding:0px; margin:0px;}
 
 /* Container */
 #container				{ margin: 0 auto 0 auto; -moz-box-sizing: border-box; }
@@ -45,7 +48,7 @@ h2#contentHeader		{}
 div.description			{ padding: .2em; font-size: 100%; }
 ul.properties			{ padding: 1em; font-size: 90%; }
 div.item				{ padding: 2px; vertical-align: middle; }
-dfn						{ color: #4B7A98; font-style: normal; }
+dfn.nm-content						{ color: #4B7A98; font-style: normal; }
 
 /* Divider */
 .splitpane-first		{ vertical-align: top; -moz-box-sizing: border-box; }
@@ -115,4 +118,4 @@ input[type="button"]		{ padding: .1em; margin: .1em .2em .1em .2em; }
 
 
 /* tab */
-.tabs ul.tabheader					{ display:none;}
+.tabs ul.tabheader			{ display:none;}
