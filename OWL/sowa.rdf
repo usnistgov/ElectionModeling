@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://hiltonroscoe.com/ns/ontologies/sowa#"
+     xml:base="http://hiltonroscoe.com/ns/ontologies/sowa"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa">
+        <owl:imports rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sowa</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#characterizes -->
+
+
+    <owl:ObjectProperty rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#characterizes">
+        <rdfs:subPropertyOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#facetOf"/>
+        <owl:inverseOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#hasDescription"/>
+        <rdfs:domain rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Description"/>
+        <rdfs:range rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Schema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#contextFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#contextFor">
+        <rdfs:domain rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#MediatingThing"/>
+        <rdfs:range rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#RelativeThing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">context for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#executes -->
+
+
+    <owl:ObjectProperty rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#executes">
+        <owl:inverseOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#instructs"/>
+        <rdfs:domain rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Process"/>
+        <rdfs:range rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Script"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#explains -->
+
+
+    <owl:ObjectProperty rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#explains">
+        <rdfs:domain rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Purpose"/>
+        <rdfs:range rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Situation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#facetOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#facetOf">
+        <owl:inverseOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#hasFacet"/>
+        <rdfs:domain rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#RelativeThing"/>
+        <rdfs:range rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#IndependentThing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">facet of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#hasAction -->
+
+
+    <owl:ObjectProperty rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#hasAction">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasPurpose"/>
+        <rdfs:domain rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Purpose"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Action"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has action</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#hasDescription -->
+
+
+    <owl:ObjectProperty rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#hasDescription">
+        <rdfs:subPropertyOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#hasFacet"/>
+        <rdfs:domain rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Schema"/>
+        <rdfs:range rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Description"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has description</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#hasFacet -->
+
+
+    <owl:ObjectProperty rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#hasFacet">
+        <rdfs:domain rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#IndependentThing"/>
+        <rdfs:range rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#RelativeThing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has facet</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#instructs -->
+
+
+    <owl:ObjectProperty rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#instructs">
+        <rdfs:domain rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Script"/>
+        <rdfs:range rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#represents -->
+
+
+    <owl:ObjectProperty rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#represents">
+        <rdfs:domain rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Physical"/>
+        <rdfs:range rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Abstract"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#stageOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#stageOf">
+        <rdfs:domain rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#History"/>
+        <rdfs:range rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Occurrent"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#withRespectTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#withRespectTo">
+        <owl:inverseOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#contextFor"/>
+        <rdfs:domain rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#RelativeThing"/>
+        <rdfs:range rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#MediatingThing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">with respect to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasPurpose -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasPurpose"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#Abstract -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#Abstract">
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pure information as distinguished from any particular encoding of the information in a physical medium. Formally, Abstract is a primitive that satisfies the following axioms: 
+•No abstraction has a location in space: ~($x:Abstract)($y:Place)loc(x,y). 
+
+•No abstraction occurs at a point in time: ~($x:Abstract)($t:Time)pTim(x,t). 
+
+As an example, the information you are now reading is encoded on a physical object in front of your eyes, but it is also encoded on paper, magnetic spots, and electrical currents at several other locations. Each physical encoding is said to represent the same abstract information. 
+</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#Context -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#Context">
+        <owl:equivalentClass rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#MediatingThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#Continuant -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#Continuant"/>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#Description -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#Description">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Abstract"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Continuant"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#RelativeThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#characterizes"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#History -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#History">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Abstract"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Occurrent"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#RelativeThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#IndependentThing -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#IndependentThing">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Independent Thing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#Intention -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#Intention">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#MediatingThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#Juncture -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#Juncture">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Physical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#MediatingThing -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#MediatingThing">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mediating Thing</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#Nexus -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#Nexus">
+        <owl:equivalentClass rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Action"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#MediatingThing"/>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A physical entity (P) mediating (M) two or more other entities. Each nexus is a bundle of prehensions, which may be the junctures of an object or the participants of a process. Examples include an arch that consists of junctures of stones or an action that consists of what one participant called an agent is doing to another participant called a patient. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#Object -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#Object">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#IndependentThing"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Physical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#Occurrent -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#Occurrent"/>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#Participation -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#Participation">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Occurrent"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Physical"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#RelativeThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#Physical -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#Physical">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#represents"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An entity that has a location in space-time. Formally, Physical is a primitive that satisfies the following axiom: 
+•Anything physical is located in some place: (&quot;x:Physical)($y:Place)loc(x,y). 
+
+•Anything physical occurs at some point in time: (&quot;x:Physical)($t:Time)pTim(x,t). 
+
+More detailed axioms that relate physical entities to space, time, matter, and energy would involve a great deal physical theory, which is beyond the scope of the KR book. 
+</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#Process -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#Process">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#IndependentThing"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Occurrent"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Physical"/>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Actuality (IP) considered as an occurrent (O) during the interval of interest. Depending on the time scale and level of detail, the same actual entity may be viewed as a stable object or a dynamic process. Even an entity as stable as a diamond could be considered a process when viewed over a long time period or at the atomic level of vibrating particles.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#Purpose -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#Purpose">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Abstract"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#MediatingThing"/>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+Intention (MA) that has the form of an occurrent (O). As an example, the words and notes of the song &amp;quot;Happy Birthday&amp;quot; constitute a script (IAO); a description of how people at a party sang the song is history (RAO); and the intention (MA) that explains the situation (MPO) is a purpose (MAO). The basic axioms for Purpose are inherited from its supertypes Mediating, Abstract, and Occurrent. Lower-level axioms relate purposes to actions and agents:
+
+    &lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;p&gt;
+&amp;#160;
+
+      &lt;/p&gt;
+
+      &lt;li&gt;
+&lt;i&gt;Time sequence&lt;/i&gt;. If an agent &lt;i&gt;x&lt;/i&gt; performs an act &lt;i&gt;y&lt;/i&gt; whose purpose is a situation &lt;i&gt;z&lt;/i&gt;, the start of &lt;i&gt;y&lt;/i&gt; occurs before the start of &lt;i&gt;z&lt;/i&gt;.
+        &lt;p&gt;
+&amp;#160;
+
+        &lt;/p&gt;
+
+
+      &lt;/li&gt;
+      &lt;li&gt;
+&lt;i&gt;Contingency&lt;/i&gt;. If an agent &lt;i&gt;x&lt;/i&gt; performs an act &lt;i&gt;y&lt;/i&gt; whose purpose is a situation &lt;i&gt;z&lt;/i&gt; described by a proposition &lt;i&gt;p&lt;/i&gt;, then it is possible that &lt;i&gt;z&lt;/i&gt; might not occur or that &lt;i&gt;p&lt;/i&gt; might not be true of &lt;i&gt;z&lt;/i&gt;.
+        &lt;p&gt;
+&amp;#160;
+
+        &lt;/p&gt;
+
+
+      &lt;/li&gt;
+      &lt;li&gt;
+&lt;i&gt;Success or failure&lt;/i&gt;. If an agent &lt;i&gt;x&lt;/i&gt; performs an act &lt;i&gt;y&lt;/i&gt; whose purpose is a situation &lt;i&gt;z&lt;/i&gt; described by a proposition &lt;i&gt;p&lt;/i&gt;, then &lt;i&gt;x&lt;/i&gt; is said to be &lt;i&gt;successful&lt;/i&gt; if &lt;i&gt;z&lt;/i&gt; occurs and &lt;i&gt;p&lt;/i&gt; is true of &lt;i&gt;z&lt;/i&gt;; otherwise, &lt;i&gt;x&lt;/i&gt; is said to have &lt;i&gt;failed&lt;/i&gt;.
+
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;
+&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#Reason -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#Reason">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Abstract"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Continuant"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Intention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#RelativeThing -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#RelativeThing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#facetOf"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#withRespectTo"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relative Thing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#Schema -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#Schema">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Abstract"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Continuant"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#IndependentThing"/>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A form (IA) that has the structure of a continuant (C). A schema is an abstract form (IA) whose structure does not specify time or timelike relationships. Examples include geometric forms, the syntactic structures of sentences in some language, or the encodings of pictures in a multimedia system. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#Script -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#Script">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Abstract"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#IndependentThing"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Occurrent"/>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+A form (IA) that has the structure of an occurrent (O). A script is an abstract form (IA) that represents time sequences. Examples include computer programs, a recipe for baking a cake, a sheet of music to be played on a piano, or a differential equation that governs the evolution of a physical process. A movie can be described by several different kinds of scripts: the first is a specification of the actions and dialog to be acted out by humans; but the sequence of frames in a reel of film is also a script that determines a process carried out by a projector that generates flickering images on a screen.
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#Situation -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#Situation">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#MediatingThing"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Nexus"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Occurrent"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Physical"/>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nexus (MP) considered as an occurrent (O). A situation mediates the participants of some process, whose stages may involve different participants at different times. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#Structure -->
+
+
+    <owl:Class rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#Structure">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Physical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#Action -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#Action"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.0.2.20160507-1747) https://github.com/owlcs/owlapi/ -->
+
+
+
+
+
+<!-- Warning: type declarations were not added automatically. -->
+
+
+<!-- Generated using the No Magic Cameo Concept Modeler (19.0 SP4, build 20200303_1229-f28c8930) on 2021-02-11 at 13:21:59 GMT -->

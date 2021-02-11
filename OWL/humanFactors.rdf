@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#"
-     xml:base="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors"
-     xmlns:fibo-fnd-rel-rel="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/"
+<rdf:RDF xmlns="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#"
+     xml:base="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:fibo-fnd-aap-agt="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/"
-     xmlns:elections="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors">
-        <owl:imports rdf:resource="http://nomagic.com/ontology/upper"/>
-        <owl:imports rdf:resource="http://example.com/ontology/VVSG"/>
-        <owl:imports rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections"/>
-        <owl:imports rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/"/>
-        <owl:imports rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/"/>
-        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors">
+        <owl:imports rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa"/>
+        <owl:imports rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HumanFactors</rdfs:label>
     </owl:Ontology>
     
 
@@ -33,12 +27,427 @@
     
 
 
-    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#partOfBallotFormat -->
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#characterizes -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#partOfBallotFormat">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#DisplayFormat"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections#BallotFormat"/>
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#characterizes">
+        <owl:inverseOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#hasDescription"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#contextFor -->
+
+
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#contextFor"/>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#executes -->
+
+
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#executes"/>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#facetOf -->
+
+
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#facetOf">
+        <owl:inverseOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#hasFacet"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#hasAction -->
+
+
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#hasAction"/>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#hasDescription -->
+
+
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#hasDescription"/>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#hasFacet -->
+
+
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#hasFacet"/>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#instructs -->
+
+
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#instructs">
+        <owl:inverseOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#executes"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#withRespectTo -->
+
+
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#withRespectTo">
+        <owl:inverseOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#contextFor"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#appearsUnder -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#appearsUnder">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasOption"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#associatedWithBallotData -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#associatedWithBallotData">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasContest"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#bornAt -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#bornAt">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ofPerson"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#fillsOutAbsenteeRequest -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#fillsOutAbsenteeRequest">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#represents"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#for -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#for">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasSubmittedRegistration"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasActualForm -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasActualForm">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasForm"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasBallot -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasBallot"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasBallotSection -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasBallotSection"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasBallotStyleData -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasBallotStyleData">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasElection"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasContest -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasContest">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasContestRule"/>
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasElection"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasContestInElection -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasContestInElection">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#votedAccordingTo"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasContestRule -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasContestRule"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasElection -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasElection">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasBallot"/>
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasBallotStyleData"/>
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasContest"/>
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasPollingLocation"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasElectionOutcome -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasElectionOutcome"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasForm -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasForm"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasOption -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasOption"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasPerformer -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasPerformer">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#performsAs"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasPollingLocation -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasPollingLocation"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasPurpose -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasPurpose">
+        <owl:inverseOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#hasAction"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasSubmittedRegistration -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasSubmittedRegistration"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasVoter -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasVoter"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasVoting -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasVoting">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#produces"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#identifies -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#identifies">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#isIdentifiedBy"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#isIdentifiedBy -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#isIdentifiedBy"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#issuedBy -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#issuedBy">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#issues"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#issues -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#issues"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#madeUpOf -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#madeUpOf">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#scheduledVia"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#markedBy -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#markedBy">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#marks"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#marks -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#marks"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#ofPerson -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#ofPerson"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#partOf -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#partOf">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasBallotSection"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#performsAs -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#performsAs"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#produces -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#produces"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#represents -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#represents"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#scheduledVia -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#scheduledVia"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#selectedAt -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#selectedAt">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#for"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#serves -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#serves"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#servesPrecinct -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#servesPrecinct">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasPollingLocation"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#unnamedProperty1 -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#unnamedProperty1">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasElectionOutcome"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#votedAccordingTo -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#votedAccordingTo"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#votesAt -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#votesAt">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#serves"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#votesIn -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#votesIn">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasVoter"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#partOfBallotFormat -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#partOfBallotFormat">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#BallotDisplayFormat"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#BallotFormat"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part of ballot format</rdfs:label>
     </owl:ObjectProperty>
     
@@ -56,72 +465,100 @@
     
 
 
-    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#AlternativeFormat -->
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#AlternativeFormat -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#AlternativeFormat">
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#AlternativeFormat">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alternative Format</rdfs:label>
-        <skos:definition xml:lang="en">The ballot or accompanying information is said to be in an alternative format if it is in a representation other than the standard ballot language and format. Examples include, but are not limited to languages other than English, Braille, ASCII text, large print, recorded audio. (VVSG 1.1)</skos:definition>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ballot or accompanying information is said to be in an alternative format if it is in a representation other than the standard ballot language and format. Examples include, but are not limited to languages other than English, Braille, ASCII text, large print, recorded audio. (VVSG 1.1)</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#AudioFormat -->
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#AudioFormat -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#AudioFormat">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#AlternativeFormat"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#DisplayFormat"/>
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#AudioFormat">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#AlternativeFormat"/>
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#BallotDisplayFormat"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Audio Format</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#DisplayFormat -->
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#BallotDisplayFormat -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#DisplayFormat">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Display Format</rdfs:label>
-        <skos:definition xml:lang="en">The way the voting system communicates ballot choices and other information. (Human Factors Group)</skos:definition>
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#BallotDisplayFormat">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot Display Format</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The way the voting system communicates ballot choices and other information. (Human Factors Group)</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#EnhancedVisualFormat -->
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#DirectSelection -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#EnhancedVisualFormat">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#AlternativeFormat"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#VisualFormat"/>
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#DirectSelection">
+        <owl:disjointWith rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#IndirectSelection"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Direct Selection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#EnhancedVisualFormat -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#EnhancedVisualFormat">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#AlternativeFormat"/>
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#VisualFormat"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enhanced Visual Format</rdfs:label>
-        <skos:definition xml:lang="en">Visual display format options for displaying ballot choices and other information with the addition of personal choices such as text size and color contrast.</skos:definition>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visual display format options for displaying ballot choices and other information with the addition of personal choices such as text size and color contrast.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#VisualFormat -->
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#GeneratedMark -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#VisualFormat">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors#DisplayFormat"/>
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#GeneratedMark">
+        <owl:equivalentClass rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#IndirectSelection"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generated Mark</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#IndirectDeselection -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#IndirectDeselection">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Purpose"/>
+        <owl:disjointWith rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#IndirectSelection"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indirect Deselection</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E.g Party Control &quot;Contests&quot;</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#IndirectSelection -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#IndirectSelection">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Purpose"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indirect Selection</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The mechanism by which a selection for a specific contest option automatically selects other linked contest options. An example is a straight party selection that causes indirect selections for all contest options of the identified party.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#VisualFormat -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#VisualFormat">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#BallotDisplayFormat"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visual Format</rdfs:label>
-        <skos:definition xml:lang="en">A display format in which ballot choices and other information are displayed on screen or paper for perception using sight.</skos:definition>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A display format in which ballot choices and other information are displayed on screen or paper for perception using sight.</skos:definition>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    <rdf:Description rdf:about="http://www.semanticweb.org/jdziu_000/ontologies/2017/5/elections/humanFactors">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HumanFactors</rdfs:label>
-    </rdf:Description>
 </rdf:RDF>
 
 
@@ -135,4 +572,4 @@
 <!-- Warning: type declarations were not added automatically. -->
 
 
-<!-- Generated using the No Magic Cameo Concept Modeler (18.0 SP12, build 2017 12 20 13:56 (3634)) on 2018-08-08 at 18:53:22 GMT -->
+<!-- Generated using the No Magic Cameo Concept Modeler (19.0 SP4, build 20200303_1229-f28c8930) on 2021-02-11 at 13:16:47 GMT -->

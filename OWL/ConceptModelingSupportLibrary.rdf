@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/"
+     xml:base="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Concept Modeling Support Library</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/facetOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/facetOf">
+        <rdfs:domain rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/FacetingThing"/>
+        <rdfs:range rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/IdentifiableThing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">facet of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/hasIdentifier -->
+
+
+    <owl:ObjectProperty rdf:about="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/hasIdentifier">
+        <rdfs:domain rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/IdentifiableThing"/>
+        <rdfs:range rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/Identifier"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has identifier</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/isMediatingThing -->
+
+
+    <owl:ObjectProperty rdf:about="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/isMediatingThing">
+        <rdfs:domain rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/MediatingThing"/>
+        <rdfs:range rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/MediatingThing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is mediating thing</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/mediates -->
+
+
+    <owl:ObjectProperty rdf:about="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/mediates">
+        <rdfs:domain rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/MediatingThing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/phaseOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/phaseOf">
+        <rdfs:subPropertyOf rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/facetOf"/>
+        <rdfs:domain rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/RelativeThing"/>
+        <rdfs:range rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/IdentifiableThing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phase of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/playedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/playedBy">
+        <rdfs:subPropertyOf rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/facetOf"/>
+        <rdfs:domain rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/RelativeThing"/>
+        <rdfs:range rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/IdentifiableThing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">played by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/FacetingThing -->
+
+
+    <owl:Class rdf:about="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/FacetingThing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/facetOf"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Faceting Thing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/IdentifiableThing -->
+
+
+    <owl:Class rdf:about="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/IdentifiableThing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/hasIdentifier"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifiable Thing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/Identifier -->
+
+
+    <owl:Class rdf:about="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/Identifier"/>
+    
+
+
+    <!-- http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/MediatingThing -->
+
+
+    <owl:Class rdf:about="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/MediatingThing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/mediates"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/isMediatingThing"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/isMediatingThing"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mediating Thing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/RelativeThing -->
+
+
+    <owl:Class rdf:about="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/RelativeThing">
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/FacetingThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/phaseOf"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/playedBy"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relative Thing</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.0.2.20160507-1747) https://github.com/owlcs/owlapi/ -->
+
+
+
+
+
+<!-- Warning: type declarations were not added automatically. -->
+
+
+<!-- Generated using the No Magic Cameo Concept Modeler (19.0 SP4, build 20200303_1229-f28c8930) on 2021-02-11 at 13:41:25 GMT -->
