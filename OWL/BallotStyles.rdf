@@ -1,0 +1,3420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#"
+     xml:base="http://itl.nist.gov/ns/voting/ontologies/BallotStyles"
+     xmlns:AnnotationVocabulary1="http://spec.edmcouncil.org/fibo/FND/Utilities/AnnotationVocabulary/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:AnnotationVocabulary="http://spec.edmcouncil.org/fibo/FND/Utilities/AnnotationVocabulary#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles">
+        <owl:imports rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/"/>
+        <owl:imports rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors"/>
+        <owl:imports rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa"/>
+        <owl:imports rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#characterizes -->
+
+
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#characterizes"/>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#contextFor -->
+
+
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#contextFor">
+        <owl:inverseOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#withRespectTo"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#executes -->
+
+
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#executes">
+        <owl:inverseOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#instructs"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#facetOf -->
+
+
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#facetOf">
+        <owl:inverseOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#hasFacet"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#hasAction -->
+
+
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#hasAction"/>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#hasDescription -->
+
+
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#hasDescription">
+        <owl:inverseOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#characterizes"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#hasFacet -->
+
+
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#hasFacet"/>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#instructs -->
+
+
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#instructs"/>
+    
+
+
+    <!-- http://hiltonroscoe.com/ns/ontologies/sowa#withRespectTo -->
+
+
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#withRespectTo"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#achieves -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#achieves">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotRenderingProcess"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotPresentation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#affiliates -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#affiliates">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidatePartyAffiliation"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#AffiliatedCandidate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#affiliatesTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#affiliatesTo">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyAffiliation"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PoliticalParty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">affiliates to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#affiliatesVia -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#affiliatesVia">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#affiliates"/>
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#affiliatesTo"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#AffiliatedCandidate"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PoliticalParty"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidatePartyAffiliation"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyAffiliation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">affiliates via</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearingUnder -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearingUnder">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartySpecificContest"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PoliticalParty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">appearing under</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsOn -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsOn">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContest"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StraightPartyOption"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#ContestOnBallot"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Ballot"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">appears on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsOnBallot -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsOnBallot">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotData"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Ballot"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">appears on ballot</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsUnder -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsUnder">
+        <rdfs:subPropertyOf rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/facetOf"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOption"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestInElection"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">appears under</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#applies -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#applies">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyEndorsement"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#EndorsedCandidate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appliesTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appliesTo">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PoliticalPartyDesignation"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyDesignatedCandidate"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">applies to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#associatedWithBallotData -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#associatedWithBallotData">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestInElection"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotData"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">associated with ballot data</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#associatesWith -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#associatesWith">
+        <rdfs:subPropertyOf rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/mediates"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOptionPosition"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOption"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">associates with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#candidateRecievesVotesVia -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#candidateRecievesVotesVia">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#representedAs"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PoliticalParty"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StraightPartyOption"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">candidate recieves votes via</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#comesFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#comesFrom">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyEndorsement"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PoliticalParty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comes from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#coolRepresents -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#coolRepresents">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StraightPartyOption"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Candidate"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateTicket"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#votesFor"/>
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#affiliates"/>
+        </owl:propertyChainAxiom>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cool represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#deactivates -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#deactivates">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyActivationContestOption"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartySpecificContestOption"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#dictates -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#dictates">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VoterSituation"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotFormat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#establishedUnderAuthority -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#establishedUnderAuthority">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ElectionPolicy"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Law"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">established under authority</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ff -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ff">
+        <rdfs:subPropertyOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#represents"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PhysicalContest"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#LogicalContest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#forElectionIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#forElectionIn">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#forRepresentationIn"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ElectedOfficeSeat"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateContestInElection"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">for election in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#forRepresentationIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#forRepresentationIn">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateContestInElection"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ElectedOfficeSeat"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">for representation in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#gives -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#gives">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#comesFrom"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PoliticalParty"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyEndorsement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasAppearence -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasAppearence">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PrintContestLayout"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOptionPositionAppearence"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has appearence</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallot -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallot">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotInterpertation"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Ballot"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has ballot</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotFormat -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotFormat">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VotingTechnology"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotFormat"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has ballot format</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotInteractionInstructions -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotInteractionInstructions">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#RenderedBallot"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotInteractionInstructions"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has ballot interaction instructions</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotInterpertation -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotInterpertation">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotInterpertor"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotInterpertation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has ballot interpertation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotPages -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotPages">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PaperBallotSheet"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PaperBallotPage"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has ballot pages</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotSection -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotSection">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotData"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotSection"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has ballot section</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotSheet -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotSheet">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PaperBallot"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PaperBallotSheet"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has ballot sheet</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotSide -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotSide">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PaperBallotSheet"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotSide"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has ballot side</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasCandidateOption -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasCandidateOption">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StraightPartyOverride"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateOption"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has candidate option</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContest -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContest">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#associatedWithBallotData"/>
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContestRule"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Ballot"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotData"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateContestInElection"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestRule"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestInElection"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#ContestOnBallot"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#NonPartySpecificContest"/>
+                            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartySpecificContest"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has contest</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContestInElection -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContestInElection">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#votedAccordingTo"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VotingMethod"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestInElection"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has contest in election</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContestLayout -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContestLayout">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PrintPhysicalContest"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PrintContestLayout"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has contest layout</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContestOutcome -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContestOutcome">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestInElection"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ContestOutcome"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has contest outcome</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContestRule -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContestRule">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestInElection"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestRule"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has contest rule</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContestSelectionGeneration -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContestSelectionGeneration">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestSelection"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#BallotMark"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#MachineGeneratedIndication"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has contest selection generation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasCoolParty -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasCoolParty">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartisanBallot"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PoliticalParty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasVoterVotingInClosedPrimary"/>
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasVoter"/>
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#affiliatesVia"/>
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#affiliatesTo"/>
+        </owl:propertyChainAxiom>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has cool party</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasElection -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasElection">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasBallot"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Ballot"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotData"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateContestInElection"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Election"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has election</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasElectionDistrict -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasElectionDistrict">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Ballot"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ElectionDistrict"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has election district</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasElectionOutcome -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasElectionOutcome">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#unnamedProperty1"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestInElection"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ElectionOutcome"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has election outcome</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasFinalImpact -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasFinalImpact">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#GeneralElection"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#FinalImpact"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has final impact</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasIndirectDeselection -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasIndirectDeselection">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyActivationContest"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#IndirectDeselection"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has indirect deselection</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasIndirectSelection -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasIndirectSelection">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StraightPartyContest"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#IndirectSelection"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has indirect selection</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasLanguage -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasLanguage">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PresentableBallotStyle"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#LanguageSituation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has language</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOption -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOption">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsUnder"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestInElection"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOption"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has option</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOrderedContest -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOrderedContest">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateOption"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#OrderedContest"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has ordered contest</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasPhysicalContest -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasPhysicalContest">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ff"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#LogicalContest"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PhysicalContest"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has physical contest</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasPollingLocation -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasPollingLocation">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Precinct"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#PollingLocation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has polling location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasPrecinct -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasPrecinct">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotData"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Precinct"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has precinct</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasPresentableBallot -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasPresentableBallot">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasStructualData"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StructualData"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PresentableBallotStyle"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has presentable ballot</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasRotatedContest -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasRotatedContest">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateOption"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PresentableBallotStyle"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#RotatedContest"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has rotated contest</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasSplitPrecinct -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasSplitPrecinct">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotStyle"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PrecinctSplit"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has split precinct</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasStraightPartyOption -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasStraightPartyOption">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StraightPartyOverride"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StraightPartyOption"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has straight party option</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasStructualData -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasStructualData">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PresentableBallotStyle"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StructualData"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has structual data</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasVoteCenter -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasVoteCenter">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Precinct"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#VoteCenter"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has vote center</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasVoter -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasVoter">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VoterInSituation"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Voter"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has voter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasVoterSituation -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasVoterSituation">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotStyle"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VoterInSituation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VoterSituation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has voter situation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasVoterVotingInClosedPrimary -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasVoterVotingInClosedPrimary">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasPartisanBallot"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartisanBallot"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#VoterVotingInClosedPrimary"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has voter voting in closed primary</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasVotingVariation -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasVotingVariation">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ElectionPolicy"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PhysicalContest"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VotingVariation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has voting variation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#indicatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#indicatedBy">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotOption"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#BallotSelection"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indicated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#indicatedVia -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#indicatedVia">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestSelection"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOptionPosition"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#indicates"/>
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#isSelectedAt"/>
+        </owl:propertyChainAxiom>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">indicated via</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#indicates -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#indicates">
+        <rdfs:subPropertyOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#characterizes"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestSelection"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOption"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#informs -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#informs">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestRule"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VotingMethod"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ContestInstructions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#instantiatesDisplayFormat -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#instantiatesDisplayFormat">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#AudioBallot"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PaperBallot"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VideoBallot"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotDisplayFormat"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">instantiates display format</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#isIndicatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#isIndicatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/mediates"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOptionPosition"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOptionPositionAppearence"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is indicated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#isLabeledBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#isLabeledBy">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PoliticalPartyDesignation"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PoliticalParty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is labeled by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#isSelectedAt -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#isSelectedAt">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#associatesWith"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOption"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOptionPosition"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is selected at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#labels -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#labels">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#isLabeledBy"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PoliticalParty"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PoliticalPartyDesignation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#madeUpOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#madeUpOf">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateTicket"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Candidate"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">made up of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#memberOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#memberOf">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Candidate"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#CandidateCommittee"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">member of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#partOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#partOf">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotSection"/>
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#madeUpOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotSection"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Candidate"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotData"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateTicket"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#partOfBallotFormat -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#partOfBallotFormat">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotDisplayFormat"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotFormat"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part of ballot format</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#patientOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#patientOf">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Candidate"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#AgentOfCandidate"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patient of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#producedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#producedBy">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#OrderedContest"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#RotatedContest"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateRotationProcess"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOrdering"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">produced by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#produces -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#produces">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#producedBy"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOrdering"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#OrderedContest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#producesRenderBallot -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#producesRenderBallot">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotRenderingProcess"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#RenderedBallot"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">produces render ballot</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#receives -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#receives">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#applies"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#EndorsedCandidate"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyEndorsement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#recieves -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#recieves">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appliesTo"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyDesignatedCandidate"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PoliticalPartyDesignation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#representedAs -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#representedAs">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StraightPartyOption"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PoliticalParty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">represented as</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#represents -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#represents">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#surfaces"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateOption"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Write-InOption"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Candidate"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateTicket"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#runFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#runFor">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#AffiliatedCandidate"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#PartisanOffice"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">run for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#runningFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#runningFor">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#qualifiedCandidates"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Candidate"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ElectedOffice"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">running for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#suppliesBallotData -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#suppliesBallotData">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PresentableBallotStyle"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotRenderingProcess"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">supplies ballot data</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#surfaces -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#surfaces">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Candidate"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateTicket"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateOption"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Write-InOption"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#unnamed1 -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#unnamed1">
+        <rdfs:subPropertyOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#gives"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PoliticalParty"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Cross-PartyEndorsement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#votedAccordingTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#votedAccordingTo">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestInElection"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VotingMethod"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">voted according to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#votesFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#votesFor">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StraightPartyOption"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyAffiliation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">votes for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#withRespectToElection -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#withRespectToElection">
+        <rdfs:subPropertyOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#withRespectTo"/>
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestInElection"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Election"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">with respect to election</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#writtenToHonor -->
+
+
+    <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#writtenToHonor">
+        <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#InterpertationRules"/>
+        <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#MarkingMotivation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">written to honor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#affiliates -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#affiliates">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#affiliatesVia"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#affiliatesVia -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#affiliatesVia"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#agentOf -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#agentOf">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#patientOf"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#bornAt -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#bornAt"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#establishesOffice -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#establishesOffice"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#fillsOutAbsenteeRequest -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#fillsOutAbsenteeRequest">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#represents"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#for -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#for">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#memberOf"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#forSeat -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#forSeat">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasOfficeholder"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#governedByLaw -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#governedByLaw">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#establishesOffice"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasActualForm -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasActualForm"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasBallot -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasBallot"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasBallotStyleData -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasBallotStyleData">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasElection"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasContest -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasContest">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#withRespectToElection"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasElection -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasElection"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasElectionPolicy -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasElectionPolicy">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#establishedUnderAuthority"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasForm -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasForm">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasActualForm"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasLaw -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasLaw">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasLawJurisdiction"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasLawJurisdiction -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasLawJurisdiction"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasMarkedBallot -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasMarkedBallot"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasMarkingMotivation -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasMarkingMotivation"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasMarkingOutcome -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasMarkingOutcome">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasMarkedBallot"/>
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasMarkingMotivation"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasOffice -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasOffice">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#madeUpOf"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasOfficeholder -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasOfficeholder"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasPartisanBallot -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasPartisanBallot"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasPerformer -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasPerformer"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasPollingLocation -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasPollingLocation">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasElection"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasPurpose -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasPurpose">
+        <owl:inverseOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#hasAction"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasSubmittedRegistration -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasSubmittedRegistration">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#for"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasVoter -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasVoter"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#hasVoting -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasVoting">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#produces"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#identifies -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#identifies"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#isIdentifiedBy -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#isIdentifiedBy">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#identifies"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#issuedBy -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#issuedBy"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#issues -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#issues">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#issuedBy"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#madeUpOf -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#madeUpOf"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#markedBy -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#markedBy"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#marks -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#marks">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#markedBy"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#ofPerson -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#ofPerson">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#bornAt"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#performsAs -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#performsAs">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasPerformer"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#produces -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#produces"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#qualifiedCandidates -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#qualifiedCandidates"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#represents -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#represents"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#scheduledVia -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#scheduledVia">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#madeUpOf"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#serves -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#serves"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#servesPrecinct -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#servesPrecinct">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasPollingLocation"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#unnamedProperty1 -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#unnamedProperty1"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#votesAt -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#votesAt">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#serves"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#votesIn -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#votesIn">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasVoter"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#AbilitySituation -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#AbilitySituation">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VoterSituation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ability Situation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#AffiliatedCandidate -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#AffiliatedCandidate">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Candidate"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#affiliatesVia"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Affiliated Candidate</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A candidate affiliated with a political party, regardless of ballot designation.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#AudioBallot -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#AudioBallot">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Audio Ballot</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A ballot in which a set of offices is presented to the voter in spoken, rather than written, form (VVSG 1.1)
+</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Ballot -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Ballot">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContest"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasElectionDistrict"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasElection"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Presentation of the contest options for a particular voter.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotData -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotData">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#MediatingThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContest"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasElection"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasPrecinct"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot Data</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A list of contests and associated contest options that may appear on a ballot for a particular precinct and election.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotDisplayFormat -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotDisplayFormat">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot Display Format</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The way the voting system communicates ballot choices and other information. (Human Factors Group)</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotFormat -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotFormat">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Script"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#instructs"/>
+                <owl:someValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotRenderingProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot Format</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The concrete presentation of the contents of a ballot appropriate to the particular voting technology being used. The contents may be rendered using various methods of presentation (visual or audio), language or graphics. (VVSG 1.1) (blessed)</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotInteractionInstructions -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotInteractionInstructions">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#RelativeThing"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Script"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot Interaction Instructions</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instructions for interacting with the ballot based on its rendering.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotInterpertation -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotInterpertation">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Process"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot Interpertation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotInterpertor -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotInterpertor">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ElectionJurisdictionInRole"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot Interpertor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotIssue -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotIssue">
+        <owl:equivalentClass rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotMeasureContest"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot Issue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotMeasureContest -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotMeasureContest">
+        <owl:equivalentClass rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotProposition"/>
+        <owl:equivalentClass rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotQuestion"/>
+        <owl:equivalentClass rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotReferendum"/>
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestInElection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOption"/>
+                <owl:allValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotMeasureOption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOption"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#NonPartySpecificContest"/>
+                    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartySpecificContest"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot Measure Contest</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A question that appears on the ballot with options usually in the form of an approval or rejection.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotMeasureOption -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotMeasureOption">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOption"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsUnder"/>
+                <owl:allValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotMeasureContest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsUnder"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot Measure Option</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A contest option that specifies a response to a ballot measure contest.</skos:definition>
+    </owl:Class>
+    <owl:Annotation>
+        <owl:annotatedSource>
+            <owl:Axiom>
+                <owl:annotatedSource rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotMeasureOption"/>
+                <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#disjointWith"/>
+                <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DisjointClasses(&lt;http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotMeasureOption&gt;) replaced by DisjointClasses(&lt;http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotMeasureOption&gt; owl:Thing)</rdfs:comment>
+            </owl:Axiom>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DisjointClasses(&lt;http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotMeasureOption&gt;) replaced by DisjointClasses(&lt;http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotMeasureOption&gt; owl:Thing)</owl:annotatedTarget>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generated by the OWL API (version 5.0.2.20160507-1747) https://github.com/owlcs/owlapi/ on 2/15/21 10:55 AM</rdfs:comment>
+    </owl:Annotation>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotOption -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotOption">
+        <owl:disjointWith rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOption"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot Option</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A particular type of ballot style that may be given to / activated for a voter.</skos:definition>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Role of ballot style</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotPresentation -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotPresentation">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot Presentation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotProposition -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotProposition">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot Proposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotQuestion -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotQuestion">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot Question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotReferendum -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotReferendum">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot Referendum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotRenderingProcess -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotRenderingProcess">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Process"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#executes"/>
+                <owl:someValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotFormat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot Rendering Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotRotationRule -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotRotationRule">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ElectionPolicy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#instructs"/>
+                <owl:someValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateRotationProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot Rotation Rule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotSection -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotSection">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot Section</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An independently countable part of a ballot.</skos:definition>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harvey?</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotSide -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotSide">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot Side</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The face of a paper ballot. A paper ballot may have two sides. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotStyle -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotStyle">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotData"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContest"/>
+                <owl:allValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#OrderedContest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContest"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasSplitPrecinct"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot Style</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot data that has been put into contest order for a particular precinct and set of voter situations. Voter situations include party affiliation (for closed primaries) and age of the voter (in states that permit 17-year-olds to vote in primary elections), among others.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BoxAppearence -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BoxAppearence">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOptionPositionAppearence"/>
+        <owl:disjointWith rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BrokenArrowAppearence"/>
+        <owl:disjointWith rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#OvalAppearence"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Box Appearence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BrokenArrowAppearence -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BrokenArrowAppearence">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOptionPositionAppearence"/>
+        <owl:disjointWith rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#OvalAppearence"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Broken Arrow Appearence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Candidate -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Candidate">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#PersonInRole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#memberOf"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#partOf"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateTicket"/>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person contending in a contest for office. A candidate may be explicitly presented as one of the contest options or may be a write-in candidate. (VVSG vNext)</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateContestInElection -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateContestInElection">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Candidate Contest in Election</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateElectors -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateElectors">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Candidate Electors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateOption -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateOption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasRotatedContest"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#represents"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Candidate Option</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A contest option that is associated with a candidate.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidatePartyAffiliation -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidatePartyAffiliation">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyAffiliation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#executes"/>
+                <owl:allValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#DeclaredPartyAffiliation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Candidate Party Affiliation</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The party affiliation of a candidate for purposes of representing a party in an election.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateRotationProcess -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateRotationProcess">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VotingVariation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#executes"/>
+                <owl:someValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotRotationRule"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#produces"/>
+                <owl:allValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#RotatedContest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#produces"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Candidate Rotation Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateTicket -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateTicket">
+        <owl:equivalentClass rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#TeamCandidate"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#madeUpOf"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Candidate Ticket</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two or more candidates that appear together as a single contest option.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestInElection -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestInElection">
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/IdentifiableThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#associatedWithBallotData"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContestRule"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#votedAccordingTo"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#withRespectToElection"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContestOutcome"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasElectionOutcome"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ControlContest"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contest in Election</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single decision or set of associated decisions being put before the voters (for example, the option of candidates to fill a particular public office or the approval or disapproval of a constitutional amendment). This term encompasses other terms such as &quot;race,&quot; &quot;question,&quot; and &quot;issue&quot; that are sometimes used to refer to specific kinds of contests. It does not refer to the legal challenge of an election outcome. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOption -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#isSelectedAt"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsUnder"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestSelection"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contest Option</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A votable choice that appears under a contest.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOptionPosition -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOptionPosition">
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/IdentifiableThing"/>
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/MediatingThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#associatesWith"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#isIndicatedBy"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contest Option Position</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specified area on a ballot where a voter’s selection in a particular contest can be indicated. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOptionPositionAppearence -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOptionPositionAppearence">
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/FacetingThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/facetOf"/>
+                <owl:allValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOptionPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/facetOf"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contest Option Position Appearence</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An indicator of where marks may be placed.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOrderRule -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOrderRule">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ElectionPolicy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#instructs"/>
+                <owl:someValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOrdering"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contest Order Rule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOrdering -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOrdering">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Process"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#executes"/>
+                <owl:someValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOrderRule"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#produces"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contest Ordering</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process of putting contests into a particular order, commonly referred to as ballot order.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestRule -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestRule">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Script"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContest"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#informs"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contest Rule</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule that affect the way the contest is voted. Examples include number to be elected or vote for.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestSelection -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestSelection">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Description"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#indicates"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contest Selection</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A selection marked on the ballot by a voter with respect to a specific single contest (for example, a candidate, the value “Yes” or “Approve”).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ControlContest -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ControlContest">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Control Contest</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contest where the selection of contest options causes a outcome </skos:definition>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Does not act like a normal contest</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Cross-PartyEndorsement -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Cross-PartyEndorsement">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyEndorsement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#comesFrom"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PoliticalParty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cross-Party Endorsement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ElectedOfficeSeat -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ElectedOfficeSeat">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#OfficeSeat"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasOffice"/>
+                <owl:allValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ElectedOffice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#forElectionIn"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasOffice"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elected Office Seat</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An elected office position that a single officeholder may occupy for a term of office.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ElectionGeography -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ElectionGeography">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#MediatingThing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Election Geography</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ElectionPolicy -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ElectionPolicy">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Script"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasLawJurisdiction"/>
+                <owl:someValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Election Policy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ElectionRules -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ElectionRules">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Election Rules</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ElectronicBallotInterface -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ElectronicBallotInterface">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic Ballot Interface</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subsystem within a voting system which communicates ballot information to a voter in video, audio, or other alternative format which allows the voter to select candidates and issues using vocalization or physical actions.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#EndorsedCandidate -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#EndorsedCandidate">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Candidate"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endorsed Candidate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#FlatLayout -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#FlatLayout">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PrintContestLayout"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flat Layout</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#GeneralElection -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#GeneralElection">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasFinalImpact"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">General Election</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Election in which voters, regardless of party affiliation, are permitted to select candidates to fill public office and vote on ballot issues (VVSG 1.1) </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Header -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Header">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StructualData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#IndirectDeselection -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#IndirectDeselection">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Purpose"/>
+        <owl:disjointWith rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#IndirectSelection"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indirect Deselection</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E.g Party Control &quot;Contests&quot;</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#IndirectSelection -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#IndirectSelection">
+        <owl:equivalentClass rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#GeneratedMark"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Purpose"/>
+        <owl:disjointWith rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#DirectSelection"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indirect Selection</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The mechanism by which a selection for a specific contest option automatically selects other linked contest options. An example is a straight party selection that causes indirect selections for all contest options of the identified party.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#InterpertationRules -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#InterpertationRules">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Script"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interpertation Rules</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#LanguageSituation -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#LanguageSituation">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VoterSituation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Language Situation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#LogicalContest -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#LogicalContest">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Abstract"/>
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestInElection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasPhysicalContest"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logical Contest</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A contest layed out according to </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#MatrixLayout -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#MatrixLayout">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PrintContestLayout"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matrix Layout</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#NonPartySpecificContest -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#NonPartySpecificContest">
+        <owl:disjointWith rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartySpecificContest"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non Party Specific Contest</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contest where eligibility to vote in that contest is independent of political party.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#OrderedContest -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#OrderedContest">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestInElection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOption"/>
+                <owl:someValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateOption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#withRespectTo"/>
+                <owl:allValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotStyle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#withRespectTo"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ordered Contest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#OvalAppearence -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#OvalAppearence">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOptionPositionAppearence"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oval Appearence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PaperBallot -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PaperBallot">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#FullyVerifiablePaperRecord"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotSheet"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paper Ballot</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A piece of paper, or multiple sheets of paper, on which all contest options of a given ballot style are printed. </skos:definition>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot style does not link properly to Ballot</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PaperBallotPage -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PaperBallotPage">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paper Ballot Page</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PaperBallotSheet -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PaperBallotSheet">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotPages"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotSide"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paper Ballot Sheet</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single piece of paper that forms part of a paper ballot. Paper ballots may contain multiple ballot sheets.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartisanBallot -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartisanBallot">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Ballot"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Partisan Ballot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyActivationContest -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyActivationContest">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ControlContest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOption"/>
+                <owl:allValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyActivationContestOption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOption"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Party Activation Contest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyActivationContestOption -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyActivationContestOption">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOption"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsUnder"/>
+                <owl:allValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyActivationContest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#deactivates"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsUnder"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Party Activation Contest Option</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyAffiliation -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyAffiliation">
+        <owl:equivalentClass rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Affiliation"/>
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Process"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#affiliatesTo"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Party Affiliation</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Association with a political party. See also: endorsement. Note: Affiliation with a political party does not imply endorsement by that political party; endorsement does not imply affiliation</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyDesignatedCandidate -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyDesignatedCandidate">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Candidate"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#recieves"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Party Designated Candidate</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A candidate that has a party or party-like designation.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyEndorsement -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartyEndorsement">
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/MediatingThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#applies"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#comesFrom"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Party Endorsement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartySpecificContest -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartySpecificContest">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOption"/>
+                <owl:allValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartySpecificContestOption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearingUnder"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Party Specific Contest</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contest such that eligibility to vote in that contest is restricted based on political party affiliation or lack thereof. Note: The affiliation might be the registered affiliation of the voter or it might be an affiliation declared at the time of voting. See closed primary, open primary. (NIST Twiki Glossary), (approved by EM group, 3/28)</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartySpecificContestOption -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartySpecificContestOption">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOption"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsUnder"/>
+                <owl:allValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartySpecificContest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsUnder"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Party Specific Contest Option</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PhysicalContest -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PhysicalContest">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Physical"/>
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestInElection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ff"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical Contest</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A contest rendered according to a specific layout.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PoliticalParty -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PoliticalParty">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#MediatingThing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Political Party</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PoliticalPartyDesignation -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PoliticalPartyDesignation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#isLabeledBy"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Political Party Designation</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A political party label that is associated with a candidate. Candidates may be designated through the nomination process or by the candidate themself.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Precinct -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Precinct">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ElectionGeography"/>
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ElectionDistrict"/>
+        <AnnotationVocabulary1:definitionOrigin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EAVS</AnnotationVocabulary1:definitionOrigin>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A precinct is the geographic area to which voters are assigned. It is an administrative division of a county or municipality to which a voter has been assigned by their residence address for voting in an election. Your jurisdiction may use the terms “ward” or “voting district” to describe voting precincts.
+
+</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PrecinctSplit -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PrecinctSplit">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ElectionGeography"/>
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ElectionDistrict"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Precinct Split</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PreferenceSituation -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PreferenceSituation">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VoterSituation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Preference Situation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PresentableBallotStyle -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PresentableBallotStyle">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotStyle"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Presentable Ballot Style</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ballot style that includes all presentational details required to generate a ballot. This may include language, ordering of contests and candidates, and structural content such as headers.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PrintContestLayout -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PrintContestLayout">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasAppearence"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Print Contest Layout</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PrintPhysicalContest -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PrintPhysicalContest">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PhysicalContest"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Print Physical Contest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ReadBallot -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ReadBallot">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#CastBallot"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Read Ballot</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cast ballot that has been accepted and initially processed.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#RenderedBallot -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#RenderedBallot">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Ballot"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rendered Ballot</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A ballot style rendered in a human understandable display format according to a voter&apos;s situation, with instructions on how to make a selection.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#RotatedContest -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#RotatedContest">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#producedBy"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#OrderedContest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOption"/>
+                <owl:someValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateOption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rotated Contest</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A contest in which the candidates have been shifted from their initial position.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#SpecialElection -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#SpecialElection">
+        <owl:disjointWith rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ScheduledElection"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Special Election</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primary election or general election that is not regularly scheduled. Note: a special election may be combined with a scheduled election.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StraightPartyContest -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StraightPartyContest">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ControlContest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOption"/>
+                <owl:allValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StraightPartyOption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Straight Party Contest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StraightPartyOption -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StraightPartyOption">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOption"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsUnder"/>
+                <owl:allValuesFrom rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StraightPartyContest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsUnder"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#representedAs"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#votesFor"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Straight Party Option</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StraightPartyOverride -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StraightPartyOverride">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasCandidateOption"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasStraightPartyOption"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Straight Party Override</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Explicit voter selection that overrides or supplements the vote selections made by a straight party voting option. Straight party overrides may be subject to state election rules for how they work or whether they are allowed.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StraightPartyVoting -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StraightPartyVoting">
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VotingVariation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Straight Party Voting</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mechanism that allows voters to cast a single vote to select all candidates on the ballot from a single political party.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StructualData -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#StructualData">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Structual Data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#TeamCandidate -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#TeamCandidate">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Team Candidate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VideoBallot -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VideoBallot">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Video Ballot</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic ballot interface which presents ballot information and voting instructions as video images. See also ballot. (VVSG 1.1) 
+</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VoterInSituation -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VoterInSituation">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Situation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasVoter"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Voter in Situation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VoterSituation -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VoterSituation">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#RelativeThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#dictates"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Voter Situation</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A point in time in which certain facts holds about a voter.</skos:definition>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fff</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VotingMethod -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VotingMethod">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#informs"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Voting Method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VotingTechnology -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VotingTechnology">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Voting Technology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VotingVariation -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VotingVariation">
+        <rdfs:subClassOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#Process"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#executes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ElectionPolicy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Voting Variation</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Voting style, option, or feature such as in-person voting, absentee voting, provisional / challenged ballots, review-required ballots, closed primaries, open primaries, write-ins, ballot rotation, straight party voting, cross-party endorsement, split precincts, N-of-M voting, cumulative voting, or ranked order voting. (NIST Twiki Glossary)
+</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Write-InOption -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Write-InOption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#represents"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Write-In Option</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of contest option that allows a voter to specify a candidate, usually not already listed under the same contest. Depending on jurisdiction rules, only certain names will be considered as valid write-ins.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#Affiliation -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#Affiliation"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#ContestOnBallot -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#ContestOnBallot">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsOn"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections#ScheduledElection -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#ScheduledElection"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#DirectSelection -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#DirectSelection"/>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#GeneratedMark -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#GeneratedMark"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:Annotation>
+        <owl:annotatedSource>
+            <owl:Axiom>
+                <owl:annotatedSource rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotMeasureOption"/>
+                <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#disjointWith"/>
+                <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DisjointClasses(&lt;http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotMeasureOption&gt;) replaced by DisjointClasses(&lt;http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotMeasureOption&gt; owl:Thing)</rdfs:comment>
+            </owl:Axiom>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DisjointClasses(&lt;http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotMeasureOption&gt;) replaced by DisjointClasses(&lt;http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotMeasureOption&gt; owl:Thing)</owl:annotatedTarget>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generated by the OWL API (version 5.0.2.20160507-1747) https://github.com/owlcs/owlapi/ on 2/15/21 10:55 AM</rdfs:comment>
+    </owl:Annotation>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#AudioBallot"/>
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PaperBallot"/>
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#VideoBallot"/>
+        </owl:unionOf>
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#RenderedBallot"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotOption"/>
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOption"/>
+        </owl:unionOf>
+        <rdfs:subClassOf rdf:resource="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/FacetingThing"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateOption"/>
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Write-InOption"/>
+        </owl:unionOf>
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestOption"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateOption"/>
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Write-InOption"/>
+        </owl:unionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsUnder"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#NonPartySpecificContest"/>
+                            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartySpecificContest"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateOption"/>
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Write-InOption"/>
+        </owl:unionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsUnder"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#NonPartySpecificContest"/>
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartySpecificContest"/>
+        </owl:unionOf>
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestInElection"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#NonPartySpecificContest"/>
+            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#PartySpecificContest"/>
+        </owl:unionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOption"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#CandidateOption"/>
+                            <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#Write-InOption"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.0.2.20160507-1747) https://github.com/owlcs/owlapi/ -->
+
+
+
+
+
+<!-- Warning: type declarations were not added automatically. -->
+
+
+<!-- Generated using the No Magic Cameo Concept Modeler (19.0 SP4, build 20200303_1229-f28c8930) on 2021-02-15 at 15:55:50 GMT -->
