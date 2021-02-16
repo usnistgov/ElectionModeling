@@ -2,10 +2,11 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="User Entered Import Resolution" name="http://hiltonroscoe.com/ns/ontologies/sowa" uri="sowa.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1613054860015" name="http://hiltonroscoe.com/ns/ontologies/sowa" uri="sowa.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1613054860015" name="http://itl.nist.gov/ns/voting/ontologies/elections" uri="elections.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1613054860015" name="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors" uri="humanFactors.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1613054860015" name="http://itl.nist.gov/ns/voting/ontologies/foundations" uri="foundations.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1613054860015" name="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/" uri="ConceptModelingSupportLibrary.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1613509199163" name="http://hiltonroscoe.com/ns/ontologies/sowa" uri="sowa.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1613509199163" name="http://itl.nist.gov/ns/voting/ontologies/BallotStyles" uri="BallotStyles.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1613509199163" name="http://itl.nist.gov/ns/voting/ontologies/elections" uri="elections.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1613509199163" name="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors" uri="humanFactors.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1613509199163" name="http://itl.nist.gov/ns/voting/ontologies/foundations" uri="foundations.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1613509199163" name="http://nomagic.com/ConceptModeler/ConceptModelingSupportLibrary/" uri="ConceptModelingSupportLibrary.rdf"/>
     </group>
 </catalog>
