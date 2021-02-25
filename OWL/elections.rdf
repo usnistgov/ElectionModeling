@@ -42,7 +42,9 @@
     <!-- http://hiltonroscoe.com/ns/ontologies/sowa#contextFor -->
 
 
-    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#contextFor"/>
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#contextFor">
+        <owl:inverseOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#withRespectTo"/>
+    </rdf:Description>
     
 
 
@@ -56,7 +58,9 @@
     <!-- http://hiltonroscoe.com/ns/ontologies/sowa#facetOf -->
 
 
-    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#facetOf"/>
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#facetOf">
+        <owl:inverseOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#hasFacet"/>
+    </rdf:Description>
     
 
 
@@ -79,9 +83,7 @@
     <!-- http://hiltonroscoe.com/ns/ontologies/sowa#hasFacet -->
 
 
-    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#hasFacet">
-        <owl:inverseOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#facetOf"/>
-    </rdf:Description>
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#hasFacet"/>
     
 
 
@@ -97,18 +99,14 @@
     <!-- http://hiltonroscoe.com/ns/ontologies/sowa#withRespectTo -->
 
 
-    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#withRespectTo">
-        <owl:inverseOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#contextFor"/>
-    </rdf:Description>
+    <rdf:Description rdf:about="http://hiltonroscoe.com/ns/ontologies/sowa#withRespectTo"/>
     
 
 
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#affiliates -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#affiliates">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#affiliatesVia"/>
-    </rdf:Description>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#affiliates"/>
     
 
 
@@ -123,6 +121,7 @@
 
 
     <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#affiliatesVia">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#affiliates"/>
         <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#affiliatesTo"/>
     </rdf:Description>
     
@@ -131,16 +130,16 @@
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsUnder -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsUnder">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOption"/>
-    </rdf:Description>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsUnder"/>
     
 
 
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#applies -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#applies"/>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#applies">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#receives"/>
+    </rdf:Description>
     
 
 
@@ -149,7 +148,6 @@
 
     <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appliesTo">
         <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#recieves"/>
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasBallotStyleData"/>
     </rdf:Description>
     
 
@@ -166,21 +164,27 @@
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#associatesWith -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#associatesWith"/>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#associatesWith">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#selectedAt"/>
+    </rdf:Description>
     
 
 
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#comesFrom -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#comesFrom"/>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#comesFrom">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#gives"/>
+    </rdf:Description>
     
 
 
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#establishedUnderAuthority -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#establishedUnderAuthority"/>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#establishedUnderAuthority">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasElectionPolicy"/>
+    </rdf:Description>
     
 
 
@@ -203,16 +207,16 @@
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#forSeat -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#forSeat"/>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#forSeat">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOfficeholder"/>
+    </rdf:Description>
     
 
 
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#gives -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#gives">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#comesFrom"/>
-    </rdf:Description>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#gives"/>
     
 
 
@@ -226,7 +230,9 @@
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotSection -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotSection"/>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotSection">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#partOf"/>
+    </rdf:Description>
     
 
 
@@ -240,7 +246,9 @@
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContestInElection -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContestInElection"/>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContestInElection">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#votedAccordingTo"/>
+    </rdf:Description>
     
 
 
@@ -263,9 +271,7 @@
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasElectionOutcome -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasElectionOutcome">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#unnamedProperty1"/>
-    </rdf:Description>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasElectionOutcome"/>
     
 
 
@@ -279,16 +285,16 @@
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOfficeholder -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOfficeholder">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#forSeat"/>
-    </rdf:Description>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOfficeholder"/>
     
 
 
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOption -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOption"/>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasOption">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appearsUnder"/>
+    </rdf:Description>
     
 
 
@@ -322,16 +328,16 @@
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#isLabeledBy -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#isLabeledBy"/>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#isLabeledBy">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#labels"/>
+    </rdf:Description>
     
 
 
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#labels -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#labels">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#isLabeledBy"/>
-    </rdf:Description>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#labels"/>
     
 
 
@@ -345,9 +351,7 @@
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#partOf -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#partOf">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasBallotSection"/>
-    </rdf:Description>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#partOf"/>
     
 
 
@@ -361,9 +365,7 @@
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#receives -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#receives">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#applies"/>
-    </rdf:Description>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#receives"/>
     
 
 
@@ -377,16 +379,16 @@
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#representedBy -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#representedBy">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#represents"/>
-    </rdf:Description>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#representedBy"/>
     
 
 
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#represents -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#represents"/>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#represents">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#representedBy"/>
+    </rdf:Description>
     
 
 
@@ -400,27 +402,21 @@
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#selectedAt -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#selectedAt">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#associatesWith"/>
-    </rdf:Description>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#selectedAt"/>
     
 
 
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#votedAccordingTo -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#votedAccordingTo">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasContestInElection"/>
-    </rdf:Description>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#votedAccordingTo"/>
     
 
 
     <!-- http://itl.nist.gov/ns/voting/ontologies/BallotStyles#withRespectToElection -->
 
 
-    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#withRespectToElection">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasContest"/>
-    </rdf:Description>
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#withRespectToElection"/>
     
 
 
@@ -449,7 +445,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#affiliates">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#affiliatesVia"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#VoterPartyAffiliation"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#PartisanVoter"/>
     </owl:ObjectProperty>
@@ -460,6 +455,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#affiliatesVia">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#affiliates"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#PartisanVoter"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#VoterPartyAffiliation"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">affiliates via</rdfs:label>
@@ -538,7 +534,6 @@
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#appearsOn">
         <rdfs:subPropertyOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#withRespectTo"/>
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#containing"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -606,7 +601,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#bornAt">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ofPerson"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Person"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Birth"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">born at</rdfs:label>
@@ -650,7 +644,6 @@
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#conductedDuringElectionDayVotingPeriod">
         <rdfs:subPropertyOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#conductedDuringVotingPeriod"/>
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasElectionDayVoting"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ElectionDayVoting"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ElectionDayVotingPeriod"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conducted during election day voting period</rdfs:label>
@@ -698,6 +691,7 @@
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#containing">
         <rdfs:subPropertyOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#contextFor"/>
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#appearsOn"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#NvraForm"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#VoterRegistrationIdentification"/>
     </owl:ObjectProperty>
@@ -762,7 +756,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#employedBy">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#employs"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ElectionWorker"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ElectionJurisdiction"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">employed by</rdfs:label>
@@ -774,6 +767,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#employs">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#employedBy"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ElectionJurisdiction"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ElectionWorker"/>
     </owl:ObjectProperty>
@@ -990,6 +984,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasBallotStyleData">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#appliesTo"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Election"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotData"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has ballot style data</rdfs:label>
@@ -1094,6 +1089,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasCastBallot">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasCastVote"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1112,7 +1108,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasCastVote">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasCastBallot"/>
         <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasCastVoteRecord"/>
         <rdfs:domain>
             <owl:Class>
@@ -1159,7 +1154,6 @@
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasCitizen">
         <rdfs:subPropertyOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#contextFor"/>
         <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasBirthInUnitedStates"/>
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasNaturalized"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1207,6 +1201,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasContest">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#withRespectToElection"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Election"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestInElection"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has contest</rdfs:label>
@@ -1317,6 +1312,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasElectionDayVoting">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#conductedDuringElectionDayVotingPeriod"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ElectionDayVotingPeriod"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ElectionDayVoting"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has election day voting</rdfs:label>
@@ -1343,7 +1339,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasElectionPolicy">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#establishedUnderAuthority"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Law"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ElectionPolicy"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has election policy</rdfs:label>
@@ -1367,7 +1362,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasElectionSupervisor">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasSupervisedVoting"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#SupervisedVoting"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ElectionSupervisor"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has election supervisor</rdfs:label>
@@ -1464,6 +1458,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasLaw">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasLawJurisdiction"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Country"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Law"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has law</rdfs:label>
@@ -1475,7 +1470,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasLawJurisdiction">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasLaw"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Law"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Country"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has law jurisdiction</rdfs:label>
@@ -1498,7 +1492,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasMarkingMotivation">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasMarkingOutcome"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#MarkingOutcome"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#MarkingMotivation"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has marking motivation</rdfs:label>
@@ -1511,6 +1504,7 @@
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasMarkingOutcome">
         <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasMarkedBallot"/>
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasMarkingMotivation"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1552,6 +1546,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasNaturalized">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasCitizen"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#NaturalizedCitizen"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Naturalization"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has naturalized</rdfs:label>
@@ -1574,6 +1569,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasNominationProcess">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasNominationRules"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1603,7 +1599,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasNominationRules">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasNominationProcess"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#NominationProcess"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#NominationRules"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has nomination rules</rdfs:label>
@@ -1615,6 +1610,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasNvraForm">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#unnamedProperty1"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1782,6 +1778,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasSupervisedVoting">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasElectionSupervisor"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ElectionSupervisor"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#SupervisedVoting"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has supervised voting</rdfs:label>
@@ -1870,6 +1867,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#hasVoting">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#produces"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -2003,7 +2001,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#issued">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#issuedTo"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#SocialSecurityCard"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#SocialSecurityNumber"/>
     </owl:ObjectProperty>
@@ -2014,7 +2011,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#issuedBy">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#issues"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Identification"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#IdentificationIssuer"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">issued by</rdfs:label>
@@ -2026,6 +2022,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#issuedTo">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#issued"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#SocialSecurityNumber"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#SocialSecurityCard"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">issued to</rdfs:label>
@@ -2037,6 +2034,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#issues">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#issuedBy"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#IdentificationIssuer"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Identification"/>
     </owl:ObjectProperty>
@@ -2106,7 +2104,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#madeUpOf">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#scheduledVia"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ElectionCalendar"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Election"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">made up of</rdfs:label>
@@ -2118,7 +2115,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#markedBy">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#marks"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#BlankBallot"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#BallotMarking"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">marked by</rdfs:label>
@@ -2130,6 +2126,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#marks">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#markedBy"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#BallotMarking"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#BlankBallot"/>
     </owl:ObjectProperty>
@@ -2140,7 +2137,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#meetsRequirementsOf">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#occursFor"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ValidAbsenteeRequest"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#PreElectionDayVoting"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">meets requirements of</rdfs:label>
@@ -2185,6 +2181,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#occursFor">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#meetsRequirementsOf"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#PreElectionDayVoting"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ValidAbsenteeRequest"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occurs for</rdfs:label>
@@ -2197,6 +2194,7 @@
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#ofPerson">
         <rdfs:subPropertyOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#contextFor"/>
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#bornAt"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Birth"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Person"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">of person</rdfs:label>
@@ -2301,7 +2299,6 @@
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#produces">
         <rdfs:subPropertyOf rdf:resource="http://hiltonroscoe.com/ns/ontologies/sowa#explains"/>
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasVoting"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#VotingMotivation"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Outcome"/>
     </owl:ObjectProperty>
@@ -2377,6 +2374,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#scheduledVia">
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#madeUpOf"/>
         <rdfs:domain rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#Election"/>
         <rdfs:range rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#ElectionCalendar"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scheduled via</rdfs:label>
@@ -2465,7 +2463,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#unnamedProperty1">
-        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#hasNvraForm"/>
+        <owl:inverseOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#hasElectionOutcome"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -3434,18 +3432,6 @@
 
 
     <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections#ContestOptionVote">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#allocatedTo"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections#validAccordingToLaw"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <owl:disjointWith>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -3455,6 +3441,7 @@
             </owl:Class>
         </owl:disjointWith>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contest Option Vote</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contest Option Vote </rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vote that is allocated to a particular contest option.
 </skos:definition>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vote that will be counted for a particular contest option.</skos:definition>
@@ -6930,4 +6917,4 @@
 <!-- Warning: type declarations were not added automatically. -->
 
 
-<!-- Generated using the No Magic Cameo Concept Modeler (19.0 SP4, build 20200303_1229-f28c8930) on 2021-02-16 at 20:49:46 GMT -->
+<!-- Generated using the No Magic Cameo Concept Modeler (19.0 SP4, build 20200303_1229-f28c8930) on 2021-02-25 at 16:36:45 GMT -->
