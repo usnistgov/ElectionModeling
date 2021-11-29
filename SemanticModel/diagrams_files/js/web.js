@@ -8,12 +8,16 @@ var usecontextmenu = false;
 var showappearsinpage = true;
 var displayelementid = false;
 var displayelementnumber = false;
+var showAppliedStereotypes = false;
 var gotoLinkByIcon = false;
 var selecthistorynode = true; // turn off to improve performance on very large report.
 var nonamedNode = '< >';
 var nonamedLink = '';
 var gotoElementId = '';
+var hexadecimalName = false;
+var appliedStereotyeGroupName = 'report_appliedStereotype_tags';
 var resourcesLocation = contextPath;
+var currentNodeToExpand;
 if (resourcesLocation != '' && !/\/$/.test(resourcesLocation)) {
 	resourcesLocation = resourcesLocation + '/';
 }
@@ -46,6 +50,9 @@ var documentMap = new MC.Map();
 
 var documentation;
 var firstShow;
+
+var propertiesMode;
+var propertiesRendered = false;
 
 var gotoElementArray = new Array();
 
@@ -125,13 +132,14 @@ function initWeb() {
 function showContainmentTab() {
 	// Enabled containment tree tab content.
 	var containmentTab = document.getElementById('containment_tab');
-	containmentTab.className = 'active';
+	containmentTab.classList.remove('active');
+	containmentTab.classList.add('active');
 	var containmentContent = document.getElementById('containment_content');
 	containmentContent.style.display = 'block';
 
 	// Disabled diagrams tree tab content.
 	var diagramsTab = document.getElementById('diagrams_tab');
-	diagramsTab.className = '';
+	diagramsTab.classList.remove('active');
 	var diagramsContent = document.getElementById('diagrams_content');
 	diagramsContent.style.display = 'none';
 }
@@ -143,13 +151,14 @@ function showContainmentTab() {
 function showDiagramsTab() {
 	// Enable diagrams tree tab content.
 	var diagramsTab = document.getElementById('diagrams_tab');
-	diagramsTab.className = 'active';
+	diagramsTab.classList.remove('active');
+	diagramsTab.classList.add('active');
 	var diagramsContent = document.getElementById('diagrams_content');
 	diagramsContent.style.display = 'block';
 
 	// Disabled containment tree tab content.
 	var containmentTab = document.getElementById('containment_tab');
-	containmentTab.className = '';
+	containmentTab.classList.remove('active');
 	var containmentContent = document.getElementById('containment_content');
 	containmentContent.style.display = 'none';
 
@@ -179,6 +188,185 @@ function showDiagramsTab() {
 	}
 }
 
+function activeDocumentationTab() {
+	// Enable documentation tab content.
+	var docutmentationTab = document.getElementById('documentation_tab');
+	docutmentationTab.classList.remove('active');
+	docutmentationTab.classList.add('active');
+	var documentationContent = document.getElementById('documentation_content');
+	documentationContent.style.display = 'block';
+
+	// Disable properties tab content.
+	var propertiesTab = document.getElementById('properties_tab');
+	propertiesTab.classList.remove('active');
+	var propertiesContent = document.getElementById('properties_content');
+	propertiesContent.style.display = 'none';
+}
+
+function activePropertiesTab() {
+	// Enabled properties tab content.
+	var propertiesTab = document.getElementById('properties_tab');
+	propertiesTab.classList.remove('active');
+	propertiesTab.classList.add('active');
+	var propertiesContent = document.getElementById('properties_content');
+	propertiesContent.style.display = 'block';
+
+	// Disable documentation tab content.
+	var docutmentationTab = document.getElementById('documentation_tab');
+	docutmentationTab.classList.remove('active');
+	var documentationContent = document.getElementById('documentation_content');
+	documentationContent.style.display = 'none';
+}
+
+function showDocumentationTab(documentNode, humanName) {
+	var name  = document.getElementById('documentation_name_inner');
+	name.innerHTML = "Documentation of " + humanName;
+
+	var content  = document.getElementById('documentation_content_div');
+	while (content.firstChild) {
+		//content.firstChild.remove();
+		content.removeChild(content.firstChild);
+	}
+	//content.getBoundingClientRect()
+	renderValueNode(content, documentNode, true);
+}
+
+function showSpecForProperties(elementId) {
+	XMLRequest.send(resourcesLocation + 'xml/' + elementId + '.xml', renderModelForProperties);
+}
+
+function renderModelForProperties(responseXML)
+{
+	var magicdraw;
+	if (responseXML)
+		magicdraw = responseXML.getElementsByTagName('magicdraw')[0];
+	if (magicdraw == null) {
+		alert('This element was not generated from project.');
+		return;
+	}
+	var model = firstChild(magicdraw);
+	showPropertiesTab(model);
+}
+
+function showPropertiesTab(model) {
+	var mode  = document.getElementById('properties_menu_inner');
+	var tabul  = document.getElementById('properties_viewtab');
+	if (!tabul)
+	{
+		tabul = document.createElement('ul');
+		tabul.id = 'properties_viewtab';
+		tabul.className = 'nm-content tab';
+		var modeItem = createPropertiesModeMenu(true);
+		tabul.appendChild(modeItem);
+		mode.appendChild(tabul);
+	}
+
+	var main_content  = document.getElementById('content');
+	var content  = document.getElementById('properties_content_div');
+	content.model = model;
+	removeAll(content);
+
+	// content table
+	if (model.hasChildNodes) {
+		var table = document.createElement('div');
+		table.className = 'nm-content table';
+		var tbody = document.createElement('div');
+		tbody.id = 'properties_generalTable';
+		tbody.className = 'nm-content tbody';
+		table.appendChild(tbody);
+		content.appendChild(table);
+		// peoperties
+		var reviewList = new Array();
+		var childNodes = model.childNodes;
+		var doc;
+		var humanName = model.getAttribute('humanType');
+		for ( var c = 0; c < childNodes.length; c++) {
+			if (childNodes[c].tagName == 'name')
+			{
+				humanName = humanName + " " + nodeValue(childNodes[c]);
+			}
+			else if (childNodes[c].tagName == 'documentation')
+			{
+				doc = childNodes[c];
+			}
+			if (childNodes[c].nodeType == 1) {
+				// General Information
+				if (childNodes[c].tagName == appliedStereotyeGroupName || childNodes[c].tagName == 'documentation' || childNodes[c].tagName == 'map' || childNodes[c].tagName == 'appearsIn')
+					continue;
+
+				var showProperty = false;
+				if (content.mode == '')
+					showProperty = true;
+				else {
+					var mode = childNodes[c].getAttribute('mode');
+					if (mode)
+						showProperty = mode.indexOf(content.mode) >= 0;
+				}
+				if (showProperty) {
+					var row = document.createElement('div');
+					row.className = 'nm-content row';
+					var innerRow = document.createElement('div');
+					innerRow.className = 'nm-content inner';
+					var label = document.createElement('label');
+					label.className = 'nm-content';
+					label.appendChild(document.createTextNode(childNodes[c].getAttribute('humanName')));
+					innerRow.appendChild(label);
+					var separator = document.createElement('span');
+					separator.className = 'nm-content col';
+					separator.appendChild(document.createTextNode(' : '));
+					innerRow.appendChild(separator);
+					var value = document.createElement('span');
+					value.className = 'nm-content col';
+					if (childNodes[c].firstChild && childNodes[c].firstChild.nodeType == 1) {
+						var collections = childNodes[c].childNodes;
+						var cdiv = document.createElement('div');
+						cdiv.className = 'nm-content none';
+						cdiv.id = "properties_" + childNodes[c].getAttribute('humanName');
+						if (collections.length > 1) {
+							var img = document.createElement('img');
+							img.src = Content.imgShow;
+							img.alt = '';
+							img.className = 'nm-content toggle';
+							img.contentId = cdiv.id;
+							img.onclick = function() {
+								var content = new Content();
+								content.imgHide = resourcesLocation + 'images/left_triangle.gif';
+								content.showHide(this, this.contentId);
+								repaint();
+							};
+							innerRow.appendChild(img);
+							cdiv.classList.add('afterToggle');
+							separator.classList.add('withToggle');
+						}
+						value.appendChild(cdiv);
+						for ( var o = 0; o < collections.length; o++) {
+							var humanType = collections[o].getAttribute('humanType');
+							if (humanType)
+								createLink(cdiv, collections[o]);
+							else
+								renderValueNode(cdiv, collections[o]);
+							cdiv.appendChild(document.createElement('br'));
+						}
+					} else {
+						var humanType = childNodes[c].getAttribute('humanType');
+						if (humanType)
+							createLink(value, childNodes[c]);
+						else
+							renderValueNode(value, childNodes[c]);
+					}
+					innerRow.appendChild(value);
+					row.appendChild(innerRow);
+					tbody.appendChild(row);
+				}
+			}
+		}
+		if (doc)
+		{
+			showDocumentationTab(doc, humanName);
+		}
+	}
+}
+
 function isHiddenNode(node) {
 	if (node.nodeType == 1) {
 		// do not display hidden element
@@ -199,28 +387,34 @@ function buildTree(li) {
 		var emptyUL = document.createElement('ul');
 		emptyUL.className = 'nm-content';
 		var nodeID = model.getAttribute('refid');
-		emptyUL.id = 'ul_' + nodeID;
+		var ulDummyID = '';
+
+		var parentULDummyID = li.parentULDummyID;
+		if (parentULDummyID)
+			ulDummyID = parentULDummyID + '_';
+
+		var model_dummyID = model.getAttribute('dummyid');
+		if (model_dummyID)
+			ulDummyID = ulDummyID + model_dummyID + '_';
+
+		emptyUL.dummyid = ulDummyID;
+		emptyUL.id = 'ul_' + ulDummyID + nodeID;
 		emptyUL.setAttribute('refid', nodeID);
 		emptyUL.onExpand = function() {
 			var node = this.parentNode;
 			if (this.hasChildNodes()) {
 				return;
 			}
-			
-			var isSmart = Boolean(node.getAttribute('isSmartElement'));
+
 			var fileName = node.getAttribute('refid');
-			if (isSmart)
-				{
-					fileName = node.getAttribute('mr_smart_id');
-				}
-			
+			currentNodeToExpand = emptyUL.dummyid;
 			XMLRequest.send(resourcesLocation + 'xml/tree/' + fileName + '.xml', function(responseXML) {
 				if (responseXML) {
-					createChild(responseXML);
+					createChild(responseXML, currentNodeToExpand);
 
 					var elementNode = firstChild(responseXML);
 					var id = elementNode.getAttribute('refid');
-					var parentUL = document.getElementById('ul_' + id);
+					var parentUL = document.getElementById('ul_' + currentNodeToExpand + id);
 					if (parentUL && parentUL.parentNode.onReady) {
 						parentUL.parentNode.onReady();
 					}
@@ -278,10 +472,10 @@ function buildDiagramsTree(li) {
 	tree.renderNode(li);
 }
 
-function createChild(responseXML) {
+function createChild(responseXML, parentULDummyID) {
 	var elementNode = firstChild(responseXML);
 	var id = elementNode.getAttribute('refid');
-	var parentUL = document.getElementById('ul_' + id);
+	var parentUL = document.getElementById('ul_' + parentULDummyID + id);
 	// set attribute createChild to node when node is created.
 	parentUL.createChild = true;
 	var childNodes = elementNode.childNodes;
@@ -317,7 +511,7 @@ function createChild(responseXML) {
 								relationUL = parentUL.firstChild.lastChild;
 							else {
 								var relationLI = addNode(parentUL, 'Relations', 'javascript:void(0);',
-									'diagrams_files/icon_Relationship_1226298219.png', 'true');
+									'diagrams_files/icon_Relationship_104615190.png', 'true', true);
 								relationLI.setAttribute('refid', 'relations');
 								relationUL = document.createElement('ul');
 								relationUL.className = 'nm-content';
@@ -489,7 +683,7 @@ function findNodeForSelected(nodeId, selectInTree) {
 
 /**
  * Select node on containment tree
- * 
+ *
  * @param node LI or A element of tree node
  */
 
@@ -560,18 +754,39 @@ function addChildNode(ul, nodeName, member, icon) {
 	node.elementName = nodeName;
 	node.hasChild = Boolean(member.getAttribute('hasChild'));
 
+    var isMountedChild = Boolean(member.getAttribute('isMountedChild'));
+
+	if (ul.dummyid)
+		node.parentULDummyID = ul.dummyid;
+
 	var anchor = document.createElement('a');
 	anchor.className = 'nm-content';
-	var textNode = document.createTextNode(nodeName)
-	anchor.appendChild(textNode);
-	anchor.name = 'anchorNode';
-	
-	var isSmart = Boolean(member.getAttribute('isSmartElement'));
+
+	var textNode;
+	var suffix = member.getAttribute('suffixName');
+	if (isMountedChild && suffix)
+	    textNode = document.createTextNode(nodeName + " " + suffix);
+
+	if (!textNode)
+	    textNode = document.createTextNode(nodeName);
+
+    anchor.appendChild(textNode);
+    anchor.name = 'anchorNode';
+
+    if (showAppliedStereotypes)
+    {
+        var appledStereotypes = member.getAttribute('mr_tree_appliedstereotype');
+        if (appledStereotypes)
+        {
+            var stereotypelist = document.createElement('span');
+            stereotypelist.className = 'stereotype';
+            var sTextNode = document.createTextNode(" " + appledStereotypes);
+            stereotypelist.appendChild(sTextNode);
+            anchor.appendChild(stereotypelist);
+        }
+    }
+
 	var refID = member.getAttribute('refid');
-	if (isSmart)
-		{
-			refID = member.getAttribute('mr_smart_id');
-		}
 	var isCustomModel = Boolean(member.getAttribute('mr_isCustomModel'));
 	if (!isCustomModel)
 	anchor.href = "javascript: gotoElement('" + refID + "', false, true);";
@@ -589,16 +804,13 @@ function addChildNode(ul, nodeName, member, icon) {
 		if ((gotoLinkByIcon == true && member.getAttribute('hasLink') == "true") || member.getAttribute('hasLink') != "true")
 		{
 			var refID = member.getAttribute('refid');
-			if (isSmart)
-			{
-				refID = member.getAttribute('mr_smart_id');
-			}
 			imgAnchor.href = "javascript: gotoElement('" + refID + "', false, true);";
 		}
 		else
 			imgAnchor.href = "javascript: showSpec('" + member.getAttribute('refid') + "');";
 		
 		imgAnchor.style.verticalAlign = 'middle';
+		imgAnchor.style.position = "relative";
 		imgAnchor.onclick = anchor.onclick;
 		
 		if (member.getAttribute('hasActiveHyperLink') == "true")
@@ -695,13 +907,22 @@ function addChildTextNode(ul, nodeName, member, icon) {
 	return node;
 }
 
-function addNode(ul, nodeName, href, icon, hasChild) {
+function addNode(ul, nodeName, href, icon, hasChild, skipMouseEvent) {
+	var className = 'nm-content';
+	var anchor;
+	if (skipMouseEvent)
+	{
+		className = className + ' skipMouseEvent';
+		anchor = document.createElement('span');
+	}
+	else
+		anchor = document.createElement('a');
 	var node = document.createElement('li');
 	node.className = 'nm-content';
 	node.elementName = nodeName;
 	node.hasChild = Boolean(hasChild);
-	var anchor = document.createElement('a');
-	anchor.className = 'nm-content';
+	//var anchor = document.createElement('a');
+	anchor.className = className;
 	anchor.appendChild(document.createTextNode(nodeName));
 	anchor.name = 'anchorNode';
 	anchor.href = href;
@@ -714,7 +935,7 @@ function addNode(ul, nodeName, href, icon, hasChild) {
 	node.appendChild(anchor);
 	if (icon) {
 		var imgAnchor = document.createElement('a');
-		imgAnchor.className = 'nm-content';
+		imgAnchor.className = className;
 		imgAnchor.href = href;
 		imgAnchor.style.verticalAlign = 'middle';
 		imgAnchor.onclick = anchor.onclick;
@@ -739,15 +960,19 @@ function addNode(ul, nodeName, href, icon, hasChild) {
  * @param parentNode link container
  * @param linkToElement DOM element
  */
-
 function createLink(parentNode, linkToElement) {
 	var refid = linkToElement.getAttribute('refid');
-	var isSmart = Boolean(linkToElement.getAttribute('isSmartElement'));
-	if (isSmart)
-		refid = linkToElement.getAttribute('mr_smart_id');
 	var name = linkToElement.getAttribute('name');
 	var icon = linkToElement.getAttribute('icon');
 
+	if (!name)
+		name = nonamedLink || nonamedLink == '' ? nonamedLink : linkToElement.tagName;
+	var additionalText = linkToElement.getAttribute('text');
+
+	createLinkHTML(parentNode, refid, name, icon, additionalText);
+}
+
+function createLinkHTML(parentNode, refid, name, icon, additionalText) {
 	firstShow = false;
 
 	if (icon) {
@@ -764,8 +989,7 @@ function createLink(parentNode, linkToElement) {
 		fieldAnchor.appendChild(fieldImage);
 		parentNode.appendChild(fieldAnchor);
 	}
-	if (!name)
-		name = nonamedLink || nonamedLink == '' ? nonamedLink : linkToElement.tagName;
+
 	if (refid && name != '') {
 		var fieldAnchor = document.createElement('a');
 		fieldAnchor.className = 'nm-content';
@@ -795,18 +1019,24 @@ function createLink(parentNode, linkToElement) {
 		fieldAnchor.onmouseout = function(e) {
 			var value = document.getElementById('docBalloon');
 			if (value)
+			{
 				value.style.visibility = 'hidden';
+				value.style.display = 'none';
+			}
 		};
 		fieldAnchor.onclick = function(e) {
 			var value = document.getElementById('docBalloon');
 			if (value)
+			{
 				value.style.visibility = 'hidden';
+				value.style.display = 'none';
+			}
 		};
 		parentNode.appendChild(fieldAnchor);
 	} else {
 		parentNode.appendChild(document.createTextNode(name));
 	}
-	var additionalText = linkToElement.getAttribute('text');
+
 	if (additionalText) {
 		var cite = document.createElement('cite');
 		cite.className = 'nm-content';
@@ -842,7 +1072,10 @@ function createDocBallon(evt) {
 				value.onmouseout = function(e) {
 					var value = document.getElementById('docBalloon');
 					if (value)
+					{
 						value.style.visibility = 'hidden';
+						value.style.display = 'none';
+					}
 				};
 				document.body.appendChild(value);
 			}
@@ -854,6 +1087,7 @@ function createDocBallon(evt) {
 				value.style.left = mouseX + 'px';
 				value.style.top = mouseY + 'px';
 				value.style.visibility = 'visible';
+				value.style.display = 'block';
 				removeAll(value);
 				renderValueNode(value, documentation);
 			}
@@ -932,24 +1166,45 @@ function createViewBar(model) {
 		tabul.appendChild(apearli);
 	}
 	viewbar.appendChild(tabul);
+	
+	var modeItem = createPropertiesModeMenu();
+	tabul.appendChild(modeItem);
+	return viewbar;
+}
 
-	// view mode
+function createPropertiesModeMenu(forProperties)
+{
+		// view mode
+	if (typeof (propertiesMode) == 'undefined')
+		propertiesMode = 's';
+	
 	var content = document.getElementById('content');
 	if (typeof (content.mode) == 'undefined')
-		content.mode = 's';
+		content.mode = propertiesMode;
+	
+	var propertiesContent = document.getElementById('properties_content_div');
+	if (typeof (propertiesContent.mode) == 'undefined')
+		propertiesContent.mode = propertiesMode;
+	
 	var modeItem = document.createElement('li');
 	modeItem.className = 'nm-content';
-	modeItem.id = 'modeItem';
+	if (forProperties)
+		modeItem.id = 'propertiesModeItem';
+	else
+	{
+		modeItem.id = 'modeItem';
+		modeItem.setEnabled = function(enabled) {
+			var childNodes = this.childNodes;
+			for ( var c = 0; c < childNodes.length; c++)
+				childNodes[c].disabled = !enabled;
+		};
+	}
 	modeItem.style.cssFloat = 'right';
 	modeItem.style.styleFloat = 'right';
 	modeItem.style.margin = '0';
 	modeItem.style.padding = '2px .5em 0 .5em';
 	modeItem.style.cursor = 'default';
-	modeItem.setEnabled = function(enabled) {
-		var childNodes = this.childNodes;
-		for ( var c = 0; c < childNodes.length; c++)
-			childNodes[c].disabled = !enabled;
-	};
+	
 	// mode label
 	var modeLabel = document.createElement('div');
 	modeLabel.title = 'Display properties by selected filter';
@@ -961,12 +1216,45 @@ function createViewBar(model) {
 	// move options
 	var modeSelect = document.createElement('select');
 	modeSelect.className = 'nm-content';
-	modeSelect.id = 'modeSelect';
+	if (forProperties)
+		modeSelect.id = 'propertiesModeSelect';
+	else
+		modeSelect.id = 'modeSelect';
+	
 	modeSelect.onchange = function() {
+		propertiesMode = this.options[this.selectedIndex].value;
+		
 		var content = document.getElementById('content');
 		content.mode = this.options[this.selectedIndex].value;
-		if (content.model)
+		
+		var propertiesContent = document.getElementById('properties_content_div');
+		propertiesContent.mode = this.options[this.selectedIndex].value;
+		
+		var mainSelectOption = document.getElementById('modeSelect');
+		mainSelectOption.value = propertiesMode;
+		
+		var propertiesSlectOption = document.getElementById('propertiesModeSelect');
+		propertiesSlectOption.value = propertiesMode;
+		
+		// change mode in Specification view
+		if (modeSelect.id == 'modeSelect' && content.model)
+		{
 			renderElement(content.model);
+			if (propertiesContent.model)
+			{
+				showPropertiesTab(propertiesContent.model);
+			}
+		}
+		
+		// change mode in Properties view
+		else if (modeSelect.id == 'propertiesModeSelect' && propertiesContent.model)
+		{
+			showPropertiesTab(propertiesContent.model);
+			// only when specification tab is active, re-render element
+			if (viewbar.currentView == 'specification' && content.model)
+				renderElement(content.model);
+		}
+		
 		repaint();
 	};
 	var standardModeOption = document.createElement('option');
@@ -991,8 +1279,7 @@ function createViewBar(model) {
 	allModeOption.appendChild(document.createTextNode('All'));
 	modeSelect.appendChild(allModeOption);
 	modeItem.appendChild(modeSelect);
-	tabul.appendChild(modeItem);
-	return viewbar;
+	return modeItem;
 }
 
 function createActionBar(model) {
@@ -1062,9 +1349,9 @@ function createActionBar(model) {
  * @param element DOM element
  */
 
-function renderValueNode(value, element) {
+function renderValueNode(value, element, skipAddingSpace) {
 	var text = nodeValue(element);
-	renderValueText(value, text);
+	renderValueText(value, text, skipAddingSpace);
 }
 
 /**
@@ -1074,7 +1361,7 @@ function renderValueNode(value, element) {
  * @param text text to display
  */
 
-function renderValueText(value, text) {
+function renderValueText(value, text, skipAddingSpace) {
 	var htmlContent = "";
 	var foundHTMLText = false;
 	if (text && (text.indexOf('<html>') >= 0 || text.indexOf('<html ') >= 0)) {
@@ -1112,7 +1399,11 @@ function renderValueText(value, text) {
 		value.innerHTML += htmlContent;
 	}
 	else {
-		var tokens = ('\u00A0' + text).split(/\r\n|\n|\r/);
+		var token;
+		if (skipAddingSpace == true)
+			tokens = (text).split(/\r\n|\n|\r/);
+		else
+		    tokens = ('\u00A0' + text).split(/\r\n|\n|\r/);
 		if (tokens.length > 1) {
 			for ( var t = 0; t < tokens.length; t++) {
 				renderValueLink(value, tokens[t]);
@@ -1302,13 +1593,20 @@ function renderModel(responseXML) {
 		return;
 	}
 	var model = firstChild(magicdraw);
+	
+	if (!propertiesRendered)
+	{
+		showPropertiesTab(model);
+		propertiesRendered = true;
+	}
 	// validate hyperlinkModelActive
 	var stopRender = false;
 	if (model.hasChildNodes && usehyperlink && !stopHyperlink) {
 		var childNodes = model.childNodes;
+		var humanName = model.getAttribute('humanType');
 		for ( var c = 0; c < childNodes.length && !stopRender; c++) {
 			// Stereotype
-			if (childNodes[c].tagName == 'appliedStereotype') {
+			if (childNodes[c].tagName == appliedStereotyeGroupName) {
 				if (childNodes[c].hasChildNodes) {
 					var stereotypes = childNodes[c].childNodes;
 					for ( var s = 0; s < stereotypes.length && !stopRender; s++) {
@@ -1355,6 +1653,7 @@ function renderModel(responseXML) {
 														//window.open(tokens[0]);
 														window.open('','_blank').location.href = tokens[0]; 
 													}
+													propertiesRendered = false;
 													stopRender = true;
 												}
 											}
@@ -1375,42 +1674,129 @@ function renderModel(responseXML) {
 			usehyperlink = false;
 			/* UPDM, SysML : need to check for attributes (may slow) */
 			var mdRule = false;
-			var ownedBehavior, ownedDiagram;
+			var skipOwnedBehavior = false;
+			var ownedBehavior, ownedDiagram, classifierBehavior;
+			var modelName;
+			
+			var aClassType = model.getAttribute('classType');
+			if (aClassType == 'Activity' || aClassType == 'StateMachine' || aClassType == 'Interaction' 
+				|| aClassType == 'ProtocolStateMachine' || aClassType == 'OpaqueBehavior' || aClassType == 'FunctionBehavior')
+				skipOwnedBehavior = true;
+			
 			for ( var b = 0; b < model.childNodes.length; b++) {
 				if (model.childNodes[b].tagName == 'ownedBehavior') {
 					ownedBehavior = model.childNodes[b];
 				} else if (model.childNodes[b].tagName == 'ownedDiagram') {
 					ownedDiagram = model.childNodes[b];
+				} else if (model.childNodes[b].tagName == 'classifierBehavior') {
+					classifierBehavior = model.childNodes[b];
+				} else if (model.childNodes[b].tagName == 'name') {
+					modelName = nodeValue(model.childNodes[b]);
 				}
 			}
-			if (ownedDiagram) {
+			
+			if (classifierBehavior) {
+				var hasDiagram = classifierBehavior.getAttribute('hasDiagram');
+				if (hasDiagram) {
+					gotoElement(classifierBehavior.getAttribute('refid'), false);
+					stopRender = true;
+					mdRule = true;
+				}
+				else {
+					skipOwnedBehavior = true;
+				}
+			}
+			
+			if (!mdRule && !skipOwnedBehavior && ownedBehavior) {
+				// only owned Behavior with diagram
+				var skipCheckFirstBehavior = false;
+				for ( var d = 0; d < ownedBehavior.childNodes.length; d++) {
+					var behavior = ownedBehavior.childNodes[d];
+					var behaviorName = behavior.getAttribute('name');
+					var hasDiagram = behavior.getAttribute('hasDiagram');
+					if (modelName == behaviorName && hasDiagram) {
+						gotoElement(behavior.getAttribute('refid'), false);
+						stopRender = true;
+						mdRule = true;
+						break;
+					}
+					else if (modelName == behaviorName) {
+						// skip behavior and go to check ownedDiagam
+						skipCheckFirstBehavior = true;
+						break;
+					}
+				}
+				
+				if (!mdRule && !skipCheckFirstBehavior && ownedBehavior.childNodes.length > 0) {
+					var firstBehavior = ownedBehavior.firstChild;
+					var hasDiagram = firstBehavior.getAttribute('hasDiagram');
+					if (hasDiagram) {
+						gotoElement(firstBehavior.getAttribute('refid'), false);
+						stopRender = true;
+						mdRule = true;
+					}
+				}
+			}
+			
+			var diagramType = [];
+			var checkSpecifiedDiagram = false;
+			if (!mdRule) {
 				var classType = model.getAttribute('classType');
-				if (!(classType != 'Package' || classType != 'Model' || classType != 'Profile')) {
+				if (classType == 'Activity') {
+					diagramType = ['Activity Diagram', 'Interaction Overview Diagram'];
+					checkSpecifiedDiagram = true;
+				}
+				else if (classType == 'StateMachine' || classType == 'ProtocolStateMachine') {
+					diagramType = ['State Machine Diagram', 'Protocol State Machine Diagram'];
+					checkSpecifiedDiagram = true;
+				}
+				else if (classType == 'Interaction' ) {
+					diagramType = ['Sequence Diagram', 'Communication Diagram'];
+					checkSpecifiedDiagram = true;
+				}
+				else if (classType == 'OpaqueBehavior' || classType == 'FunctionBehavior') {
+					checkSpecifiedDiagram = true;
+				}
+			}
+			
+			if (!mdRule && ownedDiagram) {
+				if (checkSpecifiedDiagram) {
+					for ( var d = 0; d < ownedDiagram.childNodes.length; d++) {
+						var owned = ownedDiagram.childNodes[d];
+						var diagramTypeName = owned.getAttribute('diagramType');
+						if (diagramType.indexOf(diagramTypeName) > 0) {
+							gotoElement(owned.getAttribute('refid'), false);
+							stopRender = true;
+							mdRule = true;
+							break;
+						}
+					}
+				}
+					
+				if (!mdRule && !(classType == 'Package' || classType == 'Model' || classType == 'Profile')) {
 					if (ownedDiagram.childNodes.length > 0) {
 						gotoElement(ownedDiagram.firstChild.getAttribute('refid'), false);
 						stopRender = true;
-					} else {
-						renderElement(model);
-						var diagramtab = document.getElementById('diagramtab');
-						if (diagramtab)
-							diagramtab.style.display = 'none';
-						selectView('specification');
+						mdRule = true;
 					}
-					mdRule = true;
 				}
-			} else if (ownedBehavior) {
-				if (ownedBehavior.childNodes.length > 0) {
-					gotoElement(ownedBehavior.firstChild.getAttribute('refid'), false);
-					stopRender = true;
-				} else {
-					renderElement(model);
-					var diagramtab = document.getElementById('diagramtab');
-					if (diagramtab)
-						diagramtab.style.display = 'none';
-					selectView('specification');
-				}
-				mdRule = true;
 			}
+			
+			if (!mdRule && checkSpecifiedDiagram && ownedBehavior) {
+				// recheck interaction
+				for ( var d = 0; d < ownedBehavior.childNodes.length; d++) {
+					var behavior = ownedBehavior.childNodes[d];
+					var classType = behavior.getAttribute('classType');
+					var hasDiagram = behavior.getAttribute('hasDiagram');
+					if (classType == 'Interaction' && hasDiagram) {
+						gotoElement(behavior.getAttribute('refid'), false);
+						stopRender = true;
+						mdRule = true;
+						break;
+					}
+				}
+			}
+			
 			/* General Rules */
 			if (!mdRule) {
 				var classType = model.getAttribute('classType');
@@ -1465,13 +1851,17 @@ function renderModel(responseXML) {
 					}
 				} else if (classType == 'Activity' || classType == 'StateMachine' || classType == 'Interaction'
 					|| classType == 'ProtocolStateMachine' || classType == 'OpaqueBehavior'
-					|| classType == 'FunctionalBehavior') {
+					|| classType == 'FunctionBehavior') {
 					var diagramTags = model.getElementsByTagName('diagram');
 					var diagramTagsRID = null;
 					if (diagramTags.length > 0) {
 						// find diagram id
 						for (var k = 0; k < diagramTags.length; k++) {
-							if ("appearsIn" != diagramTags[k].parentElement.nodeName) {
+							if (typeof(diagramTags[k].parentElement) != "undefined" && "appearsIn" != diagramTags[k].parentElement.nodeName) {
+								diagramTagsRID = diagramTags[k].getAttribute('refid');
+								break;
+							}
+							else if (typeof(diagramTags[k].parentNode) != "undefined" && "appearsIn" != diagramTags[k].parentNode.nodeName) {
 								diagramTagsRID = diagramTags[k].getAttribute('refid');
 								break;
 							}
@@ -1569,6 +1959,7 @@ function ModelLink(id, name, icon, isModel) {
  */
 
 function renderElement(model) {
+	propertiesRendered = false;
 	var content = document.getElementById('content');
 	content.model = model;
 	removeAll(content);
@@ -1602,7 +1993,7 @@ function renderElement(model) {
 				header.appendChild(document.createTextNode(' ' + nodeValue(childNodes[c])));
 			if (childNodes[c].nodeType == 1) {
 				// Stereotype
-				if (childNodes[c].tagName == 'appliedStereotype') {
+				if (childNodes[c].tagName == appliedStereotyeGroupName) {
 					if (childNodes[c].hasChildNodes) {
 						var stereotypes = childNodes[c].childNodes;
 						for ( var s = 0; s < stereotypes.length; s++) {
@@ -1740,6 +2131,7 @@ function renderElement(model) {
 								var content = new Content();
 								content.imgHide = resourcesLocation + 'images/left_triangle.gif';
 								content.showHide(this, this.contentId);
+								repaint();
 							};
 							row.appendChild(img);
 						}
@@ -1772,6 +2164,9 @@ function renderElement(model) {
 /**
  * Appears in renderer.
  */
+/**
+ * Appears in renderer.
+ */
 function renderAppearsIn(model) {
 	var content = document.getElementById('content');
 	content.model = model;
@@ -1779,7 +2174,61 @@ function renderAppearsIn(model) {
 	content.appendChild(createActionBar(model));
 	content.appendChild(createViewBar(model));
 	var childNodes = model.childNodes;
-	var appearsInDiagram = new Array(0);
+
+	var appeartInText = TEXT.load(resourcesLocation + 'xml/appearIn.txt');
+
+    var appearsInDiagram2 = new Array(0);
+    var index = appeartInText.length;
+    while(index > 0){
+        index = appeartInText.lastIndexOf(model.id, index);
+        if (index >= 0){
+            var diagramIndex = appeartInText.lastIndexOf("=", index);
+            index = diagramIndex;
+            if (diagramIndex >= 0){
+                var startDiagramIndex = appeartInText.lastIndexOf("^^", diagramIndex);
+                index = startDiagramIndex;
+                if (startDiagramIndex >= 0){
+                    appearsInDiagram2[appearsInDiagram2.length] = appeartInText.substring(startDiagramIndex + 2, diagramIndex);
+                }
+            }
+        }
+        else
+            break;
+    }
+
+    if (appearsInDiagram2.length > 0) {
+        var atable = document.createElement('div');
+        atable.className = 'nm-content table';
+        var athead = document.createElement('div');
+        athead.className = 'nm-content thead';
+        athead.appendChild(document.createTextNode('Diagrams'));
+        atable.appendChild(athead);
+        var atbody = document.createElement('div');
+        atbody.className = 'nm-content tbody';
+        atable.appendChild(atbody);
+        content.appendChild(atable);
+        for ( var p = 0; p < appearsInDiagram2.length; p++) {
+            var row = document.createElement('div');
+            row.className = 'nm-content row';
+            var name = document.createElement('span');
+            name.className = 'nm-content';
+            name.style.verticalAlign = 'middle';
+
+            var diagramData = appearsInDiagram2[p].split("^");
+            createLinkHTML(name, diagramData[0], diagramData[1], diagramData[3], diagramData[2]);
+
+            row.appendChild(name);
+            atbody.appendChild(row);
+        }
+    } else {
+        var message = document.createElement('h5');
+        message.className = 'nm-content';
+        message.style.padding = '1em';
+        message.appendChild(document.createTextNode('Selected element is not appeared in any diagram.'));
+        content.appendChild(message);
+    }
+
+	/*var appearsInDiagram = new Array(0);
 	for ( var c = 0; c < childNodes.length; c++) {
 		if (childNodes[c].tagName == 'appearsIn') {
 			var appearsInList = childNodes[c].childNodes;
@@ -1796,7 +2245,6 @@ function renderAppearsIn(model) {
 			break;
 		}
 	}
-
 	if (appearsInDiagram.length > 0) {
 		var atable = document.createElement('div');
 		atable.className = 'nm-content table';
@@ -1825,7 +2273,7 @@ function renderAppearsIn(model) {
 		message.style.padding = '1em';
 		message.appendChild(document.createTextNode('Selected element is not appeared in any diagram.'));
 		content.appendChild(message);
-	}
+	}*/
 
 }
 
@@ -1893,6 +2341,10 @@ function renderDiagram(model, diagamModel) {
 	content.appendChild(createViewBar(model));
 	if (diagamModel)
 		model = diagamModel;
+	
+	showPropertiesTab(model);
+	propertiesRendered = false;
+	
 	var header = document.createElement('h2');
 	header.className = 'nm-content';
 	header.id = 'contentHeader';
@@ -2067,10 +2519,13 @@ function renderDiagram(model, diagamModel) {
 										var model = null;
 										if (magicdraw != null) {
 											model = firstChild(magicdraw);
+											showSpecForProperties(areas[id].getAttribute('refid'));
 											if (model.hasChildNodes) {
+												var doc;
+												var humanName = model.getAttribute("humanType");
 												var childNodes = model.childNodes;
 												for ( var i = 0; i < childNodes.length; i++) {
-													if (childNodes[i].tagName == 'appliedStereotype') {
+													if (childNodes[i].tagName == appliedStereotyeGroupName) {
 														if (childNodes[i].hasChildNodes) {
 															var stereotypes = childNodes[i].childNodes;
 															for (s = 0; s < stereotypes.length; s++) {
@@ -2367,7 +2822,7 @@ function renderDiagram(model, diagamModel) {
 
 		if (isIE())
 		{
-			diagramContainer.style.maxWidth = model.getAttribute('width') + 'px';
+			//diagramContainer.style.maxWidth = model.getAttribute('width') + 'px';
 			diagramContainer.style.top='0';
 			diagramContainer.style.left='0';
 			diagramContainer.style.rigth='0';
@@ -2387,8 +2842,8 @@ function renderDiagram(model, diagamModel) {
 		// create image tag
 		image = document.createElement('img');
 		image.className = 'nm-content';
-		image.width = model.getAttribute('width');
-		image.height = model.getAttribute('height');
+		//image.width = model.getAttribute('width');
+		//image.height = model.getAttribute('height');
 	}
 	image.src = model.getAttribute('src');
 	image.alt = '';
@@ -2524,7 +2979,7 @@ function getActiveHyperlinkModel(model) {
 	if (model && model.hasChildNodes) {
 		var childNodes = model.childNodes;
 		for ( var i = 0; i < childNodes.length; i++) {
-			if (childNodes[i].tagName == 'appliedStereotype') {
+			if (childNodes[i].tagName == appliedStereotyeGroupName) {
 				if (childNodes[i].hasChildNodes) {
 					var stereotypes = childNodes[i].childNodes;
 					for (s = 0; s < stereotypes.length; s++) {

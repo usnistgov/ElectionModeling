@@ -3,10 +3,11 @@
 
 
 
+
 <html>
 <head>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-   <meta name="author" content="John Dziurlaj">
+   <meta name="author" content="NIST-EAC Election Modeling Working Group">
    <meta name="description" content="Web Publisher 2.0">
    <title>Election Modeling Semantic Model</title>
    <link rel="SHORTCUT ICON" href="diagrams_files/images/mdicon.ico">
@@ -33,63 +34,130 @@
 <div class="nm-content" id="container">
    <table cellspacing="0" cellpadding="0" border="0" id="splitpane" class="nm-content splitpane" width="100%">
       <tr class="nm-content">
-         <td id="splitpane-first" class="nm-content splitpane-first" style="min-width: 255px; width:20%;">
-          	<div id="tabs" style="text-align: left;" class="nm-content tabs">
-          		<ul class="nm-content tabheader">
-          			<li id="containment_tab" class="nm-content active" onclick="showContainmentTab()">Containment</li>
-          			<li id="diagrams_tab" class="nm-content" onclick="showDiagramsTab()">Diagrams</li>
-          			<li id="expand_icon" class="nm-content expandIcon"></li>
-          		</ul>
-          		<div id="containment_content" class="nm-content tabInner"></div>
-          		<div id="diagrams_content" class="nm-content tabInner" style="display:none"></div>
-          	</div>
+		<td id="splitpane-first" class="nm-content splitpane-first" style="min-width: 255px; width:20%; height:100%">
+			<div id="tabs" style="text-align: left;height:60%;" class="nm-content tabs">
+				<div style="height: 100%; display: flex; flex-flow: column;">
+					<div>
+						<ul id="topTab" class="nm-content tabheader">
+							<li id="containment_tab" class="nm-content active" onclick="showContainmentTab()">Containment</li>
+							<li id="diagrams_tab" class="nm-content" onclick="showDiagramsTab()">Diagrams</li>
+							<li id="expand_icon" class="nm-content expandIcon"></li>
+						</ul>
+					</div>
+					<div id="containment_content" class="nm-content tabInner"  style="flex-grow : 1;"></div>
+					<div id="diagrams_content" class="nm-content tabInner" style="display:none; flex-grow : 1;"></div>
+				</div>
+			</div>
+			<div id="tabsBottom" style="text-align: left;height:40%;" class="nm-content tabs">
+				<div style="height: 100%; display: flex; flex-flow: column;">	
+					<div>
+						<ul id="bottomTab" class="nm-content tabheader">
+							<li id="documentation_tab" class="nm-content active" onclick="activeDocumentationTab()">Documentation</li>
+							<li id="properties_tab" class="nm-content" onclick="activePropertiesTab()">Properties</li>
+						</ul>
+					</div>
+					<div id="documentation_content" class="nm-content tabInner" style="height: 100%;background-color:#F0F0F0;flex-grow : 1;">
+						<div id="documentation_inner_div" style="height: 100%; display: flex; flex-flow: column;">
+							<div id="documentation_name_div" >
+								<div id="documentation_name_inner" class="nm-content">Documentation</div>
+							</div>
+							<div id="documentation_content_div" class="nm-content documentation" style="flex-grow : 1;"></div>
+						</div>
+					</div>
+					<div id="properties_content" class="nm-content tabInner" style="display:none;height: 100%;flex-grow : 1;">
+						<div id="properties_inner_div" style="height: 100%; display: flex; flex-flow: column;">
+							<div id="properties_menu_div" >
+								<div id="properties_menu_inner" class="nm-content"></div>
+							</div>
+							<div id="properties_content_div" class="nm-content properties" style="flex-grow : 1;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
          </td>
          <td class="nm-content splitpane-vdivider">&nbsp;</td>
          <td id="splitpane-second" class="nm-content splitpane-second" style="min-width: 430px; width:80%;">
             <div id="content" class="nm-content">
-               <div class="nm-content" style="">
-                  <div class="nm-content" style="text-align: center"><img class="nm-content" src="" alt="Index"/></div>
-                                 </div>
+               <div class="nm-content" style="position:absolute; padding-top:20%; padding-left: 10%;">
+                  <div class="nm-content" style="text-align: center"><img class="nm-content" src="diagrams_files/images/mdlogo.gif" width="450" height="80" alt="mdlogo"/></div>
+                  <h6 class="nm-content" style="text-align: right">Visit us at <a class="nm-content" href="http://www.nomagic.com" target="_blank">www.nomagic.com</a></h6>               </div>
             </div>
          </td>
       </tr>
    </table>
 </div>
 <script type="text/javascript">
+	
+	function setupHeight() {
+		var menuHeight = document.getElementById("titlebar").getBoundingClientRect().height;
+		
+		var splitpaneHeight = window.innerHeight - menuHeight;
+		document.getElementById("splitpane").style.height = splitpaneHeight + "px";
+		
+		var topTabHeight = document.getElementById("topTab").getBoundingClientRect().height;
+		var bottomTabHeight = document.getElementById("bottomTab").getBoundingClientRect().height;
+		var allTabsHeight = topTabHeight + bottomTabHeight;
+		
+		var topHeight = document.getElementById("tabs").getBoundingClientRect().height;
+		document.getElementById("containment_content").style.height = (topHeight - allTabsHeight) + "px";
+		document.getElementById("diagrams_content").style.height = (topHeight - allTabsHeight) + "px";
+																			 
+		document.getElementById("documentation_content").style.height = (splitpaneHeight - topHeight - allTabsHeight) + "px";
+		document.getElementById("properties_content").style.height = (splitpaneHeight - topHeight - allTabsHeight) + "px";
+	}
+	
+	// in case the document is already rendered
+	if (document.readyState!='loading') setupHeight();
+	// modern browsers
+	else if (document.addEventListener) document.addEventListener('DOMContentLoaded', setupHeight);
+	// IE <= 8
+	else document.attachEvent('onreadystatechange', function(){
+	    if (document.readyState=='complete') setupHeight();
+	});
+	
 	function param(name)
 	{
 		var reg = new RegExp("[\\?&]"+name+"=([^&#]*)");
 		var results = reg.exec( window.location.href );
 		return results==null?"":results[1];
 	}
-
+	
+	/*
+			
+		*/
+	
 	window.onload = function() {
-		/*  */
+		/* 					 */
 		usecontextmenu = true;
-		/*  */
+		/* 					 */
 		showappearsinpage = true;
-		/*  */
+		/* 					 */
 		autonavigatehyperlink = true;
-		/*  */
-		displayelementid = true;
-		/*  */
+		/* 					 */
+		displayelementid = false;
+		/* 			 */
 		displayelementnumber = false;
+		/* 					 */
+		showAppliedStereotypes = false;
 		/*  */
-		gotoElementId = '_18_5_3_43701b0_1515880915007_606059_6622';
+		gotoElementId = '';
 		/*  */
 		/* turn off to improve performance on very large report. */ 
-		/*   */
+		/* 					 */
 		selecthistorynode = true;
-		/* Default value is true*/
-		/*   */
+		/*** Default value of SVGDiagramResizable is true ***/
+		/* 					 */
 		svgdiagramresizable = true;
-		/*   */
+		/* 			 */
 		gotoLinkByIcon = false;
+		/* 			 */
+		hexadecimalName = false;
+		
 		var refid = param('refid');
 		if (refid != '') {
-			gotoElementId=refid;
+			gotoElementId = refid;
 		}
-		/*   */
+		/* 					 */
 		XMLRequest.send('diagrams_files/xml/tree/root.xml', renderBrowser);
 	};     
 </script>
