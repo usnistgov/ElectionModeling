@@ -6,31 +6,7 @@
  This is MagicDraw diagram.--><defs id="genericDefs"
   /><g
   ><defs id="defs1"
-    ><linearGradient x1="441" gradientUnits="userSpaceOnUse" x2="596" y1="196" y2="229" id="linearGradient1" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,204,153)" offset="0%"
-        /><stop stop-opacity="1" stop-color="rgb(255,255,218)" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="469" gradientUnits="userSpaceOnUse" x2="586" y1="105" y2="138" id="linearGradient2" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,204,153)" offset="0%"
-        /><stop stop-opacity="1" stop-color="rgb(255,255,218)" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="126" gradientUnits="userSpaceOnUse" x2="243" y1="105" y2="138" id="linearGradient3" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,244,234)" offset="0%"
-        /><stop stop-opacity="1" stop-color="white" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="126" gradientUnits="userSpaceOnUse" x2="221" y1="322" y2="355" id="linearGradient4" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,244,234)" offset="0%"
-        /><stop stop-opacity="1" stop-color="white" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="469" gradientUnits="userSpaceOnUse" x2="554" y1="322" y2="355" id="linearGradient5" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,204,153)" offset="0%"
-        /><stop stop-opacity="1" stop-color="rgb(255,255,218)" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="133" gradientUnits="userSpaceOnUse" x2="204" y1="210" y2="259" id="linearGradient6" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,244,234)" offset="0%"
-        /><stop stop-opacity="1" stop-color="white" offset="100%"
-      /></linearGradient
-      ><radialGradient transform="matrix(1.0 0.0 0.03999999910593033 -1.0 0.0 19.964399337768555)" gradientUnits="userSpaceOnUse" r="3.1971" cx="3.434299945831299" id="gradient1" cy="2.9827001094818115" color-interpolation="sRGB" fx="3.434299945831299" fy="2.9827001094818115" spreadMethod="pad"
+    ><radialGradient transform="matrix(1.0 0.0 0.03999999910593033 -1.0 0.0 19.964399337768555)" gradientUnits="userSpaceOnUse" r="3.1971" cx="3.434299945831299" id="gradient1" cy="2.9827001094818115" color-interpolation="sRGB" fx="3.434299945831299" fy="2.9827001094818115" spreadMethod="pad"
       ><stop stop-color="white" offset="0%"
         /><stop stop-color="rgb(176,179,204)" offset="100%"
       /></radialGradient
@@ -157,45 +133,33 @@
     ><text x="108" space="preserve" y="17.958" clip-path="url(#clipPath1)" stroke="none"
       >[ </text
     ></g
-    ><g fill="rgb(178,178,178)" text-rendering="geometricPrecision" font-size="11px" stroke-linecap="butt" stroke="rgb(178,178,178)" stroke-linejoin="round"
-    ><rect x="444" width="155" height="33" y="199" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="441" y="196" clip-path="url(#clipPath1)" fill="url(#linearGradient1)" width="155" height="33" stroke="none"
-      /><rect x="441" y="196" clip-path="url(#clipPath1)" fill="none" width="155" height="33" stroke="rgb(153,121,92)"
+    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" font-size="11px" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
+    ><rect fill="none" x="441" width="155" height="33" y="196" clip-path="url(#clipPath1)"
       /><text fill="black" x="493.5" space="preserve" y="223.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections)</text
       ><text x="445" y="208.958" clip-path="url(#clipPath1)" fill="black" stroke="none" font-weight="bold" space="preserve"
       >Excuse Absentee Catagory</text
-      ><rect x="472" width="117" height="33" y="108" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="469" y="105" clip-path="url(#clipPath1)" fill="url(#linearGradient2)" width="117" height="33" stroke="none"
-      /><rect x="469" y="105" clip-path="url(#clipPath1)" fill="none" width="117" height="33" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="469" width="117" height="33" y="105" clip-path="url(#clipPath1)"
       /><text fill="black" x="473" space="preserve" y="132.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections.BallotStyles)</text
       ><text x="484" y="117.958" clip-path="url(#clipPath1)" fill="black" stroke="none" font-weight="bold" space="preserve"
       >Voting Variation</text
-      ><rect x="129" width="117" height="33" y="108" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="126" y="105" clip-path="url(#clipPath1)" fill="url(#linearGradient3)" width="117" height="33" stroke="none"
-      /><rect x="126" y="105" clip-path="url(#clipPath1)" fill="none" width="117" height="33" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="126" width="117" height="33" y="105" clip-path="url(#clipPath1)"
       /><text fill="rgb(127,127,127)" x="130" space="preserve" y="132.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections.BallotStyles)</text
       ><text x="146" y="117.958" clip-path="url(#clipPath1)" fill="rgb(127,127,127)" stroke="none" font-weight="bold" space="preserve"
       >Election Policy</text
-      ><rect x="129" width="95" height="33" y="325" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="126" y="322" clip-path="url(#clipPath1)" fill="url(#linearGradient4)" width="95" height="33" stroke="none"
-      /><rect x="126" y="322" clip-path="url(#clipPath1)" fill="none" width="95" height="33" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="126" width="95" height="33" y="322" clip-path="url(#clipPath1)"
       /><text fill="rgb(127,127,127)" x="148.5" space="preserve" y="349.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections)</text
       ><text x="130" y="334.958" clip-path="url(#clipPath1)" fill="rgb(127,127,127)" stroke="none" font-weight="bold" space="preserve"
       >Absentee Voter</text
-      ><rect x="472" width="85" height="33" y="325" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="469" y="322" clip-path="url(#clipPath1)" fill="url(#linearGradient5)" width="85" height="33" stroke="none"
-      /><rect x="469" y="322" clip-path="url(#clipPath1)" fill="none" width="85" height="33" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="469" width="85" height="33" y="322" clip-path="url(#clipPath1)"
       /><text fill="black" x="486.5" space="preserve" y="349.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections)</text
       ><text x="473.5" y="334.958" clip-path="url(#clipPath1)" fill="black" stroke="none" font-weight="bold" space="preserve"
       >Excuse Voting</text
-      ><rect x="136" width="71" height="49" y="213" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="133" y="210" clip-path="url(#clipPath1)" fill="url(#linearGradient6)" width="71" height="49" stroke="none"
-      /><rect x="133" y="210" clip-path="url(#clipPath1)" fill="none" width="71" height="49" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="133" width="71" height="49" y="210" clip-path="url(#clipPath1)"
       /><text fill="rgb(127,127,127)" x="143.5" space="preserve" y="237.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections)</text
       ><text x="153.5" y="222.958" clip-path="url(#clipPath1)" fill="rgb(127,127,127)" stroke="none" font-weight="bold" space="preserve"

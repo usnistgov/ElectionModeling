@@ -14,10 +14,24 @@ var selecthistorynode = true; // turn off to improve performance on very large r
 var nonamedNode = '< >';
 var nonamedLink = '';
 var gotoElementId = '';
+var relationshipPath = '';
 var hexadecimalName = false;
 var appliedStereotyeGroupName = 'report_appliedStereotype_tags';
 var resourcesLocation = contextPath;
 var currentNodeToExpand;
+var favoriteElements = new Array();
+var showFavoriteBtn;
+
+var selectedNode;
+
+var containmentT = {id:"containment", treeId:"tree", tabIndex: "0", tabid: "0"};
+var diagramT = {id:"diagrams", treeId:"dtree", tabIndex: "1", tabid: "1"};
+var tabs = [containmentT, diagramT]; // sort by index
+var activeTabStack = ["containment"];// sort by opened index
+var tabNumber = 2;
+var activeTab;
+var skipUpdateCollapseBtn;
+
 if (resourcesLocation != '' && !/\/$/.test(resourcesLocation)) {
 	resourcesLocation = resourcesLocation + '/';
 }
@@ -129,38 +143,130 @@ function initWeb() {
  * Listener for click on containment tree tab. (Enable containment tree tab content and disabled diagrams tree tab
  * content.)
  */
-function showContainmentTab() {
-	// Enabled containment tree tab content.
-	var containmentTab = document.getElementById('containment_tab');
+function showContainmentTab(showCurrentSelectedNode, id) {
+
+	var tabId = "containment_tab";
+	var contentId = 'containment_content';
+	var toolId = 'containment_tool';
+	if (id) {
+		tabId = id + '_tab';
+		contentId = id + '_content';
+		toolId = id + '_tool';
+	}
+	else {
+		id = "containment";
+	}
+
+	var containmentTab = document.getElementById(tabId);
 	containmentTab.classList.remove('active');
 	containmentTab.classList.add('active');
-	var containmentContent = document.getElementById('containment_content');
+
+	var containmentContent = document.getElementById(contentId);
 	containmentContent.style.display = 'block';
 
-	// Disabled diagrams tree tab content.
-	var diagramsTab = document.getElementById('diagrams_tab');
-	diagramsTab.classList.remove('active');
-	var diagramsContent = document.getElementById('diagrams_content');
-	diagramsContent.style.display = 'none';
+	var containmentTool = document.getElementById(toolId);
+	containmentTool.style.display = 'block';
+
+	activeTab = containmentTab;
+	removeArray(activeTabStack, id);
+	activeTabStack.push(id);
+
+	var selectedNodeInTab;
+	for (var i = 0; i < tabs.length; i++) {
+		var id = tabs[i].id;
+		var otherTabId = id + "_tab";
+		var otherContentId = id + '_content';
+		var otherToolId = id + '_tool';
+
+		if (otherTabId != tabId) {
+			var otherTab = document.getElementById(otherTabId);
+			otherTab.classList.remove('active');
+
+			var otherContent = document.getElementById(otherContentId);
+			otherContent.style.display = 'none';
+
+			var otherTool = document.getElementById(otherToolId);
+			otherTool.style.display = 'none';
+		} else {
+			selectedNodeInTab = tabs[i].selectedNode;
+		}
+	}
+
+	if (showCurrentSelectedNode && typeof selectedNodeInTab != 'undefined' && selectedNodeInTab != null) {
+		var anchorN = selectedNodeInTab.querySelector("a[name=anchorNode]");
+		setHighlightNode(anchorN, selectedNodeInTab);
+
+		var refid = selectedNodeInTab.getAttribute("refid");
+		var isCustomModel = Boolean(selectedNodeInTab.mr_isCustomModel);
+		if (!isCustomModel) {
+			var content = document.getElementById("content");
+			var model = content.model;
+
+			if (refid && refid != model)
+				showSpec(refid, false, true);
+		}
+		else {
+		    clearDocumentationTab();
+            clearPropertiesTab();
+		}
+	}
+
+	updateCloseBtn();
+}
+
+function removeArray(arr, value) {
+	for( var i = 0; i < arr.length; i++){
+        if ( arr[i] == value) {
+            arr.splice(i, 1);
+        }
+    }
 }
 
 /**
  * Listener for click on diagrams tree tabs. (Enable diagrams tree tab content and disabled containment tree tab
  * content.)
  */
-function showDiagramsTab() {
+function showDiagramsTab(showCurrentSelectedNode) {
+
+	var tabId = "diagrams_tab";
+	var contentId = 'diagrams_content';
+	var toolId = 'diagrams_tool';
+
 	// Enable diagrams tree tab content.
-	var diagramsTab = document.getElementById('diagrams_tab');
+	var diagramsTab = document.getElementById(tabId);
 	diagramsTab.classList.remove('active');
 	diagramsTab.classList.add('active');
-	var diagramsContent = document.getElementById('diagrams_content');
+
+	var diagramsContent = document.getElementById(contentId);
 	diagramsContent.style.display = 'block';
 
-	// Disabled containment tree tab content.
-	var containmentTab = document.getElementById('containment_tab');
-	containmentTab.classList.remove('active');
-	var containmentContent = document.getElementById('containment_content');
-	containmentContent.style.display = 'none';
+	var diagramsTool = document.getElementById(toolId);
+	diagramsTool.style.display = 'block';
+
+	activeTab = diagramsTab;
+	removeArray(activeTabStack, "diagrams");
+	activeTabStack.push("diagrams");
+
+	var selectedNodeInTab;
+	for (var i = 0; i < tabs.length; i++) {
+		var id = tabs[i].id;
+		var otherTabId = id + "_tab";
+		var otherContentId = id + '_content';
+		var otherToolId = id + '_tool';
+
+		if (otherTabId != tabId) {
+			var otherTab = document.getElementById(otherTabId);
+			otherTab.classList.remove('active');
+
+			var otherContent = document.getElementById(otherContentId);
+			otherContent.style.display = 'none';
+
+			var otherTool = document.getElementById(otherToolId);
+			otherTool.style.display = 'none';
+		} else {
+			selectedNodeInTab = tabs[i].selectedNode;
+		}
+	}
 
 	// If diagrams tree does not existed, create the diagrams tree.
 	if (diagramsTree == null) {
@@ -175,17 +281,44 @@ function showDiagramsTab() {
 				diagramsTree.image.minus = resourcesLocation + 'images/tree/minus.gif';
 				diagramsTree.root = root;
 				var dataModel = firstChild(responseXML);
-				var node = addChildTextNode(root, dataModel.getAttribute('name'), dataModel, resourcesLocation
+				var node = addGroupNode(root, dataModel.getAttribute('name'), dataModel, resourcesLocation
 					+ 'images/package.gif');
 				node.data = dataModel;
+				node.setAttribute('refid', dataModel.getAttribute('refid'));
 				buildDiagramsTree(node);
 				var browser = document.getElementById('diagrams_content');
 				browser.appendChild(root);
 				diagramsTree.expand(node);
+				var ulNode = node.querySelector("ul");
+				if (ulNode)
+					node.isExpanded = true;
+				diagramT["tree"] = diagramsTree;
 				hideLoading();
 			}
 		}, false, true);
+	} else {
+		if (showCurrentSelectedNode && typeof selectedNodeInTab != 'undefined' && selectedNodeInTab != null) {
+
+			var anchorN = selectedNodeInTab.querySelector("a[name=anchorNode]");
+			setHighlightNode(anchorN, selectedNodeInTab);
+
+			var isCustomModel = Boolean(selectedNodeInTab.mr_isCustomModel);
+			if (!isCustomModel) {
+				var refid = selectedNodeInTab.getAttribute("refid");
+				var content = document.getElementById("content");
+				var model = content.model;
+
+				if (refid && refid != model)
+					showSpec(refid, false, true);
+			}
+			else {
+			    clearDocumentationTab();
+                clearPropertiesTab();
+			}
+		}
 	}
+
+	updateCloseBtn();
 }
 
 function activeDocumentationTab() {
@@ -218,6 +351,31 @@ function activePropertiesTab() {
 	documentationContent.style.display = 'none';
 }
 
+function clearDocumentationTab() {
+	var name  = document.getElementById('documentation_name_inner');
+	name.innerHTML = "Documentation";
+
+	var content  = document.getElementById('documentation_content_div');
+	while (content.firstChild) {
+		//content.firstChild.remove();
+		content.removeChild(content.firstChild);
+	}
+}
+
+function clearPropertiesTab() {
+	var content  = document.getElementById('properties_content_div');
+	while (content.firstChild) {
+		//content.firstChild.remove();
+		content.removeChild(content.firstChild);
+	}
+
+	var menu  = document.getElementById('properties_menu_inner');
+	while (menu.firstChild) {
+		//content.firstChild.remove();
+		menu.removeChild(menu.firstChild);
+	}
+}
+
 function showDocumentationTab(documentNode, humanName) {
 	var name  = document.getElementById('documentation_name_inner');
 	name.innerHTML = "Documentation of " + humanName;
@@ -235,8 +393,7 @@ function showSpecForProperties(elementId) {
 	XMLRequest.send(resourcesLocation + 'xml/' + elementId + '.xml', renderModelForProperties);
 }
 
-function renderModelForProperties(responseXML)
-{
+function renderModelForProperties(responseXML) {
 	var magicdraw;
 	if (responseXML)
 		magicdraw = responseXML.getElementsByTagName('magicdraw')[0];
@@ -277,7 +434,7 @@ function showPropertiesTab(model) {
 		content.appendChild(table);
 		// peoperties
 		var reviewList = new Array();
-		var childNodes = model.childNodes;
+		var childNodes = getChildNodes(model);
 		var doc;
 		var humanName = model.getAttribute('humanType');
 		for ( var c = 0; c < childNodes.length; c++) {
@@ -378,7 +535,7 @@ function isHiddenNode(node) {
 	return true;
 }
 
-function buildTree(li) {
+function buildTree(li, tabid) {
 	var model = li.data;
 	if (model == null)
 		return;
@@ -387,8 +544,8 @@ function buildTree(li) {
 		var emptyUL = document.createElement('ul');
 		emptyUL.className = 'nm-content';
 		var nodeID = model.getAttribute('refid');
-		var ulDummyID = '';
 
+		var ulDummyID = '';
 		var parentULDummyID = li.parentULDummyID;
 		if (parentULDummyID)
 			ulDummyID = parentULDummyID + '_';
@@ -397,10 +554,20 @@ function buildTree(li) {
 		if (model_dummyID)
 			ulDummyID = ulDummyID + model_dummyID + '_';
 
-		emptyUL.dummyid = ulDummyID;
-		emptyUL.id = 'ul_' + ulDummyID + nodeID;
+		var ulTabId = "";
+		if (tabid)
+			ulTabId = "[" + tabid + "]_";
+
+		emptyUL.dummyid = ulTabId + ulDummyID;
+		emptyUL.id = 'ul_' + ulTabId + ulDummyID + nodeID;
+
 		emptyUL.setAttribute('refid', nodeID);
 		emptyUL.onExpand = function() {
+			if (emptyUL.parentNode == selectedNode) {
+				updateCollapseRecursiveBtn(emptyUL);
+			}
+			updateCollapseAllBtn();
+
 			var node = this.parentNode;
 			if (this.hasChildNodes()) {
 				return;
@@ -423,6 +590,10 @@ function buildTree(li) {
 
 		};
 		emptyUL.onCollapse = function() {
+			if (emptyUL.parentNode == selectedNode) {
+				updateCollapseRecursiveBtn(emptyUL);
+			}
+			updateCollapseAllBtn();
 			splitPane.repaint();
 		};
 		li.appendChild(emptyUL);
@@ -446,6 +617,11 @@ function buildDiagramsTree(li) {
 		emptyUL.id = 'ul_' + nodeID;
 		emptyUL.setAttribute('refid', nodeID);
 		emptyUL.onExpand = function() {
+			if (emptyUL.parentNode == selectedNode) {
+				updateCollapseRecursiveBtn(emptyUL);
+			}
+			updateCollapseAllBtn();
+
 			var node = this.parentNode;
 			if (this.hasChildNodes()) {
 				return;
@@ -465,6 +641,10 @@ function buildDiagramsTree(li) {
 
 		};
 		emptyUL.onCollapse = function() {
+			if (emptyUL.parentNode == selectedNode) {
+				updateCollapseRecursiveBtn(emptyUL);
+			}
+			updateCollapseAllBtn();
 			splitPane.repaint();
 		};
 		li.appendChild(emptyUL);
@@ -511,13 +691,21 @@ function createChild(responseXML, parentULDummyID) {
 								relationUL = parentUL.firstChild.lastChild;
 							else {
 								var relationLI = addNode(parentUL, 'Relations', 'javascript:void(0);',
-									'diagrams_files/icon_Relationship_104615190.svg', 'true', true);
-								relationLI.setAttribute('refid', 'relations');
+                                                                    relationshipPath, 'true', true);
+                                relationLI.setAttribute('refid', 'relations');
 								relationUL = document.createElement('ul');
 								relationUL.className = 'nm-content';
 								relationUL.onExpand = function() {
+									if (relationUL.parentNode == selectedNode) {
+										updateCollapseRecursiveBtn(relationUL);
+									}
+									updateCollapseAllBtn();
 								};
 								relationUL.onCollapse = function() {
+									if (relationUL.parentNode == selectedNode) {
+										updateCollapseRecursiveBtn(relationUL);
+									}
+									updateCollapseAllBtn();
 								};
 								relationLI.appendChild(relationUL);
 								if (parentUL.firstChild)
@@ -593,7 +781,7 @@ function createDiagramChild(responseXML) {
 	for ( var c = 0; c < childNodes.length; c++) {
 		var typeNode = childNodes[c];
 		var icon = typeNode.getAttribute('icon');
-		;
+
 		if (!icon)
 			icon = resourcesLocation + 'images/package.gif';
 		var name;
@@ -605,7 +793,7 @@ function createDiagramChild(responseXML) {
 		if (typeNode.nodeName == 'diagram')
 			childNode = addChildNode(parentUL, name, typeNode, icon);
 		else
-			childNode = addChildTextNode(parentUL, name, typeNode, icon);
+			childNode = addGroupNode(parentUL, name, typeNode, icon);
 
 		childNode.data = typeNode;
 		childNode.setAttribute('refid', typeNode.getAttribute('refid'));
@@ -615,70 +803,84 @@ function createDiagramChild(responseXML) {
 	}
 }
 
-function findNodeForSelected(nodeId, selectInTree) {
-	// show containement tab before select node.
-	showContainmentTab();
+function findNodeForSelected(nodeId, selectInTree, checkModel) {
+	var findInContainment = true;
+	if (activeTab && activeTab.id == 'diagrams_tab') {
+		findInContainment = false;
+	}
 
-	if (tree.root && tree.root.index) {
+	if (findInContainment) {
+		findNodeForSelectedInContainment(nodeId, selectInTree, checkModel);
+	}
+	else {
+		var root = diagramsTree.root;
+		var dataModel = diagramsTree.root.index;
+		var xmlPath = 'xml/diagrams_tree/diagramtree.xml';
+
+		internalFindNodeForSelected(nodeId, selectInTree, root, dataModel, xmlPath, true, checkModel);
+	}
+
+	return null;
+}
+
+function findNodeForSelectedInContainment(nodeId, selectInTree, checkModel) {
+	var root = tree.root;
+	var dataModel = tree.root.index;
+	var xmlPath = 'xml/data.xml';
+
+	internalFindNodeForSelected(nodeId, selectInTree, root, dataModel, xmlPath, false, checkModel);
+}
+
+function internalFindNodeForSelected(nodeId, selectInTree, root, dataModel, xmlPath, findInContaintIfNotFound, checkModel) {
+	if (root && dataModel) {
 		showLoading();
-		var searchResults = new Array(0);
 		var content = document.getElementById('content');
-		var selectedNode;
 		if (content.model) {
-			var dataModel = tree.root.index;
 			// var regx = new RegExp('^' + nodeId + '$', 'i');
-			findNodeByAttribute(dataModel, 'refid', nodeId, searchResults, 1);
-			if (searchResults.length == 1) {
-				var parentNode = searchResults[0];
-				var nodePath = new Array();
-				while (parentNode && parentNode.tagName != 'magicdraw') {
-					if (parentNode.nodeType == 1) {
-						var refid = parentNode.getAttribute('refid');
-						if (refid)
-							nodePath[nodePath.length] = refid;
-						parentNode = parentNode.parentNode;
-					}
-				}
-				var rootTree = document.getElementById(tree.treeId);
-				expandPath(nodePath, selectInTree);
-			}
+			internalFindNode(nodeId, selectInTree, dataModel, findInContaintIfNotFound);
 		}
 		hideLoading();
 	} else {
-		XMLRequest.send(resourcesLocation + 'xml/' + 'data.xml', function(responseXML) {
+		XMLRequest.send(resourcesLocation + xmlPath, function(responseXML) {
 			var magicdraw;
 			if (responseXML)
 				magicdraw = responseXML.getElementsByTagName('magicdraw')[0];
 			if (magicdraw != null) {
 				// set data.xml to tree.root.index
-				tree.root.index = responseXML;
-				var selectedNode;
-				var searchResults = new Array(0);
+				root.index = responseXML; // TODO
 				var content = document.getElementById('content');
-				if (content.model) {
+
+				if (content.model || (typeof checkModel != "undefined" && !checkModel)) {
 					var dataModel = responseXML;
 					// var regx = new RegExp('^' + nodeId + '$', 'i');
-					findNodeByAttribute(dataModel, 'refid', nodeId, searchResults, 1);
-					if (searchResults.length == 1) {
-						var parentNode = searchResults[0];
-						var nodePath = new Array();
-						while (parentNode && parentNode.tagName != 'magicdraw') {
-							if (parentNode.nodeType == 1) {
-								var refid = parentNode.getAttribute('refid');
-								if (refid)
-									nodePath[nodePath.length] = refid;
-								parentNode = parentNode.parentNode;
-							}
-						}
-						var rootTree = document.getElementById(tree.treeId);
-						expandPath(nodePath, selectInTree);
-					}
+					internalFindNode(nodeId, selectInTree, dataModel, findInContaintIfNotFound);
 				}
 			}
 
 		}, false, true);
 	}
-	return null;
+}
+
+function internalFindNode(nodeId, selectInTree, dataModel, findInContaintIfNotFound) {
+	var searchResults = new Array(0);
+	findNodeByAttribute(dataModel, 'refid', nodeId, searchResults, 1);
+	if (searchResults.length == 1) {
+		var parentNode = searchResults[0];
+		var nodePath = new Array();
+		while (parentNode && parentNode.tagName != 'magicdraw') {
+			if (parentNode.nodeType == 1) {
+				var refid = parentNode.getAttribute('refid');
+				if (refid)
+					nodePath[nodePath.length] = refid;
+				parentNode = parentNode.parentNode;
+			}
+		}
+		expandPath(nodePath, selectInTree);
+	}
+	else if (findInContaintIfNotFound) {
+		showContainmentTab(false);
+		findNodeForSelectedInContainment(nodeId, selectInTree);
+	}
 }
 
 /**
@@ -693,35 +895,29 @@ function selectNode(node) {
 			var childNodes = node.childNodes;
 			for ( var i = 0; i < childNodes.length; i++) {
 				if (childNodes[i].name == 'anchorNode') {
-					// containment tree
-					var root = document.getElementById(tree.treeId);
-					var nodes = root.getElementsByTagName('li');
-					for ( var n = 0; n < nodes.length; n++) {
-						var anchorNodes = nodes[n].childNodes;
-						for ( var a = 0; a < anchorNodes.length; a++) {
-							if (anchorNodes[a].name == 'anchorNode')
-								anchorNodes[a].style.backgroundColor = '';
-						}
-					}
-					// diagrams tree
-					if (diagramsTree) {
-						var droot = document.getElementById(diagramsTree.treeId);
-						var dnodes = droot.getElementsByTagName('li');
-						for ( var n = 0; n < dnodes.length; n++) {
-							var danchorNodes = dnodes[n].childNodes;
-							for ( var a = 0; a < danchorNodes.length; a++) {
-								if (danchorNodes[a].name == 'anchorNode')
-									danchorNodes[a].style.backgroundColor = '';
-							}
-						}
-					}
-					childNodes[i].style.backgroundColor = '#99CCFF';
+					setHighlightNode(childNodes[i], node);
+					break;
 				}
 			}
 		} else if (node.tagName == 'A') {
 			if (node.name == 'anchorNode') {
-				// containment tree
-				var root = document.getElementById(tree.treeId);
+				setHighlightNode(node, node.parentNode);
+			}
+		}
+	}
+}
+
+function setHighlightNode(node, liNode) {
+
+	// remove hightlight of current tab
+	var selectedTab = null;
+	for (var i = 0; i < tabs.length; i++) {
+		var tabid = tabs[i].id + "_tab";
+		if (tabid == activeTab.id) {
+			var treeId = tabs[i].treeId;
+			var root = document.getElementById(treeId);
+
+			if (root) {
 				var nodes = root.getElementsByTagName('li');
 				for ( var n = 0; n < nodes.length; n++) {
 					var anchorNodes = nodes[n].childNodes;
@@ -730,23 +926,141 @@ function selectNode(node) {
 							anchorNodes[a].style.backgroundColor = '';
 					}
 				}
-				// diagrams tree
-				if (diagramsTree) {
-					var droot = document.getElementById(diagramsTree.treeId);
-					var dnodes = droot.getElementsByTagName('li');
-					for ( var n = 0; n < dnodes.length; n++) {
-						var danchorNodes = dnodes[n].childNodes;
-						for ( var a = 0; a < danchorNodes.length; a++) {
-							if (danchorNodes[a].name == 'anchorNode')
-								danchorNodes[a].style.backgroundColor = '';
-						}
-					}
+			}
+
+			tabs[i]["selectedNode"] = liNode;
+			selectedTab = tabs[i];
+			break;
+		}
+	}
+
+	// add highlight
+	node.style.backgroundColor = '#99CCFF';
+	selectedNode = liNode;
+
+	var isCustomModel = Boolean(liNode.mr_isCustomModel);
+	updateNewTreeBtn(isCustomModel);
+	updateCollapseRecursiveBtn(liNode.querySelector("ul"), selectedTab);
+	updateCollapseAllBtn();
+}
+
+function updateNewTreeBtn(isCustomModel) {
+	if (!activeTab || activeTab.id != "diagrams_tab") {
+
+		var tabId = "containment_tab"
+		if (activeTab)
+			tabId = activeTab.id;
+
+		for (var i = 0; i < tabs.length; i++) {
+			var id = tabs[i].id;
+			var currentTabId = id + "_tab";
+			var currentToolId = id + "_tool";
+
+			if (currentTabId == tabId) {
+				var toolb = document.getElementById(currentToolId);
+				var newTreeBtn = toolb.querySelector(".tool_newtree");
+				if (newTreeBtn) {
+
+					newTreeBtn.classList.remove("tool_newtree_inactive");
+					newTreeBtn.classList.remove("tool_newtree_active");
+
+					if (isCustomModel)
+						newTreeBtn.classList.add("tool_newtree_inactive");
+					else
+						newTreeBtn.classList.add("tool_newtree_active");
 				}
-				node.style.backgroundColor = '#99CCFF';
+				break;
 			}
 		}
 	}
 }
+
+function updateCollapseRecursiveBtn(ulNode, selectedTab) {
+	if (skipUpdateCollapseBtn)
+		return;
+
+	if (typeof selectedTab == 'undefined' || selectedTab == null) {
+		for (var i = 0; i < tabs.length; i++) {
+			var tabid = tabs[i].id + "_tab";
+			if (tabid == activeTab.id) {
+				selectedTab = tabs[i];
+				break;
+			}
+		}
+	}
+
+	// if selected node is expanded, enable
+	var id = selectedTab.id;
+	var currentToolId = id + "_tool";
+	var toolb = document.getElementById(currentToolId);
+	var collapseBtn = toolb.querySelector(".tool_collapse_recursive");
+
+	if (collapseBtn) {
+		collapseBtn.classList.remove("tool_collapse_recursive_inactive");
+		collapseBtn.classList.remove("tool_collapse_recursive_active");
+
+		if (ulNode) {
+			if (ulNode.isExpanded)
+				collapseBtn.classList.add("tool_collapse_recursive_active");
+			else
+				collapseBtn.classList.add("tool_collapse_recursive_inactive");
+		}
+		else {
+			collapseBtn.classList.add("tool_collapse_recursive_inactive");
+		}
+	}
+}
+
+function updateCollapseAllBtn() {
+	if (skipUpdateCollapseBtn)
+		return;
+
+	var tabId = "containment_tab"
+	if (activeTab)
+		tabId = activeTab.id;
+
+	var disableCollapseAll = true;
+	for (var i = 0; i < tabs.length; i++) {
+		var id = tabs[i].id;
+		var currentTabId = id + "_tab";
+		var treeId = tabs[i].treeId; // ul /tree, dtree, elementid_tree
+		var toolId = id + "_tool";
+
+		if (tabId == currentTabId) {
+			var root = document.getElementById(treeId);
+			var lis = root.querySelectorAll(":scope > li");
+			for (var k = 0; k < lis.length; k++) {
+				var ul = lis[k].querySelector(":scope > ul");
+				if (ul && ul.isExpanded) {
+					var childs = lis[k].querySelectorAll(":scope > ul > li");
+					for (var j = 0; j < childs.length; j++) {
+						var ulNode = childs[j].querySelector(":scope > ul");
+						if (childs[j].isExpanded || (ulNode && ulNode.isExpanded)) {
+							disableCollapseAll = false;
+							break;
+						}
+					}
+				}
+			}
+
+			var toolb = document.getElementById(toolId);
+			var collapseAllBtn = toolb.querySelector(".tool_collapse_all");
+			if (collapseAllBtn) {
+				collapseAllBtn.classList.remove("tool_collapse_all_inactive");
+				collapseAllBtn.classList.remove("tool_collapse_all_active");
+
+				if (disableCollapseAll) {
+					collapseAllBtn.classList.add("tool_collapse_all_inactive");
+				}
+				else {
+					collapseAllBtn.classList.add("tool_collapse_all_active");
+				}
+			}
+			break;
+		}
+	}
+}
+
 
 function addChildNode(ul, nodeName, member, icon) {
 	var node = document.createElement('li');
@@ -760,7 +1074,6 @@ function addChildNode(ul, nodeName, member, icon) {
 		node.parentULDummyID = ul.dummyid;
 
 	var anchor = document.createElement('a');
-	anchor.className = 'nm-content';
 
 	var textNode;
 	var suffix = member.getAttribute('suffixName');
@@ -789,35 +1102,52 @@ function addChildNode(ul, nodeName, member, icon) {
 	var refID = member.getAttribute('refid');
 	var isCustomModel = Boolean(member.getAttribute('mr_isCustomModel'));
 	if (!isCustomModel)
-	anchor.href = "javascript: gotoElement('" + refID + "', false, true);";
+		anchor.href = "javascript: gotoElement('" + refID + "', false, true);";
+	else {
+		anchor.href = "javascript:void(0);";
+		node.mr_isCustomModel = true;
+	}
 	anchor.style.verticalAlign = 'middle';
 	anchor.style.marginLeft = '4px';
 	anchor.style.marginRight = '4px';
 	anchor.onclick = function() {
 		selectNode(this);
+
+		if (isCustomModel) {
+		    clearDocumentationTab();
+            clearPropertiesTab();
+		}
 	};
+	anchor.className = 'nm-content';
 	node.appendChild(anchor);
 
 	if (icon) {
 		var imgAnchor = document.createElement('a');
-		imgAnchor.className = 'nm-content';
-		if ((gotoLinkByIcon == true && member.getAttribute('hasLink') == "true") || member.getAttribute('hasLink') != "true")
-		{
-			var refID = member.getAttribute('refid');
-			imgAnchor.href = "javascript: gotoElement('" + refID + "', false, true);";
-		}
-		else
-			imgAnchor.href = "javascript: showSpec('" + member.getAttribute('refid') + "');";
-		
 		imgAnchor.style.verticalAlign = 'middle';
 		imgAnchor.style.position = "relative";
-		imgAnchor.onclick = anchor.onclick;
-		
+
+		if (!isCustomModel) {
+			if ((gotoLinkByIcon == true && member.getAttribute('hasLink') == "true") || member.getAttribute('hasLink') != "true")
+			{
+				var refID = member.getAttribute('refid');
+				imgAnchor.href = "javascript: gotoElement('" + refID + "', false, true);";
+			}
+			else
+				imgAnchor.href = "javascript: showSpec('" + member.getAttribute('refid') + "');";
+
+
+			imgAnchor.onclick = anchor.onclick;
+			imgAnchor.className = 'nm-content';
+		}
+		else {
+			imgAnchor.className = 'nm-content skipMouseEvent';
+		}
+
 		if (member.getAttribute('hasActiveHyperLink') == "true")
 		{
 			var navigatingIcon = document.createElement('img');
 			navigatingIcon.className = 'nm-content';
-			navigatingIcon.src = resourcesLocation + 'images/tree/hyperlinknode.png';;
+			navigatingIcon.src = resourcesLocation + 'images/tree/hyperlinknode.gif';
 			navigatingIcon.alt = '';
 			navigatingIcon.border = '0';
 			navigatingIcon.height = '8';
@@ -828,7 +1158,22 @@ function addChildNode(ul, nodeName, member, icon) {
 			navigatingIcon.style.marginTop = '8px';
 			imgAnchor.appendChild(navigatingIcon);
 		}
-		
+
+		if (favoriteElements.indexOf(member.getAttribute('refid')) >= 0)
+		{
+			var navigatingIcon = document.createElement('img');
+			navigatingIcon.className = 'nm-content';
+			navigatingIcon.src = resourcesLocation + 'images/tree/favoriteelementadornment.gif';
+			navigatingIcon.alt = '';
+			navigatingIcon.border = '0';
+			navigatingIcon.height = '8';
+			navigatingIcon.width = '8';
+			navigatingIcon.style.verticalAlign = 'middle';
+			navigatingIcon.style.position = 'absolute';
+			navigatingIcon.style.zIndex = 2;
+			navigatingIcon.style.marginTop = '0px';
+			imgAnchor.appendChild(navigatingIcon);
+		}
 		var img = document.createElement('img');
 		img.className = 'nm-content';
 		img.src = icon;
@@ -877,19 +1222,27 @@ function addChildNode(ul, nodeName, member, icon) {
 /**
  * Add non-hyperlink child node.
  */
-function addChildTextNode(ul, nodeName, member, icon) {
+function addGroupNode(ul, nodeName, member, icon) {
 	var node = document.createElement('li');
 	node.className = 'nm-content';
 	node.elementName = nodeName;
+	node.mr_isCustomModel = true;
 
-	var span = document.createElement('span');
-	span.className = 'nm-content';
-	span.appendChild(document.createTextNode(nodeName));
-	span.name = 'spanNode';
-	span.style.verticalAlign = 'middle';
-	span.style.marginLeft = '4px';
-	span.style.marginRight = '4px';
-	node.appendChild(span);
+	var anchor = document.createElement('a');
+	anchor.href="javascript:void(0);"
+	anchor.className = 'nm-content';
+	anchor.appendChild(document.createTextNode(nodeName));
+	anchor.name = 'anchorNode';
+	anchor.style.verticalAlign = 'middle';
+	anchor.style.marginLeft = '4px';
+	anchor.style.marginRight = '4px';
+	anchor.onclick = function() {
+		selectNode(this);
+		clearDocumentationTab();
+        clearPropertiesTab();
+	};
+
+	node.appendChild(anchor);
 
 	if (icon) {
 		var img = document.createElement('img');
@@ -900,7 +1253,7 @@ function addChildTextNode(ul, nodeName, member, icon) {
 		img.height = '16';
 		img.width = '16';
 		img.style.verticalAlign = 'middle';
-		node.insertBefore(img, span);
+		node.insertBefore(img, anchor);
 	}
 
 	ul.appendChild(node);
@@ -910,19 +1263,23 @@ function addChildTextNode(ul, nodeName, member, icon) {
 function addNode(ul, nodeName, href, icon, hasChild, skipMouseEvent) {
 	var className = 'nm-content';
 	var anchor;
+
+	var node = document.createElement('li');
+
 	if (skipMouseEvent)
 	{
 		className = className + ' skipMouseEvent';
-		anchor = document.createElement('span');
+		anchor = document.createElement('a');
+		node.mr_isCustomModel = true;
 	}
 	else
 		anchor = document.createElement('a');
-	var node = document.createElement('li');
+
 	node.className = 'nm-content';
 	node.elementName = nodeName;
 	node.hasChild = Boolean(hasChild);
 	//var anchor = document.createElement('a');
-	anchor.className = className;
+	anchor.className = 'nm-content';
 	anchor.appendChild(document.createTextNode(nodeName));
 	anchor.name = 'anchorNode';
 	anchor.href = href;
@@ -931,6 +1288,10 @@ function addNode(ul, nodeName, href, icon, hasChild, skipMouseEvent) {
 	anchor.style.marginRight = '4px';
 	anchor.onclick = function() {
 		selectNode(this);
+		if (skipMouseEvent) {
+		    clearDocumentationTab();
+            clearPropertiesTab();
+        }
 	};
 	node.appendChild(anchor);
 	if (icon) {
@@ -956,7 +1317,7 @@ function addNode(ul, nodeName, href, icon, hasChild, skipMouseEvent) {
 
 /**
  * Shortcut to create HTML element with link
- * 
+ *
  * @param parentNode link container
  * @param linkToElement DOM element
  */
@@ -1166,7 +1527,7 @@ function createViewBar(model) {
 		tabul.appendChild(apearli);
 	}
 	viewbar.appendChild(tabul);
-	
+
 	var modeItem = createPropertiesModeMenu();
 	tabul.appendChild(modeItem);
 	return viewbar;
@@ -1177,15 +1538,15 @@ function createPropertiesModeMenu(forProperties)
 		// view mode
 	if (typeof (propertiesMode) == 'undefined')
 		propertiesMode = 's';
-	
+
 	var content = document.getElementById('content');
 	if (typeof (content.mode) == 'undefined')
 		content.mode = propertiesMode;
-	
+
 	var propertiesContent = document.getElementById('properties_content_div');
 	if (typeof (propertiesContent.mode) == 'undefined')
 		propertiesContent.mode = propertiesMode;
-	
+
 	var modeItem = document.createElement('li');
 	modeItem.className = 'nm-content';
 	if (forProperties)
@@ -1204,7 +1565,7 @@ function createPropertiesModeMenu(forProperties)
 	modeItem.style.margin = '0';
 	modeItem.style.padding = '2px .5em 0 .5em';
 	modeItem.style.cursor = 'default';
-	
+
 	// mode label
 	var modeLabel = document.createElement('div');
 	modeLabel.title = 'Display properties by selected filter';
@@ -1220,22 +1581,22 @@ function createPropertiesModeMenu(forProperties)
 		modeSelect.id = 'propertiesModeSelect';
 	else
 		modeSelect.id = 'modeSelect';
-	
+
 	modeSelect.onchange = function() {
 		propertiesMode = this.options[this.selectedIndex].value;
-		
+
 		var content = document.getElementById('content');
 		content.mode = this.options[this.selectedIndex].value;
-		
+
 		var propertiesContent = document.getElementById('properties_content_div');
 		propertiesContent.mode = this.options[this.selectedIndex].value;
-		
+
 		var mainSelectOption = document.getElementById('modeSelect');
 		mainSelectOption.value = propertiesMode;
-		
+
 		var propertiesSlectOption = document.getElementById('propertiesModeSelect');
 		propertiesSlectOption.value = propertiesMode;
-		
+
 		// change mode in Specification view
 		if (modeSelect.id == 'modeSelect' && content.model)
 		{
@@ -1245,7 +1606,7 @@ function createPropertiesModeMenu(forProperties)
 				showPropertiesTab(propertiesContent.model);
 			}
 		}
-		
+
 		// change mode in Properties view
 		else if (modeSelect.id == 'propertiesModeSelect' && propertiesContent.model)
 		{
@@ -1254,7 +1615,7 @@ function createPropertiesModeMenu(forProperties)
 			if (viewbar.currentView == 'specification' && content.model)
 				renderElement(content.model);
 		}
-		
+
 		repaint();
 	};
 	var standardModeOption = document.createElement('option');
@@ -1344,7 +1705,7 @@ function createActionBar(model) {
 
 /**
  * Value node renderer
- * 
+ *
  * @param value a HTML element containing value
  * @param element DOM element
  */
@@ -1356,7 +1717,7 @@ function renderValueNode(value, element, skipAddingSpace) {
 
 /**
  * Value text renderer
- * 
+ *
  * @param value a HTML element containing value
  * @param text text to display
  */
@@ -1390,7 +1751,7 @@ function renderValueText(value, text, skipAddingSpace) {
 				htmlContent = text.substring(startBodyIndex, endBodyIndex);
 			}
 		}
-	} 
+	}
 	if (foundHTMLText) {
 		if (htmlContent.indexOf('mdel://') >= 0) {
 			var reg = new RegExp('(<\s*a.+)href\s*=\s*\"(mdel://)([^"]*)\"(.*>)', 'gi');
@@ -1417,7 +1778,7 @@ function renderValueText(value, text, skipAddingSpace) {
 
 /**
  * Value link renderer
- * 
+ *
  * @param value a HTML element containing value
  * @param text text containing link
  */
@@ -1505,10 +1866,13 @@ function renderValueLink(value, text) {
 
 /**
  * Render browser tree
- * 
+ *
  * @param responseXML a xml
  */
 function renderBrowser(responseXML) {
+
+    initFavorite();
+
 	var rootModel;
 	if (responseXML) {
 		showLoading();
@@ -1519,6 +1883,7 @@ function renderBrowser(responseXML) {
 		tree.image.plus = resourcesLocation + 'images/tree/plus.gif';
 		tree.image.minus = resourcesLocation + 'images/tree/minus.gif';
 		tree.root = root;
+		containmentT["tree"] = tree;
 
 		var browser = document.getElementById('containment_content');
 
@@ -1559,12 +1924,18 @@ function renderBrowser(responseXML) {
 
 		browser.appendChild(root);
 		// fixed (Web Publisher 2.0) Collapsed Model node in browser
-		if (firstNode != null)
+		if (firstNode != null) {
 			tree.expand(firstNode);
+			var ulNode = firstNode.querySelector("ul");
+			if (ulNode)
+				firstNode.isExpanded = true;
+		}
 		hideLoading();
 		if (gotoElementId != '') {
 			showSpec(gotoElementId, false);
 		}
+
+		activeTab = document.getElementById("containment_tab");
 	}
 }
 
@@ -1574,7 +1945,7 @@ var autonavigatehyperlink = true;
 var stopHyperlink = false;
 /**
  * Render model
- * 
+ *
  * @param responseXML a xml
  */
 
@@ -1593,7 +1964,7 @@ function renderModel(responseXML) {
 		return;
 	}
 	var model = firstChild(magicdraw);
-	
+
 	if (!propertiesRendered)
 	{
 		showPropertiesTab(model);
@@ -1602,13 +1973,13 @@ function renderModel(responseXML) {
 	// validate hyperlinkModelActive
 	var stopRender = false;
 	if (model.hasChildNodes && usehyperlink && !stopHyperlink) {
-		var childNodes = model.childNodes;
+		var childNodes = getChildNodes(model);
 		var humanName = model.getAttribute('humanType');
 		for ( var c = 0; c < childNodes.length && !stopRender; c++) {
 			// Stereotype
 			if (childNodes[c].tagName == appliedStereotyeGroupName) {
 				if (childNodes[c].hasChildNodes) {
-					var stereotypes = childNodes[c].childNodes;
+					var stereotypes = getChildNodes(childNodes[c]);
 					for ( var s = 0; s < stereotypes.length && !stopRender; s++) {
 						var stereotypeName = stereotypes[s].getAttribute('name');
 						if (stereotypeName == 'HyperlinkOwner') {
@@ -1618,7 +1989,7 @@ function renderModel(responseXML) {
 									var propertyName = properties[p].getAttribute('name');
 									if (propertyName == 'hyperlinkModelActive') {
 										if (properties[p].hasChildNodes) {
-											var elements = properties[p].childNodes;
+											var elements = getChildNodes(properties[p]);
 											for ( var e = 0; e < elements.length && !stopRender; e++) {
 												var refid = elements[e].getAttribute('refid');
 												if (refid) {
@@ -1626,13 +1997,13 @@ function renderModel(responseXML) {
 														stopHyperlink = true;
 													usehyperlink = false;
 													gotoElement(refid, false);
-													stopRender = true;									
+													stopRender = true;
 												}
 											}
 										}
 									} else if (propertyName == 'hyperlinkTextActive') {
 										if (properties[p].hasChildNodes) {
-											var elements = properties[p].childNodes;
+											var elements = getChildNodes(properties[p]);
 											for ( var e = 0; e < elements.length && !stopRender; e++) {
 												var uri = nodeValue(elements[e]);
 												var refid = elements[e].getAttribute('refid');
@@ -1641,17 +2012,17 @@ function renderModel(responseXML) {
 														stopHyperlink = true;
 													usehyperlink = false;
 													gotoElement(refid, false);
-													stopRender = true;												
+													stopRender = true;
 												} else if (uri != null) {
 													usehyperlink = false;
 													if (uri.indexOf("file://") == 0) {
 														var tokens = uri.substring(7);
 														//window.open(tokens);
-														window.open('','_blank').location.href = getFileURL(tokens); 
+														window.open('','_blank').location.href = getFileURL(tokens);
 													} else {
 														var tokens = (' ' + uri).split(/(\r\n|[\r\n])/g);
 														//window.open(tokens[0]);
-														window.open('','_blank').location.href = tokens[0]; 
+														window.open('','_blank').location.href = tokens[0];
 													}
 													propertiesRendered = false;
 													stopRender = true;
@@ -1677,12 +2048,12 @@ function renderModel(responseXML) {
 			var skipOwnedBehavior = false;
 			var ownedBehavior, ownedDiagram, classifierBehavior;
 			var modelName;
-			
+
 			var aClassType = model.getAttribute('classType');
-			if (aClassType == 'Activity' || aClassType == 'StateMachine' || aClassType == 'Interaction' 
+			if (aClassType == 'Activity' || aClassType == 'StateMachine' || aClassType == 'Interaction'
 				|| aClassType == 'ProtocolStateMachine' || aClassType == 'OpaqueBehavior' || aClassType == 'FunctionBehavior')
 				skipOwnedBehavior = true;
-			
+
 			for ( var b = 0; b < model.childNodes.length; b++) {
 				if (model.childNodes[b].tagName == 'ownedBehavior') {
 					ownedBehavior = model.childNodes[b];
@@ -1694,7 +2065,7 @@ function renderModel(responseXML) {
 					modelName = nodeValue(model.childNodes[b]);
 				}
 			}
-			
+
 			if (classifierBehavior) {
 				var hasDiagram = classifierBehavior.getAttribute('hasDiagram');
 				if (hasDiagram) {
@@ -1706,7 +2077,7 @@ function renderModel(responseXML) {
 					skipOwnedBehavior = true;
 				}
 			}
-			
+
 			if (!mdRule && !skipOwnedBehavior && ownedBehavior) {
 				// only owned Behavior with diagram
 				var skipCheckFirstBehavior = false;
@@ -1726,7 +2097,7 @@ function renderModel(responseXML) {
 						break;
 					}
 				}
-				
+
 				if (!mdRule && !skipCheckFirstBehavior && ownedBehavior.childNodes.length > 0) {
 					var firstBehavior = ownedBehavior.firstChild;
 					var hasDiagram = firstBehavior.getAttribute('hasDiagram');
@@ -1737,7 +2108,7 @@ function renderModel(responseXML) {
 					}
 				}
 			}
-			
+
 			var diagramType = [];
 			var checkSpecifiedDiagram = false;
 			if (!mdRule) {
@@ -1758,7 +2129,7 @@ function renderModel(responseXML) {
 					checkSpecifiedDiagram = true;
 				}
 			}
-			
+
 			if (!mdRule && ownedDiagram) {
 				if (checkSpecifiedDiagram) {
 					for ( var d = 0; d < ownedDiagram.childNodes.length; d++) {
@@ -1772,7 +2143,7 @@ function renderModel(responseXML) {
 						}
 					}
 				}
-					
+
 				if (!mdRule && !(classType == 'Package' || classType == 'Model' || classType == 'Profile')) {
 					if (ownedDiagram.childNodes.length > 0) {
 						gotoElement(ownedDiagram.firstChild.getAttribute('refid'), false);
@@ -1781,7 +2152,7 @@ function renderModel(responseXML) {
 					}
 				}
 			}
-			
+
 			if (!mdRule && checkSpecifiedDiagram && ownedBehavior) {
 				// recheck interaction
 				for ( var d = 0; d < ownedBehavior.childNodes.length; d++) {
@@ -1796,7 +2167,7 @@ function renderModel(responseXML) {
 					}
 				}
 			}
-			
+
 			/* General Rules */
 			if (!mdRule) {
 				var classType = model.getAttribute('classType');
@@ -1866,8 +2237,8 @@ function renderModel(responseXML) {
 								break;
 							}
 						}
-					} 
-					
+					}
+
 					if (diagramTagsRID != null) {
 						gotoElement(diagramTagsRID, false);
 						stopRender = true;
@@ -1937,7 +2308,7 @@ function Review(no, text, author, date) {
 
 /**
  * Store hyperlink stereotype.
- * 
+ *
  * @param {String} id
  * @param {String} name
  * @param {String} icon
@@ -1987,7 +2358,7 @@ function renderElement(model) {
 		content.appendChild(table);
 		// peoperties
 		var reviewList = new Array();
-		var childNodes = model.childNodes;
+		var childNodes = getChildNodes(model);
 		for ( var c = 0; c < childNodes.length; c++) {
 			if (childNodes[c].tagName == 'name')
 				header.appendChild(document.createTextNode(' ' + nodeValue(childNodes[c])));
@@ -2295,7 +2666,7 @@ function createContextItem(container, icon, label, func, href, refid) {
 	linkIcon.className = 'nm-content';
 	linkIcon.alt = '';
 	linkIcon.border = '0';
-	
+
 	var imageFormat = "";
 	if (icon)
 		imageFormat = icon.substring(icon.lastIndexOf(".") + 1, icon.length);
@@ -2341,10 +2712,10 @@ function renderDiagram(model, diagamModel) {
 	content.appendChild(createViewBar(model));
 	if (diagamModel)
 		model = diagamModel;
-	
+
 	showPropertiesTab(model);
 	propertiesRendered = false;
-	
+
 	var header = document.createElement('h2');
 	header.className = 'nm-content';
 	header.id = 'contentHeader';
@@ -2386,7 +2757,7 @@ function renderDiagram(model, diagamModel) {
 								if (url.indexOf("file://") == 0) {
 									url = getFileURL(url.substring(7));
 								}
-								window.open('','_blank').location.href = url; 
+								window.open('','_blank').location.href = url;
 								return false;
 							}
 							// for textbox, note
@@ -2396,7 +2767,7 @@ function renderDiagram(model, diagamModel) {
 									//window.open(elementId, '_blank');
 									// http://www.dynamicdrive.com/forums/entry.php?256-Force-a-page-to-open-in-a-new-tab
 									// Fixed IE does not open new tab when the address is invalid
-									window.open('','_blank').location.href = elementId; 
+									window.open('','_blank').location.href = elementId;
 									return false;
 								}
 								// // TODO support navigation
@@ -2425,7 +2796,7 @@ function renderDiagram(model, diagamModel) {
 									//window.open(elementId, '_blank');
 									// http://www.dynamicdrive.com/forums/entry.php?256-Force-a-page-to-open-in-a-new-tab
 									// Fixed IE does not open new tab when the address is invalid
-									window.open('','_blank').location.href = elementId; 
+									window.open('','_blank').location.href = elementId;
 									return false;
 								}
 								else {
@@ -2461,7 +2832,7 @@ function renderDiagram(model, diagamModel) {
 															+ name, function() {
 															showSpec(anElementId);
 													});
-													
+
 												}
 												else if (arrayLength == 1) {
 													alert('This element was not generated from project.');
@@ -2478,12 +2849,12 @@ function renderDiagram(model, diagamModel) {
 									if (arrayLength > 0 && foundItem) {
 										showContext(evt, content, ulcontext);
 									}
-								}				
+								}
 							}
 							else if (usecontextmenu) {
 								if (isHyperlink == true || isHyperlink == 'true') {
 									ulcontext = createULContext();
-									
+
 									var name = areas[this.id].getAttribute('linkUrl');
 									if (name.indexOf("file://") == 0) {
 										name = getFileURL(name.substring(7));
@@ -2496,7 +2867,7 @@ function renderDiagram(model, diagamModel) {
 													Shadow.removeShadow(elementContext);
 												}
 											}, name);
-									
+
 									// show context menu
 									showContext(evt, content, ulcontext);
 								}
@@ -2609,7 +2980,7 @@ function renderDiagram(model, diagamModel) {
 																									hyperlinkTextActive = new ModelLink(refid,
 																										elements[e].getAttribute('name'),
 																										elements[e].getAttribute('icon'), true);
-	
+
 																								}
 																							} else {
 																								hyperlinkTextActive = new ModelLink(refid,
@@ -2635,9 +3006,9 @@ function renderDiagram(model, diagamModel) {
 												}
 											}
 										}
-	
+
 										ulcontext = createULContext();
-	
+
 										var foundOtherLink = false;
 										// specification
 										var liitem = createContextItem(ulcontext, specIcon, 'Specification', function() {
@@ -2712,7 +3083,7 @@ function renderDiagram(model, diagamModel) {
 												foundOtherLink = true;
 											}
 										}
-	
+
 										// referItem
 										var liitemIndex = liitem.length;
 										for ( var h = 0; h < referTo.length; h++) {
@@ -2722,7 +3093,7 @@ function renderDiagram(model, diagamModel) {
 											}, "", referTo[h].id);
 											foundOtherLink = true;
 										}
-										
+
 										if (model) {
 											var classType = model.getAttribute('classType');
 											if (classType == 'State') {
@@ -2747,7 +3118,7 @@ function renderDiagram(model, diagamModel) {
 												isShowMenu = false;
 											}
 										}
-	
+
 										if (isShowMenu) {
 											showContext(evt, content, ulcontext);
 										}
@@ -2774,11 +3145,11 @@ function renderDiagram(model, diagamModel) {
 						for ( var p = 0; p < points.length; p++) {
 							coordsList.push(new Point(p, points[p].getAttribute('x'), points[p].getAttribute('y')));
 						}
-						
+
 						// fixed https://jira.nomagic.com/browse/MGRP-4085
 						if (coordsList.length == 4)
 							sortPoint(coordsList);
-						
+
 						for ( var p = 0; p < coordsList.length; p++, coordsString += ',') {
 							coordsString += coordsList[p].pointX + ',' + coordsList[p].pointY;
 						}
@@ -2829,7 +3200,7 @@ function renderDiagram(model, diagamModel) {
 			diagramContainer.style.position='relative';
 			diagramContainer.style.left='50%';
 			diagramContainer.style.transform='translateX(-50%)';
-			
+
 			image.style.width = '100%';
 		}
 		else
@@ -2865,7 +3236,7 @@ function createULContext() {
 		ulcontext.className = 'nm-content contextMenu';
 	}
 	removeAll(ulcontext);
-	
+
 	return ulcontext;
 }
 
@@ -2886,7 +3257,7 @@ function showContext(evt, content, ulcontext) {
 
 /**
  * Point object
- * 
+ *
  * @param label name of point
  * @param lat latitude (x)
  * @param lon longitude (y)
@@ -2919,7 +3290,7 @@ function Point(label, lat, lon) {
 
 /**
  * A custom sort function that sorts p1 and p2 based on their slope that is formed from the upper most point from the array of points.
- * 
+ *
  * @param pointList list of Point
  */
 function sortPoint(pointList){
@@ -2929,7 +3300,7 @@ function sortPoint(pointList){
 		if(p1 == upper) return -1;
 		if(p2 == upper) return 1;
 
-		// Find the slopes of 'p1' and 'p2' when a line is 
+		// Find the slopes of 'p1' and 'p2' when a line is
 		// drawn from those points through the 'upper' point.
 		var m1 = upper.slope(p1);
 		var m2 = upper.slope(p2);
@@ -2953,7 +3324,7 @@ function sortPoint(pointList){
 
 /**
  * Find the upper most point. In case of a tie, get the left most point.
- * 
+ *
  * @param points list of Point
  * @return the upper most point
  */
@@ -2970,7 +3341,7 @@ function upperLeft(points) {
 
 /**
  * Return an active hyperlink attached to this model.
- * 
+ *
  * @param {HTML} model
  * @return ModelLink or null
  */
@@ -3068,7 +3439,7 @@ function renderReviewBox(reviewList) {
 
 /**
  * Goto element.
- * 
+ *
  * @elementId element id
  */
 
@@ -3102,7 +3473,7 @@ function gotoElement(elementId, keepStack, userClick) {
 
 /**
  * Show element's specification page
- * 
+ *
  * @param elementId element id
  * @param keepStack put command into undo stack
  */
@@ -3120,9 +3491,61 @@ function showSpec(elementId, keepStack) {
 function expandPath(nodePath, selectInTree) {
 	showLoading(true);
 	stopexpand = false;
-	var rootTree = document.getElementById(tree.treeId);
+
 	var path = nodePath.length - 1;
-	internalExpandPath(rootTree, nodePath, path, selectInTree);
+	var aTree;
+	// TODO check root for other tab
+	if (activeTab && activeTab.id == "diagrams_tab") {
+		rootTree = document.getElementById(diagramsTree.treeId);
+		aTree = diagramsTree;
+	}
+	else if (!activeTab || activeTab.id == "containment_tab") {
+		rootTree = document.getElementById(tree.treeId);
+		aTree = tree;
+	}
+	else {
+		for (var i = activeTabStack.length - 1; i >= 0; i--) {
+			if (activeTabStack[i] == 'containment') {
+				rootTree = document.getElementById(tree.treeId);
+				aTree = tree;
+				showContainmentTab(false);
+				break;
+			}
+			else {
+				var tabid = activeTabStack[i];
+				var treeid = tabid + "_tree";
+				rootTree = document.getElementById(treeid);
+
+				if (rootTree) {
+					var found = false;
+					var rootElement = rootTree.rootElement;
+					if (rootElement) {
+						for (var j = nodePath.length - 1 ; j >= 0; j--) {
+							if (rootElement == nodePath[j]) {
+								found = true;
+								path = j;
+								showContainmentTab(false, tabid);
+								// find tree
+								for (var k = 0; k < tabs.length; k++) {
+									if (tabs[k].id == tabid) {
+										aTree = tabs[k].tree;
+										break;
+									}
+								}
+								break;
+							}
+						}
+					}
+
+					if (found) {
+						break;
+					}
+				}
+			}
+		}
+	}
+
+	internalExpandPath(aTree, rootTree, nodePath, path, selectInTree);
 	hideLoading(true);
 }
 
@@ -3131,7 +3554,7 @@ function expandPath(nodePath, selectInTree) {
  */
 var stopexpand = false;
 
-function internalExpandPath(rootNode, nodePath, path, selectInTree) {
+function internalExpandPath(aTree, rootNode, nodePath, path, selectInTree) {
 	if (path < 0 || stopexpand) {
 		if (path < 0) {
 			if (selectInTree) {
@@ -3140,8 +3563,7 @@ function internalExpandPath(rootNode, nodePath, path, selectInTree) {
 					selectNode(rootNode);
 					// Expand tree after select node for fixed problem form first select time.
 					var treepath = nodePath.length - 1;
-					var rootTree = document.getElementById(tree.treeId);
-					expandTree(rootTree, nodePath, treepath);
+					expandTree(rootNode, nodePath, treepath);
 					return;
 				}
 			}
@@ -3153,7 +3575,7 @@ function internalExpandPath(rootNode, nodePath, path, selectInTree) {
 	if (childNodes) {
 		for ( var c = 0; c < childNodes.length; c++) {
 			if (childNodes[c].tagName == 'UL') {
-				internalExpandPath(childNodes[c], nodePath, path, selectInTree);
+				internalExpandPath(aTree, childNodes[c], nodePath, path, selectInTree);
 			} else if (childNodes[c].tagName == 'LI') {
 				var refid = childNodes[c].getAttribute('refid');
 				childNodes[c].internalExpand = false;
@@ -3161,39 +3583,39 @@ function internalExpandPath(rootNode, nodePath, path, selectInTree) {
 					// if node already expand, left it expand
 					if (childNodes[c].lastChild && !childNodes[c].lastChild.isExpanded) {
 						childNodes[c].path = path;
-						tree.expand(childNodes[c]);
+						aTree.expand(childNodes[c]);
 						// mark as node is expanded for investigating
 						childNodes[c].internalExpand = true;
 					}
-					internalExpandPath(childNodes[c], nodePath, path, selectInTree);
+					internalExpandPath(aTree, childNodes[c], nodePath, path, selectInTree);
 				} else if (refid == nodePath[path]) {
 					// if node already expand, left it expand
 					if (childNodes[c].lastChild && !childNodes[c].lastChild.isExpanded) {
 						if (childNodes[c].lastChild.tagName == "UL") {
 							if (childNodes[c].lastChild.hasChildNodes()) {
-								tree.expand(childNodes[c]);
+								aTree.expand(childNodes[c]);
 								childNodes[c].internalExpand = true;
 								var nextPath = path - 1;
-								internalExpandPath(childNodes[c], nodePath, nextPath, selectInTree);
+								internalExpandPath(aTree, childNodes[c], nodePath, nextPath, selectInTree);
 
 							} else {
 								// If tagname is UL, call function expand node;
 								childNodes[c].path = path;
 								childNodes[c].onReady = function() {
 									var nextPath = this.path - 1;
-									internalExpandPath(this, nodePath, nextPath, selectInTree);
+									internalExpandPath(aTree, this, nodePath, nextPath, selectInTree);
 									// mark as node is expanded for investigating
 									this.internalExpand = true;
 								}
-								tree.expand(childNodes[c]);
+								aTree.expand(childNodes[c]);
 							}
 						} else {
 							// If tagname isn't UL, expand node function doesn't exist;
 							var nextPath = path - 1;
-							internalExpandPath(childNodes[c].lastChild, nodePath, nextPath, selectInTree);
+							internalExpandPath(aTree, childNodes[c].lastChild, nodePath, nextPath, selectInTree);
 						}
 					} else {
-						internalExpandPath(childNodes[c], nodePath, --path, selectInTree);
+						internalExpandPath(aTree, childNodes[c], nodePath, --path, selectInTree);
 					}
 				}
 				if (path == -1) {
@@ -3202,7 +3624,7 @@ function internalExpandPath(rootNode, nodePath, path, selectInTree) {
 				if (!stopexpand) {
 					// collapse node that use for investigating.
 					if (childNodes[c].internalExpand) {
-						tree.collapse(childNodes[c]);
+						aTree.collapse(childNodes[c]);
 					}
 				}
 			}
@@ -3278,9 +3700,9 @@ function back() {
 		gotoElement(backPageId, true, true);
 
 		if (selecthistorynode){
-		findNodeForSelected(backPageId, true);
+			findNodeForSelected(backPageId, true);
+		}
 	}
-}
 }
 
 /**
@@ -3297,14 +3719,14 @@ function forward() {
 		gotoElement(forwardPageId, true, true);
 
 		if (selecthistorynode){
-		findNodeForSelected(forwardPageId, true);
+			findNodeForSelected(forwardPageId, true);
+		}
 	}
-}
 }
 
 /**
  * Trim string
- * 
+ *
  * @param input string
  * @return output string
  */
@@ -3356,7 +3778,7 @@ function findNodeByAttribute(node, attr, value, searchResults, maxresult) {
 
 /**
  * Search function. Regular expression can be used with element name.
- * 
+ *
  * @param elementName name of element being search.
  */
 function search(elementName) {
@@ -3520,4 +3942,622 @@ function getFileURL(url){
 			url = "file://" + url;
 	}
 	return url;
+}
+
+function showFavorite(evt, content) {
+
+	// show context menu
+	var favoritecontextmenu = document.getElementById('favoritecontextmenu');
+	if (favoritecontextmenu) {
+
+		//removeAll(favoritecontextmenu);
+
+		var mic = Graphics.mousePosition(evt);
+		var mouseX = mic.x + 2;
+		var mouseY = mic.y + 2;
+		favoritecontextmenu.style.position = 'absolute';
+		favoritecontextmenu.style.left = mouseX + 'px';
+		favoritecontextmenu.style.top = mouseY + 'px';
+		favoritecontextmenu.style.display = 'block';
+		favoritecontextmenu.style.visibility = 'visible';
+		favoritecontextmenu.style.zIndex = (content.style.zIndex ? content.style.zIndex : 133) + 100;
+		content.appendChild(favoritecontextmenu);
+		Shadow.castShadow(favoritecontextmenu);
+	}
+}
+
+function removeContext(evt) {
+
+	var target = evt.target;
+	if (target.parentElement.id != "favoritecontextmenu" && target.parentElement.parentElement.id != "favoritecontextmenu") {
+		var favoritecontextmenu = document.getElementById('favoritecontextmenu');
+		if (favoritecontextmenu) {
+			favoritecontextmenu.style.disply = 'none';
+			favoritecontextmenu.style.visibility = 'hidden';
+			Shadow.removeShadow(favoritecontextmenu);
+		}
+	}
+}
+
+function updateCloseBtn() {
+	var closeTab = document.getElementById("closetab_btn");
+
+	closeTab.classList.remove('closetab_over');
+	closeTab.classList.remove('closetab_disable');
+	closeTab.classList.remove('closetab');
+
+	if (activeTab && activeTab.id != "diagrams_tab" && activeTab.id != "containment_tab") {
+		 closeTab.classList.add('closetab');
+	 }
+	 else {
+		 closeTab.classList.add('closetab_disable');
+	 }
+}
+
+function initFavorite() {
+	initCloseTab();
+
+	XMLRequest.send(resourcesLocation + 'xml/' + 'favorites.xml', function(responseXML) {
+		var favorites;
+		if (responseXML)
+			favorites = responseXML.getElementsByTagName('favorites')[0];
+		if (favorites != null) {
+			var childNodes = favorites.childNodes;
+
+			if (childNodes.length > 0) {
+
+				var favoritecontextmenu = document.createElement('ul');
+				favoritecontextmenu.id = 'favoritecontextmenu';
+				favoritecontextmenu.className = 'nm-content toolMenu';
+
+				var liitem = document.createElement('li');
+				liitem.className = 'nm-content contextheader';
+				liitem.appendChild(document.createTextNode("Go To Favorites"));
+				favoritecontextmenu.appendChild(liitem);
+				liitem.onclick = function(evt) {
+					evt.stopPropagation();
+				}
+				for (var i = 0; i < childNodes.length; i++) {
+					liitem = document.createElement('li');
+					liitem.className = 'nm-content';
+
+					var qName = childNodes[i].getAttribute("qName");
+					if (qName) {
+					    var qIndex =  qName.lastIndexOf("::");
+					    if (qIndex >= 0) {
+					        var parent = qName.substring(0, qIndex);
+					        var name = qName.substring(qIndex + 2);
+					        liitem.title = name + " [" + parent + "]";
+					    }
+					    else {
+					        liitem.title = qName;
+					    }
+					}
+
+					var link = document.createElement('a');
+					link.href = 'javascript:void(0);';
+
+					var linkIcon = document.createElement('img');
+					linkIcon.className = 'nm-content';
+					linkIcon.alt = '';
+					linkIcon.border = '0';
+
+					var icon = childNodes[i].getAttribute("icon");
+					var imageFormat = "";
+					if (icon)
+						imageFormat = icon.substring(icon.lastIndexOf(".") + 1, icon.length);
+					if (isIE() && !isResizableSVG(imageFormat)) {
+						// Ignore icon width and height
+					}
+					else  {
+						linkIcon.heigth = '16';
+						linkIcon.width = '16';
+					}
+					linkIcon.style.padding = '2px 5px 2px 5px';
+					linkIcon.src = icon;
+
+					var refid = childNodes[i].getAttribute("refid");
+					if (refid != null && refid != "") {
+						linkIcon.refid = refid;
+						link.refid = refid;
+						liitem.refid = refid;
+						favoriteElements[favoriteElements.length] = refid;
+					}
+
+					link.onclick = gotoFavorite;
+					linkIcon.onclick = link.onclick;
+                    liitem.onclick = link.onclick;
+
+					//link.appendChild(linkIcon);
+					var itemName = childNodes[i].getAttribute("name");
+					if (!itemName || itemName == null || itemName.lenght == 0)
+						itemName = nonamedNode;
+					link.appendChild(document.createTextNode(itemName));
+
+					liitem.appendChild(linkIcon);
+					liitem.appendChild(link);
+					favoritecontextmenu.appendChild(liitem);
+				}
+
+				var initTab = document.getElementById('containment_tab');
+				favoritecontextmenu.style.disply = 'none';
+				favoritecontextmenu.style.visibility = 'hidden';
+				Shadow.removeShadow(favoritecontextmenu);
+				initTab.append(favoritecontextmenu);
+				showFavoriteBtn = true;
+			}
+			else {
+                // TODO when tab tool contain other buttons, remove only favorite button
+                 hideFavoriteButton();
+            }
+		}
+		else {
+		    hideFavoriteButton();
+		}
+	}, false, true);
+}
+
+function hideFavoriteButton() {
+    var fvbtn = document.getElementsByClassName("tool_favorite");
+    for (var i = 0; i < fvbtn.length; i++) {
+        fvbtn[i].style.display = 'none';
+        fvbtn[i].style.visibility = 'hidden';
+    }
+    showFavoriteBtn = false;
+}
+
+function initCloseTab() {
+    var closeTab = document.getElementById("closetab_btn");
+	if (closeTab) {
+		  closeTab.onmouseover = function() {
+			 this.classList.remove('closetab_over');
+			 this.classList.remove('closetab_disable');
+			 this.classList.remove('closetab');
+
+			 if (activeTab && activeTab.id != "diagrams_tab" && activeTab.id != "containment_tab") {
+				 this.classList.add('closetab_over');
+			 }
+			 else {
+				 this.classList.add('closetab_disable');
+			 }
+		  };
+		  closeTab.onmouseout = function() {
+			  this.classList.remove('closetab_over');
+			  this.classList.remove('closetab_disable');
+			  this.classList.remove('closetab');
+
+			  if (activeTab && activeTab.id != "diagrams_tab" && activeTab.id != "containment_tab") {
+				 this.classList.add('closetab');
+			  }
+			  else {
+				 this.classList.add('closetab_disable');
+			  }
+		  };
+		  closeTab.onmouseup = function() {
+			  this.classList.remove('closetab_over');
+			  this.classList.remove('closetab_disable');
+			  this.classList.remove('closetab');
+
+			  if (activeTab && activeTab.id != "diagrams_tab" && activeTab.id != "containment_tab") {
+				 this.classList.add('closetab');
+			  }
+			  else {
+				 this.classList.add('closetab_disable');
+			  }
+		  };
+		  closeTab.onclick = function() {
+			  if (activeTab && activeTab.id != "diagrams_tab" && activeTab.id != "containment_tab") {
+
+				  for(var i = 0; i < tabs.length; i++) {
+					 var id = tabs[i].id;
+					 var tabid =  id + "_tab";
+					 if (activeTab.id == tabid) {
+
+						 removeArray(activeTabStack, id);
+						 tabs.splice(i, 1);
+
+						 // remove content
+						 // remove tree
+						 // remove tab
+						 var tab = document.getElementById(tabid);
+						 tab.parentElement.removeChild(tab);
+						 var content = document.getElementById(id + "_content");
+						 content.parentElement.removeChild(content);
+						 var tool = document.getElementById(id + "_tool");
+						 tool.parentElement.removeChild(tool);
+
+						 // show next tab
+                         if (tabs.length <= i) // last tab is removed
+                            lastActiveTab = tabs[tabs.length - 1];
+                         else
+                            lastActiveTab = tabs[i];
+
+                         if (lastActiveTab.id == 'diagrams')
+                             showDiagramsTab(true);
+                         else
+                             showContainmentTab(true, lastActiveTab.id);
+
+                         break;
+					 }
+				  }
+			  }
+		  }
+	}
+}
+
+function gotoFavorite(evt) {
+	showSpec(this.refid, false, true);
+	findNodeForSelected(this.refid, true, false);
+	var favoritecontextMenu = document.getElementById('favoritecontextmenu');
+	if (favoritecontextMenu) {
+		favoritecontextMenu.style.disply = 'none';
+		favoritecontextMenu.style.visibility = 'hidden';
+		Shadow.removeShadow(favoritecontextMenu);
+	}
+	evt.stopPropagation();
+}
+
+function openNewTree(evt) {
+	if (selectedNode) {
+		var isCustomModel = Boolean(selectedNode.mr_isCustomModel);
+		if (!isCustomModel) {
+
+			var nodeId = selectedNode.getAttribute("refid");
+			var tobeOpenTab = document.getElementById(nodeId + "_tab");
+			if (typeof tobeOpenTab == 'undefined' || tobeOpenTab == null) {
+
+				var selectedAnchor = selectedNode.querySelector("a[name=anchorNode]");
+				var textContent = selectedAnchor.textContent;
+
+				if (textContent == null || textContent.length == 0)
+					textContent = nonamedNode;
+
+				//create tab
+				var newTab = document.createElement("li");
+				newTab.id=nodeId + "_tab";
+				newTab.tabid=tabNumber;
+
+				var newTabid="" + tabNumber;
+				var newTabIndex="" + tabs.length;
+				var newTreeId=nodeId + '_tree';
+				var newT = {id: nodeId, treeId: newTreeId, tabIndex: newTabIndex, tabid: newTabid};
+				tabs.push(newT);
+
+				tabNumber = tabNumber + 1;
+
+				newTab.className="nm-content";
+				newTab.setAttribute("onclick", "showContainmentTab(true, '" + nodeId + "')");
+				newTab.title=textContent;
+
+				var span = document.createElement("span");
+				span.title=textContent;
+				span.appendChild(document.createTextNode(textContent));
+				newTab.appendChild(span);
+
+				//var lastChild = document.getElementById("expand_icon");
+				//lastChild.parentNode.insertBefore(newTab, lastChild);
+				var parent = document.getElementById("topTab");
+				parent.appendChild(newTab);
+
+				var tool = document.createElement("div");
+				tool.id=nodeId + "_tool";
+				tool.className="nm-content tab_tool";
+
+				var tool_btn_ca = document.createElement("div");
+				tool_btn_ca.className="tool_button tool_collapse_all tool_collapse_all_active";
+				tool_btn_ca.title="Collapse All";
+				tool_btn_ca.onclick=function(evt) {
+						collapseAll(evt, this);
+				};
+				tool.appendChild(tool_btn_ca);
+
+				var tool_btn_cr = document.createElement("div");
+				tool_btn_cr.className="tool_button tool_collapse_recursive tool_collapse_recursive_active";
+				tool_btn_cr.title="Collapse Selected Recursively";
+				tool_btn_cr.onclick=collapseRecursively;
+				tool.appendChild(tool_btn_cr);
+
+
+				var tool_btn_nt = document.createElement("div");
+				tool_btn_nt.className="tool_button tool_newtree tool_newtree_active";
+				tool_btn_nt.title="Open in New Tree";
+				tool_btn_nt.onclick=openNewTree;
+				tool.appendChild(tool_btn_nt);
+
+				if (showFavoriteBtn) {
+					var tool_btn_fv = document.createElement("div");
+					tool_btn_fv.className="tool_button tool_favorite";
+					tool_btn_fv.title="Favorites";
+					tool_btn_fv.onclick=function(evt) {
+						showFavorite(evt, this);
+					};
+					tool.appendChild(tool_btn_fv);
+				}
+
+				var tabAndContent = document.getElementById("tabAndContent");
+				tabAndContent.appendChild(tool);
+
+				var newContent = document.createElement("div");
+				newContent.id=nodeId + "_content";
+				newContent.contentid = newTab.tabid;
+				newContent.className="nm-content tabInner tree_content";
+				newContent.style="flex-grow : 1;"
+
+				tabAndContent.appendChild(newContent);
+
+				var iconSrc;
+				var icons = selectedNode.querySelectorAll(":scope > a > img");
+				if (icons)
+					iconSrc = icons[icons.length - 1].getAttribute("src");
+
+				XMLRequest.send(resourcesLocation + 'xml/tree/' + nodeId +'.xml', function(responseXML) {
+					if (responseXML) {
+						showLoading();
+						var root = document.createElement('ul');
+						root.className = 'nm-content tree';
+						root.id = newTreeId;
+						root.rootElement = nodeId;
+
+						var nTree = new Tree(root.id);
+						nTree.image.plus = resourcesLocation + 'images/tree/plus.gif';
+						nTree.image.minus = resourcesLocation + 'images/tree/minus.gif';
+						nTree.root = root;
+						var dataModel = firstChild(responseXML);
+
+						var browser = document.getElementById(nodeId + '_content');
+						var contentid = browser.contentid;
+
+						var nodeName = dataModel.getAttribute('name');
+						if (nodeName == null || nodeName.length == 0)
+							nodeName = nonamedNode;
+
+						var node = addChildNode(root, nodeName, dataModel, iconSrc);
+						node.data = dataModel;
+						node.setAttribute('refid', dataModel.getAttribute('refid'));
+						buildTree(node, contentid);
+
+						browser.appendChild(root);
+						newTab.title=dataModel.getAttribute('name');
+
+						nTree.expand(node);
+
+						var ulNode = node.querySelector("ul");
+						if(ulNode)
+							node.isExpanded = true;
+
+						newT["tree"] = nTree;
+
+						var anchorN = node.querySelector("a[name=anchorNode]");
+						setHighlightNode(anchorN, node);
+
+						newT["selectedNode"] = node;
+
+						hideLoading();
+					}
+				}, false, true);
+			}
+
+			showContainmentTab(true, nodeId);
+		}
+	}
+}
+
+function collapseRecursively() {
+	if (selectedNode && (selectedNode.isExpanded || selectedNode.parentNode.isExpanded)) {
+
+		var selectedTab = null;
+		for (var i = 0; i < tabs.length; i++) {
+			var tabid = tabs[i].id + "_tab";
+			if (tabid == activeTab.id) {
+				selectedTab = tabs[i];
+				break;
+			}
+		}
+		selectedTab.tree.collapseAll(selectedNode);
+	}
+}
+
+function collapseAll(evt, collapseAllBtn) {
+	if (!collapseAllBtn.classList.contains("tool_collapse_all_inactive")) {
+		var tabId = "containment_tab"
+		if (activeTab)
+			tabId = activeTab.id;
+
+		for (var i = 0; i < tabs.length; i++) {
+			var id = tabs[i].id;
+			var currentTabId = id + "_tab";
+			var treeId = tabs[i].treeId; // ul /tree, dtree, elementid_tree
+			var toolId = id + "_tool";
+
+			if (tabId == currentTabId) {
+				skipUpdateCollapseBtn = true;
+				var root = document.getElementById(treeId);
+				var lis = root.querySelectorAll(":scope > li");
+
+				var firstNode = null;
+				for (var k = 0; k < lis.length; k++) {
+					if (k > 0) {
+						tabs[i].tree.collapseAll(lis[k]);
+					}
+					else {
+						firstNode = lis[k];
+						var childs = lis[k].querySelectorAll(":scope > ul > li");
+						for (var j = 0; j < childs.length; j++) {
+							var ulNode = childs[j].querySelector(":scope > ul")
+							if (childs[j].isExpanded || (ulNode && ulNode.isExpanded)) {
+								tabs[i].tree.collapseAll(childs[j]);
+							}
+						}
+					}
+				}
+
+				// remove selected
+				var node = tabs[i].selectedNode;
+				if (node && node.tagName == 'LI') {
+					var childNodes = node.childNodes;
+					for ( var n = 0; n < childNodes.length; n++) {
+						if (childNodes[n].name == 'anchorNode') {
+							childNodes[n].style.backgroundColor = '';
+							break;
+						}
+					}
+				}
+				else if (node && node.tagName == 'A') {
+					if (node.name == 'anchorNode') {
+						node.style.backgroundColor = '';
+					}
+				}
+
+				// clear selectedNode
+				if (tabs[i].id == "diagrams") {
+					var childNodes = firstNode.childNodes;
+					for ( var n = 0; n < childNodes.length; n++) {
+						if (childNodes[n].name == 'anchorNode') {
+							childNodes[n].style.backgroundColor = '#99CCFF';
+							break;
+						}
+					}
+
+					tabs[i].selectedNode = firstNode;
+					selectedNode = firstNode;
+				}
+				else {
+					tabs[i].selectedNode = null;
+					selectedNode = null;
+
+					// TODO clear document tab, property tab,
+				}
+				clearDocumentationTab();
+                clearPropertiesTab();
+
+				var toolb = document.getElementById(toolId);
+				var newTreeBtn = toolb.querySelector(".tool_newtree");
+				if (newTreeBtn) {
+					newTreeBtn.classList.remove("tool_newtree_inactive");
+					newTreeBtn.classList.remove("tool_newtree_active");
+					newTreeBtn.classList.add("tool_newtree_inactive");
+				}
+
+				var collapseAllBtn = toolb.querySelector(".tool_collapse_all");
+				if (collapseAllBtn) {
+					collapseAllBtn.classList.remove("tool_collapse_all_inactive");
+					collapseAllBtn.classList.remove("tool_collapse_all_active");
+					collapseAllBtn.classList.add("tool_collapse_all_inactive");
+				}
+
+				var collapseReBtn = toolb.querySelector(".tool_collapse_recursive");
+				if (collapseReBtn) {
+					collapseReBtn.classList.remove("tool_collapse_recursive_inactive");
+					collapseReBtn.classList.remove("tool_collapse_recursive_active");
+					collapseReBtn.classList.add("tool_collapse_recursive_inactive");
+				}
+
+				skipUpdateCollapseBtn = false;
+				break;
+			}
+		}
+	}
+}
+
+function getChildNodes(m) {
+	if (m.getAttribute('requireSort') == "node")
+	{
+		var childNodes = [];
+		var childNodesOriginal = m.childNodes;
+		for (var s = 0; s < childNodesOriginal.length; s++) {
+			childNodes.push(childNodesOriginal[s]);
+		}
+		childNodes = childNodes.sort(function(o1, o2) {
+			if (o1 === null) {
+				return o2 === null ? 0 : 1;
+			}
+			else if (o2 === null) {
+				return -1;
+			}
+			var name1 = o1.getAttribute("humanName");
+			var name2 = o2.getAttribute("humanName");
+			var n1 = name1 === null || name1.length == 0 ? o1.nodeName : name1;
+			var n2 = name2 === null || name2.length == 0 ? o2.nodeName : name2;
+			if (n1 === null) {
+				return n2 === null ? 0 : 1;
+			}
+			else if (n2 === null) {
+				return -1;
+			}
+			return n1.localeCompare(n2, undefined, { sensitivity: 'base' });
+		});
+	}
+	else if (m.getAttribute('requireSort') == "name")
+	{
+		var childNodes = [];
+		var childNodesOriginal = m.childNodes;
+		for (var s = 0; s < childNodesOriginal.length; s++) {
+			childNodes.push(childNodesOriginal[s]);
+		}
+		childNodes = childNodes.sort(function(o1, o2) {
+			if (o1 === null) {
+				return o2 === null ? 0 : 1;
+			}
+			else if (o2 === null) {
+				return -1;
+			}
+			var name1 = o1.getAttribute("name");
+			var name2 = o2.getAttribute("name");
+			var order1 = 0;
+			if (name1 === null) {
+				order1 = name2 === null ? 0 : 1;
+			}
+			else if (name2 === null) {
+				order1 = -1;
+			}
+			else {
+				order1 = name1.localeCompare(name2, undefined, { sensitivity: 'base' });
+			}
+			if (order1 ===  0) {
+				name1 = o1.textContent;
+				name2 = o2.textContent;
+				if (name1 === null) {
+					return name2 === null ? 0 : 1;
+				}
+				else if (name2 === null) {
+					return -1;
+				}
+				return  name1.localeCompare(name2, undefined, { sensitivity: 'base' });
+			}
+			return order1;
+		});
+	}
+	else if (m.getAttribute('requireSort') == "element")
+	{
+		var childNodes = [];
+		var childNodesOriginal = m.childNodes;
+		for (var s = 0; s < childNodesOriginal.length; s++) {
+			childNodes.push(childNodesOriginal[s]);
+		}
+		childNodes = childNodes.sort(function(o1, o2) {
+			if (o1 === null) {
+				return o2 === null ? 0 : 1;
+			}
+			else if (o2 === null) {
+				return -1;
+			}
+			var name1 = o1.getAttribute("name");
+			var name2 = o2.getAttribute("name");
+			var order1 = 0;
+			if (name1 === null) {
+				order1 = name2 === null ? 0 : 1;
+			}
+			else if (name2 === null) {
+				order1 = -1;
+			}
+			else {
+				order1 = name1.localeCompare(name2, undefined, { sensitivity: 'base' });
+			}
+			return order1;
+		});
+	}
+	else {
+		var childNodes = m.childNodes;
+	}
+	return childNodes;
 }

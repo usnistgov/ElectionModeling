@@ -6,39 +6,7 @@
  This is MagicDraw diagram.--><defs id="genericDefs"
   /><g
   ><defs id="defs1"
-    ><linearGradient x1="245" gradientUnits="userSpaceOnUse" x2="408" y1="105" y2="154" id="linearGradient1" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,244,234)" offset="0%"
-        /><stop stop-opacity="1" stop-color="white" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="511" gradientUnits="userSpaceOnUse" x2="645" y1="238" y2="271" id="linearGradient2" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,204,153)" offset="0%"
-        /><stop stop-opacity="1" stop-color="rgb(255,255,218)" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="42" gradientUnits="userSpaceOnUse" x2="168" y1="161" y2="210" id="linearGradient3" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,204,153)" offset="0%"
-        /><stop stop-opacity="1" stop-color="rgb(255,255,218)" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="50" gradientUnits="userSpaceOnUse" x2="161" y1="56" y2="89" id="linearGradient4" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,244,234)" offset="0%"
-        /><stop stop-opacity="1" stop-color="white" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="805" gradientUnits="userSpaceOnUse" x2="900" y1="56" y2="89" id="linearGradient5" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,244,234)" offset="0%"
-        /><stop stop-opacity="1" stop-color="white" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="553" gradientUnits="userSpaceOnUse" x2="637" y1="56" y2="89" id="linearGradient6" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,244,234)" offset="0%"
-        /><stop stop-opacity="1" stop-color="white" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="1022" gradientUnits="userSpaceOnUse" x2="1102" y1="56" y2="89" id="linearGradient7" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,244,234)" offset="0%"
-        /><stop stop-opacity="1" stop-color="white" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="77" gradientUnits="userSpaceOnUse" x2="155" y1="287" y2="336" id="linearGradient8" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,244,234)" offset="0%"
-        /><stop stop-opacity="1" stop-color="white" offset="100%"
-      /></linearGradient
-      ><radialGradient transform="matrix(1.0 0.0 0.03999999910593033 -1.0 0.0 19.964399337768555)" gradientUnits="userSpaceOnUse" r="3.1971" cx="3.434299945831299" id="gradient1" cy="2.9827001094818115" color-interpolation="sRGB" fx="3.434299945831299" fy="2.9827001094818115" spreadMethod="pad"
+    ><radialGradient transform="matrix(1.0 0.0 0.03999999910593033 -1.0 0.0 19.964399337768555)" gradientUnits="userSpaceOnUse" r="3.1971" cx="3.434299945831299" id="gradient1" cy="2.9827001094818115" color-interpolation="sRGB" fx="3.434299945831299" fy="2.9827001094818115" spreadMethod="pad"
       ><stop stop-color="white" offset="0%"
         /><stop stop-color="rgb(176,179,204)" offset="100%"
       /></radialGradient
@@ -165,59 +133,43 @@
     ><text x="108" space="preserve" y="17.958" clip-path="url(#clipPath1)" stroke="none"
       >[ </text
     ></g
-    ><g fill="rgb(178,178,178)" text-rendering="geometricPrecision" font-size="11px" stroke-linecap="butt" stroke="rgb(178,178,178)" stroke-linejoin="round"
-    ><rect x="248" width="163" height="49" y="108" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="245" y="105" clip-path="url(#clipPath1)" fill="url(#linearGradient1)" width="163" height="49" stroke="none"
-      /><rect x="245" y="105" clip-path="url(#clipPath1)" fill="none" width="163" height="49" stroke="rgb(153,121,92)"
+    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" font-size="11px" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
+    ><rect fill="none" x="245" width="163" height="49" y="105" clip-path="url(#clipPath1)"
       /><text fill="rgb(127,127,127)" x="301.5" space="preserve" y="132.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections)</text
       ><text x="257" y="117.958" clip-path="url(#clipPath1)" fill="rgb(127,127,127)" stroke="none" font-weight="bold" space="preserve"
       >VoterRegistrationAgency</text
-      ><rect x="514" width="134" height="33" y="241" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="511" y="238" clip-path="url(#clipPath1)" fill="url(#linearGradient2)" width="134" height="33" stroke="none"
-      /><rect x="511" y="238" clip-path="url(#clipPath1)" fill="none" width="134" height="33" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="511" width="134" height="33" y="238" clip-path="url(#clipPath1)"
       /><text fill="black" x="553" space="preserve" y="265.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections)</text
       ><text x="515" y="250.958" clip-path="url(#clipPath1)" fill="black" stroke="none" font-weight="bold" space="preserve"
       >Submitted Registration</text
-      ><rect x="45" width="126" height="49" y="164" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="42" y="161" clip-path="url(#clipPath1)" fill="url(#linearGradient3)" width="126" height="49" stroke="none"
-      /><rect x="42" y="161" clip-path="url(#clipPath1)" fill="none" width="126" height="49" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="42" width="126" height="49" y="161" clip-path="url(#clipPath1)"
       /><text fill="black" x="80" space="preserve" y="188.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections)</text
       ><text x="58.5" y="173.958" clip-path="url(#clipPath1)" fill="black" stroke="none" font-weight="bold" space="preserve"
       >RegistrationForm</text
-      ><rect x="53" width="111" height="33" y="59" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="50" y="56" clip-path="url(#clipPath1)" fill="url(#linearGradient4)" width="111" height="33" stroke="none"
-      /><rect x="50" y="56" clip-path="url(#clipPath1)" fill="none" width="111" height="33" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="50" width="111" height="33" y="56" clip-path="url(#clipPath1)"
       /><text fill="rgb(127,127,127)" x="87.5" space="preserve" y="83.958" clip-path="url(#clipPath1)" stroke="none"
       >(Sowa)</text
       ><text x="54.5" y="68.958" clip-path="url(#clipPath1)" fill="rgb(127,127,127)" stroke="none" font-weight="bold" space="preserve"
       >Independent Thing</text
-      ><rect x="808" width="95" height="33" y="59" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="805" y="56" clip-path="url(#clipPath1)" fill="url(#linearGradient5)" width="95" height="33" stroke="none"
-      /><rect x="805" y="56" clip-path="url(#clipPath1)" fill="none" width="95" height="33" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="805" width="95" height="33" y="56" clip-path="url(#clipPath1)"
       /><text fill="rgb(127,127,127)" x="834.5" space="preserve" y="83.958" clip-path="url(#clipPath1)" stroke="none"
       >(Sowa)</text
       ><text x="809.5" y="68.958" clip-path="url(#clipPath1)" fill="rgb(127,127,127)" stroke="none" font-weight="bold" space="preserve"
       >Mediating Thing</text
-      ><rect x="556" width="84" height="33" y="59" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="553" y="56" clip-path="url(#clipPath1)" fill="url(#linearGradient6)" width="84" height="33" stroke="none"
-      /><rect x="553" y="56" clip-path="url(#clipPath1)" fill="none" width="84" height="33" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="553" width="84" height="33" y="56" clip-path="url(#clipPath1)"
       /><text fill="rgb(127,127,127)" x="577" space="preserve" y="83.958" clip-path="url(#clipPath1)" stroke="none"
       >(Sowa)</text
       ><text x="557.5" y="68.958" clip-path="url(#clipPath1)" fill="rgb(127,127,127)" stroke="none" font-weight="bold" space="preserve"
       >Relative Thing</text
-      ><rect x="1025" width="80" height="33" y="59" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="1022" y="56" clip-path="url(#clipPath1)" fill="url(#linearGradient7)" width="80" height="33" stroke="none"
-      /><rect x="1022" y="56" clip-path="url(#clipPath1)" fill="none" width="80" height="33" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="1022" width="80" height="33" y="56" clip-path="url(#clipPath1)"
       /><text fill="rgb(127,127,127)" x="1044" space="preserve" y="83.958" clip-path="url(#clipPath1)" stroke="none"
       >(Sowa)</text
       ><text x="1041" y="68.958" clip-path="url(#clipPath1)" fill="rgb(127,127,127)" stroke="none" font-weight="bold" space="preserve"
       >Context</text
-      ><rect x="80" width="78" height="49" y="290" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="77" y="287" clip-path="url(#clipPath1)" fill="url(#linearGradient8)" width="78" height="49" stroke="none"
-      /><rect x="77" y="287" clip-path="url(#clipPath1)" fill="none" width="78" height="49" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="77" width="78" height="49" y="287" clip-path="url(#clipPath1)"
       /><text fill="rgb(127,127,127)" x="91" space="preserve" y="314.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections)</text
       ><text x="97" y="299.958" clip-path="url(#clipPath1)" fill="rgb(127,127,127)" stroke="none" font-weight="bold" space="preserve"

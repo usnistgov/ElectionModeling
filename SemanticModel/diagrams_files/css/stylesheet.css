@@ -79,16 +79,16 @@ ul.tab li.active			{ background-color: #FAFAFA; border-top: 1px solid #D4D0C8; b
 /* Browser */
 #browser									{ margin: 0 2px 10px 1px; padding: 2px; text-align: left; background: #FAFAFA; border: #D4D0C8 solid 1px; overflow: hidden; }
 .browserbar									{ background-color: #E5E5E5; font-weight: bold; padding: 4px; line-height: 1em; }
-ul#tree, ul#dtree							{ line-height: 1em; margin: 0; }
-ul#tree ul, ul#dtree ul						{ line-height: 1em; margin: 0; }
-div#containment_content,div#diagrams_content{ overflow: auto; text-overflow: ellipsis;}
-ul#tree li, ul#dtree li						{ white-space: nowrap; word-wrap: break-word; text-overflow: ellipsis; /*overflow:hidden;*/}
-ul#tree li a, ul#dtree li a					{ font-size: 90%; color: #1863A1; text-decoration: none; }
-ul#tree li span, ul#dtree li span			{ font-size: 90%; color: #1863A1; text-decoration: none; }
-ul#tree li a:link, ul#tree li span.stereotype			{ color:#666666; }
-ul#tree li a:link, ul#dtree li a:link		            { color: #1863A1; }
-ul#tree li a:hover, ul#tree li a:hover span.stereotype, ul#dtree li a:hover	        { color: #7EC541; }
-ul#tree li a:visited, ul#tree li a:visited span.stereotype, ul#dtree li a:visited	{ color: #1863A1; }
+ul#tree, ul#dtree, ul.tree					{ line-height: 1em; margin: 0; }
+ul#tree ul, ul#dtree ul, ul.tree ul					{ line-height: 1em; margin: 0; }
+div#containment_content, div#diagrams_content, div.tree_content{ overflow: auto; txt-overflow: ellipsis;}
+ul#tree li, ul#dtree li, ul.tree li						{ white-space: nowrap; word-wrap: break-word; text-overflow: ellipsis; /*overflow:hidden;*/}
+ul#tree li a, ul#dtree li a, ul.tree li a					{ font-size: 90%; color: #1863A1; text-decoration: none; }
+ul#tree li span, ul#dtree li span, ul.tree li span			{ font-size: 90%; color: #1863A1; text-decoration: none; }
+ul#tree li a:link, ul#tree li span.stereotype, ul.tree li a:link, ul.tree li span.stereotype			{ color:#666666; }
+ul#tree li a:link, ul#dtree li a:link, ul.tree li a:link		            { color: #1863A1; }
+ul#tree li a:hover, ul#tree li a:hover span.stereotype, ul#dtree li a:hover, ul.tree li a:hover, ul.tree li a:hover span.stereotype        { color: #7EC541; }
+ul#tree li a:visited, ul#tree li a:visited span.stereotype, ul#dtree li a:visited, ul.tree li a:visited, ul.tree li a:visited span.stereotype	{ color: #1863A1; }
 
 /* Table layout */
 div.table									{ padding: .2em; margin: .2em 1em 1em .2em; background: #FFFFFF; }
@@ -134,17 +134,46 @@ input[type="button"]		{ padding: .1em; margin: .1em .2em .1em .2em; }
 .visited					{ font-family: sans-serif; color: #1863A1; text-decoration: underline; cursor: pointer; }
 
 /* context menu*/
-ul.contextMenu				{ display: none; position: absolute; margin: 0px; padding: 2px; font-family: sans-serif; font-size: 11px; list-style-type: none; border: #A5CFE9 solid 1px; background: #FFFFFF; }
+ul.contextMenu, ul.toolMenu				{ display: none; position: absolute; margin: 0px; padding: 2px; font-family: sans-serif; font-size: 11px; list-style-type: none;
+											border: #A5CFE9 solid 1px; background: #FFFFFF; }
 ul.contextMenu li a			{ display: block; padding: 1px 7px 1px 0px; text-decoration: none; color: #1863A1; background: #FFFFFF; }
 ul.contextMenu li a:hover	{ text-decoration: none; color: #0f4572; background: #99ccff; }
 
+ul.toolMenu li a			{ padding: 1px 7px 1px 0px; text-decoration: none; color: #1863A1; }
+ul.toolMenu li:hover		{ text-decoration: none; color: #0f4572; background: #99ccff; }
+
 /* tab */
-.tabs								{ margin:0px 2px 0px 2px; }
-.tabs ul.tabheader					{ position:relative; float:left; width:100%; padding:0; margin:0; list-style:none; line-height:1em; border-bottom: 1px solid #D4D0C8;}
-.tabs ul.tabheader li				{ position:relative; float:left; margin:1px 0 0 2px; padding:4px 1em 6px 1em; background-color: #F0F0F0; border-left:1px solid #CCCCCC; border-top:1px solid #CCCCCC; border-right:1px solid #888888; border-bottom:1px solid #D4D0C8; color:#000000; cursor: pointer; bottom: -1px; font-weight:bold; }
-.tabs ul.tabheader li.active		{ background-color: #FAFAFA; border-top: 1px solid #D4D0C8; border-left: 1px solid #D4D0C8; border-right: 1px solid #D4D0C8; border-bottom: 1px solid #FAFAFA; }
-.tabs ul.tabheader li.expandIcon 	{ background-color: #FFFFFF; border: 0px ; float: right; margin:0px; padding:2px 0.5em 0.5em; cursor:default }
+.tabs								                            { margin:0px 2px 0px 2px; }
+.tabs ul.tabheader, .tabs div ul.tabheader					    { position:relative; float:left; width:100%; padding:0; margin:0; list-style:none; line-height:1em; border-bottom: 1px solid #D4D0C8;}
+.tabs ul.tabheader li, .tabs div ul.tabheader li				{ position:relative; float:left; margin:1px 0 0 2px; padding:4px 1em 6px 1em; background-color: #F0F0F0; border-left:1px solid #CCCCCC; border-top:1px solid #CCCCCC; border-right:1px solid #888888; border-bottom:1px solid #D4D0C8; color:#000000; cursor: pointer; bottom: -1px; font-weight:bold;}
+.tabs ul.tabheader li.active, .tabs div ul.tabheader li.active		    { background-color: #FAFAFA; border-top: 1px solid #D4D0C8; border-left: 1px solid #D4D0C8; border-right: 1px solid #D4D0C8; border-bottom: 1px solid #FAFAFA; }
+.tabs ul.tabheader li.expandIcon, .tabs div ul.tabheader li.expandIcon 	{ background-color: #FFFFFF; border: 0px ; float: right; margin:0px; padding:2px 0.5em 0.5em; cursor:default }
 .tabInner							{ clear: both; background: #FAFAFA; border-left: #D4D0C8 solid 1px; border-right: #D4D0C8 solid 1px; border-bottom: #D4D0C8 solid 1px; padding:3px 0px 3px 0px; }
+
+.tabs ul#tool_header				{ border-bottom:none;}
+
+.tabs div#topTab_container			{ overflow-x: auto; overflow-y:hidden; width: 100%}
+.tabs div ul#topTab					{ display: flex; box-sizing: border-box; -moz-box-sizing: border-box; max-height:27px; line-height:1.2em; }
+.tabs div ul#topTab li				{ min-width: 20px; max-width: 150px;}
+.tabs div ul#topTab li span			{ display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+
+.tab_tool 							{ padding: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-height: 15px; max-height: 15px; border-bottom: 1px solid #d4d0c8; border-right: 1px solid #d4d0c8;}
+.tool_button						{ width: 16px; height: 16px; cursor: pointer; display:inline-block; margin-right:5px;}
+.tool_favorite						{ background: url("../images/favoriteelements.gif") no-repeat center center; background-size: 16px 16px;}
+.tool_newtree_inactive				{ background: url("../images/newtree.gif") no-repeat center center; background-size: 16px 16px; filter: grayscale(100%); cursor:default;}
+.tool_newtree_active				{ background: url("../images/newtree.gif") no-repeat center center; background-size: 16px 16px;}
+.contextheader						{ background-color: #cdcdcd !important; font-weight: bold; height: 20px; vertical-align: middle; display: block; padding-right: 10px; padding-left:10px; padding-top:5px; cursor : default; color: #000000 !important;}
+.tool_collapse_all_inactive				{ background: url("../images/collapsedall_diable.gif") no-repeat center center; background-size: 16px 16px; cursor:default;}
+.tool_collapse_all_active				{ background: url("../images/collapsedall_enable.gif") no-repeat center center; background-size: 16px 16px;}
+.tool_collapse_recursive_inactive		{ background: url("../images/collapsedrecursively_disable.gif") no-repeat center center; background-size: 16px 16px; cursor:default;}
+.tool_collapse_recursive_active			{ background: url("../images/collapsedrecursively_enable.gif") no-repeat center center; background-size: 16px 16px;}
+
+
+
+
+.closetab							{ background: url("../images/close_enable.gif") no-repeat center center; background-size: 16px 16px; width: 15px; height: 15px; float: left;}
+.closetab_disable					{ background: url("../images/close_disable.gif") no-repeat center center; background-size: 16px 16px; width: 15px; height: 15px; float: left; filter: grayscale(100%); cursor:default;}
+.closetab_over						{ background: url("../images/close_hover.gif") no-repeat center center; background-size: 16px 16px; width: 15px; height: 15px; float: left; cursor: pointer}
 
 #documentation_name_inner 			{ padding: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 #documentation_content_div 			{ padding: 5px; margin-left: 2px; margin-right: 2px; margin-top: 2px; margin-bottom: 2px; background-color: #FFFFFF; border: solid #CCCCCC 1px; overflow-y: auto;}
@@ -162,3 +191,14 @@ ul.contextMenu li a:hover	{ text-decoration: none; color: #0f4572; background: #
 #properties_generalTable div.row label 			{ width: 100px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 #properties_content_div .table 					{ margin: .2em .1em .1em .2em}
 .noselect                                       { -webkit-touch-callout: none; /* iOS Safari */-webkit-user-select: none; /* Safari */-khtml-user-select: none; /* Konqueror HTML */-moz-user-select: none; /* Old versions of Firefox */-ms-user-select: none; /* Internet Explorer/Edge */user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */}
+
+
+/* Only Chrome */
+#topTab_container::-webkit-scrollbar {width: 0px; height: 8px; scrollbar-width: thin;}
+#topTab_container::-webkit-scrollbar-thumb {background-color: #cdcdcd; background-clip: padding-box; border: 1px solid #cdcdcd;}
+#topTab_container::-webkit-scrollbar-track {background-color: #f0f0f0; }
+#topTab_container::-webkit-scrollbar-button {display:none; background-color: #f0f0f0;}
+/* Only IE */
+#topTab_container {scrollbar-face-color: #f0f0f0; scrollbar-shadow-color: #cdcdcd; scrollbar-highlight-color: #cdcdcd;}
+/* Only FireFox */
+#topTab_container {scrollbar-width:thin;}

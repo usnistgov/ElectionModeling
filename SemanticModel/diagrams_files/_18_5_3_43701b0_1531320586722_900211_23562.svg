@@ -103,22 +103,22 @@
     ><g fill="white" stroke="white"
     ><rect x="0" width="1064" height="611" y="0" clip-path="url(#clipPath1)" stroke="none"
     /></g
-    ><g fill="rgb(66,66,66)" text-rendering="geometricPrecision" stroke-linecap="butt" stroke="rgb(66,66,66)" stroke-linejoin="round"
+    ><g fill="rgb(66,66,66)" text-rendering="geometricPrecision" stroke-width="2" stroke-linecap="round" stroke="rgb(66,66,66)" stroke-linejoin="round"
     ><rect fill="none" x="5" width="1054" height="601" y="5" clip-path="url(#clipPath1)"
       /><line y2="27" fill="none" x1="5" clip-path="url(#clipPath1)" x2="230" y1="27"
       /><line y2="20" fill="none" x1="239" clip-path="url(#clipPath1)" x2="239" y1="5"
       /><line y2="20" fill="none" x1="230" clip-path="url(#clipPath1)" x2="239" y1="27"
-      /><text x="135" font-size="11px" y="17.958" clip-path="url(#clipPath1)" fill="black" stroke="none" space="preserve"
+    /></g
+    ><g text-rendering="geometricPrecision" font-size="11px" stroke-linecap="butt" stroke-linejoin="round"
+    ><text x="135" space="preserve" y="17.958" clip-path="url(#clipPath1)" stroke="none"
       >Voter Intent Marks</text
-    ></g
-    ><g text-rendering="geometricPrecision" font-size="11px" font-weight="bold" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="11" space="preserve" y="17.958" clip-path="url(#clipPath1)" stroke="none"
+      ><text x="11" space="preserve" y="17.958" clip-path="url(#clipPath1)" font-weight="bold" stroke="none"
       >package </text
-      ><text x="63" space="preserve" y="17.958" clip-path="url(#clipPath1)" font-weight="normal" stroke="none"
+      ><text x="63" space="preserve" y="17.958" clip-path="url(#clipPath1)" stroke="none"
       >Elections</text
-      ><text x="224" space="preserve" y="17.958" clip-path="url(#clipPath1)" font-weight="normal" stroke="none"
+      ><text x="224" space="preserve" y="17.958" clip-path="url(#clipPath1)" stroke="none"
       > ]</text
-      ><text x="131" space="preserve" y="17.958" clip-path="url(#clipPath1)" font-weight="normal" stroke="none"
+      ><text x="131" space="preserve" y="17.958" clip-path="url(#clipPath1)" stroke="none"
       > </text
     ></g
     ><g font-size="11px" stroke-linecap="butt" transform="translate(115,8) matrix(0.7656,0,0,0.7656,0,0)" fill="white" text-rendering="geometricPrecision" stroke-linejoin="round" stroke="white"

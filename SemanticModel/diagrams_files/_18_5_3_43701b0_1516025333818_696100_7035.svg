@@ -6,11 +6,7 @@
  This is MagicDraw diagram.--><defs id="genericDefs"
   /><g
   ><defs id="defs1"
-    ><linearGradient x1="56" gradientUnits="userSpaceOnUse" x2="278" y1="70" y2="285" id="linearGradient1" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,204,153)" offset="0%"
-        /><stop stop-opacity="1" stop-color="rgb(255,255,218)" offset="100%"
-      /></linearGradient
-      ><radialGradient transform="matrix(1.0 0.0 0.03999999910593033 -1.0 0.0 19.964399337768555)" gradientUnits="userSpaceOnUse" r="3.1971" cx="3.434299945831299" id="gradient1" cy="2.9827001094818115" color-interpolation="sRGB" fx="3.434299945831299" fy="2.9827001094818115" spreadMethod="pad"
+    ><radialGradient transform="matrix(1.0 0.0 0.03999999910593033 -1.0 0.0 19.964399337768555)" gradientUnits="userSpaceOnUse" r="3.1971" cx="3.434299945831299" id="gradient1" cy="2.9827001094818115" color-interpolation="sRGB" fx="3.434299945831299" fy="2.9827001094818115" spreadMethod="pad"
       ><stop stop-color="white" offset="0%"
         /><stop stop-color="rgb(176,179,204)" offset="100%"
       /></radialGradient
@@ -137,11 +133,9 @@
     ><text x="173" space="preserve" y="17.958" clip-path="url(#clipPath1)" stroke="none"
       >[ </text
     ></g
-    ><g fill="rgb(178,178,178)" text-rendering="geometricPrecision" font-size="11px" stroke-linecap="butt" stroke="rgb(178,178,178)" stroke-linejoin="round"
-    ><rect x="59" width="222" height="215" y="73" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="56" y="70" clip-path="url(#clipPath1)" fill="url(#linearGradient1)" width="222" height="215" stroke="none"
-      /><rect x="56" y="70" clip-path="url(#clipPath1)" fill="none" width="222" height="215" stroke="rgb(153,121,92)"
-      /><line clip-path="url(#clipPath1)" fill="none" x1="56" x2="278" y1="118" y2="118" stroke="rgb(153,121,92)"
+    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" font-size="11px" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
+    ><rect fill="none" x="56" width="222" height="215" y="70" clip-path="url(#clipPath1)"
+      /><line y2="118" fill="none" x1="56" clip-path="url(#clipPath1)" x2="278" y1="118"
       /><text fill="rgb(40,0,0)" x="59" space="preserve" y="248.958" clip-path="url(#clipPath1)" stroke="none"
       >«Annotation Property»modified on</text
       ><text fill="rgb(40,0,0)" x="59" space="preserve" y="236.958" clip-path="url(#clipPath1)" stroke="none"

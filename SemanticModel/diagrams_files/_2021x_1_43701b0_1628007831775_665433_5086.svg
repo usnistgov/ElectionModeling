@@ -6,27 +6,7 @@
  This is MagicDraw diagram.--><defs id="genericDefs"
   /><g
   ><defs id="defs1"
-    ><linearGradient x1="301" gradientUnits="userSpaceOnUse" x2="432" y1="259" y2="292" id="linearGradient1" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,204,153)" offset="0%"
-        /><stop stop-opacity="1" stop-color="rgb(255,255,218)" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="301" gradientUnits="userSpaceOnUse" x2="431" y1="182" y2="215" id="linearGradient2" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,204,153)" offset="0%"
-        /><stop stop-opacity="1" stop-color="rgb(255,255,218)" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="266" gradientUnits="userSpaceOnUse" x2="388" y1="77" y2="141" id="linearGradient3" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,244,234)" offset="0%"
-        /><stop stop-opacity="1" stop-color="white" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="42" gradientUnits="userSpaceOnUse" x2="159" y1="77" y2="125" id="linearGradient4" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,244,234)" offset="0%"
-        /><stop stop-opacity="1" stop-color="white" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="98" gradientUnits="userSpaceOnUse" x2="213" y1="210" y2="258" id="linearGradient5" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,244,234)" offset="0%"
-        /><stop stop-opacity="1" stop-color="white" offset="100%"
-      /></linearGradient
-      ><radialGradient transform="matrix(1.0 0.0 0.03999999910593033 -1.0 0.0 19.964399337768555)" gradientUnits="userSpaceOnUse" r="3.1971" cx="3.434299945831299" id="gradient1" cy="2.9827001094818115" color-interpolation="sRGB" fx="3.434299945831299" fy="2.9827001094818115" spreadMethod="pad"
+    ><radialGradient transform="matrix(1.0 0.0 0.03999999910593033 -1.0 0.0 19.964399337768555)" gradientUnits="userSpaceOnUse" r="3.1971" cx="3.434299945831299" id="gradient1" cy="2.9827001094818115" color-interpolation="sRGB" fx="3.434299945831299" fy="2.9827001094818115" spreadMethod="pad"
       ><stop stop-color="white" offset="0%"
         /><stop stop-color="rgb(176,179,204)" offset="100%"
       /></radialGradient
@@ -153,38 +133,28 @@
     ><text x="121" space="preserve" y="17.958" clip-path="url(#clipPath1)" stroke="none"
       >[ </text
     ></g
-    ><g fill="rgb(178,178,178)" text-rendering="geometricPrecision" font-size="11px" stroke-linecap="butt" stroke="rgb(178,178,178)" stroke-linejoin="round"
-    ><rect x="304" width="131" height="33" y="262" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="301" y="259" clip-path="url(#clipPath1)" fill="url(#linearGradient1)" width="131" height="33" stroke="none"
-      /><rect x="301" y="259" clip-path="url(#clipPath1)" fill="none" width="131" height="33" stroke="rgb(153,121,92)"
+    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" font-size="11px" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
+    ><rect fill="none" x="301" width="131" height="33" y="259" clip-path="url(#clipPath1)"
       /><text fill="black" x="312" space="preserve" y="286.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections.BallotStyles)</text
       ><text x="305" y="271.958" clip-path="url(#clipPath1)" fill="black" stroke="none" font-weight="bold" space="preserve"
       >Paper Ballot Generator</text
-      ><rect x="304" width="130" height="33" y="185" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="301" y="182" clip-path="url(#clipPath1)" fill="url(#linearGradient2)" width="130" height="33" stroke="none"
-      /><rect x="301" y="182" clip-path="url(#clipPath1)" fill="none" width="130" height="33" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="301" width="130" height="33" y="182" clip-path="url(#clipPath1)"
       /><text fill="black" x="311.5" space="preserve" y="209.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections.BallotStyles)</text
       ><text x="305" y="194.958" clip-path="url(#clipPath1)" fill="black" stroke="none" font-weight="bold" space="preserve"
       >Software Independent</text
-      ><rect x="269" width="122" height="64" y="80" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="266" y="77" clip-path="url(#clipPath1)" fill="url(#linearGradient3)" width="122" height="64" stroke="none"
-      /><rect x="266" y="77" clip-path="url(#clipPath1)" fill="none" width="122" height="64" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="266" width="122" height="64" y="77" clip-path="url(#clipPath1)"
       /><text fill="rgb(127,127,127)" x="272.5" space="preserve" y="104.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections.BallotStyles)</text
       ><text x="298" y="89.958" clip-path="url(#clipPath1)" fill="rgb(127,127,127)" stroke="none" font-weight="bold" space="preserve"
       >Ballot Style</text
-      ><rect x="45" width="117" height="48" y="80" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="42" y="77" clip-path="url(#clipPath1)" fill="url(#linearGradient4)" width="117" height="48" stroke="none"
-      /><rect x="42" y="77" clip-path="url(#clipPath1)" fill="none" width="117" height="48" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="42" width="117" height="48" y="77" clip-path="url(#clipPath1)"
       /><text fill="rgb(127,127,127)" x="46" space="preserve" y="104.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections.BallotStyles)</text
       ><text x="52.5" y="89.958" clip-path="url(#clipPath1)" fill="rgb(127,127,127)" stroke="none" font-weight="bold" space="preserve"
       >Contest Selection</text
-      ><rect x="101" width="115" height="48" y="213" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="98" y="210" clip-path="url(#clipPath1)" fill="url(#linearGradient5)" width="115" height="48" stroke="none"
-      /><rect x="98" y="210" clip-path="url(#clipPath1)" fill="none" width="115" height="48" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="98" width="115" height="48" y="210" clip-path="url(#clipPath1)"
       /><text fill="rgb(127,127,127)" x="130.5" space="preserve" y="237.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections)</text
       ><text x="102.5" y="222.958" clip-path="url(#clipPath1)" fill="rgb(127,127,127)" stroke="none" font-weight="bold" space="preserve"

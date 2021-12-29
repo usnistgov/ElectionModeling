@@ -6,19 +6,7 @@
  This is MagicDraw diagram.--><defs id="genericDefs"
   /><g
   ><defs id="defs1"
-    ><linearGradient x1="315" gradientUnits="userSpaceOnUse" x2="497" y1="161" y2="194" id="linearGradient1" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,204,153)" offset="0%"
-        /><stop stop-opacity="1" stop-color="rgb(255,255,218)" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="42" gradientUnits="userSpaceOnUse" x2="189" y1="161" y2="194" id="linearGradient2" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,204,153)" offset="0%"
-        /><stop stop-opacity="1" stop-color="rgb(255,255,218)" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="203" gradientUnits="userSpaceOnUse" x2="300" y1="63" y2="96" id="linearGradient3" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,204,153)" offset="0%"
-        /><stop stop-opacity="1" stop-color="rgb(255,255,218)" offset="100%"
-      /></linearGradient
-      ><radialGradient transform="matrix(1.0 0.0 0.03999999910593033 -1.0 0.0 19.964399337768555)" gradientUnits="userSpaceOnUse" r="3.1971" cx="3.434299945831299" id="gradient1" cy="2.9827001094818115" color-interpolation="sRGB" fx="3.434299945831299" fy="2.9827001094818115" spreadMethod="pad"
+    ><radialGradient transform="matrix(1.0 0.0 0.03999999910593033 -1.0 0.0 19.964399337768555)" gradientUnits="userSpaceOnUse" r="3.1971" cx="3.434299945831299" id="gradient1" cy="2.9827001094818115" color-interpolation="sRGB" fx="3.434299945831299" fy="2.9827001094818115" spreadMethod="pad"
       ><stop stop-color="white" offset="0%"
         /><stop stop-color="rgb(176,179,204)" offset="100%"
       /></radialGradient
@@ -145,24 +133,18 @@
     ><text x="108" space="preserve" y="17.958" clip-path="url(#clipPath1)" stroke="none"
       >[ </text
     ></g
-    ><g fill="rgb(178,178,178)" text-rendering="geometricPrecision" font-size="11px" stroke-linecap="butt" stroke="rgb(178,178,178)" stroke-linejoin="round"
-    ><rect x="318" width="182" height="33" y="164" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="315" y="161" clip-path="url(#clipPath1)" fill="url(#linearGradient1)" width="182" height="33" stroke="none"
-      /><rect x="315" y="161" clip-path="url(#clipPath1)" fill="none" width="182" height="33" stroke="rgb(153,121,92)"
+    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" font-size="11px" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
+    ><rect fill="none" x="315" width="182" height="33" y="161" clip-path="url(#clipPath1)"
       /><text fill="black" x="381" space="preserve" y="188.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections)</text
       ><text x="327" y="173.958" clip-path="url(#clipPath1)" fill="black" stroke="none" font-weight="bold" space="preserve"
       >Machine Marked Paper Ballot</text
-      ><rect x="45" width="147" height="33" y="164" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="42" y="161" clip-path="url(#clipPath1)" fill="url(#linearGradient2)" width="147" height="33" stroke="none"
-      /><rect x="42" y="161" clip-path="url(#clipPath1)" fill="none" width="147" height="33" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="42" width="147" height="33" y="161" clip-path="url(#clipPath1)"
       /><text fill="black" x="90.5" space="preserve" y="188.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections)</text
       ><text x="46" y="173.958" clip-path="url(#clipPath1)" fill="black" stroke="none" font-weight="bold" space="preserve"
       >Hand Marked Paper Ballot</text
-      ><rect x="206" width="97" height="33" y="66" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="203" y="63" clip-path="url(#clipPath1)" fill="url(#linearGradient3)" width="97" height="33" stroke="none"
-      /><rect x="203" y="63" clip-path="url(#clipPath1)" fill="none" width="97" height="33" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="203" width="97" height="33" y="63" clip-path="url(#clipPath1)"
       /><text fill="black" x="226.5" space="preserve" y="90.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections)</text
       ><text x="207.5" y="75.958" clip-path="url(#clipPath1)" fill="black" stroke="none" font-weight="bold" space="preserve"

@@ -6,27 +6,7 @@
  This is MagicDraw diagram.--><defs id="genericDefs"
   /><g
   ><defs id="defs1"
-    ><linearGradient x1="287" gradientUnits="userSpaceOnUse" x2="389" y1="231" y2="264" id="linearGradient1" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,204,153)" offset="0%"
-        /><stop stop-opacity="1" stop-color="rgb(255,255,218)" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="301" gradientUnits="userSpaceOnUse" x2="384" y1="147" y2="180" id="linearGradient2" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,204,153)" offset="0%"
-        /><stop stop-opacity="1" stop-color="rgb(255,255,218)" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="49" gradientUnits="userSpaceOnUse" x2="112" y1="140" y2="189" id="linearGradient3" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,244,234)" offset="0%"
-        /><stop stop-opacity="1" stop-color="white" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="49" gradientUnits="userSpaceOnUse" x2="107" y1="231" y2="264" id="linearGradient4" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,244,234)" offset="0%"
-        /><stop stop-opacity="1" stop-color="white" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="392" gradientUnits="userSpaceOnUse" x2="492" y1="175" y2="215" id="linearGradient5" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,240,180)" offset="0%"
-        /><stop stop-opacity="1" stop-color="white" offset="100%"
-      /></linearGradient
-      ><radialGradient transform="matrix(1.0 0.0 0.03999999910593033 -1.0 0.0 19.964399337768555)" gradientUnits="userSpaceOnUse" r="3.1971" cx="3.434299945831299" id="gradient1" cy="2.9827001094818115" color-interpolation="sRGB" fx="3.434299945831299" fy="2.9827001094818115" spreadMethod="pad"
+    ><radialGradient transform="matrix(1.0 0.0 0.03999999910593033 -1.0 0.0 19.964399337768555)" gradientUnits="userSpaceOnUse" r="3.1971" cx="3.434299945831299" id="gradient1" cy="2.9827001094818115" color-interpolation="sRGB" fx="3.434299945831299" fy="2.9827001094818115" spreadMethod="pad"
       ><stop stop-color="white" offset="0%"
         /><stop stop-color="rgb(176,179,204)" offset="100%"
       /></radialGradient
@@ -153,38 +133,28 @@
     ><text x="108" space="preserve" y="17.958" clip-path="url(#clipPath1)" stroke="none"
       >[ </text
     ></g
-    ><g fill="rgb(178,178,178)" text-rendering="geometricPrecision" font-size="11px" stroke-linecap="butt" stroke="rgb(178,178,178)" stroke-linejoin="round"
-    ><rect x="290" width="102" height="33" y="234" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="287" y="231" clip-path="url(#clipPath1)" fill="url(#linearGradient1)" width="102" height="33" stroke="none"
-      /><rect x="287" y="231" clip-path="url(#clipPath1)" fill="none" width="102" height="33" stroke="rgb(153,121,92)"
+    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" font-size="11px" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
+    ><rect fill="none" x="287" width="102" height="33" y="231" clip-path="url(#clipPath1)"
       /><text fill="black" x="313" space="preserve" y="258.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections)</text
       ><text x="291" y="243.958" clip-path="url(#clipPath1)" fill="black" stroke="none" font-weight="bold" space="preserve"
       >Election Calendar</text
-      ><rect x="304" width="83" height="33" y="150" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="301" y="147" clip-path="url(#clipPath1)" fill="url(#linearGradient2)" width="83" height="33" stroke="none"
-      /><rect x="301" y="147" clip-path="url(#clipPath1)" fill="none" width="83" height="33" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="301" width="83" height="33" y="147" clip-path="url(#clipPath1)"
       /><text fill="black" x="317.5" space="preserve" y="174.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections)</text
       ><text x="305.5" y="159.958" clip-path="url(#clipPath1)" fill="black" stroke="none" font-weight="bold" space="preserve"
       >Calendar Date</text
-      ><rect x="52" width="63" height="49" y="143" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="49" y="140" clip-path="url(#clipPath1)" fill="url(#linearGradient3)" width="63" height="49" stroke="none"
-      /><rect x="49" y="140" clip-path="url(#clipPath1)" fill="none" width="63" height="49" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="49" width="63" height="49" y="140" clip-path="url(#clipPath1)"
       /><text fill="rgb(127,127,127)" x="55.5" space="preserve" y="167.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections)</text
       ><text x="70" y="152.958" clip-path="url(#clipPath1)" fill="rgb(127,127,127)" stroke="none" font-weight="bold" space="preserve"
       >Law</text
-      ><rect x="52" width="58" height="33" y="234" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="49" y="231" clip-path="url(#clipPath1)" fill="url(#linearGradient4)" width="58" height="33" stroke="none"
-      /><rect x="49" y="231" clip-path="url(#clipPath1)" fill="none" width="58" height="33" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="49" width="58" height="33" y="231" clip-path="url(#clipPath1)"
       /><text fill="rgb(127,127,127)" x="53" space="preserve" y="258.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections)</text
       ><text x="57.5" y="243.958" clip-path="url(#clipPath1)" fill="rgb(127,127,127)" stroke="none" font-weight="bold" space="preserve"
       >Election</text
-      ><rect x="395" width="100" height="25" y="193" clip-path="url(#clipPath1)" stroke="none"
-      /><polygon fill="url(#linearGradient5)" clip-path="url(#clipPath1)" points=" 477 175 392 175 392 215 492 215 492 190" stroke="none"
-      /><line clip-path="url(#clipPath1)" fill="none" x1="477" x2="477" y1="175" y2="190" stroke="rgb(153,141,92)"
+      ><line clip-path="url(#clipPath1)" fill="none" x1="477" x2="477" y1="175" y2="190" stroke="rgb(153,141,92)"
       /><line clip-path="url(#clipPath1)" fill="none" x1="477" x2="492" y1="190" y2="190" stroke="rgb(153,141,92)"
       /><polygon fill="none" clip-path="url(#clipPath1)" points=" 477 175 392 175 392 215 492 215 492 190" stroke="rgb(153,141,92)"
       /><text fill="black" x="395" space="preserve" y="202.958" clip-path="url(#clipPath1)" stroke="none"

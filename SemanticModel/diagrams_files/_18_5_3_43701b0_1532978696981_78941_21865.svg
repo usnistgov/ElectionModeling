@@ -67,7 +67,7 @@
     ><g fill="white" stroke="white"
     ><rect x="0" width="516" height="276" y="0" clip-path="url(#clipPath1)" stroke="none"
     /></g
-    ><g fill="rgb(66,66,66)" text-rendering="geometricPrecision" stroke-linecap="butt" stroke="rgb(66,66,66)" stroke-linejoin="round"
+    ><g fill="rgb(66,66,66)" text-rendering="geometricPrecision" stroke-width="2" stroke-linecap="round" stroke="rgb(66,66,66)" stroke-linejoin="round"
     ><rect fill="none" x="5" width="506" height="266" y="5" clip-path="url(#clipPath1)"
       /><line y2="27" fill="none" x1="5" clip-path="url(#clipPath1)" x2="179" y1="27"
       /><line y2="20" fill="none" x1="188" clip-path="url(#clipPath1)" x2="188" y1="5"

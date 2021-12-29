@@ -6,23 +6,7 @@
  This is MagicDraw diagram.--><defs id="genericDefs"
   /><g
   ><defs id="defs1"
-    ><linearGradient x1="252" gradientUnits="userSpaceOnUse" x2="369" y1="175" y2="208" id="linearGradient1" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,204,153)" offset="0%"
-        /><stop stop-opacity="1" stop-color="rgb(255,255,218)" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="231" gradientUnits="userSpaceOnUse" x2="348" y1="84" y2="117" id="linearGradient2" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,204,153)" offset="0%"
-        /><stop stop-opacity="1" stop-color="rgb(255,255,218)" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="42" gradientUnits="userSpaceOnUse" x2="142" y1="84" y2="132" id="linearGradient3" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,244,234)" offset="0%"
-        /><stop stop-opacity="1" stop-color="white" offset="100%"
-      /></linearGradient
-      ><linearGradient x1="434" gradientUnits="userSpaceOnUse" x2="534" y1="140" y2="180" id="linearGradient4" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,240,180)" offset="0%"
-        /><stop stop-opacity="1" stop-color="white" offset="100%"
-      /></linearGradient
-      ><radialGradient transform="matrix(1.0 0.0 0.03999999910593033 -1.0 0.0 19.964399337768555)" gradientUnits="userSpaceOnUse" r="3.1971" cx="3.434299945831299" id="gradient1" cy="2.9827001094818115" color-interpolation="sRGB" fx="3.434299945831299" fy="2.9827001094818115" spreadMethod="pad"
+    ><radialGradient transform="matrix(1.0 0.0 0.03999999910593033 -1.0 0.0 19.964399337768555)" gradientUnits="userSpaceOnUse" r="3.1971" cx="3.434299945831299" id="gradient1" cy="2.9827001094818115" color-interpolation="sRGB" fx="3.434299945831299" fy="2.9827001094818115" spreadMethod="pad"
       ><stop stop-color="white" offset="0%"
         /><stop stop-color="rgb(176,179,204)" offset="100%"
       /></radialGradient
@@ -149,31 +133,23 @@
     ><text x="121" space="preserve" y="17.958" clip-path="url(#clipPath1)" stroke="none"
       >[ </text
     ></g
-    ><g fill="rgb(178,178,178)" text-rendering="geometricPrecision" font-size="11px" stroke-linecap="butt" stroke="rgb(178,178,178)" stroke-linejoin="round"
-    ><rect x="255" width="117" height="33" y="178" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="252" y="175" clip-path="url(#clipPath1)" fill="url(#linearGradient1)" width="117" height="33" stroke="none"
-      /><rect x="252" y="175" clip-path="url(#clipPath1)" fill="none" width="117" height="33" stroke="rgb(153,121,92)"
+    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" font-size="11px" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
+    ><rect fill="none" x="252" width="117" height="33" y="175" clip-path="url(#clipPath1)"
       /><text fill="black" x="256" space="preserve" y="202.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections.BallotStyles)</text
       ><text x="268" y="187.958" clip-path="url(#clipPath1)" fill="black" stroke="none" font-weight="bold" space="preserve"
       >Ballot Activation</text
-      ><rect x="234" width="117" height="33" y="87" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="231" y="84" clip-path="url(#clipPath1)" fill="url(#linearGradient2)" width="117" height="33" stroke="none"
-      /><rect x="231" y="84" clip-path="url(#clipPath1)" fill="none" width="117" height="33" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="231" width="117" height="33" y="84" clip-path="url(#clipPath1)"
       /><text fill="black" x="235" space="preserve" y="111.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections.BallotStyles)</text
       ><text x="248" y="96.958" clip-path="url(#clipPath1)" fill="black" stroke="none" font-weight="bold" space="preserve"
       >Voting Session</text
-      ><rect x="45" width="100" height="48" y="87" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="42" y="84" clip-path="url(#clipPath1)" fill="url(#linearGradient3)" width="100" height="48" stroke="none"
-      /><rect x="42" y="84" clip-path="url(#clipPath1)" fill="none" width="100" height="48" stroke="rgb(153,121,92)"
+      ><rect fill="none" x="42" width="100" height="48" y="84" clip-path="url(#clipPath1)"
       /><text fill="rgb(127,127,127)" x="67" space="preserve" y="111.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections)</text
       ><text x="46" y="96.958" clip-path="url(#clipPath1)" fill="rgb(127,127,127)" stroke="none" font-weight="bold" space="preserve"
       >Activation Device</text
-      ><rect x="437" width="100" height="25" y="158" clip-path="url(#clipPath1)" stroke="none"
-      /><polygon fill="url(#linearGradient4)" clip-path="url(#clipPath1)" points=" 519 140 434 140 434 180 534 180 534 155" stroke="none"
-      /><line clip-path="url(#clipPath1)" fill="none" x1="519" x2="519" y1="140" y2="155" stroke="rgb(153,141,92)"
+      ><line clip-path="url(#clipPath1)" fill="none" x1="519" x2="519" y1="140" y2="155" stroke="rgb(153,141,92)"
       /><line clip-path="url(#clipPath1)" fill="none" x1="519" x2="534" y1="155" y2="155" stroke="rgb(153,141,92)"
       /><polygon fill="none" clip-path="url(#clipPath1)" points=" 519 140 434 140 434 180 534 180 534 155" stroke="rgb(153,141,92)"
       /><text fill="black" x="437" space="preserve" y="167.958" clip-path="url(#clipPath1)" stroke="none"

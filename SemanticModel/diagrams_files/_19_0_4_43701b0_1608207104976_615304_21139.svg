@@ -91,22 +91,22 @@
     ><g fill="white" stroke="white"
     ><rect x="0" width="791" height="715" y="0" clip-path="url(#clipPath1)" stroke="none"
     /></g
-    ><g fill="rgb(66,66,66)" text-rendering="geometricPrecision" stroke-linecap="butt" stroke="rgb(66,66,66)" stroke-linejoin="round"
+    ><g fill="rgb(66,66,66)" text-rendering="geometricPrecision" stroke-width="2" stroke-linecap="round" stroke="rgb(66,66,66)" stroke-linejoin="round"
     ><rect fill="none" x="5" width="781" height="705" y="5" clip-path="url(#clipPath1)"
       /><line y2="27" fill="none" x1="5" clip-path="url(#clipPath1)" x2="217" y1="27"
       /><line y2="20" fill="none" x1="226" clip-path="url(#clipPath1)" x2="226" y1="5"
       /><line y2="20" fill="none" x1="217" clip-path="url(#clipPath1)" x2="226" y1="27"
-      /><text x="135" font-size="11px" y="17.958" clip-path="url(#clipPath1)" fill="black" stroke="none" space="preserve"
+    /></g
+    ><g text-rendering="geometricPrecision" font-size="11px" stroke-linecap="butt" stroke-linejoin="round"
+    ><text x="135" space="preserve" y="17.958" clip-path="url(#clipPath1)" stroke="none"
       >Voting Methods</text
-    ></g
-    ><g text-rendering="geometricPrecision" font-size="11px" font-weight="bold" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="11" space="preserve" y="17.958" clip-path="url(#clipPath1)" stroke="none"
+      ><text x="11" space="preserve" y="17.958" clip-path="url(#clipPath1)" font-weight="bold" stroke="none"
       >package </text
-      ><text x="63" space="preserve" y="17.958" clip-path="url(#clipPath1)" font-weight="normal" stroke="none"
+      ><text x="63" space="preserve" y="17.958" clip-path="url(#clipPath1)" stroke="none"
       >Elections</text
-      ><text x="211" space="preserve" y="17.958" clip-path="url(#clipPath1)" font-weight="normal" stroke="none"
+      ><text x="211" space="preserve" y="17.958" clip-path="url(#clipPath1)" stroke="none"
       > ]</text
-      ><text x="131" space="preserve" y="17.958" clip-path="url(#clipPath1)" font-weight="normal" stroke="none"
+      ><text x="131" space="preserve" y="17.958" clip-path="url(#clipPath1)" stroke="none"
       > </text
     ></g
     ><g font-size="11px" stroke-linecap="butt" transform="translate(115,8) matrix(0.7656,0,0,0.7656,0,0)" fill="white" text-rendering="geometricPrecision" stroke-linejoin="round" stroke="white"
@@ -268,7 +268,7 @@
       /><text fill="black" x="472.5" space="preserve" y="166.958" clip-path="url(#clipPath1)" stroke="none"
       >informs</text
       ><text fill="black" x="484" space="preserve" y="184.958" clip-path="url(#clipPath1)" stroke="none"
-      >1</text
+      >*</text
       ><polygon fill="none" clip-path="url(#clipPath1)" points=" 477 454 473 447 469 454" stroke="rgb(66,66,66)"
       /><path fill="none" d="M473 454 L473 483" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
       /><polygon fill="none" clip-path="url(#clipPath1)" points=" 214 461 210 454 206 461" stroke="rgb(66,66,66)"
