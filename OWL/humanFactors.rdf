@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#"
      xml:base="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors">
         <owl:imports rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HumanFactors</rdfs:label>
+        <rdfs:label>HumanFactors</rdfs:label>
     </owl:Ontology>
     
 
@@ -30,8 +30,8 @@
 
 
     <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#AlternativeFormat">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alternative Format</rdfs:label>
-        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ballot or accompanying information is said to be in an alternative format if it is in a representation other than the standard ballot language and format. Examples include, but are not limited to languages other than English, Braille, ASCII text, large print, recorded audio. (VVSG 1.1)</skos:definition>
+        <rdfs:label>Alternative Format</rdfs:label>
+        <skos:definition>The ballot or accompanying information is said to be in an alternative format if it is in a representation other than the standard ballot language and format. Examples include, but are not limited to languages other than English, Braille, ASCII text, large print, recorded audio. (VVSG 1.1)</skos:definition>
     </owl:Class>
     
 
@@ -42,7 +42,16 @@
     <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#AudioFormat">
         <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotDisplayFormat"/>
         <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#AlternativeFormat"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Audio Format</rdfs:label>
+        <rdfs:label>Audio Format</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#ComputerMarking -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#ComputerMarking">
+        <rdfs:label>Computer Marking</rdfs:label>
     </owl:Class>
     
 
@@ -51,7 +60,9 @@
 
 
     <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#DirectSelection">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Direct Selection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#ContestSelection"/>
+        <rdfs:label>Direct Selection</rdfs:label>
+        <skos:definition>A contest selection made under direct control of the voter.</skos:definition>
     </owl:Class>
     
 
@@ -62,8 +73,8 @@
     <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#EnhancedVisualFormat">
         <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#AlternativeFormat"/>
         <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#VisualFormat"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enhanced Visual Format</rdfs:label>
-        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visual display format options for displaying ballot choices and other information with the addition of personal choices such as text size and color contrast.</skos:definition>
+        <rdfs:label>Enhanced Visual Format</rdfs:label>
+        <skos:definition>Visual display format options for displaying ballot choices and other information with the addition of personal choices such as text size and color contrast.</skos:definition>
     </owl:Class>
     
 
@@ -72,7 +83,16 @@
 
 
     <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#GeneratedMark">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generated Mark</rdfs:label>
+        <rdfs:label>Generated Mark</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#HandMarking -->
+
+
+    <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#HandMarking">
+        <rdfs:label>Hand Marking</rdfs:label>
     </owl:Class>
     
 
@@ -82,14 +102,29 @@
 
     <owl:Class rdf:about="http://itl.nist.gov/ns/voting/ontologies/elections/humanFactors#VisualFormat">
         <rdfs:subClassOf rdf:resource="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#BallotDisplayFormat"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visual Format</rdfs:label>
-        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A display format in which ballot choices and other information are displayed on screen or paper for perception using sight.</skos:definition>
+        <rdfs:label>Visual Format</rdfs:label>
+        <skos:definition>A display format in which ballot choices and other information are displayed on screen or paper for perception using sight.</skos:definition>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://itl.nist.gov/ns/voting/ontologies/BallotStyles#IndirectDeselection">
+        <skos:definition>Remove/replace with active inactive concept?</skos:definition>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.0.2.20160507-1747) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
 
 
 
@@ -98,4 +133,4 @@
 <!-- Warning: type declarations were not added automatically. -->
 
 
-<!-- Generated using the No Magic Cameo Concept Modeler (19.0 SP4, build 20200303_1229-f28c8930) on 2021-02-16 at 20:49:48 GMT -->
+<!-- Generated using the No Magic Cameo Concept Modeler (2021x Refresh2, build 20211110_2314-be583cc0) on 2022-01-18 at 12:21:29 GMT -->
