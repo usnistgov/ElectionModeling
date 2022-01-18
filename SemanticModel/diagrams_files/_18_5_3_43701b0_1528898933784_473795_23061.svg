@@ -394,12 +394,12 @@
       ><text x="763" space="preserve" y="408.958" clip-path="url(#clipPath1)" stroke="none"
       >1</text
       ><path fill="none" d="M660 487 L346 487 C346 484.7909 344.2091 483 342 483 C339.7909 483 338 484.7909 338 487 L254 487 L254 433" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
-      /><text x="177" space="preserve" y="445.958" clip-path="url(#clipPath1)" stroke="none"
-      >represented by</text
+      /><text text-rendering="optimizeLegibility" x="257" xml:space="preserve" y="461" clip-path="url(#clipPath1)" stroke="none"
+      >{subsets represented by}</text
       ><text x="257" space="preserve" y="445.958" clip-path="url(#clipPath1)" stroke="none"
-      >*</text
-      ><text fill="rgb(127,127,127)" x="604.5" space="preserve" y="481.958" clip-path="url(#clipPath1)" stroke="none"
-      >represents</text
+      >0..*</text
+      ><text x="555" y="515" clip-path="url(#clipPath1)" fill="rgb(127,127,127)" text-rendering="optimizeLegibility" stroke="none" xml:space="preserve"
+      >{subsets represents}</text
       ><text fill="rgb(127,127,127)" x="633" space="preserve" y="499.958" clip-path="url(#clipPath1)" stroke="none"
       >0..1</text
       ><path fill="none" d="M709 78 L714 81 L709 84" clip-path="url(#clipPath1)" stroke="rgb(127,127,127)"
@@ -412,14 +412,13 @@
       /><path fill="none" d="M342 328 L342 574" clip-path="url(#clipPath1)" stroke="rgb(127,127,127)"
       /><polygon fill="none" clip-path="url(#clipPath1)" points=" 846 118 842 111 838 118" stroke="rgb(127,127,127)"
       /><path fill="none" d="M842 118 L842 266" clip-path="url(#clipPath1)" stroke="rgb(127,127,127)"
-      /><path fill="none" d="M795 680 L800 683 L795 686" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
       /><path fill="none" d="M800 683 L693 683" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
-      /><text x="697" space="preserve" y="677.958" clip-path="url(#clipPath1)" stroke="none"
-      >part of</text
+      /><text text-rendering="optimizeLegibility" x="696" xml:space="preserve" y="711" clip-path="url(#clipPath1)" stroke="none"
+      >{subsets part of}</text
       ><text x="696" space="preserve" y="695.958" clip-path="url(#clipPath1)" stroke="none"
       >0..1</text
-      ><text x="743" space="preserve" y="677.958" clip-path="url(#clipPath1)" stroke="none"
-      >made up of</text
+      ><text text-rendering="optimizeLegibility" x="692" xml:space="preserve" y="711" clip-path="url(#clipPath1)" stroke="none"
+      >{subsets made up of}</text
       ><text x="773" space="preserve" y="695.958" clip-path="url(#clipPath1)" stroke="none"
       >2..*</text
       ><polygon fill="none" clip-path="url(#clipPath1)" points=" 499 630 503 637 507 630" stroke="rgb(66,66,66)"

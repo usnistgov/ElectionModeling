@@ -271,7 +271,7 @@
     /></g
     ><g fill="rgb(127,127,127)" text-rendering="optimizeLegibility" font-size="10px" stroke-linecap="butt" stroke="rgb(127,127,127)" stroke-linejoin="round"
     ><text x="441" xml:space="preserve" y="546" clip-path="url(#clipPath1)" stroke="none"
-      >{chain = indicates, selected at}</text
+      >{chain = indicates contest option, selected at contest option position}</text
       ><text x="375" font-size="11px" y="530.958" clip-path="url(#clipPath1)" text-rendering="geometricPrecision" stroke="none" space="preserve"
       >indicated via</text
       ><text x="441" font-size="11px" y="530.958" clip-path="url(#clipPath1)" text-rendering="geometricPrecision" stroke="none" space="preserve"
@@ -313,14 +313,14 @@
       ><text fill="black" x="918" space="preserve" y="229.958" clip-path="url(#clipPath1)" stroke="none"
       >0</text
       ><path fill="none" d="M707 497 L840 497" clip-path="url(#clipPath1)"
-      /><text x="743" y="525" clip-path="url(#clipPath1)" fill="black" text-rendering="optimizeLegibility" stroke="none" xml:space="preserve"
+      /><text fill="black" x="689" space="preserve" y="491.958" clip-path="url(#clipPath1)" stroke="none"
+      >associates with contest option</text
+      ><text x="743" y="525" clip-path="url(#clipPath1)" fill="black" text-rendering="optimizeLegibility" stroke="none" xml:space="preserve"
       >{subsets mediates}</text
-      ><text fill="black" x="760" space="preserve" y="491.958" clip-path="url(#clipPath1)" stroke="none"
-      >associates with</text
       ><text fill="black" x="813" space="preserve" y="509.958" clip-path="url(#clipPath1)" stroke="none"
       >1</text
-      ><text fill="rgb(127,127,127)" x="710.5" space="preserve" y="491.958" clip-path="url(#clipPath1)" stroke="none"
-      >selected at</text
+      ><text fill="rgb(127,127,127)" x="711" space="preserve" y="491.958" clip-path="url(#clipPath1)" stroke="none"
+      >selected at contest option position</text
       ><text fill="rgb(127,127,127)" x="710" space="preserve" y="509.958" clip-path="url(#clipPath1)" stroke="none"
       >1..*</text
       ><path fill="none" d="M380 64 L385 67 L380 70" clip-path="url(#clipPath1)" stroke="rgb(127,127,127)"
@@ -343,8 +343,8 @@
       /><path fill="none" d="M914 509 L914 553" clip-path="url(#clipPath1)"
       /><text x="917" y="537" clip-path="url(#clipPath1)" fill="rgb(127,127,127)" text-rendering="optimizeLegibility" stroke="none" xml:space="preserve"
       >{subsets characterizes}</text
-      ><text fill="rgb(127,127,127)" x="868.5" space="preserve" y="521.958" clip-path="url(#clipPath1)" stroke="none"
-      >indicates</text
+      ><text fill="rgb(127,127,127)" x="797" space="preserve" y="521.958" clip-path="url(#clipPath1)" stroke="none"
+      >indicates contest option</text
       ><text fill="rgb(127,127,127)" x="917" space="preserve" y="521.958" clip-path="url(#clipPath1)" stroke="none"
       >1</text
       ><polygon fill="none" points=" 585 91 581 84 577 91" clip-path="url(#clipPath1)"

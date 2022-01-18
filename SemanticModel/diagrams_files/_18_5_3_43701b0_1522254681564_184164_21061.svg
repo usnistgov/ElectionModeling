@@ -381,19 +381,19 @@
     ><text x="1158" space="preserve" y="149.958" clip-path="url(#clipPath1)" stroke="none"
       >Ballot content structured as a</text
       ><text x="1158" space="preserve" y="162.6069" clip-path="url(#clipPath1)" stroke="none"
-      > contest that affects other </text
+      > contest  that affects other </text
       ><text x="1158" space="preserve" y="175.2559" clip-path="url(#clipPath1)" stroke="none"
       >contests under its control. </text
       ><text x="1158" space="preserve" y="187.9048" clip-path="url(#clipPath1)" stroke="none"
       >The purpose of a controlling </text
       ><text x="1158" space="preserve" y="200.5537" clip-path="url(#clipPath1)" stroke="none"
-      >contest varies, but generally </text
+      >contest varies, but includes </text
       ><text x="1158" space="preserve" y="213.2026" clip-path="url(#clipPath1)" stroke="none"
-      >activates or deactivates </text
+      >the activation or deactivation </text
       ><text x="1158" space="preserve" y="225.8516" clip-path="url(#clipPath1)" stroke="none"
-      >parts of the ballot based on </text
+      >of parts of the ballot based </text
       ><text x="1158" space="preserve" y="238.5005" clip-path="url(#clipPath1)" stroke="none"
-      >the voter's selection.</text
+      >on the voter's selection.</text
       ><text x="1158" font-size="10px" y="134" clip-path="url(#clipPath1)" text-rendering="optimizeLegibility" stroke="none" xml:space="preserve"
       >{annotationProperty = definition}</text
       ><text x="1182.5" space="preserve" y="118.958" clip-path="url(#clipPath1)" stroke="none"
@@ -404,14 +404,8 @@
       /><polygon fill="none" clip-path="url(#clipPath1)" points=" 365 392 361 385 357 392" stroke="rgb(66,66,66)"
       /><line clip-path="url(#clipPath1)" fill="none" x1="361" x2="361" y1="392" y2="581" stroke="rgb(66,66,66)"
       /><line clip-path="url(#clipPath1)" fill="none" x1="348" x2="523" y1="581" y2="581" stroke="rgb(66,66,66)"
-      /><path fill="none" d="M504 231 L497 235 L504 239" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
-      /><path fill="none" stroke-dasharray="10,10" d="M497 235 L616 235 C616 232.7909 617.7908 231 620 231 C622.2092 231 624 232.7909 624 235 L966 235" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
-      /><text x="697" space="preserve" y="229.958" clip-path="url(#clipPath1)" stroke="none"
-      >«Disjoint With»</text
-      ><polygon fill="none" clip-path="url(#clipPath1)" points=" 624 118 620 111 616 118" stroke="rgb(66,66,66)"
+      /><polygon fill="none" clip-path="url(#clipPath1)" points=" 624 118 620 111 616 118" stroke="rgb(66,66,66)"
       /><path fill="none" d="M620 118 L620 462" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
-      /><polygon fill="none" clip-path="url(#clipPath1)" points=" 697 118 693 111 689 118" stroke="rgb(127,127,127)"
-      /><path fill="none" d="M693 118 L693 158 L1026 158 L1026 217" clip-path="url(#clipPath1)" stroke="rgb(127,127,127)"
       /><path fill="none" d="M79 243 L329 243" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
       /><text x="269" space="preserve" y="237.958" clip-path="url(#clipPath1)" stroke="none"
       >has contest</text

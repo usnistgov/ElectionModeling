@@ -56,36 +56,33 @@
       ><path d="M-0 0 L-0 20.9 L20.9 20.9 L20.9 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath4"
-      ><path d="M-592 -600 L737 -600 L737 212 L-592 212 L-592 -600 Z"
+      ><path d="M-431 -682 L898 -682 L898 130 L-431 130 L-431 -682 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath5"
       ><path d="M0 0 L0 16 L16 16 L16 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath6"
-      ><path d="M-431 -682 L898 -682 L898 130 L-431 130 L-431 -682 Z"
-      /></clipPath
-      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath7"
       ><path d="M-797 -136 L532 -136 L532 676 L-797 676 L-797 -136 Z"
       /></clipPath
-      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath8"
+      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath7"
       ><path d="M-143 -97 L1186 -97 L1186 715 L-143 715 L-143 -97 Z"
       /></clipPath
-      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath9"
+      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath8"
       ><path d="M-1016 -269 L313 -269 L313 543 L-1016 543 L-1016 -269 Z"
       /></clipPath
-      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath10"
+      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath9"
       ><path d="M-976 -668 L353 -668 L353 144 L-976 144 L-976 -668 Z"
       /></clipPath
-      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath11"
+      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath10"
       ><path d="M-255 -451 L1074 -451 L1074 361 L-255 361 L-255 -451 Z"
       /></clipPath
-      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath12"
+      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath11"
       ><path d="M-822 -451 L507 -451 L507 361 L-822 361 L-822 -451 Z"
       /></clipPath
-      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath13"
+      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath12"
       ><path d="M-618 -458 L711 -458 L711 354 L-618 354 L-618 -458 Z"
       /></clipPath
-      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath14"
+      ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath13"
       ><path d="M-1065 -59 L264 -59 L264 753 L-1065 753 L-1065 -59 Z"
       /></clipPath
     ></defs
@@ -176,20 +173,10 @@
       >(Elections.BallotStyles)</text
       ><text x="316.5" y="593.958" clip-path="url(#clipPath1)" fill="black" stroke="none" font-weight="bold" space="preserve"
       >Contest Option Position</text
-    ></g
-    ><g stroke-linecap="butt" font-size="11px" transform="translate(592,600)" fill="url(#gradient10)" text-rendering="geometricPrecision" stroke-linejoin="round" stroke="url(#gradient10)" font-weight="bold"
-    ><circle r="5.7" clip-path="url(#clipPath5)" cx="8.2" cy="8" stroke="none"
-    /></g
-    ><g stroke-linecap="butt" font-size="11px" transform="translate(592,600)" fill="rgb(91,126,227)" text-rendering="geometricPrecision" stroke="rgb(91,126,227)" font-weight="bold" stroke-width="2" stroke-miterlimit="4"
-    ><circle fill="none" r="5.7" clip-path="url(#clipPath5)" cx="8.2" cy="8"
-    /></g
-    ><g stroke-linecap="butt" font-size="11px" fill="rgb(0,138,215)" text-rendering="geometricPrecision" stroke-linejoin="round" stroke="rgb(0,138,215)" font-weight="bold"
-    ><rect fill="none" x="224" width="223" height="33" y="665" clip-path="url(#clipPath1)"
-    /></g
-    ><g text-rendering="geometricPrecision" font-size="11px" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="281" space="preserve" y="692.958" clip-path="url(#clipPath1)" stroke="none"
+      ><rect x="224" y="665" clip-path="url(#clipPath1)" fill="none" width="223" height="33" stroke="rgb(0,138,215)"
+      /><text fill="black" x="281" space="preserve" y="692.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections.BallotStyles)</text
-      ><text x="236" space="preserve" y="677.958" clip-path="url(#clipPath1)" font-weight="bold" stroke="none"
+      ><text x="236" y="677.958" clip-path="url(#clipPath1)" fill="black" stroke="none" font-weight="bold" space="preserve"
       >Contest Option Position Appearence</text
     ></g
     ><g stroke-linecap="butt" font-size="11px" transform="translate(431,682)" fill="url(#gradient10)" text-rendering="geometricPrecision" stroke-linejoin="round" stroke="url(#gradient10)" font-weight="bold"
@@ -476,7 +463,7 @@
     /></g
     ><g fill="rgb(127,127,127)" text-rendering="optimizeLegibility" font-size="10px" stroke-linecap="butt" stroke="rgb(127,127,127)" stroke-linejoin="round"
     ><text x="556" xml:space="preserve" y="644" clip-path="url(#clipPath1)" stroke="none"
-      >{chain = indicates, selected at}</text
+      >{chain = indicates contest option, selected at contest option position}</text
       ><text x="490" font-size="11px" y="628.958" clip-path="url(#clipPath1)" text-rendering="geometricPrecision" stroke="none" space="preserve"
       >indicated via</text
       ><text x="556" font-size="11px" y="628.958" clip-path="url(#clipPath1)" text-rendering="geometricPrecision" stroke="none" space="preserve"
@@ -488,14 +475,14 @@
       /><text fill="black" x="374" space="preserve" y="449.958" clip-path="url(#clipPath1)" stroke="none"
       >«Disjoint With»</text
       ><path fill="none" d="M608 592 L882 592" clip-path="url(#clipPath1)"
-      /><text x="763" y="619" clip-path="url(#clipPath1)" fill="black" text-rendering="optimizeLegibility" stroke="none" xml:space="preserve"
+      /><text fill="black" x="731" space="preserve" y="586.958" clip-path="url(#clipPath1)" stroke="none"
+      >associates with contest option</text
+      ><text x="763" y="619" clip-path="url(#clipPath1)" fill="black" text-rendering="optimizeLegibility" stroke="none" xml:space="preserve"
       >{subsets mediates}</text
-      ><text fill="black" x="802" space="preserve" y="586.958" clip-path="url(#clipPath1)" stroke="none"
-      >associates with</text
       ><text fill="black" x="855" space="preserve" y="604.958" clip-path="url(#clipPath1)" stroke="none"
       >1</text
-      ><text fill="rgb(127,127,127)" x="611.5" space="preserve" y="586.958" clip-path="url(#clipPath1)" stroke="none"
-      >selected at</text
+      ><text fill="rgb(127,127,127)" x="612" space="preserve" y="586.958" clip-path="url(#clipPath1)" stroke="none"
+      >selected at contest option position</text
       ><text fill="rgb(127,127,127)" x="611" space="preserve" y="604.958" clip-path="url(#clipPath1)" stroke="none"
       >1..*</text
       ><path fill="none" stroke-dasharray="10,10" d="M840 526 L587 570" clip-path="url(#clipPath1)"
@@ -517,7 +504,7 @@
     /></g
     ><g text-rendering="optimizeLegibility" font-size="10px" stroke-linecap="butt" stroke-linejoin="round"
     ><text x="567" xml:space="preserve" y="563" clip-path="url(#clipPath1)" stroke="none"
-      >{chain = indicating, to make, indicates}</text
+      >{chain = indicating, to make, indicates contest option}</text
       ><text x="519" font-size="11px" y="575.958" clip-path="url(#clipPath1)" text-rendering="geometricPrecision" stroke="none" space="preserve"
       >made at</text
       ><text x="563" font-size="11px" y="575.958" clip-path="url(#clipPath1)" text-rendering="geometricPrecision" stroke="none" space="preserve"
@@ -552,8 +539,8 @@
       /><path fill="none" d="M921 607 L921 651" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
       /><text x="924" y="635" clip-path="url(#clipPath1)" fill="black" text-rendering="optimizeLegibility" stroke="none" xml:space="preserve"
       >{subsets characterizes}</text
-      ><text fill="black" x="875.5" space="preserve" y="619.958" clip-path="url(#clipPath1)" stroke="none"
-      >indicates</text
+      ><text fill="black" x="804" space="preserve" y="619.958" clip-path="url(#clipPath1)" stroke="none"
+      >indicates contest option</text
       ><text fill="black" x="924" space="preserve" y="619.958" clip-path="url(#clipPath1)" stroke="none"
       >1</text
       ><path fill="none" d="M952 644 L956 651 L960 644" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"

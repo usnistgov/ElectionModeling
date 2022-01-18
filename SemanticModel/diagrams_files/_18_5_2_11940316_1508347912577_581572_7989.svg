@@ -134,10 +134,10 @@
       >[ </text
     ></g
     ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" font-size="11px" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
-    ><rect fill="none" x="1260" width="91" height="259" y="133" clip-path="url(#clipPath1)"
-      /><text fill="black" x="1280.5" space="preserve" y="160.958" clip-path="url(#clipPath1)" stroke="none"
+    ><rect fill="none" x="1295" width="91" height="259" y="133" clip-path="url(#clipPath1)"
+      /><text fill="black" x="1315.5" space="preserve" y="160.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections)</text
-      ><text x="1279" y="145.958" clip-path="url(#clipPath1)" fill="black" stroke="none" font-weight="bold" space="preserve"
+      ><text x="1314" y="145.958" clip-path="url(#clipPath1)" fill="black" stroke="none" font-weight="bold" space="preserve"
       >Nvra Form</text
       ><rect fill="none" x="791" width="182" height="33" y="175" clip-path="url(#clipPath1)"
       /><text fill="rgb(127,127,127)" x="857" space="preserve" y="202.958" clip-path="url(#clipPath1)" stroke="none"
@@ -245,12 +245,12 @@
       >{subsets issued by}</text
       ><text fill="black" x="224" space="preserve" y="432.958" clip-path="url(#clipPath1)" stroke="none"
       >1</text
-      ><path fill="none" d="M973 196 L1260 196" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
-      /><text x="1137" y="224" clip-path="url(#clipPath1)" fill="black" text-rendering="optimizeLegibility" stroke="none" xml:space="preserve"
+      ><path fill="none" d="M973 196 L1295 196" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
+      /><text x="1172" y="224" clip-path="url(#clipPath1)" fill="black" text-rendering="optimizeLegibility" stroke="none" xml:space="preserve"
       >{subsets with respect to}</text
-      ><text fill="black" x="1202" space="preserve" y="190.958" clip-path="url(#clipPath1)" stroke="none"
+      ><text fill="black" x="1237" space="preserve" y="190.958" clip-path="url(#clipPath1)" stroke="none"
       >appears on</text
-      ><text fill="black" x="1233" space="preserve" y="208.958" clip-path="url(#clipPath1)" stroke="none"
+      ><text fill="black" x="1268" space="preserve" y="208.958" clip-path="url(#clipPath1)" stroke="none"
       >1</text
       ><text x="976" y="224" clip-path="url(#clipPath1)" fill="black" text-rendering="optimizeLegibility" stroke="none" xml:space="preserve"
       >{subsets context for}</text
@@ -280,14 +280,14 @@
       >has facet</text
       ><text fill="black" x="393" space="preserve" y="84.958" clip-path="url(#clipPath1)" stroke="none"
       >*</text
-      ><polygon fill="none" clip-path="url(#clipPath1)" points=" 659 215 655 208 651 215" stroke="rgb(66,66,66)"
-      /><path fill="none" d="M655 215 L655 392" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
-      /><path fill="none" d="M1092 322 L1260 322" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
-      /><text fill="black" x="1188.5" space="preserve" y="316.958" clip-path="url(#clipPath1)" stroke="none"
+      ><path fill="none" d="M1092 322 L1295 322" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
+      /><text fill="black" x="1223.5" space="preserve" y="316.958" clip-path="url(#clipPath1)" stroke="none"
       >has nvra form</text
       ><text fill="black" x="1097" space="preserve" y="316.958" clip-path="url(#clipPath1)" stroke="none"
       >unnamed property1</text
-      ><polygon fill="none" clip-path="url(#clipPath1)" points=" 508 96 504 89 500 96" stroke="rgb(66,66,66)"
+      ><polygon fill="none" clip-path="url(#clipPath1)" points=" 659 215 655 208 651 215" stroke="rgb(66,66,66)"
+      /><path fill="none" d="M655 215 L655 392" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
+      /><polygon fill="none" clip-path="url(#clipPath1)" points=" 508 96 504 89 500 96" stroke="rgb(66,66,66)"
       /><path fill="none" d="M504 96 L504 175 L644 175" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
       /><path fill="none" d="M609 392 L609 350 L500 350" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
       /><text x="503" y="378" clip-path="url(#clipPath1)" fill="black" text-rendering="optimizeLegibility" stroke="none" xml:space="preserve"
@@ -324,8 +324,8 @@
       /><path fill="none" d="M466 257 L466 322" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
       /><polygon fill="none" clip-path="url(#clipPath1)" points=" 731 189 724 193 731 197" stroke="rgb(127,127,127)"
       /><path fill="none" d="M731 193 L791 193" clip-path="url(#clipPath1)" stroke="rgb(127,127,127)"
-      /><polygon fill="none" clip-path="url(#clipPath1)" points=" 1317 96 1313 89 1309 96" stroke="rgb(66,66,66)"
-      /><path fill="none" d="M1313 96 L1313 133" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
+      /><polygon fill="none" clip-path="url(#clipPath1)" points=" 1352 96 1348 89 1344 96" stroke="rgb(66,66,66)"
+      /><path fill="none" d="M1348 96 L1348 133" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
     /></g
   ></g
 ></svg

@@ -339,9 +339,7 @@
       >has indirect selection</text
       ><text fill="rgb(127,127,127)" x="672" space="preserve" y="425.958" clip-path="url(#clipPath1)" stroke="none"
       >0..*</text
-      ><polygon fill="none" clip-path="url(#clipPath1)" points=" 134 223 130 216 126 223" stroke="rgb(127,127,127)"
-      /><path fill="none" d="M130 223 L130 315" clip-path="url(#clipPath1)" stroke="rgb(127,127,127)"
-    /></g
+    ></g
     ><g stroke-linecap="round" font-size="11px" fill="rgb(66,66,66)" text-rendering="geometricPrecision" stroke-linejoin="round" stroke-dasharray="10,14" stroke="rgb(66,66,66)" stroke-width="2"
     ><path fill="none" d="M1266 233 L1175 286" clip-path="url(#clipPath1)"
     /></g
@@ -371,8 +369,8 @@
     ><g fill="rgb(127,127,127)" text-rendering="geometricPrecision" font-size="11px" stroke-linecap="butt" stroke="rgb(127,127,127)" stroke-linejoin="round"
     ><path fill="none" d="M226 340 L231 343 L226 346" clip-path="url(#clipPath1)"
       /><path fill="none" d="M231 343 L177 343" clip-path="url(#clipPath1)"
-      /><text x="139" space="preserve" y="337.958" clip-path="url(#clipPath1)" stroke="none"
-      >selection made via</text
+      /><text x="63" space="preserve" y="337.958" clip-path="url(#clipPath1)" stroke="none"
+      >selection made via direct selection</text
       ><text x="204" space="preserve" y="355.958" clip-path="url(#clipPath1)" stroke="none"
       >1..*</text
       ><polygon fill="none" points=" 379 420 375 413 371 420" clip-path="url(#clipPath1)"

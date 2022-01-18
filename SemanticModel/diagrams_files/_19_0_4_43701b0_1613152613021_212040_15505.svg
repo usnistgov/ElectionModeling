@@ -358,14 +358,9 @@
       >considered </text
       ><text x="647" space="preserve" y="193.2559" clip-path="url(#clipPath1)" stroke="none"
       >disjoint?</text
-      ><polygon fill="none" clip-path="url(#clipPath1)" points=" 1117 76 1113 69 1109 76" stroke="rgb(127,127,127)"
-      /><line clip-path="url(#clipPath1)" fill="none" x1="1113" x2="1113" y1="76" y2="119" stroke="rgb(127,127,127)"
-      /><path fill="none" d="M166 119 L511 119 C511 116.7909 512.7908 115 515 115 C517.2092 115 519 116.7909 519 119 L1113 119" clip-path="url(#clipPath1)" stroke="rgb(127,127,127)"
-      /><path fill="none" d="M185 222 L178 226 L185 230" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
-      /><path fill="none" stroke-dasharray="10,10" d="M178 226 L511.0001 223.7218 C510.985 221.5127 512.7635 219.7096 514.9727 219.6945 C517.1817 219.6794 518.9848 221.458 518.9999 223.6671 L1055 220" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
-      /><text x="582" space="preserve" y="217.958" clip-path="url(#clipPath1)" stroke="none"
-      >«Disjoint With»</text
-    ></g
+      ><polygon fill="none" clip-path="url(#clipPath1)" points=" 1075 76 1071 69 1067 76" stroke="rgb(127,127,127)"
+      /><path fill="none" d="M1071 76 L1071 132 M1071 132 L519 132 C519 129.7909 517.2092 128 515 128 C512.7908 128 511 129.7909 511 132 L166 132" clip-path="url(#clipPath1)" stroke="rgb(127,127,127)"
+    /></g
     ><g stroke-linecap="round" font-size="11px" fill="rgb(66,66,66)" text-rendering="geometricPrecision" stroke-linejoin="round" stroke="rgb(66,66,66)" stroke-width="2"
     ><path fill="none" d="M573 49 L1070 49" clip-path="url(#clipPath1)"
     /></g
@@ -396,7 +391,7 @@
       /><path fill="none" text-rendering="geometricPrecision" d="M527 583 L522 580 L527 577" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
       /><path fill="none" text-rendering="geometricPrecision" d="M522 580 L784 580" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
       /><text x="525" xml:space="preserve" y="608" clip-path="url(#clipPath1)" stroke="none"
-      >{redefines indicates}</text
+      >{redefines indicates contest option}</text
       ><text text-rendering="geometricPrecision" x="526" space="preserve" y="574.958" clip-path="url(#clipPath1)" stroke="none"
       >deactivates</text
       ><text text-rendering="geometricPrecision" x="525" space="preserve" y="592.958" clip-path="url(#clipPath1)" stroke="none"
@@ -416,8 +411,8 @@
       /><path fill="none" text-rendering="geometricPrecision" d="M693 266 L826 266" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
       /><text x="696" xml:space="preserve" y="294" clip-path="url(#clipPath1)" stroke="none"
       >{subsets characterizes}</text
-      ><text text-rendering="geometricPrecision" x="697.5" space="preserve" y="260.958" clip-path="url(#clipPath1)" stroke="none"
-      >indicates</text
+      ><text text-rendering="geometricPrecision" x="697" space="preserve" y="260.958" clip-path="url(#clipPath1)" stroke="none"
+      >indicates contest option</text
       ><text text-rendering="geometricPrecision" x="696" space="preserve" y="278.958" clip-path="url(#clipPath1)" stroke="none"
       >1</text
       ><path fill="none" text-rendering="geometricPrecision" d="M1116 617 L1113 622 L1110 617" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
@@ -430,8 +425,7 @@
       /><path fill="none" text-rendering="geometricPrecision" d="M116 396 L116 496" clip-path="url(#clipPath1)" stroke="rgb(127,127,127)"
       /><text text-rendering="geometricPrecision" x="120" space="preserve" y="425.958" clip-path="url(#clipPath1)" stroke="none"
       >{complete, disjoint}</text
-      ><path fill="none" text-rendering="geometricPrecision" d="M1113 119 L1113 196" clip-path="url(#clipPath1)" stroke="rgb(127,127,127)"
-    /></g
+    ></g
     ><g stroke-linecap="butt" font-size="11px" fill="rgb(66,66,66)" text-rendering="geometricPrecision" stroke-linejoin="round" stroke-dasharray="10,10" stroke="rgb(66,66,66)"
     ><path fill="none" d="M384 672 L414 607" clip-path="url(#clipPath1)"
       /><polygon fill="none" stroke-dasharray="none" clip-path="url(#clipPath1)" points=" 610 405 606 398 602 405"
@@ -446,8 +440,6 @@
       /><path fill="none" stroke-dasharray="none" d="M1316 375 L1268 375" clip-path="url(#clipPath1)"
       /><polygon fill="none" stroke-dasharray="none" clip-path="url(#clipPath1)" points=" 110 168 114 175 118 168"
       /><path fill="none" stroke-dasharray="none" d="M114 168 L114 132" clip-path="url(#clipPath1)"
-      /><path fill="none" d="M653 197 L616 223" clip-path="url(#clipPath1)"
-      /><path fill="none" stroke-dasharray="none" d="M166 119 L166 132" clip-path="url(#clipPath1)" stroke="rgb(127,127,127)"
     /></g
   ></g
 ></svg

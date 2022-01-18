@@ -382,20 +382,14 @@
       >1..*</text
       ><path fill="none" d="M1039 403 L1044 406 L1039 409" clip-path="url(#clipPath1)" stroke="rgb(127,127,127)"
       /><path fill="none" d="M1044 406 L762 406 C762 403.7909 760.2092 402 758 402 C755.7908 402 754 403.7909 754 406 L576 406" clip-path="url(#clipPath1)" stroke="rgb(127,127,127)"
-      /><text x="952" space="preserve" y="400.958" clip-path="url(#clipPath1)" stroke="none"
-      >selection made via</text
+      /><text x="876" space="preserve" y="400.958" clip-path="url(#clipPath1)" stroke="none"
+      >selection made via direct selection</text
       ><text x="1017" space="preserve" y="418.958" clip-path="url(#clipPath1)" stroke="none"
       >1..*</text
       ><polygon fill="none" clip-path="url(#clipPath1)" points=" 463 92 470 88 463 84" stroke="rgb(66,66,66)"
       /><path fill="none" d="M463 88 L46 88 L46 312 L69 312" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
       /><polygon fill="none" clip-path="url(#clipPath1)" points=" 762 112 758 105 754 112" stroke="rgb(127,127,127)"
       /><path fill="none" d="M758 112 L758 497" clip-path="url(#clipPath1)" stroke="rgb(127,127,127)"
-      /><path fill="none" d="M194 224 L186 224 L190 231" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
-      /><path fill="none" stroke-dasharray="10,10" d="M186 224 L463 378" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
-      /><text x="322" space="preserve" y="295.958" clip-path="url(#clipPath1)" stroke="none"
-      >«Disjoint With»</text
-      ><polygon fill="none" clip-path="url(#clipPath1)" points=" 516 111 512 104 508 111" stroke="rgb(66,66,66)"
-      /><path fill="none" d="M512 111 L512 378" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
       /><path fill="none" d="M186 406 L448 406" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
       /><text x="383" space="preserve" y="400.958" clip-path="url(#clipPath1)" stroke="none"
       >controlled by</text
@@ -446,8 +440,8 @@
       /><path fill="none" text-rendering="geometricPrecision" d="M894 186 L1022 186" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
       /><text x="897" xml:space="preserve" y="214" clip-path="url(#clipPath1)" stroke="none"
       >{subsets characterizes}</text
-      ><text text-rendering="geometricPrecision" x="898.5" space="preserve" y="180.958" clip-path="url(#clipPath1)" stroke="none"
-      >indicates</text
+      ><text text-rendering="geometricPrecision" x="898" space="preserve" y="180.958" clip-path="url(#clipPath1)" stroke="none"
+      >indicates contest option</text
       ><text text-rendering="geometricPrecision" x="897" space="preserve" y="198.958" clip-path="url(#clipPath1)" stroke="none"
       >1</text
       ><polygon fill="none" text-rendering="geometricPrecision" clip-path="url(#clipPath1)" points=" 516 439 512 432 508 439" stroke="rgb(66,66,66)"

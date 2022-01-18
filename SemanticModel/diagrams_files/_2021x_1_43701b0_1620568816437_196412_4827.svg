@@ -149,11 +149,6 @@
       >(Elections)</text
       ><text x="417.5" y="453.958" clip-path="url(#clipPath1)" fill="black" stroke="none" font-weight="bold" space="preserve"
       >Fixed Position Scanning</text
-      ><rect fill="none" x="175" width="131" height="33" y="518" clip-path="url(#clipPath1)"
-      /><text fill="black" x="215.5" space="preserve" y="545.958" clip-path="url(#clipPath1)" stroke="none"
-      >(Elections)</text
-      ><text x="179.5" y="530.958" clip-path="url(#clipPath1)" fill="black" stroke="none" font-weight="bold" space="preserve"
-      >OMR Reading Methods</text
       ><rect fill="none" x="469" width="127" height="33" y="77" clip-path="url(#clipPath1)"
       /><text fill="black" x="507.5" space="preserve" y="104.958" clip-path="url(#clipPath1)" stroke="none"
       >(Elections)</text
@@ -247,22 +242,14 @@
       >has fixed position scanning</text
       ><text fill="black" x="386" space="preserve" y="464.958" clip-path="url(#clipPath1)" stroke="none"
       >0..*</text
-      ><polygon fill="none" points=" 261 558 257 551 253 558" clip-path="url(#clipPath1)"
-      /><path fill="none" d="M257 558 L257 693" clip-path="url(#clipPath1)"
-      /><polygon fill="none" points=" 533 210 529 203 525 210" clip-path="url(#clipPath1)"
+      ><polygon fill="none" points=" 533 210 529 203 525 210" clip-path="url(#clipPath1)"
       /><path fill="none" d="M529 210 L529 322" clip-path="url(#clipPath1)"
       /><polygon fill="none" points=" 645 210 641 203 637 210" clip-path="url(#clipPath1)"
       /><path fill="none" d="M641 210 L641 322" clip-path="url(#clipPath1)"
-      /><polygon fill="none" points=" 193 558 189 551 185 558" clip-path="url(#clipPath1)"
-      /><path fill="none" d="M189 558 L189 651" clip-path="url(#clipPath1)"
       /><polygon fill="none" points=" 478 481 474 474 470 481" clip-path="url(#clipPath1)"
       /><path fill="none" d="M474 481 L474 567" clip-path="url(#clipPath1)"
-      /><polygon fill="none" points=" 313 532 306 536 313 540" clip-path="url(#clipPath1)"
-      /><path fill="none" d="M313 536 L322 536 L322 616" clip-path="url(#clipPath1)"
       /><polygon fill="none" points=" 135 103 131 96 127 103" clip-path="url(#clipPath1)"
       /><path fill="none" d="M131 103 L131 161" clip-path="url(#clipPath1)"
-      /><polygon fill="none" points=" 168 540 175 536 168 532" clip-path="url(#clipPath1)"
-      /><path fill="none" d="M168 536 L116 536 L116 581" clip-path="url(#clipPath1)"
       /><polygon fill="none" points=" 588 117 584 110 580 117" clip-path="url(#clipPath1)"
       /><path fill="none" d="M584 117 L584 168" clip-path="url(#clipPath1)"
       /><path fill="none" stroke-dasharray="10,10" d="M525 597 L514 594" clip-path="url(#clipPath1)"

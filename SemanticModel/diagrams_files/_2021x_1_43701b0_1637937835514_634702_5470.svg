@@ -326,12 +326,12 @@
       ><text fill="black" x="804" space="preserve" y="116.958" clip-path="url(#clipPath1)" stroke="none"
       >1</text
       ><path fill="none" d="M505 104 L505 196" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
-      /><text fill="black" x="428" space="preserve" y="190.958" clip-path="url(#clipPath1)" stroke="none"
-      >represented by</text
+      /><text x="508" y="174" clip-path="url(#clipPath1)" fill="black" text-rendering="optimizeLegibility" stroke="none" xml:space="preserve"
+      >{subsets represented by}</text
       ><text fill="black" x="508" space="preserve" y="190.958" clip-path="url(#clipPath1)" stroke="none"
-      >*</text
-      ><text fill="black" x="449.5" space="preserve" y="116.958" clip-path="url(#clipPath1)" stroke="none"
-      >represents</text
+      >0..*</text
+      ><text x="508" y="132" clip-path="url(#clipPath1)" fill="black" text-rendering="optimizeLegibility" stroke="none" xml:space="preserve"
+      >{subsets represents}</text
       ><text fill="black" x="508" space="preserve" y="116.958" clip-path="url(#clipPath1)" stroke="none"
       >0..1</text
       ><path fill="none" d="M1694 465 L1697 460 L1700 465" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"

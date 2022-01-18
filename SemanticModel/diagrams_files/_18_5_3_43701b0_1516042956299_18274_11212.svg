@@ -169,7 +169,10 @@
       >(Sowa)</text
       ><text x="942" y="61.958" clip-path="url(#clipPath1)" fill="rgb(127,127,127)" stroke="none" font-weight="bold" space="preserve"
       >Context</text
-      ><path fill="none" d="M658 65 L427 65" clip-path="url(#clipPath1)" stroke="rgb(127,127,127)"
+      ><polygon fill="none" clip-path="url(#clipPath1)" points=" 713 201 709 194 705 201" stroke="rgb(66,66,66)"
+      /><line clip-path="url(#clipPath1)" fill="none" x1="709" x2="709" y1="201" y2="210" stroke="rgb(66,66,66)"
+      /><line clip-path="url(#clipPath1)" fill="none" x1="541" x2="849" y1="210" y2="210" stroke="rgb(66,66,66)"
+      /><path fill="none" d="M658 65 L427 65" clip-path="url(#clipPath1)" stroke="rgb(127,127,127)"
       /><text fill="rgb(127,127,127)" x="431" space="preserve" y="59.958" clip-path="url(#clipPath1)" stroke="none"
       >context for</text
       ><text fill="rgb(127,127,127)" x="430" space="preserve" y="77.958" clip-path="url(#clipPath1)" stroke="none"
@@ -196,13 +199,13 @@
       >has facet</text
       ><text fill="rgb(127,127,127)" x="316" space="preserve" y="77.958" clip-path="url(#clipPath1)" stroke="none"
       >*</text
-      ><polygon fill="none" clip-path="url(#clipPath1)" points=" 644 183 651 179 644 175" stroke="rgb(66,66,66)"
-      /><path fill="none" d="M644 179 L522 179 L522 252" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
-      /><polygon fill="none" clip-path="url(#clipPath1)" points=" 711 89 707 82 703 89" stroke="rgb(66,66,66)"
+      ><polygon fill="none" clip-path="url(#clipPath1)" points=" 711 89 707 82 703 89" stroke="rgb(66,66,66)"
       /><path fill="none" d="M707 89 L707 161" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
-      /><polygon fill="none" clip-path="url(#clipPath1)" points=" 775 175 768 179 775 183" stroke="rgb(66,66,66)"
-      /><path fill="none" d="M775 179 L833 179 L833 252" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
-    /></g
+      /><path fill="none" d="M541 210 L541 252" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
+      /><path fill="none" d="M849 210 L849 252" clip-path="url(#clipPath1)" stroke="rgb(66,66,66)"
+      /><text x="645" space="preserve" y="219.958" clip-path="url(#clipPath1)" stroke="none"
+      >{complete, overlapping}</text
+    ></g
   ></g
 ></svg
 >
