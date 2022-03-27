@@ -4,7 +4,8 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T15:08:00</Created>
-        <ModificationDate>17-11-27T17:32:10</ModificationDate>
+        <ModificationDate>22-00-18T15:11:54</ModificationDate>
+        <Description>Move to election; occurs during election and post?</Description>
         <Documentation>Receive and process a ballot package, e.g. an absentee or provisional ballot.
 &lt;html&gt;
   &lt;head&gt;
@@ -39,7 +40,7 @@ What is this?&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1519</Version>
+        <Version>1800</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -61,7 +62,7 @@ What is this?&amp;#160;
     <Pools>
         <Pool Id="_18_5_1_11940316_1501694356420_939283_25962" Name="Voter" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1501694356420_939283_25962_proc" Participant="_18_5_1_11940316_1498828669742_83683_23366" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" Height="111.0" Width="1333.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" Height="111.0" Width="1375.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
@@ -75,8 +76,8 @@ What is this?&amp;#160;
         </Pool>
     </Pools>
     <MessageFlows>
-        <MessageFlow Id="_18_5_1_11940316_1501694418096_172047_26006" Name="" Source="_18_5_1_11940316_1501694356420_939283_25962" Target="_18_5_1_11940316_1501694409902_279812_25997">
-            <Message Id="_18_5_1_11940316_1501803661543_815853_33160" Name="Ballot Package"/>
+        <MessageFlow Id="_19_0_2_8dd028c_1558006737818_240379_27046" Name="" Source="_18_5_1_11940316_1501694356420_939283_25962" Target="_18_5_1_11940316_1501694409902_279812_25997">
+            <Message Id="_0_migration_18_5_1_11940316_1501803661543_815853_33160" Name="Ballot Package"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="82.0" YCoordinate="111.0"/>
@@ -84,8 +85,8 @@ What is this?&amp;#160;
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
-        <MessageFlow Id="_18_5_1_11940316_1501694849868_380922_26154" Name="" Source="_18_5_1_11940316_1501694544542_828365_26084" Target="_18_5_1_11940316_1501694356420_939283_25962">
-            <Message Id="_18_5_1_11940316_1501803735311_524444_33178" Name="Clarification Request"/>
+        <MessageFlow Id="_19_0_2_8dd028c_1558006737932_548468_27114" Name="" Source="_18_5_1_11940316_1501694544542_828365_26084" Target="_18_5_1_11940316_1501694356420_939283_25962">
+            <Message Id="_0_migration_18_5_1_11940316_1501803735311_524444_33178" Name="Clarification Request"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="434.0" YCoordinate="231.0"/>
@@ -93,8 +94,8 @@ What is this?&amp;#160;
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
-        <MessageFlow Id="_18_5_1_11940316_1501694858786_830356_26160" Name="" Source="_18_5_1_11940316_1501694356420_939283_25962" Target="_18_5_1_11940316_1501694544542_828365_26084">
-            <Message Id="_18_5_1_11940316_1501803756899_396306_33196" Name="Clarification Response"/>
+        <MessageFlow Id="_19_0_2_8dd028c_1558006737854_910339_27061" Name="" Source="_18_5_1_11940316_1501694356420_939283_25962" Target="_18_5_1_11940316_1501694544542_828365_26084">
+            <Message Id="_0_migration_18_5_1_11940316_1501803756899_396306_33196" Name="Clarification Response"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="574.0" YCoordinate="111.0"/>
@@ -106,7 +107,7 @@ What is this?&amp;#160;
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1502918672015_24862_27828" Source="_18_5_1_11940316_1501695072809_439160_26344" Target="_18_5_1_11940316_1502918672119_474780_27829" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414037516_594234_33660"/>
+            <Object Id="_19_0_4_43701b0_1648390411595_546209_26329"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1043.0" YCoordinate="491.0"/>
@@ -115,7 +116,7 @@ What is this?&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1504893956106_340784_33402" Source="_18_5_1_11940316_1501695006548_430877_26265" Target="_18_5_2_11940316_1504893956226_952040_33403" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414037516_173570_33661"/>
+            <Object Id="_19_0_4_43701b0_1648390411596_255551_26330"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500577702262_98388_36528" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="854.0" YCoordinate="384.0"/>
@@ -144,6 +145,7 @@ What is this?&amp;#160;
         <WorkflowProcess Id="_18_5_1_11940316_1500577702222_198105_36518" Name="Receive and Process Ballot Packages" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
             <ProcessHeader>
                 <Created>17-06-20T15:08:00</Created>
+                <Description>Move to election; occurs during election and post?</Description>
             </ProcessHeader>
         </WorkflowProcess>
         <WorkflowProcess Id="_18_5_1_11940316_1501694356420_939283_25962_proc" Name="Voter" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">

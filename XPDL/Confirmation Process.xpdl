@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-12T08:49:00</Created>
-        <ModificationDate>17-11-27T17:32:10</ModificationDate>
+        <ModificationDate>22-00-18T15:11:54</ModificationDate>
         <Documentation>Confirm the location of the voter's current place of residence.
 &lt;html&gt;
   &lt;head&gt;
@@ -84,7 +84,7 @@ This will allow the callee to determine whether to cancel the confirmation proce
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1519</Version>
+        <Version>1800</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -117,8 +117,8 @@ This will allow the callee to determine whether to cancel the confirmation proce
         </Pool>
     </Pools>
     <MessageFlows>
-        <MessageFlow Id="_18_5_1_11940316_1501016115789_771964_25429" Name="" Source="_18_5_1_11940316_1499863776430_958528_24861" Target="_18_5_1_11940316_1501015994142_837851_25392">
-            <Message Id="_18_5_1_11940316_1501019764745_411070_25979" Name="Confirmation Notice"/>
+        <MessageFlow Id="_19_0_2_8dd028c_1558006737927_658205_27111" Name="" Source="_19_0_2_8dd028c_1558006737433_665090_26911" Target="_18_5_1_11940316_1501015994142_837851_25392">
+            <Message Id="_0_migration_18_5_1_11940316_1501019764745_411070_25979" Name="Confirmation Notice"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="179.0" YCoordinate="313.0"/>
@@ -126,8 +126,8 @@ This will allow the callee to determine whether to cancel the confirmation proce
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
-        <MessageFlow Id="_18_5_1_11940316_1501016232429_864207_25515" Name="" Source="_18_5_1_11940316_1501015994142_837851_25392" Target="_18_5_1_11940316_1501016220787_478701_25493">
-            <Message Id="_18_5_1_11940316_1501019786583_55527_25997" Name="Confirmation Response"/>
+        <MessageFlow Id="_19_0_2_8dd028c_1558006737764_420763_27030" Name="" Source="_18_5_1_11940316_1501015994142_837851_25392" Target="_18_5_1_11940316_1501016220787_478701_25493">
+            <Message Id="_0_migration_18_5_1_11940316_1501019786583_55527_25997" Name="Confirmation Response"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="529.0" YCoordinate="87.0"/>
@@ -138,25 +138,16 @@ This will allow the callee to determine whether to cancel the confirmation proce
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1501775333386_688847_32323" Source="_18_5_1_11940316_1501016189283_169439_25467" Target="_18_5_1_11940316_1501775432910_827202_32383" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414088032_638899_33708"/>
+            <Object Id="_19_0_4_43701b0_1648390662047_902284_26405"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="453.0" YCoordinate="239.0"/>
+                    <Coordinates XCoordinate="452.0" YCoordinate="239.0"/>
                     <Coordinates XCoordinate="401.0" YCoordinate="224.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
-        <Association Id="_18_5_1_11940316_1501783719575_395793_32702" Source="_18_5_1_11940316_1501019794587_475431_26003" Target="_18_5_1_11940316_1501783719698_55059_32703" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414088033_599759_33709"/>
-            <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="511.0" YCoordinate="202.0"/>
-                    <Coordinates XCoordinate="430.0" YCoordinate="152.0"/>
-                </ConnectorGraphicsInfo>
-            </ConnectorGraphicsInfos>
-        </Association>
         <Association Id="_18_5_1_11940316_1503594385278_659303_29232" Source="_18_5_1_11940316_1501859352858_615492_26394" Target="_18_5_1_11940316_1503594385394_67048_29233" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414088035_538111_33710"/>
+            <Object Id="_19_0_4_43701b0_1648390662049_5628_26406"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="336.0" YCoordinate="371.0"/>
@@ -165,10 +156,10 @@ This will allow the callee to determine whether to cancel the confirmation proce
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1503596231603_370983_29387" Source="_18_5_1_11940316_1503596223005_647228_29369" Target="_18_5_1_11940316_1503596231719_647920_29388" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414088035_76851_33711"/>
+            <Object Id="_19_0_4_43701b0_1648390662051_418050_26407"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="269.0" YCoordinate="413.0"/>
+                    <Coordinates XCoordinate="272.0" YCoordinate="412.0"/>
                     <Coordinates XCoordinate="226.0" YCoordinate="426.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
@@ -223,22 +214,6 @@ This will allow the callee to determine whether to cancel the confirmation proce
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
                             <Coordinates XCoordinate="56.0" YCoordinate="329.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_1_11940316_1499863776430_958528_24861" IsForCompensation="false" Name="Send Confirmation Notice" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.2.M2.2">
-                    <Implementation>
-                        <Task>
-                            <TaskSend Implementation="WebService"/>
-                        </Task>
-                    </Implementation>
-                    <Performers>
-                        <Performer cbm:resourceType="ResourceRole"></Performer>
-                    </Performers>
-                    <Documentation>A confirmation notice is sent to the voter via forwardable mail (NVRA) or not (not NVRA).</Documentation>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="147.0" YCoordinate="313.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -341,16 +316,6 @@ This will allow the callee to determine whether to cancel the confirmation proce
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501859341627_978052_26377" Name="Undeliverable" cbm:numberedProperty="1.2.M2.16">
-                    <Event>
-                        <IntermediateEvent Trigger="Error" Implementation="WebService" Target="_18_5_1_11940316_1499863776430_958528_24861" Interrupting="true"/>
-                    </Event>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="161.0" YCoordinate="357.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
                 <Activity Id="_18_5_1_11940316_1503596223005_647228_29369" Name="Undeliverable" cbm:numberedProperty="1.2.M2.21">
                     <Event>
                         <IntermediateEvent Trigger="Escalation" Implementation="WebService" Interrupting="true"/>
@@ -361,9 +326,25 @@ This will allow the callee to determine whether to cancel the confirmation proce
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
+                <Activity Id="_19_0_2_8dd028c_1558006737433_665090_26911" IsForCompensation="false" Name="Send Confirmation Notice" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.2.M2.2">
+                    <Implementation>
+                        <Task>
+                            <TaskSend Implementation="WebService"/>
+                        </Task>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <Documentation>A confirmation notice is sent to the voter via forwardable mail (NVRA) or not (not NVRA).</Documentation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="147.0" YCoordinate="313.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
             </Activities>
             <Transitions>
-                <Transition Id="_18_5_1_11940316_1499863761014_612306_24839" From="_18_5_1_11940316_1499863753201_205467_24828" To="_18_5_1_11940316_1499863776430_958528_24861" Name="">
+                <Transition Id="_18_5_1_11940316_1499863761014_612306_24839" From="_18_5_1_11940316_1499863753201_205467_24828" To="_19_0_2_8dd028c_1558006737433_665090_26911" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="80.0" YCoordinate="341.0"/>
@@ -371,7 +352,7 @@ This will allow the callee to determine whether to cancel the confirmation proce
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
-                <Transition Id="_18_5_1_11940316_1501016165704_641918_25457" From="_18_5_1_11940316_1499863776430_958528_24861" To="_18_5_1_11940316_1501016165676_187350_25450" Name="">
+                <Transition Id="_18_5_1_11940316_1501016165704_641918_25457" From="_19_0_2_8dd028c_1558006737433_665090_26911" To="_18_5_1_11940316_1501016165676_187350_25450" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="267.0" YCoordinate="343.0"/>
@@ -384,7 +365,7 @@ This will allow the callee to determine whether to cancel the confirmation proce
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="378.0" YCoordinate="322.0"/>
                             <Coordinates XCoordinate="378.0" YCoordinate="242.0"/>
-                            <Coordinates XCoordinate="452.0" YCoordinate="242.0"/>
+                            <Coordinates XCoordinate="449.0" YCoordinate="242.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -392,14 +373,14 @@ This will allow the callee to determine whether to cancel the confirmation proce
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="396.0" YCoordinate="340.0"/>
-                            <Coordinates XCoordinate="515.0" YCoordinate="340.0"/>
+                            <Coordinates XCoordinate="507.0" YCoordinate="340.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_1_11940316_1501016341322_970729_25549" From="_18_5_1_11940316_1501016220787_478701_25493" To="_18_5_1_11940316_1501775429543_968375_32370" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="539.0" YCoordinate="340.0"/>
+                            <Coordinates XCoordinate="547.0" YCoordinate="340.0"/>
                             <Coordinates XCoordinate="674.0" YCoordinate="340.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
@@ -407,7 +388,7 @@ This will allow the callee to determine whether to cancel the confirmation proce
                 <Transition Id="_18_5_1_11940316_1501016846591_256275_25694" From="_18_5_1_11940316_1501016189283_169439_25467" To="_18_5_1_11940316_1501016849884_387305_25705" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="476.0" YCoordinate="243.0"/>
+                            <Coordinates XCoordinate="481.0" YCoordinate="243.0"/>
                             <Coordinates XCoordinate="602.0" YCoordinate="243.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
@@ -450,19 +431,10 @@ This will allow the callee to determine whether to cancel the confirmation proce
                 <Transition Id="_18_5_1_11940316_1501859352858_615492_26394" From="_18_5_1_11940316_1503596223005_647228_29369" To="_18_5_1_11940316_1501016165676_187350_25450" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="305.0" YCoordinate="394.0"/>
+                            <Coordinates XCoordinate="305.0" YCoordinate="393.0"/>
                             <Coordinates XCoordinate="305.0" YCoordinate="371.0"/>
                             <Coordinates XCoordinate="378.0" YCoordinate="371.0"/>
                             <Coordinates XCoordinate="378.0" YCoordinate="360.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_1_11940316_1503596224322_910219_29382" From="_18_5_1_11940316_1501859341627_978052_26377" To="_18_5_1_11940316_1503596223005_647228_29369" Name="">
-                    <Condition Type="EXCEPTION"/>
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1499863743637_521592_24815" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="230.0" YCoordinate="397.0"/>
-                            <Coordinates XCoordinate="288.0" YCoordinate="397.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>

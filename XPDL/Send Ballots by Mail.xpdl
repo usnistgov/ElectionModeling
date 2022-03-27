@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T09:39:00</Created>
-        <ModificationDate>17-11-27T17:32:10</ModificationDate>
+        <ModificationDate>22-00-18T15:11:54</ModificationDate>
         <Documentation>For each remote voter: Send a ballot to the voter via postal mail.
 &lt;html&gt;
   &lt;head&gt;
@@ -24,7 +24,7 @@ OR has many different periods.&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1519</Version>
+        <Version>1800</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -41,7 +41,7 @@ OR has many different periods.&amp;#160;
         <Page Name="Send Ballots by Mail" Id="_18_5_1_11940316_1500557997688_391505_34041" Height="652.0" Width="1620.0"/>
     </Pages>
     <DataStores>
-        <DataStore Id="_18_5_1_11940316_1500575746749_157073_35765" Name="Ballot Tracking System" IsUnlimited="false" cbm:numberedProperty="2.2.2.9.D 1"/>
+        <DataStore Id="_18_5_1_11940316_1500575746749_157073_35765" Name="Ballot Tracking System" IsUnlimited="false" cbm:numberedProperty="2.2.2.4.D 1"/>
     </DataStores>
     <Pools>
         <Pool Id="_18_5_1_11940316_1500559388798_23113_34442" Name="Election Authority" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1500559388798_23113_34442_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
@@ -60,8 +60,8 @@ OR has many different periods.&amp;#160;
         </Pool>
     </Pools>
     <MessageFlows>
-        <MessageFlow Id="_18_5_1_11940316_1500559470325_498036_34527" Name="" Source="_18_5_1_11940316_1500559449917_4549_34507" Target="_18_5_1_11940316_1500559429400_958184_34474">
-            <Message Id="_18_5_1_11940316_1500559481382_56985_34530" Name="Vote by mail package"/>
+        <MessageFlow Id="_19_0_2_8dd028c_1558006737958_508143_27124" Name="" Source="_19_0_2_8dd028c_1558006737575_831638_26998" Target="_18_5_1_11940316_1500559429400_958184_34474">
+            <Message Id="_0_migration_18_5_1_11940316_1500559481382_56985_34530" Name="Vote by mail package"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="648.0" YCoordinate="306.0"/>
@@ -72,7 +72,7 @@ OR has many different periods.&amp;#160;
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_2_11940316_1506357213638_206396_28336" Source="_18_5_2_11940316_1506357203655_311656_28326" Target="_18_5_1_11940316_1500560671326_525320_34976" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414059741_827427_33681"/>
+            <Object Id="_19_0_4_43701b0_1648390434646_412848_26362"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="899.0" YCoordinate="388.0"/>
@@ -81,7 +81,7 @@ OR has many different periods.&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1506357249406_516908_28377" Source="_18_5_2_11940316_1506357249404_800489_28372" Target="_18_5_2_11940316_1506357249404_916219_28373" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414059742_782606_33682"/>
+            <Object Id="_19_0_4_43701b0_1648390434646_985213_26363"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="103.0" YCoordinate="490.0"/>
@@ -116,11 +116,6 @@ OR has many different periods.&amp;#160;
         </Artifact>
     </Artifacts>
     <WorkflowProcesses>
-        <WorkflowProcess Id="_18_5_1_11940316_1500557997646_503196_34031" Name="Send Ballots by Mail" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
-            <ProcessHeader>
-                <Created>17-06-20T09:39:00</Created>
-            </ProcessHeader>
-        </WorkflowProcess>
         <WorkflowProcess Id="_18_5_1_11940316_1500559388798_23113_34442_proc" Name="Election Authority" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
             <ProcessHeader>
                 <Created>17-06-20T09:39:00</Created>
@@ -128,7 +123,7 @@ OR has many different periods.&amp;#160;
             <ActivitySets>
                 <ActivitySet Id="_18_5_1_11940316_1500560345304_538163_34806" Name="Send Ballot by Mail_as" AdHoc="false" TriggeredByEvent="false">
                     <Activities>
-                        <Activity Id="_18_5_1_11940316_1500559316851_280578_34334" Name="" cbm:numberedProperty="2.2.2.9.1">
+                        <Activity Id="_18_5_1_11940316_1500559316851_280578_34334" Name="" cbm:numberedProperty="2.2.2.4.1">
                             <Event>
 <StartEvent Trigger="None" Implementation="Unspecified"/>
                             </Event>
@@ -138,37 +133,21 @@ OR has many different periods.&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1500559361793_415560_34429" IsForCompensation="false" Name="Insert ballots, instructions and return envelopes into vote by mail package" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.2.2.9.3">
+                        <Activity Id="_18_5_1_11940316_1500559361793_415560_34429" IsForCompensation="false" Name="Insert ballots, instructions and return envelopes into vote by mail package" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.2.2.4.2">
                             <Implementation>
 <No/>
                             </Implementation>
                             <Performers>
 <Performer cbm:resourceType="ResourceRole"></Performer>
                             </Performers>
-                            <Documentation>Build a package of materials required for the vote by mail voter to cast and return their ballot.</Documentation>
+                            <Documentation>Build a package of materials required for the vote by mail voter to mark and return their ballot.</Documentation>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" Height="81.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
     <Coordinates XCoordinate="324.0" YCoordinate="374.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1500559449917_4549_34507" IsForCompensation="false" Name="Mail package to voter" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.2.2.9.4">
-                            <Implementation>
-<Task>
-    <TaskSend Implementation="WebService"/>
-</Task>
-                            </Implementation>
-                            <Performers>
-<Performer cbm:resourceType="ResourceRole"></Performer>
-                            </Performers>
-                            <Documentation>Mail the vote by mail package to the voter.</Documentation>
-                            <NodeGraphicsInfos>
-<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" Height="70.0" Width="124.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="609.0" YCoordinate="306.0"/>
-</NodeGraphicsInfo>
-                            </NodeGraphicsInfos>
-                        </Activity>
-                        <Activity Id="_18_5_1_11940316_1500559654348_55032_34558" Name="" cbm:numberedProperty="2.2.2.9.5">
+                        <Activity Id="_18_5_1_11940316_1500559654348_55032_34558" Name="" cbm:numberedProperty="2.2.2.4.3">
                             <Route GatewayType="Parallel" GatewayDirection="Unspecified"/>
                             <TransitionRestrictions>
 <TransitionRestriction>
@@ -186,7 +165,7 @@ OR has many different periods.&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1500559699237_643853_34598" IsForCompensation="false" Name="Log sent date in voter registration database" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.2.2.9.6">
+                        <Activity Id="_18_5_1_11940316_1500559699237_643853_34598" IsForCompensation="false" Name="Log sent date in voter registration database" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.2.2.4.5">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -200,7 +179,7 @@ OR has many different periods.&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1500559734943_764671_34610" Name="" cbm:numberedProperty="2.2.2.9.7">
+                        <Activity Id="_18_5_1_11940316_1500559734943_764671_34610" Name="" cbm:numberedProperty="2.2.2.4.11">
                             <Route GatewayType="Parallel" GatewayDirection="Unspecified"/>
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" Height="40.0" Width="40.0" BorderColor="#424242" FillColor="#FFCC33">
@@ -208,7 +187,7 @@ OR has many different periods.&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1500559759361_644843_34668" Name="Ballot sent" cbm:numberedProperty="2.2.2.9.8">
+                        <Activity Id="_18_5_1_11940316_1500559759361_644843_34668" Name="Ballot sent" cbm:numberedProperty="2.2.2.4.12">
                             <Event>
 <EndEvent Result="None" Implementation="Unspecified"/>
                             </Event>
@@ -218,19 +197,7 @@ OR has many different periods.&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1500560582353_307515_34934" Name="Undeliverable" cbm:numberedProperty="2.2.2.9.9">
-                            <Event>
-<IntermediateEvent Trigger="Message" Implementation="WebService" Target="_18_5_1_11940316_1500559449917_4549_34507" Interrupting="true">
-    <TriggerResultMessage CatchThrow="CATCH"/>
-</IntermediateEvent>
-                            </Event>
-                            <NodeGraphicsInfos>
-<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
-    <Coordinates XCoordinate="672.0" YCoordinate="363.0"/>
-</NodeGraphicsInfo>
-                            </NodeGraphicsInfos>
-                        </Activity>
-                        <Activity Id="_18_5_1_11940316_1500560671326_525320_34976" IsForCompensation="false" Name="Record undeliverable ballot status on voter record" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.2.2.9.10">
+                        <Activity Id="_18_5_1_11940316_1500560671326_525320_34976" IsForCompensation="false" Name="Record undeliverable ballot status on voter record" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.2.2.4.7">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -244,7 +211,7 @@ OR has many different periods.&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1500560810260_430517_35024" IsForCompensation="false" Name="Add undeliverable addresses to list maintenance report" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.2.2.9.11">
+                        <Activity Id="_18_5_1_11940316_1500560810260_430517_35024" IsForCompensation="false" Name="Add undeliverable addresses to list maintenance report" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.2.2.4.9">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -258,7 +225,7 @@ OR has many different periods.&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1500560830073_111560_35046" Name="Ballot not delivered" cbm:numberedProperty="2.2.2.9.12">
+                        <Activity Id="_18_5_1_11940316_1500560830073_111560_35046" Name="Ballot not delivered" cbm:numberedProperty="2.2.2.4.10">
                             <Event>
 <EndEvent Result="None" Implementation="Unspecified"/>
                             </Event>
@@ -268,7 +235,7 @@ OR has many different periods.&amp;#160;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_43701b0_1510778890121_795234_30189" Name="Can address issue be resolved?" cbm:numberedProperty="2.2.2.9.13">
+                        <Activity Id="_18_5_2_43701b0_1510778890121_795234_30189" Name="Can address issue be resolved?" cbm:numberedProperty="2.2.2.4.8">
                             <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                             <TransitionRestrictions>
 <TransitionRestriction>
@@ -283,6 +250,22 @@ OR has many different periods.&amp;#160;
                             <NodeGraphicsInfos>
 <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
     <Coordinates XCoordinate="945.0" YCoordinate="414.0"/>
+</NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity Id="_19_0_2_8dd028c_1558006737575_831638_26998" IsForCompensation="false" Name="Mail package to voter" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.2.2.4.4">
+                            <Implementation>
+<Task>
+    <TaskSend Implementation="WebService"/>
+</Task>
+                            </Implementation>
+                            <Performers>
+<Performer cbm:resourceType="ResourceRole"></Performer>
+                            </Performers>
+                            <Documentation>Mail the vote by mail package to the voter.</Documentation>
+                            <NodeGraphicsInfos>
+<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" Height="70.0" Width="124.0" BorderColor="#636363" FillColor="#FEEFA5">
+    <Coordinates XCoordinate="609.0" YCoordinate="306.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
@@ -305,7 +288,7 @@ OR has many different periods.&amp;#160;
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
-                        <Transition Id="_18_5_1_11940316_1500559447853_922272_34490" From="_18_5_1_11940316_1500559654348_55032_34558" To="_18_5_1_11940316_1500559449917_4549_34507" Name="">
+                        <Transition Id="_18_5_1_11940316_1500559447853_922272_34490" From="_18_5_1_11940316_1500559654348_55032_34558" To="_19_0_2_8dd028c_1558006737575_831638_26998" Name="">
                             <ConnectorGraphicsInfos>
 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" BorderColor="#424242" FillColor="#FFFFCC">
     <Coordinates XCoordinate="511.0" YCoordinate="395.0"/>
@@ -331,7 +314,7 @@ OR has many different periods.&amp;#160;
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
-                        <Transition Id="_18_5_1_11940316_1500559740641_713852_34621" From="_18_5_1_11940316_1500559449917_4549_34507" To="_18_5_1_11940316_1500559734943_764671_34610" Name="">
+                        <Transition Id="_18_5_1_11940316_1500559740641_713852_34621" From="_19_0_2_8dd028c_1558006737575_831638_26998" To="_18_5_1_11940316_1500559734943_764671_34610" Name="">
                             <ConnectorGraphicsInfos>
 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" BorderColor="#424242" FillColor="#FFFFCC">
     <Coordinates XCoordinate="733.0" YCoordinate="341.0"/>
@@ -354,16 +337,6 @@ OR has many different periods.&amp;#160;
 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" BorderColor="#424242" FillColor="#FFFFCC">
     <Coordinates XCoordinate="1342.0" YCoordinate="438.0"/>
     <Coordinates XCoordinate="1407.0" YCoordinate="438.0"/>
-</ConnectorGraphicsInfo>
-                            </ConnectorGraphicsInfos>
-                        </Transition>
-                        <Transition Id="_18_5_1_11940316_1500560668647_861166_34960" From="_18_5_1_11940316_1500560582353_307515_34934" To="_18_5_1_11940316_1500560671326_525320_34976" Name="">
-                            <Condition Type="EXCEPTION"/>
-                            <ConnectorGraphicsInfos>
-<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500557997688_391505_34041" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="700.0" YCoordinate="418.0"/>
-    <Coordinates XCoordinate="700.0" YCoordinate="432.0"/>
-    <Coordinates XCoordinate="784.0" YCoordinate="432.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
@@ -394,7 +367,7 @@ OR has many different periods.&amp;#160;
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
-                        <Transition Id="_18_5_2_43701b0_1510778923413_343104_30205" From="_18_5_2_43701b0_1510778890121_795234_30189" To="_18_5_1_11940316_1500559449917_4549_34507" Name="">
+                        <Transition Id="_18_5_2_43701b0_1510778923413_343104_30205" From="_18_5_2_43701b0_1510778890121_795234_30189" To="_19_0_2_8dd028c_1558006737575_831638_26998" Name="">
                             <Condition Type="CONDITION">
 <Expression>Yes</Expression>
                             </Condition>
@@ -442,7 +415,7 @@ OR has many different periods.&amp;#160;
                 </ActivitySet>
             </ActivitySets>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1500560345357_946967_34818" IsForCompensation="false" Name="Send Ballot by Mail" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="2.2.2.9">
+                <Activity Id="_18_5_1_11940316_1500560345357_946967_34818" IsForCompensation="false" Name="Send Ballot by Mail" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="2.2.2.4">
                     <BlockActivity ActivitySetId="_18_5_1_11940316_1500560345304_538163_34806" View="EXPANDED"/>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
@@ -471,7 +444,7 @@ From KB&amp;#160;&amp;#160;slides.&amp;#160;Does not seem to apply to All Vote B
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500560432082_733802_34917" Name="Ballots Sent" cbm:numberedProperty="2.2.2.11">
+                <Activity Id="_18_5_1_11940316_1500560432082_733802_34917" Name="Ballots Sent" cbm:numberedProperty="2.2.2.5">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -481,7 +454,7 @@ From KB&amp;#160;&amp;#160;slides.&amp;#160;Does not seem to apply to All Vote B
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1506357249404_548993_28371" Name="Request After Voting Period Begins" cbm:numberedProperty="2.2.2.13">
+                <Activity Id="_18_5_2_11940316_1506357249404_548993_28371" Name="Request After Voting Period Begins" cbm:numberedProperty="2.2.2.3">
                     <Event>
                         <StartEvent Trigger="Conditional" Implementation="Unspecified" Interrupting="true"/>
                     </Event>
@@ -491,7 +464,7 @@ From KB&amp;#160;&amp;#160;slides.&amp;#160;Does not seem to apply to All Vote B
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1506357249404_800489_28372" Name="Voting Period Begins" cbm:numberedProperty="2.2.2.12">
+                <Activity Id="_18_5_2_11940316_1506357249404_800489_28372" Name="Voting Period Begins" cbm:numberedProperty="2.2.2.2">
                     <Event>
                         <StartEvent Trigger="Timer" Implementation="Unspecified" Interrupting="true"/>
                     </Event>
@@ -501,7 +474,7 @@ From KB&amp;#160;&amp;#160;slides.&amp;#160;Does not seem to apply to All Vote B
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1506357249404_883840_28370" Name="UOCAVA Voting Period Begins" cbm:numberedProperty="2.2.2.14">
+                <Activity Id="_18_5_2_11940316_1506357249404_883840_28370" Name="UOCAVA Voting Period Begins" cbm:numberedProperty="2.2.2.1">
                     <Event>
                         <StartEvent Trigger="Timer" Implementation="Unspecified" Interrupting="true"/>
                     </Event>

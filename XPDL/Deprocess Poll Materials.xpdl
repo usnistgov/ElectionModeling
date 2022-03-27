@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-27T00:26:00</Created>
-        <ModificationDate>17-11-27T17:32:10</ModificationDate>
+        <ModificationDate>22-00-18T15:11:54</ModificationDate>
         <Documentation>Return and inventory election materials in preparation of election night.
 &lt;html&gt;
   &lt;head&gt;
@@ -47,7 +47,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1519</Version>
+        <Version>1800</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -89,8 +89,8 @@ Provisionals may become part of unofficial count&lt;/body&gt;
         </Pool>
     </Pools>
     <MessageFlows>
-        <MessageFlow Id="_18_5_1_11940316_1501091367625_738886_29240" Name="" Source="_18_5_1_11940316_1501091165360_120740_29133" Target="_18_5_1_11940316_1501091643345_974437_29344">
-            <Message Id="_18_5_1_11940316_1501091379686_108336_29243" Name="Election Materials"/>
+        <MessageFlow Id="_19_0_2_8dd028c_1558006737849_334618_27058" Name="" Source="_18_5_1_11940316_1501091165360_120740_29133" Target="_19_0_2_8dd028c_1558006737346_730140_26870">
+            <Message Id="_0_migration_18_5_1_11940316_1501091379686_108336_29243" Name="Election Materials"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="277.0" YCoordinate="134.0"/>
@@ -98,8 +98,8 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
-        <MessageFlow Id="_18_5_1_11940316_1501091491010_945548_29306" Name="" Source="_18_5_1_11940316_1501091471632_664623_29297" Target="_18_5_1_11940316_1501091165360_120740_29133">
-            <Message Id="_18_5_1_11940316_1501091505298_634809_29309" Name="Where are you?"/>
+        <MessageFlow Id="_19_0_2_8dd028c_1558006737902_912851_27092" Name="" Source="_18_5_1_11940316_1501091471632_664623_29297" Target="_18_5_1_11940316_1501091165360_120740_29133">
+            <Message Id="_0_migration_18_5_1_11940316_1501091505298_634809_29309" Name="Where are you?"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="357.0" YCoordinate="644.0"/>
@@ -107,8 +107,8 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
-        <MessageFlow Id="_18_5_1_11940316_1501097655900_814234_30777" Name="" Source="_18_5_1_11940316_1501091165360_120740_29133" Target="_18_5_1_11940316_1501097645544_309409_30759">
-            <Message Id="_18_5_1_11940316_1501091379686_108336_29243" Name="Election Materials"/>
+        <MessageFlow Id="_19_0_2_8dd028c_1558006737859_849319_27064" Name="" Source="_18_5_1_11940316_1501091165360_120740_29133" Target="_18_5_1_11940316_1501097645544_309409_30759">
+            <Message Id="_0_migration_18_5_1_11940316_1501091379686_108336_29243" Name="Election Materials"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="831.0" YCoordinate="134.0"/>
@@ -119,7 +119,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
     </MessageFlows>
     <Associations>
         <Association Id="_18_5_1_11940316_1501698995624_651481_26671" Source="_18_5_1_11940316_1501086486644_93956_28437" Target="_18_5_1_11940316_1501699237286_846542_26680" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414084009_220172_33705"/>
+            <Object Id="_19_0_4_43701b0_1648390653164_582951_26403"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="669.0" YCoordinate="452.0"/>
@@ -152,7 +152,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
             <ActivitySets>
                 <ActivitySet Id="_18_5_1_11940316_1501086486356_964504_28172" Name="Deprocess other materials_as" AdHoc="true" AdHocOrdering="Parallel" AdHocCompletionCondition="Deprocessed applicable other materials" TriggeredByEvent="false">
                     <Activities>
-                        <Activity Id="_18_5_1_11940316_1501086486643_281035_28427" IsForCompensation="false" Name="Locate voting machines" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.4.3">
+                        <Activity Id="_18_5_1_11940316_1501086486643_281035_28427" IsForCompensation="false" Name="Locate voting machines" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.5.3">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -166,7 +166,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1501086486643_30421_28431" IsForCompensation="false" Name="Locate ballot boxes" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.4.7">
+                        <Activity Id="_18_5_1_11940316_1501086486643_30421_28431" IsForCompensation="false" Name="Locate ballot boxes" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.5.4">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -180,7 +180,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1501086486643_511780_28428" IsForCompensation="false" Name="Locate unofficial election results tape" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.4.4">
+                        <Activity Id="_18_5_1_11940316_1501086486643_511780_28428" IsForCompensation="false" Name="Locate unofficial election results tape" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.5.1">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -194,7 +194,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1501086486643_7292_28425" IsForCompensation="false" Name="Locate spoiled ballots" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.4.1">
+                        <Activity Id="_18_5_1_11940316_1501086486643_7292_28425" IsForCompensation="false" Name="Locate spoiled ballots" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.5.2">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -208,7 +208,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1501086486643_755770_28432" IsForCompensation="false" Name="Locate unvoted ballots" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.4.8">
+                        <Activity Id="_18_5_1_11940316_1501086486643_755770_28432" IsForCompensation="false" Name="Locate unvoted ballots" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.5.5">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -222,7 +222,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1501086486643_818932_28430" IsForCompensation="false" Name="Locate logs and official documents" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.4.6">
+                        <Activity Id="_18_5_1_11940316_1501086486643_818932_28430" IsForCompensation="false" Name="Locate logs and official documents" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.5.7">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -236,7 +236,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1501086486643_833665_28426" IsForCompensation="false" Name="Locate voter roster" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.4.2">
+                        <Activity Id="_18_5_1_11940316_1501086486643_833665_28426" IsForCompensation="false" Name="Locate voter roster" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.5.6">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -250,7 +250,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1501086486644_182456_28438" IsForCompensation="false" Name="Locate completed voter registrations" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.7.1">
+                        <Activity Id="_18_5_1_11940316_1501086486644_182456_28438" IsForCompensation="false" Name="Locate completed voter registrations" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.5.8">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -268,7 +268,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                 </ActivitySet>
                 <ActivitySet Id="_18_5_1_11940316_1501086486358_622752_28173" Name="Deprocess results materials_as" AdHoc="true" AdHocOrdering="Parallel" AdHocCompletionCondition="Deprocessed applicable results materials" TriggeredByEvent="false">
                     <Activities>
-                        <Activity Id="_18_5_1_11940316_1501086486643_296720_28433" IsForCompensation="false" Name="Check ballot boxes for leftover ballots" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.1.1">
+                        <Activity Id="_18_5_1_11940316_1501086486643_296720_28433" IsForCompensation="false" Name="Check ballot boxes for leftover ballots" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.4.1">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -282,7 +282,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1501086486644_324310_28435" IsForCompensation="false" Name="Retrieve results media" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.1.3">
+                        <Activity Id="_18_5_1_11940316_1501086486644_324310_28435" IsForCompensation="false" Name="Retrieve results media" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.4.4">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -296,7 +296,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1501086486644_39570_28436" IsForCompensation="false" Name="Retrieve write-in ballots" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.1.4">
+                        <Activity Id="_18_5_1_11940316_1501086486644_39570_28436" IsForCompensation="false" Name="Retrieve write-in ballots" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.4.5">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -310,7 +310,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1501086486644_916664_28434" IsForCompensation="false" Name="Retrieve counted ballots" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.1.2">
+                        <Activity Id="_18_5_1_11940316_1501086486644_916664_28434" IsForCompensation="false" Name="Retrieve counted ballots" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.4.3">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -324,7 +324,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1501086486644_93956_28437" IsForCompensation="false" Name="Retrieve voted, but uncounted ballots" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.1.5">
+                        <Activity Id="_18_5_1_11940316_1501086486644_93956_28437" IsForCompensation="false" Name="Retrieve voted, but uncounted ballots" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.4.2">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -355,7 +355,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501086486639_402756_28417" IsForCompensation="false" Name="Deprocess results materials" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="3.2.4">
+                <Activity Id="_18_5_1_11940316_1501086486639_402756_28417" IsForCompensation="false" Name="Deprocess results materials" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="3.2.6">
                     <BlockActivity ActivitySetId="_18_5_1_11940316_1501086486358_622752_28173" View="EXPANDED"/>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
@@ -368,7 +368,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501086486639_444445_28419" Name="Election materials deprocessed" cbm:numberedProperty="3.2.8">
+                <Activity Id="_18_5_1_11940316_1501086486639_444445_28419" Name="Election materials deprocessed" cbm:numberedProperty="3.2.12">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -378,7 +378,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501086486643_869469_28429" IsForCompensation="false" Name="Reconcile log with inventory" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.11">
+                <Activity Id="_18_5_1_11940316_1501086486643_869469_28429" IsForCompensation="false" Name="Reconcile log with inventory" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.8">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -393,7 +393,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501087477828_94360_28773" IsForCompensation="false" Name="Sign and transfer chain of custody" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.3">
+                <Activity Id="_18_5_1_11940316_1501087477828_94360_28773" IsForCompensation="false" Name="Sign and transfer chain of custody" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.5">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -408,7 +408,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501091233307_331588_29152" Name="Polls Closed" cbm:numberedProperty="3.2.12">
+                <Activity Id="_18_5_1_11940316_1501091233307_331588_29152" Name="Polls Closed" cbm:numberedProperty="3.2.1">
                     <Event>
                         <StartEvent Trigger="Timer" Implementation="Unspecified" Interrupting="true"/>
                     </Event>
@@ -418,7 +418,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501091471632_664623_29297" IsForCompensation="false" Name="Contact authorized personnel" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.2">
+                <Activity Id="_18_5_1_11940316_1501091471632_664623_29297" IsForCompensation="false" Name="Contact authorized personnel" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.4">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -433,7 +433,39 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1501091643345_974437_29344" IsForCompensation="false" Name="Receive election materials" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.1">
+                <Activity Id="_18_5_1_11940316_1501091743066_789329_29414" Name="" cbm:numberedProperty="3.2.10">
+                    <Event>
+                        <EndEvent Result="None" Implementation="Unspecified"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="469.0" YCoordinate="661.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_1_11940316_1501097645544_309409_30759" Name="Additional Materials Received" cbm:numberedProperty="3.2.11">
+                    <Event>
+                        <StartEvent Trigger="Message" Implementation="Unspecified" Interrupting="true">
+                            <TriggerResultMessage CatchThrow="CATCH"/>
+                        </StartEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="819.0" YCoordinate="266.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_1_11940316_1501097779131_242989_30790" Name="Time to Receive Materials" cbm:numberedProperty="3.2.2">
+                    <Event>
+                        <StartEvent Trigger="Timer" Implementation="Unspecified" Interrupting="true"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="105.0" YCoordinate="493.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_19_0_2_8dd028c_1558006737346_730140_26870" IsForCompensation="false" Name="Receive election materials" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.2.3">
                     <Implementation>
                         <Task>
                             <TaskReceive Instantiate="false" Implementation="WebService"/>
@@ -447,50 +479,6 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="59.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="217.0" YCoordinate="523.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_1_11940316_1501091703179_1710_29386" Name="Waited Reasonable Time" cbm:numberedProperty="3.2.16">
-                    <Event>
-                        <IntermediateEvent Trigger="Message" Implementation="WebService" Target="_18_5_1_11940316_1501091643345_974437_29344" Interrupting="true">
-                            <TriggerResultMessage CatchThrow="CATCH"/>
-                        </IntermediateEvent>
-                    </Event>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="224.0" YCoordinate="569.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_1_11940316_1501091743066_789329_29414" Name="" cbm:numberedProperty="3.2.17">
-                    <Event>
-                        <EndEvent Result="None" Implementation="Unspecified"/>
-                    </Event>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="469.0" YCoordinate="661.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_1_11940316_1501097645544_309409_30759" Name="Additional Materials Received" cbm:numberedProperty="3.2.18">
-                    <Event>
-                        <StartEvent Trigger="Message" Implementation="Unspecified" Interrupting="true">
-                            <TriggerResultMessage CatchThrow="CATCH"/>
-                        </StartEvent>
-                    </Event>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="819.0" YCoordinate="266.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_1_11940316_1501097779131_242989_30790" Name="Time to Receive Materials" cbm:numberedProperty="3.2.19">
-                    <Event>
-                        <StartEvent Trigger="Timer" Implementation="Unspecified" Interrupting="true"/>
-                    </Event>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" LaneId="_18_5_1_11940316_1501087220900_556057_28697" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="105.0" YCoordinate="489.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
@@ -520,23 +508,13 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
-                <Transition Id="_18_5_1_11940316_1501091243822_96058_29163" From="_18_5_1_11940316_1501091233307_331588_29152" To="_18_5_1_11940316_1501091643345_974437_29344" Name="">
+                <Transition Id="_18_5_1_11940316_1501091243822_96058_29163" From="_18_5_1_11940316_1501091233307_331588_29152" To="_19_0_2_8dd028c_1558006737346_730140_26870" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="129.0" YCoordinate="586.0"/>
                             <Coordinates XCoordinate="182.0" YCoordinate="586.0"/>
                             <Coordinates XCoordinate="182.0" YCoordinate="567.0"/>
                             <Coordinates XCoordinate="217.0" YCoordinate="567.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_1_11940316_1501091467402_358499_29275" From="_18_5_1_11940316_1501091703179_1710_29386" To="_18_5_1_11940316_1501091471632_664623_29297" Name="">
-                    <Condition Type="EXCEPTION"/>
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="249.0" YCoordinate="624.0"/>
-                            <Coordinates XCoordinate="249.0" YCoordinate="673.0"/>
-                            <Coordinates XCoordinate="301.0" YCoordinate="673.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
@@ -556,11 +534,11 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
-                <Transition Id="_18_5_1_11940316_1501097851037_438261_30806" From="_18_5_1_11940316_1501097779131_242989_30790" To="_18_5_1_11940316_1501091643345_974437_29344" Name="">
+                <Transition Id="_18_5_1_11940316_1501097851037_438261_30806" From="_18_5_1_11940316_1501097779131_242989_30790" To="_19_0_2_8dd028c_1558006737346_730140_26870" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="129.0" YCoordinate="501.0"/>
-                            <Coordinates XCoordinate="179.0" YCoordinate="501.0"/>
+                            <Coordinates XCoordinate="129.0" YCoordinate="505.0"/>
+                            <Coordinates XCoordinate="179.0" YCoordinate="505.0"/>
                             <Coordinates XCoordinate="179.0" YCoordinate="536.0"/>
                             <Coordinates XCoordinate="217.0" YCoordinate="536.0"/>
                         </ConnectorGraphicsInfo>
@@ -574,7 +552,7 @@ Provisionals may become part of unofficial count&lt;/body&gt;
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
-                <Transition Id="_18_5_1_11940316_1501526283396_450472_30322" From="_18_5_1_11940316_1501091643345_974437_29344" To="_18_5_1_11940316_1501087477828_94360_28773" Name="">
+                <Transition Id="_18_5_1_11940316_1501526283396_450472_30322" From="_19_0_2_8dd028c_1558006737346_730140_26870" To="_18_5_1_11940316_1501087477828_94360_28773" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1501086412358_104833_28167" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="337.0" YCoordinate="550.0"/>

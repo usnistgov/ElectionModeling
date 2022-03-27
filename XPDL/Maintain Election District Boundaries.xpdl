@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500469250821_521454_24760" Name="Maintain Election District Boundaries" cbm:numberedProperty="1.1.2">
+    <PackageHeader>
+        <XPDLVersion>2.2</XPDLVersion>
+        <Vendor>No Magic, Inc.</Vendor>
+        <Created>17-08-27T15:11:00</Created>
+        <ModificationDate>22-00-18T15:11:54</ModificationDate>
+        <Documentation>Maintain the boundaries of political districts where a contest may appear.
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+e.g. new municipality formed
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+Ensure that illegal overlaps / gaps in the same layer (e.g. cities, municipalities, representative district) are removed.&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+Could be a directory / ranges&amp;#160;
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+      If you do not reprecinct, you may get splits&amp;#160;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+Modern GIS systems will assist in the management of spatial rules
+
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</Documentation>
+        <LayoutInfo PixelsPerMillimeter="2.8346457"/>
+    </PackageHeader>
+    <RedefinableHeader>
+        <Author>john</Author>
+        <Version>1800</Version>
+        <Codepage>Cp1252</Codepage>
+        <Countrykey>US</Countrykey>
+    </RedefinableHeader>
+    <ConformanceClass GraphConformance="NON_BLOCKED" BPMNModelPortabilityConformance="SIMPLE"/>
+    <ExternalPackages>
+        <ExternalPackage href="mdel://_18_5_1_11940316_1500469242709_565708_24720?projectName=MagicDraw+Election+Model&amp;elementName=BPMN+Process+Maintain+Precinct+Boundaries&amp;metaType=Activity&amp;elementQName=Process+Container%3A%3APre+Election%3A%3AMaintain+Geographic+Data%3A%3AMaintain+Precinct+Boundaries" Id="_18_5_1_11940316_1500469242709_565708_24720" Name="Maintain Precinct Boundaries"/>
+        <ExternalPackage href="mdel://_18_5_1_11940316_1500469250821_521454_24760?projectName=MagicDraw+Election+Model&amp;elementName=BPMN+Process+Maintain+Election+District+Boundaries&amp;metaType=Activity&amp;elementQName=Process+Container%3A%3APre+Election%3A%3AMaintain+Geographic+Data%3A%3AMaintain+Election+District+Boundaries" Id="_18_5_1_11940316_1500469250821_521454_24760" Name="Maintain Election District Boundaries"/>
+    </ExternalPackages>
+    <Participants>
+        <Participant Id="_18_5_1_11940316_1498999818037_96552_21933" Name="Election Jurisdiction" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
+            <ParticipantType Type="RESOURCE"/>
+        </Participant>
+    </Participants>
+    <Pages>
+        <Page Name="Maintain Election District Boundaries" Id="_18_5_2_11940316_1506539492795_778914_38740" Height="332.0" Width="1648.0"/>
+    </Pages>
+    <Pools>
+        <Pool Id="_18_5_2_11940316_1506539500026_285154_38752" Name="Election Jurisdiction" Orientation="HORIZONTAL" Process="_18_5_2_11940316_1506539500026_285154_38752_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="332.0" Width="1648.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                    <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+    </Pools>
+    <Associations>
+        <Association Id="_18_5_2_11940316_1506539849538_497712_38804" Source="_18_5_2_11940316_1506539654802_952268_38766" Target="_18_5_2_11940316_1506539908564_90826_38811" AssociationDirection="None">
+            <Object Id="_19_0_4_43701b0_1648390436487_345179_26374"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="82.0" YCoordinate="126.0"/>
+                    <Coordinates XCoordinate="104.0" YCoordinate="75.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_18_5_2_11940316_1506541532430_142780_38912" Source="_18_5_2_11940316_1506541220882_12605_38873" Target="_18_5_2_11940316_1506541532550_911146_38913" AssociationDirection="None">
+            <Object Id="_19_0_4_43701b0_1648390436488_416628_26375"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="852.0" YCoordinate="154.0"/>
+                    <Coordinates XCoordinate="850.0" YCoordinate="119.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_18_5_2_11940316_1506987348726_34534_34146" Source="_18_5_2_11940316_1506541219094_753929_38856" Target="_18_5_2_11940316_1506987348833_601620_34147" AssociationDirection="None">
+            <Object Id="_19_0_4_43701b0_1648390436490_557128_26376"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="997.0" YCoordinate="189.0"/>
+                    <Coordinates XCoordinate="1041.0" YCoordinate="231.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+    </Associations>
+    <Artifacts>
+        <Artifact Id="_18_5_2_11940316_1506539908564_90826_38811" ArtifactType="Annotation" TextAnnotation="e.g. new municipality formed">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="63.0" YCoordinate="21.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_2_11940316_1506541532550_911146_38913" ArtifactType="Annotation" TextAnnotation="Ensure that illegal overlaps / gaps in the same layer (e.g. cities, municipalities, representative district) are removed. ">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="84.0" Width="168.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="763.0" YCoordinate="35.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_18_5_2_11940316_1506541813313_940702_38928" ArtifactType="Annotation" TextAnnotation="Could be a directory / ranges "/>
+        <Artifact Id="_18_5_2_11940316_1506542213486_675081_38984" ArtifactType="Annotation" TextAnnotation="If you do not reprecinct, you may get splits "/>
+        <Artifact Id="_18_5_2_11940316_1506976365607_312307_32561" Name="District Documentation" ArtifactType="DataObject">
+            <DataObject Id="_18_5_2_11940316_1506976365643_431849_32565" Name="District Documentation" cbm:realDataId="_18_5_2_11940316_1506976365607_312307_32561" cbm:numberedProperty="1.1.2.D 1">
+                <NodeGraphicsInfos>
+                    <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="57.0" Width="138.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                        <Coordinates XCoordinate="140.0" YCoordinate="41.0"/>
+                    </NodeGraphicsInfo>
+                </NodeGraphicsInfos>
+            </DataObject>
+        </Artifact>
+        <Artifact Id="_18_5_2_11940316_1506987348833_601620_34147" ArtifactType="Annotation" TextAnnotation="Modern GIS systems will assist in the management of spatial rules">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="69.0" Width="137.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="1008.0" YCoordinate="231.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+    </Artifacts>
+    <WorkflowProcesses>
+        <WorkflowProcess Id="_18_5_1_11940316_1500469242709_565708_24720" Name="Maintain Precinct Boundaries_wf">
+            <ProcessHeader/>
+        </WorkflowProcess>
+        <WorkflowProcess Id="_18_5_1_11940316_1500469250821_521454_24760" Name="Maintain Election District Boundaries_wf">
+            <ProcessHeader/>
+        </WorkflowProcess>
+        <WorkflowProcess Id="_18_5_2_11940316_1506539500026_285154_38752_proc" Name="Election Jurisdiction" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+            <ProcessHeader>
+                <Created>17-08-27T15:11:00</Created>
+            </ProcessHeader>
+            <Activities>
+                <Activity Id="_18_5_2_11940316_1506539654802_952268_38766" Name="New District Created" cbm:numberedProperty="1.1.2.1">
+                    <Event>
+                        <StartEvent Trigger="Signal" Implementation="Unspecified" Interrupting="true">
+                            <TriggerResultSignal CatchThrow="CATCH"/>
+                        </StartEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="70.0" YCoordinate="126.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1506539908564_164541_38810" IsForCompensation="false" Name="Determine district boundary" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.3">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <Documentation>Determine the geographic boundary of the district.</Documentation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="182.0" YCoordinate="154.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1506539912994_572015_38817" Name="District Changed" cbm:numberedProperty="1.1.2.2">
+                    <Event>
+                        <StartEvent Trigger="Signal" Implementation="Unspecified" Interrupting="true">
+                            <TriggerResultSignal CatchThrow="CATCH"/>
+                        </StartEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="70.0" YCoordinate="196.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1506541219094_753929_38856" Name="Spatial relationships validate?" cbm:numberedProperty="1.1.2.10">
+                    <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="Exclusive" ExclusiveType="Data">
+<TransitionRefs>
+    <TransitionRef Id="_18_5_2_43701b0_1513347562342_840134_30429"/>
+    <TransitionRef Id="_18_5_2_43701b0_1513351571439_585127_40782"/>
+</TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
+                            <Coordinates XCoordinate="967.0" YCoordinate="159.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1506541220882_12605_38873" IsForCompensation="false" Name="Validate spatial relationships" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.7">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <Documentation>Ensure that topographic and other business rules applied to the district validate successfully.</Documentation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="794.0" YCoordinate="154.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1506977428130_785693_32626" IsForCompensation="false" Name="Determine reprecincting requirement" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.8">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <Documentation>Determine if reprecincting must take place. This often occurs when redistricting causes district lines to cross existing precinct boundaries.</Documentation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="1077.0" YCoordinate="150.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1506979122150_608009_32658" Name="Reprecincting Required?" cbm:numberedProperty="1.1.2.14">
+                    <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="Exclusive" ExclusiveType="Data">
+<TransitionRefs>
+    <TransitionRef Id="_18_5_2_11940316_1507120805069_761262_29051"/>
+    <TransitionRef Id="_18_5_2_43701b0_1510667285920_156876_29480"/>
+</TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
+                            <Coordinates XCoordinate="1267.0" YCoordinate="159.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1507120587467_570581_29034" IsForCompensation="false" Name="Maintain precinct boundaries" Status="None" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.9">
+                    <Implementation>
+                        <SubFlow Id="_18_5_1_11940316_1500469242709_565708_24720" Name="Maintain Precinct Boundaries" Execution="SYNCHR" View="EXPANDED" PackageRef="_18_5_1_11940316_1500469242709_565708_24720">
+                            <EndPoint EndPointType="WSDL">
+<ExternalReference location="mdel://_18_5_1_11940316_1500469242709_565708_24720?projectName=MagicDraw+Election+Model&amp;elementName=BPMN+Process+Maintain+Precinct+Boundaries&amp;metaType=Activity&amp;elementQName=Process+Container%3A%3APre+Election%3A%3AMaintain+Geographic+Data%3A%3AMaintain+Precinct+Boundaries"/>
+                            </EndPoint>
+                        </SubFlow>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <Documentation>Call the Maintain Precinct Boundaries process.</Documentation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="93.0" Width="100.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="1377.0" YCoordinate="136.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1507120954052_71_29075" IsForCompensation="false" Name="Determine if other districts are affected" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.4">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <Documentation>Determine if other district boundaries should change as a result of the primary district change. This may include such things as shared services districts.</Documentation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="355.0" YCoordinate="150.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1507121304788_190999_29110" IsForCompensation="false" Name="Modify or draw new lines" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.6">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <Documentation>Modify existing district lines or draw new ones, as needed.</Documentation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="621.0" YCoordinate="154.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1507121773134_560394_29141" Name="Other Districts Affected?" cbm:numberedProperty="1.1.2.15">
+                    <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="Exclusive" ExclusiveType="Data">
+<TransitionRefs>
+    <TransitionRef Id="_18_5_2_11940316_1507121305664_492619_29123"/>
+    <TransitionRef Id="_18_5_2_11940316_1507121819985_683948_29235"/>
+</TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
+                            <Coordinates XCoordinate="528.0" YCoordinate="159.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1507121811086_869644_29218" IsForCompensation="false" Name="Maintain election district boundaries" Status="None" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.2.5">
+                    <Implementation>
+                        <SubFlow Id="_18_5_1_11940316_1500469250821_521454_24760" Name="Maintain Election District Boundaries" Execution="SYNCHR" View="EXPANDED" PackageRef="_18_5_1_11940316_1500469250821_521454_24760">
+                            <EndPoint EndPointType="WSDL">
+<ExternalReference location="mdel://_18_5_1_11940316_1500469250821_521454_24760?projectName=MagicDraw+Election+Model&amp;elementName=BPMN+Process+Maintain+Election+District+Boundaries&amp;metaType=Activity&amp;elementQName=Process+Container%3A%3APre+Election%3A%3AMaintain+Geographic+Data%3A%3AMaintain+Election+District+Boundaries"/>
+                            </EndPoint>
+                        </SubFlow>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <Documentation>Call the maintain election district boundaries process for each affected district.</Documentation>
+                    <Loop LoopType="MultiInstance">
+                        <LoopMultiInstance MI_Ordering="Parallel" MI_FlowCondition="All"/>
+                    </Loop>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="107.0" Width="100.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="631.0" YCoordinate="32.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_2_11940316_1507125168658_171577_29311" Name="District Boundaries Maintained" cbm:numberedProperty="1.1.2.16">
+                    <Event>
+                        <EndEvent Result="None" Implementation="Unspecified"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="1547.0" YCoordinate="166.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+            </Activities>
+            <DataObjects>
+                <DataObject Id="_18_5_2_11940316_1507121830094_695884_29248" Name="Affected Districts" cbm:realDataId="_18_5_2_11940316_1507121830081_515484_29244" cbm:numberedProperty="1.1.2.D 2">
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" Height="57.0" Width="109.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="361.0" YCoordinate="21.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </DataObject>
+            </DataObjects>
+            <Transitions>
+                <Transition Id="_18_5_2_11940316_1506539672067_660984_38777" From="_18_5_2_11940316_1506539654802_952268_38766" To="_18_5_2_11940316_1506539908564_164541_38810" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="94.0" YCoordinate="138.0"/>
+                            <Coordinates XCoordinate="137.0" YCoordinate="138.0"/>
+                            <Coordinates XCoordinate="137.0" YCoordinate="165.0"/>
+                            <Coordinates XCoordinate="182.0" YCoordinate="165.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_11940316_1506540613459_974171_38828" From="_18_5_2_11940316_1506539912994_572015_38817" To="_18_5_2_11940316_1506539908564_164541_38810" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="82.0" YCoordinate="196.0"/>
+                            <Coordinates XCoordinate="82.0" YCoordinate="186.0"/>
+                            <Coordinates XCoordinate="182.0" YCoordinate="186.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_11940316_1506541127525_605198_38837" From="_18_5_2_11940316_1507121304788_190999_29110" To="_18_5_2_11940316_1506541220882_12605_38873" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="741.0" YCoordinate="179.0"/>
+                            <Coordinates XCoordinate="794.0" YCoordinate="179.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_11940316_1506979123101_691658_32665" From="_18_5_2_11940316_1506977428130_785693_32626" To="_18_5_2_11940316_1506979122150_608009_32658" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="1197.0" YCoordinate="179.0"/>
+                            <Coordinates XCoordinate="1267.0" YCoordinate="179.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_11940316_1507120805069_761262_29051" From="_18_5_2_11940316_1506979122150_608009_32658" To="_18_5_2_11940316_1507120587467_570581_29034" Name="">
+                    <Condition Type="CONDITION">
+                        <Expression>Yes</Expression>
+                    </Condition>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="1307.0" YCoordinate="179.0"/>
+                            <Coordinates XCoordinate="1377.0" YCoordinate="179.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_11940316_1507120954911_219255_29088" From="_18_5_2_11940316_1506539908564_164541_38810" To="_18_5_2_11940316_1507120954052_71_29075" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="302.0" YCoordinate="179.0"/>
+                            <Coordinates XCoordinate="355.0" YCoordinate="179.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_11940316_1507121305664_492619_29123" From="_18_5_2_11940316_1507121773134_560394_29141" To="_18_5_2_11940316_1507121304788_190999_29110" Name="">
+                    <Condition Type="CONDITION">
+                        <Expression>No</Expression>
+                    </Condition>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="568.0" YCoordinate="179.0"/>
+                            <Coordinates XCoordinate="621.0" YCoordinate="179.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_11940316_1507121774233_720300_29148" From="_18_5_2_11940316_1507120954052_71_29075" To="_18_5_2_11940316_1507121773134_560394_29141" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="475.0" YCoordinate="179.0"/>
+                            <Coordinates XCoordinate="528.0" YCoordinate="179.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_11940316_1507121819985_683948_29235" From="_18_5_2_11940316_1507121773134_560394_29141" To="_18_5_2_11940316_1507121811086_869644_29218" Name="">
+                    <Condition Type="CONDITION">
+                        <Expression>Yes</Expression>
+                    </Condition>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="548.0" YCoordinate="159.0"/>
+                            <Coordinates XCoordinate="548.0" YCoordinate="91.0"/>
+                            <Coordinates XCoordinate="631.0" YCoordinate="91.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_11940316_1507121910886_507729_29289" From="_18_5_2_11940316_1507121811086_869644_29218" To="_18_5_2_11940316_1507121304788_190999_29110" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="683.0" YCoordinate="139.0"/>
+                            <Coordinates XCoordinate="683.0" YCoordinate="154.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_11940316_1507125165542_731270_29301" From="_18_5_2_11940316_1507120587467_570581_29034" To="_18_5_2_11940316_1507125168658_171577_29311" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="1477.0" YCoordinate="178.0"/>
+                            <Coordinates XCoordinate="1547.0" YCoordinate="178.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_43701b0_1510667285920_156876_29480" From="_18_5_2_11940316_1506979122150_608009_32658" To="_18_5_2_11940316_1507125168658_171577_29311" Name="">
+                    <Condition Type="CONDITION">
+                        <Expression>No</Expression>
+                    </Condition>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="1287.0" YCoordinate="159.0"/>
+                            <Coordinates XCoordinate="1287.0" YCoordinate="119.0"/>
+                            <Coordinates XCoordinate="1559.0" YCoordinate="119.0"/>
+                            <Coordinates XCoordinate="1559.0" YCoordinate="166.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_43701b0_1513347562342_840134_30429" From="_18_5_2_11940316_1506541219094_753929_38856" To="_18_5_2_11940316_1507121304788_190999_29110" Name="">
+                    <Condition Type="CONDITION">
+                        <Expression>No</Expression>
+                    </Condition>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="988.0" YCoordinate="198.0"/>
+                            <Coordinates XCoordinate="988.0" YCoordinate="224.0"/>
+                            <Coordinates XCoordinate="681.0" YCoordinate="224.0"/>
+                            <Coordinates XCoordinate="681.0" YCoordinate="204.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_43701b0_1513347819573_657749_30436" From="_18_5_2_11940316_1506541220882_12605_38873" To="_18_5_2_11940316_1506541219094_753929_38856" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="914.0" YCoordinate="179.0"/>
+                            <Coordinates XCoordinate="967.0" YCoordinate="179.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_2_43701b0_1513351571439_585127_40782" From="_18_5_2_11940316_1506541219094_753929_38856" To="_18_5_2_11940316_1506977428130_785693_32626" Name="">
+                    <Condition Type="CONDITION">
+                        <Expression>Yes</Expression>
+                    </Condition>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="1007.0" YCoordinate="179.0"/>
+                            <Coordinates XCoordinate="1077.0" YCoordinate="179.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+            </Transitions>
+            <DataAssociations>
+                <DataAssociation Id="_18_5_2_11940316_1506976386318_70466_32585" Name="" From="_18_5_2_11940316_1506976365643_431849_32565" To="_18_5_2_11940316_1506539908564_164541_38810">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="210.0" YCoordinate="92.0"/>
+                            <Coordinates XCoordinate="210.0" YCoordinate="154.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+                <DataAssociation Id="_18_5_2_11940316_1507121837044_640227_29268" Name="" From="_18_5_2_11940316_1507121830094_695884_29248" To="_18_5_2_11940316_1507121811086_869644_29218">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="464.0" YCoordinate="56.0"/>
+                            <Coordinates XCoordinate="631.0" YCoordinate="56.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+                <DataAssociation Id="_18_5_2_11940316_1507121840023_623235_29277" Name="" From="_18_5_2_11940316_1507120954052_71_29075" To="_18_5_2_11940316_1507121830094_695884_29248">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506539492795_778914_38740" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="413.0" YCoordinate="150.0"/>
+                            <Coordinates XCoordinate="413.0" YCoordinate="72.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+            </DataAssociations>
+        </WorkflowProcess>
+    </WorkflowProcesses>
+</Package>

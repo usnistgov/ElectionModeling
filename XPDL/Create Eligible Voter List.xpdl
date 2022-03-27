@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-09-02T13:06:00</Created>
-        <ModificationDate>17-11-27T17:32:10</ModificationDate>
+        <ModificationDate>22-00-18T15:11:54</ModificationDate>
         <Documentation>Derive the list of eligible voters from the voter registration database.
 &lt;html&gt;
   &lt;head&gt;
@@ -66,7 +66,7 @@ Factors such as Residency duration, age, citizen,&amp;#160;court action, living
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1519</Version>
+        <Version>1800</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -95,7 +95,7 @@ Factors such as Residency duration, age, citizen,&amp;#160;court action, living
     </Pools>
     <Associations>
         <Association Id="_18_5_2_11940316_1506966483924_918744_32458" Source="_18_5_2_11940316_1506966469819_640913_32450" Target="_18_5_2_11940316_1506967096329_193479_32464" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414073863_445773_33689"/>
+            <Object Id="_19_0_4_43701b0_1648390443303_689672_26381"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="634.0" YCoordinate="218.0"/>
@@ -104,7 +104,7 @@ Factors such as Residency duration, age, citizen,&amp;#160;court action, living
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1509375802536_638733_39164" Source="_18_5_2_11940316_1506965219689_500828_32220" Target="_18_5_2_43701b0_1509375802596_50579_39165" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414073863_484989_33690"/>
+            <Object Id="_19_0_4_43701b0_1648390443303_243724_26382"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="75.0" YCoordinate="175.0"/>
@@ -113,7 +113,7 @@ Factors such as Residency duration, age, citizen,&amp;#160;court action, living
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1509381462406_834720_39278" Source="_18_5_2_11940316_1506965234095_660900_32265" Target="_18_5_2_43701b0_1509381462444_82992_39279" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414073864_801049_33691"/>
+            <Object Id="_19_0_4_43701b0_1648390443304_272242_26383"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="186.0" YCoordinate="101.0"/>
@@ -122,7 +122,7 @@ Factors such as Residency duration, age, citizen,&amp;#160;court action, living
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1509381500689_691857_39288" Source="_18_5_2_43701b0_1509381656951_263386_39312" Target="_18_5_2_43701b0_1509381500737_874479_39289" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414073864_60299_33692"/>
+            <Object Id="_19_0_4_43701b0_1648390443304_406486_26384"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="417.0" YCoordinate="218.0"/>
@@ -131,7 +131,7 @@ Factors such as Residency duration, age, citizen,&amp;#160;court action, living
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_43701b0_1512415208112_710111_32003" Source="_18_5_2_43701b0_1509382020579_851726_39423" Target="_18_5_2_43701b0_1512415208156_498390_32004" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414073865_478509_33693"/>
+            <Object Id="_19_0_4_43701b0_1648390443305_612251_26385"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="257.0" YCoordinate="468.0"/>
@@ -190,7 +190,7 @@ Factors such as Residency duration, age, citizen,&amp;#160;court action, living
             <ActivitySets>
                 <ActivitySet Id="_18_5_2_43701b0_1509381982106_319351_39387" Name="Process Eligibility Event_as" AdHoc="false" TriggeredByEvent="true">
                     <Activities>
-                        <Activity Id="_18_5_2_43701b0_1509382020579_851726_39423" Name="Voter Eligibility Event" cbm:numberedProperty="1.5.4.PR7.1">
+                        <Activity Id="_18_5_2_43701b0_1509382020579_851726_39423" Name="Voter Eligibility Event" cbm:numberedProperty="1.5.4.7.1">
                             <Event>
 <StartEvent Trigger="Multiple" Implementation="Unspecified" Interrupting="true">
     <TriggerMultiple>
@@ -206,7 +206,7 @@ Factors such as Residency duration, age, citizen,&amp;#160;court action, living
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_43701b0_1512413715436_184935_31859" Name="Decision" cbm:numberedProperty="1.5.4.PR7.2">
+                        <Activity Id="_18_5_2_43701b0_1512413715436_184935_31859" Name="Decision" cbm:numberedProperty="1.5.4.7.2">
                             <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                             <TransitionRestrictions>
 <TransitionRestriction>
@@ -224,7 +224,7 @@ Factors such as Residency duration, age, citizen,&amp;#160;court action, living
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_43701b0_1512413726665_158724_31884" IsForCompensation="false" Name="Add or update election specific eligible voter list" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.PR7.3">
+                        <Activity Id="_18_5_2_43701b0_1512413726665_158724_31884" IsForCompensation="false" Name="Add or update election specific eligible voter list" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.7.3">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -237,7 +237,7 @@ Factors such as Residency duration, age, citizen,&amp;#160;court action, living
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_43701b0_1512413784956_426080_31916" IsForCompensation="false" Name="Remove from election specific eligible voter list" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.PR7.4">
+                        <Activity Id="_18_5_2_43701b0_1512413784956_426080_31916" IsForCompensation="false" Name="Remove from election specific eligible voter list" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.7.4">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -250,7 +250,7 @@ Factors such as Residency duration, age, citizen,&amp;#160;court action, living
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_43701b0_1512413893773_666379_31956" Name="Event processed" cbm:numberedProperty="1.5.4.PR7.5">
+                        <Activity Id="_18_5_2_43701b0_1512413893773_666379_31956" Name="Event processed" cbm:numberedProperty="1.5.4.7.5">
                             <Event>
 <EndEvent Result="None" Implementation="Unspecified"/>
                             </Event>
@@ -314,7 +314,7 @@ Factors such as Residency duration, age, citizen,&amp;#160;court action, living
                 </ActivitySet>
             </ActivitySets>
             <Activities>
-                <Activity Id="_18_5_2_11940316_1506965219689_500828_32220" Name="Time to run list" cbm:numberedProperty="1.5.4.PR1">
+                <Activity Id="_18_5_2_11940316_1506965219689_500828_32220" Name="Time to run list" cbm:numberedProperty="1.5.4.1">
                     <Event>
                         <StartEvent Trigger="Timer" Implementation="Unspecified" Interrupting="true"/>
                     </Event>
@@ -324,7 +324,7 @@ Factors such as Residency duration, age, citizen,&amp;#160;court action, living
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1506966469819_640913_32450" IsForCompensation="false" Name="Calculate notations" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.PR4">
+                <Activity Id="_18_5_2_11940316_1506966469819_640913_32450" IsForCompensation="false" Name="Calculate notations" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.4">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -338,7 +338,7 @@ Factors such as Residency duration, age, citizen,&amp;#160;court action, living
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1509375875579_743150_39187" Name="Election Specific Eligible Voter List Created" cbm:numberedProperty="1.5.4.PR6">
+                <Activity Id="_18_5_2_43701b0_1509375875579_743150_39187" Name="Election Specific Eligible Voter List Created" cbm:numberedProperty="1.5.4.6">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -348,7 +348,7 @@ Factors such as Residency duration, age, citizen,&amp;#160;court action, living
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1509381359224_482625_39252" IsForCompensation="false" Name="Get voters in activated precincts" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.PR2">
+                <Activity Id="_18_5_2_43701b0_1509381359224_482625_39252" IsForCompensation="false" Name="Get voters in activated precincts" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.2">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -362,7 +362,7 @@ Factors such as Residency duration, age, citizen,&amp;#160;court action, living
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1509381656951_263386_39312" IsForCompensation="false" Name="Filter voter list" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.PR3">
+                <Activity Id="_18_5_2_43701b0_1509381656951_263386_39312" IsForCompensation="false" Name="Filter voter list" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.4.3">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -376,7 +376,7 @@ Factors such as Residency duration, age, citizen,&amp;#160;court action, living
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1509381982129_485991_39399" IsForCompensation="false" Name="Process Eligibility Event" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.5.4.PR7">
+                <Activity Id="_18_5_2_43701b0_1509381982129_485991_39399" IsForCompensation="false" Name="Process Eligibility Event" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.5.4.7">
                     <BlockActivity ActivitySetId="_18_5_2_43701b0_1509381982106_319351_39387" View="EXPANDED"/>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
@@ -388,7 +388,7 @@ Factors such as Residency duration, age, citizen,&amp;#160;court action, living
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1512414068491_731892_31977" Name="List Finalized" cbm:numberedProperty="1.5.4.PR5">
+                <Activity Id="_18_5_2_43701b0_1512414068491_731892_31977" Name="List Finalized" cbm:numberedProperty="1.5.4.5">
                     <Event>
                         <IntermediateEvent Trigger="Signal" Implementation="WebService" Interrupting="true">
                             <TriggerResultSignal CatchThrow="CATCH"/>
@@ -445,7 +445,7 @@ Factors such as Residency duration, age, citizen,&amp;#160;court action, living
                 <Transition Id="_18_5_2_43701b0_1509375873198_13879_39176" From="_18_5_2_43701b0_1512414068491_731892_31977" To="_18_5_2_43701b0_1509375875579_743150_39187" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="795.0" YCoordinate="189.0"/>
+                            <Coordinates XCoordinate="812.0" YCoordinate="189.0"/>
                             <Coordinates XCoordinate="896.0" YCoordinate="189.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
@@ -470,7 +470,7 @@ Factors such as Residency duration, age, citizen,&amp;#160;court action, living
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_11940316_1506963974232_268650_32105" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="694.0" YCoordinate="189.0"/>
-                            <Coordinates XCoordinate="777.0" YCoordinate="189.0"/>
+                            <Coordinates XCoordinate="761.0" YCoordinate="189.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>

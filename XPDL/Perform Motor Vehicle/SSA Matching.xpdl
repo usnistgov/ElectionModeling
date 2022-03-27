@@ -4,15 +4,13 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-11-11T16:58:00</Created>
-        <ModificationDate>17-11-27T17:32:10</ModificationDate>
-        <Documentation>Try to match the voter's record against information on file with the motor vehicle authority and Social Security Administration.
-What about dead people?
-Is this always a confirmation notice</Documentation>
+        <ModificationDate>22-00-18T15:11:54</ModificationDate>
+        <Documentation>Try to match the voter's record against information on file with the motor vehicle authority and Social Security Administration.</Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1519</Version>
+        <Version>1800</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -45,7 +43,7 @@ Is this always a confirmation notice</Documentation>
         </Pool>
     </Pools>
     <MessageFlows>
-        <MessageFlow Id="_18_5_2_43701b0_1513030961118_529321_41656" Name="" Source="_18_5_2_43701b0_1513030804284_860334_41315" Target="_18_5_2_43701b0_1513030944799_162272_41641">
+        <MessageFlow Id="_19_0_2_8dd028c_1558006737907_953471_27096" Name="" Source="_18_5_2_43701b0_1513030804284_860334_41315" Target="_18_5_2_43701b0_1513030944799_162272_41641">
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="224.0" YCoordinate="231.0"/>
@@ -53,7 +51,7 @@ Is this always a confirmation notice</Documentation>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
-        <MessageFlow Id="_18_5_2_43701b0_1513030967487_569662_41662" Name="" Source="_18_5_2_43701b0_1513030944799_162272_41641" Target="_18_5_2_43701b0_1513030961117_225427_41655">
+        <MessageFlow Id="_19_0_2_8dd028c_1558006737680_73742_27015" Name="" Source="_18_5_2_43701b0_1513030944799_162272_41641" Target="_18_5_2_43701b0_1513030961117_225427_41655">
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="375.0" YCoordinate="147.0"/>
@@ -61,35 +59,21 @@ Is this always a confirmation notice</Documentation>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
-    </MessageFlows>
-    <Associations>
-        <Association Id="_18_5_2_43701b0_1513034611645_557204_41918" Source="_18_5_2_43701b0_1513034601052_499302_41905" Target="_18_5_2_43701b0_1513032696102_753153_41737" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414085109_353169_33706"/>
+        <MessageFlow Id="_19_0_2_8dd028c_1558006737876_958642_27074" Name="" Source="_18_5_2_43701b0_1513032696102_753153_41737" Target="_18_5_2_43701b0_1513030944799_162272_41641">
             <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="492.0" YCoordinate="387.0"/>
-                    <Coordinates XCoordinate="556.0" YCoordinate="371.0"/>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" BorderColor="#424242" FillColor="#FFFFCC">
+                    <Coordinates XCoordinate="676.0" YCoordinate="329.0"/>
+                    <Coordinates XCoordinate="676.0" YCoordinate="147.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
-        </Association>
-    </Associations>
-    <Artifacts>
-        <Artifact Id="_18_5_2_43701b0_1513034583489_611465_41886" ArtifactType="Annotation" TextAnnotation="What about dead people?">
-            <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="40.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="287.0" YCoordinate="343.0"/>
-                </NodeGraphicsInfo>
-            </NodeGraphicsInfos>
-        </Artifact>
-        <Artifact Id="_18_5_2_43701b0_1513034601052_499302_41905" ArtifactType="Annotation" TextAnnotation="Is this always a confirmation notice">
-            <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="45.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="392.0" YCoordinate="378.0"/>
-                </NodeGraphicsInfo>
-            </NodeGraphicsInfos>
-        </Artifact>
-    </Artifacts>
+        </MessageFlow>
+    </MessageFlows>
     <WorkflowProcesses>
+        <WorkflowProcess Id="_18_5_2_43701b0_1513029519897_500221_41180" Name="Perform Motor Vehicle/SSA Matching" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+            <ProcessHeader>
+                <Created>17-11-11T16:58:00</Created>
+            </ProcessHeader>
+        </WorkflowProcess>
         <WorkflowProcess Id="_18_5_2_43701b0_1513029606406_392407_41202_proc" Name="Election Jurisdiction" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
             <ProcessHeader>
                 <Created>17-11-11T16:58:00</Created>
@@ -105,20 +89,21 @@ Is this always a confirmation notice</Documentation>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1513030804284_860334_41315" IsForCompensation="false" Name="Send registration data to motor vehicle authority" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.2.M9.3">
+                <Activity Id="_18_5_2_43701b0_1513030804284_860334_41315" IsForCompensation="false" Name="Send registration data to motor vehicle authority" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.2.M9.2">
                     <Implementation>
                         <No/>
                     </Implementation>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>Identifying information such as name, date of birth, drivers license, social security number is sent to the motor vehicle authority.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="168.0" YCoordinate="231.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1513030961117_225427_41655" Name="Recieve response" cbm:numberedProperty="1.2.M9.4">
+                <Activity Id="_18_5_2_43701b0_1513030961117_225427_41655" Name="Recieve response" cbm:numberedProperty="1.2.M9.3">
                     <Event>
                         <IntermediateEvent Trigger="Message" Implementation="WebService" Interrupting="true">
                             <TriggerResultMessage CatchThrow="CATCH"/>
@@ -130,7 +115,7 @@ Is this always a confirmation notice</Documentation>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1513031045998_410295_41685" Name="Match?" cbm:numberedProperty="1.2.M9.5">
+                <Activity Id="_18_5_2_43701b0_1513031045998_410295_41685" Name="Match?" cbm:numberedProperty="1.2.M9.4">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -148,7 +133,7 @@ Is this always a confirmation notice</Documentation>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1513031062437_5828_41702" Name="Record matches" cbm:numberedProperty="1.2.M9.6">
+                <Activity Id="_18_5_2_43701b0_1513031062437_5828_41702" Name="Record matches" cbm:numberedProperty="1.2.M9.5">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -158,20 +143,21 @@ Is this always a confirmation notice</Documentation>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1513032696102_753153_41737" IsForCompensation="false" Name="Follow up with voter" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.2.M9.7">
+                <Activity Id="_18_5_2_43701b0_1513032696102_753153_41737" IsForCompensation="false" Name="Follow up with voter" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.2.M9.6">
                     <Implementation>
                         <No/>
                     </Implementation>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>Contact the voter regarding the non-match.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="50.0" Width="131.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="556.0" YCoordinate="329.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1513032797830_966842_41756" Name="No response" cbm:numberedProperty="1.2.M9.8">
+                <Activity Id="_18_5_2_43701b0_1513032797830_966842_41756" Name="No response" cbm:numberedProperty="1.2.M9.7">
                     <Event>
                         <IntermediateEvent Trigger="Timer" Implementation="WebService" Target="_18_5_2_43701b0_1513032696102_753153_41737" Interrupting="true"/>
                     </Event>
@@ -181,7 +167,7 @@ Is this always a confirmation notice</Documentation>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1513033211101_303235_41788" Name="Correction needed?" cbm:numberedProperty="1.2.M9.9">
+                <Activity Id="_18_5_2_43701b0_1513033211101_303235_41788" Name="Correction needed?" cbm:numberedProperty="1.2.M9.8">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -199,20 +185,21 @@ Is this always a confirmation notice</Documentation>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1513033237444_555045_41811" IsForCompensation="false" Name="Make correction" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.2.M9.10">
+                <Activity Id="_18_5_2_43701b0_1513033237444_555045_41811" IsForCompensation="false" Name="Make correction" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.2.M9.9">
                     <Implementation>
                         <No/>
                     </Implementation>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
+                    <Documentation>If non-match is due to a typographic or other error, the voter record is corrected.</Documentation>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="716.0" YCoordinate="232.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1513033265830_310450_41834" Name="No change made" cbm:numberedProperty="1.2.M9.11">
+                <Activity Id="_18_5_2_43701b0_1513033265830_310450_41834" Name="No change made" cbm:numberedProperty="1.2.M9.10">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -222,7 +209,7 @@ Is this always a confirmation notice</Documentation>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1513033275750_705441_41851" Name="Record corrected" cbm:numberedProperty="1.2.M9.12">
+                <Activity Id="_18_5_2_43701b0_1513033275750_705441_41851" Name="Record corrected" cbm:numberedProperty="1.2.M9.11">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -246,14 +233,14 @@ Is this always a confirmation notice</Documentation>
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" BorderColor="#424242" FillColor="#FFFFCC">
                             <Coordinates XCoordinate="288.0" YCoordinate="259.0"/>
-                            <Coordinates XCoordinate="361.0" YCoordinate="259.0"/>
+                            <Coordinates XCoordinate="348.0" YCoordinate="259.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
                 <Transition Id="_18_5_2_43701b0_1513031039181_900764_41670" From="_18_5_2_43701b0_1513030961117_225427_41655" To="_18_5_2_43701b0_1513031045998_410295_41685" Name="">
                     <ConnectorGraphicsInfos>
                         <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_2_43701b0_1513029519928_751160_41190" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="385.0" YCoordinate="259.0"/>
+                            <Coordinates XCoordinate="398.0" YCoordinate="259.0"/>
                             <Coordinates XCoordinate="476.0" YCoordinate="259.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>

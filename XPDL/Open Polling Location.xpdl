@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T00:59:00</Created>
-        <ModificationDate>17-11-27T17:32:10</ModificationDate>
+        <ModificationDate>22-00-18T15:11:54</ModificationDate>
         <Documentation>Open the polling location so that voters may begin voting.
 &lt;html&gt;
   &lt;head&gt;
@@ -26,7 +26,7 @@
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1519</Version>
+        <Version>1800</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -59,7 +59,7 @@
             <ActivitySets>
                 <ActivitySet Id="_18_5_1_11940316_1500484413699_537853_30144" Name="Setup activities_as" AdHoc="true" AdHocOrdering="Parallel" AdHocCompletionCondition="Applicable tasks completed" TriggeredByEvent="false">
                     <Activities>
-                        <Activity Id="_18_5_1_11940316_1500484521072_906407_30203" IsForCompensation="false" Name="Setup e-poll books" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.1.20.1">
+                        <Activity Id="_18_5_1_11940316_1500484521072_906407_30203" IsForCompensation="false" Name="Setup e-poll books" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.1.4.1">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -74,7 +74,7 @@
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1500484547548_385538_30233" IsForCompensation="false" Name="Set up voting devices" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.1.20.2">
+                        <Activity Id="_18_5_1_11940316_1500484547548_385538_30233" IsForCompensation="false" Name="Set up voting devices" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.1.4.2">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -92,7 +92,7 @@
                 </ActivitySet>
                 <ActivitySet Id="_18_5_2_43701b0_1510172628594_934116_31588" Name="Check equipment_as" AdHoc="true" AdHocOrdering="Parallel" TriggeredByEvent="false">
                     <Activities>
-                        <Activity Id="_18_5_2_43701b0_1510172316089_173368_31516" IsForCompensation="false" Name="Validate no ballots cast" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.1.24.1">
+                        <Activity Id="_18_5_2_43701b0_1510172316089_173368_31516" IsForCompensation="false" Name="Validate no ballots cast" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.1.6.1">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -106,7 +106,7 @@
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_43701b0_1510172414108_532627_31558" IsForCompensation="false" Name="Ensure equipment integrity " StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.1.24.2">
+                        <Activity Id="_18_5_2_43701b0_1510172414108_532627_31558" IsForCompensation="false" Name="Ensure equipment integrity " StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.1.6.2">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -124,7 +124,7 @@
                 </ActivitySet>
                 <ActivitySet Id="_18_5_2_43701b0_1511354729579_921455_29818" Name="Handle Problem_as" AdHoc="false" TriggeredByEvent="true">
                     <Activities>
-                        <Activity Id="_18_5_1_11940316_1500484221597_25567_30058" IsForCompensation="false" Name="Contact election jurisdiction to resolve" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.1.25.1">
+                        <Activity Id="_18_5_1_11940316_1500484221597_25567_30058" IsForCompensation="false" Name="Contact election jurisdiction to resolve" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.1.8.2">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -138,7 +138,7 @@
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_1_11940316_1500486494776_209980_30332" Name="Problem Handled" cbm:numberedProperty="2.1.1.25.2">
+                        <Activity Id="_18_5_1_11940316_1500486494776_209980_30332" Name="Problem Handled" cbm:numberedProperty="2.1.1.8.3">
                             <Event>
 <EndEvent Result="None" Implementation="Unspecified"/>
                             </Event>
@@ -148,7 +148,7 @@
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_43701b0_1511355729448_473112_29966" Name="Problem discovered" cbm:numberedProperty="2.1.1.25.4">
+                        <Activity Id="_18_5_2_43701b0_1511355729448_473112_29966" Name="Problem discovered" cbm:numberedProperty="2.1.1.8.1">
                             <Event>
 <StartEvent Trigger="Error" Implementation="Unspecified"/>
                             </Event>
@@ -180,7 +180,7 @@
                 </ActivitySet>
             </ActivitySets>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1500483922301_302222_29938" IsForCompensation="false" Name="Access polling location facility" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.1.17">
+                <Activity Id="_18_5_1_11940316_1500483922301_302222_29938" IsForCompensation="false" Name="Access polling location facility" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.1.2">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -194,7 +194,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500483929309_601726_29977" IsForCompensation="false" Name="Inventory equipment and materials" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.1.18">
+                <Activity Id="_18_5_1_11940316_1500483929309_601726_29977" IsForCompensation="false" Name="Inventory equipment and materials" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.1.3">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -208,7 +208,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500484369987_671043_30123" IsForCompensation="false" Name="Set up voting stations, materials, and signage" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.1.19">
+                <Activity Id="_18_5_1_11940316_1500484369987_671043_30123" IsForCompensation="false" Name="Set up voting stations, materials, and signage" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.1.4">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -222,7 +222,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500484413782_994796_30160" IsForCompensation="false" Name="Setup activities" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="2.1.1.20">
+                <Activity Id="_18_5_1_11940316_1500484413782_994796_30160" IsForCompensation="false" Name="Setup activities" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="2.1.1.5">
                     <BlockActivity ActivitySetId="_18_5_1_11940316_1500484413699_537853_30144" View="EXPANDED"/>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
@@ -234,7 +234,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500486684785_530625_30384" Name="Time to arrive at polling location" cbm:numberedProperty="2.1.1.13">
+                <Activity Id="_18_5_1_11940316_1500486684785_530625_30384" Name="Time to arrive at polling location" cbm:numberedProperty="2.1.1.1">
                     <Event>
                         <StartEvent Trigger="Timer" Implementation="Unspecified" Interrupting="true"/>
                     </Event>
@@ -244,7 +244,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500486840787_263215_30499" Name="Polling Location Opened" cbm:numberedProperty="2.1.1.16">
+                <Activity Id="_18_5_1_11940316_1500486840787_263215_30499" Name="Polling Location Opened" cbm:numberedProperty="2.1.1.9">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -254,7 +254,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1510172052537_474901_31470" Name="Time to Open Polling Location" cbm:numberedProperty="2.1.1.23">
+                <Activity Id="_18_5_2_43701b0_1510172052537_474901_31470" Name="Time to Open Polling Location" cbm:numberedProperty="2.1.1.7">
                     <Event>
                         <IntermediateEvent Trigger="Timer" Implementation="WebService" Interrupting="true"/>
                     </Event>
@@ -264,7 +264,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1510172629825_277376_31599" IsForCompensation="false" Name="Check equipment" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="2.1.1.24">
+                <Activity Id="_18_5_2_43701b0_1510172629825_277376_31599" IsForCompensation="false" Name="Check equipment" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="2.1.1.6">
                     <BlockActivity ActivitySetId="_18_5_2_43701b0_1510172628594_934116_31588" View="EXPANDED"/>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
@@ -276,7 +276,7 @@
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_43701b0_1511354729615_590413_29828" IsForCompensation="false" Name="Handle Problem" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="2.1.1.25">
+                <Activity Id="_18_5_2_43701b0_1511354729615_590413_29828" IsForCompensation="false" Name="Handle Problem" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="2.1.1.8">
                     <BlockActivity ActivitySetId="_18_5_2_43701b0_1511354729579_921455_29818" View="EXPANDED"/>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>

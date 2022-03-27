@@ -1,161 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_1_11940316_1500466974661_508354_23709" Name="Vote and Submit Ballot" cbm:numberedProperty="2.1.2">
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_3_43701b0_1515522778944_77627_32399" Name="Vote and Submit Ballot" cbm:numberedProperty="2.1.2">
     <PackageHeader>
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
-        <Created>17-06-19T14:10:00</Created>
-        <ModificationDate>17-11-27T17:32:10</ModificationDate>
-        <Documentation>A process describing in person voting.
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;style type="text/css"&gt;
-      &lt;!--
-        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
-      --&gt;
-    &lt;/style&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-      What about states w/o VR?&amp;#160;
-    &lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;style type="text/css"&gt;
-      &lt;!--
-        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
-      --&gt;
-    &lt;/style&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-      This is somewhat unclear. Need to distinguish SDR from others.&amp;#160;
-    &lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-
-&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-I used returned here instead of voted because the voter may have made no selections (blank ballot)&amp;#160;
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-This could be occur because the voter already voted an absentee ballot. Some jurisdictions may allow the cancellation of the absentee.&amp;#160;
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-They may be able to vote provisionally.&amp;#160;
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;style type="text/css"&gt;
-      &lt;!--
-        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
-      --&gt;
-    &lt;/style&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-      This may break down if voters are allowed to vote a regular ballot and 
-      the absentee is canceled automatically&amp;#160;
-    &lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-
+        <Created>18-00-09T13:33:00</Created>
+        <ModificationDate>22-00-18T15:11:54</ModificationDate>
+        <Documentation>Models the end-to-end in-person voting process.
 NVRA only?
-Outcomes:
-Registered moved inside precinct / Registered name change / Party change
-&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-Need to route outcomes (failure)?&amp;#160;
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;style type="text/css"&gt;
-      &lt;!--
-        p { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px }
-      --&gt;
-    &lt;/style&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-      NVRA only?&amp;#160;
-    &lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-
-&lt;html&gt;
-  &lt;head&gt;
-		&lt;style&gt;
-			p {padding:0px; margin:0px;}
-		&lt;/style&gt;
-	&lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;
-E.g. Poll watcher,&amp;#160;Poll worker
-
-    &lt;/p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;</Documentation>
+I used returned here instead of voted because the voter may have made no selections (blank ballot) 
+NVRA only? </Documentation>
         <LayoutInfo PixelsPerMillimeter="2.8346457"/>
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1519</Version>
+        <Version>1800</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
     <ConformanceClass GraphConformance="NON_BLOCKED" BPMNModelPortabilityConformance="SIMPLE"/>
     <ExternalPackages>
-        <ExternalPackage href="mdel://_18_5_1_11940316_1498140978087_930388_20553?projectName=MagicDraw+Election+Model&amp;elementName=BPMN+Process+Register+Voter&amp;metaType=Activity&amp;elementQName=Process+Container%3A%3APre+Election%3A%3AManage+Voters%3A%3ARegister+Voter" Id="_18_5_1_11940316_1498140978087_930388_20553" Name="Register Voter"/>
-        <ExternalPackage href="mdel://_18_5_2_43701b0_1508948430596_974675_30307?projectName=MagicDraw+Election+Model&amp;elementName=BPMN+Process+Determine+Initial+Eligibility&amp;metaType=Activity&amp;elementQName=Process+Container%3A%3AElection%3A%3AVote+In+Person%3A%3ADetermine+Initial+Eligibility" Id="_18_5_2_43701b0_1508948430596_974675_30307" Name="Determine Initial Eligibility"/>
+        <ExternalPackage href="mdel://_18_5_2_43701b0_1513797914692_269086_38725?projectName=MagicDraw+Election+Model&amp;elementName=BPMN+Process+Determine+Initial+Eligibility&amp;metaType=Activity&amp;elementQName=Process+Container%3A%3AElection%3A%3AVote+In+Person%3A%3ADetermine+Initial+Eligibility" Id="_18_5_2_43701b0_1513797914692_269086_38725" Name="Determine Initial Eligibility"/>
     </ExternalPackages>
     <Participants>
         <Participant Id="_18_5_1_11940316_1498828652641_269229_23308" Name="Poll Worker" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
@@ -166,216 +30,176 @@ E.g. Poll watcher,&amp;#160;Poll worker
         </Participant>
     </Participants>
     <Pages>
-        <Page Name="Vote and Submit Ballot" Id="_18_5_1_11940316_1500487804407_339669_30887" Height="1063.0" Width="1329.0"/>
+        <Page Name="Vote and Submit Ballot" Id="_18_5_3_43701b0_1515522812419_648104_32448" Height="843.0" Width="1732.0"/>
     </Pages>
     <Pools>
-        <Pool Id="_18_5_1_11940316_1500487822160_135102_30897" Name="" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1500487822160_135102_30897_proc" Participant="_18_5_1_11940316_1498828652641_269229_23308" BoundaryVisible="true" MainPool="false" MultiInstance="false">
+        <Pool Id="_18_5_3_43701b0_1515522844844_463687_32906" Name="" Orientation="HORIZONTAL" Process="_18_5_3_43701b0_1515522844844_463687_32906_proc" Participant="_18_5_1_11940316_1498828652641_269229_23308" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="853.0" Width="1329.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="633.0" Width="1732.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="210.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Pool>
-        <Pool Id="_18_5_1_11940316_1500487834957_762963_30915" Name="Voter" Orientation="HORIZONTAL" Process="_18_5_1_11940316_1500487834957_762963_30915_proc" Participant="_18_5_1_11940316_1498828669742_83683_23366" BoundaryVisible="true" MainPool="false" MultiInstance="false">
+        <Pool Id="_18_5_3_43701b0_1515522844847_353003_32907" Name="Voter" Orientation="HORIZONTAL" Process="_18_5_3_43701b0_1515522844847_353003_32907_proc" Participant="_18_5_1_11940316_1498828669742_83683_23366" BoundaryVisible="true" MainPool="false" MultiInstance="false">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="87.0" Width="1329.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="87.0" Width="1690.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
                     <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Pool>
     </Pools>
     <MessageFlows>
-        <MessageFlow Id="_18_5_2_43701b0_1508953087503_777319_31249" Name="" Source="_18_5_1_11940316_1500487834957_762963_30915" Target="_18_5_2_43701b0_1508953087487_188343_31247">
-            <Message Id="_18_5_1_11940316_1500557245570_859748_33589" Name="Request to Vote"/>
+        <MessageFlow Id="_19_0_2_8dd028c_1558006737885_134841_27080" Name="" Source="_19_0_2_8dd028c_1558006737498_831347_26944" Target="_18_5_3_43701b0_1515522844847_353003_32907">
+            <Message Id="_0_migration_18_5_3_43701b0_1515522844354_256767_32459" Name="Unvoted Ballot"/>
             <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                    <Coordinates XCoordinate="718.0" YCoordinate="487.0"/>
+                    <Coordinates XCoordinate="718.0" YCoordinate="87.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+        <MessageFlow Id="_19_0_2_8dd028c_1558006737869_257669_27070" Name="" Source="_18_5_3_43701b0_1515522844847_353003_32907" Target="_19_0_2_8dd028c_1558006737388_302060_26890">
+            <Message Id="_0_migration_18_5_3_43701b0_1515522844355_287111_32460" Name="Returned Ballot"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                    <Coordinates XCoordinate="1432.0" YCoordinate="87.0"/>
+                    <Coordinates XCoordinate="1432.0" YCoordinate="483.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+        <MessageFlow Id="_19_0_2_8dd028c_1558006737874_269670_27073" Name="" Source="_18_5_3_43701b0_1515522844847_353003_32907" Target="_18_5_3_43701b0_1515522844849_409532_32959">
+            <Message Id="_0_migration_18_5_3_43701b0_1515522844355_191465_32463" Name="Insist on Voting"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                    <Coordinates XCoordinate="214.0" YCoordinate="87.0"/>
+                    <Coordinates XCoordinate="214.0" YCoordinate="291.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+        <MessageFlow Id="_19_0_2_8dd028c_1558006737672_980882_27011" Name="" Source="_18_5_3_43701b0_1515522844847_353003_32907" Target="_18_5_3_43701b0_1515522844849_781660_32953">
+            <Message Id="_0_migration_18_5_3_43701b0_1515522844356_990277_32464" Name="Request to Vote"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
                     <Coordinates XCoordinate="61.0" YCoordinate="87.0"/>
-                    <Coordinates XCoordinate="61.0" YCoordinate="467.0"/>
+                    <Coordinates XCoordinate="61.0" YCoordinate="498.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
-        <MessageFlow Id="_18_5_1_11940316_1500488332425_898595_31202" Name="" Source="_18_5_1_11940316_1500488291294_524354_31193" Target="_18_5_1_11940316_1500487834957_762963_30915">
-            <Message Id="_18_5_1_11940316_1500488354908_547124_31205" Name="Unvoted Ballot"/>
+        <MessageFlow Id="_19_0_2_8dd028c_1558006737788_879525_27037" Name="" Source="_18_5_3_43701b0_1515522844847_353003_32907" Target="_19_0_2_8dd028c_1558006737324_162794_26860">
+            <Message Id="_0_migration_18_5_3_43701b0_1515522844355_287111_32460" Name="Returned Ballot"/>
             <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                    <Coordinates XCoordinate="907.0" YCoordinate="458.0"/>
-                    <Coordinates XCoordinate="907.0" YCoordinate="87.0"/>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                    <Coordinates XCoordinate="896.0" YCoordinate="87.0"/>
+                    <Coordinates XCoordinate="896.0" YCoordinate="371.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
-        <MessageFlow Id="_18_5_1_11940316_1500489259484_149831_31265" Name="" Source="_18_5_1_11940316_1500487834957_762963_30915" Target="_18_5_1_11940316_1500489216834_17373_31250">
-            <Message Id="_18_5_1_11940316_1500489270826_606844_31268" Name="Returned Ballot"/>
+        <MessageFlow Id="_19_0_2_8dd028c_1558006737766_977958_27031" Name="" Source="_18_5_3_43701b0_1515522844847_353003_32907" Target="_18_5_3_43701b0_1515617441593_107014_42631">
             <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                    <Coordinates XCoordinate="1022.0" YCoordinate="87.0"/>
-                    <Coordinates XCoordinate="1022.0" YCoordinate="455.0"/>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                    <Coordinates XCoordinate="1565.0" YCoordinate="87.0"/>
+                    <Coordinates XCoordinate="1565.0" YCoordinate="385.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
-        <MessageFlow Id="_18_5_1_11940316_1500489615643_684869_31457" Name="" Source="_18_5_1_11940316_1500489585915_695957_31446" Target="_18_5_1_11940316_1500487834957_762963_30915">
-            <Message Id="_18_5_1_11940316_1500640739731_274595_39166" Name="Directions"/>
+        <MessageFlow Id="_19_0_2_8dd028c_1558006737923_55062_27108" Name="" Source="_18_5_3_43701b0_1515617649661_837970_42714" Target="_18_5_3_43701b0_1515522844847_353003_32907">
+            <Message Id="_0_migration_18_5_3_43701b0_1520286653739_116414_42859" Name="Instructions"/>
             <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                    <Coordinates XCoordinate="719.0" YCoordinate="739.0"/>
-                    <Coordinates XCoordinate="788.0" YCoordinate="739.0"/>
-                    <Coordinates XCoordinate="788.0" YCoordinate="87.0"/>
-                </ConnectorGraphicsInfo>
-            </ConnectorGraphicsInfos>
-        </MessageFlow>
-        <MessageFlow Id="_18_5_1_11940316_1500490064396_792146_31682" Name="" Source="_18_5_1_11940316_1500487834957_762963_30915" Target="_18_5_1_11940316_1500489684733_97487_31522">
-            <Message Id="_18_5_1_11940316_1503260556315_569624_27478" Name="Accept Directions"/>
-            <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                    <Coordinates XCoordinate="963.0" YCoordinate="87.0"/>
-                    <Coordinates XCoordinate="963.0" YCoordinate="585.0"/>
-                    <Coordinates XCoordinate="949.0" YCoordinate="585.0"/>
-                    <Coordinates XCoordinate="949.0" YCoordinate="693.0"/>
-                </ConnectorGraphicsInfo>
-            </ConnectorGraphicsInfos>
-        </MessageFlow>
-        <MessageFlow Id="_18_5_1_11940316_1500490081211_145460_31688" Name="" Source="_18_5_1_11940316_1500487834957_762963_30915" Target="_18_5_1_11940316_1500489692278_196686_31533">
-            <Message Id="_18_5_2_43701b0_1509890676484_560765_29098" Name="Insist on Voting"/>
-            <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                    <Coordinates XCoordinate="1250.0" YCoordinate="87.0"/>
-                    <Coordinates XCoordinate="1250.0" YCoordinate="746.0"/>
-                    <Coordinates XCoordinate="956.0" YCoordinate="746.0"/>
-                    <Coordinates XCoordinate="956.0" YCoordinate="787.0"/>
-                </ConnectorGraphicsInfo>
-            </ConnectorGraphicsInfos>
-        </MessageFlow>
-        <MessageFlow Id="_18_5_2_43701b0_1508957394117_885058_31854" Name="" Source="_18_5_1_11940316_1500487834957_762963_30915" Target="_18_5_2_43701b0_1508957342192_711265_31830">
-            <Message Id="_18_5_2_43701b0_1509890676484_560765_29098" Name="Insist on Voting"/>
-            <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                    <Coordinates XCoordinate="316.0" YCoordinate="87.0"/>
-                    <Coordinates XCoordinate="316.0" YCoordinate="333.0"/>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                    <Coordinates XCoordinate="1355.0" YCoordinate="371.0"/>
+                    <Coordinates XCoordinate="1355.0" YCoordinate="87.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </MessageFlow>
     </MessageFlows>
     <Associations>
-        <Association Id="_18_5_1_11940316_1500489297751_910345_31290" Source="_18_5_1_11940316_1500489259484_149831_31265" Target="_18_5_1_11940316_1500489325054_147673_31298" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414095159_233809_33723"/>
+        <Association Id="_18_5_3_43701b0_1515522844851_75090_32977" Source="_19_0_2_8dd028c_1558006737869_257669_27070" Target="_18_5_3_43701b0_1515522844849_599814_32961" AssociationDirection="None">
+            <Object Id="_19_0_4_43701b0_1648390676806_687366_26419"/>
             <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="1022.0" YCoordinate="271.0"/>
-                    <Coordinates XCoordinate="1064.0" YCoordinate="263.0"/>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="1432.0" YCoordinate="285.0"/>
+                    <Coordinates XCoordinate="1211.0" YCoordinate="254.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
-        <Association Id="_18_5_2_11940316_1508355406072_348093_29451" Source="_18_5_1_11940316_1500489692278_196686_31533" Target="_18_5_2_11940316_1508355406249_244871_29452" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414095159_847691_33724"/>
+        <Association Id="_18_5_3_43701b0_1515522844854_76775_33000" Source="_18_5_3_43701b0_1515522844848_472880_32937" Target="_18_5_3_43701b0_1515522844851_442693_32970" AssociationDirection="None">
+            <Object Id="_19_0_4_43701b0_1648390676806_835722_26420"/>
             <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="942.0" YCoordinate="800.0"/>
-                    <Coordinates XCoordinate="793.0" YCoordinate="813.0"/>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="378.0" YCoordinate="730.0"/>
+                    <Coordinates XCoordinate="348.0" YCoordinate="690.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
-        <Association Id="_18_5_2_43701b0_1509557964734_220231_30820" Source="_18_5_1_11940316_1500489511701_959958_31404" Target="_18_5_2_43701b0_1509557964792_498515_30821" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414095160_419027_33725"/>
+        <Association Id="_18_5_3_43701b0_1515522844854_823548_33014" Source="_18_5_3_43701b0_1515522844849_409532_32959" Target="_18_5_3_43701b0_1515522844850_2408_32969" AssociationDirection="None">
+            <Object Id="_19_0_4_43701b0_1648390676806_860145_26421"/>
             <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="508.0" YCoordinate="532.0"/>
-                    <Coordinates XCoordinate="517.0" YCoordinate="537.0"/>
-                </ConnectorGraphicsInfo>
-            </ConnectorGraphicsInfos>
-        </Association>
-        <Association Id="_18_5_2_43701b0_1509558022364_638704_30832" Source="_18_5_2_43701b0_1508957342192_711265_31830" Target="_18_5_2_43701b0_1509558022430_384414_30833" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414095160_805198_33726"/>
-            <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="303.0" YCoordinate="338.0"/>
-                    <Coordinates XCoordinate="262.0" YCoordinate="316.0"/>
-                </ConnectorGraphicsInfo>
-            </ConnectorGraphicsInfos>
-        </Association>
-        <Association Id="_18_5_2_43701b0_1509564653254_355137_50191" Source="_18_5_2_43701b0_1508961417179_956509_40482" Target="_18_5_2_43701b0_1509564653343_597132_50192" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414095160_333942_33727"/>
-            <ConnectorGraphicsInfos>
-                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFCC33">
-                    <Coordinates XCoordinate="581.0" YCoordinate="961.0"/>
-                    <Coordinates XCoordinate="436.0" YCoordinate="910.0"/>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="201.0" YCoordinate="346.0"/>
+                    <Coordinates XCoordinate="195.0" YCoordinate="371.0"/>
                 </ConnectorGraphicsInfo>
             </ConnectorGraphicsInfos>
         </Association>
     </Associations>
     <Artifacts>
-        <Artifact Id="_18_5_1_11940316_1500488035518_24716_31021" ArtifactType="Annotation" TextAnnotation="What about states w/o VR? "/>
-        <Artifact Id="_18_5_1_11940316_1500488140405_441330_31111" ArtifactType="Annotation" TextAnnotation="This is somewhat unclear. Need to distinguish SDR from others. "/>
-        <Artifact Id="_18_5_1_11940316_1500489325054_147673_31298" ArtifactType="Annotation" TextAnnotation="I used returned here instead of voted because the voter may have made no selections (blank ballot) ">
+        <Artifact Id="_18_5_3_43701b0_1515522844358_341940_32478" ArtifactType="Annotation" TextAnnotation="NVRA only?"/>
+        <Artifact Id="_18_5_3_43701b0_1515522844849_599814_32961" ArtifactType="Annotation" TextAnnotation="I used returned here instead of voted because the voter may have made no selections (blank ballot) ">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="65.0" Width="203.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="1064.0" YCoordinate="213.0"/>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="45.0" Width="203.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="1008.0" YCoordinate="217.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
-        <Artifact Id="_18_5_1_11940316_1502218903863_798622_26290" ArtifactType="Annotation" TextAnnotation="This could be occur because the voter already voted an absentee ballot. Some jurisdictions may allow the cancellation of the absentee. "/>
-        <Artifact Id="_18_5_1_11940316_1502219084316_848040_26322" ArtifactType="Annotation" TextAnnotation="They may be able to vote provisionally. "/>
-        <Artifact Id="_18_5_1_11940316_1503508554524_765837_55086" ArtifactType="Annotation" TextAnnotation="This may break down if voters are allowed to vote a regular ballot and the absentee is canceled automatically "/>
-        <Artifact Id="_18_5_2_11940316_1508355406249_244871_29452" ArtifactType="Annotation" TextAnnotation="NVRA only?">
+        <Artifact Id="_18_5_3_43701b0_1515522844851_442693_32970" ArtifactType="Annotation" TextAnnotation="E.g. Poll watcher, Poll worker">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="36.0" Width="72.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="721.0" YCoordinate="798.0"/>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="264.0" YCoordinate="636.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
-        <Artifact Id="_18_5_2_11940316_1508355696502_376131_29458" ArtifactType="Annotation" TextAnnotation="Outcomes:&#xA;Registered moved inside precinct / Registered name change / Party change"/>
-        <Artifact Id="_18_5_2_43701b0_1509557964792_498515_30821" ArtifactType="Annotation" TextAnnotation="Need to route outcomes (failure)? ">
+        <Artifact Id="_18_5_3_43701b0_1515522844850_2408_32969" ArtifactType="Annotation" TextAnnotation="NVRA only? ">
             <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="420.0" YCoordinate="483.0"/>
-                </NodeGraphicsInfo>
-            </NodeGraphicsInfos>
-        </Artifact>
-        <Artifact Id="_18_5_2_43701b0_1509558022430_384414_30833" ArtifactType="Annotation" TextAnnotation="NVRA only? ">
-            <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="36.0" Width="80.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="189.0" YCoordinate="280.0"/>
-                </NodeGraphicsInfo>
-            </NodeGraphicsInfos>
-        </Artifact>
-        <Artifact Id="_18_5_2_43701b0_1509564653343_597132_50192" ArtifactType="Annotation" TextAnnotation="E.g. Poll watcher, Poll worker">
-            <NodeGraphicsInfos>
-                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
-                    <Coordinates XCoordinate="336.0" YCoordinate="867.0"/>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="36.0" Width="75.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="153.0" YCoordinate="371.0"/>
                 </NodeGraphicsInfo>
             </NodeGraphicsInfos>
         </Artifact>
     </Artifacts>
     <WorkflowProcesses>
-        <WorkflowProcess Id="_18_5_1_11940316_1500487804364_564762_30877" Name="Vote and Submit Ballot" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+        <WorkflowProcess Id="_18_5_3_43701b0_1515522812395_794583_32438" Name="Vote and Submit Ballot" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
             <ProcessHeader>
-                <Created>17-06-19T14:10:00</Created>
+                <Created>18-00-09T13:33:00</Created>
             </ProcessHeader>
         </WorkflowProcess>
-        <WorkflowProcess Id="_18_5_1_11940316_1498140978087_930388_20553" Name="Register Voter_wf">
+        <WorkflowProcess Id="_18_5_2_43701b0_1513797914692_269086_38725" Name="Determine Initial Eligibility_wf">
             <ProcessHeader/>
         </WorkflowProcess>
-        <WorkflowProcess Id="_18_5_2_43701b0_1508948430596_974675_30307" Name="Determine Initial Eligibility_wf">
-            <ProcessHeader/>
-        </WorkflowProcess>
-        <WorkflowProcess Id="_18_5_1_11940316_1500487822160_135102_30897_proc" Name="" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+        <WorkflowProcess Id="_18_5_3_43701b0_1515522844844_463687_32906_proc" Name="" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
             <ProcessHeader>
-                <Created>17-06-19T14:10:00</Created>
+                <Created>18-00-09T13:33:00</Created>
             </ProcessHeader>
             <ActivitySets>
-                <ActivitySet Id="_18_5_2_11940316_1508356299687_568510_29540" Name="Challenge Process_as" AdHoc="false" TriggeredByEvent="true">
+                <ActivitySet Id="_18_5_3_43701b0_1515522844358_974414_32479" Name="Challenge Process_as" AdHoc="false" TriggeredByEvent="true">
                     <Activities>
-                        <Activity Id="_18_5_2_11940316_1508356337916_356986_29612" Name="Challenge Occurs" cbm:numberedProperty="2.1.2.23.1">
-                            <Event>
-<StartEvent Trigger="Message" Implementation="Unspecified" Interrupting="true">
-    <TriggerResultMessage CatchThrow="CATCH"/>
-</StartEvent>
-                            </Event>
+                        <Activity Id="_18_5_3_43701b0_1515522844848_275310_32948" Name="Challenge is permissible?" cbm:numberedProperty="2.1.2.15.7">
+                            <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
+                            <TransitionRestrictions>
+<TransitionRestriction>
+    <Split Type="Exclusive" ExclusiveType="Data">
+        <TransitionRefs>
+            <TransitionRef Id="_18_5_3_43701b0_1515522844854_384097_33005"/>
+            <TransitionRef Id="_18_5_3_43701b0_1515522844854_434749_33004"/>
+        </TransitionRefs>
+    </Split>
+</TransitionRestriction>
+                            </TransitionRestrictions>
                             <NodeGraphicsInfos>
-<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-    <Coordinates XCoordinate="490.0" YCoordinate="949.0"/>
+<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
+    <Coordinates XCoordinate="497.0" YCoordinate="710.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_43701b0_1508961402229_446882_40463" IsForCompensation="false" Name="Determine challenge validity" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.23.2">
+                        <Activity Id="_18_5_3_43701b0_1515522844848_331185_32935" IsForCompensation="false" Name="Determine challenge validity" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.15.2">
                             <Implementation>
 <No/>
                             </Implementation>
@@ -383,169 +207,163 @@ E.g. Poll watcher,&amp;#160;Poll worker
 <Performer cbm:resourceType="ResourceRole"></Performer>
                             </Performers>
                             <NodeGraphicsInfos>
-<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-    <Coordinates XCoordinate="826.0" YCoordinate="936.0"/>
+<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+    <Coordinates XCoordinate="623.0" YCoordinate="705.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_43701b0_1508961417179_956509_40482" Name="Challenger has standing?" cbm:numberedProperty="2.1.2.23.3">
+                        <Activity Id="_18_5_3_43701b0_1515522844848_472880_32937" Name="Challenger has standing?" cbm:numberedProperty="2.1.2.15.3">
                             <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                             <TransitionRestrictions>
 <TransitionRestriction>
     <Split Type="Exclusive" ExclusiveType="Data">
         <TransitionRefs>
-            <TransitionRef Id="_18_5_2_43701b0_1508961399396_596526_40448"/>
-            <TransitionRef Id="_18_5_2_43701b0_1509564676020_773682_50203"/>
+            <TransitionRef Id="_18_5_3_43701b0_1515522844853_586649_32997"/>
+            <TransitionRef Id="_18_5_3_43701b0_1515522844854_550121_33001"/>
         </TransitionRefs>
     </Split>
 </TransitionRestriction>
                             </TransitionRestrictions>
                             <NodeGraphicsInfos>
-<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
-    <Coordinates XCoordinate="581.0" YCoordinate="941.0"/>
+<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
+    <Coordinates XCoordinate="378.0" YCoordinate="710.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_43701b0_1508961602383_804156_40513" Name="Outcome?" cbm:numberedProperty="2.1.2.23.4">
-                            <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
-                            <TransitionRestrictions>
-<TransitionRestriction>
-    <Split Type="Exclusive" ExclusiveType="Data">
-        <TransitionRefs>
-            <TransitionRef Id="_18_5_2_43701b0_1509564754433_583961_50229"/>
-            <TransitionRef Id="_18_5_2_43701b0_1509564757098_177072_50238"/>
-        </TransitionRefs>
-    </Split>
-</TransitionRestriction>
-                            </TransitionRestrictions>
-                            <NodeGraphicsInfos>
-<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
-    <Coordinates XCoordinate="1008.0" YCoordinate="941.0"/>
-</NodeGraphicsInfo>
-                            </NodeGraphicsInfos>
-                        </Activity>
-                        <Activity Id="_18_5_2_43701b0_1509564679160_70978_50217" Name="Challenge fails" cbm:numberedProperty="2.1.2.23.5">
+                        <Activity Id="_18_5_3_43701b0_1515522844848_619779_32945" Name="Challenge succeeds" cbm:numberedProperty="2.1.2.15.6">
                             <Event>
 <EndEvent Result="None" Implementation="Unspecified"/>
                             </Event>
                             <NodeGraphicsInfos>
-<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-    <Coordinates XCoordinate="1016.0" YCoordinate="882.0"/>
+<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+    <Coordinates XCoordinate="950.0" YCoordinate="718.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_43701b0_1509564762726_727186_50249" Name="Challenge succeeds" cbm:numberedProperty="2.1.2.23.6">
+                        <Activity Id="_18_5_3_43701b0_1515522844848_658194_32933" Name="Challenge Occurs" cbm:numberedProperty="2.1.2.15.1">
+                            <Event>
+<StartEvent Trigger="Message" Implementation="Unspecified" Interrupting="true">
+    <TriggerResultMessage CatchThrow="CATCH"/>
+</StartEvent>
+                            </Event>
+                            <NodeGraphicsInfos>
+<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+    <Coordinates XCoordinate="287.0" YCoordinate="718.0"/>
+</NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity Id="_18_5_3_43701b0_1515522844848_826527_32941" Name="Challenge fails" cbm:numberedProperty="2.1.2.15.5">
                             <Event>
 <EndEvent Result="None" Implementation="Unspecified"/>
                             </Event>
                             <NodeGraphicsInfos>
-<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-    <Coordinates XCoordinate="1153.0" YCoordinate="949.0"/>
+<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+    <Coordinates XCoordinate="813.0" YCoordinate="651.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
-                        <Activity Id="_18_5_2_43701b0_1509564804729_609740_50263" Name="Challenge is permissible?" cbm:numberedProperty="2.1.2.23.7">
+                        <Activity Id="_18_5_3_43701b0_1515522844848_882688_32939" Name="Outcome?" cbm:numberedProperty="2.1.2.15.4">
                             <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                             <TransitionRestrictions>
 <TransitionRestriction>
     <Split Type="Exclusive" ExclusiveType="Data">
         <TransitionRefs>
-            <TransitionRef Id="_18_5_2_43701b0_1509564805596_793006_50270"/>
-            <TransitionRef Id="_18_5_2_43701b0_1509565072719_334425_50278"/>
+            <TransitionRef Id="_18_5_3_43701b0_1515522844854_449517_33002"/>
+            <TransitionRef Id="_18_5_3_43701b0_1515522844854_912675_33003"/>
         </TransitionRefs>
     </Split>
 </TransitionRestriction>
                             </TransitionRestrictions>
                             <NodeGraphicsInfos>
-<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
-    <Coordinates XCoordinate="700.0" YCoordinate="941.0"/>
+<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
+    <Coordinates XCoordinate="805.0" YCoordinate="710.0"/>
 </NodeGraphicsInfo>
                             </NodeGraphicsInfos>
                         </Activity>
                     </Activities>
                     <Transitions>
-                        <Transition Id="_18_5_2_43701b0_1508961399396_596526_40448" From="_18_5_2_43701b0_1508961417179_956509_40482" To="_18_5_2_43701b0_1509564804729_609740_50263" Name="">
+                        <Transition Id="_18_5_3_43701b0_1515522844853_214758_32998" From="_18_5_3_43701b0_1515522844848_331185_32935" To="_18_5_3_43701b0_1515522844848_882688_32939" Name="">
+                            <ConnectorGraphicsInfos>
+<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+    <Coordinates XCoordinate="743.0" YCoordinate="730.0"/>
+    <Coordinates XCoordinate="805.0" YCoordinate="730.0"/>
+</ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition Id="_18_5_3_43701b0_1515522844853_586649_32997" From="_18_5_3_43701b0_1515522844848_472880_32937" To="_18_5_3_43701b0_1515522844848_275310_32948" Name="">
                             <Condition Type="CONDITION">
 <Expression>Yes</Expression>
                             </Condition>
                             <ConnectorGraphicsInfos>
-<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="621.0" YCoordinate="961.0"/>
-    <Coordinates XCoordinate="700.0" YCoordinate="961.0"/>
+<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+    <Coordinates XCoordinate="418.0" YCoordinate="730.0"/>
+    <Coordinates XCoordinate="497.0" YCoordinate="730.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
-                        <Transition Id="_18_5_2_43701b0_1508961418144_13471_40490" From="_18_5_2_11940316_1508356337916_356986_29612" To="_18_5_2_43701b0_1508961417179_956509_40482" Name="">
+                        <Transition Id="_18_5_3_43701b0_1515522844854_384097_33005" From="_18_5_3_43701b0_1515522844848_275310_32948" To="_18_5_3_43701b0_1515522844848_331185_32935" Name="">
+                            <Condition Type="CONDITION">
+<Expression>Yes</Expression>
+                            </Condition>
                             <ConnectorGraphicsInfos>
-<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="514.0" YCoordinate="961.0"/>
-    <Coordinates XCoordinate="581.0" YCoordinate="961.0"/>
+<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+    <Coordinates XCoordinate="537.0" YCoordinate="730.0"/>
+    <Coordinates XCoordinate="623.0" YCoordinate="730.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
-                        <Transition Id="_18_5_2_43701b0_1508961599068_477411_40498" From="_18_5_2_43701b0_1508961402229_446882_40463" To="_18_5_2_43701b0_1508961602383_804156_40513" Name="">
-                            <ConnectorGraphicsInfos>
-<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="946.0" YCoordinate="961.0"/>
-    <Coordinates XCoordinate="1008.0" YCoordinate="961.0"/>
-</ConnectorGraphicsInfo>
-                            </ConnectorGraphicsInfos>
-                        </Transition>
-                        <Transition Id="_18_5_2_43701b0_1509564676020_773682_50203" From="_18_5_2_43701b0_1508961417179_956509_40482" To="_18_5_2_43701b0_1509564679160_70978_50217" Name="">
+                        <Transition Id="_18_5_3_43701b0_1515522844854_434749_33004" From="_18_5_3_43701b0_1515522844848_275310_32948" To="_18_5_3_43701b0_1515522844848_826527_32941" Name="">
                             <Condition Type="CONDITION">
 <Expression>No</Expression>
                             </Condition>
                             <ConnectorGraphicsInfos>
-<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="601.0" YCoordinate="941.0"/>
-    <Coordinates XCoordinate="601.0" YCoordinate="894.0"/>
-    <Coordinates XCoordinate="1016.0" YCoordinate="894.0"/>
+<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+    <Coordinates XCoordinate="517.0" YCoordinate="710.0"/>
+    <Coordinates XCoordinate="517.0" YCoordinate="686.0"/>
+    <Coordinates XCoordinate="825.0" YCoordinate="686.0"/>
+    <Coordinates XCoordinate="825.0" YCoordinate="675.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
-                        <Transition Id="_18_5_2_43701b0_1509564754433_583961_50229" From="_18_5_2_43701b0_1508961602383_804156_40513" To="_18_5_2_43701b0_1509564679160_70978_50217" Name="">
+                        <Transition Id="_18_5_3_43701b0_1515522844854_449517_33002" From="_18_5_3_43701b0_1515522844848_882688_32939" To="_18_5_3_43701b0_1515522844848_826527_32941" Name="">
                             <Condition Type="CONDITION">
 <Expression>Challenge fails</Expression>
                             </Condition>
                             <ConnectorGraphicsInfos>
-<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="1028.0" YCoordinate="941.0"/>
-    <Coordinates XCoordinate="1028.0" YCoordinate="906.0"/>
+<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+    <Coordinates XCoordinate="825.0" YCoordinate="710.0"/>
+    <Coordinates XCoordinate="825.0" YCoordinate="675.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
-                        <Transition Id="_18_5_2_43701b0_1509564757098_177072_50238" From="_18_5_2_43701b0_1508961602383_804156_40513" To="_18_5_2_43701b0_1509564762726_727186_50249" Name="">
-                            <Condition Type="CONDITION">
-<Expression>Challenge succeeds</Expression>
-                            </Condition>
+                        <Transition Id="_18_5_3_43701b0_1515522844854_512711_32999" From="_18_5_3_43701b0_1515522844848_658194_32933" To="_18_5_3_43701b0_1515522844848_472880_32937" Name="">
                             <ConnectorGraphicsInfos>
-<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="1048.0" YCoordinate="961.0"/>
-    <Coordinates XCoordinate="1153.0" YCoordinate="961.0"/>
+<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+    <Coordinates XCoordinate="311.0" YCoordinate="730.0"/>
+    <Coordinates XCoordinate="378.0" YCoordinate="730.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
-                        <Transition Id="_18_5_2_43701b0_1509564805596_793006_50270" From="_18_5_2_43701b0_1509564804729_609740_50263" To="_18_5_2_43701b0_1508961402229_446882_40463" Name="">
-                            <Condition Type="CONDITION">
-<Expression>Yes</Expression>
-                            </Condition>
-                            <ConnectorGraphicsInfos>
-<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="740.0" YCoordinate="961.0"/>
-    <Coordinates XCoordinate="826.0" YCoordinate="961.0"/>
-</ConnectorGraphicsInfo>
-                            </ConnectorGraphicsInfos>
-                        </Transition>
-                        <Transition Id="_18_5_2_43701b0_1509565072719_334425_50278" From="_18_5_2_43701b0_1509564804729_609740_50263" To="_18_5_2_43701b0_1509564679160_70978_50217" Name="">
+                        <Transition Id="_18_5_3_43701b0_1515522844854_550121_33001" From="_18_5_3_43701b0_1515522844848_472880_32937" To="_18_5_3_43701b0_1515522844848_826527_32941" Name="">
                             <Condition Type="CONDITION">
 <Expression>No</Expression>
                             </Condition>
                             <ConnectorGraphicsInfos>
-<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-    <Coordinates XCoordinate="720.0" YCoordinate="941.0"/>
-    <Coordinates XCoordinate="720.0" YCoordinate="917.0"/>
-    <Coordinates XCoordinate="1028.0" YCoordinate="917.0"/>
-    <Coordinates XCoordinate="1028.0" YCoordinate="906.0"/>
+<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+    <Coordinates XCoordinate="398.0" YCoordinate="710.0"/>
+    <Coordinates XCoordinate="398.0" YCoordinate="663.0"/>
+    <Coordinates XCoordinate="813.0" YCoordinate="663.0"/>
+</ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition Id="_18_5_3_43701b0_1515522844854_912675_33003" From="_18_5_3_43701b0_1515522844848_882688_32939" To="_18_5_3_43701b0_1515522844848_619779_32945" Name="">
+                            <Condition Type="CONDITION">
+<Expression>Challenge succeeds</Expression>
+                            </Condition>
+                            <ConnectorGraphicsInfos>
+<ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+    <Coordinates XCoordinate="845.0" YCoordinate="730.0"/>
+    <Coordinates XCoordinate="950.0" YCoordinate="730.0"/>
 </ConnectorGraphicsInfo>
                             </ConnectorGraphicsInfos>
                         </Transition>
@@ -553,37 +371,260 @@ E.g. Poll watcher,&amp;#160;Poll worker
                 </ActivitySet>
             </ActivitySets>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1500488271254_815912_31144" IsForCompensation="false" Name="Record voter in poll book" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.07">
+                <Activity Id="_18_5_3_43701b0_1515522844847_300969_32918" Name="Vote Submitted" cbm:numberedProperty="2.1.2.7">
+                    <Event>
+                        <EndEvent Result="None" Implementation="Unspecified"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="1606.0" YCoordinate="498.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_3_43701b0_1515522844847_308038_32915" IsForCompensation="false" Name="Record voter in poll book" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.3">
                     <Implementation>
                         <No/>
                     </Implementation>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
-                        <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
                     <Documentation>Record the voter as participating in the election.</Documentation>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="644.0" YCoordinate="457.0"/>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="490.0" YCoordinate="486.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500488291294_524354_31193" IsForCompensation="false" Name="Provide voter with ballot" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.10">
+                <Activity Id="_18_5_3_43701b0_1515522844848_558707_32932" IsForCompensation="false" Name="Challenge Process" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="2.1.2.15">
+                    <BlockActivity ActivitySetId="_18_5_3_43701b0_1515522844358_974414_32479" View="EXPANDED"/>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <Documentation>E.g. Poll watcher, Poll worker</Documentation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="209.0" Width="777.0" BorderColor="#636363" FillColor="#F7DD99">
+                            <Coordinates XCoordinate="245.0" YCoordinate="603.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_3_43701b0_1515522844848_969410_32925" IsForCompensation="false" Name="Collect provisional voter information" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.4">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="386.0" YCoordinate="278.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_3_43701b0_1515522844849_409532_32959" Name="Ineligible but insists on voting" cbm:numberedProperty="2.1.2.21">
+                    <Event>
+                        <IntermediateEvent Trigger="Message" Implementation="WebService" Interrupting="true">
+                            <TriggerResultMessage CatchThrow="CATCH"/>
+                        </IntermediateEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="189.0" YCoordinate="291.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_3_43701b0_1515522844849_781660_32953" Name="Receive Request" cbm:numberedProperty="2.1.2.1">
+                    <Event>
+                        <StartEvent Trigger="Message" Implementation="Unspecified" Interrupting="true">
+                            <TriggerResultMessage CatchThrow="CATCH"/>
+                        </StartEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="49.0" YCoordinate="498.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_3_43701b0_1515522844849_797197_32956" Name="Can vote regular ballot?" cbm:numberedProperty="2.1.2.18">
+                    <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="Exclusive" ExclusiveType="Data">
+<TransitionRefs>
+    <TransitionRef Id="_18_5_3_43701b0_1515523031090_674400_33521"/>
+    <TransitionRef Id="_18_5_3_43701b0_1515523105347_186185_33532"/>
+</TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
+                            <Coordinates XCoordinate="294.0" YCoordinate="491.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_3_43701b0_1515523029818_569401_33514" Name="Can vote provisional ballot?" cbm:numberedProperty="2.1.2.22">
+                    <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="Exclusive" ExclusiveType="Data">
+<TransitionRefs>
+    <TransitionRef Id="_18_5_3_43701b0_1515522844854_992344_33012"/>
+    <TransitionRef Id="_18_5_3_43701b0_1515523109684_251684_33541"/>
+</TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
+                            <Coordinates XCoordinate="426.0" YCoordinate="378.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_3_43701b0_1515523112418_263241_33551" Name="Cannot vote" cbm:numberedProperty="2.1.2.23">
+                    <Event>
+                        <EndEvent Result="None" Implementation="Unspecified"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="539.0" YCoordinate="386.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_3_43701b0_1515523442576_964444_33586" Name="Wait for response" cbm:numberedProperty="2.1.2.24">
+                    <Route GatewayType="Exclusive" ExclusiveType="Event" Instantiate="false" GatewayDirection="Unspecified"/>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="Exclusive" ExclusiveType="Event">
+<TransitionRefs>
+    <TransitionRef Id="_18_5_3_43701b0_1515522844852_718697_32984"/>
+    <TransitionRef Id="_18_5_3_43701b0_1515523486727_147307_33744"/>
+</TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="40.0" Width="40.0" BorderColor="#99995C" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="875.0" YCoordinate="498.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_3_43701b0_1515523515133_826585_33794" IsForCompensation="false" Name="Check if max ballot issued" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.26">
                     <Implementation>
                         <Task>
-                            <TaskSend Implementation="WebService"/>
+                            <TaskBusinessRule BusinessRuleTaskImplementation="Unspecified"/>
                         </Task>
                     </Implementation>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="819.0" YCoordinate="458.0"/>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="50.0" Width="120.0" BorderColor="#C7B299" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="994.0" YCoordinate="371.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500489216834_17373_31250" IsForCompensation="false" Name="Receive ballot/vote summary" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.15">
+                <Activity Id="_18_5_3_43701b0_1515523534780_70198_33819" Name="Max ballot issued" cbm:numberedProperty="2.1.2.27">
+                    <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="Exclusive" ExclusiveType="Data">
+<TransitionRefs>
+    <TransitionRef Id="_18_5_3_43701b0_1515617358048_165354_42554"/>
+    <TransitionRef Id="_18_5_3_43701b0_1515617406802_912447_42570"/>
+</TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
+                            <Coordinates XCoordinate="1183.0" YCoordinate="378.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_3_43701b0_1515613218194_893340_32780" IsForCompensation="false" Name="" Status="None" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.28">
+                    <Implementation>
+                        <SubFlow Id="_18_5_2_43701b0_1513797914692_269086_38725" Name="Determine Initial Eligibility" Execution="SYNCHR" View="EXPANDED" PackageRef="_18_5_2_43701b0_1513797914692_269086_38725">
+                            <EndPoint EndPointType="WSDL">
+<ExternalReference location="mdel://_18_5_2_43701b0_1513797914692_269086_38725?projectName=MagicDraw+Election+Model&amp;elementName=BPMN+Process+Determine+Initial+Eligibility&amp;metaType=Activity&amp;elementQName=Process+Container%3A%3AElection%3A%3AVote+In+Person%3A%3ADetermine+Initial+Eligibility"/>
+                            </EndPoint>
+                        </SubFlow>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="81.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="130.0" YCoordinate="478.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_3_43701b0_1515617356983_308050_42540" IsForCompensation="false" Name="Spoil ballot" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.29">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="1143.0" YCoordinate="294.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_3_43701b0_1515617422426_390019_42604" Name="Wait for response" cbm:numberedProperty="2.1.2.30">
+                    <Route GatewayType="Exclusive" ExclusiveType="Event" Instantiate="false" GatewayDirection="Unspecified"/>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="Exclusive" ExclusiveType="Event">
+<TransitionRefs>
+    <TransitionRef Id="_18_5_3_43701b0_1515617425360_475741_42613"/>
+    <TransitionRef Id="_18_5_3_43701b0_1515617437811_420449_42622"/>
+</TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="40.0" Width="40.0" BorderColor="#99995C" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="1449.0" YCoordinate="378.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_3_43701b0_1515617441593_107014_42631" Name="Spoil final ballot" cbm:numberedProperty="2.1.2.31">
+                    <Event>
+                        <IntermediateEvent Trigger="Message" Implementation="WebService" Interrupting="true">
+                            <TriggerResultMessage CatchThrow="CATCH"/>
+                        </IntermediateEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="1540.0" YCoordinate="385.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_3_43701b0_1515617474586_844466_42656" Name="No Vote Submitted" cbm:numberedProperty="2.1.2.32">
+                    <Event>
+                        <EndEvent Result="None" Implementation="Unspecified"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="1666.0" YCoordinate="384.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_3_43701b0_1515617649661_837970_42714" IsForCompensation="false" Name="Inform voter of choices" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.33">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="1295.0" YCoordinate="371.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_19_0_2_8dd028c_1558006737324_162794_26860" IsForCompensation="false" Name="Receive request to void" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.25">
                     <Implementation>
                         <Task>
                             <TaskReceive Instantiate="false" Implementation="WebService"/>
@@ -593,41 +634,27 @@ E.g. Poll watcher,&amp;#160;Poll worker
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="994.0" YCoordinate="455.0"/>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="833.0" YCoordinate="371.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500489366576_395584_31318" Name="Vote Submitted" cbm:numberedProperty="2.1.2.11">
-                    <Event>
-                        <EndEvent Result="None" Implementation="Unspecified"/>
-                    </Event>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="1193.0" YCoordinate="470.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_1_11940316_1500489511701_959958_31404" IsForCompensation="false" Name="Register voter" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.06">
+                <Activity Id="_19_0_2_8dd028c_1558006737388_302060_26890" IsForCompensation="false" Name="Receive ballot/vote summary" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.11">
                     <Implementation>
-                        <SubFlow Id="_18_5_1_11940316_1498140978087_930388_20553" Name="Register Voter" Execution="SYNCHR" View="EXPANDED" PackageRef="_18_5_1_11940316_1498140978087_930388_20553">
-                            <EndPoint EndPointType="WSDL">
-<ExternalReference location="mdel://_18_5_1_11940316_1498140978087_930388_20553?projectName=MagicDraw+Election+Model&amp;elementName=BPMN+Process+Register+Voter&amp;metaType=Activity&amp;elementQName=Process+Container%3A%3APre+Election%3A%3AManage+Voters%3A%3ARegister+Voter"/>
-                            </EndPoint>
-                        </SubFlow>
+                        <Task>
+                            <TaskReceive Instantiate="false" Implementation="WebService"/>
+                        </Task>
                     </Implementation>
                     <Performers>
                         <Performer cbm:resourceType="ResourceRole"></Performer>
-                        <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
-                    <Documentation>See Register Voter process documentation.</Documentation>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="64.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="504.0" YCoordinate="532.0"/>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="57.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="1407.0" YCoordinate="483.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500489585915_695957_31446" IsForCompensation="false" Name="Redirect voter" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.17">
+                <Activity Id="_19_0_2_8dd028c_1558006737498_831347_26944" IsForCompensation="false" Name="Provide voter with ballot" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.6">
                     <Implementation>
                         <Task>
                             <TaskSend Implementation="WebService"/>
@@ -637,485 +664,216 @@ E.g. Poll watcher,&amp;#160;Poll worker
                         <Performer cbm:resourceType="ResourceRole"></Performer>
                     </Performers>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="599.0" YCoordinate="725.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_1_11940316_1500489663551_77985_31499" Name="" cbm:numberedProperty="2.1.2.12">
-                    <Route GatewayType="Exclusive" ExclusiveType="Event" Instantiate="false" GatewayDirection="Unspecified"/>
-                    <TransitionRestrictions>
-                        <TransitionRestriction>
-                            <Split Type="Exclusive" ExclusiveType="Event">
-<TransitionRefs>
-    <TransitionRef Id="_18_5_1_11940316_1500489672543_906407_31508"/>
-    <TransitionRef Id="_18_5_1_11940316_1500489684733_101162_31523"/>
-</TransitionRefs>
-                            </Split>
-                        </TransitionRestriction>
-                    </TransitionRestrictions>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="40.0" Width="40.0" BorderColor="#99995C" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="802.0" YCoordinate="732.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_1_11940316_1500489684733_97487_31522" Name="Voter Accepts Direction" cbm:numberedProperty="2.1.2.13">
-                    <Event>
-                        <IntermediateEvent Trigger="Message" Implementation="WebService" Interrupting="true">
-                            <TriggerResultMessage CatchThrow="CATCH"/>
-                        </IntermediateEvent>
-                    </Event>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="928.0" YCoordinate="693.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_1_11940316_1500489692278_196686_31533" Name="Voter Wants to Vote Provisionally" cbm:numberedProperty="2.1.2.14">
-                    <Event>
-                        <IntermediateEvent Trigger="Message" Implementation="WebService" Interrupting="true">
-                            <TriggerResultMessage CatchThrow="CATCH"/>
-                        </IntermediateEvent>
-                    </Event>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="931.0" YCoordinate="787.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_1_11940316_1500489866272_384062_31565" IsForCompensation="false" Name="Collect provisional voter information" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.08">
-                    <Implementation>
-                        <No/>
-                    </Implementation>
-                    <Performers>
-                        <Performer cbm:resourceType="ResourceRole"></Performer>
-                    </Performers>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="488.0" YCoordinate="320.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_1_11940316_1500489936423_745938_31611" Name="No vote Submitted" cbm:numberedProperty="2.1.2.16">
-                    <Event>
-                        <EndEvent Result="None" Implementation="Unspecified"/>
-                    </Event>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="1101.0" YCoordinate="693.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_1_11940316_1500489974712_469406_31627" Name="Vote Provisionally" cbm:numberedProperty="2.1.2.09">
-                    <Event>
-                        <IntermediateEvent Trigger="Link" Implementation="WebService" Interrupting="true">
-                            <TriggerResultLink CatchThrow="THROW"/>
-                        </IntermediateEvent>
-                    </Event>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="40.0" Width="66.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="1081.0" YCoordinate="787.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_1_11940316_1500489999062_372918_31656" Name="Vote Provisionally" cbm:numberedProperty="2.1.2.18">
-                    <Event>
-                        <IntermediateEvent Trigger="Link" Implementation="WebService" Interrupting="true">
-                            <TriggerResultLink CatchThrow="CATCH" Name="_18_5_1_11940316_1500489999035_891297_31653"/>
-                        </IntermediateEvent>
-                    </Event>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="402.0" YCoordinate="273.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_2_11940316_1508356299746_945198_29550" IsForCompensation="false" Name="Challenge Process" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="2.1.2.23">
-                    <BlockActivity ActivitySetId="_18_5_2_11940316_1508356299687_568510_29540" View="EXPANDED"/>
-                    <Performers>
-                        <Performer cbm:resourceType="ResourceRole"></Performer>
-                    </Performers>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="196.0" Width="777.0" BorderColor="#636363" FillColor="#F7DD99">
-                            <Coordinates XCoordinate="448.0" YCoordinate="847.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_2_43701b0_1508953055357_870442_31231" IsForCompensation="false" Name="" Status="None" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.27">
-                    <Implementation>
-                        <SubFlow Id="_18_5_2_43701b0_1508948430596_974675_30307" Name="Determine Initial Eligibility" Execution="SYNCHR" View="EXPANDED" PackageRef="_18_5_2_43701b0_1508948430596_974675_30307">
-                            <EndPoint EndPointType="WSDL">
-<ExternalReference location="mdel://_18_5_2_43701b0_1508948430596_974675_30307?projectName=MagicDraw+Election+Model&amp;elementName=BPMN+Process+Determine+Initial+Eligibility&amp;metaType=Activity&amp;elementQName=Process+Container%3A%3AElection%3A%3AVote+In+Person%3A%3ADetermine+Initial+Eligibility"/>
-                            </EndPoint>
-                        </SubFlow>
-                    </Implementation>
-                    <Performers>
-                        <Performer cbm:resourceType="ResourceRole"></Performer>
-                    </Performers>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="65.0" Width="100.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="140.0" YCoordinate="448.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_2_43701b0_1508953087487_188343_31247" Name="Receive Request" cbm:numberedProperty="2.1.2.01">
-                    <Event>
-                        <StartEvent Trigger="Message" Implementation="Unspecified" Interrupting="true">
-                            <TriggerResultMessage CatchThrow="CATCH"/>
-                        </StartEvent>
-                    </Event>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="49.0" YCoordinate="467.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_2_43701b0_1508954230178_208956_31330" IsForCompensation="false" Name="Update information on file" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="2.1.2.29">
-                    <Implementation>
-                        <No/>
-                    </Implementation>
-                    <Performers>
-                        <Performer cbm:resourceType="ResourceRole"></Performer>
-                    </Performers>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
-                            <Coordinates XCoordinate="504.0" YCoordinate="630.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_2_43701b0_1508955448990_239090_31514" Name="" cbm:numberedProperty="2.1.2.31">
-                    <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
-                    <TransitionRestrictions>
-                        <TransitionRestriction>
-                            <Split Type="Exclusive" ExclusiveType="Data">
-<TransitionRefs>
-    <TransitionRef Id="_18_5_1_11940316_1500489582188_205833_31429"/>
-    <TransitionRef Id="_18_5_2_11940316_1507487570031_113138_55866"/>
-    <TransitionRef Id="_18_5_2_43701b0_1508956159226_831531_31551"/>
-    <TransitionRef Id="_18_5_2_43701b0_1508956227633_550520_31588"/>
-    <TransitionRef Id="_18_5_2_43701b0_1509554333438_36188_30643"/>
-</TransitionRefs>
-                            </Split>
-                        </TransitionRestriction>
-                    </TransitionRestrictions>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
-                            <Coordinates XCoordinate="294.0" YCoordinate="460.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_2_43701b0_1508956386793_590121_31622" Name="Required Steps" cbm:numberedProperty="2.1.2.32">
-                    <Route GatewayType="Inclusive" GatewayDirection="Unspecified"/>
-                    <TransitionRestrictions>
-                        <TransitionRestriction>
-                            <Split Type="Inclusive">
-<TransitionRefs>
-    <TransitionRef Id="_18_5_1_11940316_1500488101849_879615_31095"/>
-    <TransitionRef Id="_18_5_2_43701b0_1508954227803_329356_31313"/>
-</TransitionRefs>
-                            </Split>
-                        </TransitionRestriction>
-                    </TransitionRestrictions>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="40.0" Width="40.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="406.0" YCoordinate="635.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_2_43701b0_1508956498792_151221_31645" Name="" cbm:numberedProperty="2.1.2.34">
-                    <Route GatewayType="Inclusive" GatewayDirection="Unspecified"/>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="40.0" Width="40.0" BorderColor="#424242" FillColor="#FFCC33">
-                            <Coordinates XCoordinate="684.0" YCoordinate="544.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_2_43701b0_1508957342192_711265_31830" Name="Ineligible but insists on voting" cbm:numberedProperty="2.1.2.36">
-                    <Event>
-                        <IntermediateEvent Trigger="Message" Implementation="WebService" Interrupting="true">
-                            <TriggerResultMessage CatchThrow="CATCH"/>
-                        </IntermediateEvent>
-                    </Event>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="291.0" YCoordinate="333.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_2_43701b0_1508960606367_958240_40415" Name="Vote Provisionally" cbm:numberedProperty="2.1.2.38">
-                    <Event>
-                        <IntermediateEvent Trigger="Link" Implementation="WebService" Interrupting="true">
-                            <TriggerResultLink CatchThrow="THROW"/>
-                        </IntermediateEvent>
-                    </Event>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="40.0" Width="66.0" BorderColor="#99995C" FillColor="#E1E1C3">
-                            <Coordinates XCoordinate="811.0" YCoordinate="643.0"/>
-                        </NodeGraphicsInfo>
-                    </NodeGraphicsInfos>
-                </Activity>
-                <Activity Id="_18_5_2_43701b0_1509554047608_659110_30563" Name="Can vote regular ballot?" cbm:numberedProperty="2.1.2.39">
-                    <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
-                    <TransitionRestrictions>
-                        <TransitionRestriction>
-                            <Split Type="Exclusive" ExclusiveType="Data">
-<TransitionRefs>
-    <TransitionRef Id="_18_5_2_43701b0_1508956499908_926587_31653"/>
-    <TransitionRef Id="_18_5_2_43701b0_1509554105210_659032_30584"/>
-</TransitionRefs>
-                            </Split>
-                        </TransitionRestriction>
-                    </TransitionRestrictions>
-                    <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" Height="40.0" Width="40.0" BorderColor="#7C816D" FillColor="#D5D5D5">
-                            <Coordinates XCoordinate="684.0" YCoordinate="635.0"/>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="665.0" YCoordinate="487.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
             </Activities>
             <Transitions>
-                <Transition Id="_18_5_1_11940316_1500488101849_879615_31095" From="_18_5_2_43701b0_1508956386793_590121_31622" To="_18_5_1_11940316_1500489511701_959958_31404" Name="">
-                    <Condition Type="CONDITION">
-                        <Expression>Regisitration required</Expression>
-                    </Condition>
+                <Transition Id="_18_5_3_43701b0_1515522844851_945771_32982" From="_18_5_3_43701b0_1515522844847_308038_32915" To="_19_0_2_8dd028c_1558006737498_831347_26944" Name="">
                     <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="427.0" YCoordinate="636.0"/>
-                            <Coordinates XCoordinate="427.0" YCoordinate="564.0"/>
-                            <Coordinates XCoordinate="504.0" YCoordinate="564.0"/>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="610.0" YCoordinate="514.0"/>
+                            <Coordinates XCoordinate="665.0" YCoordinate="514.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
-                <Transition Id="_18_5_1_11940316_1500488287597_581712_31176" From="_18_5_1_11940316_1500488271254_815912_31144" To="_18_5_1_11940316_1500488291294_524354_31193" Name="">
+                <Transition Id="_18_5_3_43701b0_1515522844852_263487_32990" From="_18_5_3_43701b0_1515522844848_969410_32925" To="_19_0_2_8dd028c_1558006737498_831347_26944" Name="">
                     <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="764.0" YCoordinate="485.0"/>
-                            <Coordinates XCoordinate="819.0" YCoordinate="485.0"/>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="506.0" YCoordinate="308.0"/>
+                            <Coordinates XCoordinate="697.0" YCoordinate="308.0"/>
+                            <Coordinates XCoordinate="697.0" YCoordinate="487.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
-                <Transition Id="_18_5_1_11940316_1500489214385_458704_31233" From="_18_5_1_11940316_1500488291294_524354_31193" To="_18_5_1_11940316_1500489216834_17373_31250" Name="">
+                <Transition Id="_18_5_3_43701b0_1515522844852_648694_32985" From="_19_0_2_8dd028c_1558006737388_302060_26890" To="_18_5_3_43701b0_1515522844847_300969_32918" Name="">
                     <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="939.0" YCoordinate="485.0"/>
-                            <Coordinates XCoordinate="994.0" YCoordinate="485.0"/>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="1527.0" YCoordinate="510.0"/>
+                            <Coordinates XCoordinate="1606.0" YCoordinate="510.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
-                <Transition Id="_18_5_1_11940316_1500489363497_840368_31308" From="_18_5_1_11940316_1500489216834_17373_31250" To="_18_5_1_11940316_1500489366576_395584_31318" Name="">
+                <Transition Id="_18_5_3_43701b0_1515522844852_718697_32984" From="_18_5_3_43701b0_1515523442576_964444_33586" To="_19_0_2_8dd028c_1558006737388_302060_26890" Name="">
                     <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="1114.0" YCoordinate="482.0"/>
-                            <Coordinates XCoordinate="1193.0" YCoordinate="482.0"/>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="915.0" YCoordinate="518.0"/>
+                            <Coordinates XCoordinate="1407.0" YCoordinate="518.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
-                <Transition Id="_18_5_1_11940316_1500489582188_205833_31429" From="_18_5_2_43701b0_1508955448990_239090_31514" To="_18_5_1_11940316_1500489585915_695957_31446" Name="">
-                    <Condition Type="CONDITION">
-                        <Expression>Voter is in wrong polling location</Expression>
-                    </Condition>
+                <Transition Id="_18_5_3_43701b0_1515522844853_643124_32996" From="_18_5_3_43701b0_1515522844849_409532_32959" To="_18_5_3_43701b0_1515522844848_969410_32925" Name="">
                     <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="305.0" YCoordinate="491.0"/>
-                            <Coordinates XCoordinate="305.0" YCoordinate="752.0"/>
-                            <Coordinates XCoordinate="599.0" YCoordinate="752.0"/>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="251.0" YCoordinate="305.0"/>
+                            <Coordinates XCoordinate="386.0" YCoordinate="305.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
-                <Transition Id="_18_5_1_11940316_1500489654665_919166_31465" From="_18_5_1_11940316_1500489585915_695957_31446" To="_18_5_1_11940316_1500489663551_77985_31499" Name="">
+                <Transition Id="_18_5_3_43701b0_1515522844854_151663_33006" From="_18_5_3_43701b0_1515613218194_893340_32780" To="_18_5_3_43701b0_1515522844849_797197_32956" Name="">
                     <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="719.0" YCoordinate="752.0"/>
-                            <Coordinates XCoordinate="802.0" YCoordinate="752.0"/>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="250.0" YCoordinate="508.0"/>
+                            <Coordinates XCoordinate="297.0" YCoordinate="508.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
-                <Transition Id="_18_5_1_11940316_1500489672543_906407_31508" From="_18_5_1_11940316_1500489663551_77985_31499" To="_18_5_1_11940316_1500489684733_97487_31522" Name="">
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="823.0" YCoordinate="733.0"/>
-                            <Coordinates XCoordinate="823.0" YCoordinate="704.0"/>
-                            <Coordinates XCoordinate="939.0" YCoordinate="704.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_1_11940316_1500489684733_101162_31523" From="_18_5_1_11940316_1500489663551_77985_31499" To="_18_5_1_11940316_1500489692278_196686_31533" Name="">
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="823.0" YCoordinate="771.0"/>
-                            <Coordinates XCoordinate="823.0" YCoordinate="800.0"/>
-                            <Coordinates XCoordinate="942.0" YCoordinate="800.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_1_11940316_1500489837515_675522_31539" From="_18_5_1_11940316_1500489511701_959958_31404" To="_18_5_2_43701b0_1508956498792_151221_31645" Name="">
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="624.0" YCoordinate="564.0"/>
-                            <Coordinates XCoordinate="684.0" YCoordinate="564.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_1_11940316_1500489878939_359431_31576" From="_18_5_1_11940316_1500489866272_384062_31565" To="_18_5_1_11940316_1500488291294_524354_31193" Name="">
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="608.0" YCoordinate="350.0"/>
-                            <Coordinates XCoordinate="847.0" YCoordinate="350.0"/>
-                            <Coordinates XCoordinate="847.0" YCoordinate="458.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_1_11940316_1500489933450_555517_31600" From="_18_5_1_11940316_1500489684733_97487_31522" To="_18_5_1_11940316_1500489936423_745938_31611" Name="">
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="963.0" YCoordinate="705.0"/>
-                            <Coordinates XCoordinate="1101.0" YCoordinate="705.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_1_11940316_1500489977486_254700_31644" From="_18_5_1_11940316_1500489692278_196686_31533" To="_18_5_1_11940316_1500489974712_469406_31627" Name="">
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="966.0" YCoordinate="800.0"/>
-                            <Coordinates XCoordinate="1101.0" YCoordinate="800.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_1_11940316_1500490007319_390905_31673" From="_18_5_1_11940316_1500489999062_372918_31656" To="_18_5_1_11940316_1500489866272_384062_31565" Name="">
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="436.0" YCoordinate="281.0"/>
-                            <Coordinates XCoordinate="549.0" YCoordinate="281.0"/>
-                            <Coordinates XCoordinate="549.0" YCoordinate="320.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_2_11940316_1507487570031_113138_55866" From="_18_5_2_43701b0_1508955448990_239090_31514" To="_18_5_1_11940316_1500488271254_815912_31144" Name="">
-                    <Condition Type="CONDITION">
-                        <Expression>Eligible</Expression>
-                    </Condition>
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="334.0" YCoordinate="480.0"/>
-                            <Coordinates XCoordinate="644.0" YCoordinate="480.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_2_11940316_1508356199619_412268_29479" From="_18_5_2_43701b0_1508957342192_711265_31830" To="_18_5_1_11940316_1500489866272_384062_31565" Name="">
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="324.0" YCoordinate="352.0"/>
-                            <Coordinates XCoordinate="488.0" YCoordinate="352.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_2_43701b0_1508953141076_244168_31255" From="_18_5_2_43701b0_1508953087487_188343_31247" To="_18_5_2_43701b0_1508953055357_870442_31231" Name="">
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="73.0" YCoordinate="479.0"/>
-                            <Coordinates XCoordinate="140.0" YCoordinate="479.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_2_43701b0_1508954227803_329356_31313" From="_18_5_2_43701b0_1508956386793_590121_31622" To="_18_5_2_43701b0_1508954230178_208956_31330" Name="">
-                    <Condition Type="CONDITION">
-                        <Expression>Out of date</Expression>
-                    </Condition>
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="446.0" YCoordinate="655.0"/>
-                            <Coordinates XCoordinate="504.0" YCoordinate="655.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_2_43701b0_1508955445564_323898_31499" From="_18_5_2_43701b0_1508953055357_870442_31231" To="_18_5_2_43701b0_1508955448990_239090_31514" Name="">
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="240.0" YCoordinate="480.0"/>
-                            <Coordinates XCoordinate="294.0" YCoordinate="480.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_2_43701b0_1508956159226_831531_31551" From="_18_5_2_43701b0_1508955448990_239090_31514" To="_18_5_2_43701b0_1508956386793_590121_31622" Name="">
-                    <Condition Type="CONDITION">
-                        <Expression>Additional Steps</Expression>
-                    </Condition>
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="322.0" YCoordinate="492.0"/>
-                            <Coordinates XCoordinate="322.0" YCoordinate="655.0"/>
-                            <Coordinates XCoordinate="406.0" YCoordinate="655.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_2_43701b0_1508956227633_550520_31588" From="_18_5_2_43701b0_1508955448990_239090_31514" To="_18_5_2_43701b0_1508957342192_711265_31830" Name="">
-                    <Condition Type="CONDITION">
-                        <Expression>Ineligible</Expression>
-                    </Condition>
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="312.0" YCoordinate="462.0"/>
-                            <Coordinates XCoordinate="312.0" YCoordinate="388.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_2_43701b0_1508956281374_411350_31600" From="_18_5_2_43701b0_1508956498792_151221_31645" To="_18_5_1_11940316_1500488271254_815912_31144" Name="">
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="704.0" YCoordinate="544.0"/>
-                            <Coordinates XCoordinate="704.0" YCoordinate="507.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_2_43701b0_1508956499908_926587_31653" From="_18_5_2_43701b0_1509554047608_659110_30563" To="_18_5_2_43701b0_1508956498792_151221_31645" Name="">
+                <Transition Id="_18_5_3_43701b0_1515522844854_992344_33012" From="_18_5_3_43701b0_1515523029818_569401_33514" To="_18_5_3_43701b0_1515522844848_969410_32925" Name="">
                     <Condition Type="CONDITION">
                         <Expression>Yes</Expression>
                     </Condition>
                     <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="704.0" YCoordinate="635.0"/>
-                            <Coordinates XCoordinate="704.0" YCoordinate="584.0"/>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="446.0" YCoordinate="378.0"/>
+                            <Coordinates XCoordinate="446.0" YCoordinate="328.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
-                <Transition Id="_18_5_2_43701b0_1509554049426_382000_30570" From="_18_5_2_43701b0_1508954230178_208956_31330" To="_18_5_2_43701b0_1509554047608_659110_30563" Name="">
-                    <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="624.0" YCoordinate="655.0"/>
-                            <Coordinates XCoordinate="684.0" YCoordinate="655.0"/>
-                        </ConnectorGraphicsInfo>
-                    </ConnectorGraphicsInfos>
-                </Transition>
-                <Transition Id="_18_5_2_43701b0_1509554105210_659032_30584" From="_18_5_2_43701b0_1509554047608_659110_30563" To="_18_5_2_43701b0_1508960606367_958240_40415" Name="">
+                <Transition Id="_18_5_3_43701b0_1515523031090_674400_33521" From="_18_5_3_43701b0_1515522844849_797197_32956" To="_18_5_3_43701b0_1515523029818_569401_33514" Name="">
                     <Condition Type="CONDITION">
                         <Expression>No</Expression>
                     </Condition>
                     <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="724.0" YCoordinate="655.0"/>
-                            <Coordinates XCoordinate="831.0" YCoordinate="655.0"/>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="315.0" YCoordinate="492.0"/>
+                            <Coordinates XCoordinate="315.0" YCoordinate="398.0"/>
+                            <Coordinates XCoordinate="426.0" YCoordinate="398.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
-                <Transition Id="_18_5_2_43701b0_1509554333438_36188_30643" From="_18_5_2_43701b0_1508955448990_239090_31514" To="_18_5_1_11940316_1500489866272_384062_31565" Name="">
+                <Transition Id="_18_5_3_43701b0_1515523105347_186185_33532" From="_18_5_3_43701b0_1515522844849_797197_32956" To="_18_5_3_43701b0_1515522844847_308038_32915" Name="">
                     <Condition Type="CONDITION">
-                        <Expression>Must vote provisionally</Expression>
+                        <Expression>Yes</Expression>
                     </Condition>
                     <ConnectorGraphicsInfos>
-                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500487804407_339669_30887" BorderColor="#424242" FillColor="#FFFFCC">
-                            <Coordinates XCoordinate="319.0" YCoordinate="465.0"/>
-                            <Coordinates XCoordinate="319.0" YCoordinate="434.0"/>
-                            <Coordinates XCoordinate="546.0" YCoordinate="434.0"/>
-                            <Coordinates XCoordinate="546.0" YCoordinate="370.0"/>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="334.0" YCoordinate="511.0"/>
+                            <Coordinates XCoordinate="490.0" YCoordinate="511.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_3_43701b0_1515523109684_251684_33541" From="_18_5_3_43701b0_1515523029818_569401_33514" To="_18_5_3_43701b0_1515523112418_263241_33551" Name="">
+                    <Condition Type="CONDITION">
+                        <Expression>No</Expression>
+                    </Condition>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="466.0" YCoordinate="398.0"/>
+                            <Coordinates XCoordinate="539.0" YCoordinate="398.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_3_43701b0_1515523443687_356541_33594" From="_19_0_2_8dd028c_1558006737498_831347_26944" To="_18_5_3_43701b0_1515523442576_964444_33586" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="785.0" YCoordinate="518.0"/>
+                            <Coordinates XCoordinate="875.0" YCoordinate="518.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_3_43701b0_1515523486727_147307_33744" From="_18_5_3_43701b0_1515523442576_964444_33586" To="_19_0_2_8dd028c_1558006737324_162794_26860" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="895.0" YCoordinate="498.0"/>
+                            <Coordinates XCoordinate="895.0" YCoordinate="421.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_3_43701b0_1515523512148_678481_33778" From="_19_0_2_8dd028c_1558006737324_162794_26860" To="_18_5_3_43701b0_1515523515133_826585_33794" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="953.0" YCoordinate="398.0"/>
+                            <Coordinates XCoordinate="994.0" YCoordinate="398.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_3_43701b0_1515523531840_582678_33805" From="_18_5_3_43701b0_1515523515133_826585_33794" To="_18_5_3_43701b0_1515523534780_70198_33819" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="1114.0" YCoordinate="398.0"/>
+                            <Coordinates XCoordinate="1183.0" YCoordinate="398.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_3_43701b0_1515523549648_5351_33825" From="_18_5_3_43701b0_1515617356983_308050_42540" To="_19_0_2_8dd028c_1558006737498_831347_26944" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="1204.0" YCoordinate="294.0"/>
+                            <Coordinates XCoordinate="1204.0" YCoordinate="284.0"/>
+                            <Coordinates XCoordinate="735.0" YCoordinate="284.0"/>
+                            <Coordinates XCoordinate="735.0" YCoordinate="487.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_3_43701b0_1515613229637_590743_32803" From="_18_5_3_43701b0_1515522844849_781660_32953" To="_18_5_3_43701b0_1515613218194_893340_32780" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="73.0" YCoordinate="510.0"/>
+                            <Coordinates XCoordinate="130.0" YCoordinate="510.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_3_43701b0_1515617358048_165354_42554" From="_18_5_3_43701b0_1515523534780_70198_33819" To="_18_5_3_43701b0_1515617356983_308050_42540" Name="">
+                    <Condition Type="CONDITION">
+                        <Expression>No</Expression>
+                    </Condition>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="1203.0" YCoordinate="378.0"/>
+                            <Coordinates XCoordinate="1203.0" YCoordinate="344.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_3_43701b0_1515617406802_912447_42570" From="_18_5_3_43701b0_1515523534780_70198_33819" To="_18_5_3_43701b0_1515617649661_837970_42714" Name="">
+                    <Condition Type="CONDITION">
+                        <Expression>Yes</Expression>
+                    </Condition>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="1223.0" YCoordinate="398.0"/>
+                            <Coordinates XCoordinate="1295.0" YCoordinate="398.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_3_43701b0_1515617425360_475741_42613" From="_18_5_3_43701b0_1515617422426_390019_42604" To="_19_0_2_8dd028c_1558006737388_302060_26890" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="1470.0" YCoordinate="417.0"/>
+                            <Coordinates XCoordinate="1470.0" YCoordinate="483.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_3_43701b0_1515617437811_420449_42622" From="_18_5_3_43701b0_1515617422426_390019_42604" To="_18_5_3_43701b0_1515617441593_107014_42631" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="1488.0" YCoordinate="399.0"/>
+                            <Coordinates XCoordinate="1542.0" YCoordinate="399.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_3_43701b0_1515617471476_91360_42645" From="_18_5_3_43701b0_1515617441593_107014_42631" To="_18_5_3_43701b0_1515617474586_844466_42656" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="1580.0" YCoordinate="396.0"/>
+                            <Coordinates XCoordinate="1666.0" YCoordinate="396.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_3_43701b0_1515617652034_405555_42728" From="_18_5_3_43701b0_1515617649661_837970_42714" To="_18_5_3_43701b0_1515617422426_390019_42604" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1515522812419_648104_32448" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="1415.0" YCoordinate="396.0"/>
+                            <Coordinates XCoordinate="1451.0" YCoordinate="396.0"/>
                         </ConnectorGraphicsInfo>
                     </ConnectorGraphicsInfos>
                 </Transition>
             </Transitions>
         </WorkflowProcess>
-        <WorkflowProcess Id="_18_5_1_11940316_1500487834957_762963_30915_proc" Name="Voter" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+        <WorkflowProcess Id="_18_5_3_43701b0_1515522844847_353003_32907_proc" Name="Voter" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
             <ProcessHeader>
-                <Created>17-06-19T14:10:00</Created>
+                <Created>18-00-09T13:33:00</Created>
             </ProcessHeader>
         </WorkflowProcess>
     </WorkflowProcesses>

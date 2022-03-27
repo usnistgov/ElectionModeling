@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_19_0_2_43701b0_1561553656891_603699_25880" Name="Maintain Chain of Custody" cbm:numberedProperty="1.5.8">
+    <PackageHeader>
+        <XPDLVersion>2.2</XPDLVersion>
+        <Vendor>No Magic, Inc.</Vendor>
+        <Created>19-05-26T08:54:00</Created>
+        <ModificationDate>22-00-18T15:11:54</ModificationDate>
+        <Documentation>&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+Whenever we start to care about it...&lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+Integrity&lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+Accountability&lt;/body&gt;
+&lt;/html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+		&lt;style&gt;
+			p {padding:0px; margin:0px;}
+		&lt;/style&gt;
+	&lt;/head&gt;
+  &lt;body&gt;
+Reliability&lt;/body&gt;
+&lt;/html&gt;</Documentation>
+        <LayoutInfo PixelsPerMillimeter="2.8346457"/>
+    </PackageHeader>
+    <RedefinableHeader>
+        <Author>john</Author>
+        <Version>1800</Version>
+        <Codepage>Cp1252</Codepage>
+        <Countrykey>US</Countrykey>
+    </RedefinableHeader>
+    <ConformanceClass GraphConformance="NON_BLOCKED" BPMNModelPortabilityConformance="SIMPLE"/>
+    <ExternalPackages>
+        <ExternalPackage href="mdel://_19_0_2_43701b0_1561553656891_603699_25880?projectName=MagicDraw+Election+Model&amp;elementName=BPMN+Process+Maintain+Chain+of+Custody&amp;metaType=Activity&amp;elementQName=Process+Container%3A%3APre+Election%3A%3APrepare+Voting+Materials+and+Equipment%3A%3AMaintain+Chain+of+Custody" Id="_19_0_2_43701b0_1561553656891_603699_25880" Name="Maintain Chain of Custody"/>
+    </ExternalPackages>
+    <Participants>
+        <Participant Id="_18_5_1_11940316_1501096470365_163806_30704" Name="Authorized Personnel" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
+            <ParticipantType Type="RESOURCE"/>
+        </Participant>
+    </Participants>
+    <Pages>
+        <Page Name="Maintain Chain of Custody" Id="_19_0_2_43701b0_1561553656919_900580_25891" Height="423.0" Width="1270.0"/>
+    </Pages>
+    <Pools>
+        <Pool Id="_19_0_2_43701b0_1561553657258_534816_26157" Name="Authorized Personnel" Orientation="HORIZONTAL" Process="_19_0_2_43701b0_1561553657258_534816_26157_proc" Participant="_18_5_1_11940316_1501096470365_163806_30704" BoundaryVisible="true" MainPool="false" MultiInstance="false">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="423.0" Width="1270.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                    <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+    </Pools>
+    <Associations>
+        <Association Id="_19_0_2_43701b0_1561553657265_918476_26188" Source="_19_0_2_43701b0_1561553657261_965796_26165" Target="_19_0_2_43701b0_1561553657262_951497_26176" AssociationDirection="None">
+            <Object Id="_19_0_4_43701b0_1648390398904_949281_26321"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="99.0" YCoordinate="84.0"/>
+                    <Coordinates XCoordinate="95.0" YCoordinate="68.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_19_0_2_43701b0_1561555028615_139225_25970" Source="_19_0_2_43701b0_1561553657260_25755_26162" Target="_19_0_2_43701b0_1561556365190_255921_26002" AssociationDirection="None">
+            <Object Id="_19_0_4_43701b0_1648390398905_539432_26322"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="423.0" YCoordinate="356.0"/>
+                    <Coordinates XCoordinate="476.0" YCoordinate="364.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_19_0_2_43701b0_1561570755375_837501_26146" Source="_19_0_2_43701b0_1561553657260_982857_26159" Target="_19_0_2_43701b0_1561570803760_13261_26154" AssociationDirection="None">
+            <Object Id="_19_0_4_43701b0_1648390398907_268963_26323"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="423.0" YCoordinate="76.0"/>
+                    <Coordinates XCoordinate="448.0" YCoordinate="67.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+        <Association Id="_19_0_2_43701b0_1561570786143_313489_26151" Source="_19_0_2_43701b0_1561569544470_681329_26126" Target="_19_0_2_43701b0_1561570803760_840595_26155" AssociationDirection="None">
+            <Object Id="_19_0_4_43701b0_1648390398908_382729_26324"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="423.0" YCoordinate="290.0"/>
+                    <Coordinates XCoordinate="476.0" YCoordinate="295.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+    </Associations>
+    <Artifacts>
+        <Artifact Id="_19_0_2_43701b0_1561553657262_951497_26176" ArtifactType="Annotation" TextAnnotation="Whenever we start to care about it...">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="54.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="42.0" YCoordinate="14.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_19_0_2_43701b0_1561556365190_255921_26002" ArtifactType="Annotation" TextAnnotation="Integrity">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="36.0" Width="56.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="476.0" YCoordinate="350.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_19_0_2_43701b0_1561570803760_13261_26154" ArtifactType="Annotation" TextAnnotation="Accountability">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="36.0" Width="87.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="448.0" YCoordinate="35.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+        <Artifact Id="_19_0_2_43701b0_1561570803760_840595_26155" ArtifactType="Annotation" TextAnnotation="Reliability">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="36.0" Width="64.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="476.0" YCoordinate="280.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+    </Artifacts>
+    <WorkflowProcesses>
+        <WorkflowProcess Id="_19_0_2_43701b0_1561553656891_603699_25880" Name="Maintain Chain of Custody_wf">
+            <ProcessHeader/>
+        </WorkflowProcess>
+        <WorkflowProcess Id="_19_0_2_43701b0_1561553657258_534816_26157_proc" Name="Authorized Personnel" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+            <ProcessHeader>
+                <Created>19-05-26T08:54:00</Created>
+            </ProcessHeader>
+            <ActivitySets>
+                <ActivitySet Id="_19_0_2_43701b0_1561553656924_296032_25902" Name="Prepare for custody_as" AdHoc="true" AdHocOrdering="Parallel" TriggeredByEvent="false">
+                    <Activities>
+                        <Activity Id="_19_0_2_43701b0_1561553657260_25755_26162" IsForCompensation="false" Name="Seal object" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.8.PR4.2">
+                            <Implementation>
+<No/>
+                            </Implementation>
+                            <Documentation>Seal the object in a transport. The seal should be tamper evident. A lock, for example, is not a valid seal.</Documentation>
+                            <NodeGraphicsInfos>
+<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+    <Coordinates XCoordinate="303.0" YCoordinate="322.0"/>
+</NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity Id="_19_0_2_43701b0_1561553657260_989824_26161" IsForCompensation="false" Name="Add label to object" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.8.PR4.1">
+                            <Implementation>
+<No/>
+                            </Implementation>
+                            <Documentation>Objects placed under chain of custody must be uniquely labeled if they don't already have a unique identifier. The identifier should be protected such that it cannot be modified without breaking a seal.</Documentation>
+                            <NodeGraphicsInfos>
+<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+    <Coordinates XCoordinate="303.0" YCoordinate="196.0"/>
+</NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity Id="_19_0_2_43701b0_1561569544470_681329_26126" IsForCompensation="false" Name="Place object in transport" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.8.PR4.3">
+                            <Implementation>
+<No/>
+                            </Implementation>
+                            <Documentation>Place the object in a transport such that it can be effectively identified and sealed.</Documentation>
+                            <NodeGraphicsInfos>
+<NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+    <Coordinates XCoordinate="303.0" YCoordinate="259.0"/>
+</NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                    </Activities>
+                </ActivitySet>
+            </ActivitySets>
+            <Activities>
+                <Activity Id="_19_0_2_43701b0_1561553657260_33731_26158" IsForCompensation="false" Name="Take custody of object" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.8.PR1">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <Documentation>Take custody of the object.</Documentation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="497.0" YCoordinate="212.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_19_0_2_43701b0_1561553657260_349838_26160" IsForCompensation="false" Name="Prepare for custody" StartQuantity="1" CompletionQuantity="1" IsATransaction="false" cbm:numberedProperty="1.5.8.PR4">
+                    <BlockActivity ActivitySetId="_19_0_2_43701b0_1561553656924_296032_25902" View="EXPANDED"/>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <Documentation>Prepare to take custody of the election object. This object may need to be labeled so that it can be uniquely tracked, placed in a transport, or sealed to provide tamper evidence.</Documentation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="248.0" Width="130.0" BorderColor="#636363" FillColor="#F7DD99">
+                            <Coordinates XCoordinate="298.0" YCoordinate="151.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_19_0_2_43701b0_1561553657260_794594_26163" Name="Custodian Change" cbm:numberedProperty="1.5.8.PR7">
+                    <Event>
+                        <IntermediateEvent Trigger="Signal" Implementation="WebService" Interrupting="true">
+                            <TriggerResultSignal CatchThrow="CATCH"/>
+                        </IntermediateEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="863.0" YCoordinate="98.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_19_0_2_43701b0_1561553657260_982857_26159" IsForCompensation="false" Name="Record custody change" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.8.PR3">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <Documentation>Record who is taking custody of the election object, from whom, and the time and location of the transfer. The transferee should note the condition of the artifact, or of the transport, if the artifact has been sealed.</Documentation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="303.0" YCoordinate="71.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_19_0_2_43701b0_1561553657261_265540_26172" Name="Chain of Custody Maintained" cbm:numberedProperty="1.5.8.PR8">
+                    <Event>
+                        <EndEvent Result="None" Implementation="Unspecified"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="1015.0" YCoordinate="210.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_19_0_2_43701b0_1561553657261_325539_26171" Name="Retention Period Ends" cbm:numberedProperty="1.5.8.PR13">
+                    <Event>
+                        <IntermediateEvent Trigger="Timer" Implementation="WebService" Interrupting="true"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="863.0" YCoordinate="210.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_19_0_2_43701b0_1561553657261_827848_26168" Name="Transfer Custody" cbm:numberedProperty="1.5.8.PR11">
+                    <Event>
+                        <IntermediateEvent Trigger="Link" Implementation="WebService" Interrupting="true">
+                            <TriggerResultLink CatchThrow="THROW"/>
+                        </IntermediateEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="40.0" Width="66.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="1162.0" YCoordinate="98.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_19_0_2_43701b0_1561553657261_829299_26167" Name="Transfer Custody" cbm:numberedProperty="1.5.8.PR10">
+                    <Event>
+                        <IntermediateEvent Trigger="Link" Implementation="WebService" Interrupting="true">
+                            <TriggerResultLink CatchThrow="CATCH" Name="_19_0_2_43701b0_1561553656926_158422_25908"/>
+                        </IntermediateEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="76.0" YCoordinate="230.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_19_0_2_43701b0_1561553657261_906492_26170" IsForCompensation="false" Name="Inspect object seal" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.8.PR12">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <Documentation>Inspect the seals and labels on the object and record any discrepancy in the chain of custody log.</Documentation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="967.0" YCoordinate="85.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_19_0_2_43701b0_1561553657261_965796_26165" Name="Object deployed" cbm:numberedProperty="1.5.8.PR9">
+                    <Event>
+                        <StartEvent Trigger="Signal" Implementation="Unspecified" Interrupting="true">
+                            <TriggerResultSignal CatchThrow="CATCH"/>
+                        </StartEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="87.0" YCoordinate="84.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_19_0_2_43701b0_1561553657268_641778_26233" Name="" cbm:numberedProperty="1.5.8.PR6">
+                    <Route GatewayType="Exclusive" ExclusiveType="Event" Instantiate="false" GatewayDirection="Unspecified"/>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="Exclusive" ExclusiveType="Event">
+<TransitionRefs>
+    <TransitionRef Id="_19_0_2_43701b0_1561553657269_409013_26382"/>
+    <TransitionRef Id="_19_0_2_43701b0_1561553657269_804838_26381"/>
+    <TransitionRef Id="_19_0_2_43701b0_1561556365192_141077_26003"/>
+</TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="40.0" Width="40.0" BorderColor="#99995C" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="784.0" YCoordinate="148.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_19_0_2_43701b0_1561553657268_691533_26227" Name="" cbm:numberedProperty="1.5.8.PR2">
+                    <Route GatewayType="Parallel" GatewayDirection="Unspecified"/>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="Parallel">
+<TransitionRefs>
+    <TransitionRef Id="_19_0_2_43701b0_1561553657269_27285_26379"/>
+    <TransitionRef Id="_19_0_2_43701b0_1561553657269_933643_26377"/>
+</TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="40.0" Width="40.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="198.0" YCoordinate="150.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_19_0_2_43701b0_1561553657268_911962_26230" Name="" cbm:numberedProperty="1.5.8.PR5">
+                    <Route GatewayType="Parallel" GatewayDirection="Unspecified"/>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="40.0" Width="40.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="695.0" YCoordinate="150.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_19_0_2_43701b0_1561556356910_426475_25985" Name="State of object change" cbm:numberedProperty="1.5.8.PR15">
+                    <Event>
+                        <IntermediateEvent Trigger="Conditional" Implementation="WebService" Interrupting="true"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="861.0" YCoordinate="301.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_19_0_2_43701b0_1561571405581_47908_26398" IsForCompensation="false" Name="" Status="None" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.8.PR18">
+                    <Implementation>
+                        <SubFlow Id="_19_0_2_43701b0_1561553656891_603699_25880" Name="Maintain Chain of Custody" Execution="SYNCHR" View="EXPANDED" PackageRef="_19_0_2_43701b0_1561553656891_603699_25880">
+                            <EndPoint EndPointType="WSDL">
+<ExternalReference location="mdel://_19_0_2_43701b0_1561553656891_603699_25880?projectName=MagicDraw+Election+Model&amp;elementName=BPMN+Process+Maintain+Chain+of+Custody&amp;metaType=Activity&amp;elementQName=Process+Container%3A%3APre+Election%3A%3APrepare+Voting+Materials+and+Equipment%3A%3AMaintain+Chain+of+Custody"/>
+                            </EndPoint>
+                        </SubFlow>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <Documentation>If the object changes form, start a new chain of custody for the derived object. E.g. A set of blank ballots becomes cast ballots.</Documentation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="81.0" Width="100.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="977.0" YCoordinate="273.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+            </Activities>
+            <DataObjects>
+                <DataObject Id="_19_0_2_43701b0_1561553657268_404548_26203" Name="Election Object" cbm:realDataId="_19_0_2_43701b0_1561553656921_873703_25897" cbm:numberedProperty="1.5.8.D 1">
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="57.0" Width="99.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="508.0" YCoordinate="105.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </DataObject>
+                <DataObject Id="_19_0_2_43701b0_1561553657268_927577_26215" Name="Chain of Custody Log" cbm:realDataId="_19_0_2_43701b0_1561553656922_316251_25899" cbm:numberedProperty="1.5.8.D 2">
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="57.0" Width="131.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="532.0" YCoordinate="14.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </DataObject>
+                <DataObject Id="_19_0_2_43701b0_1561569105642_188259_26047" Name="Previous Custody Log" cbm:realDataId="_19_0_2_43701b0_1561569105618_315159_26041" cbm:numberedProperty="1.5.8.D 3">
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" Height="57.0" Width="135.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="161.0" YCoordinate="14.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </DataObject>
+            </DataObjects>
+            <Transitions>
+                <Transition Id="_19_0_2_43701b0_1561553657262_814379_26180" From="_19_0_2_43701b0_1561553657261_325539_26171" To="_19_0_2_43701b0_1561553657261_265540_26172" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="911.0" YCoordinate="222.0"/>
+                            <Coordinates XCoordinate="1015.0" YCoordinate="222.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_19_0_2_43701b0_1561553657264_209766_26183" From="_19_0_2_43701b0_1561553657260_982857_26159" To="_19_0_2_43701b0_1561553657268_911962_26230" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="423.0" YCoordinate="81.0"/>
+                            <Coordinates XCoordinate="658.0" YCoordinate="81.0"/>
+                            <Coordinates XCoordinate="658.0" YCoordinate="168.0"/>
+                            <Coordinates XCoordinate="697.0" YCoordinate="168.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_19_0_2_43701b0_1561553657264_350159_26182" From="_19_0_2_43701b0_1561553657260_33731_26158" To="_19_0_2_43701b0_1561553657268_911962_26230" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="617.0" YCoordinate="238.0"/>
+                            <Coordinates XCoordinate="657.0" YCoordinate="238.0"/>
+                            <Coordinates XCoordinate="657.0" YCoordinate="168.0"/>
+                            <Coordinates XCoordinate="697.0" YCoordinate="168.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_19_0_2_43701b0_1561553657264_440865_26181" From="_19_0_2_43701b0_1561553657260_349838_26160" To="_19_0_2_43701b0_1561553657260_33731_26158" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="428.0" YCoordinate="238.0"/>
+                            <Coordinates XCoordinate="497.0" YCoordinate="238.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_19_0_2_43701b0_1561553657264_638063_26184" From="_19_0_2_43701b0_1561553657261_965796_26165" To="_19_0_2_43701b0_1561553657268_691533_26227" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="111.0" YCoordinate="96.0"/>
+                            <Coordinates XCoordinate="161.0" YCoordinate="96.0"/>
+                            <Coordinates XCoordinate="161.0" YCoordinate="172.0"/>
+                            <Coordinates XCoordinate="200.0" YCoordinate="172.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_19_0_2_43701b0_1561553657265_144529_26185" From="_19_0_2_43701b0_1561553657261_906492_26170" To="_19_0_2_43701b0_1561553657261_827848_26168" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="1087.0" YCoordinate="112.0"/>
+                            <Coordinates XCoordinate="1170.0" YCoordinate="112.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_19_0_2_43701b0_1561553657265_215464_26187" From="_19_0_2_43701b0_1561553657261_829299_26167" To="_19_0_2_43701b0_1561553657268_691533_26227" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="120.0" YCoordinate="242.0"/>
+                            <Coordinates XCoordinate="158.0" YCoordinate="242.0"/>
+                            <Coordinates XCoordinate="158.0" YCoordinate="172.0"/>
+                            <Coordinates XCoordinate="200.0" YCoordinate="172.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_19_0_2_43701b0_1561553657265_858996_26189" From="_19_0_2_43701b0_1561553657260_794594_26163" To="_19_0_2_43701b0_1561553657261_906492_26170" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="906.0" YCoordinate="109.0"/>
+                            <Coordinates XCoordinate="967.0" YCoordinate="109.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_19_0_2_43701b0_1561553657269_27285_26379" From="_19_0_2_43701b0_1561553657268_691533_26227" To="_19_0_2_43701b0_1561553657260_349838_26160" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="217.0" YCoordinate="189.0"/>
+                            <Coordinates XCoordinate="217.0" YCoordinate="245.0"/>
+                            <Coordinates XCoordinate="298.0" YCoordinate="245.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_19_0_2_43701b0_1561553657269_409013_26382" From="_19_0_2_43701b0_1561553657268_641778_26233" To="_19_0_2_43701b0_1561553657261_325539_26171" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="802.0" YCoordinate="186.0"/>
+                            <Coordinates XCoordinate="802.0" YCoordinate="221.0"/>
+                            <Coordinates XCoordinate="863.0" YCoordinate="221.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_19_0_2_43701b0_1561553657269_804838_26381" From="_19_0_2_43701b0_1561553657268_641778_26233" To="_19_0_2_43701b0_1561553657260_794594_26163" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="805.0" YCoordinate="149.0"/>
+                            <Coordinates XCoordinate="805.0" YCoordinate="109.0"/>
+                            <Coordinates XCoordinate="867.0" YCoordinate="109.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_19_0_2_43701b0_1561553657269_824082_26380" From="_19_0_2_43701b0_1561553657268_911962_26230" To="_19_0_2_43701b0_1561553657268_641778_26233" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="734.0" YCoordinate="171.0"/>
+                            <Coordinates XCoordinate="787.0" YCoordinate="171.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_19_0_2_43701b0_1561553657269_933643_26377" From="_19_0_2_43701b0_1561553657268_691533_26227" To="_19_0_2_43701b0_1561553657260_982857_26159" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="217.0" YCoordinate="151.0"/>
+                            <Coordinates XCoordinate="217.0" YCoordinate="95.0"/>
+                            <Coordinates XCoordinate="303.0" YCoordinate="95.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_19_0_2_43701b0_1561556365192_141077_26003" From="_19_0_2_43701b0_1561553657268_641778_26233" To="_19_0_2_43701b0_1561556356910_426475_25985" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="802.0" YCoordinate="186.0"/>
+                            <Coordinates XCoordinate="802.0" YCoordinate="315.0"/>
+                            <Coordinates XCoordinate="853.0" YCoordinate="315.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_19_0_2_43701b0_1561571008080_107628_26165" From="_19_0_2_43701b0_1561556356910_426475_25985" To="_19_0_2_43701b0_1561571405581_47908_26398" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="915.0" YCoordinate="315.0"/>
+                            <Coordinates XCoordinate="977.0" YCoordinate="315.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_19_0_2_43701b0_1561571427502_139560_26417" From="_19_0_2_43701b0_1561571405581_47908_26398" To="_19_0_2_43701b0_1561553657261_265540_26172" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="1027.0" YCoordinate="273.0"/>
+                            <Coordinates XCoordinate="1027.0" YCoordinate="234.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+            </Transitions>
+            <DataAssociations>
+                <DataAssociation Id="_19_0_2_43701b0_1561553656930_496084_25927" Name="" From="_19_0_2_43701b0_1561553657260_982857_26159" To="_19_0_2_43701b0_1561553657268_927577_26215">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="364.0" YCoordinate="71.0"/>
+                            <Coordinates XCoordinate="364.0" YCoordinate="28.0"/>
+                            <Coordinates XCoordinate="585.0" YCoordinate="28.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+                <DataAssociation Id="_19_0_2_43701b0_1561553656931_301864_25932" Name="" From="_19_0_2_43701b0_1561553657268_927577_26215" To="_19_0_2_43701b0_1561553657261_906492_26170">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="609.0" YCoordinate="28.0"/>
+                            <Coordinates XCoordinate="1026.0" YCoordinate="28.0"/>
+                            <Coordinates XCoordinate="1026.0" YCoordinate="85.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+                <DataAssociation Id="_19_0_2_43701b0_1561569150397_474111_26073" Name="" From="_19_0_2_43701b0_1561569105642_188259_26047" To="_19_0_2_43701b0_1561553657260_982857_26159">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="240.0" YCoordinate="28.0"/>
+                            <Coordinates XCoordinate="333.0" YCoordinate="28.0"/>
+                            <Coordinates XCoordinate="333.0" YCoordinate="71.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+                <DataAssociation Id="_19_0_2_43701b0_1561569238087_566608_26092" Name="" From="_19_0_2_43701b0_1561553657260_349838_26160" To="_19_0_2_43701b0_1561553657268_404548_26203">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="428.0" YCoordinate="193.0"/>
+                            <Coordinates XCoordinate="455.0" YCoordinate="193.0"/>
+                            <Coordinates XCoordinate="455.0" YCoordinate="123.0"/>
+                            <Coordinates XCoordinate="545.0" YCoordinate="123.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+                <DataAssociation Id="_19_0_2_43701b0_1561569250226_669960_26101" Name="" From="_19_0_2_43701b0_1561553657260_33731_26158" To="_19_0_2_43701b0_1561553657268_404548_26203">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_19_0_2_43701b0_1561553656919_900580_25891" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="557.0" YCoordinate="212.0"/>
+                            <Coordinates XCoordinate="557.0" YCoordinate="156.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+            </DataAssociations>
+        </WorkflowProcess>
+    </WorkflowProcesses>
+</Package>

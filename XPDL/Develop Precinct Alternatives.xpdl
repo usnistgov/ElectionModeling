@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://www.wfmc.org/2009/XPDL2.2" xmlns:ns2="http://www.wfmc.org/2002/XPDL1.0" xmlns:cbm="http://www.nomagic.com/cbm" Id="_18_5_3_43701b0_1516656116403_36606_40906" Name="Develop Precinct Alternatives" cbm:numberedProperty="1.1.6">
+    <PackageHeader>
+        <XPDLVersion>2.2</XPDLVersion>
+        <Vendor>No Magic, Inc.</Vendor>
+        <Created>18-00-22T16:22:00</Created>
+        <ModificationDate>22-00-18T15:11:54</ModificationDate>
+        <Documentation>Develop a set of precinct map alternatives.
+What can be split, population maximums</Documentation>
+        <LayoutInfo PixelsPerMillimeter="2.8346457"/>
+    </PackageHeader>
+    <RedefinableHeader>
+        <Author>john</Author>
+        <Version>1800</Version>
+        <Codepage>Cp1252</Codepage>
+        <Countrykey>US</Countrykey>
+    </RedefinableHeader>
+    <ConformanceClass GraphConformance="NON_BLOCKED" BPMNModelPortabilityConformance="SIMPLE"/>
+    <Participants>
+        <Participant Id="_18_5_1_11940316_1498999818037_96552_21933" Name="Election Jurisdiction" cbm:multiplicity_min="0" cbm:multiplicity_max="0">
+            <ParticipantType Type="RESOURCE"/>
+        </Participant>
+    </Participants>
+    <Pages>
+        <Page Name="Develop Precinct Alternatives" Id="_18_5_3_43701b0_1516656166277_259405_40949" Height="227.0" Width="682.0"/>
+    </Pages>
+    <Pools>
+        <Pool Id="_18_5_3_43701b0_1516656174636_92677_40961" Name="Election Jurisdiction" Orientation="HORIZONTAL" Process="_18_5_3_43701b0_1516656174636_92677_40961_proc" Participant="_18_5_1_11940316_1498999818037_96552_21933" BoundaryVisible="true" MainPool="false" MultiInstance="false">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1516656166277_259405_40949" Height="227.0" Width="682.0" BorderColor="#424242" FillColor="#E1E1C3" cbm:suppress_content="false">
+                    <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+    </Pools>
+    <Associations>
+        <Association Id="_18_5_3_43701b0_1516656232270_200386_41021" Source="_18_5_3_43701b0_1516656232270_986735_41016" Target="_18_5_3_43701b0_1516656232270_873023_41015" AssociationDirection="None">
+            <Object Id="_19_0_4_43701b0_1648390440492_395478_26380"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1516656166277_259405_40949" BorderColor="#424242" FillColor="#FFCC33">
+                    <Coordinates XCoordinate="163.0" YCoordinate="98.0"/>
+                    <Coordinates XCoordinate="143.0" YCoordinate="68.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </Association>
+    </Associations>
+    <Artifacts>
+        <Artifact Id="_18_5_3_43701b0_1516656232270_873023_41015" ArtifactType="Annotation" TextAnnotation="What can be split, population maximums">
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1516656166277_259405_40949" Height="47.0" Width="100.0" BorderColor="#424242" FillColor="#FFFFFF">
+                    <Coordinates XCoordinate="77.0" YCoordinate="21.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Artifact>
+    </Artifacts>
+    <WorkflowProcesses>
+        <WorkflowProcess Id="_18_5_3_43701b0_1516656174636_92677_40961_proc" Name="Election Jurisdiction" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
+            <ProcessHeader>
+                <Created>18-00-22T16:22:00</Created>
+            </ProcessHeader>
+            <Activities>
+                <Activity Id="_18_5_3_43701b0_1516656232270_386368_41017" IsForCompensation="false" Name="Generate alternatives" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.6.2">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <Documentation>Generate alternative precinct maps.</Documentation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1516656166277_259405_40949" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="273.0" YCoordinate="98.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_3_43701b0_1516656232270_512945_41018" IsForCompensation="false" Name="Pick alternative" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.6.3">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <Documentation>Pick one of the alternatives.</Documentation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1516656166277_259405_40949" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="427.0" YCoordinate="98.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_3_43701b0_1516656232270_986735_41016" IsForCompensation="false" Name="Set precinct criteria" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.1.6.1">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performers>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                        <Performer cbm:resourceType="ResourceRole"></Performer>
+                    </Performers>
+                    <Documentation>Set the criteria for which precincts may be formed.</Documentation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1516656166277_259405_40949" Height="50.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                            <Coordinates XCoordinate="119.0" YCoordinate="98.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_3_43701b0_1516658335756_323248_41244" Name="" cbm:numberedProperty="1.1.6.5">
+                    <Event>
+                        <StartEvent Trigger="None" Implementation="Unspecified"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1516656166277_259405_40949" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="56.0" YCoordinate="111.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_3_43701b0_1516658341921_954390_41275" Name="" cbm:numberedProperty="1.1.6.6">
+                    <Event>
+                        <EndEvent Result="None" Implementation="Unspecified"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1516656166277_259405_40949" Height="25.0" Width="25.0" BorderColor="#424242" FillColor="#FFCC33">
+                            <Coordinates XCoordinate="602.0" YCoordinate="112.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_18_5_3_43701b0_1520263064478_185357_32126" Name="No alternative acceptable" cbm:numberedProperty="1.1.6.4">
+                    <Event>
+                        <IntermediateEvent Trigger="Error" Implementation="WebService" Target="_18_5_3_43701b0_1516656232270_512945_41018" Interrupting="true"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1516656166277_259405_40949" Height="40.0" Width="48.0" BorderColor="#99995C" FillColor="#E1E1C3">
+                            <Coordinates XCoordinate="448.0" YCoordinate="135.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition Id="_18_5_3_43701b0_1516656232270_384835_41020" From="_18_5_3_43701b0_1516656232270_986735_41016" To="_18_5_3_43701b0_1516656232270_386368_41017" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1516656166277_259405_40949" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="239.0" YCoordinate="123.0"/>
+                            <Coordinates XCoordinate="273.0" YCoordinate="123.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_3_43701b0_1516656232270_954166_41019" From="_18_5_3_43701b0_1516656232270_386368_41017" To="_18_5_3_43701b0_1516656232270_512945_41018" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1516656166277_259405_40949" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="393.0" YCoordinate="123.0"/>
+                            <Coordinates XCoordinate="427.0" YCoordinate="123.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_3_43701b0_1516658336969_286791_41255" From="_18_5_3_43701b0_1516658335756_323248_41244" To="_18_5_3_43701b0_1516656232270_986735_41016" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1516656166277_259405_40949" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="80.0" YCoordinate="123.0"/>
+                            <Coordinates XCoordinate="119.0" YCoordinate="123.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_3_43701b0_1516658340195_763017_41264" From="_18_5_3_43701b0_1516656232270_512945_41018" To="_18_5_3_43701b0_1516658341921_954390_41275" Name="">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1516656166277_259405_40949" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="547.0" YCoordinate="124.0"/>
+                            <Coordinates XCoordinate="602.0" YCoordinate="124.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition Id="_18_5_3_43701b0_1520263078300_364893_32143" From="_18_5_3_43701b0_1520263064478_185357_32126" To="_18_5_3_43701b0_1516656232270_986735_41016" Name="">
+                    <Condition Type="EXCEPTION"/>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_3_43701b0_1516656166277_259405_40949" BorderColor="#424242" FillColor="#FFFFCC">
+                            <Coordinates XCoordinate="473.0" YCoordinate="190.0"/>
+                            <Coordinates XCoordinate="473.0" YCoordinate="200.0"/>
+                            <Coordinates XCoordinate="179.0" YCoordinate="200.0"/>
+                            <Coordinates XCoordinate="179.0" YCoordinate="148.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+            </Transitions>
+        </WorkflowProcess>
+    </WorkflowProcesses>
+</Package>

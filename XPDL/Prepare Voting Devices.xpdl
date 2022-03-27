@@ -4,7 +4,7 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-07-23T15:45:00</Created>
-        <ModificationDate>17-11-27T17:32:10</ModificationDate>
+        <ModificationDate>22-00-18T15:11:54</ModificationDate>
         <Documentation>Prepare voting devices such that they are ready for election deployment.
 &lt;html&gt;
   &lt;head&gt;
@@ -90,7 +90,7 @@ Already done.&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1519</Version>
+        <Version>1800</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -104,7 +104,7 @@ Already done.&amp;#160;
         <Page Name="Prepare Voting Devices" Id="_18_5_1_11940316_1503517552370_167560_61437" Height="318.0" Width="808.0"/>
     </Pages>
     <DataStores>
-        <DataStore Id="_18_5_1_11940316_1503518306021_516837_61677" Name="EMS Configurations" IsUnlimited="false" cbm:numberedProperty="1.5.4.1.5.4.D 1"/>
+        <DataStore Id="_18_5_1_11940316_1503518306021_516837_61677" Name="EMS Configurations" IsUnlimited="false" cbm:numberedProperty="1.5.6.D 2"/>
         <DataStore Id="_18_5_2_11940316_1506692734462_544164_30525" Name="Voting Machine Allocation" IsUnlimited="false" cbm:numberedProperty="1.5.6.D 1"/>
     </DataStores>
     <Pools>
@@ -118,7 +118,7 @@ Already done.&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_1_11940316_1503518181476_507985_61661" Source="_18_5_1_11940316_1503517587750_230276_61542" Target="_18_5_1_11940316_1503518317870_616862_61700" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414053793_941565_33679"/>
+            <Object Id="_19_0_4_43701b0_1648390431879_211653_26350"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="168.0" YCoordinate="147.0"/>
@@ -127,7 +127,7 @@ Already done.&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_1_11940316_1503518439574_399095_61707" Source="_18_5_1_11940316_1503518306057_33107_61681" Target="_18_5_1_11940316_1503518927082_372006_61750" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414053794_100977_33680"/>
+            <Object Id="_19_0_4_43701b0_1648390431880_938483_26351"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="385.0" YCoordinate="55.0"/>
@@ -176,7 +176,7 @@ Already done.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1503517587750_230276_61542" IsForCompensation="false" Name="Determine voting machine quantity" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.6.4">
+                <Activity Id="_18_5_1_11940316_1503517587750_230276_61542" IsForCompensation="false" Name="Determine voting machine quantity" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.6.2">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -190,7 +190,7 @@ Already done.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1503517759481_437255_61653" IsForCompensation="false" Name="Write media devices" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.6.5">
+                <Activity Id="_18_5_1_11940316_1503517759481_437255_61653" IsForCompensation="false" Name="Write media devices" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.6.4">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -202,12 +202,12 @@ Already done.&amp;#160;
                         <LoopMultiInstance MI_Ordering="Parallel" MI_FlowCondition="All"/>
                     </Loop>
                     <NodeGraphicsInfos>
-                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" Height="65.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
+                        <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" Height="73.0" Width="120.0" BorderColor="#636363" FillColor="#FEEFA5">
                             <Coordinates XCoordinate="378.0" YCoordinate="143.0"/>
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504725213291_533924_28473" IsForCompensation="false" Name="Allocate voting machines" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.6.7">
+                <Activity Id="_18_5_2_11940316_1504725213291_533924_28473" IsForCompensation="false" Name="Allocate voting machines" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="1.5.6.5">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -221,7 +221,7 @@ Already done.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1504726256852_810688_28590" Name="" cbm:numberedProperty="1.5.6.8">
+                <Activity Id="_18_5_2_11940316_1504726256852_810688_28590" Name="" cbm:numberedProperty="1.5.6.3">
                     <Route GatewayType="Parallel" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -239,7 +239,7 @@ Already done.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1505328482631_86795_40525" Name="Electronic Voting Devices Prepared" cbm:numberedProperty="1.5.6.10">
+                <Activity Id="_18_5_2_11940316_1505328482631_86795_40525" Name="Electronic Voting Devices Prepared" cbm:numberedProperty="1.5.6.7">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
@@ -249,7 +249,7 @@ Already done.&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_2_11940316_1505329786612_441923_40663" Name="" cbm:numberedProperty="1.5.6.9">
+                <Activity Id="_18_5_2_11940316_1505329786612_441923_40663" Name="" cbm:numberedProperty="1.5.6.6">
                     <Route GatewayType="Parallel" GatewayDirection="Unspecified"/>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1503517552370_167560_61437" Height="40.0" Width="40.0" BorderColor="#424242" FillColor="#FFCC33">

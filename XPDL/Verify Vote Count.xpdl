@@ -4,8 +4,10 @@
         <XPDLVersion>2.2</XPDLVersion>
         <Vendor>No Magic, Inc.</Vendor>
         <Created>17-06-20T16:44:00</Created>
-        <ModificationDate>17-11-27T17:32:10</ModificationDate>
-        <Documentation>&lt;html&gt;
+        <ModificationDate>22-00-18T15:11:54</ModificationDate>
+        <Description>May occur in a different order.</Description>
+        <Documentation>Ensure that the voters’ ballots were counted as cast.
+&lt;html&gt;
   &lt;head&gt;
 		&lt;style&gt;
 			p {padding:0px; margin:0px;}
@@ -37,7 +39,7 @@ Acceptable margin of error/victory&amp;#160;
     </PackageHeader>
     <RedefinableHeader>
         <Author>john</Author>
-        <Version>1519</Version>
+        <Version>1800</Version>
         <Codepage>Cp1252</Codepage>
         <Countrykey>US</Countrykey>
     </RedefinableHeader>
@@ -61,7 +63,7 @@ Acceptable margin of error/victory&amp;#160;
     </Pools>
     <Associations>
         <Association Id="_18_5_1_11940316_1502906351492_526521_31866" Source="_18_5_1_11940316_1500583571012_872422_37849" Target="_18_5_1_11940316_1502906365969_449719_31873" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414091623_904495_33718"/>
+            <Object Id="_19_0_4_43701b0_1648390669665_580828_26414"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="313.0" YCoordinate="176.0"/>
@@ -70,7 +72,7 @@ Acceptable margin of error/victory&amp;#160;
             </ConnectorGraphicsInfos>
         </Association>
         <Association Id="_18_5_2_11940316_1505511647064_575707_51510" Source="_18_5_1_11940316_1500583692328_304440_38014" Target="_18_5_2_11940316_1505511647182_17756_51511" AssociationDirection="None">
-            <Object Id="_18_5_2_43701b0_1514414091623_66389_33719"/>
+            <Object Id="_19_0_4_43701b0_1648390669666_227588_26415"/>
             <ConnectorGraphicsInfos>
                 <ConnectorGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" BorderColor="#424242" FillColor="#FFCC33">
                     <Coordinates XCoordinate="1044.0" YCoordinate="154.0"/>
@@ -99,6 +101,7 @@ Acceptable margin of error/victory&amp;#160;
         <WorkflowProcess Id="_18_5_1_11940316_1500583444687_305356_37754" Name="Verify Vote Count" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
             <ProcessHeader>
                 <Created>17-06-20T16:44:00</Created>
+                <Description>May occur in a different order.</Description>
             </ProcessHeader>
         </WorkflowProcess>
         <WorkflowProcess Id="_18_5_1_11940316_1500583453295_806471_37772_proc" Name="Election Authority" AccessLevel="PUBLIC" ProcessType="None" Status="None" SuppressJoinFailure="false" EnableInstanceCompensation="false" AdHoc="false" AdHocOrdering="Parallel">
@@ -106,7 +109,7 @@ Acceptable margin of error/victory&amp;#160;
                 <Created>17-06-20T16:44:00</Created>
             </ProcessHeader>
             <Activities>
-                <Activity Id="_18_5_1_11940316_1500583476764_487596_37788" Name="Certification" cbm:numberedProperty="PO1.2.1">
+                <Activity Id="_18_5_1_11940316_1500583476764_487596_37788" Name="Certification" cbm:numberedProperty="3.1.5.2">
                     <Event>
                         <StartEvent Trigger="Signal" Implementation="Unspecified" Interrupting="true">
                             <TriggerResultSignal CatchThrow="CATCH"/>
@@ -118,7 +121,7 @@ Acceptable margin of error/victory&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500583486593_820258_37825" IsForCompensation="false" Name="Retrieve ballot samples per audit rules/standards" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.2.2">
+                <Activity Id="_18_5_1_11940316_1500583486593_820258_37825" IsForCompensation="false" Name="Retrieve ballot samples per audit rules/standards" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.5.3">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -132,7 +135,7 @@ Acceptable margin of error/victory&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500583571012_872422_37849" Name="" cbm:numberedProperty="PO1.2.3">
+                <Activity Id="_18_5_1_11940316_1500583571012_872422_37849" Name="" cbm:numberedProperty="3.1.5.4">
                     <Route GatewayType="Inclusive" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -150,7 +153,7 @@ Acceptable margin of error/victory&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500583572999_988579_37868" IsForCompensation="false" Name="Perform manual or machine vote recount" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.2.4">
+                <Activity Id="_18_5_1_11940316_1500583572999_988579_37868" IsForCompensation="false" Name="Perform manual or machine vote recount" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.5.5">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -164,7 +167,7 @@ Acceptable margin of error/victory&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500583592750_81412_37896" IsForCompensation="false" Name="Compare recount totals to contest results" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.2.5">
+                <Activity Id="_18_5_1_11940316_1500583592750_81412_37896" IsForCompensation="false" Name="Compare recount totals to contest results" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.5.6">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -178,7 +181,7 @@ Acceptable margin of error/victory&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500583607366_433173_37924" IsForCompensation="false" Name="Compare voter verified CVR to electronic CVR" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.2.6">
+                <Activity Id="_18_5_1_11940316_1500583607366_433173_37924" IsForCompensation="false" Name="Compare voter verified CVR to electronic CVR" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.5.7">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -192,7 +195,7 @@ Acceptable margin of error/victory&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500583662224_245788_37948" Name="" cbm:numberedProperty="PO1.2.7">
+                <Activity Id="_18_5_1_11940316_1500583662224_245788_37948" Name="" cbm:numberedProperty="3.1.5.8">
                     <Route GatewayType="Inclusive" GatewayDirection="Unspecified"/>
                     <NodeGraphicsInfos>
                         <NodeGraphicsInfo ToolId="CBM" IsVisible="true" PageId="_18_5_1_11940316_1500583444728_391845_37764" Height="40.0" Width="40.0" BorderColor="#424242" FillColor="#FFCC33">
@@ -200,7 +203,7 @@ Acceptable margin of error/victory&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500583677157_906763_37980" IsForCompensation="false" Name="Report variances" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.2.8">
+                <Activity Id="_18_5_1_11940316_1500583677157_906763_37980" IsForCompensation="false" Name="Report variances" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.5.9">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -214,7 +217,7 @@ Acceptable margin of error/victory&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500583692328_304440_38014" IsForCompensation="false" Name="Determine confidence in results" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="PO1.2.9">
+                <Activity Id="_18_5_1_11940316_1500583692328_304440_38014" IsForCompensation="false" Name="Determine confidence in results" StartQuantity="1" CompletionQuantity="1" cbm:numberedProperty="3.1.5.10">
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -228,7 +231,7 @@ Acceptable margin of error/victory&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500583713009_565245_38040" Name="Escalation required?" cbm:numberedProperty="PO1.2.10">
+                <Activity Id="_18_5_1_11940316_1500583713009_565245_38040" Name="Escalation required?" cbm:numberedProperty="3.1.5.11">
                     <Route GatewayType="Exclusive" ExclusiveType="Data" MarkerVisible="false" GatewayDirection="Unspecified"/>
                     <TransitionRestrictions>
                         <TransitionRestriction>
@@ -246,7 +249,7 @@ Acceptable margin of error/victory&amp;#160;
                         </NodeGraphicsInfo>
                     </NodeGraphicsInfos>
                 </Activity>
-                <Activity Id="_18_5_1_11940316_1500583777344_85475_38087" Name="Vote Count Verified" cbm:numberedProperty="PO1.2.11">
+                <Activity Id="_18_5_1_11940316_1500583777344_85475_38087" Name="Vote Count Verified" cbm:numberedProperty="3.1.5.12">
                     <Event>
                         <EndEvent Result="None" Implementation="Unspecified"/>
                     </Event>
